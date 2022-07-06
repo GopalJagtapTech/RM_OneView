@@ -1,0 +1,444 @@
+[
+  {
+    "source": "^User is logged in \"([^\"]*)\" \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "User is logged in \"39915194\" \"Bajaj@123\"",
+        "aggregatedDurations": {
+          "median": 32.4779853,
+          "average": 31.636086925
+        },
+        "durations": [
+          {
+            "duration": 33.6420977,
+            "location": "classpath:Features/FrontEnd/B2C/GL_Validation.feature:5"
+          },
+          {
+            "duration": 31.3138729,
+            "location": "classpath:Features/FrontEnd/B2C/GL_Validation.feature:19"
+          },
+          {
+            "duration": 33.6867337,
+            "location": "classpath:Features/FrontEnd/B2C/GL_Validation.feature:30"
+          },
+          {
+            "duration": 27.9016434,
+            "location": "classpath:Features/FrontEnd/B2C/PL_CTA.feature:4"
+          }
+        ]
+      },
+      {
+        "name": "User is logged in \"50006944\" \"Bajaj@123\"",
+        "aggregatedDurations": {
+          "median": 23.4204183,
+          "average": 24.915261162
+        },
+        "durations": [
+          {
+            "duration": 29.1749006,
+            "location": "classpath:Features/FrontEnd/B2C/PL_CTA.feature:14"
+          },
+          {
+            "duration": 26.7811898,
+            "location": "classpath:Features/FrontEnd/B2C/PL_CTA.feature:24"
+          },
+          {
+            "duration": 28.5880839,
+            "location": "classpath:Features/FrontEnd/B2C/PL_Validation.feature:4"
+          },
+          {
+            "duration": 22.6123934,
+            "location": "classpath:Features/FrontEnd/B2C/PL_Validation.feature:14"
+          },
+          {
+            "duration": 23.3495,
+            "location": "classpath:Features/FrontEnd/B2C/PL_Validation.feature:14"
+          },
+          {
+            "duration": 23.2922246,
+            "location": "classpath:Features/FrontEnd/B2C/PL_Validation.feature:24"
+          },
+          {
+            "duration": 23.4913366,
+            "location": "classpath:Features/FrontEnd/B2C/PL_Validation.feature:33"
+          },
+          {
+            "duration": 22.0324604,
+            "location": "classpath:Features/FrontEnd/B2C/PL_Validation.feature:33"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user is on gold loan page$",
+    "steps": [
+      {
+        "name": "user is on gold loan page",
+        "aggregatedDurations": {
+          "median": 4.3820403,
+          "average": 4.634104133
+        },
+        "durations": [
+          {
+            "duration": 5.2192942,
+            "location": "classpath:Features/FrontEnd/B2C/GL_Validation.feature:6"
+          },
+          {
+            "duration": 4.3820403,
+            "location": "classpath:Features/FrontEnd/B2C/GL_Validation.feature:20"
+          },
+          {
+            "duration": 4.3009779,
+            "location": "classpath:Features/FrontEnd/B2C/GL_Validation.feature:31"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Clicks on Select State dropdown \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Clicks on Select State dropdown \"MAHARASHTRA\"",
+        "aggregatedDurations": {
+          "median": 0.1965244,
+          "average": 0.2357081
+        },
+        "durations": [
+          {
+            "duration": 0.1965244,
+            "location": "classpath:Features/FrontEnd/B2C/GL_Validation.feature:7"
+          },
+          {
+            "duration": 0.3779551,
+            "location": "classpath:Features/FrontEnd/B2C/GL_Validation.feature:21"
+          },
+          {
+            "duration": 0.1326448,
+            "location": "classpath:Features/FrontEnd/B2C/GL_Validation.feature:32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Clicks on Select City dropdown \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Clicks on Select City dropdown \"Nagpur\"",
+        "aggregatedDurations": {
+          "median": 0.7166861,
+          "average": 0.5748583
+        },
+        "durations": [
+          {
+            "duration": 0.8009043,
+            "location": "classpath:Features/FrontEnd/B2C/GL_Validation.feature:8"
+          },
+          {
+            "duration": 0.2069845,
+            "location": "classpath:Features/FrontEnd/B2C/GL_Validation.feature:22"
+          },
+          {
+            "duration": 0.7166861,
+            "location": "classpath:Features/FrontEnd/B2C/GL_Validation.feature:33"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Clicks on Loan Amount field \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "Clicks on Loan Amount field \"15000\"",
+        "aggregatedDurations": {
+          "median": 0.1712703,
+          "average": 0.1712703
+        },
+        "durations": [
+          {
+            "duration": 0.1712703,
+            "location": "classpath:Features/FrontEnd/B2C/GL_Validation.feature:9"
+          }
+        ]
+      },
+      {
+        "name": "Clicks on Loan Amount field \"1500\"",
+        "aggregatedDurations": {
+          "median": 0.1682057,
+          "average": 0.1682057
+        },
+        "durations": [
+          {
+            "duration": 0.1682057,
+            "location": "classpath:Features/FrontEnd/B2C/GL_Validation.feature:23"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Clicks on terms and conditions checkbox$",
+    "steps": [
+      {
+        "name": "Clicks on terms and conditions checkbox",
+        "aggregatedDurations": {
+          "median": 0.195684,
+          "average": 0.195684
+        },
+        "durations": [
+          {
+            "duration": 0.195684,
+            "location": "classpath:Features/FrontEnd/B2C/GL_Validation.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Clicks on Submit button$",
+    "steps": [
+      {
+        "name": "Clicks on Submit button",
+        "aggregatedDurations": {
+          "median": 0.0724101,
+          "average": 0.0724101
+        },
+        "durations": [
+          {
+            "duration": 0.0724101,
+            "location": "classpath:Features/FrontEnd/B2C/GL_Validation.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user should get error message on screen \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "user should get error message on screen \"Loan Amount Should Be Between Rs 5000 and 25,00,000\"",
+        "aggregatedDurations": {
+          "median": 0.3757039,
+          "average": 0.3757039
+        },
+        "durations": [
+          {
+            "duration": 0.3757039,
+            "location": "classpath:Features/FrontEnd/B2C/GL_Validation.feature:24"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user should get company address on screen$",
+    "steps": [
+      {
+        "name": "user should get company address on screen",
+        "aggregatedDurations": {
+          "median": 0.865582,
+          "average": 0.865582
+        },
+        "durations": [
+          {
+            "duration": 0.865582,
+            "location": "classpath:Features/FrontEnd/B2C/GL_Validation.feature:34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user is on personal loan page$",
+    "steps": [
+      {
+        "name": "user is on personal loan page",
+        "aggregatedDurations": {
+          "median": 6.91122185,
+          "average": 10.816670466
+        },
+        "durations": [
+          {
+            "duration": 26.7735727,
+            "location": "classpath:Features/FrontEnd/B2C/PL_CTA.feature:5"
+          },
+          {
+            "duration": 6.9511044,
+            "location": "classpath:Features/FrontEnd/B2C/PL_CTA.feature:15"
+          },
+          {
+            "duration": 6.6073462,
+            "location": "classpath:Features/FrontEnd/B2C/PL_Validation.feature:5"
+          },
+          {
+            "duration": 6.8713393,
+            "location": "classpath:Features/FrontEnd/B2C/PL_Validation.feature:15"
+          },
+          {
+            "duration": 11.3236051,
+            "location": "classpath:Features/FrontEnd/B2C/PL_Validation.feature:25"
+          },
+          {
+            "duration": 6.3730551,
+            "location": "classpath:Features/FrontEnd/B2C/PL_Validation.feature:34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Clicks on Features \u0026 Benefits tab",
+    "steps": [
+      {
+        "name": "Clicks on Features \u0026 Benefits tab",
+        "aggregatedDurations": {
+          "median": 0.3176914,
+          "average": 0.3176914
+        },
+        "durations": [
+          {
+            "duration": 0.3176914,
+            "location": "classpath:Features/FrontEnd/B2C/PL_CTA.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Clicks on Apply now button",
+    "steps": [
+      {
+        "name": "Clicks on Apply now button",
+        "aggregatedDurations": {
+          "median": 5.0781261,
+          "average": 5.0781261
+        },
+        "durations": [
+          {
+            "duration": 5.0827247,
+            "location": "classpath:Features/FrontEnd/B2C/PL_CTA.feature:7"
+          },
+          {
+            "duration": 5.0735275,
+            "location": "classpath:Features/FrontEnd/B2C/PL_CTA.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user should be redirected to Application Form tab",
+    "steps": [
+      {
+        "name": "user should be redirected to Application Form tab",
+        "aggregatedDurations": {
+          "median": 0.02992105,
+          "average": 0.02992105
+        },
+        "durations": [
+          {
+            "duration": 0.0319165,
+            "location": "classpath:Features/FrontEnd/B2C/PL_CTA.feature:8"
+          },
+          {
+            "duration": 0.0279256,
+            "location": "classpath:Features/FrontEnd/B2C/PL_CTA.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Clicks on Eligibility Criteria tab",
+    "steps": [
+      {
+        "name": "Clicks on Eligibility Criteria tab",
+        "aggregatedDurations": {
+          "median": 0.382105,
+          "average": 0.382105
+        },
+        "durations": [
+          {
+            "duration": 0.382105,
+            "location": "classpath:Features/FrontEnd/B2C/PL_CTA.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user enters Monthly Salary less than fifteen thousand \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "user enters Monthly Salary less than fifteen thousand \"14999\"",
+        "aggregatedDurations": {
+          "median": 5.2216446,
+          "average": 5.2216446
+        },
+        "durations": [
+          {
+            "duration": 5.2216446,
+            "location": "classpath:Features/FrontEnd/B2C/PL_Validation.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^validation message should be displayed \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "validation message should be displayed \"Your monthly salary should be Rs. 15,000 or above\"",
+        "aggregatedDurations": {
+          "median": 0.4200603,
+          "average": 0.4200603
+        },
+        "durations": [
+          {
+            "duration": 0.4200603,
+            "location": "classpath:Features/FrontEnd/B2C/PL_Validation.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user enters Monthly Salary more than fifteen thousand \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "user enters Monthly Salary more than fifteen thousand \"15000\"",
+        "aggregatedDurations": {
+          "median": 5.2606277,
+          "average": 5.2606277
+        },
+        "durations": [
+          {
+            "duration": 5.2606277,
+            "location": "classpath:Features/FrontEnd/B2C/PL_Validation.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^validation message should not be displayed$",
+    "steps": [
+      {
+        "name": "validation message should not be displayed",
+        "aggregatedDurations": {
+          "median": 0.2912705,
+          "average": 0.2912705
+        },
+        "durations": [
+          {
+            "duration": 0.2912705,
+            "location": "classpath:Features/FrontEnd/B2C/PL_Validation.feature:17"
+          }
+        ]
+      }
+    ]
+  }
+]

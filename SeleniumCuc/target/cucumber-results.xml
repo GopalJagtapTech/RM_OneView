@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="6" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="502.31">
+    <testcase classname="GL_Validation" name="user should get success message when user clicks on Submit button from Gold loan application tab" time="41.146">
+        <failure message="expected:&lt;[]&gt; but was:&lt;[You have successfully submitted your details, Thank you.]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given User is logged in "39915194" "Bajaj@123"..............................passed
+When user is on gold loan page..............................................passed
+And Clicks on Select State dropdown "MAHARASHTRA"...........................passed
+And Clicks on Select City dropdown "Nagpur".................................passed
+And Clicks on Loan Amount field "15000".....................................passed
+And Clicks on terms and conditions checkbox.................................passed
+And Clicks on Submit button.................................................passed
+Then user should get success message popup "You have successfully submitted your details, Thank you.".failed
+And Clicks on ok button.....................................................skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[]> but was:<[You have successfully submitted your details, Thank you.]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinitions.GL_Validations_Steps.success_popup(GL_Validations_Steps.java:98)
+	at ✽.user should get success message popup "You have successfully submitted your details, Thank you."(classpath:Features/FrontEnd/B2C/GL_Validation.feature:12)
+]]></failure>
+    </testcase>
+    <testcase classname="GL_Validation" name="user should get error message when enters incorrect Loan amount" time="37.511">
+        <system-out><![CDATA[Given User is logged in "39915194" "Bajaj@123"..............................passed
+When user is on gold loan page..............................................passed
+And Clicks on Select State dropdown "MAHARASHTRA"...........................passed
+And Clicks on Select City dropdown "Nagpur".................................passed
+And Clicks on Loan Amount field "1500"......................................passed
+Then user should get error message on screen "Loan Amount Should Be Between Rs 5000 and 25,00,000".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="GL_Validation" name="user should get company address after selecting state and city" time="40.417">
+        <system-out><![CDATA[Given User is logged in "39915194" "Bajaj@123"..............................passed
+When user is on gold loan page..............................................passed
+And Clicks on Select State dropdown "MAHARASHTRA"...........................passed
+And Clicks on Select City dropdown "Nagpur".................................passed
+Then user should get company address on screen..............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="PL CTA" name="user should be redirected Application Form tab when user clicks on Apply Now button from Features &amp; Benefits" time="60.9">
+        <system-out><![CDATA[Given User is logged in "39915194" "Bajaj@123"..............................passed
+When user is on personal loan page..........................................passed
+And Clicks on Features & Benefits tab.......................................passed
+And Clicks on Apply now button..............................................passed
+Then user should be redirected to Application Form tab......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="PL CTA" name="user should be redirected Application Form tab when user clicks on Apply Now button from Eligibility Criteria" time="42.23">
+        <system-out><![CDATA[Given User is logged in "50006944" "Bajaj@123"..............................passed
+When user is on personal loan page..........................................passed
+And Clicks on Eligibility Criteria tab......................................passed
+And Clicks on Apply now button..............................................passed
+Then user should be redirected to Application Form tab......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="PL CTA" name="user should be redirected Application Form tab when user clicks on Apply Now button from Documents Required" time="58.029">
+        <failure message="Expected condition failed: waiting for element to be clickable: By.xpath: //a[@href='#portfolio'] (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[Given User is logged in "50006944" "Bajaj@123"..............................passed
+When user is on personal loan page..........................................failed
+And Clicks on Documents Required tab........................................skipped
+And Clicks on Apply now button..............................................skipped
+Then user should be redirected to Application Form tab......................skipped
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[@href='#portfolio'] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at stepDefinitions.PL_CTA_Steps.personal_loan_page(PL_CTA_Steps.java:67)
+	at ✽.user is on personal loan page(classpath:Features/FrontEnd/B2C/PL_CTA.feature:25)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='#portfolio']"}
+  (Session info: MicrosoftEdge=96.0.1054.41)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AP-UPVH0Z66K5GL', ip: '10.236.97.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 96.0.1054.41, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:61667}, msedge: {msedgedriverVersion: 96.0.1054.41 (ae6fee696dce5..., userDataDir: C:\Users\PRIYAN~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cd77ab9b480b5239fbb9e806fdbb8e4
+*** Element info: {Using=xpath, value=//a[@href='#portfolio']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at stepDefinitions.PL_CTA_Steps.personal_loan_page(PL_CTA_Steps.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+]]></failure>
+    </testcase>
+    <testcase classname="PL Validation" name="Validation message should be displayed when Monthly salary is less than 15,000" time="41.603">
+        <system-out><![CDATA[Given User is logged in "50006944" "Bajaj@123"..............................passed
+When user is on personal loan page..........................................passed
+And user enters Monthly Salary less than fifteen thousand "14999"...........passed
+Then validation message should be displayed "Your monthly salary should be Rs. 15,000 or above".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="PL Validation" name="Validation message should not be displayed when Monthly salary is more than 15,000" time="35.762">
+        <system-out><![CDATA[Given User is logged in "50006944" "Bajaj@123"..............................passed
+When user is on personal loan page..........................................passed
+And user enters Monthly Salary more than fifteen thousand "15000"...........passed
+Then validation message should not be displayed.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="PL Validation" name="Validation message should not be displayed when Monthly salary is more than 15,000 2" time="25.055">
+        <failure message="element click intercepted: Element &lt;a href=&quot;#portfolio&quot;&gt;...&lt;/a&gt; is not clickable at point (561, 27). Other element would receive the click: &lt;div class=&quot;modal fade show&quot; id=&quot;demographicmodal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;exampleModalLabel&quot; style=&quot;padding-left: 0px; display: block;&quot; aria-modal=&quot;true&quot;&gt;...&lt;/div&gt;&#10;  (Session info: MicrosoftEdge=96.0.1054.41)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'AP-UPVH0Z66K5GL', ip: '10.236.97.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 96.0.1054.41, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:61932}, msedge: {msedgedriverVersion: 96.0.1054.41 (ae6fee696dce5..., userDataDir: C:\Users\PRIYAN~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fba57be4ed0ac1ae00e32df47b7d77f5" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given User is logged in "50006944" "Bajaj@123"..............................passed
+When user is on personal loan page..........................................failed
+And user enters Monthly Salary more than fifteen thousand "15001"...........skipped
+Then validation message should not be displayed.............................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#portfolio">...</a> is not clickable at point (561, 27). Other element would receive the click: <div class="modal fade show" id="demographicmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="padding-left: 0px; display: block;" aria-modal="true">...</div>
+  (Session info: MicrosoftEdge=96.0.1054.41)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AP-UPVH0Z66K5GL', ip: '10.236.97.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 96.0.1054.41, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:61932}, msedge: {msedgedriverVersion: 96.0.1054.41 (ae6fee696dce5..., userDataDir: C:\Users\PRIYAN~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fba57be4ed0ac1ae00e32df47b7d77f5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at stepDefinitions.PL_CTA_Steps.personal_loan_page(PL_CTA_Steps.java:69)
+	at ✽.user is on personal loan page(classpath:Features/FrontEnd/B2C/PL_Validation.feature:15)
+]]></failure>
+    </testcase>
+    <testcase classname="PL Validation" name="User should not be able to select DOB less than 18 years than today's date" time="35.368">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is logged in "50006944" "Bajaj@123"..............................passed
+When user is on personal loan page..........................................passed
+And user selects DOB "27/11/2003" less than 18 years........................undefined
+Then user should not be able to select date.................................skipped
+]]></failure>
+    </testcase>
+    <testcase classname="PL Validation" name="User should not be able to select DOB less than 18 years than today's date 2" time="54.872">
+        <failure message="Expected condition failed: waiting for element to be clickable: By.xpath: //a[@href='#portfolio'] (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[Given User is logged in "50006944" "Bajaj@123"..............................passed
+When user is on personal loan page..........................................failed
+And user selects DOB "26/11/2003" equal to and more than 18 years...........skipped
+Then user should be able to select date.....................................skipped
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[@href='#portfolio'] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at stepDefinitions.PL_CTA_Steps.personal_loan_page(PL_CTA_Steps.java:67)
+	at ✽.user is on personal loan page(classpath:Features/FrontEnd/B2C/PL_Validation.feature:34)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='#portfolio']"}
+  (Session info: MicrosoftEdge=96.0.1054.41)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AP-UPVH0Z66K5GL', ip: '10.236.97.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 96.0.1054.41, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:62112}, msedge: {msedgedriverVersion: 96.0.1054.41 (ae6fee696dce5..., userDataDir: C:\Users\PRIYAN~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f18b1cb75c42cf056e483bf1fe818a2b
+*** Element info: {Using=xpath, value=//a[@href='#portfolio']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at stepDefinitions.PL_CTA_Steps.personal_loan_page(PL_CTA_Steps.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+]]></failure>
+    </testcase>
+    <testcase classname="PL Validation" name="User should not be able to select DOB less than 18 years than today's date 3" time="29.054">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given User is logged in "50006944" "Bajaj@123"..............................passed
+When user is on personal loan page..........................................passed
+And user selects DOB "20/11/2003" equal to and more than 18 years...........undefined
+Then user should be able to select date.....................................skipped
+]]></failure>
+    </testcase>
+</testsuite>
