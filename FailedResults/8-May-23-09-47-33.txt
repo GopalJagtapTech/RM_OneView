@@ -1,0 +1,1640 @@
+Banner Offers Fixed Deposit Image is Not Present------------>  Banner Offers - Fixed Deposit
+
+Banner Offers Fixed Deposit Description Text is Not Present------------>  Banner Offers - Fixed Deposit
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/fixed-deposit-online?ProductName=FD. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Fixed Deposit
+
+New Tab is Opened instead of SSO------------>  Banner Offers - Fixed Deposit
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/investments/fixed-deposit?ProductName=FD------------>  Banner Offers - Fixed Deposit
+
+Expected URL : https://www.bajajfinserv.in/fixed-deposit-online?ProductName=FD------------>  Banner Offers - Fixed Deposit
+
+Banner Offers Car Insurance Image is Not Present------------>  Banner Offers - Car Insurance
+
+Banner Offers Personal Loan Image is Not Present------------>  Banner Offers - Personal Loan)
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/personal-loan. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Personal Loan)
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/personal-loan------------>  Banner Offers - Personal Loan)
+
+Expected URL : https://www.bajajfinserv.in/personal-loan------------>  Banner Offers - Personal Loan)
+
+Banner Offers Bajaj Finserv RBL Bank SuperCard Image is Not Present------------>  Banner Offers - Bajaj Finserv RBL Bank SuperCard6
+
+Banner Offers Insta EMI Card Image is Not Present------------>  Banner Offers - Insta EMI CardC
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/insta-emi-network-card-apply-online. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Insta EMI CardC
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/insta-emi-card------------>  Banner Offers - Insta EMI CardC
+
+Expected URL : https://www.bajajfinserv.in/insta-emi-network-card-apply-online------------>  Banner Offers - Insta EMI CardC
+
+Banner Offers Gold Loan Image is Not Present------------>  Banner Offers - Gold LoanP
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/gold-loan-application-form. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Gold LoanP
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/gold-loan------------>  Banner Offers - Gold LoanP
+
+Expected URL : https://www.bajajfinserv.in/gold-loan-application-form------------>  Banner Offers - Gold LoanP
+
+Failed in Verify Logo is Displayed in New Home. Exception: class java.lang.NullPointerException------------>  Brand Store - WatchoutV
+
+Failed in verify Nudge Text As Per AEM. Exception: class java.lang.NullPointerException------------>  Brand Store - WatchoutV
+
+Failed in click on New Home Options with AEM. Exception: class java.lang.NullPointerException------------>  Brand Store - WatchoutV
+
+Failed in wait for Element Loaded URL: null. Exception: class java.lang.NullPointerException------------>  Brand Store - WatchoutV
+
+Failed in verify Redirection URL contains null. Exception: class java.lang.NullPointerException------------>  Brand Store - WatchoutV
+
+Failed in Verify Logo is Displayed in New Home. Exception: class java.lang.NullPointerException------------>  Brand Store - Leader Cyclesl
+
+Failed in verify Nudge Text As Per AEM. Exception: class java.lang.NullPointerException------------>  Brand Store - Leader Cyclesl
+
+Failed in click on New Home Options with AEM. Exception: class java.lang.NullPointerException------------>  Brand Store - Leader Cyclesl
+
+Failed in wait for Element Loaded URL: null. Exception: class java.lang.NullPointerException------------>  Brand Store - Leader Cyclesl
+
+Failed in verify Redirection URL contains null. Exception: class java.lang.NullPointerException------------>  Brand Store - Leader Cyclesl
+
+Failed in Verify Logo is Displayed in New Home. Exception: class java.lang.NullPointerException------------>  Brand Store - Powermaxw
+
+Failed in verify Nudge Text As Per AEM. Exception: class java.lang.NullPointerException------------>  Brand Store - Powermaxw
+
+Failed in click on New Home Options with AEM. Exception: class java.lang.NullPointerException------------>  Brand Store - Powermaxw
+
+Failed in wait for Element Loaded URL: null. Exception: class java.lang.NullPointerException------------>  Brand Store - Powermaxw
+
+Failed in verify Redirection URL contains null. Exception: class java.lang.NullPointerException------------>  Brand Store - Powermaxw
+
+The given window "2" is failed to open------------>  Carousal - Book an FD at up to 8.10% p.a.
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/investments/fixed-deposit?ProductName=FD------------>  Carousal - Book an FD at up to 8.10% p.a.
+
+Expected URL : https://www.bajajfinserv.in/fixed-deposit-online?ProductName=FD------------>  Carousal - Book an FD at up to 8.10% p.a.
+
+Failed in wait for Element Loaded URL: /MyAccountService/HelpAndSupport/Index?. Exception: class org.openqa.selenium.TimeoutException------------>  Carousal - Help and Support&
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/CustomErrorPage------------>  Carousal - Help and Support&
+
+Expected URL : /MyAccountService/HelpAndSupport/Index?------------>  Carousal - Help and Support&
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/fixed-deposit-calculators. Exception: class org.openqa.selenium.TimeoutException------------>  Explore - Fixed Deposit Calculator
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/------------>  Explore - Fixed Deposit Calculator
+
+Expected URL : https://www.bajajfinserv.in/fixed-deposit-calculators------------>  Explore - Fixed Deposit Calculator
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/fixed-deposit-online?ProductName=SDP. Exception: class org.openqa.selenium.TimeoutException------------>  Investments - Systematic Deposit Plan
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/investments/fixed-deposit?ProductName=SDP------------>  Investments - Systematic Deposit Plan
+
+Expected URL : https://www.bajajfinserv.in/fixed-deposit-online?ProductName=SDP------------>  Investments - Systematic Deposit Plan
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/fixed-deposit-online?ProductName=FD. Exception: class org.openqa.selenium.TimeoutException------------>  Investments - Senior Citizen FD'
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/investments/fixed-deposit?ProductName=FD------------>  Investments - Senior Citizen FD'
+
+Expected URL : https://www.bajajfinserv.in/fixed-deposit-online?ProductName=FD------------>  Investments - Senior Citizen FD'
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/mutual-funds. Exception: class org.openqa.selenium.TimeoutException------------>  Investments - Mutual Funds3
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/investments/mutual-funds------------>  Investments - Mutual Funds3
+
+Expected URL : https://www.bajajfinserv.in/mutual-funds------------>  Investments - Mutual Funds3
+
+Failed in Verify Logo is Displayed in New Home. Exception: class java.lang.NullPointerException------------>  Lifestyle Store - Gas Stoves
+
+Failed in verify Nudge Text As Per AEM. Exception: class java.lang.NullPointerException------------>  Lifestyle Store - Gas Stoves
+
+Failed in click on New Home Options with AEM. Exception: class java.lang.NullPointerException------------>  Lifestyle Store - Gas Stoves
+
+The given window "2" is failed to open------------>  Lifestyle Store - Gas Stoves
+
+Failed in verify Redirection URL contains null. Exception: class java.lang.NullPointerException------------>  Lifestyle Store - Gas Stoves
+
+Failed in wait for Element Loaded URL: https://cont-sites.bajajfinserv.in/personal-loan. Exception: class org.openqa.selenium.TimeoutException------------>  Apply for loans - Personal
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/personal-loan------------>  Apply for loans - Personal
+
+Expected URL : https://cont-sites.bajajfinserv.in/personal-loan------------>  Apply for loans - Personal
+
+Apply for loans Business Logo is Not Present------------>  Apply for loans - Business
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/business-loan-form. Exception: class org.openqa.selenium.TimeoutException------------>  Apply for loans - Business
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/business-loan------------>  Apply for loans - Business
+
+Expected URL : https://www.bajajfinserv.in/business-loan-form------------>  Apply for loans - Business
+
+Doctor Option Nudge Text is  Present Wrongly------------>  Apply for loans - Doctor&
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/apply-for-doctor-loan. Exception: class org.openqa.selenium.TimeoutException------------>  Apply for loans - Doctor&
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/doctor-loan------------>  Apply for loans - Doctor&
+
+Expected URL : https://www.bajajfinserv.in/apply-for-doctor-loan------------>  Apply for loans - Doctor&
+
+Apply for loans Gold Logo is Not Present------------>  Apply for loans - Gold2
+
+Gold Option is Not Present------------>  Apply for loans - Gold2
+
+Gold Option is Not Present------------>  Apply for loans - Gold2
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/gold-loan-application-form. Exception: class org.openqa.selenium.TimeoutException------------>  Apply for loans - Gold2
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=0c21f3de-7178-4ef9-bade-d42bcb9ac0cd#;------------>  Apply for loans - Gold2
+
+Expected URL : https://www.bajajfinserv.in/gold-loan-application-form------------>  Apply for loans - Gold2
+
+Insta EMI card EMI Card Logo is Not Present------------>  Insta EMI card - EMI Card=
+
+EMI Card Option GET IT NOW Nudge text is Not Present------------>  Insta EMI card - EMI Card=
+
+EMI Card Option GET IT NOW Nudge text is Not Present------------>  Insta EMI card - EMI Card=
+
+EMI Card Option GET IT NOW Nudge text is Not Displayed Successfully------------>  Insta EMI card - EMI Card=
+
+EMI Card Option is Not Present------------>  Insta EMI card - EMI Card=
+
+EMI Card Option is Not Present------------>  Insta EMI card - EMI Card=
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/insta-emi-network-card-apply-online. Exception: class org.openqa.selenium.TimeoutException------------>  Insta EMI card - EMI Card=
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Insta EMI card - EMI Card=
+
+Expected URL : https://www.bajajfinserv.in/insta-emi-network-card-apply-online------------>  Insta EMI card - EMI Card=
+
+Insta EMI card Partners Logo is Not Present------------>  Insta EMI card - PartnersU
+
+Partners Option is Not Present------------>  Insta EMI card - PartnersU
+
+Partners Option is Not Present------------>  Insta EMI card - PartnersU
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/locator. Exception: class org.openqa.selenium.TimeoutException------------>  Insta EMI card - PartnersU
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Insta EMI card - PartnersU
+
+Expected URL : https://www.bajajfinserv.in/locator------------>  Insta EMI card - PartnersU
+
+Insta EMI card Offers Logo is Not Present------------>  Insta EMI card - Offersa
+
+Offers Option is Not Present------------>  Insta EMI card - Offersa
+
+Offers Option is Not Present------------>  Insta EMI card - Offersa
+
+Failed in wait for Element Loaded URL: https://cont-sites.bajajfinserv.in/no-cost-emi-offers. Exception: class org.openqa.selenium.TimeoutException------------>  Insta EMI card - Offersa
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountLogin------------>  Insta EMI card - Offersa
+
+Expected URL : https://cont-sites.bajajfinserv.in/no-cost-emi-offers------------>  Insta EMI card - Offersa
+
+Failed in Screenshot in Hooks------------>  Insta EMI card - Offersa
+
+Co-branded Credit card RBL Bank Logo is Not Present------------>  Co-branded Credit card - RBL Bankl
+
+RBL Bank Option is Not Present------------>  Co-branded Credit card - RBL Bankl
+
+RBL Bank Option is Not Present------------>  Co-branded Credit card - RBL Bankl
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/apply-for-credit-card-online. Exception: class org.openqa.selenium.TimeoutException------------>  Co-branded Credit card - RBL Bankl
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=6a32f1f9-08c2-4438-8be8-ea6ed862ea84------------>  Co-branded Credit card - RBL Bankl
+
+Expected URL : https://www.bajajfinserv.in/apply-for-credit-card-online------------>  Co-branded Credit card - RBL Bankl
+
+Co-branded Credit card DBS Bank Logo is Not Present------------>  Co-branded Credit card - DBS Banky
+
+DBS Bank Option is Not Present------------>  Co-branded Credit card - DBS Banky
+
+DBS Bank Option is Not Present------------>  Co-branded Credit card - DBS Banky
+
+Co-branded Credit card Eligibility Logo is Not Present------------>  Co-branded Credit card - Eligibility
+
+Eligibility Option is Not Present------------>  Co-branded Credit card - Eligibility
+
+Eligibility Option is Not Present------------>  Co-branded Credit card - Eligibility
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/credit-card-eligibility-and-documents. Exception: class org.openqa.selenium.TimeoutException------------>  Co-branded Credit card - Eligibility
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=6a32f1f9-08c2-4438-8be8-ea6ed862ea84------------>  Co-branded Credit card - Eligibility
+
+Expected URL : https://www.bajajfinserv.in/credit-card-eligibility-and-documents------------>  Co-branded Credit card - Eligibility
+
+Co-branded Credit card Offers Logo is Not Present------------>  Co-branded Credit card - Offers
+
+Offers Option is Not Present------------>  Co-branded Credit card - Offers
+
+Offers Option is Not Present------------>  Co-branded Credit card - Offers
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/credit-card-offers. Exception: class org.openqa.selenium.TimeoutException------------>  Co-branded Credit card - Offers
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Co-branded Credit card - Offers
+
+Expected URL : https://www.bajajfinserv.in/credit-card-offers------------>  Co-branded Credit card - Offers
+
+Offers for you Smartphone Title is Not Present------------>  Offers For You - Smartphone
+
+Offers for you Smartphone Title is Not Present------------>  Offers For You - Smartphone
+
+The given window "2" is failed to open------------>  Offers For You - Smartphone
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Offers For You - Smartphone
+
+Expected URL : https://www.bajajmall.in/emi-store/air-conditioners.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_offers_ac&utm_content=my_account_homepage------------>  Offers For You - Smartphone
+
+Offers for you Personal Loan Title is Not Present------------>  Offers For You - Personal Loan
+
+Offers for you Personal Loan Title is Not Present------------>  Offers For You - Personal Loan
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/insta-personal-loan. Exception: class org.openqa.selenium.TimeoutException------------>  Offers For You - Personal Loan
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Offers For You - Personal Loan
+
+Expected URL : https://www.bajajfinserv.in/insta-personal-loan------------>  Offers For You - Personal Loan
+
+Offers for you CIBIL Score Title is Not Present------------>  Offers For You - CIBIL Score"
+
+Offers for you CIBIL Score Title is Not Present------------>  Offers For You - CIBIL Score"
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/check-free-cibil-score. Exception: class org.openqa.selenium.TimeoutException------------>  Offers For You - CIBIL Score"
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Offers For You - CIBIL Score"
+
+Expected URL : https://www.bajajfinserv.in/check-free-cibil-score------------>  Offers For You - CIBIL Score"
+
+Offers for you Two-wheeler Loan Title is Not Present------------>  Offers For You - Two-wheeler Loan,
+
+Offers for you Two-wheeler Loan Title is Not Present------------>  Offers For You - Two-wheeler Loan,
+
+The given window "2" is failed to open------------>  Offers For You - Two-wheeler Loan,
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Offers For You - Two-wheeler Loan,
+
+Expected URL : https://www.bajajmall.in/emi-store/two-wheeler-brand-store.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_offers_two_wheeler&utm_content=my_account_homepage------------>  Offers For You - Two-wheeler Loan,
+
+Offers for you Credit Card Title is Not Present------------>  Offers For You - Credit Card7
+
+Offers for you Credit Card Title is Not Present------------>  Offers For You - Credit Card7
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/apply-for-dbs-credit-card-online. Exception: class org.openqa.selenium.TimeoutException------------>  Offers For You - Credit Card7
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Offers For You - Credit Card7
+
+Expected URL : https://www.bajajfinserv.in/apply-for-dbs-credit-card-online------------>  Offers For You - Credit Card7
+
+Offers for you Gold Loan Title is Not Present------------>  Offers For You - Gold LoanB
+
+Offers for you Gold Loan Title is Not Present------------>  Offers For You - Gold LoanB
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/gold-loan-application-form. Exception: class org.openqa.selenium.TimeoutException------------>  Offers For You - Gold LoanB
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Offers For You - Gold LoanB
+
+Expected URL : https://www.bajajfinserv.in/gold-loan-application-form------------>  Offers For You - Gold LoanB
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/insta-emi-network-card-apply-online. Exception: class org.openqa.selenium.TimeoutException------------>  Offers For You - Insta EMI CardM
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/insta-emi-card------------>  Offers For You - Insta EMI CardM
+
+Expected URL : https://www.bajajfinserv.in/insta-emi-network-card-apply-online------------>  Offers For You - Insta EMI CardM
+
+Offers for you LED Tv Title is Not Present------------>  Offers For You - LED TvW
+
+Offers for you LED Tv Title is Not Present------------>  Offers For You - LED TvW
+
+The given window "2" is failed to open------------>  Offers For You - LED TvW
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Offers For You - LED TvW
+
+Expected URL : https://www.bajajmall.in/emi-store/television.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_offers_tv&utm_content=my_account_homepage------------>  Offers For You - LED TvW
+
+Offers for you Home Loan Title is Not Present------------>  Offers For You - Home Loanb
+
+Offers for you Home Loan Title is Not Present------------>  Offers For You - Home Loanb
+
+Failed in wait for Element Loaded URL: https://www.bajajmall.in/emi-store/television.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_offers_tv&utm_content=my_account_homepage. Exception: class org.openqa.selenium.TimeoutException------------>  Offers For You - Home Loanb
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Offers For You - Home Loanb
+
+Expected URL : https://www.bajajmall.in/emi-store/television.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_offers_tv&utm_content=my_account_homepage------------>  Offers For You - Home Loanb
+
+Offers for you Doctor Loan Title is Not Present------------>  Offers For You - Doctor Loanm
+
+Offers for you Doctor Loan Title is Not Present------------>  Offers For You - Doctor Loanm
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/apply-for-doctor-loan. Exception: class org.openqa.selenium.TimeoutException------------>  Offers For You - Doctor Loanm
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Offers For You - Doctor Loanm
+
+Expected URL : https://www.bajajfinserv.in/apply-for-doctor-loan------------>  Offers For You - Doctor Loanm
+
+Offers for you Business Loan Title is Not Present------------>  Offers For You - Business Loanx
+
+Offers for you Business Loan Title is Not Present------------>  Offers For You - Business Loanx
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/business-loan-form. Exception: class org.openqa.selenium.TimeoutException------------>  Offers For You - Business Loanx
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Offers For You - Business Loanx
+
+Expected URL : https://www.bajajfinserv.in/business-loan-form------------>  Offers For You - Business Loanx
+
+Online Stores Bajaj Finserv Health Logo is Not Present------------>  Online Stores - Bajaj Finserv Health
+
+Bajaj Finserv Health Option is Not Present------------>  Online Stores - Bajaj Finserv Health
+
+Bajaj Finserv Health Option is Not Present------------>  Online Stores - Bajaj Finserv Health
+
+Proceed button in Online stores  Redirect popup is Not Present------------>  Online Stores - Bajaj Finserv Health
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/online-stores-bajajfinservhealth. Exception: class org.openqa.selenium.TimeoutException------------>  Online Stores - Bajaj Finserv Health
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Online Stores - Bajaj Finserv Health
+
+Expected URL : https://www.bajajfinserv.in/online-stores-bajajfinservhealth------------>  Online Stores - Bajaj Finserv Health
+
+Online Stores Paymatrix Logo is Not Present------------>  Online Stores - Paymatrix
+
+Paymatrix Option is Not Present------------>  Online Stores - Paymatrix
+
+Paymatrix Option is Not Present------------>  Online Stores - Paymatrix
+
+Proceed button in Online stores  Redirect popup is Not Present------------>  Online Stores - Paymatrix
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/online-stores-paymatrix. Exception: class org.openqa.selenium.TimeoutException------------>  Online Stores - Paymatrix
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Online Stores - Paymatrix
+
+Expected URL : https://www.bajajfinserv.in/online-stores-paymatrix------------>  Online Stores - Paymatrix
+
+Online Stores Vedantu Logo is Not Present------------>  Online Stores - Vedantu(
+
+Vedantu Option is Not Present------------>  Online Stores - Vedantu(
+
+Vedantu Option is Not Present------------>  Online Stores - Vedantu(
+
+Proceed button in Online stores  Redirect popup is Not Present------------>  Online Stores - Vedantu(
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/online-stores-vedantu. Exception: class org.openqa.selenium.TimeoutException------------>  Online Stores - Vedantu(
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Online Stores - Vedantu(
+
+Expected URL : https://www.bajajfinserv.in/online-stores-vedantu------------>  Online Stores - Vedantu(
+
+Failed in Verify Logo is Displayed in New Home. Exception: class java.lang.NullPointerException------------>  Online Stores - EaseMy Trip5
+
+Failed in verify Nudge Text As Per AEM. Exception: class java.lang.NullPointerException------------>  Online Stores - EaseMy Trip5
+
+Failed in click on New Home Options with AEM. Exception: class java.lang.NullPointerException------------>  Online Stores - EaseMy Trip5
+
+Proceed button in Online stores  Redirect popup is Not Present------------>  Online Stores - EaseMy Trip5
+
+Failed in wait for Element Loaded URL: null. Exception: class java.lang.NullPointerException------------>  Online Stores - EaseMy Trip5
+
+Failed in verify Redirection URL contains null. Exception: class java.lang.NullPointerException------------>  Online Stores - EaseMy Trip5
+
+Online Stores Inshorts Logo is Not Present------------>  Online Stores - InshortsB
+
+Inshorts Option is Not Present------------>  Online Stores - InshortsB
+
+Inshorts Option is Not Present------------>  Online Stores - InshortsB
+
+Proceed button in Online stores  Redirect popup is Not Present------------>  Online Stores - InshortsB
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/online-stores-inshorts. Exception: class org.openqa.selenium.TimeoutException------------>  Online Stores - InshortsB
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Online Stores - InshortsB
+
+Expected URL : https://www.bajajfinserv.in/online-stores-inshorts------------>  Online Stores - InshortsB
+
+Online Stores CarDekho Logo is Not Present------------>  Online Stores - CarDekhoO
+
+CarDekho Option is Not Present------------>  Online Stores - CarDekhoO
+
+CarDekho Option is Not Present------------>  Online Stores - CarDekhoO
+
+Proceed button in Online stores  Redirect popup is Not Present------------>  Online Stores - CarDekhoO
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/online-stores-car-dekho. Exception: class org.openqa.selenium.TimeoutException------------>  Online Stores - CarDekhoO
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Online Stores - CarDekhoO
+
+Expected URL : https://www.bajajfinserv.in/online-stores-car-dekho------------>  Online Stores - CarDekhoO
+
+Online Stores The Man Company Logo is Not Present------------>  Online Stores - The Man Company\
+
+The Man Company Option is Not Present------------>  Online Stores - The Man Company\
+
+The Man Company Option is Not Present------------>  Online Stores - The Man Company\
+
+Proceed button in Online stores  Redirect popup is Not Present------------>  Online Stores - The Man Company\
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/online-stores-the-man-company. Exception: class org.openqa.selenium.TimeoutException------------>  Online Stores - The Man Company\
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Online Stores - The Man Company\
+
+Expected URL : https://www.bajajfinserv.in/online-stores-the-man-company------------>  Online Stores - The Man Company\
+
+Online Stores True Elements Logo is Not Present------------>  Online Stores - True Elementsh
+
+True Elements Option is Not Present------------>  Online Stores - True Elementsh
+
+True Elements Option is Not Present------------>  Online Stores - True Elementsh
+
+Proceed button in Online stores  Redirect popup is Not Present------------>  Online Stores - True Elementsh
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/online-stores-true-elements. Exception: class org.openqa.selenium.TimeoutException------------>  Online Stores - True Elementsh
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Online Stores - True Elementsh
+
+Expected URL : https://www.bajajfinserv.in/online-stores-true-elements------------>  Online Stores - True Elementsh
+
+ Locate us Title is Not Present------------>  Home page - Locate us
+
+ Locate us Title is Not Present------------>  Home page - Locate us
+
+ Locate us Title is Not Present------------>  Home page - Locate us
+
+Locate us Title is Not Present------------>  Home page - Locate us
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Home page - Locate us
+
+Expected URL : https://www.bajajfinserv.in/branch-locator------------>  Home page - Locate us
+
+ Savdhaan Rahein. Safe Rahein Title is Not Present------------>  Home page - Savdhaan Rahein. Safe Rahein
+
+ Savdhaan Rahein. Safe Rahein Title is Not Present------------>  Home page - Savdhaan Rahein. Safe Rahein
+
+ Savdhaan Rahein. Safe Rahein Title is Not Present------------>  Home page - Savdhaan Rahein. Safe Rahein
+
+Savdhaan Rahein. Safe Rahein Title is Not Present------------>  Home page - Savdhaan Rahein. Safe Rahein
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Home page - Savdhaan Rahein. Safe Rahein
+
+Expected URL : https://www.bajajfinserv.in/payment-fraud-awareness------------>  Home page - Savdhaan Rahein. Safe Rahein
+
+Partner Offers Vedantu Image is Not Present------------>  Partner Offers - Vedantu
+
+Partner Offers Vedantu Image is Not Present------------>  Partner Offers - Vedantu
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/online-stores-vedantu. Exception: class org.openqa.selenium.TimeoutException------------>  Partner Offers - Vedantu
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Partner Offers - Vedantu
+
+Expected URL : https://www.bajajfinserv.in/online-stores-vedantu------------>  Partner Offers - Vedantu
+
+Partner Offers Ease My Trip Image is Not Present------------>  Partner Offers - Ease My Trip
+
+Partner Offers Ease My Trip Image is Not Present------------>  Partner Offers - Ease My Trip
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/online-stores-ease-my-trip. Exception: class org.openqa.selenium.TimeoutException------------>  Partner Offers - Ease My Trip
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Partner Offers - Ease My Trip
+
+Expected URL : https://www.bajajfinserv.in/online-stores-ease-my-trip------------>  Partner Offers - Ease My Trip
+
+Partner Offers The Man Company Image is Not Present------------>  Partner Offers - The Man Company"
+
+Partner Offers The Man Company Image is Not Present------------>  Partner Offers - The Man Company"
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/online-stores-the-man-company. Exception: class org.openqa.selenium.TimeoutException------------>  Partner Offers - The Man Company"
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Partner Offers - The Man Company"
+
+Expected URL : https://www.bajajfinserv.in/online-stores-the-man-company------------>  Partner Offers - The Man Company"
+
+Partner Offers True Elements Image is Not Present------------>  Partner Offers - True Elements-
+
+Partner Offers True Elements Image is Not Present------------>  Partner Offers - True Elements-
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/online-stores-true-elements. Exception: class org.openqa.selenium.TimeoutException------------>  Partner Offers - True Elements-
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Partner Offers - True Elements-
+
+Expected URL : https://www.bajajfinserv.in/online-stores-true-elements------------>  Partner Offers - True Elements-
+
+Products for you Personal Loan Logo is Not Present------------>  Products for you - Personal Loan
+
+Products for you Personal Loan Logo is not present------------>  Products for you - Personal Loan
+
+Personal Loan Option Up to Rs. 40L Nudge text is Not Present------------>  Products for you - Personal Loan
+
+Personal Loan Option Up to Rs. 40L Nudge text is Not Present------------>  Products for you - Personal Loan
+
+Personal Loan Option Up to Rs. 40L Nudge text is Not Displayed Successfully------------>  Products for you - Personal Loan
+
+Personal Loan Option is Not Present------------>  Products for you - Personal Loan
+
+Personal Loan Option is Not Present------------>  Products for you - Personal Loan
+
+Failed in wait for Element Loaded URL: https://online-personal-loan.bajajfinserv.in/DGLogin. Exception: class org.openqa.selenium.TimeoutException------------>  Products for you - Personal Loan
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Products for you - Personal Loan
+
+Expected URL : https://online-personal-loan.bajajfinserv.in/DGLogin------------>  Products for you - Personal Loan
+
+Products for you Bajaj Mall Logo is Not Present------------>  Products for you - Bajaj Mall
+
+Products for you Bajaj Mall Logo is not present------------>  Products for you - Bajaj Mall
+
+The given window "2" is failed to open------------>  Products for you - Bajaj Mall
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Products for you - Bajaj Mall
+
+Expected URL : https://www.bajajmall.in/emi-store/air-conditioners.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_products_ac&utm_content=my_account_homepage------------>  Products for you - Bajaj Mall
+
+Products for you Co-Branded Credit Card Logo is Not Present------------>  Products for you - Co-Branded Credit Card$
+
+Products for you Co-Branded Credit Card Logo is not present------------>  Products for you - Co-Branded Credit Card$
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/apply-for-credit-card-online. Exception: class org.openqa.selenium.TimeoutException------------>  Products for you - Co-Branded Credit Card$
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Products for you - Co-Branded Credit Card$
+
+Expected URL : https://www.bajajfinserv.in/apply-for-credit-card-online------------>  Products for you - Co-Branded Credit Card$
+
+Products for you Fixed Deposit Logo is Not Present------------>  Products for you - Fixed Deposit1
+
+Products for you Fixed Deposit Logo is not present------------>  Products for you - Fixed Deposit1
+
+Fixed Deposit Option Upto 8.20% Nudge text is Not Present------------>  Products for you - Fixed Deposit1
+
+Fixed Deposit Option Upto 8.20% Nudge text is Not Present------------>  Products for you - Fixed Deposit1
+
+Fixed Deposit Option Upto 8.20% Nudge text is Not Displayed Successfully------------>  Products for you - Fixed Deposit1
+
+Products for you Gold Loan Logo is Not Present------------>  Products for you - Gold Loan<
+
+Products for you Gold Loan Logo is not present------------>  Products for you - Gold Loan<
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/gold-loan-application-form. Exception: class org.openqa.selenium.TimeoutException------------>  Products for you - Gold Loan<
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Products for you - Gold Loan<
+
+Expected URL : https://www.bajajfinserv.in/gold-loan-application-form------------>  Products for you - Gold Loan<
+
+Products for you Health Insurance Logo is Not Present------------>  Products for you - Health InsuranceG
+
+Products for you Health Insurance Logo is not present------------>  Products for you - Health InsuranceG
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/marketplace/insurance/health-insurance/health-insurance-premium-calculator/getGoingNow. Exception: class org.openqa.selenium.TimeoutException------------>  Products for you - Health InsuranceG
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Products for you - Health InsuranceG
+
+Expected URL : https://www.bajajfinserv.in/marketplace/insurance/health-insurance/health-insurance-premium-calculator/getGoingNow------------>  Products for you - Health InsuranceG
+
+Products for you Car Insurance Logo is Not Present------------>  Products for you - Car InsuranceR
+
+Products for you Car Insurance Logo is not present------------>  Products for you - Car InsuranceR
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/marketplace/insurance/car-insurance/car-insurance-premium-calculator/vehicleRegistration. Exception: class org.openqa.selenium.TimeoutException------------>  Products for you - Car InsuranceR
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Products for you - Car InsuranceR
+
+Expected URL : https://www.bajajfinserv.in/marketplace/insurance/car-insurance/car-insurance-premium-calculator/vehicleRegistration------------>  Products for you - Car InsuranceR
+
+Products for you Bike Insurance Logo is Not Present------------>  Products for you - Bike Insurance]
+
+Products for you Bike Insurance Logo is not present------------>  Products for you - Bike Insurance]
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/marketplace/insurance/two-wheeler-insurance/bike-insurance-premium-calculator/vehicleRegistration. Exception: class org.openqa.selenium.TimeoutException------------>  Products for you - Bike Insurance]
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin/login/loginerrorPage#;------------>  Products for you - Bike Insurance]
+
+Expected URL : https://www.bajajfinserv.in/marketplace/insurance/two-wheeler-insurance/bike-insurance-premium-calculator/vehicleRegistration------------>  Products for you - Bike Insurance]
+
+Products for you Business Loan Logo is Not Present------------>  Products for you - Business Loanh
+
+Products for you Business Loan Logo is not present------------>  Products for you - Business Loanh
+
+Failed in verify Element Is NOt Present Using Locator Business Loan Option Nudge Text. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Business Loanh
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Business Loanh
+
+Failed in Screenshot in Hooks------------>  Products for you - Business Loanh
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/business-loan-form. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Business Loanh
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Business Loanh
+
+Failed in verify Redirection in Same Tab URL: https://www.bajajfinserv.in/business-loan-form. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Business Loanh
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Business Loanh
+
+Failed in Screenshot in Hooks------------>  Products for you - Business Loanh
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Business Loanh
+
+Failed in Screenshot in Hooks------------>  Products for you - Doctor Loans
+
+Failed in Screenshot in Hooks------------>  Products for you - Doctor Loans
+
+Failed in scroll To WebElement If Present for Products for you Doctor Loan Logo. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Doctor Loans
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Doctor Loans
+
+Products for you Doctor Loan Logo is not present------------>  Products for you - Doctor Loans
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Doctor Loans
+
+Failed in Screenshot in Hooks------------>  Products for you - Doctor Loans
+
+Failed in verify Element Is NOt Present Using Locator Doctor Loan Option Nudge Text. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Doctor Loans
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Doctor Loans
+
+Failed in Screenshot in Hooks------------>  Products for you - Doctor Loans
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/apply-for-doctor-loan. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Doctor Loans
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Doctor Loans
+
+Failed in verify Redirection in Same Tab URL: https://www.bajajfinserv.in/apply-for-doctor-loan. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Doctor Loans
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Doctor Loans
+
+Failed in Screenshot in Hooks------------>  Products for you - Doctor Loans
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Doctor Loans
+
+Failed in Screenshot in Hooks------------>  Products for you - Two-wheeler Loan~
+
+Failed in Screenshot in Hooks------------>  Products for you - Two-wheeler Loan~
+
+Failed in scroll To WebElement If Present for Products for you Two-wheeler Loan Logo. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Two-wheeler Loan~
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Two-wheeler Loan~
+
+Products for you Two-wheeler Loan Logo is not present------------>  Products for you - Two-wheeler Loan~
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Two-wheeler Loan~
+
+Failed in Screenshot in Hooks------------>  Products for you - Two-wheeler Loan~
+
+Failed in verify Element Is NOt Present Using Locator Two-wheeler Loan Option Nudge Text. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Two-wheeler Loan~
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Two-wheeler Loan~
+
+Failed in Screenshot in Hooks------------>  Products for you - Two-wheeler Loan~
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Two-wheeler Loan~
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Two-wheeler Loan~
+
+Failed in Transfer Control To Window 2. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Two-wheeler Loan~
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Two-wheeler Loan~
+
+Failed in verify Redirection URL contains https://www.bajajmall.in/emi-store/two-wheeler-brand-store.html. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Two-wheeler Loan~
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Two-wheeler Loan~
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Two-wheeler Loan~
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Two-wheeler Loan~
+
+Failed in Transfer Control To Window 1. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Two-wheeler Loan~
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Two-wheeler Loan~
+
+Failed in Screenshot in Hooks------------>  Products for you - Two-wheeler Loan~
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Two-wheeler Loan~
+
+Failed in Screenshot in Hooks------------>  Products for you - Loan Against Property
+
+Failed in Screenshot in Hooks------------>  Products for you - Loan Against Property
+
+Failed in scroll To WebElement If Present for Products for you Loan Against Property Logo. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Loan Against Property
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Loan Against Property
+
+Products for you Loan Against Property Logo is not present------------>  Products for you - Loan Against Property
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Loan Against Property
+
+Failed in Screenshot in Hooks------------>  Products for you - Loan Against Property
+
+Failed in verify Element Is NOt Present Using Locator Loan Against Property Option Nudge Text. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Loan Against Property
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Loan Against Property
+
+Failed in Screenshot in Hooks------------>  Products for you - Loan Against Property
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/lap-pincode-master?utm_source=OrganicMyAccount&utm_medium=MyAccount_ProductsForYou_LAP&utm_campaign=MyAccount_ProductsForYou. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Loan Against Property
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Loan Against Property
+
+Failed in verify Redirection in Same Tab URL: https://www.bajajfinserv.in/lap-pincode-master?utm_source=OrganicMyAccount&utm_medium=MyAccount_ProductsForYou_LAP&utm_campaign=MyAccount_ProductsForYou. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Loan Against Property
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Loan Against Property
+
+Failed in Screenshot in Hooks------------>  Products for you - Loan Against Property
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Products for you - Loan Against Property
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Smartphones
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Smartphones
+
+Failed in scroll To WebElement If Present for Shop on Bajaj Mall Smartphones Logo. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartphones
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartphones
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Smartphones
+
+Failed in verify Element Is NOt Present Using Locator Smartphones Option Nudge Text. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartphones
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartphones
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Smartphones
+
+Failed in verify Element Is Displayed Or Not using Scroll Smartphones Option. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartphones
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartphones
+
+Failed in scroll To WebElement If Present for Smartphones Option. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartphones
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartphones
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Smartphones
+
+Failed in wait for Element Loaded URL: https://www.bajajmall.in/emi-store/smartphones.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_shop_smartphone&utm_content=my_account_homepage. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartphones
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartphones
+
+Failed in verify Redirection in Same Tab URL: https://www.bajajmall.in/emi-store/smartphones.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_shop_smartphone&utm_content=my_account_homepage. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartphones
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartphones
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Smartphones
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartphones
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - LED TVs
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - LED TVs
+
+Failed in scroll To WebElement If Present for Shop on Bajaj Mall LED TVs Logo. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - LED TVs
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - LED TVs
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - LED TVs
+
+Failed in verify Element Is NOt Present Using Locator LED TVs Option Nudge Text. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - LED TVs
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - LED TVs
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - LED TVs
+
+Failed in verify Element Is Displayed Or Not using Scroll LED TVs Option. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - LED TVs
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - LED TVs
+
+Failed in scroll To WebElement If Present for LED TVs Option. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - LED TVs
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - LED TVs
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - LED TVs
+
+Failed in wait for Element Loaded URL: https://www.bajajmall.in/emi-store/led-tv.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_shop_led&utm_content=my_account_homepage. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - LED TVs
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - LED TVs
+
+Failed in verify Redirection in Same Tab URL: https://www.bajajmall.in/emi-store/led-tv.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_shop_led&utm_content=my_account_homepage. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - LED TVs
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - LED TVs
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - LED TVs
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - LED TVs
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Washing machines'
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Washing machines'
+
+Failed in scroll To WebElement If Present for Shop on Bajaj Mall Washing machines Logo. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Washing machines'
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Washing machines'
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Washing machines'
+
+Failed in verify Element Is NOt Present Using Locator Washing machines Option Nudge Text. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Washing machines'
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Washing machines'
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Washing machines'
+
+Failed in verify Element Is Displayed Or Not using Scroll Washing machines Option. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Washing machines'
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Washing machines'
+
+Failed in scroll To WebElement If Present for Washing machines Option. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Washing machines'
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Washing machines'
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Washing machines'
+
+Failed in wait for Element Loaded URL: https://www.bajajmall.in/emi-store/washing-machines.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_shop_wm&utm_content=my_account_homepage. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Washing machines'
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Washing machines'
+
+Failed in verify Redirection in Same Tab URL: https://www.bajajmall.in/emi-store/washing-machines.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_shop_wm&utm_content=my_account_homepage. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Washing machines'
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Washing machines'
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Washing machines'
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Washing machines'
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Refrigerators3
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Refrigerators3
+
+Failed in scroll To WebElement If Present for Shop on Bajaj Mall Refrigerators Logo. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Refrigerators3
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Refrigerators3
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Refrigerators3
+
+Failed in verify Element Is NOt Present Using Locator Refrigerators Option Nudge Text. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Refrigerators3
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Refrigerators3
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Refrigerators3
+
+Failed in verify Element Is Displayed Or Not using Scroll Refrigerators Option. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Refrigerators3
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Refrigerators3
+
+Failed in scroll To WebElement If Present for Refrigerators Option. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Refrigerators3
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Refrigerators3
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Refrigerators3
+
+Failed in wait for Element Loaded URL: https://www.bajajmall.in/emi-store/refrigerators.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_shop_ref&utm_content=my_account_homepage. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Refrigerators3
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Refrigerators3
+
+Failed in verify Redirection in Same Tab URL: https://www.bajajmall.in/emi-store/refrigerators.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_shop_ref&utm_content=my_account_homepage. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Refrigerators3
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Refrigerators3
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Refrigerators3
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Refrigerators3
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Smartwatches?
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Smartwatches?
+
+Failed in scroll To WebElement If Present for Shop on Bajaj Mall Smartwatches Logo. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartwatches?
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartwatches?
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Smartwatches?
+
+Failed in verify Element Is NOt Present Using Locator Smartwatches Option Nudge Text. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartwatches?
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartwatches?
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Smartwatches?
+
+Failed in verify Element Is Displayed Or Not using Scroll Smartwatches Option. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartwatches?
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartwatches?
+
+Failed in scroll To WebElement If Present for Smartwatches Option. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartwatches?
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartwatches?
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Smartwatches?
+
+Failed in wait for Element Loaded URL: https://www.bajajmall.in/emi-store/smart-watches.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_shop_wearable&utm_content=my_account_homepage. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartwatches?
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartwatches?
+
+Failed in verify Redirection in Same Tab URL: https://www.bajajmall.in/emi-store/smart-watches.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_shop_wearable&utm_content=my_account_homepage. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartwatches?
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartwatches?
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Smartwatches?
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Smartwatches?
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - LaptopsK
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - LaptopsK
+
+Failed in Verify Logo is Displayed in New Home. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - LaptopsK
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - LaptopsK
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - LaptopsK
+
+Failed in verify Nudge Text As Per AEM. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - LaptopsK
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - LaptopsK
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - LaptopsK
+
+Failed in click on New Home Options with AEM. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - LaptopsK
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - LaptopsK
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - LaptopsK
+
+Failed in wait for Element Loaded URL: null. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - LaptopsK
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - LaptopsK
+
+Failed in verify Redirection in Same Tab URL: null. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - LaptopsK
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - LaptopsK
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - LaptopsK
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - LaptopsK
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - CyclesW
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - CyclesW
+
+Failed in Verify Logo is Displayed in New Home. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - CyclesW
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - CyclesW
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - CyclesW
+
+Failed in verify Nudge Text As Per AEM. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - CyclesW
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - CyclesW
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - CyclesW
+
+Failed in click on New Home Options with AEM. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - CyclesW
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - CyclesW
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - CyclesW
+
+Failed in wait for Element Loaded URL: null. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - CyclesW
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - CyclesW
+
+Failed in verify Redirection in Same Tab URL: null. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - CyclesW
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - CyclesW
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - CyclesW
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - CyclesW
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Mattressesc
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Mattressesc
+
+Failed in Verify Logo is Displayed in New Home. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - Mattressesc
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Mattressesc
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Mattressesc
+
+Failed in verify Nudge Text As Per AEM. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - Mattressesc
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Mattressesc
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Mattressesc
+
+Failed in click on New Home Options with AEM. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - Mattressesc
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Mattressesc
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Mattressesc
+
+Failed in wait for Element Loaded URL: null. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Mattressesc
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Mattressesc
+
+Failed in verify Redirection in Same Tab URL: null. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Mattressesc
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Mattressesc
+
+Failed in Screenshot in Hooks------------>  Shop on Bajaj Mall - Mattressesc
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Shop on Bajaj Mall - Mattressesc
+
+Failed in Screenshot in Hooks------------>  Superstores - Bajaj Mall
+
+Failed in Screenshot in Hooks------------>  Superstores - Bajaj Mall
+
+Failed in scroll To WebElement If Present for Superstores Bajaj Mall Logo. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Failed in Screenshot in Hooks------------>  Superstores - Bajaj Mall
+
+Failed in verify Element Is Displayed Or Not using Scroll Bajaj Mall Option Rs. 4,000 Cashback* Nudge text. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Failed in scroll To WebElement If Present for Bajaj Mall Option Rs. 4,000 Cashback* Nudge text. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Bajaj Mall Option Rs. 4,000 Cashback* Nudge text Is Element Displayed Failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Bajaj Mall Option Rs. 4,000 Cashback* Nudge text is Not Displayed Successfully------------>  Superstores - Bajaj Mall
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Failed in Screenshot in Hooks------------>  Superstores - Bajaj Mall
+
+Failed in verify Element Is Displayed Or Not using Scroll Bajaj Mall Option. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Failed in scroll To WebElement If Present for Bajaj Mall Option. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Failed in Screenshot in Hooks------------>  Superstores - Bajaj Mall
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Failed in Transfer Control To Window 2. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Failed in verify Redirection URL contains https://www.bajajmall.in/emi-store?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_superstores&utm_content=my_account_homepage. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Failed in Transfer Control To Window 1. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Failed in Screenshot in Hooks------------>  Superstores - Bajaj Mall
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Bajaj Mall
+
+Failed in Screenshot in Hooks------------>  Superstores - Investments
+
+Failed in Screenshot in Hooks------------>  Superstores - Investments
+
+Failed in scroll To WebElement If Present for Superstores Investments Logo. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Investments
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Investments
+
+Failed in Screenshot in Hooks------------>  Superstores - Investments
+
+Failed in verify Element Is NOt Present Using Locator Investments Option Nudge Text. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Investments
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Investments
+
+Failed in Screenshot in Hooks------------>  Superstores - Investments
+
+Failed in verify Element Is Displayed Or Not using Scroll Investments Option. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Investments
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Investments
+
+Failed in scroll To WebElement If Present for Investments Option. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Investments
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Investments
+
+Failed in Screenshot in Hooks------------>  Superstores - Investments
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/investments. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Investments
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Investments
+
+Failed in verify Redirection in Same Tab URL: https://www.bajajfinserv.in/investments. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Investments
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Investments
+
+Failed in Screenshot in Hooks------------>  Superstores - Investments
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Investments
+
+Failed in Screenshot in Hooks------------>  Superstores - Insurance&
+
+Failed in Screenshot in Hooks------------>  Superstores - Insurance&
+
+Failed in scroll To WebElement If Present for Superstores Insurance Logo. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Insurance&
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Insurance&
+
+Failed in Screenshot in Hooks------------>  Superstores - Insurance&
+
+Failed in verify Element Is NOt Present Using Locator Insurance Option Nudge Text. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Insurance&
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Insurance&
+
+Failed in Screenshot in Hooks------------>  Superstores - Insurance&
+
+Failed in verify Element Is Displayed Or Not using Scroll Insurance Mall Option. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Insurance&
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Insurance&
+
+Failed in scroll To WebElement If Present for Insurance Mall Option. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Insurance&
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Insurance&
+
+Failed in Screenshot in Hooks------------>  Superstores - Insurance&
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Insurance&
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Insurance&
+
+Failed in Transfer Control To Window 2. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Insurance&
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Insurance&
+
+Failed in verify Redirection URL contains https://www.bajajfinserv.in/insurance. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Insurance&
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Insurance&
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Insurance&
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Insurance&
+
+Failed in Transfer Control To Window 1. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Insurance&
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Insurance&
+
+Failed in Screenshot in Hooks------------>  Superstores - Insurance&
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Insurance&
+
+Failed in Screenshot in Hooks------------>  Superstores - Securities2
+
+Failed in Screenshot in Hooks------------>  Superstores - Securities2
+
+Failed in scroll To WebElement If Present for Superstores Securities Logo. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Securities2
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Securities2
+
+Failed in Screenshot in Hooks------------>  Superstores - Securities2
+
+Failed in verify Element Is NOt Present Using Locator Securities Option Nudge Text. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Securities2
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Securities2
+
+Failed in Screenshot in Hooks------------>  Superstores - Securities2
+
+Failed in verify Element Is Displayed Or Not using Scroll Securities Option. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Securities2
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Securities2
+
+Failed in scroll To WebElement If Present for Securities Option. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Securities2
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Securities2
+
+Failed in Screenshot in Hooks------------>  Superstores - Securities2
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Securities2
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Securities2
+
+Failed in Transfer Control To Window 2. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Securities2
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Securities2
+
+Failed in verify Redirection URL contains https://www.bajajfinservsecurities.in/. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Securities2
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Securities2
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Securities2
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Securities2
+
+Failed in Transfer Control To Window 1. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Securities2
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Securities2
+
+Failed in Screenshot in Hooks------------>  Superstores - Securities2
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Superstores - Securities2
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Scooters
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Scooters
+
+Failed in scroll To WebElement If Present for Two-wheeler World Scooters Logo. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Scooters
+
+Failed in verify Element Is Displayed Or Not using Scroll Scooters Option Latest Nudge text. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Failed in scroll To WebElement If Present for Scooters Option Latest Nudge text. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Scooters Option Latest Nudge text Is Element Displayed Failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Scooters Option Latest Nudge text is Not Displayed Successfully------------>  Two-wheeler World - Scooters
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Scooters
+
+Failed in verify Element Is Displayed Or Not using Scroll Scooters Option. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Failed in scroll To WebElement If Present for Scooters Option. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Scooters
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Failed in Transfer Control To Window 2. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Failed in verify Redirection URL contains https://www.bajajmall.in/emi-store/scooters.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_two_wheeler_scooter&utm_content=my_account_homepage. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Failed in Transfer Control To Window 1. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Scooters
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Scooters
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Bikes
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Bikes
+
+Failed in scroll To WebElement If Present for Two-wheeler World Bikes Logo. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Bikes
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Bikes
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Bikes
+
+Failed in verify Element Is NOt Present Using Locator Bikes Option Nudge Text. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Bikes
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Bikes
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Bikes
+
+Failed in verify Element Is Displayed Or Not using Scroll Bikes Option. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Bikes
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Bikes
+
+Failed in scroll To WebElement If Present for Bikes Option. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Bikes
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Bikes
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Bikes
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Bikes
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Bikes
+
+Failed in Transfer Control To Window 2. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Bikes
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Bikes
+
+Failed in verify Redirection URL contains https://www.bajajmall.in/emi-store/bikes.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_two_wheeler_bikes&utm_content=my_account_homepage. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Bikes
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Bikes
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Bikes
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Bikes
+
+Failed in Transfer Control To Window 1. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Bikes
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Bikes
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Bikes
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Bikes
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Electric Scooters&
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Electric Scooters&
+
+Failed in scroll To WebElement If Present for Two-wheeler World Electric Scooters Logo. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Electric Scooters&
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Electric Scooters&
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Electric Scooters&
+
+Failed in verify Element Is NOt Present Using Locator Electric Scooters Option Nudge Text. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Electric Scooters&
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Electric Scooters&
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Electric Scooters&
+
+Failed in verify Element Is Displayed Or Not using Scroll Electric Scooters Option. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Electric Scooters&
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Electric Scooters&
+
+Failed in scroll To WebElement If Present for Electric Scooters Option. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Electric Scooters&
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Electric Scooters&
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Electric Scooters&
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Electric Scooters&
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Electric Scooters&
+
+Failed in Transfer Control To Window 2. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Electric Scooters&
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Electric Scooters&
+
+Failed in verify Redirection URL contains https://www.bajajmall.in/emi-store/electric-scooters.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_two_wheeler_electric_scooter&utm_content=my_account_homepage. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Electric Scooters&
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Electric Scooters&
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Electric Scooters&
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Electric Scooters&
+
+Failed in Transfer Control To Window 1. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Electric Scooters&
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Electric Scooters&
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Electric Scooters&
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Electric Scooters&
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Best Mileage Bikes2
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Best Mileage Bikes2
+
+Failed in scroll To WebElement If Present for Two-wheeler World Best Mileage Bikes Logo. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Best Mileage Bikes2
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Best Mileage Bikes2
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Best Mileage Bikes2
+
+Failed in verify Element Is NOt Present Using Locator Best Mileage Bikes Option Nudge Text. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Best Mileage Bikes2
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Best Mileage Bikes2
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Best Mileage Bikes2
+
+Failed in verify Element Is Displayed Or Not using Scroll Best Mileage Bikes Option. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Best Mileage Bikes2
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Best Mileage Bikes2
+
+Failed in scroll To WebElement If Present for Best Mileage Bikes Option. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Best Mileage Bikes2
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Best Mileage Bikes2
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Best Mileage Bikes2
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Best Mileage Bikes2
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Best Mileage Bikes2
+
+Failed in Transfer Control To Window 2. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Best Mileage Bikes2
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Best Mileage Bikes2
+
+Failed in verify Redirection URL contains https://www.bajajmall.in/emi-store/best-mileage-bikes.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_two_wheeler_mileage&utm_content=my_account_homepage. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Best Mileage Bikes2
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Best Mileage Bikes2
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Best Mileage Bikes2
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Best Mileage Bikes2
+
+Failed in Transfer Control To Window 1. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Best Mileage Bikes2
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Best Mileage Bikes2
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Best Mileage Bikes2
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Best Mileage Bikes2
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Top Sellers>
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Top Sellers>
+
+Failed in scroll To WebElement If Present for Two-wheeler World Top Sellers Logo. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Top Sellers>
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Top Sellers>
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Top Sellers>
+
+Failed in verify Element Is NOt Present Using Locator Top Sellers Option Nudge Text. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Top Sellers>
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Top Sellers>
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Top Sellers>
+
+Failed in verify Element Is Displayed Or Not using Scroll Top Sellers Option. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Top Sellers>
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Top Sellers>
+
+Failed in scroll To WebElement If Present for Top Sellers Option. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Top Sellers>
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Top Sellers>
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Top Sellers>
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Top Sellers>
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Top Sellers>
+
+Failed in Transfer Control To Window 2. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Top Sellers>
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Top Sellers>
+
+Failed in verify Redirection URL contains https://www.bajajmall.in/emi-store/top-selling-bikes.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_two_wheeler_selling&utm_content=my_account_homepage. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Top Sellers>
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Top Sellers>
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Top Sellers>
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Top Sellers>
+
+Failed in Transfer Control To Window 1. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Top Sellers>
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Top Sellers>
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Top Sellers>
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Top Sellers>
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Popular BrandsJ
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Popular BrandsJ
+
+Failed in scroll To WebElement If Present for Two-wheeler World Popular Brands Logo. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Popular BrandsJ
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Popular BrandsJ
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Popular BrandsJ
+
+Failed in verify Element Is NOt Present Using Locator Popular Brands Option Nudge Text. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Popular BrandsJ
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Popular BrandsJ
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Popular BrandsJ
+
+Failed in verify Element Is Displayed Or Not using Scroll Popular Brands Option. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Popular BrandsJ
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Popular BrandsJ
+
+Failed in scroll To WebElement If Present for Popular Brands Option. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Popular BrandsJ
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Popular BrandsJ
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Popular BrandsJ
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Popular BrandsJ
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Popular BrandsJ
+
+Failed in Transfer Control To Window 2. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Popular BrandsJ
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Popular BrandsJ
+
+Failed in verify Redirection URL contains https://www.bajajmall.in/emi-store/popular-brands.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_two_wheeler_popular&utm_content=my_account_homepage. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Popular BrandsJ
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Popular BrandsJ
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Popular BrandsJ
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Popular BrandsJ
+
+Failed in Transfer Control To Window 1. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Popular BrandsJ
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Popular BrandsJ
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Popular BrandsJ
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Popular BrandsJ
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Sports BikesV
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Sports BikesV
+
+Failed in scroll To WebElement If Present for Two-wheeler World Sports Bikes Logo. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Sports BikesV
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Sports BikesV
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Sports BikesV
+
+Failed in verify Element Is NOt Present Using Locator Sports Bikes Option Nudge Text. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Sports BikesV
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Sports BikesV
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Sports BikesV
+
+Failed in verify Element Is Displayed Or Not using Scroll Sports Bikes Option. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Sports BikesV
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Sports BikesV
+
+Failed in scroll To WebElement If Present for Sports Bikes Option. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Sports BikesV
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Sports BikesV
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Sports BikesV
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Sports BikesV
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Sports BikesV
+
+Failed in Transfer Control To Window 2. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Sports BikesV
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Sports BikesV
+
+Failed in verify Redirection URL contains https://www.bajajmall.in/emi-store/sports-bikes.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_two_wheeler_sports_bike&utm_content=my_account_homepage. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Sports BikesV
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Sports BikesV
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Sports BikesV
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Sports BikesV
+
+Failed in Transfer Control To Window 1. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Sports BikesV
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Sports BikesV
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Sports BikesV
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Sports BikesV
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Adventure Bikesb
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Adventure Bikesb
+
+Failed in scroll To WebElement If Present for Two-wheeler World Adventure Bikes Logo. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Adventure Bikesb
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Adventure Bikesb
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Adventure Bikesb
+
+Failed in verify Element Is NOt Present Using Locator Adventure Bikes Option Nudge Text. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Adventure Bikesb
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Adventure Bikesb
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Adventure Bikesb
+
+Failed in verify Element Is Displayed Or Not using Scroll Adventure Bikes Option. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Adventure Bikesb
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Adventure Bikesb
+
+Failed in scroll To WebElement If Present for Adventure Bikes Option. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Adventure Bikesb
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Adventure Bikesb
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Adventure Bikesb
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Adventure Bikesb
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Adventure Bikesb
+
+Failed in Transfer Control To Window 2. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Adventure Bikesb
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Adventure Bikesb
+
+Failed in verify Redirection URL contains https://www.bajajmall.in/emi-store/adventure-bikes.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_two_wheeler_adventure_bikes&utm_content=my_account_homepage. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Adventure Bikesb
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Adventure Bikesb
+
+Failed in Wait For Page To Load. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Adventure Bikesb
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Adventure Bikesb
+
+Failed in Transfer Control To Window 1. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Adventure Bikesb
+
+Take screen shot failed. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Adventure Bikesb
+
+Failed in Screenshot in Hooks------------>  Two-wheeler World - Adventure Bikesb
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.WebDriverException------------>  Two-wheeler World - Adventure Bikesb
+

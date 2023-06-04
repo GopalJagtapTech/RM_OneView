@@ -1,0 +1,109 @@
+Feature: New Home - PL Offers - Pre-Apprved Offers has PL Offer
+
+  @HasPre-ApprovedOffers
+  Scenario Outline: Horizontal Menu - Apply Online Button - Verify Personal Loan Redirection with Pre-Approved Offers has PL Offer
+    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
+    When User is on Home Page
+    And verify "PL Offer in Pre-Approved Offers For You" is present in "Home Page"
+    And click on "Loans" option in Horizontal Menu
+    And Mouse Over to "Personal Loan" Sub Option in "Loans" Horizontal Menu
+    And Customer Clicks on "Apply Online" button in Horizontal Menu "Personal Loan" Option
+    And verify Redirection for "with SSO": "https://uat-onlineforms.bajajfinserv.in/webform/salpl/loanapplication"
+    And Go Back to Previous Page
+    Examples:
+      | Mobile Number | Date     | Customer Type |
+      | 9823138710    | 01011996 | Individual    |
+
+  Scenario Outline: Horizontal Menu - Pre-approved Offer Button - Verify Personal Loan Redirection with Pre-Approved Offers has PL Offer
+    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
+    When User is on Home Page
+    And verify "PL Offer in Pre-Approved Offers For You" is present in "Home Page"
+    And click on "Loans" option in Horizontal Menu
+    And Mouse Over to "Personal Loan" Sub Option in "Loans" Horizontal Menu
+    And Customer Clicks on "Pre-approved Offer" button in Horizontal Menu "Personal Loan" Option
+    And verify Redirection for "with SSO": "https://uat-oneweb.bajajfinserv.in/insta-personal-loan"
+    And Go Back to Previous Page
+    Examples:
+      | Mobile Number | Date     | Customer Type |
+      | 9823138710    | 01011996 | Individual    |
+
+  Scenario Outline: Master Head Section - Verify Personal Loan Redirection with Pre-Approved Offers has PL Offer
+    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
+    When User is on Home Page
+    And verify "PL Offer in Pre-Approved Offers For You" is present in "Home Page"
+    And clicks on "Personal Loan Option in Master head Section"
+    And verify Redirection for "with SSO": "https://uat-onlineforms.bajajfinserv.in/webform/salpl/loanapplication"
+    And Go Back to Previous Page
+    Examples:
+      | Mobile Number | Date     | Customer Type |
+      | 9823138710    | 01011996 | Individual    |
+
+  Scenario Outline: Banner Offers Section - Verify Personal Loan Redirection with Pre-Approved Offers has PL Offer
+    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
+    When User is on Home Page
+    And verify "PL Offer in Pre-Approved Offers For You" is present in "Home Page"
+    And Wait 120 seconds for "Personal Loan Option in Banner Offers Section"
+    And clicks on "Personal Loan Option in Banner Offers Section"
+    And Clicks on "Personal Loan Popup Check Box"
+    And click on "GET IT NOW" Button
+    And verify Redirection for "with New Tab": "https://uat-onlineforms.bajajfinserv.in/webform/salpl/loanapplication"
+    Examples:
+      | Mobile Number | Date     | Customer Type |
+      | 9823138710    | 01011996 | Individual    |
+
+  Scenario Outline: Pre-Approved Offers For You Section - Verify Personal Loan Redirection with Pre-Approved Offers has PL Offer
+    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
+    When User is on Home Page
+    And verify "PL Offer in Pre-Approved Offers For You" is present in "Home Page"
+    And clicks on "Personal Loan Option in Pre-Approved Offers For You Section"
+    And Clicks on "Personal Loan Popup Check Box"
+    And click on "GET IT NOW" Button
+    And verify Redirection for "with New Tab": "https://uat-onlineforms.bajajfinserv.in/webform/salpl/entry"
+    Examples:
+      | Mobile Number | Date     | Customer Type |
+      | 9823138710    | 01011996 | Individual    |
+
+
+  Scenario Outline: Products for you Section - Verify Personal Loan Redirection with Pre-Approved Offers has PL Offer
+    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
+    When User is on Home Page
+    And verify "PL Offer in Pre-Approved Offers For You" is present in "Home Page"
+    And clicks on "Personal Loan Option in Products for you Section"
+    And verify Redirection for "with SSO": "https://uat-onlineforms.bajajfinserv.in/webform/salpl/loanapplication"
+    And Go Back to Previous Page
+    Examples:
+      | Mobile Number | Date     | Customer Type |
+      | 9823138710    | 01011996 | Individual    |
+
+  Scenario Outline: Offers for You section - Verify Personal Loan Redirection with Pre-Approved Offers has PL Offer
+    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
+    When User is on Home Page
+    And verify "PL Offer in Pre-Approved Offers For You" is present in "Home Page"
+    And clicks on "Personal Loan Option in Offers for You section"
+    And verify Redirection for "with SSO": "https://uat-onlineforms.bajajfinserv.in/webform/salpl/loanapplication"
+    And Go Back to Previous Page
+    Examples:
+      | Mobile Number | Date     | Customer Type |
+      | 9823138710    | 01011996 | Individual    |
+
+  Scenario Outline: Footer Application Forms Section - Verify Personal Loan Redirection with Pre-Approved Offers has PL Offer
+    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
+    When User is on Home Page
+    And verify "PL Offer in Pre-Approved Offers For You" is present in "Home Page"
+    And clicks on "Personal Loan Option in Footer Application Forms"
+    And verify Redirection for "with SSO": "https://uat-onlineforms.bajajfinserv.in/webform/salpl/loanapplication"
+    And Go Back to Previous Page
+    Examples:
+      | Mobile Number | Date     | Customer Type |
+      | 9823138710    | 01011996 | Individual    |
+
+  Scenario Outline: Footer Loans Section - Verify Personal Loan Redirection with Pre-Approved Offers has PL Offer
+    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
+    When User is on Home Page
+    And verify "PL Offer in Pre-Approved Offers For You" is present in "Home Page"
+    And clicks on "Personal Loan Option in Footer Loans"
+    And verify Redirection for "with SSO": "https://uat-oneweb.bajajfinserv.in/personal-loan"
+    And Go Back to Previous Page
+    Examples:
+      | Mobile Number | Date     | Customer Type |
+      | 9823138710    | 01011996 | Individual    |

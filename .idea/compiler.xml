@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ReImagine_02112022" />
+        <module name="SeleniumCuc" />
+        <module name="Sprint 1 Re Imagine_21072022" />
+        <module name="ReImagine_14022023" />
+        <module name="ReImagine_30012023" />
+        <module name="TestingRerun" />
+        <module name="Sprint_1 Stabilized 27072022" />
+        <module name="ReImagine_23122022" />
+        <module name="Cucumber_Bdd_28032022" />
+        <module name="ReImagine_01022023" />
+        <module name="CucumberBDD_20042022" />
+        <module name="CucumberBDD_15072022" />
+        <module name="ReImagine_09012023" />
+        <module name="ReImagine_30012023 - BackUp" />
+        <module name="ReImagine_30122023" />
+        <module name="Selenium_28032022" />
+        <module name="ReImagine_31032023" />
+        <module name="ReImagine_16052023" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
