@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project>
+<project
 
     xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -15,20 +15,27 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
-    <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.10</version>
-        <configuration>
-            <argLine>-Dfile.encoding=UTF-8</argLine>
-        </configuration>
-        <configuration>
-            <sourceJsonReportDirectory>${project.build.directory}/cucumber-report</sourceJsonReportDirectory>
-            <generatedHtmlReportDirectory>
-                ${project.build.directory}/generated-report/cluecumber_report_${maven.build.timestamp}
-            </generatedHtmlReportDirectory>
-        </configuration>
-    </plugin>
+    <build>
+        <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>2.10</version>
+
+                <configuration>
+                    <argLine>-Dfile.encoding=UTF-8</argLine>
+<!--                    <sourceJsonReportDirectory>${project.build.directory}/cucumber-report</sourceJsonReportDirectory>-->
+<!--                    <generatedHtmlReportDirectory>-->
+<!--                        ${project.build.directory}/generated-report/cluecumber_report_${maven.build.timestamp}-->
+<!--                    </generatedHtmlReportDirectory>-->
+                </configuration>
+
+
+        </plugin>
+        </plugins>
+
+    </build>
+
 
     <dependencies>
         <dependency>
