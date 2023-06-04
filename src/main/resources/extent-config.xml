@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extentreports>
+    <configuration>
+        <theme>light</theme>
+        <encoding>UTF-8</encoding>
+        <protocol>http</protocol>
+        <documentTitle>Extent</documentTitle>
+        <reportName>Experia Reimagine Report</reportName>
+        <!-- timestamp format -->
+         <testViewChartLocation>bottom</testViewChartLocation>
+
+        <!-- custom styles Neelakandan-->
+<!--        <styles>-->
+<!--            <![CDATA[-->
+<!--            .report-img {   border: 1px solid #f6f7fa;   cursor: zoom-in;    width: 5px; }-->
+<!--        ]]>-->
+<!--        </styles>-->
+
+        <scripts>
+            <![CDATA[
+            $(document).ready(function(){
+            });
+            ]]>
+
+        </scripts>
+        <styles>
+            <![CDATA[
+            ]]>
+        </styles>
+    </configuration>
+</extentreports>
