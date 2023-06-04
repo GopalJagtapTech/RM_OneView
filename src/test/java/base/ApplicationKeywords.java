@@ -5110,63 +5110,63 @@ String loc=label+" Text box#xpath=//label[normalize-space(text())='"+label.trim(
 
     }
 
-    public static void logBuginAzure()
-    {
-        request = RestAssured.given();
-        request.contentType("application/json");
+    // public static void logBuginAzure()
+    // {
+    //     request = RestAssured.given();
+    //     request.contentType("application/json");
 
-        Properties prop = new Properties();
-        InputStream input;
-        strProjectLoc = System.getProperty("user.dir");
+    //     Properties prop = new Properties();
+    //     InputStream input;
+    //     strProjectLoc = System.getProperty("user.dir");
 
-        try{
+    //     try{
 
-            input = new FileInputStream(strProjectLoc + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator + "config" + File.separator + "config.properties");
-            prop.load(input);
+    //         input = new FileInputStream(strProjectLoc + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator + "config" + File.separator + "config.properties");
+    //         prop.load(input);
 
-        } catch (Exception e){
+    //     } catch (Exception e){
 
-        }
-
-
-        String AssginedTo = prop.getProperty("AssignedTo");
-        String BugEnvironment = prop.getProperty("BugEnvironment");
-        String BugDetectedIn = prop.getProperty("BugDetectedIn");
-        String BugSeverity = prop.getProperty("BugSeverity");
-        String Devices = prop.getProperty("Devices");
-        String OS = prop.getProperty("OS");
-        String BuildNumber = prop.getProperty("BuildNumber");
-        String AreaPath = prop.getProperty("AreaPath");
-        String endpoint = prop.getProperty("APIEndpoint");
+    //     }
 
 
+    //     String AssginedTo = prop.getProperty("AssignedTo");
+    //     String BugEnvironment = prop.getProperty("BugEnvironment");
+    //     String BugDetectedIn = prop.getProperty("BugDetectedIn");
+    //     String BugSeverity = prop.getProperty("BugSeverity");
+    //     String Devices = prop.getProperty("Devices");
+    //     String OS = prop.getProperty("OS");
+    //     String BuildNumber = prop.getProperty("BuildNumber");
+    //     String AreaPath = prop.getProperty("AreaPath");
+    //     String endpoint = prop.getProperty("APIEndpoint");
 
-        String requestBody = "{\n" +
-                "  \"Member\": {\n" +
-                "    \"System.AreaPath\": \"" + AreaPath + "\",\n" +
-                "    \"System.Title\": \"" + scenarioName + "\",\n" +
-                "    \"System.AssignedTo\": \"" + AssginedTo + "\",\n" +
-                "    \"Custom.BugEnvironment\": \"" + BugEnvironment + "\",\n" +
-                "    \"Custom.BugDetectedIn\": \"" + BugDetectedIn + "\",\n" +
-                "    \"Custom.BugSeverity\": \"" + BugSeverity + "\",\n" +
-                "    \"Custom.Devices\": \"" + Devices + "\",\n" +
-                "    \"Custom.OS\": \"" + OS + "\",\n" +
-                "    \"Custom.BuildNumber\": \"" + BuildNumber + "\",\n" +
-                "    \"Microsoft.VSTS.TCM.ReproSteps\": \"" + scenario.getName() + "\",\n" +
-                "  }\n" +
-                "}";
 
-        request.body(requestBody);
-        response = request.post(endpoint);
-        int actualStatusCode = response.getStatusCode();
-        ResponseBody body = response.getBody();
-        Assert.assertEquals(200, actualStatusCode);
-        JsonPath jsonPath = new JsonPath(body.asString());
-        bug_id = jsonPath.getInt("id");
-        System.out.print("Bug ID is : "+bug_id);
-        ExtentCucumberAdapter.getCurrentStep().log(Status.FAIL,"Azure Bug ID: "+ bug_id);
 
-    }
+    //     String requestBody = "{\n" +
+    //             "  \"Member\": {\n" +
+    //             "    \"System.AreaPath\": \"" + AreaPath + "\",\n" +
+    //             "    \"System.Title\": \"" + scenarioName + "\",\n" +
+    //             "    \"System.AssignedTo\": \"" + AssginedTo + "\",\n" +
+    //             "    \"Custom.BugEnvironment\": \"" + BugEnvironment + "\",\n" +
+    //             "    \"Custom.BugDetectedIn\": \"" + BugDetectedIn + "\",\n" +
+    //             "    \"Custom.BugSeverity\": \"" + BugSeverity + "\",\n" +
+    //             "    \"Custom.Devices\": \"" + Devices + "\",\n" +
+    //             "    \"Custom.OS\": \"" + OS + "\",\n" +
+    //             "    \"Custom.BuildNumber\": \"" + BuildNumber + "\",\n" +
+    //             "    \"Microsoft.VSTS.TCM.ReproSteps\": \"" + scenario.getName() + "\",\n" +
+    //             "  }\n" +
+    //             "}";
+
+    //     request.body(requestBody);
+    //     response = request.post(endpoint);
+    //     int actualStatusCode = response.getStatusCode();
+    //     ResponseBody body = response.getBody();
+    //     Assert.assertEquals(200, actualStatusCode);
+    //     JsonPath jsonPath = new JsonPath(body.asString());
+    //     bug_id = jsonPath.getInt("id");
+    //     System.out.print("Bug ID is : "+bug_id);
+    //     ExtentCucumberAdapter.getCurrentStep().log(Status.FAIL,"Azure Bug ID: "+ bug_id);
+
+    // }
 
 
 }
