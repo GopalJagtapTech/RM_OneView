@@ -1,2 +1,0 @@
-Test step failed ------------>  TC_01_To verify Credit card is displayed under My Relations	
-

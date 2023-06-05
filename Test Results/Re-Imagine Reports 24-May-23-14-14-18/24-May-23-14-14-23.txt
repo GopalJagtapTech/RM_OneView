@@ -1,2 +1,0 @@
-Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountDocumentCenter/DocumentCenter------------>  Create sample bug without example	
-
