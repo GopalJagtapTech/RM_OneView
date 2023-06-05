@@ -4,7 +4,136 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37d58fc7-4be5-42f5-a060-ce1130755567" name="Changes" comment="" />
+    <list default="true" id="37d58fc7-4be5-42f5-a060-ce1130755567" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/FailedResults/5-Jun-23-12-14-08.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FailedResults/5-Jun-23-13-54-07.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/5-Jun-23-13-54-07.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/SparkReport/ReImagineSparkReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UploadDocuments/NewHomeAEM.json" beforeDir="false" afterPath="$PROJECT_DIR$/UploadDocuments/NewHomeAEM.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testRunner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testRunner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-pretty.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-pretty.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-usage.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-usage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/rerun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/rerun.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/rerun1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/rerun2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/rerun2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/rerun2Single.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/rerunSingle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/rerunSingle.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/AppHooks/ApplicationHooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AppHooks/ApplicationHooks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/AppHooksLogin/ApplicationHooksLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AppHooksLogin/ApplicationHooksLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/AppHooksSingle/ApplicationHooksSingle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/AppHooksSingle/ApplicationHooksSingle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/B2BServicesPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/B2BServicesPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/DocumentCentrePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/DocumentCentrePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/EMICardPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/EMICardPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/FDServicesPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/FDServicesPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/HomePageKyc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/HomePageKyc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/InsuranceServicesPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/InsuranceServicesPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonFetchingForParticular.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonFetchingForParticular.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonFetchingTesting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonFetchingTesting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonFetchingTesting2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonFetchingTesting2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPage1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPage1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPage2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPage2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPage3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPage3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPage4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPage4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageLabelForHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageLabelForHome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageLabelForMasterCards.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageLabelForMasterCards.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageLabelForMasterCardstest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageLabelForMasterCardstest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageLabelForProducts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageLabelForProducts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageLabels.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageLabels.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageLabels2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageLabels2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageLabelsTesting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageLabelsTesting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageTitle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageTitle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageTitle2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageTitle2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageTitleForHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageTitleForHome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageTitleForProducts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageTitleForProducts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageTitleMasterCards.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageTitleMasterCards.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageTitleMasterCardsBackup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageTitleMasterCardsBackup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageTitleMasterCardsLablesTesting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/JsonPageTitleMasterCardsLablesTesting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/LAFDServicesPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/LAFDServicesPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/LASPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/LASPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/LoanServicesPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/LoanServicesPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/LoginFieldPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/LoginFieldPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/MandateManagementPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/MandateManagementPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/MutualFundsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/MutualFundsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/MyOrderPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/MyOrderPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/MyProfilePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/MyProfilePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/MyProfilePageOld.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/MyProfilePageOld.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/MyRelationsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/MyRelationsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/NewHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/NewHomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/PassbookPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/PassbookPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/PaymentsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/PaymentsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/RARPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/RARPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/SDPServicesPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/SDPServicesPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/SearchPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/SearchPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/VoucherRedeemPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/VoucherRedeemPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestData/GOR.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestData/GOR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestData/TestDataFdServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestData/TestDataFdServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestData/TestDataMyProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestData/TestDataMyProfile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestData/TestDataMyRelations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestData/TestDataMyRelations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestData/TestDataPayments.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestData/TestDataPayments.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestData/TestDataRAR.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestData/TestDataRAR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestData/TestDataVoucherRedeem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestData/TestDataVoucherRedeem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestRunnerLogin/TestFailedReRunnerLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestRunnerLogin/TestFailedReRunnerLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestRunnerLogin/TestRunnerLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestRunnerLogin/TestRunnerLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/ApplicationKeywords.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/ApplicationKeywords.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/base/ApplicationXpaths.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/ApplicationXpaths.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/B2BServicesSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/B2BServicesSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/CoachmarkSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/CoachmarkSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/CommonSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/CommonSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/DocumentCentreSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/DocumentCentreSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/EMICardSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/EMICardSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/EmiDebitConsentSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/EmiDebitConsentSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/FDServicesSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/FDServicesSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/HomePageKycSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/HomePageKycSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/HomeSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/HomeSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/HorizontalMenuSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/HorizontalMenuSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/InsuranceServicesSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/InsuranceServicesSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/LAFDServicesSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/LAFDServicesSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/LASSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/LASSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/LoanServicesSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/LoanServicesSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/LoginFieldsSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/LoginFieldsSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MandateManagementSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MandateManagementSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MutualFundsSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MutualFundsSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MyOrderSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MyOrderSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MyProfileSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MyProfileSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MyRelationsSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MyRelationsSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/NewHomeSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/NewHomeSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/PassbookSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/PassbookSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/PaymentsSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/PaymentsSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/RARSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/RARSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/SDPServicesSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/SDPServicesSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/SearchSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/SearchSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/VoucherRedeemSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/VoucherRedeemSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testRunner/TestFailedReRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testRunner/TestFailedReRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testRunner/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testRunner/TestRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testRunnerSingle/TestFailedReRunnerSingle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testRunnerSingle/TestFailedReRunnerSingle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testRunnerSingle/TestRunnerSingle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testRunnerSingle/TestRunnerSingle.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,10 +163,10 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/test/java/base/ApplicationKeywords.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/AppHooksSingle/ApplicationHooksSingle.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/AppHooksLogin/ApplicationHooksLogin.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/AppHooks/ApplicationHooks.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/AppHooksLogin/ApplicationHooksLogin.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/base/ApplicationKeywords.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,17 +175,20 @@
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="207f8hBkf6MZQ8xRW4tFelrCLTd" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last.edited.regexp" value="555555555" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/ReImagine_16052023" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -96,7 +228,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestRunner">
+  <component name="RunManager" selected="Cucumber Java.Scenario: TC_01_To verify Credit card is displayed under My Relations">
     <configuration name="Scenario: Active Term Loan - Relationship Section - Loan Details" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <output_file path="$PROJECT_DIR$/.." is_save="true" />
@@ -127,26 +259,6 @@
       <option name="NAME_FILTER" value="^Create Bug for testing$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Create Bug for testing$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: Create Bug for testing" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Create Bug" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/Features/Autobuglogging.feature" />
-      <option name="GLUE" value="AppHooks stepDefinitions AppHooksLogin AppHooksSingle" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="ReImagine_16052023" />
-      <option name="NAME_FILTER" value="^Create Bug$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Create Bug$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Create Bug" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -198,6 +310,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: TC_01_To verify Credit card is displayed under My Relations" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/Features/Autobuglogging.feature" />
+      <option name="GLUE" value="AppHooks stepDefinitions AppHooksLogin AppHooksSingle" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="SeleniumCuc" />
+      <option name="NAME_FILTER" value="^TC_01_To verify Credit card is displayed under My Relations$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_01_To verify Credit card is displayed under My Relations$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_01_To verify Credit card is displayed under My Relations" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ReImagine_16052023" />
       <extension name="coverage">
@@ -215,11 +347,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: TC_01_To verify Credit card is displayed under My Relations" />
         <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="Cucumber Java.Scenario: Create sample bug without example" />
         <item itemvalue="Cucumber Java.Scenario: Create sample Bug for testing" />
         <item itemvalue="Cucumber Java.Scenario: Create Bug for testing" />
-        <item itemvalue="Cucumber Java.Scenario: Create Bug" />
       </list>
     </recent_temporary>
   </component>
@@ -237,6 +369,20 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

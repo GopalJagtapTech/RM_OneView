@@ -25,6 +25,7 @@ import java.io.IOException;
         plugin={"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","rerun:target/rerun.txt","html:target/cucumber-html-report.html",
         "json:target/cucumber.json", "pretty:target/cucumber-pretty.txt",
         "usage:target/cucumber-usage.json", "junit:target/cucumber-results.xml"}
+
 )
 public class TestRunner{
 @AfterClass
