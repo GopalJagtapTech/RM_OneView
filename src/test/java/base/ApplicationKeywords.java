@@ -198,7 +198,7 @@ public class ApplicationKeywords extends ApplicationXpaths{
 
     public static void assertFail() {
         asser = true;
-        logBuginAzure();
+        //logBuginAzure();
     }
 
     public static void testStepFailed(String Content) {
