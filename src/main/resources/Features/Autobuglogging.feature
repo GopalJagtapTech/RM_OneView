@@ -1,5 +1,7 @@
 Feature: Home Page - Credit Card
 
+
+  @runthis
   Scenario Outline: TC_01_To verify Credit card is displayed under My Relations
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page

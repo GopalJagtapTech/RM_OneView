@@ -499,7 +499,7 @@ MyRelations.clickOnRelationshipStatus(status);
     @Then("Verify Credit Card is displayed under My Relations {string}")
     public void verifyCreditCardIsDisplayedUnderMyRelations(String CCName) {
 
-        String Cardname = driver.findElement(By.xpath("//*[@class='item']")).getText();
+        String Cardname = driver.findElement(By.xpath("//*[@id=\"MasterBody\"]/div[1]/section/div/div[2]/div[2]/div[1]/div[3]/div/div[2]/div[3]/div[1]/div/div/p")).getText();
         System.out.print("CC name : "+Cardname);
 
             if (Cardname.equalsIgnoreCase(CCName)) {
