@@ -5,71 +5,124 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37d58fc7-4be5-42f5-a060-ce1130755567" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/FailedResults/5-Jun-23-15-03-50.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FailedResults/5-Jun-23-15-15-42.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FailedResults/5-Jun-23-15-45-56.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/5-Jun-23-15-03-50.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/SparkReport/ReImagineSparkReport.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/5-Jun-23-15-15-42.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/SparkReport/ReImagineSparkReport.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/5-Jun-23-15-45-56.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/SparkReport/ReImagineSparkReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FailedResults/5-Jun-23-18-48-17.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FailedResults/6-Jun-23-12-20-51.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FailedResults/6-Jun-23-12-26-00.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FailedResults/6-Jun-23-12-32-46.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FailedResults/6-Jun-23-13-02-48.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FailedResults/6-Jun-23-15-01-25.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/6-Jun-23-15-01-25.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded16.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/1-Jun-23-16-08-45.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FailedResults/6-Jun-23-13-14-28.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/SparkReport/ReImagineSparkReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/SparkReport/ReImagineSparkReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/5-Jun-23-13-54-07.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FailedResults/5-Jun-23-16-06-04.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded17.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded17.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded9.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/SparkReport/ReImagineSparkReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/5-Jun-23-15-03-50.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded11.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded9.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/SparkReport/ReImagineSparkReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/5-Jun-23-15-15-42.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FailedResults/5-Jun-23-18-39-36.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded12.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded14.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/SparkReport/ReImagineSparkReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/5-Jun-23-15-45-56.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/SparkReport/ReImagineSparkReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunnerLogin/TestRunnerLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunnerLogin/TestRunnerLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testRunner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testRunner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testRunnerSingle/TestRunnerSingle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testRunnerSingle/TestRunnerSingle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Features/Autobuglogging.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Features/Autobuglogging.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-html-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-pretty.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-pretty.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-usage.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-usage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/rerun2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/rerun2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/rerunSingle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/rerunSingle.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestRunnerLogin.TestFailedReRunnerLogin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestRunnerLogin.TestFailedReRunnerLogin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestRunnerLogin.TestRunnerLogin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestRunnerLogin.TestRunnerLogin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-testRunner.TestFailedReRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-testRunner.TestFailedReRunner.xml" afterDir="false" />
@@ -82,13 +135,10 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testRunner.TestRunner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testRunner.TestRunner.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testRunnerSingle.TestFailedReRunnerSingle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testRunnerSingle.TestFailedReRunnerSingle.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testRunnerSingle.TestRunnerSingle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testRunnerSingle.TestRunnerSingle.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/LoginFieldPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/LoginFieldPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObjects/RARPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PageObjects/RARPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/CoachmarkSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/CoachmarkSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/HomePageKycSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/HomePageKycSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/LoginFieldsSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/LoginFieldsSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MyProfileSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MyProfileSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/PaymentsSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/PaymentsSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestRunnerLogin/TestRunnerLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestRunnerLogin/TestRunnerLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MyRelationsSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MyRelationsSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testRunner/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testRunner/TestRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testRunnerSingle/TestRunnerSingle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testRunnerSingle/TestRunnerSingle.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -328,7 +378,35 @@
       <option name="project" value="LOCAL" />
       <updated>1685956870007</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changes">
+      <created>1685960889164</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685960889164</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Changes">
+      <created>1685961768936</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685961768936</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Changes">
+      <created>1686037713524</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686037713524</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Changes">
+      <created>1686043775739</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686043775739</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,6 +422,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

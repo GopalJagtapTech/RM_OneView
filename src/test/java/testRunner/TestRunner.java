@@ -14,7 +14,7 @@ import java.io.IOException;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "classpath:Features/Autobuglogging.feature",
-//        tags = "not @Not",
+        tags = "@runthis",
        // tags = "@Pass",
 //        tags = "@FD_2604 and @Pass",
 //        tags = "@Pass and @FD2804",
