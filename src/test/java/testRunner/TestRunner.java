@@ -13,9 +13,9 @@ import java.io.IOException;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "classpath:Features/Autobuglogging.feature",
-        tags = "@runthis",
-       // tags = "@Pass",
+        features = "classpath:Features/Sprint_2/Services/SdpServices",
+//        tags = "not @Not",
+        tags = "@Pass",
 //        tags = "@FD_2604 and @Pass",
 //        tags = "@Pass and @FD2804",
 
@@ -25,7 +25,6 @@ import java.io.IOException;
         plugin={"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","rerun:target/rerun.txt","html:target/cucumber-html-report.html",
         "json:target/cucumber.json", "pretty:target/cucumber-pretty.txt",
         "usage:target/cucumber-usage.json", "junit:target/cucumber-results.xml"}
-
 )
 public class TestRunner{
 @AfterClass

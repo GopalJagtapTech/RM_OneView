@@ -5,7 +5,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "classpath:Features/Sprint_2/Services/FdServices/FinalNew/FixedDepositRhs/RenewYourFd",
-       // tags = "@Pass",
+        tags = "@Pass",
 //stepNotifications = true,
 //      dryRun = true,
         glue = {"stepDefinitions","AppHooksLogin"},

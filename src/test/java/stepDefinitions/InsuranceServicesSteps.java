@@ -121,7 +121,7 @@ public class InsuranceServicesSteps extends ApplicationKeywords {
         insurance.policyDetailsSectionSurrenderPolicy();
     }
 
-    @And("verify Customer is able to view {string} under Policy Details section when insurance is being cancelled in the Free Look Period")
+    @And("verify Customer is able to view {string} under Policy Details section when insurance is being cancelled in the “Free Look Period”")
     public void verifyCustomerIsAbleToViewUnderPolicyDetailsSectionWhenInsuranceIsBeingCancelledInTheFreeLookPeriod(String arg0) {
         insurance.freelookPeriodSurrenderPolicy();
     }

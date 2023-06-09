@@ -14,8 +14,6 @@ Feature: EMI Card Services 2887861, 2926340-Dynamic height – EMI and all previ
   | Mobile Number | Date     | Customer Type |SubTab |Policy No |
   | 9654418901|02-03-1960| Individual	     | Cards | 2030-XXXX-XXXX-3870 |
 
-
-
   @FeesKP
   Scenario Outline: EMI Card Services-add additional charges, nomenclature and amount change in the Fees and Charges Section.
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
