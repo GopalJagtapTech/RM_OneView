@@ -13,9 +13,9 @@ import java.io.IOException;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "classpath:Features/Sprint_2/Services/SdpServices",
+        features = "classpath:Features/Sprint_1/EmiCardServices/EMICardServices.feature",
 //        tags = "not @Not",
-        tags = "@Pass",
+        tags = "@runthis",
 //        tags = "@FD_2604 and @Pass",
 //        tags = "@Pass and @FD2804",
 

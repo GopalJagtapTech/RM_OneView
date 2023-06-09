@@ -1,5 +1,6 @@
 Feature: EMI Card Services 2887861, 2926340-Dynamic height – EMI and all previous Scenarios
 
+@runthis
 @FeesKP
   Scenario Outline: To verify Fees and Charges details
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
