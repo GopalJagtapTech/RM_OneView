@@ -31,6 +31,8 @@ Feature: Welcome Letter
       | Mobile Number | Date       | Customer Type | SubMenu               | SubListMenu     |
       | 9860299865    | 13/09/1990 | Corporate     | Mandate and documents | Document Center |
 
+
+
   @pass
   Scenario Outline: To verify that customer is redirecting to Document Center page when they clicks on document center  from RHS of My Relation
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"

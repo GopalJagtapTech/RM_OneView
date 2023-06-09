@@ -4,35 +4,123 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37d58fc7-4be5-42f5-a060-ce1130755567" name="Changes" comment="24th May">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/FatcaInValidDocs/ReImagineSparkReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/FatcaInValidDocs/ReImagineSparkReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/MyProfileInvalid/ReImagineSparkReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/MyProfileInvalid/ReImagineSparkReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documents/MyProfileValid/svgfile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Documents/MyProfileValid/svgfile.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedResults/1-Jun-23-17-37-01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FailedResults/1-Jun-23-17-37-01.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedResults/1-Jun-23-17-41-06.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FailedResults/1-Jun-23-17-41-06.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedResults/24-May-23-13-07-12.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FailedResults/24-May-23-13-07-12.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedResults/24-May-23-13-18-29.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FailedResults/24-May-23-13-18-29.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedResults/24-May-23-14-14-23.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FailedResults/24-May-23-14-14-23.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedResults/24-May-23-15-25-48.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FailedResults/24-May-23-15-25-48.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedResults/24-May-23-15-30-49.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FailedResults/24-May-23-15-30-49.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedResults/24-May-23-15-58-39.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FailedResults/24-May-23-15-58-39.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedResults/24-May-23-16-16-42.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FailedResults/24-May-23-16-16-42.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedResults/24-May-23-16-22-34.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FailedResults/24-May-23-16-22-34.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FailedResults/24-May-23-17-03-07.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FailedResults/24-May-23-17-03-07.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UploadDocuments/MyProfileInvalid/ReImagineSparkReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/UploadDocuments/MyProfileInvalid/ReImagineSparkReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UploadDocuments/MyProfileValid/svgfile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/UploadDocuments/MyProfileValid/svgfile.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UploadDocuments/NewHomeAEM.json" beforeDir="false" afterPath="$PROJECT_DIR$/UploadDocuments/NewHomeAEM.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UploadDocuments/NewHomeAEMPart.json" beforeDir="false" afterPath="$PROJECT_DIR$/UploadDocuments/NewHomeAEMPart.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UploadDocuments/NewHomeAEMTest.json" beforeDir="false" afterPath="$PROJECT_DIR$/UploadDocuments/NewHomeAEMTest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/azure-pipelines.yml" beforeDir="false" afterPath="$PROJECT_DIR$/azure-pipelines.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Features/Autobuglogging.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Features/Autobuglogging.feature" afterDir="false" />
+    <list default="true" id="37d58fc7-4be5-42f5-a060-ce1130755567" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/FailedResults/5-Jun-23-18-48-17.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FailedResults/6-Jun-23-12-20-51.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FailedResults/6-Jun-23-12-26-00.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FailedResults/6-Jun-23-12-32-46.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FailedResults/6-Jun-23-13-02-48.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FailedResults/6-Jun-23-15-01-25.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/6-Jun-23-15-01-25.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/1-Jun-23-16-08-45.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FailedResults/6-Jun-23-13-14-28.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/Screenshot/embedded9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 1-Jun-23-16-08-43/SparkReport/ReImagineSparkReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/SparkReport/ReImagineSparkReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/5-Jun-23-13-54-07.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FailedResults/5-Jun-23-16-06-04.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded17.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded17.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/Screenshot/embedded9.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-13-54-02/SparkReport/ReImagineSparkReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/5-Jun-23-15-03-50.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded11.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/Screenshot/embedded9.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-03-43/SparkReport/ReImagineSparkReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/5-Jun-23-15-15-42.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FailedResults/5-Jun-23-18-39-36.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded12.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded14.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/Screenshot/embedded9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-15-37/SparkReport/ReImagineSparkReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/5-Jun-23-15-45-56.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 6-Jun-23-15-01-19/Screenshot/embedded6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/Screenshot/embedded9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Results/Re-Imagine Reports 5-Jun-23-15-45-51/SparkReport/ReImagineSparkReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunnerLogin/TestRunnerLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunnerLogin/TestRunnerLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testRunner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testRunner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testRunnerSingle/TestRunnerSingle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testRunnerSingle/TestRunnerSingle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Features/Autobuglogging.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Features/Autobuglogging.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-html-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber-pretty.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-pretty.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-usage.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-usage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/rerun2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/rerun2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/rerunSingle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/rerunSingle.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestRunnerLogin.TestFailedReRunnerLogin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestRunnerLogin.TestFailedReRunnerLogin.xml" afterDir="false" />
@@ -47,6 +135,10 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testRunner.TestRunner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testRunner.TestRunner.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testRunnerSingle.TestFailedReRunnerSingle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testRunnerSingle.TestFailedReRunnerSingle.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testRunnerSingle.TestRunnerSingle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testRunnerSingle.TestRunnerSingle.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestRunnerLogin/TestRunnerLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestRunnerLogin/TestRunnerLogin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MyRelationsSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/MyRelationsSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testRunner/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testRunner/TestRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testRunnerSingle/TestRunnerSingle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testRunnerSingle/TestRunnerSingle.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +156,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -94,16 +189,17 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last.edited.regexp" value="555555555" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/ReImagine_16052023" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.github.copilot.settings.ApplicationConfigurable" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/resources/Features/Sprint_2/Services/SdpServices/PausedSdpNew.feature" />
   </component>
   <component name="RecentsManager">
@@ -138,7 +234,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestRunner (2)">
+  <component name="RunManager" selected="Cucumber Java.Scenario: TC_01_To verify Credit card is displayed under My Relations">
     <configuration name="Scenario: Active Term Loan - Relationship Section - Loan Details" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <output_file path="$PROJECT_DIR$/.." is_save="true" />
@@ -160,68 +256,88 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestFailedReRunner (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ReImagine_31032023" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testRunner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testRunner" />
-      <option name="MAIN_CLASS_NAME" value="testRunner.TestFailedReRunner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestFailedReRunnerSingle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ReImagine_31032023" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testRunnerSingle.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testRunnerSingle" />
-      <option name="MAIN_CLASS_NAME" value="testRunnerSingle.TestFailedReRunnerSingle" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestRunner (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Create Bug for testing" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/Features/Autobuglogging.feature" />
+      <option name="GLUE" value="AppHooks stepDefinitions AppHooksLogin AppHooksSingle" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="ReImagine_16052023" />
+      <option name="NAME_FILTER" value="^Create Bug for testing$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Create Bug for testing$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Create Bug for testing" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testRunner.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testRunner" />
-      <option name="MAIN_CLASS_NAME" value="testRunner.TestRunner" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRunner (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ReImagine_24052023" />
+    <configuration name="Scenario: Create sample Bug for testing" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/Features/Autobuglogging.feature" />
+      <option name="GLUE" value="AppHooks stepDefinitions AppHooksLogin AppHooksSingle" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ReImagine_16052023" />
+      <option name="NAME_FILTER" value="^Create sample Bug for testing$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Create sample Bug for testing$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Create sample Bug for testing" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testRunner.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testRunner" />
-      <option name="MAIN_CLASS_NAME" value="testRunner.TestRunner" />
-      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Create sample bug without example" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/Features/Autobuglogging.feature" />
+      <option name="GLUE" value="AppHooks stepDefinitions AppHooksLogin AppHooksSingle" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ReImagine_16052023" />
+      <option name="NAME_FILTER" value="^Create sample bug without example$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Create sample bug without example$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Create sample bug without example" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: TC_01_To verify Credit card is displayed under My Relations" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/Features/Autobuglogging.feature" />
+      <option name="GLUE" value="AppHooks stepDefinitions AppHooksLogin AppHooksSingle" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="SeleniumCuc" />
+      <option name="NAME_FILTER" value="^TC_01_To verify Credit card is displayed under My Relations$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_01_To verify Credit card is displayed under My Relations$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_01_To verify Credit card is displayed under My Relations" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ReImagine_31032023" />
+      <module name="ReImagine_16052023" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="testRunner.*" />
@@ -237,11 +353,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestRunner (2)" />
-        <item itemvalue="JUnit.TestRunner (1)" />
-        <item itemvalue="JUnit.TestFailedReRunner (1)" />
+        <item itemvalue="Cucumber Java.Scenario: TC_01_To verify Credit card is displayed under My Relations" />
         <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="JUnit.TestFailedReRunnerSingle" />
+        <item itemvalue="Cucumber Java.Scenario: Create sample bug without example" />
+        <item itemvalue="Cucumber Java.Scenario: Create sample Bug for testing" />
+        <item itemvalue="Cucumber Java.Scenario: Create Bug for testing" />
       </list>
     </recent_temporary>
   </component>
@@ -255,6 +371,42 @@
       <updated>1635400389766</updated>
       <workItem from="1648042428936" duration="942000" />
     </task>
+    <task id="LOCAL-00001" summary="Changes">
+      <created>1685956870007</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685956870007</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Changes">
+      <created>1685960889164</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685960889164</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Changes">
+      <created>1685961768936</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685961768936</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Changes">
+      <created>1686037713524</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686037713524</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Changes">
+      <created>1686043775739</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686043775739</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,8 +425,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="24th May" />
-    <option name="LAST_COMMIT_MESSAGE" value="24th May" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -286,13 +439,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/base/ApplicationKeywords.java</url>
-          <line>2684</line>
+          <line>2704</line>
           <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/stepDefinitions/CommonSteps.java</url>
-          <line>195</line>
-          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PageObjects/NewHomePage.java</url>
@@ -356,6 +504,10 @@
         <PinnedItemInfo parentTag="org.json.JSONArray" memberName="myArrayList" />
       </pinned-members>
     </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Sprint_1_Stabilized_27072022$TestRunner__3_.ic" NAME="TestRunner (3) Coverage Results" MODIFIED="1664189821974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

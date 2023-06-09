@@ -66,6 +66,14 @@ public class ApplicationHooks extends ApplicationKeywords {
         }
      }
 
+    @Before()
+    public void setup(Scenario scenario) {
+        this.scenario = scenario;
+        this.scenarioName = scenario.getName();
+        this.featureFileSteps = new StringBuilder();
+
+    }
+
 //    static void addShutdownHook() {
 //        Runtime.getRuntime().addShutdownHook(new Thread() {
 //            @Override

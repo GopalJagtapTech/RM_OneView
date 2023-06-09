@@ -10,9 +10,17 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
+import io.cucumber.java.Scenario;
+import io.cucumber.plugin.event.PickleStepTestStep;
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import io.restassured.response.ResponseBody;
+import io.restassured.specification.RequestSpecification;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.validator.GenericValidator;
 import org.assertj.core.api.SoftAssertions;
+import org.junit.Assert;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -38,7 +46,7 @@ import java.util.concurrent.TimeUnit;
 public class ApplicationKeywords extends ApplicationXpaths{
     public static WebDriver driver;
     public static WebDriverWait wait;
-    public String strProjectLoc;
+    public static String strProjectLoc;
     public static Boolean asser = false;
     public static Boolean quitBrowser = false;
     public static boolean newFile=false;
@@ -48,11 +56,16 @@ public class ApplicationKeywords extends ApplicationXpaths{
     public static boolean coachMark=false;
     public static String mobileNumber;
 
+    public static RequestSpecification request;
+    public static Response response;
+    public static String scenarioName;
+    public static Scenario scenario;
+    public static int bug_id;
+    public StringBuilder featureFileSteps;
+
     /**
      * Base Class Methods
      */
-
-
 
 
 
@@ -185,6 +198,7 @@ public class ApplicationKeywords extends ApplicationXpaths{
 
     public static void assertFail() {
         asser = true;
+        //logBuginAzure();
     }
 
     public static void testStepFailed(String Content) {
@@ -206,6 +220,8 @@ public class ApplicationKeywords extends ApplicationXpaths{
 //            }
 //            System.err.println(Content);
             takeScreenShot();
+
+
 //            assertFail();
         } catch (Exception e) {
             e.printStackTrace();
@@ -233,11 +249,14 @@ public class ApplicationKeywords extends ApplicationXpaths{
             }
             System.err.println(Content);
             assertFail();
+
         } catch (Exception e) {
             e.printStackTrace();
             System.err.println(Content);
         }
     }
+
+
 
     public void waitForPageToLoad() {
         try {
@@ -793,6 +812,7 @@ public class ApplicationKeywords extends ApplicationXpaths{
         return flag;
     }
 
+
     public void clickOn(String objLocator) {
         try {
             JavascriptExecutor js= (JavascriptExecutor) driver;
@@ -1104,8 +1124,8 @@ public class ApplicationKeywords extends ApplicationXpaths{
                 manualScreenshot("Redirected URL verified successfully : " + GOR.BaseUrl+Url);
                 flag = true;
             } else {
-                testStepFailed("Redirected URL is not Matched : " + driver.getCurrentUrl().split("\\?")[0]);
-                testStepFailed("Expected URL : " + GOR.BaseUrl+Url);
+                testStepFailed("Redirected URL is not Matched : " + driver.getCurrentUrl().split("\\?")[0]+ " Expected URL : "+GOR.BaseUrl+Url);
+               // testStepFailed("" + GOR.BaseUrl+Url);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -5090,7 +5110,63 @@ String loc=label+" Text box#xpath=//label[normalize-space(text())='"+label.trim(
 
     }
 
+    // public static void logBuginAzure()
+    // {
+    //     request = RestAssured.given();
+    //     request.contentType("application/json");
 
+    //     Properties prop = new Properties();
+    //     InputStream input;
+    //     strProjectLoc = System.getProperty("user.dir");
+
+    //     try{
+
+    //         input = new FileInputStream(strProjectLoc + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator + "config" + File.separator + "config.properties");
+    //         prop.load(input);
+
+    //     } catch (Exception e){
+
+    //     }
+
+
+    //     String AssginedTo = prop.getProperty("AssignedTo");
+    //     String BugEnvironment = prop.getProperty("BugEnvironment");
+    //     String BugDetectedIn = prop.getProperty("BugDetectedIn");
+    //     String BugSeverity = prop.getProperty("BugSeverity");
+    //     String Devices = prop.getProperty("Devices");
+    //     String OS = prop.getProperty("OS");
+    //     String BuildNumber = prop.getProperty("BuildNumber");
+    //     String AreaPath = prop.getProperty("AreaPath");
+    //     String endpoint = prop.getProperty("APIEndpoint");
+
+
+
+    //     String requestBody = "{\n" +
+    //             "  \"Member\": {\n" +
+    //             "    \"System.AreaPath\": \"" + AreaPath + "\",\n" +
+    //             "    \"System.Title\": \"" + scenarioName + "\",\n" +
+    //             "    \"System.AssignedTo\": \"" + AssginedTo + "\",\n" +
+    //             "    \"Custom.BugEnvironment\": \"" + BugEnvironment + "\",\n" +
+    //             "    \"Custom.BugDetectedIn\": \"" + BugDetectedIn + "\",\n" +
+    //             "    \"Custom.BugSeverity\": \"" + BugSeverity + "\",\n" +
+    //             "    \"Custom.Devices\": \"" + Devices + "\",\n" +
+    //             "    \"Custom.OS\": \"" + OS + "\",\n" +
+    //             "    \"Custom.BuildNumber\": \"" + BuildNumber + "\",\n" +
+    //             "    \"Microsoft.VSTS.TCM.ReproSteps\": \"" + scenario.getName() + "\",\n" +
+    //             "  }\n" +
+    //             "}";
+
+    //     request.body(requestBody);
+    //     response = request.post(endpoint);
+    //     int actualStatusCode = response.getStatusCode();
+    //     ResponseBody body = response.getBody();
+    //     Assert.assertEquals(200, actualStatusCode);
+    //     JsonPath jsonPath = new JsonPath(body.asString());
+    //     bug_id = jsonPath.getInt("id");
+    //     System.out.print("Bug ID is : "+bug_id);
+    //     ExtentCucumberAdapter.getCurrentStep().log(Status.FAIL,"Azure Bug ID: "+ bug_id);
+
+    // }
 
 
 }

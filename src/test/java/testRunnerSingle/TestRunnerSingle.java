@@ -13,7 +13,7 @@ import java.io.IOException;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "classpath:Features_Single/Sprint_1/NewHome",
-        tags = "not @Not",
+      //  tags = "not @Not",
 
 //        tags = "@Run",
 //      dryRun = true,

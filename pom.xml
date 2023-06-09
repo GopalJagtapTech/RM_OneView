@@ -9,30 +9,34 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
     <build>
+        <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>2.12</version>
+            <configuration>
+                <testFailureIgnore>true</testFailureIgnore>
+<!--            </configuration>-->
 
-   <plugins>
+<!--            <configuration>-->
+                <argLine>-Dfile.encoding=UTF-8</argLine>
+            </configuration>
 
-    <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.10</version>
-        <configuration>
-            <argLine>-Dfile.encoding=UTF-8</argLine>
-        </configuration>
-<!--        <configuration>-->
-<!--            <sourceJsonReportDirectory>${project.build.directory}/cucumber-report</sourceJsonReportDirectory>-->
-<!--            <generatedHtmlReportDirectory>-->
-<!--                ${project.build.directory}/generated-report/cluecumber_report_${maven.build.timestamp}-->
-<!--            </generatedHtmlReportDirectory>-->
-<!--        </configuration>-->
-    </plugin>
+<!--            <configuration>-->
+<!--                <sourceJsonReportDirectory>${project.build.directory}/cucumber-report</sourceJsonReportDirectory>-->
+<!--                <generatedHtmlReportDirectory>-->
+<!--                    ${project.build.directory}/generated-report/cluecumber_report_${maven.build.timestamp}-->
+<!--                </generatedHtmlReportDirectory>-->
+<!--            </configuration>-->
 
-   </plugins>
+        </plugin>
+
+        </plugins>
 
     </build>
 

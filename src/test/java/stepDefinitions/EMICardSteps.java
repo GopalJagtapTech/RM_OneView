@@ -1129,7 +1129,7 @@ public class EMICardSteps extends ApplicationKeywords {
     public void click_on_submit_button() {
         clickOnButtonUsingTextUsingForLoop("Submit");
     }
-    @Then("verify Alter Pop-up with “We are currently unable to unblock your card as per inline policies.” with GOT IT CTA is displayed")
+    @Then("verify Alter Pop-up with We are currently unable to unblock your card as per inline policies. with GOT IT CTA is displayed")
     public void verify_alter_pop_up_with_we_are_currently_unable_to_unblock_your_card_as_per_inline_policies_with_got_it_cta_is_displayed() {
     verifyFieldsDisplayedUsingText("We are currently unable to unblock your card as per inline policies.");
     }
