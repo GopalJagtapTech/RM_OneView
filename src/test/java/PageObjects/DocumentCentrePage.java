@@ -1,6 +1,9 @@
 package PageObjects;
 
 import base.ApplicationKeywords;
+import org.openqa.selenium.JavascriptExecutor;
+
+import java.util.*;
 
 public class DocumentCentrePage extends ApplicationKeywords {
 
@@ -428,6 +431,25 @@ public class DocumentCentrePage extends ApplicationKeywords {
 
     }
 
+    public void verifyFilterStatusDocPageNew(String status, String type, String cardDetails) {
+        try {
+            String nodocs = "Docs for" + status + "#xpath=//span[normalize-space(text())='You do not have any " + status.trim() + " " + type.trim() + " with us']|//span[normalize-space(text())='You do not have any " + status.trim() + " " + type.trim() + " with Us']";
+            String cards = "Cards in Document Center Page:" + status + " " + type + "#xpath=//div[@class='j_loan_grids']//div[@class='j_loantype']/descendant::p[contains(text(),'" + cardDetails + "')]";
+            int size = sizeOfLocator(cards);
+            if (size == 0) {
+                testStepInfo("***************TEST DATA ISSUE***************************");
+                testStepFailed("There are No Documents displayed for the given Filter: " + type + " " + status + " Count:" + size);
+
+            } else {
+                manualScreenshot(getRefOfXpath(cards) + " is Displayed Successfully. Count= " + size);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Filter Status DocPage New. Exception: " + e.getClass());
+        }
+
+    }
+
 
     /////////01022023
     public void byDefaultSelectedTab(String Tab, String extra) {
@@ -483,64 +505,66 @@ public class DocumentCentrePage extends ApplicationKeywords {
         try {
             if (transaction.equalsIgnoreCase("Loans")) {
                 String tiles = "Tiles for " + transaction + " " + type + " #xpath=//div[@class='j_loan_box'][@style='display: block;']";
-            if (isElementPresent(tiles)) {
-                int count = sizeOfLocator(tiles);
-                testStepInfo(getRefOfXpath(tiles) + " is " + count);
-                for (int i = 1; i <= count; i++) {
-                    String nudge = "Nudge for Tile " + i + " #xpath=(//div[@class='j_loan_box'][@style='display: block;']/descendant::i[@class='nudge' and normalize-space(text())='" + type.trim() + "'])[" + i + "]";
-                    if (isElementDisplayed(nudge)) {
-                        testStepPassed(getRefOfXpath(nudge) + " is Displayed Successfully");
-                        verifyLocatorColorUsingCssValue(nudge, "#002953", "Blue", "background-color");
-                    } else {
-                        testStepFailed(getRefOfXpath(nudge) + " is not Displayed");
+                if (isElementPresent(tiles)) {
+                    int count = sizeOfLocator(tiles);
+                    testStepInfo(getRefOfXpath(tiles) + " is " + count);
+                    for (int i = 1; i <= count; i++) {
+                        String nudge = "Nudge for Tile " + i + " #xpath=(//div[@class='j_loan_box'][@style='display: block;']/descendant::i[@class='nudge' and normalize-space(text())='" + type.trim() + "'])[" + i + "]";
+                        if (isElementDisplayed(nudge)) {
+                            testStepPassed(getRefOfXpath(nudge) + " is Displayed Successfully");
+                            verifyLocatorColorUsingCssValue(nudge, "#002953", "Blue", "background-color");
+                        } else {
+                            testStepFailed(getRefOfXpath(nudge) + " is not Displayed");
+                        }
+
                     }
 
+                } else {
+                    testStepFailed(getRefOfXpath(tiles) + " is not Displayed");
                 }
-
-            } else {
-                testStepFailed(getRefOfXpath(tiles) + " is not Displayed");
-            }}
+            }
 
             if (transaction.equalsIgnoreCase("Deposits")) {
                 String tiles = "Tiles for " + transaction + " " + type + " #xpath=//div[@id='FDActive'][not(@style='display: none;')]";
-            if (isElementPresent(tiles)) {
-                int count = sizeOfLocator(tiles);
-                testStepInfo(getRefOfXpath(tiles) + " is " + count);
-                for (int i = 1; i <= count; i++) {
-                    String nudge = "Nudge for Tile " + i + " #xpath=(//div[@id='FDActive'][not(@style='display: none;')]/descendant::i[@class='nudge' and normalize-space(text())='" + type.trim() + "'])[" + i + "]";
-                    if (isElementDisplayed(nudge)) {
-                        testStepPassed(getRefOfXpath(nudge) + " is Displayed Successfully");
-                        verifyLocatorColorUsingCssValue(nudge, "#002953", "Blue", "background-color");
-                    } else {
-                        testStepFailed(getRefOfXpath(nudge) + " is not Displayed");
+                if (isElementPresent(tiles)) {
+                    int count = sizeOfLocator(tiles);
+                    testStepInfo(getRefOfXpath(tiles) + " is " + count);
+                    for (int i = 1; i <= count; i++) {
+                        String nudge = "Nudge for Tile " + i + " #xpath=(//div[@id='FDActive'][not(@style='display: none;')]/descendant::i[@class='nudge' and normalize-space(text())='" + type.trim() + "'])[" + i + "]";
+                        if (isElementDisplayed(nudge)) {
+                            testStepPassed(getRefOfXpath(nudge) + " is Displayed Successfully");
+                            verifyLocatorColorUsingCssValue(nudge, "#002953", "Blue", "background-color");
+                        } else {
+                            testStepFailed(getRefOfXpath(nudge) + " is not Displayed");
+                        }
+
                     }
 
+                } else {
+                    testStepFailed(getRefOfXpath(tiles) + " is not Displayed");
                 }
-
-            } else {
-                testStepFailed(getRefOfXpath(tiles) + " is not Displayed");
-            }}
+            }
 
             if (transaction.equalsIgnoreCase("Insurance")) {
                 String tiles = "Tiles for " + transaction + " " + type + " #xpath=//div[@id='InsuranceActive'][not(@style='display: none;')]";
-            if (isElementPresent(tiles)) {
-                int count = sizeOfLocator(tiles);
-                testStepInfo(getRefOfXpath(tiles) + " is " + count);
-                for (int i = 1; i <= count; i++) {
-                    String nudge = "Nudge for Tile " + i + " #xpath=(//div[@id='InsuranceActive'][not(@style='display: none;')]/descendant::i[@class='nudge' and normalize-space(text())='" + type.trim() + "'])[" + i + "]";
-                    if (isElementDisplayed(nudge)) {
-                        testStepPassed(getRefOfXpath(nudge) + " is Displayed Successfully");
-                        verifyLocatorColorUsingCssValue(nudge, "#002953", "Blue", "background-color");
-                    } else {
-                        testStepFailed(getRefOfXpath(nudge) + " is not Displayed");
+                if (isElementPresent(tiles)) {
+                    int count = sizeOfLocator(tiles);
+                    testStepInfo(getRefOfXpath(tiles) + " is " + count);
+                    for (int i = 1; i <= count; i++) {
+                        String nudge = "Nudge for Tile " + i + " #xpath=(//div[@id='InsuranceActive'][not(@style='display: none;')]/descendant::i[@class='nudge' and normalize-space(text())='" + type.trim() + "'])[" + i + "]";
+                        if (isElementDisplayed(nudge)) {
+                            testStepPassed(getRefOfXpath(nudge) + " is Displayed Successfully");
+                            verifyLocatorColorUsingCssValue(nudge, "#002953", "Blue", "background-color");
+                        } else {
+                            testStepFailed(getRefOfXpath(nudge) + " is not Displayed");
+                        }
+
                     }
 
+                } else {
+                    testStepFailed(getRefOfXpath(tiles) + " is not Displayed");
                 }
-
-            } else {
-                testStepFailed(getRefOfXpath(tiles) + " is not Displayed");
-            }}
-
+            }
 
 
         } catch (Exception e) {
@@ -566,7 +590,7 @@ public class DocumentCentrePage extends ApplicationKeywords {
         }
     }
 
-    public void clickOnTileViewDetailsIcon( String accountNo, String extra) {
+    public void clickOnTileViewDetailsIcon(String accountNo, String extra) {
         try {
 
             String iconViewDetails = " " + accountNo + " No. Tile#xpath=//div/descendant::p[contains(text(),'" + accountNo + "')]/ancestor::div[@class='deposit_name']/descendant::img[contains(@src,'/icons-view-details.svg')]";
@@ -589,5 +613,278 @@ public class DocumentCentrePage extends ApplicationKeywords {
             testStepFailed("Failed in click on Tile view Details icon for  -" + accountNo + ". Exception: " + e.getClass());
         }
     }
+
+    //////////////////////24052023/////////////////////
+
+    public void docCenterTiles(String docType, String Options, String extra) {
+        try {
+            if (docType.equalsIgnoreCase("Loans")) {
+                String tiles = "Total Cards for " + docType + ":#xpath=//div[@class='j_loan_box'][@id='LoansActive']";
+                if (isElementDisplayed(tiles)) {
+                    testStepInfo(getRefOfXpath(tiles) + " are " + sizeOfLocator(tiles));
+                    String[] split = Options.split(",");
+                    for (int i = 0; i < split.length; i++) {
+                        String nudge = split[i];
+                        String tilestype = "Documents for " + nudge + " " + docType + ":#xpath=//span[normalize-space(text())='" + nudge.trim() + "']/preceding-sibling::p/ancestor::div[@class='j_loan_box' and @id='LoansActive']";
+                        if (isElementDisplayed(tilestype)) {
+                            testStepInfo(getRefOfXpath(tilestype) + " are: " + sizeOfLocator(tilestype));
+                        } else {
+                            testStepFailed(getRefOfXpath(tilestype) + " are not Displayed ");
+                        }
+
+                    }
+
+                } else {
+                    testStepFailed(getRefOfXpath(tiles) + " are not Displayed ");
+                }
+
+
+            }
+
+            if (docType.equalsIgnoreCase("Deposits")) {
+                String tiles = "Total Cards for " + docType + ":#xpath=//div[@class='j_loan_box'][@id='FDActive']";
+                if (isElementDisplayed(tiles)) {
+                    testStepInfo(getRefOfXpath(tiles) + " are " + sizeOfLocator(tiles));
+                    String[] split = Options.split(",");
+                    for (int i = 0; i < split.length; i++) {
+                        String nudge = split[i];
+                        String tilestype = "Documents for " + nudge + " " + docType + ":#xpath=//span[normalize-space(text())='" + nudge.trim() + "']/preceding-sibling::p/ancestor::div[@class='j_loan_box' and @id='FDActive']";
+                        if (isElementDisplayed(tilestype)) {
+                            testStepInfo(getRefOfXpath(tilestype) + " are: " + sizeOfLocator(tilestype));
+                        } else {
+                            testStepFailed(getRefOfXpath(tilestype) + " are not Displayed ");
+                        }
+
+                    }
+
+                } else {
+                    testStepFailed(getRefOfXpath(tiles) + " are not Displayed ");
+                }
+
+
+            }
+
+            if (docType.equalsIgnoreCase("Insurance")) {
+                String tiles = "Total Cards for " + docType + ":#xpath=//div[@class='j_loan_box'][@id='InsuranceActive']";
+                if (isElementDisplayed(tiles)) {
+                    testStepInfo(getRefOfXpath(tiles) + " are " + sizeOfLocator(tiles));
+                    String[] split = Options.split(",");
+                    for (int i = 0; i < split.length; i++) {
+                        String nudge = split[i];
+                        String tilestype = "Documents for " + nudge + " " + docType + ":#xpath=//span[normalize-space(text())='" + nudge.trim() + "']/preceding-sibling::p/ancestor::div[@class='j_loan_box' and @id='InsuranceActive']";
+                        if (isElementDisplayed(tilestype)) {
+                            testStepInfo(getRefOfXpath(tilestype) + " are: " + sizeOfLocator(tilestype));
+                        } else {
+                            testStepFailed(getRefOfXpath(tilestype) + " are not Displayed ");
+                        }
+
+                    }
+
+                } else {
+                    testStepFailed(getRefOfXpath(tiles) + " are not Displayed ");
+                }
+
+
+            }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in doc Center Tiles. Exception: " + e.getClass());
+        }
+    }
+
+    //i[normalize-space(text())='Closed']/preceding-sibling::input[@type='checkbox']
+
+    public void verifyFilterCheckBoxesSelected(String Cardtype, String Options, String extra) {
+        try {
+            String split[] = Options.split(",");
+            for (int i = 0; i < split.length; i++) {
+                String option = split[i];
+                String checkBox = "Check Box for " + option + " " + Cardtype + ":#xpath=//i[normalize-space(text())='" + option.trim() + "']/preceding-sibling::input[@type='checkbox']";
+                verifyCheckBoxIsSelectedUsingLocator(checkBox, "");
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Filter CheckBoxes Selected. Exception: " + e.getClass());
+        }
+    }
+
+    public void verifyCardOrders(String Cardtype, String extra) {
+        try {
+
+            if (Cardtype.equalsIgnoreCase("Loans")) {
+                List<String> list = new ArrayList<String>();
+//                Map<Integer,String> map=new HashMap<>();
+                String cardNudge = "Card Nudge#xpath=//div[@class='j_loan_box'][@id='LoansActive'][@style='display: block;']/descendant::div[@class='j_loan_amt']/child::span";
+                for (int i = 1; i <= sizeOfLocator(cardNudge); i++) {
+                    String cardtype = getTextPresent(cardNudge);
+                    list.add(cardtype);
+//                    map.put(i, cardtype);
+                }
+                testStepInfo("Total Cards: " + list.size());
+                for (int i = 0; i < list.size(); i++) {
+                    String tag = list.get(i);
+                    if (tag.equalsIgnoreCase("Active")) {
+                        testStepInfo("Card Number " + i + "is Active");
+//                        list.remove(i);
+                        if (list.get(i).equalsIgnoreCase("Closed")) {
+                            testStepInfo("Closed Cards Number have started");
+                            testStepInfo("Card Number " + i + "is Closed");
+//                            list.remove(i);
+                            if (list.get(i).equalsIgnoreCase("Active")) {
+                                testStepFailed("Card Number " + i + "is Active,but is displaying after Closed Cards");
+                                break;
+                            } else {
+                                testStepPassed("Cards are displaying as per required order");
+                            }
+                        }
+                    }
+                }
+
+
+            }
+
+            if (Cardtype.equalsIgnoreCase("Deposits")) {
+                List<String> list = new LinkedList<>();
+                String cardNudge = "Card Nudge#xpath=//div[@class='j_loan_box'][@id='FDActive']/descendant::div[@class='j_loan_amt']/child::span";
+                for (int i = 1; i <= sizeOfLocator(cardNudge); i++) {
+                    String cardtype = getTextPresent(cardNudge);
+                    list.add(cardtype);
+                }
+                testStepInfo("Total Cards: " + list.size());
+                for (int i = 0; i < list.size(); i++) {
+                    if (list.get(i).equalsIgnoreCase("OPEN")) {
+                        testStepInfo("Card Number " + i + "is Active");
+                        list.remove(i);
+                        if (list.get(i).equalsIgnoreCase("PRE-MATURED")) {
+                            testStepInfo("Matured/Prematured Cards Number have started");
+                            testStepInfo("Card Number " + i + "is PRE-MATURED");
+                            list.remove(i);
+                            if (list.get(i).equalsIgnoreCase("OPEN")) {
+                                testStepFailed("Card Number " + i + "is Active,but is displaying after PRE-MATURED Cards");
+                                break;
+                            } else {
+                                testStepPassed("Cards are displaying as per required order");
+                            }
+                        }
+                    }
+                }
+
+
+            }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Card Orders. Exception: " + e.getClass());
+        }
+
+
+    }
+
+    public void verifyCardOrders2(String Cardtype, String extra) {
+        try {
+            if (Cardtype.equalsIgnoreCase("Loans")) {
+                String activeCards = "Active Loan Cards#xpath=//div[@id='LoansActive']/descendant::div[@class='j_loan_amt']/child::span[normalize-space(text())='ACTIVE']";
+                int Active = sizeOfLocator(activeCards);
+                if (Active == 0) {
+                    testStepFailed("No Active Cards for this Customer");
+                    testStepFailed("*****************TEST DATA ISSSUE********************");
+                } else {
+                    testStepInfo(getRefOfXpath(activeCards) + " Count is:" + Active);
+                    String cardNudge = "Card Nudge#xpath=//div[@id='LoansActive']/descendant::div[@class='j_loan_amt']/child::span";
+                    int size = sizeOfLocator(cardNudge);
+                    testStepInfo("Total Cards Count: " + size);
+                    for (int i = 1; i <= Active; i++) {
+                        String cardNudge1 = "Card Nudge#xpath=(//div[@id='LoansActive']/descendant::div[@class='j_loan_amt']/child::span[normalize-space(text())='ACTIVE'])[" + i + "]";
+                        waitTime(3);
+                        if (isElementPresent(cardNudge1)) {
+                            testStepPassed("Card Number " + i + " is Active and is displaying before Closed Card Types");
+
+                        } else {
+                            testStepFailed("Card Number " + i + " is not Active and is displaying before Active Card Types");
+
+                        }
+
+                    }
+
+                }
+            }
+
+            if (Cardtype.equalsIgnoreCase("Deposits")) {
+                String activeCards = "Active Deposit Cards#xpath=//div[@id='FDActive']/descendant::div[@class='j_loan_amt']/child::span[normalize-space(text())='OPEN']";
+                int Active = sizeOfLocator(activeCards);
+                if (Active == 0) {
+                    testStepFailed("No Active Cards for this Customer");
+                    testStepFailed("*****************TEST DATA ISSSUE********************");
+                } else {
+                    testStepInfo(getRefOfXpath(activeCards) + " Count is:" + Active);
+                    String cardNudge = "Card Nudge#xpath=//div[@id='FDActive']/descendant::div[@class='j_loan_amt']/child::span";
+                    int size = sizeOfLocator(cardNudge);
+                    testStepInfo("Total Cards Count: " + size);
+                    for (int i = 1; i <= Active; i++) {
+                        String cardNudge1 = "Card Nudge#xpath=(//div[@id='FDActive']/descendant::div[@class='j_loan_amt']/child::span[normalize-space(text())='OPEN'])[" + i + "]";
+                        waitTime(3);
+                        if (isElementPresent(cardNudge1)) {
+                            testStepPassed("Card Number " + i + " is Open and is displaying before Matured/Pre-Matured Card Types");
+
+                        } else {
+                            testStepFailed("Card Number " + i + " is not Open and is displaying before Open Card Types");
+
+                        }
+
+                    }
+
+                }
+            }
+
+
+        } catch (
+                Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Card Orders 2. Exception: " + e.getClass());
+        }
+
+
+    }
+
+
+    public void insuranceCardsOrder() {
+        try {
+            String activeCards = "Active Insurance Cards#xpath=//div[@class='j_loan_box'][@id='InsuranceActive']/descendant::div[@class='j_loan_amt']/child::span[normalize-space(text())='ACTIVE']";
+            int Active = sizeOfLocator(activeCards);
+            if (Active == 0) {
+                testStepFailed("No Active Cards for this Customer");
+                testStepFailed("*****************TEST DATA ISSSUE********************");
+            } else {
+                testStepInfo(getRefOfXpath(activeCards) + " Count is:" + Active);
+                String cardNudge = "Card Nudge#xpath=//div[@class='j_loan_box'][@id='InsuranceActive']/descendant::div[@class='j_loan_amt']/child::span";
+                int size = sizeOfLocator(cardNudge);
+                testStepInfo("Total Cards Count: " + size);
+                for (int i = 1; i <= Active; i++) {
+                    String cardNudge1 = "Card Nudge#xpath=(//div[@class='j_loan_box'][@id='InsuranceActive']/descendant::div[@class='j_loan_amt']/child::span[normalize-space(text())='ACTIVE'])[" + i + "]";
+                    waitTime(3);
+                    if (isElementPresent(cardNudge1)) {
+                        testStepPassed("Card Number " + i + " is Active and is displaying before Other Card Types");
+
+                    } else {
+                        testStepFailed("Card Number " + i + " is not Active and is displaying before Active Card Types");
+
+                    }
+
+                }
+
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in insurance Cards Order. Exception: " + e.getClass());
+        }
+
+
+    }
+
 
 }

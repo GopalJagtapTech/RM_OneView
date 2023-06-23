@@ -186,7 +186,7 @@ public class B2BServicesSteps extends ApplicationKeywords {
 
     @And("verify options available under {string} on RHS\\(B{int}B Services)")
     public void verifyOptionsAvailableUnderOnRHSBBServices(String string, int arg1) {
-        verifyRhs(string, "Make Payments#View Statements", "");
+        verifyRhs(string, "Make Payments#View Documents", "");
     }
 
     @Then("verify Payments popup is displayed")
@@ -197,7 +197,7 @@ public class B2BServicesSteps extends ApplicationKeywords {
 
     @And("verify options available under {string} on RHS\\(B{int}B Services Closed)")
     public void verifyOptionsAvailableUnderOnRHSBBServicesClosed(String string, int arg1) {
-        verifyRhs(string, "View Statements", "");
+        verifyRhs(string, "View Documents", "");
 
     }
 

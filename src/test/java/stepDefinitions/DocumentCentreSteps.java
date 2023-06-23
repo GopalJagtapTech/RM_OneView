@@ -170,7 +170,7 @@ public class DocumentCentreSteps extends ApplicationKeywords {
 
     @Then("verify for Card-{string} and Status-{string}, the Cards are Displayed-{string}")
     public void verifyForCardAndStatusTheCardsAreDisplayed(String card, String status, String details) {
-        doccentre.verifyFilterStatusDocPage(status, card, details);
+        doccentre.verifyFilterStatusDocPageNew(status, card, details);
 
     }
 
@@ -263,7 +263,7 @@ public class DocumentCentreSteps extends ApplicationKeywords {
 
     @Then("verify Customer clicks on {string}")
     public void verifyCustomerClicksOn(String string) {
-        doccentre.clickOnTileViewDetailsIcon(string,"");
+        doccentre.clickOnTileViewDetailsIcon(string, "");
     }
 
     @Then("{string} document should not be displayed for mentioned product ID {string}")
@@ -274,6 +274,49 @@ public class DocumentCentreSteps extends ApplicationKeywords {
 
     @Then("Verify Customer Redirected to respective URL {string} in new Tab")
     public void verifyCustomerRedirectedToRespectiveURLInNewTab(String string) {
-        verifyRedirectioninNewTab(string,"");
+        verifyRedirectioninNewTab(string, "");
+    }
+
+    //////////////29052023
+    @Then("Customer should be able to view all {string} LAN for {string}")
+    public void customerShouldBeAbleToViewAllLANFor(String status, String Cardtype) {
+        doccentre.docCenterTiles(Cardtype, status, "");
+
+
+    }
+
+
+    @Then("{string} filter should be selected by default in Document Center page for {string}")
+    public void filterShouldBeSelectedByDefaultInDocumentCenterPageFor(String options, String card) {
+        doccentre.verifyFilterCheckBoxesSelected(card, options, "");
+    }
+
+    @Then("Customer should be able to view all {string} Cards for {string}")
+    public void customerShouldBeAbleToViewAllCardsFor(String status, String Cardtype) {
+        doccentre.docCenterTiles(Cardtype, status, "");
+
+    }
+
+    @Then("Active loans should be displayed before closed loans for {string}")
+    public void activeLoansShouldBeDisplayedBeforeClosedLoansFor(String Cardtype) {
+        doccentre.verifyCardOrders2(Cardtype, "");
+
+    }
+
+    @Then("Active Cards should be displayed first and then the Matured Cards for {string}")
+    public void activeCardsShouldBeDisplayedFirstAndThenTheMaturedCardsFor(String Cardtype) {
+        doccentre.verifyCardOrders2(Cardtype, "");
+
+    }
+
+    @Then("Active insurance should be displayed before cancelled, surrendered and closed insurance for {string}")
+    public void activeInsuranceShouldBeDisplayedBeforeCancelledSurrenderedAndClosedInsuranceFor(String Cardtype) {
+        doccentre.verifyCardOrders2(Cardtype, "");
+
+    }
+
+    @Then("Active insurance should be displayed before cancelled, surrendered and closed insurance")
+    public void activeInsuranceShouldBeDisplayedBeforeCancelledSurrenderedAndClosedInsurance() {
+        doccentre.insuranceCardsOrder();
     }
 }

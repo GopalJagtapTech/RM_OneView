@@ -4,6 +4,7 @@ package PageObjects;
 import base.ApplicationKeywords;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import java.util.*;
 
@@ -2022,6 +2023,89 @@ String locator=sectionName+" : "+optionName+"#xpath=//*[normalize-space(text())=
             e.printStackTrace();
             testStepFailed("Failed in Click On " + getRefOfXpath(objLocator) + ". Exception: " + e.getClass());
         }
+    }
+
+
+    //////////2106
+    public static final String pTB_Popup = "EMI Offer Popup#xpath=//div[@id='ptbOfferPopup']";
+
+
+    public Boolean clickOnHorizantalLevelTwoSubMenu(String firstLevelMenuText) {
+        Boolean flag = false;
+        try {
+
+            String locator = "Horizantal level 2 sub Menu - " + firstLevelMenuText + "#xpath=//li[@class='dropdown-parent']//following-sibling::li[normalize-space(text())='" + firstLevelMenuText.trim() + "']";
+            // String locator = "Horizantal level 2 sub Menu - " + menuText + "#xpath=//a[normalize-space(text())='" + firstLevelMenuText.trim() + "']/../div[@class='leveltwo_sub_items']/descendant::a[normalize-space(text())='" + menuText.trim() + "']";
+            //scrollToWebElement(locator);
+            if (isElementPresent(locator)) {
+                clickOn(locator, "");
+                waitForPageToLoad();
+                flag = true;
+            } else {
+                testStepFailed("Horizantal level 2 sub Menu - " + firstLevelMenuText + " is not displayed");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in click On Horizantal level 2 sub  Menu " + firstLevelMenuText + ". Exception: " + e.getClass());
+        }
+        return flag;
+    }
+
+    public void clickOnHorizantalMenuFinalOption(String firstLevelMenuText, String option) {
+//        Boolean flag = false;
+        try {
+
+            String locator = "Horizantal level 2 sub Menu - " + option + "#xpath=//li[@class='dropdown-parent']//following-sibling::li[normalize-space(text())='" + firstLevelMenuText.trim() + "']//ul[@class='list-unstyled']//a[normalize-space(text())='" + option.trim() + "']";
+            clickOnIfDisplayed(locator);
+            //            if (isElementPresent(locator)) {
+//                clickOn(locator, "");
+////                waitForPageToLoad();
+////                flag = true;
+//            } else {
+//                testStepFailed("Horizantal level 2 sub Menu - " + option + " is not displayed");
+//            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in click On Horizantal level 2 sub  Menu " + option + ". Exception: " + e.getClass());
+        }
+//        return flag;
+    }
+
+    public Boolean mouseHoverHorizantalSubMenu(String menuText) {
+        Boolean flag = false;
+        try {
+            String menu = "Horizantal level 2 sub Menu - " + menuText + "#xpath=//li[@class='dropdown-parent']//following-sibling::li[normalize-space(text())='" + menuText.trim() + "']";
+            if (isElementPresent(menu)) {
+                Actions action = new Actions(driver);
+                action.moveToElement(findWebElement(menu)).build().perform();
+                waitTime(2);
+            } else {
+                testStepFailed("Horizantal sub Menu - " + menuText + " is not displayed");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in mouse Hover Horizantal SubMenu " + menuText + ". Exception: " + e.getClass());
+        }
+        return flag;
+    }
+
+
+    public Boolean clickOnHorizantalMenuMainOption(String menuText) {
+        Boolean flag = false;
+        try {
+            //  String locator = "Horizantal Menu - " + menuText + "#xpath=//ul[@class='menuitems']/descendant::a[normalize-space(text())='" + menuText.trim() + "']";
+            String locator = "Horizantal Menu - " + menuText + "#xpath=//div[@class='newcust_subheader']/descendant::a[normalize-space(text())='" + menuText.trim() + "']";
+            if (isElementDisplayed(locator)) {
+                clickOn(locator, "");
+                flag = true;
+            } else {
+                testStepFailed("Horizantal Menu - " + menuText + " is not displayed");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in clickOn Horizantal Menu Main Option " + menuText + ". Exception: " + e.getClass());
+        }
+        return flag;
     }
 
 

@@ -99,56 +99,56 @@ Feature: Business Loan NTB
       | dropDownType | Loan type | Subheading | level 2 Sub Type |Expected Url|
       | Loans | Business Loan | Secured | Overview | https://uat-oneweb.bajajfinserv.in/secured-business-loan |
 
-  Scenario Outline: Loans  & Business Loan  Secured  - Features
+  Scenario Outline: Loans  & Business Loan  Secured  - Eligibility Criteria
     When Customer Clicks on "<dropDownType>" Drop-down & Hover over "<Loan type>"
     And clicks on "<Loan type>","<Subheading>" and "<level 2 Sub Type>"
     Then Customer should be Redirected to "<Expected Url>"
     Examples:
       | dropDownType | Loan type | Subheading | level 2 Sub Type |Expected Url|
-      | Loans | Business Loan | Secured | Features | https://uat-oneweb.bajajfinserv.in/secured-business-loan-features |
+      | Loans | Business Loan | Secured | Eligibility Criteria | https://uat-oneweb.bajajfinserv.in/secured-business-loan-eligibility-and-documents |
 
-  Scenario Outline: Loans  & Business Loan  Secured  - EMI Calculator
+  Scenario Outline: Loans  & Business Loan  Secured  - Interest Rates, Fees and Charges
     When Customer Clicks on "<dropDownType>" Drop-down & Hover over "<Loan type>"
     And clicks on "<Loan type>","<Subheading>" and "<level 2 Sub Type>"
     Then Customer should be Redirected to "<Expected Url>"
     Examples:
       | dropDownType | Loan type | Subheading | level 2 Sub Type |Expected Url|
-      | Loans | Business Loan | Secured | EMI Calculator | https://uat-oneweb.bajajfinserv.in/secured-business-loan-emi-calculator |
+      | Loans | Business Loan | Secured | Interest Rates, Fees and Charges | https://uat-oneweb.bajajfinserv.in/secured-business-loan-fees-and-interest-rates |
 
 
-  Scenario Outline: Loans  & Business Loan  Secured  - Eligibility
+  Scenario Outline: Loans  & Business Loan  Secured  - Apply Online
     When Customer Clicks on "<dropDownType>" Drop-down & Hover over "<Loan type>"
     And clicks on "<Loan type>","<Subheading>" and "<level 2 Sub Type>"
     Then Customer should be Redirected to "<Expected Url>"
     Examples:
       | dropDownType | Loan type | Subheading | level 2 Sub Type |Expected Url|
-      | Loans | Business Loan | Secured | Eligibility | https://uat-oneweb.bajajfinserv.in/secured-business-loan-eligibility-and-documents |
+      | Loans | Business Loan | Secured | Apply Online | https://uat-oneweb.bajajfinserv.in/business-loan-secured-form |
 
-  Scenario Outline: Loans  & Business Loan  Secured  - How to Apply
+  Scenario Outline: Loans  & Business Loan  Secured  - Flexi Loan
     When Customer Clicks on "<dropDownType>" Drop-down & Hover over "<Loan type>"
     And clicks on "<Loan type>","<Subheading>" and "<level 2 Sub Type>"
     Then Customer should be Redirected to "<Expected Url>"
     Examples:
       | dropDownType | Loan type | Subheading | level 2 Sub Type |Expected Url|
-      | Loans | Business Loan | Secured | How to Apply | https://uat-oneweb.bajajfinserv.in/how-to-apply-for-secured-business-loan |
+      | Loans | Business Loan | Secured | Flexi Loan | https://uat-oneweb.bajajfinserv.in/flexi-loan-overview |
 
 @SGN
-  Scenario Outline: Loans  & Business Loan  Secured  - Fees & Charges
+  Scenario Outline: Loans  & Business Loan  Secured  - Manage your Term loan
     When Customer Clicks on "<dropDownType>" Drop-down & Hover over "<Loan type>"
     And clicks on "<Loan type>","<Subheading>" and "<level 2 Sub Type>"
     Then Customer should be Redirected to "<Expected Url>"
     Examples:
       | dropDownType | Loan type | Subheading | level 2 Sub Type |Expected Url|
-      | Loans | Business Loan | Secured | Fees & Charges | https://uat-oneweb.bajajfinserv.in/secured-business-loan-fees-and-charges |
-#@SGN
-#  Scenario Outline: Loans  & Business Loan  Secured  -Manage your Flexi Loan
-#    When Customer Clicks on "<dropDownType>" Drop-down & Hover over "<Loan type>"
-#    And clicks on "<Loan type>","<Subheading>" and "<level 2 Sub Type>"
-#    Then Customer should be Redirected to "<Expected Url>"
-#    Examples:
-#      | dropDownType | Loan type | Subheading | level 2 Sub Type |Expected Url|
-#      | Loans | Business Loan | Secured | Manage your Flexi Loan | https://uat-oneweb.bajajfinserv.in/service-guides/manage-your-flexi-loans-in-my-account |
-#
+      | Loans | Business Loan | Secured | Manage your Term loan | https://uat-oneweb.bajajfinserv.in/service-guides/manage-your-loans-in-my-account |
+@SGN
+  Scenario Outline: Loans  & Business Loan  Secured  -Manage your Flexi Loan
+    When Customer Clicks on "<dropDownType>" Drop-down & Hover over "<Loan type>"
+    And clicks on "<Loan type>","<Subheading>" and "<level 2 Sub Type>"
+    Then Customer should be Redirected to "<Expected Url>"
+    Examples:
+      | dropDownType | Loan type | Subheading | level 2 Sub Type |Expected Url|
+      | Loans | Business Loan | Secured | Manage your Flexi Loan | https://uat-oneweb.bajajfinserv.in/service-guides/manage-your-flexi-loans-in-my-account |
+
 
   Scenario Outline: HM_CC To verify Business Loan -  Apply Online
     When Customer Clicks on "<dropDownType>" Drop-down & Hover over "<Loan type>"

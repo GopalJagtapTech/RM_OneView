@@ -12,7 +12,7 @@ Feature: Payments Journey (Checkout)
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then verify Payment Page is displayed with the contents
 
     Examples:
@@ -30,7 +30,7 @@ Feature: Payments Journey (Checkout)
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to respective URL "<Url>"
     And Customer clicks on "Cancel" Button
     Then Verify Customer Redirected to respective URL "<Url1>"
@@ -50,7 +50,7 @@ Feature: Payments Journey (Checkout)
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to respective URL "<Url>"
     And verify Amount on PAY RS is displayed same as mentioned in previous screen under amount payable and payment cancelled page on Payment checkout page
 
@@ -70,7 +70,7 @@ Feature: Payments Journey (Checkout)
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer enters Part Payment Amount of more than one lakh "101000"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to respective URL "<Url>"
     And verify "UPI" payment method is not displayed for amount >=1 lakh Rupees on payment checkout page
 
@@ -89,7 +89,7 @@ Feature: Payments Journey (Checkout)
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to respective URL "<Url>"
     And Customer clicks on "Cancel" Button
     Then Verify Customer Redirected to respective URL "<Url1>"
@@ -130,7 +130,7 @@ Feature: Payments Journey (Checkout)
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to respective URL "<Url>"
 
     Examples:
@@ -167,7 +167,7 @@ Feature: Payments Journey (Checkout)
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to respective URL "<Url>"
     And Customer clicks on "Cancel" Button
     Then Verify Customer Redirected to respective URL "<Url1>"
@@ -190,7 +190,7 @@ Feature: Payments Journey (Checkout)
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to respective URL "<Url>"
     And Customer clicks on "Cancel" Button
     Then Verify Customer Redirected to respective URL "<Url1>"
@@ -212,7 +212,7 @@ Feature: Payments Journey (Checkout)
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to respective URL "<Url>"
     And Customer clicks on "Cancel" Button
     Then Verify Customer Redirected to respective URL "<Url1>"
@@ -234,7 +234,7 @@ Feature: Payments Journey (Checkout)
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to respective URL "<Url>"
     And Customer clicks on "Cancel" Button
     Then Verify Customer Redirected to respective URL "<Url1>"
@@ -257,7 +257,7 @@ Feature: Payments Journey (Checkout)
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to respective URL "<Url>"
     And Customer clicks on "Cancel" Button
     Then Verify Customer Redirected to respective URL "<Url1>"

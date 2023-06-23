@@ -47,12 +47,12 @@ public class SearchPage extends ApplicationKeywords {
         try {
             if (isElementDisplayed(locator)) {
                 String len= findWebElement(locator).getAttribute("maxlength");
-               Integer val=Integer.parseInt(len);
-               if(val==26){
-                   testStepPassed("Search bar maximum length is 26 characters");
-               }else{
-                   testStepFailed("Search bar maximum length is  Not 26 characters");
-               }
+                Integer val=Integer.parseInt(len);
+                if(val==26){
+                    testStepPassed("Search bar maximum length is 26 characters");
+                }else{
+                    testStepFailed("Search bar maximum length is  Not 26 characters");
+                }
                 String text = findWebElement(locator).getAttribute("value");
                 Integer strLength=text.length();
 
@@ -77,7 +77,7 @@ public class SearchPage extends ApplicationKeywords {
         String locator="Search Bar in Home page#xpath=//input[@id='txtSearch']";
         try {
             if (isElementDisplayed(locator)) {
-               // String val= findWebElement(locator).getText();
+                // String val= findWebElement(locator).getText();
                 String val=findWebElement(locator).getAttribute("value");
                 inputValue = inputValue.replaceAll("[-+^]*", "");
                 inputValue=inputValue.replaceAll("\\W", "")   ;
@@ -186,7 +186,7 @@ public class SearchPage extends ApplicationKeywords {
     public void clickonCloseIcon (String locator) {
         try {
             if (isElementDisplayed(locator)) {
-              clickOn(locator);
+                clickOn(locator);
                 testStepPassed(locator.split("#")[0] + "clicked  Sucessfully");
             } else {
                 testStepPassed(locator.split("#")[0] + " not clicked  Sucessfully");
@@ -227,22 +227,22 @@ public class SearchPage extends ApplicationKeywords {
                 //manualScreenshot("Search Criteria was displayed Sucessfully");
                 String searchVal = "Search values #xpath=//div[@id='popularSearch']//li";
                 List<WebElement> list = findWebElements(searchVal);
-               Integer searchSize = list.size();
-               if(searchSize==6){
-                   testStepPassed("Search Criteria was displayed Sucessfully with Six Search values");
-               }else{
-                   testStepFailed("Search Criteria was NOT  displayed Sucessfully with Six values");
+                Integer searchSize = list.size();
+                if(searchSize==6){
+                    testStepPassed("Search Criteria was displayed Sucessfully with Six Search values");
+                }else{
+                    testStepFailed("Search Criteria was NOT  displayed Sucessfully with Six values");
 
-               }
+                }
                 for (WebElement i : list) {
                     String searchValue = i.getText().trim();
-                  if(searchValue.equals(expectedSearchValue)){
-                       testStepPassed(expectedSearchValue+" is displayed sucessfully");
-                       status=true;
-                       break;
-                   }else{
-                      //
-                   }
+                    if(searchValue.equals(expectedSearchValue)){
+                        testStepPassed(expectedSearchValue+" is displayed sucessfully");
+                        status=true;
+                        break;
+                    }else{
+                        //
+                    }
                 }
 
             } else {
@@ -335,8 +335,8 @@ public class SearchPage extends ApplicationKeywords {
             if (isElementDisplayed(objectLocator)) {
                 manualScreenshot(objectLocator.split("#")[0] + " is Displayed Successfully");
                 String color = findWebElement(objectLocator).getCssValue(cssValue);
-               // String hex = Color.fromString(color).asHex();
-               // testStepInfo(hex);
+                // String hex = Color.fromString(color).asHex();
+                // testStepInfo(hex);
                 if (color.equals(expectedColorHexValue)) {
                     flag=true;
                     manualScreenshot(objectLocator.split("#")[0] + " - " + expectedColor + expectedColorHexValue +" Color Verified Successfully");
@@ -367,7 +367,7 @@ public class SearchPage extends ApplicationKeywords {
                     scrollToWebElement(buttonElement);
                     if (isElementDisplayed(buttonElement, 10)) {
                         clickOn(buttonElement);
-                      //  manualScreenshot(buttonLabel + "  displayed Sucessfully");
+                        //  manualScreenshot(buttonLabel + "  displayed Sucessfully");
                         status = true;
                         break;
                     }
@@ -375,7 +375,7 @@ public class SearchPage extends ApplicationKeywords {
 
             }
             if (!status) {
-              //  testStepInfo(buttonLabel + "  is not present.");
+                //  testStepInfo(buttonLabel + "  is not present.");
             }
         } catch (Exception e) {
             testStepFailed("Failed in verifying labelName. Exception : " + e.getClass());
@@ -402,7 +402,7 @@ public class SearchPage extends ApplicationKeywords {
                 }
                 for (WebElement i : list) {
                     String searchValue = i.getText();
-                        testStepPassed(searchValue+" is displayed sucessfully");
+                    testStepPassed(searchValue+" is displayed sucessfully");
                 }
 
             } else {
@@ -436,8 +436,8 @@ public class SearchPage extends ApplicationKeywords {
                     String withoutBoldType = findWebElement(withoutBold).getCssValue("font-weight");
 
                     if(withBoldType.equals("700")&&withoutBoldType.equals("400")){
-                           testStepPassed(keyWord+" is diplayed as normal "+searchValue+"Displayed Sucesfully with bold format ");
-                       }else{
+                        testStepPassed(keyWord+" is diplayed as normal "+searchValue+"Displayed Sucesfully with bold format ");
+                    }else{
                         testStepFailed(keyWord+"Not Displayed Sucesfully with searched values as normal and remaining values are bold ");
 
                     }

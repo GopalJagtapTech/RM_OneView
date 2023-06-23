@@ -28,7 +28,7 @@ Feature: Document Center New
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter/index" Url
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Closed"
+#    And Selects a Relation Status in Filter in Doc Page-"Closed"
     And Clicks on Apply Button in Filter in Doc Page
     Then verify for Card-"Loans" and Status-"Closed", the Cards are Displayed-"Loan Account Number"
     And User clicks on a Card "<Card Number>"
@@ -48,7 +48,7 @@ Feature: Document Center New
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter/index" Url
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Closed"
+#    And Selects a Relation Status in Filter in Doc Page-"Closed"
     And Clicks on Apply Button in Filter in Doc Page
     And User clicks on a Card "<Card Number>"
     And User should be redirected to specific document page "<Card Number>"
@@ -90,7 +90,7 @@ Feature: Document Center New
     And Clicks on the Document Centre Page tab "Deposits"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Closed"
+#    And Selects a Relation Status in Filter in Doc Page-"Closed"
     And Clicks on Apply Button in Filter in Doc Page
     Then verify for Card-"Deposits" and Status-"Closed", the Cards are Displayed-"Fixed Deposit Number"
     And User clicks on a Card "<Card Number>"
@@ -111,7 +111,7 @@ Feature: Document Center New
     And Clicks on the Document Centre Page tab "Deposits"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Closed"
+#    And Selects a Relation Status in Filter in Doc Page-"Closed"
     And Clicks on Apply Button in Filter in Doc Page
     And User clicks on a Card "<Card Number>"
     And User should be redirected to specific document page "<Card Number>"
@@ -155,7 +155,9 @@ Feature: Document Center New
     And Clicks on the Document Centre Page tab "Insurance"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Closed"
+    And Unselects a Relation Status in Filter in Doc Page-"Cancelled"
+    And Unselects a Relation Status in Filter in Doc Page-"Surrendered"
+#    And Selects a Relation Status in Filter in Doc Page-"Closed"
     And Clicks on Apply Button in Filter in Doc Page
     And User clicks on a Card "<Card Number>"
     And User should be redirected to specific document page "<Card Number>"
@@ -175,7 +177,9 @@ Feature: Document Center New
     And Clicks on the Document Centre Page tab "Insurance"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Closed"
+    And Unselects a Relation Status in Filter in Doc Page-"Cancelled"
+    And Unselects a Relation Status in Filter in Doc Page-"Surrendered"
+#    And Selects a Relation Status in Filter in Doc Page-"Closed"
     And Clicks on Apply Button in Filter in Doc Page
     And User clicks on a Card "<Card Number>"
     And User should be redirected to specific document page "<Card Number>"
@@ -195,7 +199,8 @@ Feature: Document Center New
     And Clicks on the Document Centre Page tab "Insurance"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Cancelled"
+    And Unselects a Relation Status in Filter in Doc Page-"Closed"
+    And Unselects a Relation Status in Filter in Doc Page-"Surrendered"
     And Clicks on Apply Button in Filter in Doc Page
     And User clicks on a Card "<Card Number>"
     And User should be redirected to specific document page "<Card Number>"
@@ -215,7 +220,8 @@ Feature: Document Center New
     And Clicks on the Document Centre Page tab "Insurance"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Cancelled"
+    And Unselects a Relation Status in Filter in Doc Page-"Closed"
+    And Unselects a Relation Status in Filter in Doc Page-"Surrendered"
     And Clicks on Apply Button in Filter in Doc Page
     And User clicks on a Card "<Card Number>"
     And User should be redirected to specific document page "<Card Number>"
@@ -235,7 +241,9 @@ Feature: Document Center New
     And Clicks on the Document Centre Page tab "Insurance"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Surrendered"
+    And Unselects a Relation Status in Filter in Doc Page-"Closed"
+    And Unselects a Relation Status in Filter in Doc Page-"Cancelled"
+#    And Selects a Relation Status in Filter in Doc Page-"Surrendered"
     And Clicks on Apply Button in Filter in Doc Page
     And User clicks on a Card "<Card Number>"
     And User should be redirected to specific document page "<Card Number>"
@@ -255,7 +263,8 @@ Feature: Document Center New
     And Clicks on the Document Centre Page tab "Insurance"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Surrendered"
+    And Unselects a Relation Status in Filter in Doc Page-"Closed"
+    And Unselects a Relation Status in Filter in Doc Page-"Cancelled"
     And Clicks on Apply Button in Filter in Doc Page
     And User clicks on a Card "<Card Number>"
     And User should be redirected to specific document page "<Card Number>"
@@ -290,7 +299,7 @@ Feature: Document Center New
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter/index" Url
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Closed"
+#    And Selects a Relation Status in Filter in Doc Page-"Closed"
     And Clicks on Apply Button in Filter in Doc Page
     And Verify that message is displayed to customer "<Message>"
     Examples:
@@ -307,7 +316,7 @@ Feature: Document Center New
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter/index" Url
     And Clicks on Filter in Doc Centre Page
     And Selects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Closed"
+#    And Selects a Relation Status in Filter in Doc Page-"Closed"
     And Clicks on Apply Button in Filter in Doc Page
     And Verify that message is displayed to customer "<Message>"
     Examples:
@@ -340,7 +349,7 @@ Feature: Document Center New
     And Clicks on the Document Centre Page tab "Deposits"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Closed"
+#    And Selects a Relation Status in Filter in Doc Page-"Closed"
     And Clicks on Apply Button in Filter in Doc Page
     And Verify that message is displayed to customer "<Message>"
     Examples:
@@ -357,8 +366,8 @@ Feature: Document Center New
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter/index" Url
     And Clicks on the Document Centre Page tab "Deposits"
     And Clicks on Filter in Doc Centre Page
-    And Selects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Closed"
+#    And Selects a Relation Status in Filter in Doc Page-"Active"
+#    And Selects a Relation Status in Filter in Doc Page-"Closed"
     And Clicks on Apply Button in Filter in Doc Page
     And Verify that message is displayed to customer "<Message>"
     Examples:
@@ -391,7 +400,9 @@ Feature: Document Center New
     And Clicks on the Document Centre Page tab "Insurance"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Closed"
+    And Unselects a Relation Status in Filter in Doc Page-"Cancelled"
+    And Unselects a Relation Status in Filter in Doc Page-"Surrendered"
+#    And Selects a Relation Status in Filter in Doc Page-"Closed"
     And Clicks on Apply Button in Filter in Doc Page
     And Verify that message is displayed to customer "<Message>"
     Examples:
@@ -409,7 +420,9 @@ Feature: Document Center New
     And Clicks on the Document Centre Page tab "Insurance"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Cancelled"
+    And Unselects a Relation Status in Filter in Doc Page-"Closed"
+    And Unselects a Relation Status in Filter in Doc Page-"Surrendered"
+#    And Selects a Relation Status in Filter in Doc Page-"Cancelled"
     And Clicks on Apply Button in Filter in Doc Page
     And Verify that message is displayed to customer "<Message>"
     Examples:
@@ -427,7 +440,9 @@ Feature: Document Center New
     And Clicks on the Document Centre Page tab "Insurance"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Surrendered"
+    And Unselects a Relation Status in Filter in Doc Page-"Closed"
+    And Unselects a Relation Status in Filter in Doc Page-"Cancelled"
+#    And Selects a Relation Status in Filter in Doc Page-"Surrendered"
     And Clicks on Apply Button in Filter in Doc Page
     And Verify that message is displayed to customer "<Message>"
     Examples:
@@ -445,9 +460,9 @@ Feature: Document Center New
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter/index" Url
     And Clicks on the Document Centre Page tab "Insurance"
     And Clicks on Filter in Doc Centre Page
-    And Selects a Relation Status in Filter in Doc Page-"Closed"
-    And Selects a Relation Status in Filter in Doc Page-"Cancelled"
-    And Selects a Relation Status in Filter in Doc Page-"Surrendered"
+#    And Selects a Relation Status in Filter in Doc Page-"Closed"
+#    And Selects a Relation Status in Filter in Doc Page-"Cancelled"
+#    And Selects a Relation Status in Filter in Doc Page-"Surrendered"
     And Clicks on Apply Button in Filter in Doc Page
     And Verify that message is displayed to customer "<Message>"
     Examples:

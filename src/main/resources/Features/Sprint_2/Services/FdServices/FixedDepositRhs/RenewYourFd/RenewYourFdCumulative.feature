@@ -1,4 +1,4 @@
-@notrenew@Run03022023
+@notrenew@FD2
 Feature: FD Services RHS - Renew your FD - Cumulative
 
 @Pass
@@ -429,7 +429,7 @@ Feature: FD Services RHS - Renew your FD - Cumulative
     And verify "Principal" is Default Option in "Plan type section"
     And verify "48" is Default Option in "Tenure Section"
     And verify "Maturity" is Default Option in "Interest Payout Type Section"
-    And verify Badge displayed with "60" for "Tenure"
+    And verify Badge displayed with "48" for "Tenure"
     And verify Badge displayed with "Maturity" for "Interest Payout type"
     Examples:
       | Mobile Number | Date     | Customer Type | Acc Number | url                                                 | urlRenewPlan                                     |

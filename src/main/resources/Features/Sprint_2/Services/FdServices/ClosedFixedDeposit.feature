@@ -1,4 +1,4 @@
-@CFD@FD_02@FD_1105
+@CFD@FD_02@FD_1805@FD_1
 Feature: FD Services - Closed FD
   @Pass
   Scenario Outline: Closed FD - To verify tile in My Relation page redirected to FD page

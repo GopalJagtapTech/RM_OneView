@@ -1,4 +1,4 @@
-@FD2804
+@FD2804@FD2
 Feature: FD Services RHS - Open FD
   @Pass
   Scenario Outline: FD RHS - Open FD - TO verify open FD available in <FD Status> Customers

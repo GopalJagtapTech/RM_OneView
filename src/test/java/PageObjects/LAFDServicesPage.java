@@ -96,11 +96,11 @@ public class LAFDServicesPage extends ApplicationKeywords {
     public void verifyPAOLafd(String tilename) {
         try {
             String tname = ""+tilename+" in Pre Approved Offers#xpath=//div[@class='BHFL_leftpart loanDetailPage']//p[normalize-space(text())='"+tilename+"']/ancestor::div[@class='Loan_card']";
-                if (isElementDisplayed(tname)){
-                    testStepPassed(""+tilename+" in Pre Approved Offers is verified successfully");
-                }else {
-                    testStepFailed(""+tilename+" in Pre Approved Offers is not verified ");
-                }
+            if (isElementDisplayed(tname)){
+                testStepPassed(""+tilename+" in Pre Approved Offers is verified successfully");
+            }else {
+                testStepFailed(""+tilename+" in Pre Approved Offers is not verified ");
+            }
         } catch (Exception e) {
             e.printStackTrace();
             testStepFailed("Failed in verify PAO Lafd .Exception: " + e.getClass());
@@ -187,8 +187,8 @@ public class LAFDServicesPage extends ApplicationKeywords {
             String viewdetails = "View Details for First Tile in LAFD#xpath=//p[normalize-space(text())='LOAN AGAINST FIXED DEPOSIT']/following-sibling::i[normalize-space(text())='"+labeltileNumber+"']/../../../..//a[text()='View Details']";
             clickOn(viewdetails);
             waitForPageToLoad();
-          //  verifyRedirectionURLIfContains("https://experia-uat.bajajfinserv.in/MyRelation/Loans/Loans/Nonflexiloan");
-          //  verifyRedirectionURLIfContains("https://cont-sites.bajajfinserv.in/MyAccountLoanServices/Loans/Nonflexiloan");
+            //  verifyRedirectionURLIfContains("https://experia-uat.bajajfinserv.in/MyRelation/Loans/Loans/Nonflexiloan");
+            //  verifyRedirectionURLIfContains("https://cont-sites.bajajfinserv.in/MyAccountLoanServices/Loans/Nonflexiloan");
             verifysubHeadingIsDisplayed("Loan Against Fixed Deposit");
         } catch (Exception e) {
             e.printStackTrace();
@@ -217,14 +217,14 @@ public class LAFDServicesPage extends ApplicationKeywords {
 
             String infoIcon = labelName+"#xpath=//p[contains(text(),'"+labeltileNumber+"')]/../../..//div[@class='deposit_amount']//p[normalize-space(text())='"+labelName+"']/following-sibling::*";
             waitUntilElementVisible(infoIcon,30);
-          if(isElementDisplayed(infoIcon)){
-              String text=findWebElement(infoIcon).getText();
-              if(!text.isEmpty()){
-                  testStepPassed(labelName+"  value displayed sucessfully "+ text);
-              }
-          }else{
-              testStepFailed(labelName+"Value not displayed");
-          }
+            if(isElementDisplayed(infoIcon)){
+                String text=findWebElement(infoIcon).getText();
+                if(!text.isEmpty()){
+                    testStepPassed(labelName+"  value displayed sucessfully "+ text);
+                }
+            }else{
+                testStepFailed(labelName+"Value not displayed");
+            }
 
 
         } catch (Exception e) {
@@ -240,7 +240,7 @@ public class LAFDServicesPage extends ApplicationKeywords {
             String infoIcon = labelName+"#xpath=//p[contains(text(),'"+labeltileNumber+"')]/../..//span";
             if(isElementDisplayed(infoIcon)){
                 String text=findWebElement(infoIcon).getText();
-               // String text=findWebElement(infoIcon).getAttribute("value");
+                // String text=findWebElement(infoIcon).getAttribute("value");
                 if(text.contains(labelName)){
                     testStepPassed(labelName+"  Tile displayed sucessfully");
                 }

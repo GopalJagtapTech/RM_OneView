@@ -4,8 +4,8 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "classpath:Features/Sprint_2/Services/FdServices/FinalNew/FixedDepositRhs/RenewYourFd",
-       // tags = "@Pass",
+        features = "classpath:Features_Login/AprilCR_Login/Login_2.0.feature",
+//        tags = "@Pass",
 //stepNotifications = true,
 //      dryRun = true,
         glue = {"stepDefinitions","AppHooksLogin"},

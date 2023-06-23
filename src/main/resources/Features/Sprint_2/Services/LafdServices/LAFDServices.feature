@@ -1,6 +1,6 @@
 Feature: LAFD Services
 
-@PTP
+  @PTP
   Scenario Outline: To verify LAFD Services is not displayed for PTB/NTB customer
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -72,7 +72,7 @@ Feature: LAFD Services
      # | 7373066020    | 02011975 | Individual     | LOAN AGAINST FIXED DEPOSIT | 402LFDHH841615 |
       | 8800384932    | 02021976 | Individual    | LOAN AGAINST FIXED DEPOSIT | 401LFDGD210545 |
 
-@IconNA
+  @IconNA
   Scenario Outline: LAFD Services - Active  LAFD Details page(Active)
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -87,7 +87,7 @@ Feature: LAFD Services
       | Mobile Number | Date     | Customer Type | Subtitle                   | Account No     |
       | 8800384932    | 02021976 | Individual    | LOAN AGAINST FIXED DEPOSIT | 401LFDGD210545 |
 
-@Icon
+  @Icon
   Scenario Outline: LAFD Services - Active Relationship Details sections
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -119,7 +119,7 @@ Feature: LAFD Services
     #  | 7373066020    | 02011975 | Individual     | LOAN AGAINST FIXED DEPOSIT | 402LFDHH841615 |
       | 8800384932    | 02021976 | Individual    | LOAN AGAINST FIXED DEPOSIT | 401LFDGD210545 |
 
-@PreK
+  @PreK
   Scenario Outline: LAFD Services - Active Pre-Approved offer section
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -154,7 +154,7 @@ Feature: LAFD Services
       | 8800384932    | 02021976 | Individual    | LOAN AGAINST FIXED DEPOSIT | 401LFDGD210545 |
      #  | 7373066020    | 02011975 | Individual     | LOAN AGAINST FIXED DEPOSIT | 402LFDHH841615 |
 
-@ReRun
+  @ReRun
   Scenario Outline: LAFD Services - Active - Redirection Faq And CIBIL
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -226,7 +226,7 @@ Feature: LAFD Services
       | Mobile Number | Date     | Customer Type | Subtitle                   | Account No     |
       | 9000630541    | 15082000 | Individual    | LOAN AGAINST FIXED DEPOSIT | 400LFDGY019109 |
 
-@Icon
+  @Icon
   Scenario Outline: LAFD Services - Closed view given options and icon details on LAFD Details
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -241,7 +241,7 @@ Feature: LAFD Services
       | Mobile Number | Date     | Customer Type | Subtitle                   | Account No     |
       | 9000630541    | 15082000 | Individual    | LOAN AGAINST FIXED DEPOSIT | 400LFDGY019109 |
 
-@Icon
+  @Icon
   Scenario Outline: LAFD Services - Closed Relationship Details sections
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -272,7 +272,7 @@ Feature: LAFD Services
       | Mobile Number | Date     | Customer Type | Subtitle                   | Account No     |
       | 9000630541    | 15082000 | Individual    | LOAN AGAINST FIXED DEPOSIT | 400LFDGY019109 |
 
-    @PreK
+  @PreK
   Scenario Outline: LAFD Services - Closed Pre-Approved offer section
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -305,7 +305,7 @@ Feature: LAFD Services
       | 9000630541    | 15082000 | Individual    | LOAN AGAINST FIXED DEPOSIT | 400LFDGY019109 |
 
 
-@ReRun
+  @ReRun
   Scenario Outline: LAFD Services - Closed - Redirection FAQ & CIBIL
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page

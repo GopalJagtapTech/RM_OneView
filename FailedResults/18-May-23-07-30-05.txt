@@ -1,0 +1,30 @@
+Failed in Verify Logo is Displayed in New Home. Exception: class java.lang.NullPointerException------------>  Brand Store - WatchoutV
+
+Failed in verify Nudge Text As Per AEM. Exception: class java.lang.NullPointerException------------>  Brand Store - WatchoutV
+
+Failed in click on New Home Options with AEM. Exception: class java.lang.NullPointerException------------>  Brand Store - WatchoutV
+
+Failed in wait for Element Loaded URL: null. Exception: class java.lang.NullPointerException------------>  Brand Store - WatchoutV
+
+Failed in verify Redirection URL contains null. Exception: class java.lang.NullPointerException------------>  Brand Store - WatchoutV
+
+Failed in Verify Logo is Displayed in New Home. Exception: class java.lang.NullPointerException------------>  Brand Store - Leader Cyclesl
+
+Failed in verify Nudge Text As Per AEM. Exception: class java.lang.NullPointerException------------>  Brand Store - Leader Cyclesl
+
+Failed in click on New Home Options with AEM. Exception: class java.lang.NullPointerException------------>  Brand Store - Leader Cyclesl
+
+Failed in wait for Element Loaded URL: null. Exception: class java.lang.NullPointerException------------>  Brand Store - Leader Cyclesl
+
+Failed in verify Redirection URL contains null. Exception: class java.lang.NullPointerException------------>  Brand Store - Leader Cyclesl
+
+Failed in Verify Logo is Displayed in New Home. Exception: class java.lang.NullPointerException------------>  Brand Store - Powermaxw
+
+Failed in verify Nudge Text As Per AEM. Exception: class java.lang.NullPointerException------------>  Brand Store - Powermaxw
+
+Failed in click on New Home Options with AEM. Exception: class java.lang.NullPointerException------------>  Brand Store - Powermaxw
+
+Failed in wait for Element Loaded URL: null. Exception: class java.lang.NullPointerException------------>  Brand Store - Powermaxw
+
+Failed in verify Redirection URL contains null. Exception: class java.lang.NullPointerException------------>  Brand Store - Powermaxw
+

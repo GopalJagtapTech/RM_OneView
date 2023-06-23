@@ -1012,6 +1012,38 @@ public void verifyAllIsDisplayedInHamburger(String string) {
         verifyRedirectioninSameTab(string,"");
 
     }
+
+//    25052023
+    @Then("verify User is redirected to respective URL {string} in the same Tab")
+    public void verifyUserIsRedirectedToRespectiveURLInTheSameTab(String url) {
+        verifyRedirectionInCommon(url,"");
+    }
+
+    @Then("Customer should be able to view drawer/pop up for First time with Get your EMI Card Now CTA for PTB Customer")
+    public void customerShouldBeAbleToViewDrawerPopUpForFirstTimeWithGetYourEMICardNowCTAForPTBCustomer() {
+        verifyElementIsDisplayedAndGetText(HomePage.pTB_Popup);
+    }
+
     //////// Mustaq - End //////////
+
+    /////Ravi
+    @When("User is on Home Page for KYC Poup")
+    public void user_is_on_home_page_for_kyc_poup() {
+        boolean flag =false;
+        flag = verifyFieldsDisplayedUsingLocator(HomePage.txt_Home);
+//hardRefresh();
+        if (!flag) {
+            ApplicationKeywords.quitBrowser = true;
+            GOR.login=false;
+            SoftAssertions sa = new SoftAssertions();
+            testStepFailed("Login is Unsuccessfull");
+            sa.fail("Login is Unsuccessful");
+            sa.assertAll();
+        }
+        clickOnButtonUsingLocatorUsingForLoopWithoutFail(LoginPage.skip);
+        //  clickOncloseButtonxPopup("close");
+        homeUrl = driver.getCurrentUrl();
+    }
+
 
 }

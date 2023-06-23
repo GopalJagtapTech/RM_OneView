@@ -413,7 +413,7 @@ Bills & Recharges
     public void validateFilter(String locator, String statusLocator, String extra) {
         try {
             if (isElementDisplayed(txt_NoTransactions_PassBook)) {
-                manualScreenshot(getText(txt_NoTransactions_PassBook) + ". There is No Transactions available for This filter");
+                testStepFailed(getText(txt_NoTransactions_PassBook) + ". There is No Transactions available for This filter");
                 return;
             }
 //        String all="All Transactions#xpath=//div[@class='listclass']";

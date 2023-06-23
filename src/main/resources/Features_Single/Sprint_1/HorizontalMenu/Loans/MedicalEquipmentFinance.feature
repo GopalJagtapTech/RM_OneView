@@ -16,43 +16,15 @@ Feature: Medical Equipment Finance NTB
     Then Customer should be Redirected to "<Expected Url>"
     Examples:
       | dropDownType | Loan type | level 2 Sub Type | Expected Url                          |
-      | Loans        | Medical Equipment Finance | Overview | https://uat-oneweb.bajajfinserv.in/medical-equipment-finance |
+      | Loans        | Medical Equipment Finance| Overview | https://uat-oneweb.bajajfinserv.in/healthcare-medical-equipment-finance |
 
-  Scenario Outline: HM_MEF To verify Medical Equipment Finance - Features
+  Scenario Outline: HM_MEF To verify Medical Equipment Finance - Marketplace
     When Customer Clicks on "<dropDownType>" Drop-down & Hover over "<Loan type>"
     And clicks on "<Loan type>","<level 2 Sub Type>"
-    Then Customer should be Redirected to "<Expected Url>"
+    Then Customer should be Redirected to new tab "<Expected Url>"
     Examples:
       | dropDownType | Loan type | level 2 Sub Type | Expected Url                          |
-      | Loans        | Medical Equipment Finance| Features | https://uat-oneweb.bajajfinserv.in/medical-equipment-finance-features |
-
-
-  Scenario Outline: HM_MEF To verify Medical Equipment Finance - Eligibility
-    When Customer Clicks on "<dropDownType>" Drop-down & Hover over "<Loan type>"
-    And clicks on "<Loan type>","<level 2 Sub Type>"
-    Then Customer should be Redirected to "<Expected Url>"
-    Examples:
-      | dropDownType | Loan type | level 2 Sub Type | Expected Url                          |
-      | Loans        | Medical Equipment Finance| Eligibility | https://uat-oneweb.bajajfinserv.in/medical-equipment-finance-eligibility-and-documents |
-
-
-  Scenario Outline: HM_MEF To verify Medical Equipment Finance - How to Apply
-    When Customer Clicks on "<dropDownType>" Drop-down & Hover over "<Loan type>"
-    And clicks on "<Loan type>","<level 2 Sub Type>"
-    Then Customer should be Redirected to "<Expected Url>"
-    Examples:
-      | dropDownType | Loan type | level 2 Sub Type | Expected Url                          |
-      | Loans        | Medical Equipment Finance| How to Apply | https://uat-oneweb.bajajfinserv.in/how-to-apply-for-medical-equipment-finance |
-
-
-  Scenario Outline: HM_MEF To verify Medical Equipment Finance - Fees & Charges
-    When Customer Clicks on "<dropDownType>" Drop-down & Hover over "<Loan type>"
-    And clicks on "<Loan type>","<level 2 Sub Type>"
-    Then Customer should be Redirected to "<Expected Url>"
-    Examples:
-      | dropDownType | Loan type | level 2 Sub Type | Expected Url                          |
-      | Loans        | Medical Equipment Finance| Fees & Charges | https://uat-oneweb.bajajfinserv.in/medical-equipment-finance-fees-and-charges |
-
+      | Loans        | Medical Equipment Finance| Marketplace | https://www.bajajmall.in/emi-store/ge-healthcare.html |
 
 
   Scenario Outline: verify Medical Equipment Finance -  Apply Online

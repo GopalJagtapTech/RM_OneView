@@ -276,7 +276,7 @@ Feature: Document Centre
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter" Url
     And verify that following Tab "Insurance" is Displayed in Document Centre Page
     And Clicks on the Document Centre Page tab "Insurance"
-    And verify All cards are Displayed in Document Center Page-"Active Insurance","Policy Number"
+    And verify All cards are Displayed in Document Center Page-"All Insurance","Policy Number"
     Then verify RHS "Quick Actions" following Options: "Help and Support, Passbook" are Displayed
     And verify Middle section is displayed fetched from AEM
 
@@ -482,7 +482,7 @@ Feature: Document Centre
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter" Url
     And Clicks on the Document Centre Page tab "Loans"
     And Clicks on Filter in Doc Centre Page
-    And Selects a Relation Status in Filter in Doc Page-"Active"
+    And Unselects a Relation Status in Filter in Doc Page-"Closed"
     And Clicks on Apply Button in Filter in Doc Page
     Then verify for Card-"Loans" and Status-"Active", the Cards are Displayed-"Loan Account Number"
     Examples:
@@ -500,7 +500,7 @@ Feature: Document Centre
     And Clicks on the Document Centre Page tab "Loans"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Closed"
+#    And Selects a Relation Status in Filter in Doc Page-"Closed"
     And Clicks on Apply Button in Filter in Doc Page
     Then verify for Card-"Loans" and Status-"Closed", the Cards are Displayed-"Loan Account Number"
     Examples:
@@ -517,8 +517,8 @@ Feature: Document Centre
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter" Url
     And Clicks on the Document Centre Page tab "Loans"
     And Clicks on Filter in Doc Centre Page
-    And Selects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Closed"
+#    And Selects a Relation Status in Filter in Doc Page-"Active"
+#    And Selects a Relation Status in Filter in Doc Page-"Closed"
     And Clicks on Apply Button in Filter in Doc Page
     Then verify for Card-"Loans" and Status-"All", the Cards are Displayed-"Loan Account Number"
     And Clicks on Filter in Doc Centre Page
@@ -539,7 +539,7 @@ Feature: Document Centre
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter" Url
     And Clicks on the Document Centre Page tab "Deposits"
     And Clicks on Filter in Doc Centre Page
-    And Selects a Relation Status in Filter in Doc Page-"Active"
+    And Unselects a Relation Status in Filter in Doc Page-"Closed"
     And Clicks on Apply Button in Filter in Doc Page
     Then verify for Card-"Deposits" and Status-"Active", the Cards are Displayed-"Fixed Deposit Number"
     Examples:
@@ -557,7 +557,7 @@ Feature: Document Centre
     And Clicks on the Document Centre Page tab "Deposits"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Closed"
+#    And Selects a Relation Status in Filter in Doc Page-"Closed"
     And Clicks on Apply Button in Filter in Doc Page
     Then verify for Card-"Deposits" and Status-"Closed", the Cards are Displayed-"Fixed Deposit Number"
     Examples:
@@ -574,7 +574,9 @@ Feature: Document Centre
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter" Url
     And Clicks on the Document Centre Page tab "Insurance"
     And Clicks on Filter in Doc Centre Page
-    And Selects a Relation Status in Filter in Doc Page-"Active"
+    And Unselects a Relation Status in Filter in Doc Page-"Closed"
+    And Unselects a Relation Status in Filter in Doc Page-"Cancelled"
+    And Unselects a Relation Status in Filter in Doc Page-"Surrendered"
     And Clicks on Apply Button in Filter in Doc Page
     Then verify for Card-"Insurance" and Status-"Active", the Cards are Displayed-"Policy Number"
     Examples:
@@ -592,7 +594,8 @@ Feature: Document Centre
     And Clicks on the Document Centre Page tab "Insurance"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Closed"
+    And Unselects a Relation Status in Filter in Doc Page-"Cancelled"
+    And Unselects a Relation Status in Filter in Doc Page-"Surrendered"
     And Clicks on Apply Button in Filter in Doc Page
     Then verify for Card-"Insurance" and Status-"Closed", the Cards are Displayed-"Policy Number"
     Examples:
@@ -610,7 +613,8 @@ Feature: Document Centre
     And Clicks on the Document Centre Page tab "Insurance"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Cancelled"
+    And Unselects a Relation Status in Filter in Doc Page-"Closed"
+    And Unselects a Relation Status in Filter in Doc Page-"Surrendered"
     And Clicks on Apply Button in Filter in Doc Page
     Then verify for Card-"Insurance" and Status-"Cancelled", the Cards are Displayed-"Policy Number"
     Examples:
@@ -628,7 +632,8 @@ Feature: Document Centre
     And Clicks on the Document Centre Page tab "Insurance"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Surrendered"
+    And Unselects a Relation Status in Filter in Doc Page-"Closed"
+    And Unselects a Relation Status in Filter in Doc Page-"Cancelled"
     And Clicks on Apply Button in Filter in Doc Page
     Then verify for Card-"Insurance" and Status-"Surrendered", the Cards are Displayed-"Policy Number"
     Examples:
@@ -879,7 +884,6 @@ Feature: Document Centre
     And My relations Page should be displayed
     And Customer Click on "Document Center" CTA in RHS
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter" Url
-
     And Clicks on the Document Centre Page tab "Deposits"
     And User clicks on a Card "<Card Number>"
     And User should be redirected to specific document page "<Card Number>"
@@ -917,7 +921,6 @@ Feature: Document Centre
     And My relations Page should be displayed
     And Customer Click on "Document Center" CTA in RHS
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter" Url
-
     And verify that following Tab "Insurance" is Displayed in Document Centre Page
     And Clicks on the Document Centre Page tab "Insurance"
     And verify All cards are Displayed in Document Center Page-"Active Insurance","Policy Number"
@@ -937,7 +940,6 @@ Feature: Document Centre
     And My relations Page should be displayed
     And Customer Click on "Document Center" CTA in RHS
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter" Url
-
     And Clicks on the Document Centre Page tab "Insurance"
     And verify Details on the Cards in Document Center Page- "Insurance" "Policy Number"
 
@@ -954,7 +956,6 @@ Feature: Document Centre
     And My relations Page should be displayed
     And Customer Click on "Document Center" CTA in RHS
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter" Url
-
     And Clicks on the Document Centre Page tab "Insurance"
     And User clicks on a Card "<Card Number>"
     And User should be redirected to specific document page "<Card Number>"
@@ -972,7 +973,6 @@ Feature: Document Centre
     And My relations Page should be displayed
     And Customer Click on "Document Center" CTA in RHS
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter" Url
-
     And Clicks on the Document Centre Page tab "Insurance"
     And User clicks on a Card "<Card Number>"
     And User should be redirected to specific document page "<Card Number>"
@@ -991,7 +991,6 @@ Feature: Document Centre
     And My relations Page should be displayed
     And Customer Click on "Document Center" CTA in RHS
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter" Url
-
     And Clicks on the Document Centre Page tab "Insurance"
     And User clicks on a Card "<Card Number>"
     And User should be redirected to specific document page "<Card Number>"
@@ -1010,7 +1009,6 @@ Feature: Document Centre
     And My relations Page should be displayed
     And Customer Click on "Document Center" CTA in RHS
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter" Url
-
     And Clicks on the Document Centre Page tab "Insurance"
     And User clicks on a Card "<Card Number>"
     And User should be redirected to specific document page "<Card Number>"
@@ -1131,7 +1129,6 @@ Feature: Document Centre
     And Selects an SubMenu from Hamburger "<SubMenu>"
     And Clicks on SubListmenu "<SubListMenu>"
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter" Url
-
     And Clicks on the Document Centre Page tab "Deposits"
     And User clicks on a Card "<Card Number>"
     And User should be redirected to specific document page "<Card Number>"

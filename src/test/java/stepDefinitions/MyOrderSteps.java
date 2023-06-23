@@ -25,17 +25,17 @@ public class MyOrderSteps  extends ApplicationKeywords{
 
     @Then("My Order option under hamburger menu should be displayed")
     public void my_order_option_under_hamburger_menu_should_be_displayed() {
-       verifyFieldsDisplayedUsingLocator(myOrderPage.menuMyOrder);
+        verifyFieldsDisplayedUsingLocator(myOrderPage.menuMyOrder);
     }
 
     @When("Click on My Order")
     public void click_on_my_order() {
-      clickOn(myOrderPage.menuMyOrder);
-      waitForPageToLoad();
+        clickOn(myOrderPage.menuMyOrder);
+        waitForPageToLoad();
     }
     @Then("My Order Page should be displayed")
     public void my_order_page_should_be_displayed() {
-       // verifyFieldsDisplayedUsingText("List of all products purchased using Insta EMI Card");
+        // verifyFieldsDisplayedUsingText("List of all products purchased using Insta EMI Card");
         verifyFieldsDisplayedUsingText("List of all the products purchased on Bajaj Finance");
 
         // myOrderPage.getTableData("");
@@ -59,13 +59,13 @@ public class MyOrderSteps  extends ApplicationKeywords{
     public void customer_should_be_able_to_view_you_dont_have_any_orders_on_current_order() {
         clickOn(myOrderPage.butCurrentOrders);
         verifyFieldsDisplayedUsingText("You have no current orders");
-       // myOrderPage.verifyHeadingTextIsDisplayed("You don't have any Orders.");
+        // myOrderPage.verifyHeadingTextIsDisplayed("You don't have any Orders.");
     }
     @Then("Click on Previous Tab and verify You dont have any orders is displayed")
     public void click_on_previous_tab_and_verify_you_dont_have_any_orders_is_displayed() {
         clickOn(myOrderPage.butPreviousOrders);
         verifyFieldsDisplayedUsingText("You have no previous orders");
-      //  myOrderPage.verifyHeadingTextIsDisplayed("You don't have any Orders.");
+        //  myOrderPage.verifyHeadingTextIsDisplayed("You don't have any Orders.");
     }
 
     @Then("Customer should be able to view You dont have any Previous order")
@@ -96,7 +96,7 @@ public class MyOrderSteps  extends ApplicationKeywords{
 
     @When("Click on Previous Order Tab under My Order Page")
     public void click_on_previous_order_tab_under_my_order_page() {
-       clickOn(myOrderPage.butPreviousOrders);
+        clickOn(myOrderPage.butPreviousOrders);
     }
     @Then("Customer should be able to view Previous Order details")
     public void customer_should_be_able_to_view_previous_order_details() {
@@ -108,7 +108,7 @@ public class MyOrderSteps  extends ApplicationKeywords{
         myOrderPage.getAutopopulatedValue("Status");
         myOrderPage.getAutopopulatedValue("Store Name");
         myOrderPage.verifyIconStore("Share your feedback");
-       // myOrderPage.verifyIconStore("View your loan details");
+        // myOrderPage.verifyIconStore("View your loan details");
 
     }
 
@@ -142,30 +142,30 @@ public class MyOrderSteps  extends ApplicationKeywords{
     @When("Customer selects three stars on Rating Option")
     public void customer_selects_three_stars_on_rating_option() {
 
-       myOrderPage.clickOnRating(3,"3, Neutral");
+        myOrderPage.clickOnRating(3,"3, Neutral");
 
     }
     @Then("Customer should be able to view Please rate us on your store visit experience with us Feedback option Choose one or more of the options below under Feedback page")
     public void customer_should_be_able_to_view_please_rate_us_on_your_store_visit_experience_with_us_feedback_option_choose_one_or_more_of_the_options_below_under_feedback_page() {
-     clickOn(myOrderPage.btnSubmit);
-     waitForPageToLoad();
+        clickOn(myOrderPage.btnSubmit);
+        waitForPageToLoad();
         verifyFieldsDisplayedUsingText("Thank you for your feedback");
 
     }
 
     @When("Customer selects Feedback option")
     public void customer_selects_feedback_option() {
-         myOrderPage.selectFeedbackCheckboxOption("I couldn't find what I was looking for");
+        myOrderPage.selectFeedbackCheckboxOption("I couldn't find what I was looking for");
     }
     @Then("Submit button should be enabled")
     public void submit_button_should_be_enabled() {
-      verifyFieldsDisplayedUsingLocator(myOrderPage.btnSubmit);
+        verifyFieldsDisplayedUsingLocator(myOrderPage.btnSubmit);
     }
 
     @When("Clicks on submit button")
     public void clicks_on_submit_button() {
-      clickOn(myOrderPage.btnSubmit);
-      waitForPageToLoad();
+        clickOn(myOrderPage.btnSubmit);
+        waitForPageToLoad();
     }
     @Then("Thank You Pop Up should be displayed")
     public void thank_you_pop_up_should_be_displayed() {
@@ -180,11 +180,11 @@ public class MyOrderSteps  extends ApplicationKeywords{
 
     @When("Click on Three Dot Menu")
     public void click_on_three_dot_menu() {
-       myOrderPage.clickThreeDotsImage("Order ID & Date");
+        myOrderPage.clickThreeDotsImage("Order ID & Date");
     }
     @When("Click on FAQ CTA")
     public void click_on_faq_cta() {
-       myOrderPage.clickFaq("FAQs");
+        myOrderPage.clickFaq("FAQs");
     }
     @Then("Customer should be able to view Loan Category Page")
     public void customer_should_be_able_to_view_loan_category_page() {
@@ -193,7 +193,7 @@ public class MyOrderSteps  extends ApplicationKeywords{
 
     @Then("Customer should be able to view FAQ & Cancel CTA  under my Current Order Page")
     public void customer_should_be_able_to_view_faq_cancel_cta_under_my_current_order_page() {
-       myOrderPage.verifyFaq("FAQs");
+        myOrderPage.verifyFaq("FAQs");
     }
 
     @When("Click on Current Order Tab under My Order Page")
@@ -202,7 +202,7 @@ public class MyOrderSteps  extends ApplicationKeywords{
     }
     @Then("Contact Store CTA should be displayed")
     public void contact_store_cta_should_be_displayed() {
-       myOrderPage.verifyIconStore("Contact the store");
+        myOrderPage.verifyIconStore("Contact the store");
     }
 
 
@@ -217,7 +217,7 @@ public class MyOrderSteps  extends ApplicationKeywords{
     }
     @Then("Customer should be able to view Status of Order")
     public void customer_should_be_able_to_view_status_of_order() {
-      // myOrderPage.verifyOutForDeliveryOrder("Track your order","Out for Delivery","My tracker,Order Placed,Order Confirmed,Rider Assigned,Vijay,9874536543,Out for Delivery,Product Delivered");
+        // myOrderPage.verifyOutForDeliveryOrder("Track your order","Out for Delivery","My tracker,Order Placed,Order Confirmed,Rider Assigned,Vijay,9874536543,Out for Delivery,Product Delivered");
         myOrderPage.verifyOutForDeliveryOrder("Track your order","Sanction & Loan Document Pending","My tracker,Loan Approved,Sanction & Loan Document Pending,Sanction & Loan Document Accepted,Loan Processed");
 
     }
@@ -225,7 +225,7 @@ public class MyOrderSteps  extends ApplicationKeywords{
 
     @When("user Switches to default Content")
     public void user_switches_to_default_content() {
-       myOrderPage.switchDefaultPage();
+        myOrderPage.switchDefaultPage();
     }
 
     @Then("Delivery Agents name, number & calling CTA should be displayed")
@@ -237,7 +237,7 @@ public class MyOrderSteps  extends ApplicationKeywords{
 
     @Then("Customer should be able to view Tracking Details")
     public void customer_should_be_able_to_view_tracking_details() {
-         myOrderPage.verifyOutForDeliveryOrder("Track your order","Out for Delivery","My tracker,Order Placed,Order Confirmed,Rider Assigned,Vijay,9874536543,Out for Delivery,Product Delivered");
+        myOrderPage.verifyOutForDeliveryOrder("Track your order","Out for Delivery","My tracker,Order Placed,Order Confirmed,Rider Assigned,Vijay,9874536543,Out for Delivery,Product Delivered");
 
     }
 
@@ -297,7 +297,7 @@ public class MyOrderSteps  extends ApplicationKeywords{
         waitTime(5);
         verifyFieldsDisplayedUsingLocator(myOrderPage.startDirections);
         verifyFieldsDisplayedUsingLocator(myOrderPage.mapDirection);
-       // transferControlToWindow(1,false);
+        // transferControlToWindow(1,false);
     }
 
 
@@ -310,7 +310,7 @@ public class MyOrderSteps  extends ApplicationKeywords{
     @Then("Directions icon should be displayed under locator page")
     public void directions_icon_should_be_displayed_under_locator_page() {
         transferControlToWindow(2,false);
-    verifyFieldsDisplayedUsingLocator(myOrderPage.butDirection);
+        verifyFieldsDisplayedUsingLocator(myOrderPage.butDirection);
         transferControlToWindow(1,true);
     }
 
@@ -321,15 +321,15 @@ public class MyOrderSteps  extends ApplicationKeywords{
         verifyFieldsDisplayedUsingLocator(myOrderPage.textStore);
         myOrderPage.verifyStoreName();
         myOrderPage.emiStoreDistance();
-       // myOrderPage.emiStoreStatus();
+        // myOrderPage.emiStoreStatus();
         myOrderPage.emiStoreStatusType();
         myOrderPage.emiStoreAdress();
-    verifyFieldsDisplayedUsingLocator(myOrderPage.butUnsave);
-    verifyFieldsDisplayedUsingLocator(myOrderPage.butDirection);
-       clickOn(myOrderPage.butDirection,"");
-       waitTime(2);
-       verifyFieldsDisplayedUsingLocator(myOrderPage.backButton);
-       verifyFieldsDisplayedUsingLocator(myOrderPage.storeLogoImage);
+        verifyFieldsDisplayedUsingLocator(myOrderPage.butUnsave);
+        verifyFieldsDisplayedUsingLocator(myOrderPage.butDirection);
+        clickOn(myOrderPage.butDirection,"");
+        waitTime(2);
+        verifyFieldsDisplayedUsingLocator(myOrderPage.backButton);
+        verifyFieldsDisplayedUsingLocator(myOrderPage.storeLogoImage);
 
         transferControlToWindow(1,true);
 
@@ -366,8 +366,8 @@ public class MyOrderSteps  extends ApplicationKeywords{
     }
     @When("Click on Directions")
     public void click_on_directions() {
-    clickOn(myOrderPage.butDirection);
-    waitTime(10);
+        clickOn(myOrderPage.butDirection);
+        waitTime(10);
     }
     @Then("Customer should be able to view direction on maps of the store")
     public void customer_should_be_able_to_view_direction_on_maps_of_the_store() {

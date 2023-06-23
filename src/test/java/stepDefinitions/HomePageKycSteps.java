@@ -38,11 +38,10 @@ public class HomePageKycSteps extends ApplicationKeywords {
 
     }
 
-    @Then("verify the following buttons {string} are displayed in the page kyc")
-    public void verify_the_following_buttons_are_displayed_in_the_page_kyc(String string) {
-
-        kycpage.verifyButtons(string);
-    }
+//    @Then("verify the following buttons {string} are displayed in the page")
+//    public void verify_the_following_buttons_are_displayed_in_the_page(String string) {
+//        kycpage.verifyButtons(string);
+//    }
 
     @When("Click on two {string} button")
     public void click_on_two_button(String string) {
@@ -66,7 +65,7 @@ public class HomePageKycSteps extends ApplicationKeywords {
     @When("Click on Flexi loan Card {string}")
     public void click_on_flexi_loan_card(String string) {
         fdservices.clickOnMyRelationTileViewDetailsIcon("FLEXI TERM LOAN", string, "");
-      //  fdservices.verifyMyRelationTileRedirectionUsingAccountNumber("FLEXI TERM LOAN", string, "");
+        //  fdservices.verifyMyRelationTileRedirectionUsingAccountNumber("FLEXI TERM LOAN", string, "");
 
     }
 
@@ -78,25 +77,25 @@ public class HomePageKycSteps extends ApplicationKeywords {
 
     @When("Click on  Drawdown Bank Change from RHS")
     public void click_on_drawdown_bank_change_from_rhs() {
-       clickOn(kycpage.drawdown_cta);
+        clickOn(kycpage.drawdown_cta);
     }
     @Then("Popup with OK CTA should be dispalyed {string}")
     public void popup_with_ok_cta_should_be_dispalyed(String string) {
-  loginfieldsPage.verifyTextContent("We are unable to proceed with your request due to some technical issues. You will be redirected to our ‘Raise a Request’ section to change your bank account details.");
-  verifyFieldsDisplayedUsingLocator(kycpage.ok_cta);
+        loginfieldsPage.verifyTextContent("We are unable to proceed with your request due to some technical issues. You will be redirected to our ‘Raise a Request’ section to change your bank account details.");
+        verifyFieldsDisplayedUsingLocator(kycpage.ok_cta);
 
     }
 
 
     @Then("Customer should be redirected to My Relation Heading page")
     public void customer_should_be_redirected_to_my_relation_heading_page() {
-      verifyRedirectionURLIfContains("https://uat-oneweb.bajajfinserv.in/MyAccountLoanServices/Loans/flexiloan");
+        verifyRedirectionURLIfContains("https://uat-oneweb.bajajfinserv.in/MyAccountLoanServices/Loans/flexiloan");
     }
 
     @When("Click on OK")
     public void click_on_ok() {
-       clickOn(kycpage.ok_cta);
-       waitForPageToLoad();
+        clickOn(kycpage.ok_cta);
+        waitForPageToLoad();
     }
     @Then("Customer should be redirected to RAR page")
     public void customer_should_be_redirected_to_rar_page() {
@@ -106,8 +105,8 @@ public class HomePageKycSteps extends ApplicationKeywords {
 
     @Then("Customer should be able to view re KYC popup on homepage")
     public void customer_should_be_able_to_view_re_kyc_popup_on_homepage() {
-       verifyFieldsDisplayedUsingText("Verify Your Information");
-       verifyFieldsDisplayedUsingText("As a part of KYC(Know Your Customer) process.We request you to verify your identity.");
+        verifyFieldsDisplayedUsingText("Verify Your Information");
+        verifyFieldsDisplayedUsingText("As a part of KYC(Know Your Customer) process.We request you to verify your identity.");
         verifyValueUsingLabel("//div[@class='dialog_modal kyc-popup']/div[@class='dialog_body']/descendant::div/p/strong","Name :","/following-sibling::span","");
         kycpage.verifyMaskedValueUsingLabel("//div[@class='dialog_modal kyc-popup']/div[@class='dialog_body']/descendant::div/p/strong","Address :","/following-sibling::span","");
         kycpage.verifyMaskedValueUsingLabel("//div[@class='dialog_modal kyc-popup']/div[@class='dialog_body']/descendant::div/p/strong","Permanent Account Number :","/following-sibling::span","");
@@ -125,11 +124,11 @@ public class HomePageKycSteps extends ApplicationKeywords {
 
     @Then("Click On This is Correct button verifies redirectes to home page")
     public void click_on_this_is_correct_button_verifies_redirectes_to_home_page() {
-       clickOn(kycpage.kyc_checkBox);
-       clickOn(kycpage.btn_Correct);
-       waitForPageToLoad();
-       waitTime(10);
-       verifyRedirectionURLIfContains("https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home");
+        clickOn(kycpage.kyc_checkBox);
+        clickOn(kycpage.btn_Correct);
+        waitForPageToLoad();
+        waitTime(10);
+        verifyRedirectionURLIfContains("https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home");
     }
 
 
@@ -148,7 +147,13 @@ public class HomePageKycSteps extends ApplicationKeywords {
     @Then("NTB PTB ETB Customer should be able to View Alert section on header of Homepage")
     public void ntb_ptb_etb_customer_should_be_able_to_view_alert_section_on_header_of_homepage() {
         clickOn(kycpage.alerts_Icon);
-       verifyFieldsDisplayedUsingLocator(kycpage.alerts_label);
+        verifyFieldsDisplayedUsingLocator(kycpage.alerts_label);
+    }
+
+    @Then("ETB Customer should be able to View Alert section on header of Homepage")
+    public void etb_customer_should_be_able_to_view_alert_section_on_header_of_homepage() {
+        clickOn(kycpage.alerts_Icon);
+        verifyFieldsDisplayedUsingLocator(kycpage.alerts_label);
     }
 
     @When("Click on Alert bell icon")
@@ -191,6 +196,43 @@ public class HomePageKycSteps extends ApplicationKeywords {
     }
 
 
+
+
+    @When("Verify Check\\/update email ID card option")
+    public void verify_check_update_email_id_card_option() {
+       verifyFieldsDisplayedUsingText("Check/update email ID");
+    }
+    @Then("Customer should be able to Check update email ID  with Update CTA and subtext {string} and {string}")
+    public void customer_should_be_able_to_check_update_email_id_with_update_cta_and_subtext_and(String string, String string2) {
+        verifyFieldsDisplayedUsingText("Update your email ID in few clicks.");
+
+    }
+
+
+    @When("Verify CTA in caps on card option {string}")
+    public void verify_cta_in_caps_on_card_option(String string) {
+
+    }
+    @Then("Update CTA should be displayed in caps format")
+    public void update_cta_should_be_displayed_in_caps_format() {
+        kycpage.verifyFontSizeAUpdateEmailID("UPDATE");
+    }
+
+
+    @When("Click on Update {string}")
+    public void click_on_update(String string) {
+      clickOn(kycpage.updatebutton);
+      waitForPageToLoad();
+      waitTime(10);
+    }
+    @Then("Customer should be redirected to My Profile page")
+    public void customer_should_be_redirected_to_my_profile_page() {
+       verifyRedirectionURLIfContains("https://uat-oneweb.bajajfinserv.in/MyAccountService/UpdateDetails/UserProfileDetail");
+    }
+
+
+
+
     @When("Verify Fixed Deposit tile Click on INVEST ONLINE {string}")
     public void verify_fixed_deposit_tile_click_on_invest_online(String string) {
         kycpage.clickOnAlertsIconBelowOffers("Fixed Deposit","INVEST ONLINE");
@@ -204,7 +246,7 @@ public class HomePageKycSteps extends ApplicationKeywords {
 
     @Then("Customer should be redirected to respective page and URL with SSO and form should be prefilled")
     public void customer_should_be_redirected_to_respective_page_and_url_with_sso_and_form_should_be_prefilled() {
-     verifyRedirectionURLIfContains("https://uat-oneweb.bajajfinserv.in/investments/fixed-deposit");
+        verifyRedirectionURLIfContains("https://uat-oneweb.bajajfinserv.in/investments/fixed-deposit");
     }
 
 
@@ -268,7 +310,7 @@ public class HomePageKycSteps extends ApplicationKeywords {
     @When("click on Get It Now CTA under Insta EMI Card")
     public void click_on_get_it_now_cta_under_insta_emi_card() {
         kycpage.clickOnAlertsIconBelowOffers("Insta EMI Card","GET IT NOW");
-      //  verifyLocatorPresentInLeftSideOfAnotherLocator();
+        //  verifyLocatorPresentInLeftSideOfAnotherLocator();
     }
 
 
@@ -276,13 +318,13 @@ public class HomePageKycSteps extends ApplicationKeywords {
 
     @When("Verify User is having Personal Loan Offer")
     public void verify_user_is_having_personal_loan_offer() {
-   verifyFieldsDisplayedUsingLocator(kycpage.preApproved_PL);
+        verifyFieldsDisplayedUsingLocator(kycpage.preApproved_PL);
     }
     @Then("Verify User is redirected to new PL form when customer click on Apply Now CTA Under Pre-approved Offer for you section")
     public void verify_user_is_redirected_to_new_pl_form_when_customer_click_on_apply_now_cta_under_pre_approved_offer_for_you_section() {
-     clickOn(kycpage.preApproved_PL);
+        clickOn(kycpage.preApproved_PL);
         clickOn(kycpage.checkbox);
-       clickOn(kycpage.Applynoe_btn);
+        clickOn(kycpage.Applynoe_btn);
         waitForPageToLoad();
         waitForPageToLoad();
         waitTime(10);
@@ -299,7 +341,7 @@ public class HomePageKycSteps extends ApplicationKeywords {
 
     @Then("Verify User is redirected to new PL form when customer click on Personal Loan under Offers for you section")
     public void verify_user_is_redirected_to_new_pl_form_when_customer_click_on_personal_loan_under_offers_for_you_section() {
-     clickOn(kycpage.offersforYou);
+        clickOn(kycpage.offersforYou);
     }
 
 
@@ -321,7 +363,7 @@ public class HomePageKycSteps extends ApplicationKeywords {
             clickOn(kycpage.checkbox);
             clickOn(kycpage.Applynoe_btn);
             waitForPageToLoad();
-          //  waitTime(3);
+            //  waitTime(3);
             waitForPageToLoad();
             waitTime(5);
             Alert alert = driver.switchTo().alert();
@@ -330,21 +372,19 @@ public class HomePageKycSteps extends ApplicationKeywords {
 
         } catch(Exception e){
             testStepFailed("Apply Now Checkbox  is not displayed ");
-            }
+        }
     }
 
 
     @When("Verify Customer must have Insta EMI Pre-approved Offer")
     public void verify_customer_must_have_insta_emi_pre_approved_offer() {
-       kycpage.verifyEmiPopup();
+        kycpage.verifyEmiPopup();
     }
     @Then("Customer should be able to view drawer\\/pop up for First time with Get your EMI Card Now CTA for PTB Customer")
     public void customer_should_be_able_to_view_drawer_pop_up_for_first_time_with_get_your_emi_card_now_cta_for_ptb_customer() {
-       verifyFieldsDisplayedUsingText("Get your EMI Card Now");
+        verifyFieldsDisplayedUsingText("Get your EMI Card Now");
     }
 
 
-//    @Then("verify the following buttons {string} are displayed in the page kyc")
-//    public void verifyTheFollowingButtonsAreDisplayedInThePageKyc(String arg0) {
-//    }
+
 }

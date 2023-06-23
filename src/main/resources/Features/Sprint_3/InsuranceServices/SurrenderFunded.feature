@@ -1,4 +1,4 @@
-@mult
+@mult @cancsurr
 Feature: Insurance Services- Surrender Funded
 ##########Services
   @Serv
@@ -9,6 +9,9 @@ Feature: Insurance Services- Surrender Funded
     And Customer clicks on view all option
     Then My relations Page should be displayed
     And click on "Insurance/Value-added Services" tab
+    And Click on Filter
+    And click on "Surrendered" Relationship status in Filter
+    And click on "Apply" Button
     And click on "<Subtitle>" Tile of Account number "<Account No>"
     Then verify Redirection using Account number "<Account No>"
     Then verify below components of Insurance "Insurance Services" Page: "<Components>"
@@ -24,6 +27,9 @@ Feature: Insurance Services- Surrender Funded
     And Customer clicks on view all option
     Then My relations Page should be displayed
     And click on "Insurance/Value-added Services" tab
+    And Click on Filter
+    And click on "Surrendered" Relationship status in Filter
+    And click on "Apply" Button
     And click on "<Subtitle>" Tile of Account number "<Account No>"
     Then verify Redirection using Account number "<Account No>"
     Then verify Logo of "Insurance Services"
@@ -44,6 +50,9 @@ Feature: Insurance Services- Surrender Funded
     And Customer clicks on view all option
     Then My relations Page should be displayed
     And click on "Insurance/Value-added Services" tab
+    And Click on Filter
+    And click on "Surrendered" Relationship status in Filter
+    And click on "Apply" Button
     And click on "<Subtitle>" Tile of Account number "<Account No>"
     Then verify Redirection using Account number "<Account No>"
     Then verify below Labels of "Linked Loan Details" in "Insurance Services" Relationship Details: "<Label Names>"
@@ -59,6 +68,9 @@ Feature: Insurance Services- Surrender Funded
     And Customer clicks on view all option
     Then My relations Page should be displayed
     And click on "Insurance/Value-added Services" tab
+    And Click on Filter
+    And click on "Surrendered" Relationship status in Filter
+    And click on "Apply" Button
     And click on "<Subtitle>" Tile of Account number "<Account No>"
     Then verify Redirection using Account number "<Account No>"
     Then verify below Labels of "Nominee Details" in "Insurance Services" Relationship Details: "<Label Names>"
@@ -74,6 +86,9 @@ Feature: Insurance Services- Surrender Funded
     And Customer clicks on view all option
     And My relations Page should be displayed
     And click on "Insurance/Value-added Services" tab
+    And Click on Filter
+    And click on "Surrendered" Relationship status in Filter
+    And click on "Apply" Button
     Then verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
         Then verify customer can view FAQ section in Insurance page
     And Customer clicks on FAQ section in Insurance page
@@ -91,6 +106,9 @@ Feature: Insurance Services- Surrender Funded
     And Customer clicks on view all option
     And My relations Page should be displayed
     And click on "Insurance/Value-added Services" tab
+    And Click on Filter
+    And click on "Surrendered" Relationship status in Filter
+    And click on "Apply" Button
     Then verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
     And verify customer can view cibil on click of know your cibil
 
@@ -108,6 +126,9 @@ Feature: Insurance Services- Surrender Funded
     And Customer clicks on view all option
     And My relations Page should be displayed
     And click on "Insurance/Value-added Services" tab
+    And Click on Filter
+    And click on "Surrendered" Relationship status in Filter
+    And click on "Apply" Button
     Then verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
     And verify options"<Options>" available under "Quick Actions" on RHS
 
@@ -123,6 +144,9 @@ Feature: Insurance Services- Surrender Funded
     And Customer clicks on view all option
     And My relations Page should be displayed
     And click on "Insurance/Value-added Services" tab
+    And Click on Filter
+    And click on "Surrendered" Relationship status in Filter
+    And click on "Apply" Button
     Then verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
     Then verify Nudge for "SURRENDERED" Insurance
 
@@ -137,6 +161,9 @@ Feature: Insurance Services- Surrender Funded
     And Customer clicks on view all option
     And My relations Page should be displayed
     And click on "Insurance/Value-added Services" tab
+    And Click on Filter
+    And click on "Surrendered" Relationship status in Filter
+    And click on "Apply" Button
     Then verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
     And Customer Click on "View Documents" CTA in RHS
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter/docCenter_Insurance" Url

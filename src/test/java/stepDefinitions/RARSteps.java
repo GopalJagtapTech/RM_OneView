@@ -124,7 +124,10 @@ public class RARSteps extends ApplicationKeywords {
     public void selectsAnSubMenuFromHamburger(String hamburgerMenuOptions) {
         String option = "#xpath=//strong[text()='" + hamburgerMenuOptions.trim() + "']";
         clickOn(option);
-        waitForPageToLoad();
+//        if (isElementDisplayed(HomePage.myRelationsSection_HomePage)){
+//            testStepFailed("Hamburger click is redirecting to HomePage");
+//            skipSteps("##Hamburger Issue##");
+//        }
     }
 
     @And("create RAR File")
@@ -140,13 +143,58 @@ public class RARSteps extends ApplicationKeywords {
     @And("verify the Categories present")
     public void verifyTheCategoriesPresent(io.cucumber.datatable.DataTable dataTable) {
         List<String> list = dataTable.asList();
-        rar.verifyChooseRAROptions(list,"");
+        rar.verifyChooseRAROptions(list, "");
     }
 
 
     @And("get the RAR faqs {string}")
     public void getTheRARFaqs(String string) throws IOException {
         rar.getChooseCategoryAllNames(string);
+
+    }
+
+    /////////////Greivence Redressal 24-05-2023////
+
+    @And("Cilcks on Filter in My Requests page")
+    public void cilcksOnFilterInMyRequestsPage() {
+        clickOn(RARPage.req_Filter);
+    }
+
+    @And("Selects {string} filter in My Requests page")
+    public void selectsFilterInMyRequestsPage(String option) {
+        rar.clickOnReqHistoryFilter(option, "");
+    }
+
+    @Then("verify Closed Requests are displayed")
+    public void verifyClosedRequestsAreDisplayed() {
+        verifyElementIsDisplayedAndGetText(RARPage.header_ClosedRequests);
+    }
+
+    @And("click on Closed Request Card with SR No - {string}")
+    public void clickOnClosedRequestCardWithSRNo(String tile) {
+        rar.clickOnReqTile(tile, "");
+
+    }
+
+    @Then("Response History for thar Card {string} is to be displayed")
+    public void responseHistoryForTharCardIsToBeDisplayed(String tile) {
+        rar.verifyResponseHistoryTile(tile, "");
+        verifyElementIsDisplayedAndGetText(RARPage.resp_Details);
+    }
+
+    @And("Grievence redressal {string} section Customer should be visible")
+    public void grievenceRedressalSectionCustomerShouldBeVisible(String btn) {
+        verifyButtonIsDisplayedInThePage(btn);
+    }
+
+    @And("click on {string} URL")
+    public void clickOnURL(String btn) {
+        clickOnButtonUsingTextUsingForLoop(btn);
+    }
+
+    @Then("Cusotmer should be land on Grievence redressal page {string}")
+    public void cusotmerShouldBeLandOnGrievenceRedressalPage(String url) {
+        verifyRedirectioninNewTab(url,"");
 
     }
 }

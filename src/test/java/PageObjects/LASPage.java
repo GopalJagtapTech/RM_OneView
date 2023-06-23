@@ -1146,6 +1146,7 @@ public class LASPage extends ApplicationKeywords {
     public void verifyMIBoxWithNegativeLAS() {
         try {
             String errMsg_paymentRangetxt = "Error Message for Missed Interests range Text Box#xpath=//div[@class='drowdown_input prepayment']//div[@class='texthint' and (@style='color: red;')]";
+            String timHeader = "Total Interest Amount Header#xpath=//strong[normalize-space(text())='Total Interest Amount']";
             if (isElementDisplayed(paymentRangeMI)) {
                 String text = getText(paymentRangeMI);
                 String[] split = text.split(" Rs. ");
@@ -1158,8 +1159,9 @@ public class LASPage extends ApplicationKeywords {
                     flag = true;
                     clearEditBox(input_MissedInterests);
                     typeIn(input_MissedInterests, String.valueOf(min - 1));
+//                    clickOn(input_MissedInterests);
                     waitTime(2);
-                    if (isElementDisplayed(paymentRangeMI)) {
+                    if (isElementDisplayed(errMsg_paymentRangetxt)) {
                         manualScreenshot(getText(errMsg_paymentRangetxt) + " Error Message is Displayed Successfully");
                     } else {
                         testStepFailed(getRefOfXpath(errMsg_paymentRangetxt) + " is Not Displayed");

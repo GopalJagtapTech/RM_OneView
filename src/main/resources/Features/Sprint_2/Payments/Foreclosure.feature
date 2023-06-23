@@ -230,7 +230,7 @@ Feature: Payments- Foreclosure
 
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | Loan Account Number | Payment Option |
-      | 9323247757    | 05081984 | Individual    | Loan payment | Other payments | 4050CD00235523      | Foreclosure    |
+      | 9527443732    | 05081984 | Individual    | Loan payment | Other payments | 4020CD0102788612      | Foreclosure    |
 
   @foreclose
   Scenario Outline: Foreclosure- verify 4.72% foreclosure charge is applicable for all Non-Flexi loans

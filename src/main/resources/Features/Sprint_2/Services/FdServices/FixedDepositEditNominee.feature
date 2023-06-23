@@ -1,4 +1,4 @@
-@FD1_2604@FD_1105
+@FD1_2604@FD_1805@FD_1
 Feature: FD Services Edit Nominee
 @Pass
   Scenario Outline: Edit Nominee - To verify Values Fetched from the Nominee Details in FD Page

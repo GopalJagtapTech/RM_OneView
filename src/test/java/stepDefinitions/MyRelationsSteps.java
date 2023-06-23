@@ -5,14 +5,11 @@ import PageObjects.LoginPage;
 import PageObjects.MyRelationsPage;
 import TestData.GOR;
 import base.ApplicationKeywords;
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.assertj.core.api.SoftAssertions;
-import org.openqa.selenium.By;
 
 
 public class MyRelationsSteps extends ApplicationKeywords {
@@ -496,20 +493,12 @@ MyRelations.clickOnRelationshipStatus(status);
         MyRelations.verifyCardTileDetailsInMyRelationPageUsingAccountNumber(accNo,labels,nudgeText,"");
     }
 
-    @Then("Verify Credit Card is displayed under My Relations {string}")
-    public void verifyCreditCardIsDisplayedUnderMyRelations(String CCName) {
+    //////////////////12062023-Must
 
-        String Cardname = driver.findElement(By.xpath("//*[@id=\"MasterBody\"]/div[1]/section/div/div[2]/div[2]/div[1]/div[3]/div/div[2]/div[3]/div[1]/div/div/p")).getText();
-        System.out.print("CC name : "+Cardname);
-
-            if (Cardname.equalsIgnoreCase(CCName)) {
-                testStepPassed("Credit Card displayed under My Relations");
-            }
-
-        else {
-            stepFailed("Test step failed " );
-
-
-        }
+    @Then("Customer should be redirected to My Relation page with {string} tab selected")
+    public void customerShouldBeRedirectedToMyRelationPageWithTabSelected(String string) {
+        verifyByDefaultSelectedTab(string,"");
     }
+
+
 }

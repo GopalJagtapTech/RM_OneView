@@ -1,0 +1,12 @@
+Failed in Verify Logo is Displayed in New Home. Exception: class java.lang.NullPointerException------------>  Online Stores - EaseMy Trip5
+
+Failed in verify Nudge Text As Per AEM. Exception: class java.lang.NullPointerException------------>  Online Stores - EaseMy Trip5
+
+Failed in click on New Home Options with AEM. Exception: class java.lang.NullPointerException------------>  Online Stores - EaseMy Trip5
+
+Proceed button in Online stores  Redirect popup is Not Displayed------------>  Online Stores - EaseMy Trip5
+
+Failed in wait for Element Loaded URL: null. Exception: class java.lang.NullPointerException------------>  Online Stores - EaseMy Trip5
+
+Failed in verify Redirection URL contains null. Exception: class java.lang.NullPointerException------------>  Online Stores - EaseMy Trip5
+

@@ -76,7 +76,14 @@ public class MyProfilePage extends ApplicationKeywords {
     public static final String address_Kyc_Page = "KYC Verification page#xpath=//div[@class='col-12 pl-0']/span";
     //store Locator Page
     public static final String btn_Cancel_Popup = "Cancel Button In Popup#xpath=//button[normalize-space(text())='Proceed']/following-sibling::button[normalize-space(text())='Cancel']";
-//    public static final String dropDown_SelectADocuments="Cancel Button In Popup#xpath=//select[@class='doc_up_select']";
+
+
+    public static final String close_PanAlreadyEntered = "Close Button In Popup PAN already entered#xpath=//span[normalize-space(text())='Entered PAN is already updated in our records']/ancestor::p/preceding-sibling::a/img";
+    public static final String close_DOBAlreadyEntered = "Close Button In Popup DOB already entered#xpath=//span[normalize-space(text())='Entered DOB is already updated in our records']/ancestor::p/preceding-sibling::a/img";
+
+
+
+    //    public static final String dropDown_SelectADocuments="Cancel Button In Popup#xpath=//select[@class='doc_up_select']";
 
     //div[@class='gstin_part']/descendant::label[text()='Pincode']/following-sibling::input
 
@@ -1842,9 +1849,9 @@ public class MyProfilePage extends ApplicationKeywords {
 
     public void panMasked(String value, String extra) {
         try {
-            String firstPart = value.substring(0,2);
-            String midPart = value.substring(2,8);
-            String endPart = value.substring(8,10);
+            String firstPart = value.substring(0, 2);
+            String midPart = value.substring(2, 8);
+            String endPart = value.substring(8, 10);
             boolean pass = false;
 
             for (int i = 0; i < firstPart.length(); i++) {
@@ -1891,5 +1898,40 @@ public class MyProfilePage extends ApplicationKeywords {
         }
     }
 
+    public void dOBPopupClose() {
+        try {
+            String locator = "Msg#xpath=//span[normalize-space(text())='Entered DOB is already updated in our records']";
+            if (!isElementDisplayed(locator)) {
+                testStepPassed("Popup is closed Successfully and Customer redirected to Same Screen");
+            } else {
+                testStepFailed("Popup is not closed");
+            }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in dOB Popup Close. Exception: " + e.getClass());
+
+        }
+
+    }
+
+    public void panPopupClose() {
+        try {
+            String locator = "Msg#xpath=//span[normalize-space(text())='Entered PAN is already updated in our records']";
+            if (!isElementDisplayed(locator)) {
+                testStepPassed("Popup is closed Successfully and Customer redirected to Same Screen");
+            } else {
+                testStepFailed("Popup is not closed");
+            }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in dOB Popup Close. Exception: " + e.getClass());
+
+        }
+
+    }
 
 }

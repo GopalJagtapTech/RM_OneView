@@ -17,7 +17,7 @@ Feature: Hamburger
 
     Examples:
       | Submenu                                                                                                                           |
-      | Loan payment#Mandate and documents#Get a loan#Passbook#Calculators#Help and support#Take a Tour#Settings#My Rewards#Give Feedback#Sign out |
+      | Loan payment#Mandate and documents#Check Pre approved offers#Passbook#Calculators#Help and support#Take a Tour#Settings#My Rewards#Give Feedback#Sign out |
 
   Scenario Outline: Hamburger- Loan Payments options
     And Clicks on Hamburger Menu
@@ -84,14 +84,14 @@ Feature: Hamburger
       | SubMenu               | SubListMenu         |
       | Mandate and documents | Manage your mandate |
 
-  Scenario Outline: Hamburger- Get a loan
+  Scenario Outline: Hamburger- Check Pre approved offers
     And Clicks on Hamburger Menu
     And Selects an SubMenu from Hamburger "<SubMenu>"
-    Then Get a loan page should be displayed "<URL>"
+    Then verify User is redirected to respective URL "<Redirection URL>" in the same Tab
 
     Examples:
-      | SubMenu    | URL                               |
-      | Get a loan | https://www.bajajfinserv.in/loans |
+      | SubMenu    | Redirection URL                               |
+      | Check Pre approved offers | https://www.bajajfinserv.in/pre-approved-loan-offers |
 
   Scenario Outline: Hamburger- Passbook
     And Clicks on Hamburger Menu
@@ -293,7 +293,7 @@ Feature: Hamburger
     And Clicks on Hamburger Menu
     And Selects an SubMenu from Hamburger "<SubMenu>"
     And Clicks on SubListmenu "<SubListMenu>"
-    Then verify User is redirected to respective URL "<Redirection URL>"
+    Then verify User is redirected to respective URL "<Redirection URL>" in the same Tab
 
     Examples:
       | SubMenu  | SubListMenu | Redirection URL                                     |
@@ -303,7 +303,7 @@ Feature: Hamburger
     And Clicks on Hamburger Menu
     And Selects an SubMenu from Hamburger "<SubMenu>"
     And Clicks on SubListmenu "<SubListMenu>"
-    Then verify User is redirected to respective URL "<Redirection URL>"
+    Then verify User is redirected to respective URL "<Redirection URL>" in the same Tab
 
     Examples:
       | SubMenu  | SubListMenu  | Redirection URL                                                                         |
@@ -313,7 +313,7 @@ Feature: Hamburger
     And Clicks on Hamburger Menu
     And Selects an SubMenu from Hamburger "<SubMenu>"
     And Clicks on SubListmenu "<SubListMenu>"
-    Then verify User is redirected to respective URL "<Redirection URL>"
+    Then verify User is redirected to respective URL "<Redirection URL>" in the same Tab
 
     Examples:
       | SubMenu  | SubListMenu   | Redirection URL                                         |

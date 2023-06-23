@@ -38,14 +38,13 @@ String txtBox_Dob="DOB Text Box For Individual#xpath=(//input[@id='EnterDOBdate_
 //                    driver.switchTo().frame(findWebElement(frame_Login));
                     clickOnIfDisplayed(typeLocator);
                     typeInIfPresent(txtBox_MobileNumber,mobileNumber);
-//                    typeInIfPresent(txtBox_Dob,dob);
+//
                     clickOnButtonUsingTextUsingForLoop("Get OTP");
                     waitForPageToLoad();
                     enterOtpInTextBox("o","123456");
                     clickOnButtonUsingTextUsingForLoop("Submit");
 //                    waitForThreeDotsDisAppear();
                     waitForPageToLoad();
-                   // clickOnIfDisplayed(txtBox_Dob);
                     typeInIfPresent(txtBox_Dob,dob);
                     clickOnButtonUsingTextUsingForLoop("PROCEED");
                 }
@@ -71,7 +70,7 @@ String txtBox_Dob="DOB Text Box For Individual#xpath=(//input[@id='EnterDOBdate_
 //                    typeInTextBoxUsingLocatorUsingForLoop(txtBox_MobileNumber,mobileNumber);
                     typeInIfPresent(txtBox_MobileNumber,mobileNumber);
 //                    typeInTextBoxUsingLocatorUsingForLoop(txtBox_Doi,dob);
-                    typeInIfPresent(txtBox_Doi,dob);
+
 //                    clickOnButtonUsingLocatorUsingForLoop(typeLocator);
                     clickOnButtonUsingTextUsingForLoop("Get OTP");
                     waitForPageToLoad();
@@ -79,6 +78,8 @@ String txtBox_Dob="DOB Text Box For Individual#xpath=(//input[@id='EnterDOBdate_
                     clickOnButtonUsingTextUsingForLoop("Submit");
 //                    waitForThreeDotsDisAppear();
                     waitForPageToLoad();
+                    typeInIfPresent(txtBox_Doi,dob);
+                    clickOnButtonUsingTextUsingForLoop("PROCEED");
                 } else {
                     return;
                 }

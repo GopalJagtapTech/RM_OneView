@@ -22,7 +22,7 @@ Feature: Mandate Management
     And Clicks on SubListmenu "<SubListMenu>"
     Then Verify Customer Redirected to "MyAccountService/Emandate/index" Url
     And verify Header and its subtext are displayed
-    And verify that following Tabs " Loans and Insta EMI Card" "Systematic Deposit Plan" are Displayed
+    And verify that following Tabs "Loans and EMI Card" "Systematic Deposit Plan" are Displayed
     And verify RHS "Need help?" following Options: "Raise a Request, FAQs" are Displayed
     And verify the following buttons "<Buttons>" are displayed in the page
     And verify the following buttons "<Disabled Buttons>" are disabled in the page
@@ -52,7 +52,7 @@ Feature: Mandate Management
     And Selects an SubMenu from Hamburger "<SubMenu>"
     And Clicks on SubListmenu "<SubListMenu>"
     Then Verify Customer Redirected to "MyAccountService/Emandate/index" Url
-    And verify All Loan cards are Displayed-" Loans and Insta EMI Card","Loan Account Number"
+    And verify All Loan cards are Displayed-"Loans and EMI Card","Loan Account Number"
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu         |
       | 9811146659    | 26051982 | Individual    | Mandate and documents | Manage your mandate |
@@ -139,7 +139,7 @@ Feature: Mandate Management
     Then Verify Customer Redirected to "MyAccountService/Emandate/index" Url
     And Click on the Tab "Systematic Deposit Plan" in Mandate Management Page
     And verify Header and its subtext are displayed for SDP
-    And verify that following Tabs " Loans and Insta EMI Card" "Systematic Deposit Plan" are Displayed
+    And verify that following Tabs "Loans and EMI Card" "Systematic Deposit Plan" are Displayed
     And verify RHS "Need help?" following Options: "Raise a Request, FAQs" are Displayed
     And verify the following buttons "<Buttons>" are displayed in the page
     And verify the following buttons "<Disabled Buttons>" are disabled in the page
@@ -281,7 +281,7 @@ Feature: Mandate Management
     And Customer Click on "Mandate Management" CTA in RHS
     Then Verify Customer Redirected to "MyAccountService/Emandate/index" Url
     And verify Header and its subtext are displayed
-    And verify that following Tabs " Loans and Insta EMI Card" "Systematic Deposit Plan" are Displayed
+    And verify that following Tabs "Loans and EMI Card" "Systematic Deposit Plan" are Displayed
     And verify RHS "Need help?" following Options: "Raise a Request, FAQs" are Displayed
     And verify the following buttons "<Buttons>" are displayed in the page
     And verify the following buttons "<Disabled Buttons>" are disabled in the page
@@ -313,7 +313,7 @@ Feature: Mandate Management
     And My relations Page should be displayed
     And Customer Click on "Mandate Management" CTA in RHS
     Then Verify Customer Redirected to "MyAccountService/Emandate/index" Url
-    And verify All Loan cards are Displayed-" Loans and Insta EMI Card","Loan Account Number"
+    And verify All Loan cards are Displayed-"Loans and EMI Card","Loan Account Number"
     Examples:
       | Mobile Number | Date     | Customer Type |
       | 9811146659    | 26051982 | Individual    |
@@ -405,7 +405,7 @@ Feature: Mandate Management
     Then Verify Customer Redirected to "MyAccountService/Emandate/index" Url
     And Click on the Tab "Systematic Deposit Plan" in Mandate Management Page
     And verify Header and its subtext are displayed for SDP
-    And verify that following Tabs " Loans and Insta EMI Card" "Systematic Deposit Plan" are Displayed
+    And verify that following Tabs "Loans and EMI Card" "Systematic Deposit Plan" are Displayed
     And verify RHS "Need help?" following Options: "Raise a Request, FAQs" are Displayed
     And verify the following buttons "<Buttons>" are displayed in the page
     And verify the following buttons "<Disabled Buttons>" are disabled in the page
@@ -490,7 +490,7 @@ Feature: Mandate Management
     And User selects a Loan card in Mandate Management Page -"4020CDIG919002"
     And Click on the Tab "Systematic Deposit Plan" in Mandate Management Page
     Then verify "Proceed" Button is disabled
-    And Click on the Tab "Loans and Insta EMI Card" in Mandate Management Page
+    And Click on the Tab "Loans and EMI Card" in Mandate Management Page
     Then verify "Proceed" Button is disabled
 
     Examples:

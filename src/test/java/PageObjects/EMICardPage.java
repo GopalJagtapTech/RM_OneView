@@ -427,7 +427,7 @@ public class EMICardPage extends ApplicationKeywords {
             if (isElementPresent(locator)) {
                 enterValueInTextBox("222222", 6, locator1, "");
                 clickOnButtonUsingTextUsingForLoop("Submit");
-               // verifyErrorMessageUsingText("Invalid OTP !");
+                // verifyErrorMessageUsingText("Invalid OTP !");
                 verifyssubHeadingIsDisplayed("You have entered wrong OTP. 2 attempts left.");
                 manualScreenshot("Error Message Displayed Successfully");
             } else {
@@ -478,7 +478,7 @@ public class EMICardPage extends ApplicationKeywords {
                 clickOnButtonUsingTextUsingForLoop("Submit");
                 //     verifyErrorMessageUsingText("OTP is incorrect. Please enter the correct OTP received on your Registered Mob. No.");
                 verifyssubHeadingIsDisplayed("You have entered wrong OTP. 2 attempts left.");
-              //  verifyErrorMessageUsingText("Invalid OTP !");
+                //  verifyErrorMessageUsingText("Invalid OTP !");
 
                 manualScreenshot("Error Message Displayed Successfully");
             } else {
@@ -1425,7 +1425,7 @@ public class EMICardPage extends ApplicationKeywords {
             String locator1 = "//div[@class='otpPart' and @id='otp-inputs1']//input[contains(@id,'OTP-digit')]";
             flag = verifyssubHeadingIsDisplayed("You have entered wrong OTP multiple times. Please try again after sometime.");
             if(flag){
-               // testStepInfo("You have entered wrong OTP multiple times. Please try again after sometime.   is displayed  without displaying otp popup.");
+                // testStepInfo("You have entered wrong OTP multiple times. Please try again after sometime.   is displayed  without displaying otp popup.");
                 return;
             }
             if (isElementPresent(locator)) {
@@ -1482,7 +1482,7 @@ public class EMICardPage extends ApplicationKeywords {
 
             flag = verifyssubHeadingIsDisplayed("You have entered wrong OTP multiple times. Please try again after sometime.");
             if(flag){
-             //   testStepInfo("You have entered wrong OTP multiple times. Please try again after sometime.   is displayed  without displaying otp popup.");
+                //   testStepInfo("You have entered wrong OTP multiple times. Please try again after sometime.   is displayed  without displaying otp popup.");
                 return;
             }
 
@@ -1601,6 +1601,30 @@ public class EMICardPage extends ApplicationKeywords {
         try {
             //p[@class='otp-timer']//following::span//i[@class='logincounter']
             String locator = "Timer #xpath=//div[@id='OTPPopupPin']//p[@class='otp-timer']";
+            if (isElementDisplayed(locator)) {
+                String val = findWebElement(locator).getText();
+                String arr[] = val.split(":");
+                String timerVal = arr[1];
+                Integer valTime = Integer.parseInt(timerVal);
+                if (valTime <= 60) {
+                    manualScreenshot("Timer Value is decrementing from 60 secs ");
+                } else {
+                    testStepFailed("Timer Value not displayed");
+                }
+            } else {
+                testStepFailed("Timer Value not displayed");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
+    public void verifyBlockOtpTimer() {
+        try {
+            //p[@class='otp-timer']//following::span//i[@class='logincounter']
+            String locator = "Timer #xpath=//div[@id='OTPPopupBlock']//p[@class='otp-timer']";
             if (isElementDisplayed(locator)) {
                 String val = findWebElement(locator).getText();
                 String arr[] = val.split(":");

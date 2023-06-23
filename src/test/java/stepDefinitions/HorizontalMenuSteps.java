@@ -93,15 +93,14 @@ public HorizontalMenuSteps(){
         clickOnHorizantalLevelTwoSubMenu(string1,string2);
     }
 
+    @When("clicks on {string},{string} and {string}")
+    public void clicks_on_and(String string, String string2, String string3) {
+        clickOnHorizantalLevelTwoSubheadingSubMenu(string,string2,string3);
+    }
 
     @When("clicks on subheading {string} and {string}")
     public void clicks_on_subheading_and(String string, String string2) {
         clickOnHorizantalLevelTwoSubMenuwithoutSubheading(string,string2);
-    }
-
-    @When("clicks on {string},{string} and {string}")
-    public void clicks_on_and(String string, String string2, String string3) {
-        clickOnHorizantalLevelTwoSubheadingSubMenu(string,string2,string3);
     }
 
     @Then("Customer should be Redirected to {string}")

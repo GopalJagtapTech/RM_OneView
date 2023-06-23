@@ -1861,6 +1861,15 @@ public class PaymentsPage extends ApplicationKeywords {
                     }
                 }
 
+                if (Payment.equalsIgnoreCase("Overdue")) {
+                    String label = "Label " + option + "#xpath=//div[@id='ChargesDivShow']/descendant::div[@class='chargeTable']//tr//th[normalize-space(text())='" + option.trim() + "']";
+                    if (isElementDisplayed(label)) {
+                        testStepPassed(getRefOfXpath(label) + " is Displayed Successfully");
+                    } else {
+                        testStepFailed(getRefOfXpath(label) + " is not Displayed");
+                    }
+                }
+
 
             }
         } catch (Exception e) {
@@ -1885,6 +1894,14 @@ public class PaymentsPage extends ApplicationKeywords {
 
                 if (Payment.equalsIgnoreCase("Foreclosure")){
                 String charge = "Charges " + option + "#xpath=//div[@id='linkedLoanChargesDivShow']/descendant::div[@class='chargeTable']//tbody//tr//td[normalize-space(text())='" + option.trim() + "']";
+                if (isElementDisplayed(charge)) {
+                    testStepPassed(getRefOfXpath(charge) + " is Displayed Successfully");
+                } else {
+                    testStepFailed(getRefOfXpath(charge) + " is not Displayed");
+                }
+            }
+                if (Payment.equalsIgnoreCase("Overdue")){
+                String charge = "Charges " + option + "#xpath=//div[@id='ChargesDivShow']/descendant::div[@class='chargeTable']//tbody//tr//td[normalize-space(text())='" + option.trim() + "']";
                 if (isElementDisplayed(charge)) {
                     testStepPassed(getRefOfXpath(charge) + " is Displayed Successfully");
                 } else {
@@ -1918,6 +1935,15 @@ public class PaymentsPage extends ApplicationKeywords {
 
                     if (Payment.equalsIgnoreCase("Foreclosure")){
                     String charges = "Charges: " + j + "for " + option + "#xpath=(//div[@id='linkedLoanChargesDivShow']/descendant::div[@class='chargeTable']//tbody//tr//td[normalize-space(text())='" + option + "']/following-sibling::td)[" + j + "]";
+                    if (isElementDisplayed(charges)) {
+                        testStepPassed(getRefOfXpath(charges) + " is Displayed Successfully: " + getText(charges));
+                    } else {
+                        testStepFailed(getRefOfXpath(charges) + "is not Displayed");
+                    }
+                }
+
+                    if (Payment.equalsIgnoreCase("Overdue")){
+                    String charges = "Charges: " + j + "for " + option + "#xpath=(//div[@id='ChargesDivShow']/descendant::div[@class='chargeTable']//tbody//tr//td[normalize-space(text())='" + option + "']/following-sibling::td)[" + j + "]";
                     if (isElementDisplayed(charges)) {
                         testStepPassed(getRefOfXpath(charges) + " is Displayed Successfully: " + getText(charges));
                     } else {
@@ -1970,5 +1996,28 @@ public class PaymentsPage extends ApplicationKeywords {
 
         }
 
+    public void clickOnButtonUsingTextUsingForLoopifDisplayed(String buttonText) {
+        try {
+            String locator = buttonText + "#xpath=//a[normalize-space(text())='" + buttonText + "']|//button[normalize-space(text())='" + buttonText + "']|//input[@value='" + buttonText.trim() + "']";
+            for (int i = 1; i <= findWebElements(locator).size(); i++) {
+                String button = "" + buttonText + " Button#xpath=(//a[normalize-space(text())='" + buttonText + "']|//button[normalize-space(text())='" + buttonText + "']|//input[@value='" + buttonText.trim() + "'])[" + i + "]";
+//                    scrollToWebElementIfPresent(button);
+                if (isElementDisplayed(button)) {
+                    manualScreenshot(buttonText + " button is Displayed successfully");
+                    clickOn(button);
+                    waitForPageToLoad();
+                    break;
+                }else {
+                    testStepInfo("No Popup Displayed for this Payment type");
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in click on " + buttonText + " button using for Loop if Displayed. Exception: " + e.getClass());
+        }
 
     }
+
+
+
+}

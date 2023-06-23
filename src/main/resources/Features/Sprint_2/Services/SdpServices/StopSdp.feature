@@ -1,4 +1,4 @@
-@StopSDP
+@StopSDP@Pass
 Feature: SDP RHS - Stop SDP
 
 

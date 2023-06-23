@@ -10,27 +10,36 @@ import java.time.Duration;
 
 public class HomePageKyc extends ApplicationKeywords {
 
-        /*
-    Xpaths
-     */
-        public static final String kyc_Popup = "KYC Pop up Verify Your Information #xpath=//div[@class='dialog_modal kyc-popup']/div[@class='dialog_body']";
-        public static final String close_Kyc_Popup = "Close Button KYC Pop up#xpath=//div[@class='dialog_modal kyc-popup']/div[@class='dialog_body']/descendant::a";
-        public static final String kyc_checkBox = "KYC Pop up I hereby confirm that the details mentioned above, including my address and personal information are true and correct and matching with my current updated address and personal information.If any information proves false or incorrect, I shall be responsible for the consequences. #xpath=//p[normalize-space(text())='I hereby confirm that the details mentioned above, including my address and personal information are true and correct and matching with my current updated address and personal information.If any information proves false or incorrect, I shall be responsible for the consequences.']//preceding-sibling::input[@id='chkTermsKYC']";
+    /*
+Xpaths
+ */
+    public static final String kyc_Popup = "KYC Pop up Verify Your Information #xpath=//div[@class='dialog_modal kyc-popup']/div[@class='dialog_body']";
+    public static final String close_Kyc_Popup = "Close Button KYC Pop up#xpath=//div[@class='dialog_modal kyc-popup']/div[@class='dialog_body']/descendant::a";
+    public static final String kyc_checkBox = "KYC Pop up I hereby confirm that the details mentioned above, including my address and personal information are true and correct and matching with my current updated address and personal information.If any information proves false or incorrect, I shall be responsible for the consequences. #xpath=//p[normalize-space(text())='I hereby confirm that the details mentioned above, including my address and personal information are true and correct and matching with my current updated address and personal information.If any information proves false or incorrect, I shall be responsible for the consequences.']//preceding-sibling::input[@id='chkTermsKYC']";
+
     public static final String btn_Correct = "This is correct #xpath=//button[text()='This is correct']";
+
+
     public static final String alerts_Icon = "Alerts Icon #xpath=//p[normalize-space(text())='Alerts']";
+
     public static final String alerts_label = "Alerts  Offers #xpath=//a[normalize-space(text())='Alerts']";
+
     public static final String preApproved_PL = "Personal Loan #xpath=//p[normalize-space(text())='Personal Loan']//parent::div//following::div//a[text()='Apply now']";
 
     public static final String drawdown_cta = "DrawDown Bank Change RHS  Icon #xpath=//div[@class='Superstores_list Superstore_Loan']//p[text()='Drawdown Bank Change']";
+
     public static final String ok_cta = "DrawDown Bank Change OK Popup button #xpath=//div[@class='a_alertpopup_model']//button[text()='OK']";
+
 
     public static final String checkbox = "Terms and conditions check box  #xpath=//label[@for='chkTerms1_OW']";
     public static final String Applynoe_btn = "Apply now #xpath=//div[@class='ctas_div']//a[text()='Apply now']";
 
     public static final String footer_PL = "Apply now #xpath=//div[@class='loansPart']//a[text()='Personal Loan']";
 
-    public static final String offersforYou = "Personal loan  #xpath=//div[@class='a_offerfor_you offerforyousso']//parent::div//following::div//img[@src='https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/personal-loan-v1-7?scl=1&fmt=png-alpha' and @alt='personal-loan']";
+    public static final String offersforYou = "Personal loan  #xpath=//div[@class='a_offerfor_you offerforyousso']//parent::div//following::div//img[@src='https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/personal-loan-banner-16?scl=1&fmt=png-alpha' and @alt='personal-loan']";
 
+
+    public static final String updatebutton = "UPDATE" + "#xpath=(//img[@src='/MyAccountAsset/images/Update KYC.png']//following::div//a[contains(text(),'UPDATE')])[1]";
 
         /*
     Methods
@@ -66,14 +75,17 @@ public class HomePageKyc extends ApplicationKeywords {
 
     }
 
+
+
+
     public void verifyEmiPopup() {
         try {
             String locator =    "#xpath=//div[@id='ptbOfferPopup']";
             if (isElementDisplayed(locator)) {
-               String text=findWebElement(locator).getText();
-               if(!text.isEmpty()) {
-                   testStepPassed(text + " displayed  sucessfully");
-               }
+                String text=findWebElement(locator).getText();
+                if(!text.isEmpty()) {
+                    testStepPassed(text + " displayed  sucessfully");
+                }
             } else {
                 testStepFailed("Emi Popup " + "Not displayed ");
             }
@@ -83,21 +95,23 @@ public class HomePageKyc extends ApplicationKeywords {
 
     }
 
+
     public void clickKycButton( String labelNames) {
         try {
-                String locator =    "#xpath=//div[@class='dialog_modal kyc-popup']/div[@class='dialog_body']//button[contains(text(),'" + labelNames + "')]";
-                if (isElementDisplayed(locator)) {
-                    clickOn(locator);
-                    testStepPassed( labelNames + " displayed  sucessfully");
-                } else {
-                    testStepFailed(labelNames + "Not displayed ");
-                }
+            String locator =    "#xpath=//div[@class='dialog_modal kyc-popup']/div[@class='dialog_body']//button[contains(text(),'" + labelNames + "')]";
+            if (isElementDisplayed(locator)) {
+                clickOn(locator);
+                testStepPassed( labelNames + " displayed  sucessfully");
+            } else {
+                testStepFailed(labelNames + "Not displayed ");
+            }
 
         } catch (Exception e) {
             e.printStackTrace();
         }
 
     }
+
 
     public String verifyMaskedValueUsingLabel(String commonPath, String labelText, String additionalPath, String extra) {
         String value = "";
@@ -115,7 +129,7 @@ public class HomePageKyc extends ApplicationKeywords {
                         manualScreenshot(getRefOfXpath(labelText) + " is Not provided any Value: " );
 
                     }
-                  //  manualScreenshot(getRefOfXpath(labelValue) + " is Displayed Successfully. Value: " + getText(labelValue));
+                    //  manualScreenshot(getRefOfXpath(labelValue) + " is Displayed Successfully. Value: " + getText(labelValue));
                 } else {
                     testStepFailed(getRefOfXpath(labelValue) + " is not displayed");
                 }
@@ -128,6 +142,7 @@ public class HomePageKyc extends ApplicationKeywords {
         }
         return value;
     }
+
 
     public boolean verifyFieldsNotDisplayedUsingLocator(String locator) {
         boolean flag = false;
@@ -147,7 +162,6 @@ public class HomePageKyc extends ApplicationKeywords {
 
 
     public void clickOnAlertsIconBelowOffers( String OfferName,String labelName) {
-
         try {
             String button = labelName + "#xpath=//h3[text()='"+ OfferName+"']//parent::div//following::div//a[contains(text(),'" + labelName + "')]";
             scrollToWebElement(button);
@@ -170,7 +184,7 @@ public class HomePageKyc extends ApplicationKeywords {
                 }
                 clickOn(button);
                 testStepPassed("sucessfully clicked on" + labelName);
-               waitForPageToLoad();
+                waitForPageToLoad();
             } else {
                 testStepFailed(labelName + "  is not present.");
             }
@@ -179,6 +193,9 @@ public class HomePageKyc extends ApplicationKeywords {
         }
 
     }
+
+
+
 
     public void verifyBoldLetter(String OfferName,String labelName){
         try {
@@ -197,10 +214,10 @@ public class HomePageKyc extends ApplicationKeywords {
             scrollToWebElement(button);
             if (isElementDisplayed(button, 10)) {
                 WebElement ele = driver.findElement(By.xpath("//h3[text()='"+ OfferName+"']//parent::div//following::div//a[contains(text(),'" + labelName + "')]"));
-               String fsize=   validateFont(button);
-               if(fsize.contains("RubikReg")){
-                   testStepPassed("sucessfully displayed CAPS on" + labelName);
-               }
+                String fsize=   validateFont(button);
+                if(fsize.contains("RubikReg")){
+                    testStepPassed("sucessfully displayed CAPS on" + labelName);
+                }
                 waitForPageToLoad();
             } else {
                 testStepFailed(labelName + "  is not present.");
@@ -210,6 +227,33 @@ public class HomePageKyc extends ApplicationKeywords {
         }
 
     }
+
+
+
+
+    public void verifyFontSizeAUpdateEmailID( String labelName) {
+        try {
+            String button = labelName + "#xpath=(//img[@src='/MyAccountAsset/images/Update KYC.png']//following::div//a[contains(text(),'UPDATE')])[1]";
+            scrollToWebElement(button);
+            if (isElementDisplayed(button, 10)) {
+                WebElement ele = driver.findElement(By.xpath("(//img[@src='/MyAccountAsset/images/Update KYC.png']//following::div//a[contains(text(),'UPDATE')])[1]"));
+                String fsize=   validateFont(button);
+                if(fsize.contains("Rubik-Reg")){
+                    testStepPassed("sucessfully displayed CAPS on" + labelName);
+                }
+                waitForPageToLoad();
+            } else {
+                testStepFailed(labelName + "  is not present.");
+            }
+        } catch (Exception e) {
+            testStepFailed("Failed to click On " + labelName + e.getClass());
+        }
+
+    }
+
+
+
+
 
     public void verifyAlertsIconBelowOffers( String OfferName,String labelName) {
         try {
@@ -232,7 +276,7 @@ public class HomePageKyc extends ApplicationKeywords {
                         manualScreenshot(text+"sucessfully displayed ");
                     }
                 }
-              //  clickOn(button);
+                //  clickOn(button);
                 testStepPassed("sucessfully clicked on" + labelName);
                 waitForPageToLoad();
             } else {

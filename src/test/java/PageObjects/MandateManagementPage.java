@@ -111,7 +111,6 @@ Xpaths
             } else {
                 testStepFailed(getRefOfXpath(activeLoansTab) + "is not selected by Default");
             }
-
         } catch (Exception e) {
             e.printStackTrace();
             testStepFailed("Failed in verify Default Loans Tab .Exception:" + e.getClass());

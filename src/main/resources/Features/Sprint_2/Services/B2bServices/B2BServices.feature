@@ -222,7 +222,7 @@ Feature: B2B Services
     Then My relations Page should be displayed
     And click on "Loans" tab
     And verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
-    And Customer Click on "View Statements" CTA in RHS
+    And Customer Click on "View Documents" CTA in RHS
     Then User should be redirected to specific document page "<Account No>"
 
     Examples:
@@ -290,6 +290,9 @@ Feature: B2B Services
     And Customer clicks on view all option
     And My relations Page should be displayed
     And click on "Loans" tab
+    And Click on Filter
+    And click on "Closed" Relationship status in Filter
+    And click on "Apply" Button
     Then verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
 
     Examples:
@@ -305,6 +308,9 @@ Feature: B2B Services
     And Customer clicks on view all option
     And My relations Page should be displayed
     And click on "Loans" tab
+    And Click on Filter
+    And click on "Closed" Relationship status in Filter
+    And click on "Apply" Button
     Then verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
     Then verify given sections are showing on Loan Details page
 
@@ -321,6 +327,9 @@ Feature: B2B Services
     And Customer clicks on view all option
     And My relations Page should be displayed
     And click on "Loans" tab
+    And Click on Filter
+    And click on "Closed" Relationship status in Filter
+    And click on "Apply" Button
     Then verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
     Then verify given details are showing under loan details section- Closed
 
@@ -337,6 +346,9 @@ Feature: B2B Services
     And Customer clicks on view all option
     And My relations Page should be displayed
     And click on "Loans" tab
+    And Click on Filter
+    And click on "Closed" Relationship status in Filter
+    And click on "Apply" Button
     Then verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
     Then verify customer is able to view Relationship Details section if customer having term loan or flexi loan with given tiles-Closed
 
@@ -353,6 +365,9 @@ Feature: B2B Services
     And Customer clicks on view all option
     And My relations Page should be displayed
     And click on "Loans" tab
+    And Click on Filter
+    And click on "Closed" Relationship status in Filter
+    And click on "Apply" Button
     Then verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
     Then verify all given Content with Value is showing to customer under relationship details section-Loan Section
 
@@ -361,7 +376,7 @@ Feature: B2B Services
 #      | 9307555158    | 05051976 | Individual    | CONSUMER DURABLE      | 4020CDGB501012 |
       | 8097927579    | 16111984 | Individual    | LOCAL - RETRA | 402ECFHC764391 |
 
-  @Close2
+  @Closed
   Scenario Outline: B2B- Loan Details Closed- verify given contents with the values is showing under Registered Repayment Bank Details section
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -369,6 +384,9 @@ Feature: B2B Services
     And Customer clicks on view all option
     And My relations Page should be displayed
     And click on "Loans" tab
+    And Click on Filter
+    And click on "Closed" Relationship status in Filter
+    And click on "Apply" Button
     Then verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
     Then verify given contents with the values is showing under  Registered Repayment Bank Details section-Closed
 
@@ -377,7 +395,7 @@ Feature: B2B Services
 #      | 9307555158    | 05051976 | Individual    | CONSUMER DURABLE      | 4020CDGB501012 |
       | 8097927579    | 16111984 | Individual    | LOCAL - RETRA | 402ECFHC764391 |
 
-  @Close2
+  @Closed
   Scenario Outline: B2B- Loan Details Closed - verify customer is able to view  last 4 digit of registered bank account number in unmasked format
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -385,6 +403,9 @@ Feature: B2B Services
     And Customer clicks on view all option
     And My relations Page should be displayed
     And click on "Loans" tab
+    And Click on Filter
+    And click on "Closed" Relationship status in Filter
+    And click on "Apply" Button
     Then verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
 #    Then verify customer is able to view  last 4 digit of registered bank account number in unmasked format.
     Then verify except last 4 characters of Bank account number remaining characters are masked
@@ -395,7 +416,7 @@ Feature: B2B Services
 #      | 9307555158    | 05051976 | Individual    | CONSUMER DURABLE      | 4020CDGB501012 |
       | 8097927579    | 16111984 | Individual    | LOCAL - RETRA | 402ECFHC764391 |
 
-  @Close2
+  @Closed
   Scenario Outline: B2B- Loan Details Closed- verify customer is able to view Change bank account option for closed loans
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -403,6 +424,9 @@ Feature: B2B Services
     And Customer clicks on view all option
     And My relations Page should be displayed
     And click on "Loans" tab
+    And Click on Filter
+    And click on "Closed" Relationship status in Filter
+    And click on "Apply" Button
     Then verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
     Then verify customer is able to view Change bank account option for closed loans
 
@@ -411,7 +435,7 @@ Feature: B2B Services
 #      | 9307555158    | 05051976 | Individual    | CONSUMER DURABLE      | 4020CDGB501012 |
       | 8097927579    | 16111984 | Individual    | LOCAL - RETRA | 402ECFHC764391 |
 
-  @Close2
+  @Closed
   Scenario Outline: B2B- Loan Details Closed - verify customer is able to view  top 7 charges details on upfront as per priority logic  on Fees & Charges tile
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -419,6 +443,9 @@ Feature: B2B Services
     And Customer clicks on view all option
     And My relations Page should be displayed
     And click on "Loans" tab
+    And Click on Filter
+    And click on "Closed" Relationship status in Filter
+    And click on "Apply" Button
     Then verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
     Then verify customer is able to view  top 7 charges details on upfront as per priority logic  on Fees & Charges tile
 
@@ -427,7 +454,7 @@ Feature: B2B Services
 #      | 9307555158    | 05051976 | Individual    | CONSUMER DURABLE      | 4020CDGB501012 |
       | 8097927579    | 16111984 | Individual    | LOCAL - RETRA | 402ECFHC764391 |
 
-  @Close2
+  @Closed
   Scenario Outline: B2B- Loans Closed  verify Given buttons are displayed under 'Things you can do section' at RHS Section
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -435,6 +462,9 @@ Feature: B2B Services
     And Customer clicks on view all option
     And My relations Page should be displayed
     And click on "Loans" tab
+    And Click on Filter
+    And click on "Closed" Relationship status in Filter
+    And click on "Apply" Button
     And verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
     And verify options available under "Quick Actions" on RHS(B2B Services Closed)
 
@@ -443,7 +473,7 @@ Feature: B2B Services
 #      | 9307555158    | 05051976 | Individual    | CONSUMER DURABLE      | 4020CDGB501012 |
       | 8097927579    | 16111984 | Individual    | LOCAL - RETRA | 402ECFHC764391 |
 
-  @Close3
+  @Closed
   Scenario Outline: B2B- Loan Details Closed- RHS- View Statements
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -451,8 +481,11 @@ Feature: B2B Services
     And Customer clicks on view all option
     Then My relations Page should be displayed
     And click on "Loans" tab
+    And Click on Filter
+    And click on "Closed" Relationship status in Filter
+    And click on "Apply" Button
     And verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
-    And Customer Click on "View Statements" CTA in RHS
+    And Customer Click on "View Documents" CTA in RHS
     And User should be redirected to specific document page "<Account No>"
 
     Examples:
@@ -494,7 +527,7 @@ Feature: B2B Services
 ##      | 7412822091    | 26061995 | Individual    | LOCAL - ONLINE                   | 4B0ECFHA051567 |
 #      | 8097927579    | 16111984 | Individual    | LOCAL - RETRA | 402ECFHC764391 |
 
-  @Close4
+  @Closed
   Scenario Outline: B2B- Loan Details Closed- FAQs Verification & Redirection
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -502,6 +535,9 @@ Feature: B2B Services
     And Customer clicks on view all option
     And My relations Page should be displayed
     And click on "Loans" tab
+    And Click on Filter
+    And click on "Closed" Relationship status in Filter
+    And click on "Apply" Button
     And verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
     Then verify customer can view FAQ section
     And verify Customer is redirected to FAQ page on clicking FAQ section
@@ -511,7 +547,7 @@ Feature: B2B Services
 #      | 7412822091    | 26061995 | Individual    | LOCAL - ONLINE                   | 4B0ECFHA051567 |
       | 8097927579    | 16111984 | Individual    | LOCAL - RETRA | 402ECFHC764391 |
 
-  @Close4
+  @Closed
   Scenario Outline: B2B- Loan Details Closed- Cibil Score Verification & Redirection
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -519,6 +555,9 @@ Feature: B2B Services
     And Customer clicks on view all option
     And My relations Page should be displayed
     And click on "Loans" tab
+    And Click on Filter
+    And click on "Closed" Relationship status in Filter
+    And click on "Apply" Button
     And verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
 #    And verify customer can view cibil on click of know your cibil
     And Clicks on "Check Score Button in CIBIL"

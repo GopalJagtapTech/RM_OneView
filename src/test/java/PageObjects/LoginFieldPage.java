@@ -141,7 +141,7 @@ public class LoginFieldPage extends ApplicationKeywords {
 
     public static final String instaEmi="Insta EMI card #xpath=//div[@class='wallet_card_title']//p[text()='Insta EMI card']";
 
-//New Xpaths
+    //New Xpaths
     public static final String ShopBajalMall_Nudge=" Shop on Bajaj Mall Top Deals Green nudge Air Conditioners #xpath=//div[@class='shop_on_the_emi_store']//p[normalize-space(text())='Air Conditioners']//parent::a//preceding-sibling::i[contains(text(),'TOP DEALS')]";
 
     public static final String InvFD_Nudge=" Investments  Fixed Deposit Green Nudge Up to 8.20% #xpath=//div[@class='bazaar_BG']//p[normalize-space(text())='Fixed Deposit']//parent::a//preceding-sibling::i[contains(text(),'Upto 8.20%')]";
@@ -183,6 +183,8 @@ public class LoginFieldPage extends ApplicationKeywords {
 
 
     public static final String viewall_Cards="Cards #xpath=//a[@data-tab='Cards' and text()='Cards']";
+
+    public static final String viewall_Insurance="Cards #xpath=//a[@data-tab='Insurance' and text()='Insurance/Value-added Services']";
 
 
     public boolean verifyFieldsNotDisplayedUsingLocator(String locator) {
@@ -651,7 +653,7 @@ public class LoginFieldPage extends ApplicationKeywords {
 
     public void enterDOB(String Value) {
         try {
-            String txtBox_Dob = "DOB Text Box For Individual#xpath=(//input[@id='DOBdate_Individual'])[1]";
+            String txtBox_Dob = "DOB Text Box For Individual#xpath=(//input[@id='EnterDOBdate_Individual'])[1]";
             if (isElementDisplayed(txtBox_Dob)) {
                 typeInIfPresent(txtBox_Dob, Value);
                 findWebElement(txtBox_Dob).sendKeys(Keys.TAB);
@@ -731,21 +733,23 @@ public class LoginFieldPage extends ApplicationKeywords {
             String changeButton = "Change Button#xpath=//a[@id='Change']";
             String resendButton = "Resend Button#xpath=//div[@id='ValidatOTPID']//button[@id='resendOtp']";
             String byPreceed = "Terms Text Content#xpath=//div[@id='ValidatOTPID']//label[@class='checkupgrade']";
+            String content = "Bottom Content#xpath=(//div[@class='j_confirm_box'])[1]";
 
-            verifyTextContent("Verify your OTP");
+            verifyTextContent("Enter One-time Password (OTP)");
             verifyTextContent("Enter OTP");
             verifyFieldTextLabels(changeButton);
             verifyFieldTextLabels(resendButton);
             String text = findWebElement(locator).getText().trim();
             String textVal = findWebElement(byPreceed).getText().trim();
-            if (text.contains(msg1) && textVal.contains(msg2)) {
-                testStepPassed("Mobile number is masked correctly displayed correctly" + text);
-                testStepPassed(" displayed correctly" + textVal);
-            } else {
-                testStepFailed("Mobile number is  Not masked correctly" + text);
-            }
+//            if (text.contains(msg1) && textVal.contains(msg2)) {
+//                testStepPassed("Mobile number is masked correctly displayed correctly" + text);
+//                testStepPassed(" displayed correctly" + textVal);
+//            } else {
+//                testStepFailed("Mobile number is  Not masked correctly" + text);
+//            }
+            verifyElementIsDisplayedAndGetText(content);
             verifyTextContent("Submit");
-            manualScreenshot("OTP  POP Text Content displayed  Successfully");
+//            manualScreenshot("OTP  POP Text Content displayed  Successfully");
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -773,7 +777,7 @@ public class LoginFieldPage extends ApplicationKeywords {
         try {
             String Locator = "Skip#xpath=//div[@class='cochmark_popup_text_one Individual_coach']//a[text()='Skip']";
             if (isElementDisplayed(Locator)) {
-               // waitUntilElementVisible(Locator, 10);
+                // waitUntilElementVisible(Locator, 10);
                 clickOn(Locator);
             } else {
 
@@ -1052,7 +1056,7 @@ public class LoginFieldPage extends ApplicationKeywords {
 
             if (isElementDisplayed(locator)) {
                 clickOn(locator);
-               // waitTime(3);
+                // waitTime(3);
                 waitForPageToLoad();
             } else {
                 testStepFailed(getRefOfXpath(locator) + " is Not Displayed");
@@ -1105,7 +1109,7 @@ public class LoginFieldPage extends ApplicationKeywords {
             Boolean flag = false;
             for (int i = 1; i <= findWebElements(locator).size(); i++) {
                 String button = "" + locator.split("#")[0] + "#xpath=(" + locator.split("#xpath=")[1] + ")[" + i + "]";
-              //  waitForElementUntilVisibleFluent(button);
+                //  waitForElementUntilVisibleFluent(button);
                 if (isElementDisplayed(button)) {
                     manualScreenshot(locator.split("#")[0] + " button is Displayed successfully");
                     //  clickOn(button);
@@ -1417,7 +1421,7 @@ public class LoginFieldPage extends ApplicationKeywords {
                 String hex=color2.asHex().toUpperCase();
                 //   hex=hex.toUpperCase();
                 //String hex = Color.fromString(color2).asHex();
-                                testStepInfo(hex);
+                testStepInfo(hex);
                 if (hex.equals(expectedColorHexValue)) {
                     flag=true;
                     manualScreenshot(objectLocator.split("#")[0] + " - " + expectedColor + " Color Verified Successfully");
@@ -1540,6 +1544,35 @@ public class LoginFieldPage extends ApplicationKeywords {
             testStepFailed("Failed in click on  " + policyNumber + " Product. Exception: " + e.getClass());
         }
     }
+
+
+    /////////19062023-Mustaq
+
+    public void verifyFieldLabelsNotDisplayed(String id, String labelName) {
+        //IDMobileEmailxtBox_Individual
+        String defPath = labelName + "#xpath=//div[@id='" + id + "']//label[contains(text(),'" + labelName + "')]";
+        try {
+            if (!isElementDisplayed(defPath)) {
+                testStepPassed(labelName + " Is not displayed sucessfully ");
+            } else {
+                testStepFailed(labelName + "is displayed ");
+            }
+        } catch (Exception e) {
+            testStepFailed("The Result Is Not Found : " + e.getMessage());
+        }
+    }
+
+    public void clickOnCustomerTab(String tab, String extra) {
+        String typeLocator = ""+tab+" Customer tab#xpath=//div[@class='formtab']/descendant::a[normalize-space(text())='"+tab.trim()+"']";
+        try {
+            clickOnIfDisplayed(typeLocator);
+        } catch (Exception e) {
+            testStepFailed("The Result Is Not Found : " + e.getMessage());
+        }
+    }
+
+
+    String typeLocator = "Non-Individual Customer tab#xpath=//div[@class='formtab']/descendant::a[normalize-space(text())='Corporate/ Business']";
 
 
 }

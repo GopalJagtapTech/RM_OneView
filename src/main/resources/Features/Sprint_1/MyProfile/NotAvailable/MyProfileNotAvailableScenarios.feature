@@ -1,3 +1,4 @@
+@neg
 Feature: My Profile- Not Available
 
   @not

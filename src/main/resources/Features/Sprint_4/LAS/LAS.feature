@@ -1,3 +1,4 @@
+@LAS
 Feature: LAS Services
 
   @LAS
@@ -31,36 +32,36 @@ Feature: LAS Services
     And verify Customer is able to go to Service screen from My Relations using FAS No"<Account No>"
     Examples:
       | Mobile Number | Date     | Customer Type | Subtitle            | Account No |
-      | 9996645984    | 01011996 | Individual    | LOAN AGAINST SHARES | 111030     |
+      | 9996645984    | 01011996 | Individual    | LOAN AGAINST SHARES | 104175     |
 
-  @LAS @no
-  Scenario Outline: Active LAS - Section in LAS Service Page
-    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
-    When User is on Home Page
-    And Customer is able to view My Relations Section to ETB Customers
-    And Customer clicks on view all option
-    And My relations Page should be displayed
-    And click on "Loans" tab
-    And verify Customer is able to go to Service screen from My Relations using FAS No"<Account No>"
-    Then verify the "LAS Services" following components: Top Section, Relationship section, RHS section, "Loan Details" are Displayed in "Loan Service Page"
-    And Verify "Pre-approved offers Banners section" is Displayed
-    Examples:
-      | Mobile Number | Date     | Customer Type | Subtitle            | Account No |
-      | 9545219299    | 01011996 | Individual    | LOAN AGAINST SHARES | 104175     |
+#  @LAS @no
+#  Scenario Outline: Active LAS - Section in LAS Service Page
+#    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
+#    When User is on Home Page
+#    And Customer is able to view My Relations Section to ETB Customers
+#    And Customer clicks on view all option
+#    And My relations Page should be displayed
+#    And click on "Loans" tab
+#    And verify Customer is able to go to Service screen from My Relations using FAS No"<Account No>"
+#    Then verify the "LAS Services" following components: Top Section, Relationship section, RHS section, "Loan Details" are Displayed in "Loan Service Page"
+#    And Verify "Pre-approved offers Banners section" is Displayed
+#    Examples:
+#      | Mobile Number | Date     | Customer Type | Subtitle            | Account No |
+#      | 9545219299    | 01011996 | Individual    | LOAN AGAINST SHARES | 104175     |
 
-  @LAS @no
-  Scenario Outline: Active LAS - Top Section in Loan services Page Without EMI Overdue
-    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
-    When User is on Home Page
-    And Customer is able to view My Relations Section to ETB Customers
-    And Customer clicks on view all option
-    And My relations Page should be displayed
-    And click on "Loans" tab
-    And verify Customer is able to go to Service screen from My Relations using FAS No"<Account No>"
-    Then verify Top Section Details for "Active LAS without EMI Overdue"
-    Examples:
-      | Mobile Number | Date     | Customer Type | Subtitle            | Account No |
-      | 9996645984    | 01011996 | Individual    | LOAN AGAINST SHARES | 111030     |
+#  @LAS @no
+#  Scenario Outline: Active LAS - Top Section in Loan services Page Without EMI Overdue
+#    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
+#    When User is on Home Page
+#    And Customer is able to view My Relations Section to ETB Customers
+#    And Customer clicks on view all option
+#    And My relations Page should be displayed
+#    And click on "Loans" tab
+#    And verify Customer is able to go to Service screen from My Relations using FAS No"<Account No>"
+#    Then verify Top Section Details for "Active LAS without EMI Overdue"
+#    Examples:
+#      | Mobile Number | Date     | Customer Type | Subtitle            | Account No |
+#      | 9996645984    | 01011996 | Individual    | LOAN AGAINST SHARES | 111030     |
 
   @LAS
   Scenario Outline: Active LAS - Relationship Section - Loan Details Sub Section

@@ -4,6 +4,7 @@ import PageObjects.*;
 import TestData.GOR;
 import base.ApplicationKeywords;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -22,25 +23,26 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     public LoginFieldsSteps() {
         login = new LoginPage();
         home = new HomePage();
-        loginfieldsPage=new LoginFieldPage();
+        loginfieldsPage = new LoginFieldPage();
     }
 
 
     @Given("User is on Login Page")
     public void user_is_on_login_page() {
-       // redirectToUrl("https://uat-oneweb.bajajfinserv.in/MyAccountLogin/Login/LogoutUserBasedOnMobile?MobileNo="+mobNumber+"","");
-       //waitTime(2);
-        redirectToUrl("https://uat-oneweb.bajajfinserv.in/MyAccountLogin","");
+        // redirectToUrl("https://uat-oneweb.bajajfinserv.in/MyAccountLogin/Login/LogoutUserBasedOnMobile?MobileNo="+mobNumber+"","");
+        //waitTime(2);
+        redirectToUrl("https://uat-oneweb.bajajfinserv.in/MyAccountLogin", "");
         waitForPageToLoad();
         waitTime(2);
         loginfieldsPage.clickfirstSkipButton();
-        loginfieldsPage.clickOnLogincloseButtonxPopup("close");
+//        loginfieldsPage.clickOnLogincloseButtonxPopup("close");
         waitForPageToLoad();
         waitTime(2);
     }
+
     @When("User logouts application")
     public void user_logouts_application() {
-      //  loginfieldsPage.verifyButtonUsingLocatorUsingForLoopWithoutFail(loginfieldsPage.Skip_Coach);
+        //  loginfieldsPage.verifyButtonUsingLocatorUsingForLoopWithoutFail(loginfieldsPage.Skip_Coach);
         verifyLogout();
     }
 
@@ -69,10 +71,9 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     @When("User clicks on Sign in CTA")
     public void user_clicks_on_sign_in_cta() {
 
-        if(isElementDisplayed(loginfieldsPage.SignIn_Button)){
+        if (isElementDisplayed(loginfieldsPage.SignIn_Button)) {
             clickOn(loginfieldsPage.SignIn_Button);
-        }
-        else{
+        } else {
             clickOnIfDisplayed(loginfieldsPage.icon_MyAccount);
             clickOn(loginfieldsPage.SignIn_Button);
         }
@@ -85,27 +86,26 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     @Then("Login popup should be displayed")
     public void login_popup_should_be_displayed() {
         waitForPageToLoad();
-       // loginfieldsPage.clickOnSkipButton("Skip");
-      verifyElementIsDisplayedUsingLocator(loginfieldsPage.loginPopup);
+        // loginfieldsPage.clickOnSkipButton("Skip");
+        verifyElementIsDisplayedUsingLocator(loginfieldsPage.loginPopup);
     }
 
 
     @Then("Customer should be able to view Individual Corporate\\/Business NRI tab on login popup")
     public void customerShouldBeAbleToViewIndividualCorporateBusinessNRITabOnLoginPopup() {
 
-        loginfieldsPage.verifySubTabs("Individual","Individual");
-        loginfieldsPage.verifySubTabs("Non-Individual","Corporate/ Business");
-        loginfieldsPage.verifySubTabs("NRI","NRI");
+        loginfieldsPage.verifySubTabs("Individual", "Individual");
+        loginfieldsPage.verifySubTabs("Non-Individual", "Corporate/ Business");
+        loginfieldsPage.verifySubTabs("NRI", "NRI");
     }
 
     @Then("Customer should be able to view Mobile Number Date of Birth Get OTP content on Individual tab of login popup")
     public void customerShouldBeAbleToViewMobileNumberDateOfBirthGetOTPContentOnIndividualTabOfLoginPopup() {
 
 
-
-        loginfieldsPage.verifyFieldLabels("IDMobileEmailxtBox_Individual","Mobile Number");
+        loginfieldsPage.verifyFieldLabels("IDMobileEmailxtBox_Individual", "Mobile Number");
         loginfieldsPage.verifyTextContent("Enter your 10-digit mobile number");
-        loginfieldsPage.verifyFieldLabels("IDEnterDOBTxtBox_Individual","Date of Birth");
+        loginfieldsPage.verifyFieldLabels("IDEnterDOBTxtBox_Individual", "Date of Birth");
         loginfieldsPage.verifyTextContent("Enter your date of birth");
         verifyElementIsDisplayedUsingLocator(loginfieldsPage.btn_IndividualGetOTP);
 
@@ -117,12 +117,13 @@ public class LoginFieldsSteps extends ApplicationKeywords {
         loginfieldsPage.clickOnSkipButton("Corporate/ Business");
         manualScreenshot("Corporate/ Business");
     }
+
     @Then("Customer should be able to view Mobile Number\\/Email ID Date of Incorporation Get OTP content on Individual tab of login popup")
     public void customer_should_be_able_to_view_mobile_number_email_id_date_of_incorporation_get_otp_content_on_individual_tab_of_login_popup() {
 
-        loginfieldsPage.verifyFieldLabels("IDMobileEmailxtBox_NonIndividual","Mobile Number/Email ID");
+        loginfieldsPage.verifyFieldLabels("IDMobileEmailxtBox_NonIndividual", "Mobile Number/Email ID");
         loginfieldsPage.verifyTextContent("Enter your 10-digit mobile number or email ID");
-        loginfieldsPage.verifyFieldLabels("IDEnterDOBTxtBox_NonIndividual","Date of Incorporation (DD/MM/YYYY)");
+        loginfieldsPage.verifyFieldLabels("IDEnterDOBTxtBox_NonIndividual", "Date of Incorporation (DD/MM/YYYY)");
         loginfieldsPage.verifyTextContent("Enter your company’s date of incorporation");
         verifyElementIsDisplayedUsingLocator(loginfieldsPage.btn_NonIndividualGetOTP);
 
@@ -132,9 +133,9 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     public void customer_should_be_able_to_view_mobile_number_email_id_date_of_incorporation_get_otp_content_on_login_popup() {
 
 
-        loginfieldsPage.verifyFieldLabels("IDMobileEmailxtBox_NonIndividual","Mobile Number/Email ID");
+        loginfieldsPage.verifyFieldLabels("IDMobileEmailxtBox_NonIndividual", "Mobile Number/Email ID");
         loginfieldsPage.verifyTextContent("Enter your 10-digit mobile number or email id");
-        loginfieldsPage.verifyFieldLabels("IDEnterDOBTxtBox_NonIndividual","Date of Incorporation");
+        loginfieldsPage.verifyFieldLabels("IDEnterDOBTxtBox_NonIndividual", "Date of Incorporation");
         loginfieldsPage.verifyTextContent("Enter your date of incorporation");
         verifyElementIsDisplayedUsingLocator(loginfieldsPage.btn_NonIndividualGetOTP);
     }
@@ -145,12 +146,13 @@ public class LoginFieldsSteps extends ApplicationKeywords {
         loginfieldsPage.clickOnSkipButton("NRI");
         manualScreenshot("NRI");
     }
+
     @Then("Customer should be able to view Mobile Number\\/Email ID Date of Birth Get OTP content on NRI tab of login popup")
     public void customer_should_be_able_to_view_mobile_number_email_id_date_of_birth_get_otp_content_on_nri_tab_of_login_popup() {
 
-        loginfieldsPage.verifyFieldLabels("IDMobileEmailxtBox_NRI","Mobile Number/Email ID");
+        loginfieldsPage.verifyFieldLabels("IDMobileEmailxtBox_NRI", "Mobile Number/Email ID");
         loginfieldsPage.verifyTextContent("Enter your 10-digit mobile number or email ID");
-        loginfieldsPage.verifyFieldLabels("IDEnterDOBTxtBox_NRI","Date of Birth (DD/MM/YYYY)");
+        loginfieldsPage.verifyFieldLabels("IDEnterDOBTxtBox_NRI", "Date of Birth (DD/MM/YYYY)");
         loginfieldsPage.verifyTextContent("Enter your date of birth as it appears on your PAN Card");
         verifyElementIsDisplayedUsingLocator(loginfieldsPage.btn_NRIGetOTP);
 
@@ -161,20 +163,20 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     public void enters_wrong_input_in_mobile_number_field(String string) {
         loginfieldsPage.enterMobileNumber(string);
     }
+
     @Then("Customer should be able to view {string} validation messages")
     public void customer_should_be_able_to_view_validation_messages(String string) {
 
-        if(string.equals("lease enter valid Mobile Number")){
-           //  clickOn(loginfieldsPage.btn_IndividualGetOTP);
+        if (string.equals("lease enter valid Mobile Number")) {
+            //  clickOn(loginfieldsPage.btn_IndividualGetOTP);
             clickOnButtonUsingTextUsingForLoop("Get OTP");
             loginfieldsPage.verifyTextContent(string);
-        }else{
+        } else {
             loginfieldsPage.verifyTextContent(string);
         }
 
 
     }
-
 
 
     @When("Enters Wrong input in Date of Birth field {string}")
@@ -184,7 +186,7 @@ public class LoginFieldsSteps extends ApplicationKeywords {
 
     @Then("Customer should be able to view  DOB {string} validation messages")
     public void customer_should_be_able_to_view_dob_validation_messages(String string) {
-           // clickOn(loginfieldsPage.btn_IndividualGetOTP);
+        // clickOn(loginfieldsPage.btn_IndividualGetOTP);
         clickOnButtonUsingTextUsingForLoop("Get OTP");
         loginfieldsPage.verifyTextContent(string);
 
@@ -205,13 +207,11 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     }
 
 
-
-
-
     @Then("OTP popup should be displayed")
     public void otp_popup_should_be_displayed() {
-        loginfieldsPage.verifyTextContent("Verify your OTP");
+        loginfieldsPage.verifyTextContent("Enter One-time Password (OTP)");
         manualScreenshot("Verify your OTP");
+
     }
 
 
@@ -233,36 +233,39 @@ public class LoginFieldsSteps extends ApplicationKeywords {
 
     @When("Click on Privacy Policy")
     public void click_on_privacy_policy() {
-        clickOnButtonUsingTextUsingForLoop("privacy policy");
+        clickOnButtonUsingTextUsingForLoop("Privacy Policy");
     }
+
     @Then("Privacy Policy should be opened")
     public void privacy_policy_should_be_opened() {
         waitTime(10);
-        transferControlToWindow(2,false);
+        transferControlToWindow(2, false);
         verifyRedirectionURLIfContains("https://www.bajajfinserv.in/privacy-policy");
-        transferControlToWindow(1,true);
+        transferControlToWindow(1, true);
     }
 
 
     @When("Click on Term & Conditions")
     public void click_on_term_conditions() {
-        clickOnButtonUsingTextUsingForLoop("terms & conditions");
+        clickOnButtonUsingTextUsingForLoop("Terms & Conditions");
     }
+
     @Then("Term & condition should be opened")
     public void term_condition_should_be_opened() {
-       waitTime(10);
-        transferControlToWindow(2,false);
-        verifyRedirectionURLIfContains("https://bfin.in/Docs/Terms_and_Conditions.pdf");
-        transferControlToWindow(1,true);
+        waitTime(10);
+        transferControlToWindow(2, false);
+        verifyRedirectionURLIfContains("https://cms-assets.bajajfinserv.in/is/content/bajajfinancestage/terms-of-use-02-06-2023-my-accountpdf?scl=1&fmt=pdf");
+        transferControlToWindow(1, true);
     }
 
     @When("Click on need help")
     public void click_on_need_help() {
         clickOnButtonUsingTextUsingForLoop("Need help?");
     }
+
     @Then("Customer should be able to view FAQs")
     public void customer_should_be_able_to_view_fa_qs() {
-        String locator="FAQ#xpath=//strong[text()='FAQs']";
+        String locator = "FAQ#xpath=//strong[text()='FAQs']";
         verifyFieldsDisplayedUsingLocator(locator);
         manualScreenshot("FAQs");
     }
@@ -271,8 +274,9 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     @When("Enters Wrong {string}")
     public void enters_wrong(String string) {
         waitForPageToLoad();
-        enterOtpInTextBox("o",string);
+        enterOtpInTextBox("o", string);
     }
+
     @When("Click on Submit")
     public void click_on_submit() {
         clickOnButtonUsingTextUsingForLoop("Submit");
@@ -280,27 +284,30 @@ public class LoginFieldsSteps extends ApplicationKeywords {
         waitForThreeDotsDisAppear();
 
     }
+
     @Then("Validation message should be displayed")
     public void validation_message_should_be_displayed() {
         verifyFieldsDisplayedUsingText("Invalid / wrong OTP");
         manualScreenshot("Invalid / wrong OTP");
 
     }
+
     @When("Enters {string}")
     public void enters(String string) {
         waitForPageToLoad();
-        enterOtpInTextBox("o",string);
+        enterOtpInTextBox("o", string);
     }
+
     @Then("Customer should be redirected to home page")
     public void customer_should_be_redirected_to_home_page() {
-        boolean flag =false;
-        loginfieldsPage.waitUntilElementVisible(HomePage.txt_Home,60);
+        boolean flag = false;
+        loginfieldsPage.waitUntilElementVisible(HomePage.txt_Home, 60);
         flag = verifyFieldsDisplayedUsingLocator(HomePage.txt_Home);
         verifyLogout();
 
         if (!flag) {
             ApplicationKeywords.quitBrowser = true;
-            GOR.login=false;
+            GOR.login = false;
             SoftAssertions sa = new SoftAssertions();
             testStepFailed("Login is Unsuccessfull");
             sa.fail("Login is Unsuccessful");
@@ -326,6 +333,7 @@ public class LoginFieldsSteps extends ApplicationKeywords {
         loginfieldsPage.enterDOIMobileNumber(string);
         clickOnButtonUsingTextUsingForLoop("Get OTP");
     }
+
     @Then("Customer should be able to view Date of Incorporation validation messages {string}")
     public void customer_should_be_able_to_view_date_of_incorporation_validation_messages(String string) {
         loginfieldsPage.verifyTextContent(string);
@@ -355,6 +363,7 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     public void enters_wrong_input_in_nri_mobile_number_field(String string) {
         loginfieldsPage.enterNRIMobileNumber(string);
     }
+
     @Then("Customer should be able to view  NRI validation messages {string}")
     public void customer_should_be_able_to_view_nri_validation_messages(String string) {
         loginfieldsPage.verifyTextContent(string);
@@ -392,6 +401,7 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     public void click_on_change() {
         clickOn(loginfieldsPage.btn_Change);
     }
+
     @Then("Customer should be redirected to login popup window")
     public void customer_should_be_redirected_to_login_popup_window() {
         verifyElementIsDisplayedUsingLocator(loginfieldsPage.loginPopup);
@@ -406,26 +416,27 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     @Then("Resend CTA should be disabled for {int} sec")
     public void resend_cta_should_be_disabled_for_sec(Integer int1) {
         waitTime(5);
-      loginfieldsPage.verifyResendTimer();
+        loginfieldsPage.verifyResendTimer();
     }
 
 
     @When("Click on Resend OTP before {int} sec")
     public void click_on_resend_otp_before_sec(Integer int1) {
         waitTime(65);
-       clickOn(loginfieldsPage.btn_Resend);
+        clickOn(loginfieldsPage.btn_Resend);
     }
+
     @When("Enter OTP after {int} sec")
     public void enter_otp_after_sec(Integer int1) {
 
         waitTime(120);
         waitForPageToLoad();
-        enterOtpInTextBox("o","123456");
+        enterOtpInTextBox("o", "123456");
     }
 
     @Then("Validation message should be displayed {string}")
     public void validation_message_should_be_displayed(String string) {
-       loginfieldsPage.verifyTextContent(string);
+        loginfieldsPage.verifyTextContent(string);
     }
 
     @Then("Customer should be landed to home page with selected customer type")
@@ -436,21 +447,21 @@ public class LoginFieldsSteps extends ApplicationKeywords {
 
     @Then("Validation message should be displayed the {string}")
     public void validation_message_should_be_displayed_the(String string) {
-       verifyFieldsDisplayedUsingText(string);
+        verifyFieldsDisplayedUsingText(string);
     }
 
     @Then("Customer should be landed to home page with selected customer type {string}")
     public void customer_should_be_landed_to_home_page_with_selected_customer_type(String string) {
 
-        selectDropDownUsingText(loginfieldsPage.dropdown_Multi,string);
+        selectDropDownUsingText(loginfieldsPage.dropdown_Multi, string);
         clickOn(loginfieldsPage.btn_Proceed);
-        boolean flag =false;
-        loginfieldsPage.waitUntilElementVisible(HomePage.txt_Home,60);
+        boolean flag = false;
+        loginfieldsPage.waitUntilElementVisible(HomePage.txt_Home, 60);
         flag = verifyFieldsDisplayedUsingLocator(HomePage.txt_Home);
         verifyLogout();
         if (!flag) {
             ApplicationKeywords.quitBrowser = true;
-            GOR.login=false;
+            GOR.login = false;
             SoftAssertions sa = new SoftAssertions();
             testStepFailed("Login is Unsuccessfull");
             sa.fail("Login is Unsuccessful");
@@ -461,9 +472,8 @@ public class LoginFieldsSteps extends ApplicationKeywords {
 
     @Then("Customer should be landed to home page with the  selected customer type {string}")
     public void customer_should_be_landed_to_home_page_with_the_selected_customer_type(String string) {
-       loginfieldsPage.verifyCustId(loginfieldsPage.custIdProfile,string);
+        loginfieldsPage.verifyCustId(loginfieldsPage.custIdProfile, string);
     }
-
 
 
     @Then("Popup with dropdown having all cust ids linked to logged in mobile number should be displayed")
@@ -526,36 +536,35 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     }
 
 
-
-
     @When("User clicks on dropdown")
     public void user_clicks_on_dropdown() {
-     clickOn(loginfieldsPage.dropdown_Multi);
+        clickOn(loginfieldsPage.dropdown_Multi);
     }
 
     @Then("Dropdown should be clickable")
     public void dropdown_should_be_clickable() {
-       // selectDropDownUsingText(loginfieldsPage.dropdown_Multi,string);
+        // selectDropDownUsingText(loginfieldsPage.dropdown_Multi,string);
     }
 
     @Then("Dropdown should be clickable {string}")
     public void dropdown_should_be_clickable(String string) {
-        selectDropDownUsingText(loginfieldsPage.dropdown_Multi,string);
+        selectDropDownUsingText(loginfieldsPage.dropdown_Multi, string);
     }
 
     @When("Select Customer id from dropdown {string}")
     public void select_customer_id_from_dropdown(String string) {
-        selectDropDownUsingText(loginfieldsPage.dropdown_Multi,string);
+        selectDropDownUsingText(loginfieldsPage.dropdown_Multi, string);
         clickOn(loginfieldsPage.btn_Proceed);
     }
 
     @When("Click on cross\\(x) CTA of popup")
     public void click_on_cross_x_cta_of_popup() {
-       clickOn(loginfieldsPage.closeDrop);
+        clickOn(loginfieldsPage.closeDrop);
     }
+
     @Then("Customer should be redirected to login homepage")
     public void customer_should_be_redirected_to_login_homepage() {
-    verifyRedirectionURLIfContains("https://uat-oneweb.bajajfinserv.in/");
+        verifyRedirectionURLIfContains("https://uat-oneweb.bajajfinserv.in/");
     }
 
 
@@ -568,7 +577,7 @@ public class LoginFieldsSteps extends ApplicationKeywords {
 
     @When("Enters random  Mobile Number and Date of Incorporation {string} {string}")
     public void enters_random_mobile_number_and_date_of_incorporation(String string, String string2) {
-        String randMob=  loginfieldsPage.generateMobileNumber();
+        String randMob = loginfieldsPage.generateMobileNumber();
         loginfieldsPage.enterDOIMobileNumber(randMob);
         loginfieldsPage.enterDOIDOB(string2);
 
@@ -577,20 +586,20 @@ public class LoginFieldsSteps extends ApplicationKeywords {
 
     @When("Enters random NRI  Mobile Number and Date of Birth {string} {string}")
     public void enters_random_nri_mobile_number_and_date_of_birth(String string, String string2) {
-        String randMob=  loginfieldsPage.generateMobileNumber();
+        String randMob = loginfieldsPage.generateMobileNumber();
         loginfieldsPage.enterNRIMobileNumber(randMob);
         loginfieldsPage.enterNRIDOB(string2);
     }
 
 
-
     @When("Enters random generated Mobile Number and Date of Birth {string} {string}")
     public void enters_random_generated_mobile_number_and_date_of_birth(String string, String string2) {
 
-      String randMob=  loginfieldsPage.generateMobileNumber();
+        String randMob = loginfieldsPage.generateMobileNumber();
         loginfieldsPage.enterMobileNumber(randMob);
         loginfieldsPage.enterDOB(string2);
     }
+
     @Then("Customer should not able to login for {int} mins and below message should be displayed  �Account temporary locked for {int} minutes. Due to multiple incorrect login attempt, your account has been locked. Please try after some time� with a �Got It� & �Need Help� CTA")
     public void customer_should_not_able_to_login_for_mins_and_below_message_should_be_displayed_account_temporary_locked_for_minutes_due_to_multiple_incorrect_login_attempt_your_account_has_been_locked_please_try_after_some_time_with_a_got_it_need_help_cta(Integer int1, Integer int2) {
         verifyFieldsDisplayedUsingText("Account temporary locked for 3 minutes");
@@ -617,10 +626,9 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     }
 
 
-
     @Then("Customer should be able to view below {int} icon under Apply for Loan card  {string}")
     public void customer_should_be_able_to_view_below_icon_under_apply_for_loan_card(Integer int1, String string) {
-        loginfieldsPage.verifyMastHeadLogos("Apply for loans",string);
+        loginfieldsPage.verifyMastHeadLogos("Apply for loans", string);
     }
 
     @When("User clicks on Offers Co-branded credit card")
@@ -633,6 +641,7 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     public void user_clicks_on_of_masthead_card(String string) {
         loginfieldsPage.clickOnHeadingLabelName(string);
     }
+
     @Then("it should be Redirected to {string}")
     public void it_should_be_redirected_to(String string) {
         verifyRedirectionURLIfContains(string);
@@ -640,24 +649,24 @@ public class LoginFieldsSteps extends ApplicationKeywords {
 
     @Then("Customer should be able to view below {int} icon under Shop on EMIs {string}")
     public void customer_should_be_able_to_view_below_icon_under_shop_on_em_is(Integer int1, String string) {
-        loginfieldsPage.verifyMastHeadLogos("Shop on EMIs",string);
+        loginfieldsPage.verifyMastHeadLogos("Shop on EMIs", string);
     }
 
     @Then("it should be Redirected to newTab {string}")
     public void it_should_be_redirected_to_new_tab(String string) {
-       transferControlToWindow(2,false);
+        transferControlToWindow(2, false);
         verifyRedirectionURLIfContains(string);
-        transferControlToWindow(1,true);
+        transferControlToWindow(1, true);
     }
-
 
 
     @When("Customer click on EMI Card Icon")
     public void customer_click_on_emi_card_icon() {
         clickOn(EMICardPage.homeEMICard_Icon);
         waitTime(2);
-       // verifyFieldsDisplayedUsingText("Your card details");
+        // verifyFieldsDisplayedUsingText("Your card details");
     }
+
     @Then("Customer should be redirected to My Relation page after successfully logged in and card should be highlighted from cockpit")
     public void customer_should_be_redirected_to_my_relation_page_after_successfully_logged_in_and_card_should_be_highlighted_from_cockpit() {
         //loginfieldsPage.verifyEmiCard();
@@ -678,7 +687,7 @@ public class LoginFieldsSteps extends ApplicationKeywords {
 
     @Then("Customer should be able to view below {int} icon under Co-branded credit card {string}")
     public void customer_should_be_able_to_view_below_icon_under_co_branded_credit_card(Integer int1, String string) {
-        loginfieldsPage.verifyMastHeadLogos("Co-branded credit card",string);
+        loginfieldsPage.verifyMastHeadLogos("Co-branded credit card", string);
     }
 
     @Then("Card should  be in auto carousal with timer of {int} secs")
@@ -712,29 +721,28 @@ public class LoginFieldsSteps extends ApplicationKeywords {
 
     @Then("Shop on Bajaj Mall offer label & section should visible to the customer")
     public void shop_on_bajaj_mall_offer_label_section_should_visible_to_the_customer() {
-       verifyFieldsDisplayedUsingLocator(loginfieldsPage.sbm_locator);
+        verifyFieldsDisplayedUsingLocator(loginfieldsPage.sbm_locator);
     }
 
 
     @Then("Customer should be able to view below content on product tiles {string} and {string}")
     public void customer_should_be_able_to_view_below_content_on_product_tiles_and(String string, String string2) {
         loginfieldsPage.clickSkipButton();
-    loginfieldsPage.verifyShopOnBajajMall("Shop on EMIs | Cashback up to Rs. 5,000 on ACs",string2,string);
+        loginfieldsPage.verifyShopOnBajajMall("Shop on EMIs | Cashback up to Rs. 5,000 on ACs", string2, string);
     }
-
-
 
 
     @When("Clicks on any product tile {string}")
     public void clicks_on_any_product_tile(String string) {
-       loginfieldsPage.clickOnProduct("Shop on EMIs | Cashback up to Rs. 5,000 on ACs",string,"");
+        loginfieldsPage.clickOnProduct("Shop on EMIs | Cashback up to Rs. 5,000 on ACs", string, "");
     }
+
     @Then("verify Shop on bajaj mall offers are redirected to {string}")
     public void verify_shop_on_bajaj_mall_offers_are_redirected_to(String string) {
-         waitTime(2);
-        transferControlToWindow(2,false);
+        waitTime(2);
+        transferControlToWindow(2, false);
         verifyRedirectionURLIfContains(string);
-        transferControlToWindow(1,true);
+        transferControlToWindow(1, true);
     }
 
 
@@ -768,6 +776,7 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     public void click_on_apply_online_open_fd_cta_of_best_selling_product(String string) {
         loginfieldsPage.clickOnBestSellingProduct(string);
     }
+
     @Then("Customer should be able to view Login  pop-up")
     public void customer_should_be_able_to_view_login_pop_up() {
         loginfieldsPage.verifySignIn(loginfieldsPage.SignIn_Button);
@@ -782,7 +791,7 @@ public class LoginFieldsSteps extends ApplicationKeywords {
 
     @Then("Customer should be redirected to respective page {string}")
     public void customer_should_be_redirected_to_respective_page(String string) {
-      verifyRedirectionURLIfContains(string);
+        verifyRedirectionURLIfContains(string);
     }
 
     @Then("Customer should be redirected to respective {string}")
@@ -792,30 +801,29 @@ public class LoginFieldsSteps extends ApplicationKeywords {
 
     @Then("Bajaj Mall  should be visible on the RHS")
     public void bajaj_mall_should_be_visible_on_the_rhs() {
-    verifyFieldsDisplayedUsingLocator(loginfieldsPage.RHS_locator);
+        verifyFieldsDisplayedUsingLocator(loginfieldsPage.RHS_locator);
     }
 
     @Then("Customer should be redirected to take a tour Page.")
     public void customer_should_be_redirected_to_take_a_tour_page() {
         waitTime(4);
-       verifyFieldsDisplayedUsingText("Check out the menu");
+        verifyFieldsDisplayedUsingText("Check out the menu");
     }
 
 
     @Given("Click on RHS tile {string}")
     public void click_on_rhs_tile(String string) {
-     loginfieldsPage.clickOnRHSOffer(string);
+        loginfieldsPage.clickOnRHSOffer(string);
     }
 
 
     @Then("Customer should be redirected to respective brand page {string}")
     public void customer_should_be_redirected_to_respective_brand_page(String string) {
         waitForPageToLoad();
-        transferControlToWindow(2,false);
+        transferControlToWindow(2, false);
         verifyRedirectionURLIfContains(string);
-        transferControlToWindow(1,true);
+        transferControlToWindow(1, true);
     }
-
 
 
     @Then("Locate Us label & section should be visible to the customer")
@@ -832,7 +840,7 @@ public class LoginFieldsSteps extends ApplicationKeywords {
 
     @Given("Click on Locate Us")
     public void click_on_locate_us() {
-    clickOn(loginfieldsPage.locate_locator);
+        clickOn(loginfieldsPage.locate_locator);
     }
 
     @Given("Click on Har time on EMI in time")
@@ -842,12 +850,12 @@ public class LoginFieldsSteps extends ApplicationKeywords {
 
     @Then("Insurance  label & section should be visible to the customer")
     public void insurance_label_section_should_be_visible_to_the_customer() {
-       verifyElementIsDisplayedUsingLocator(loginfieldsPage.Ins_locator);
+        verifyElementIsDisplayedUsingLocator(loginfieldsPage.Ins_locator);
     }
 
     @Given("Click on Insurance tile {string}")
     public void click_on_insurance_tile(String string) {
-       loginfieldsPage.clickOnInsuranceLogoButton(string);
+        loginfieldsPage.clickOnInsuranceLogoButton(string);
     }
 
 
@@ -861,6 +869,7 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     public void click_on_investment_tile(String string) {
         loginfieldsPage.clickOnInsuranceLogoButton(string);
     }
+
     @Then("Customer should be redirected to respective URL or page of Investment offer with authentication")
     public void customer_should_be_redirected_to_respective_url_or_page_of_investment_offer_with_authentication() {
 
@@ -868,13 +877,13 @@ public class LoginFieldsSteps extends ApplicationKeywords {
 
     @Then("Lifesyle Store offer label & section should be visible  to the customer")
     public void lifesyle_store_offer_label_section_should_be_visible_to_the_customer() {
-       verifyFieldsDisplayedUsingText("Lifestyle Store | Cashback up to Rs. 4,000");
+        verifyFieldsDisplayedUsingText("Lifestyle Store | Cashback up to Rs. 4,000");
     }
 
 
     @Given("Click on Product tile {string}")
     public void click_on_product_tile(String string) {
-       loginfieldsPage.clickOnLifeStyleProduct(string);
+        loginfieldsPage.clickOnLifeStyleProduct(string);
     }
 
     @Then("Two-wheeler world label & section should be visible  to the customer")
@@ -885,7 +894,7 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     @Given("Click on TwoWheeler tile {string}")
     public void click_on_two_wheeler_tile(String string) {
         waitForPageToLoad();
-     loginfieldsPage.clickOnTwoWheelerProduct(string);
+        loginfieldsPage.clickOnTwoWheelerProduct(string);
     }
 
     @Given("Click on Products for You tile {string}")
@@ -896,24 +905,24 @@ public class LoginFieldsSteps extends ApplicationKeywords {
 
     @Then("verify All Submenu is Displayed in Login Page Hamburger {string}")
     public void verify_all_submenu_is_displayed_in_login_page_hamburger(String string) {
-       loginfieldsPage.verifyHamburgerMenus("Hamburger",string);
+        loginfieldsPage.verifyHamburgerMenus("Hamburger", string);
     }
 
 
     @Then("Verify Customer is able to view {string} for Help and Support menu")
     public void verify_customer_is_able_to_view_for_help_and_support_menu(String string) {
-        loginfieldsPage.verifyHamburgerSubMenus("Help and Support",string);
+        loginfieldsPage.verifyHamburgerSubMenus("Help and Support", string);
     }
 
     @Then("Verify Customer is able to view {string} for {string}")
     public void verify_customer_is_able_to_view_for(String string, String string2) {
-        loginfieldsPage.verifyHamburgerSubMenus(string2,string);
+        loginfieldsPage.verifyHamburgerSubMenus(string2, string);
     }
 
 
     @Given("Clicks on {string} of {string}")
     public void clicks_on_of(String string, String string2) {
-       loginfieldsPage.clickOnHamburgerSubMenus(string2,string);
+        loginfieldsPage.clickOnHamburgerSubMenus(string2, string);
     }
 
     @Given("Click on Online Store tile {string}")
@@ -932,10 +941,11 @@ public class LoginFieldsSteps extends ApplicationKeywords {
         verifyFieldsDisplayedUsingText("Partner Offers");
         verifyFieldsDisplayedUsingText("Get attractive discounts in a few clicks");
     }
+
     @Then("Click on Partners tile {string}")
     public void click_on_partners_tile(String string) {
         waitTime(2);
-       loginfieldsPage.clickOnPartnerImageProduct(string);
+        loginfieldsPage.clickOnPartnerImageProduct(string);
     }
 
     @Then("Customer should be able to view all options are Present")
@@ -951,7 +961,7 @@ public class LoginFieldsSteps extends ApplicationKeywords {
         loginfieldsPage.verifyFieldsDisplayedUsingLocator(loginfieldsPage.Ins_locator);
         loginfieldsPage.verifyFieldsDisplayedUsingLocator(loginfieldsPage.Inv_locator);
         loginfieldsPage.verifyFieldsDisplayedUsingLocator(loginfieldsPage.locate_locator);
-       // loginfieldsPage.verifyFieldsDisplayedUsingLocator(loginfieldsPage.Har_locator);
+        // loginfieldsPage.verifyFieldsDisplayedUsingLocator(loginfieldsPage.Har_locator);
         loginfieldsPage.verifyFieldsDisplayedUsingLocator(loginfieldsPage.sbmall_locator);
         loginfieldsPage.verifyFieldsDisplayedUsingLocator(loginfieldsPage.obp_locator);
         loginfieldsPage.verifyFieldsDisplayedUsingLocator(loginfieldsPage.bs_locator);
@@ -965,83 +975,85 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     }
 
 
-
     @When("Click Resend OTP after {int} sec")
     public void click_resend_otp_after_sec(Integer int1) {
-       waitTime(60);
-       clickOn(loginfieldsPage.btn_Resend);
+        waitTime(60);
+        clickOn(loginfieldsPage.btn_Resend);
         loginfieldsPage.waitForThreeDotsDisapper(20);
-       waitForPageToLoad();
+        waitForPageToLoad();
     }
-
 
 
     @Then("Bills & recharge label & section should be visible  to the customer")
     public void bills_recharge_label_section_should_be_visible_to_the_customer() {
-      verifyFieldsDisplayedUsingLocator(loginfieldsPage.bbrsAllBBRS);
+        verifyFieldsDisplayedUsingLocator(loginfieldsPage.bbrsAllBBRS);
     }
-
 
 
     @When("Clicks on any options under Bills & recharge {string}")
     public void clicks_on_any_options_under_bills_recharge(String string) {
-       loginfieldsPage.clickOnBBRSOffer(string);
+        loginfieldsPage.clickOnBBRSOffer(string);
     }
+
     @Then("verify Bills & Recharge options are redirected to {string}")
     public void verify_bills_recharge_options_are_redirected_to(String string) {
 
         waitForPageToLoad();
-        transferControlToWindow(2,false);
+        transferControlToWindow(2, false);
         waitForPageToLoad();
-       verifyRedirectionURLIfContains(string);
-       transferControlToWindow(1,true);
+        verifyRedirectionURLIfContains(string);
+        transferControlToWindow(1, true);
     }
 
     @Then("Customer should be redirected to respective URL or page of Fixed deposit offer with authentication and SSO {string}")
     public void customer_should_be_redirected_to_respective_url_or_page_of_fixed_deposit_offer_with_authentication_and_sso(String string) {
         waitForPageToLoad();
-        transferControlToWindow(2,false);
+        transferControlToWindow(2, false);
         waitForPageToLoad();
         verifyRedirectionURLIfContains(string);
-        transferControlToWindow(1,true);
+        transferControlToWindow(1, true);
     }
+
     @When("Clicks on any options under Bills & recharge View All {string}")
     public void clicks_on_any_options_under_bills_recharge_view_all(String string) {
         clickOn(loginfieldsPage.viewAllBBRS);
     }
 
 
-
     @Then("Customer should be able to view below icon under BBPS {string}")
     public void customer_should_be_able_to_view_below_icon_under_bbps(String string) {
         loginfieldsPage.verifyBBRSLogos("Bills & Recharges", string);
-       verifyFieldsDisplayedUsingLocator(loginfieldsPage.viewAllBBRS);
+        verifyFieldsDisplayedUsingLocator(loginfieldsPage.viewAllBBRS);
     }
 
 //New CR
 
     @When("customer under shop on Bajaj mall Section")
     public void customer_under_shop_on_bajaj_mall_section() {
-       verifyFieldsDisplayedUsingLocator(loginfieldsPage.sbmall_locator);
+        verifyFieldsDisplayedUsingLocator(loginfieldsPage.sbmall_locator);
     }
+
     @When("verify smartphones Option nudge color Nudgecolor")
     public void verify_smartphones_option_nudge_color_nudgecolor() {
         loginfieldsPage.verifyLocatorColorUsingCssValue(loginfieldsPage.ShopBajalMall_Nudge, "#00B500", "green", "background-color");
     }
+
     @Then("customer should be able to view green nudge color with offer text Under Shop on Bajaj mall section")
     public void customer_should_be_able_to_view_green_nudge_color_with_offer_text_under_shop_on_bajaj_mall_section() {
-     verifyFieldsDisplayedUsingLocator(loginfieldsPage.ShopBajalMall_Nudge);
+        verifyFieldsDisplayedUsingLocator(loginfieldsPage.ShopBajalMall_Nudge);
     }
 
     @When("customer under Investment Section")
     public void customer_under_investment_section() {
         verifyFieldsDisplayedUsingLocator(loginfieldsPage.Inv_locator);
     }
+
     @When("verify fixed deposit option Fixed deposit")
     public void verify_fixed_deposit_option_fixed_deposit() {
         loginfieldsPage.verifyLocatorColorUsingCssValue(loginfieldsPage.InvFD_Nudge, "#00B500", "green", "background-color");
 
     }
+
     @Then("customer should be able to view green nudge with FD rate nudegetext Up to {double}%")
     public void customer_should_be_able_to_view_green_nudge_with_fd_rate_nudegetext_up_to(Double double1) {
         verifyFieldsDisplayedUsingLocator(loginfieldsPage.InvFD_Nudge);
@@ -1053,27 +1065,30 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     public void customer_under_lifestyle_store_section() {
         verifyFieldsDisplayedUsingLocator(loginfieldsPage.lfs_locator);
     }
+
     @When("verify Mattress Option nudge color")
     public void verify_mattress_option_nudge_color() {
         loginfieldsPage.verifyLocatorColorUsingCssValue(loginfieldsPage.life_Nudge, "#00B500", "green", "background-color");
 
     }
+
     @Then("customer should be able to view green nudge color with offer text Under Lifestyle Store section")
     public void customer_should_be_able_to_view_green_nudge_color_with_offer_text_under_lifestyle_store_section() {
-       verifyFieldsDisplayedUsingLocator(loginfieldsPage.life_Nudge);
+        verifyFieldsDisplayedUsingLocator(loginfieldsPage.life_Nudge);
     }
-
 
 
     @When("customer under Two wheeler world Section")
     public void customer_under_two_wheeler_world_section() {
         verifyFieldsDisplayedUsingLocator(loginfieldsPage.twl_locator);
     }
+
     @When("verify Scooters category Option nudge color")
     public void verify_scooters_category_option_nudge_color() {
         loginfieldsPage.verifyLocatorColorUsingCssValue(loginfieldsPage.twoWheeler_Nudge, "#00B500", "green", "background-color");
 
     }
+
     @Then("customer should be able to view green nudge color with offer text for Scooters category Under Two wheeler world section")
     public void customer_should_be_able_to_view_green_nudge_color_with_offer_text_for_scooters_category_under_two_wheeler_world_section() {
         verifyFieldsDisplayedUsingLocator(loginfieldsPage.twoWheeler_Nudge);
@@ -1083,49 +1098,51 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     public void customer_under_products_for_you_section() {
         verifyFieldsDisplayedUsingLocator(loginfieldsPage.prod_locator);
     }
+
     @When("verify fixed deposit option Under products for You nudge color")
     public void verify_fixed_deposit_option_under_products_for_you_nudge_color() {
         loginfieldsPage.verifyLocatorColorUsingCssValue(loginfieldsPage.prod_Nudge, "#00B500", "green", "background-color");
     }
+
     @Then("customer should be able to view green nudge with FD rate nudge text")
     public void customer_should_be_able_to_view_green_nudge_with_fd_rate_nudge_text() {
-      verifyFieldsDisplayedUsingLocator(loginfieldsPage.prod_Nudge);
+        verifyFieldsDisplayedUsingLocator(loginfieldsPage.prod_Nudge);
     }
 
     @When("customer under RHS Supersore Section")
     public void customer_under_rhs_supersore_section() {
         verifyFieldsDisplayedUsingLocator(loginfieldsPage.RHS_locator);
     }
+
     @When("verify Bajaj mall Option purple nudge color")
     public void verify_bajaj_mall_option_purple_nudge_color() {
         loginfieldsPage.verifyLocatorColorUsingCssValue(loginfieldsPage.SuperStore_Nudge, "#8961E1", "Purple", "background-color");
 
     }
+
     @Then("customer should be able to view perple nudge nudge with offer text Under RHS super store section")
     public void customer_should_be_able_to_view_perple_nudge_nudge_with_offer_text_under_rhs_super_store_section() {
- verifyFieldsDisplayedUsingLocator(loginfieldsPage.SuperStore_Nudge);
+        verifyFieldsDisplayedUsingLocator(loginfieldsPage.SuperStore_Nudge);
     }
-
 
 
     @When("User clicks on My Account")
     public void user_clicks_on_my_account() {
 
-        if(isElementDisplayed(loginfieldsPage.SignIn_Button)){
+        if (isElementDisplayed(loginfieldsPage.SignIn_Button)) {
             clickOnIfDisplayed(LoginPage.icon_MyAccount);
             waitTime(3);
+        } else {
         }
-        else{
-        }
-       // waitTime(10);
+        // waitTime(10);
         clickOnIfDisplayed(LoginPage.icon_MyAccount);
-       // waitForPageToLoad();
-    }
-    @Then("Customer should be able to view sign in popin under my account")
-    public void customer_should_be_able_to_view_sign_in_popin_under_my_account() {
-      verifyFieldsDisplayedUsingLocator(LoginPage.login_Button);
+        // waitForPageToLoad();
     }
 
+    @Then("Customer should be able to view sign in popin under my account")
+    public void customer_should_be_able_to_view_sign_in_popin_under_my_account() {
+        verifyFieldsDisplayedUsingLocator(LoginPage.login_Button);
+    }
 
 
     @When("Click on Sign in popin")
@@ -1133,21 +1150,22 @@ public class LoginFieldsSteps extends ApplicationKeywords {
         clickOnIfDisplayed(loginfieldsPage.SignIn_Button);
         waitForPageToLoad();
     }
+
     @Then("Login popup should be visible to customer")
     public void login_popup_should_be_visible_to_customer() {
-     verifyFieldsDisplayedUsingLocator(loginfieldsPage.loginPopup);
+        verifyFieldsDisplayedUsingLocator(loginfieldsPage.loginPopup);
     }
 
 
     @Then("Cross \\(x) CTA of login popup should be visible and clickable")
     public void cross_x_cta_of_login_popup_should_be_visible_and_clickable() {
-     verifyFieldsDisplayedUsingLocator(loginfieldsPage.clossmark_Login);
+        verifyFieldsDisplayedUsingLocator(loginfieldsPage.clossmark_Login);
     }
 
     @When("Click on Cross mark\\(x) CTA of popup")
     public void click_on_cross_mark_x_cta_of_popup() {
-      clickOn(loginfieldsPage.clossmark_Login,"");
-      waitForPageToLoad();
+        clickOn(loginfieldsPage.clossmark_Login, "");
+        waitForPageToLoad();
     }
 
     @Then("Customer should be landed on my account login landing page on click of cross \\(x) CTA of login popup")
@@ -1162,16 +1180,15 @@ public class LoginFieldsSteps extends ApplicationKeywords {
             waitTime(1);
             findWebElement(loginfieldsPage.tab_Dob).sendKeys(Keys.TAB);
             clickOnButtonUsingLocatorUsingForLoopWithoutFail(LoginPage.skip);
-           // findWebElement(loginfieldsPage.button_getOTP).sendKeys(Keys.TAB);
+            // findWebElement(loginfieldsPage.button_getOTP).sendKeys(Keys.TAB);
             Robot r = new Robot();
             r.keyPress(KeyEvent.VK_TAB);
             r.keyRelease(KeyEvent.VK_TAB);
             r.keyPress(KeyEvent.VK_ENTER);
             r.keyRelease(KeyEvent.VK_ENTER);
-         waitForPageToLoad();
+            waitForPageToLoad();
             waitTime(5);
-        }
-        catch(Exception e){
+        } catch (Exception e) {
             testStepFailed("Unable to click Enter Key Board Button");
         }
     }
@@ -1180,8 +1197,8 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     @Then("Verify Resend otp is disabled state and grayed out.")
     public void verify_resend_otp_is_disabled_state_and_grayed_out() {
         verifyFieldsDisplayedUsingLocator(loginfieldsPage.resend_Login);
-      //  verifyLocatorColorUsingCssValue(loginfieldsPage.resend_LoginColor,"#ff6700","orange","background-color");
-        loginfieldsPage.verifyLocatorColorUsingCssValue(loginfieldsPage.resend_LoginColor,"#FF6700","orange","color");
+        //  verifyLocatorColorUsingCssValue(loginfieldsPage.resend_LoginColor,"#ff6700","orange","background-color");
+        loginfieldsPage.verifyLocatorColorUsingCssValue(loginfieldsPage.resend_LoginColor, "#FF6700", "orange", "color");
     }
 
 
@@ -1202,15 +1219,16 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     public void user_click_on_payment_option() {
 
     }
+
     @When("Click on Pay Your EMI")
     public void click_on_pay_your_emi() {
-   clickOn(loginfieldsPage.termloan_PayNow);
+        clickOn(loginfieldsPage.termloan_PayNow);
     }
 
 
     @Then("Verify Hamburger Menu is displayed")
     public void verify_hamburger_menu_is_displayed() {
-         verifyFieldsDisplayedUsingLocator(loginfieldsPage.ham_Menu);
+        verifyFieldsDisplayedUsingLocator(loginfieldsPage.ham_Menu);
     }
 
     @Then("Customer should be redirected to document center page")
@@ -1224,6 +1242,7 @@ public class LoginFieldsSteps extends ApplicationKeywords {
         clickOn(loginfieldsPage.home_viewAll);
         waitForPageToLoad();
     }
+
     @When("Click on RHS Menu")
     public void click_on_rhs_menu() {
         clickOn(loginfieldsPage.rhs_doc);
@@ -1234,9 +1253,10 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     public void click_on_insurance_tab() {
         clickOn(loginfieldsPage.ins_Tab);
     }
+
     @Then("All active insurances should be displayed")
     public void all_active_insurances_should_be_displayed() {
-       verifyFieldsDisplayedUsingText("Select your insurance policy to view its documents");
+        verifyFieldsDisplayedUsingText("Select your insurance policy to view its documents");
     }
 
 
@@ -1257,35 +1277,38 @@ public class LoginFieldsSteps extends ApplicationKeywords {
         loginfieldsPage.clickOnPolicyLabelinViewAll(string);
 
     }
+
     @When("Click on Claim Request CTA")
     public void click_on_claim_request_cta() {
-    clickOn(loginfieldsPage.rhs_cliam);
+        clickOn(loginfieldsPage.rhs_cliam);
     }
+
     @Then("customer should be redirected to CPP Portal Page {string} when customer click on Raise A Request CTA")
     public void customer_should_be_redirected_to_cpp_portal_page_when_customer_click_on_raise_a_request_cta(String string) {
-      //  clickOn(loginfieldsPage.raise_btn);
-        transferControlToWindow(2,false);
+        //  clickOn(loginfieldsPage.raise_btn);
+        transferControlToWindow(2, false);
         verifyRedirectionURLIfContains(string);
-        transferControlToWindow(1,true);
+        transferControlToWindow(1, true);
 
     }
-
 
 
     @When("Click on COI document")
     public void click_on_coi_document() {
-       clickOn(loginfieldsPage.coi_btn);
+        clickOn(loginfieldsPage.coi_btn);
     }
+
     @Then("Pop up with below text and GOT IT CTA should be displayed {string}")
     public void pop_up_with_below_text_and_got_it_cta_should_be_displayed(String string) {
-     verifyFieldsDisplayedUsingText(string);
-     verifyFieldsDisplayedUsingText("Got It!");
+        verifyFieldsDisplayedUsingText(string);
+        verifyFieldsDisplayedUsingText("Got It!");
     }
 
     @When("Click on GOT IT CTA")
     public void click_on_got_it_cta() {
         clickOn(loginfieldsPage.got_btn);
     }
+
     @Then("Customer should be on document list page on click on GOT IT CTA")
     public void customer_should_be_on_document_list_page_on_click_on_got_it_cta() {
         verifyRedirectionURLIfContains("https://uat-oneweb.bajajfinserv.in/MyAccountDocumentCenter/DocumentCenter/docCenter_Insurance");
@@ -1296,6 +1319,7 @@ public class LoginFieldsSteps extends ApplicationKeywords {
         clickOn(loginfieldsPage.viewall_Cards);
         waitForPageToLoad();
     }
+
     @When("click on Tile having product code {string}")
     public void click_on_tile_having_product_code(String string) {
         loginfieldsPage.clickOnEmiCardLabelInViewAll(string);
@@ -1305,9 +1329,10 @@ public class LoginFieldsSteps extends ApplicationKeywords {
 
     @When("Click on Insurance Tab in View All")
     public void click_on_insurance_tab_in_view_all() {
-        clickOn(loginfieldsPage.viewall_Cards);
+        clickOn(loginfieldsPage.viewall_Insurance);
         waitForPageToLoad();
     }
+
     @When("Click on View Statement")
     public void click_on_view_statement() {
         clickOn(loginfieldsPage.viewdoc_btn);
@@ -1329,7 +1354,7 @@ public class LoginFieldsSteps extends ApplicationKeywords {
 
     @Given("User is on Login popup")
     public void user_is_on_login_popup() {
-        redirectToUrl("https://uat-oneweb.bajajfinserv.in/MyAccountLogin","");
+        redirectToUrl("https://uat-oneweb.bajajfinserv.in/MyAccountLogin", "");
         waitForPageToLoad();
         waitTime(5);
         loginfieldsPage.clickfirstSkipButton();
@@ -1361,11 +1386,11 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     public void enters_mobile_number_email_id_field_blank(String string) {
         loginfieldsPage.enterDOIMobileNumber(string);
     }
+
     @Then("Customer should be able to view Change number CTA after masked mobile number")
     public void customer_should_be_able_to_view_change_number_cta_after_masked_mobile_number() {
         loginfieldsPage.verifyIndividualOTPContent("8888890933");
     }
-
 
 
     @When("Click on Submit after {int} Sec")
@@ -1376,6 +1401,31 @@ public class LoginFieldsSteps extends ApplicationKeywords {
         waitForThreeDotsDisAppear();
     }
 
+/////////////////////////19062023-Mustaq
 
+    @Then("Customer should not be able to view DOB field on Login popup")
+    public void customerShouldNotBeAbleToViewDOBFieldOnLoginPopup() {
+        loginfieldsPage.verifyFieldLabels("IDMobileEmailxtBox_Individual", "Mobile Number");
+        loginfieldsPage.verifyTextContent("Enter your 10-digit mobile number");
+//        loginfieldsPage.verifyFieldLabelsNotDisplayed("IDEnterDOBTxtBox_Individual", "Date of Birth");
+        verifyElementIsDisplayedUsingLocator(loginfieldsPage.btn_IndividualGetOTP);
 
+    }
+
+    @And("Enters Mobile Number {string}")
+    public void entersMobileNumber(String string) {
+        loginfieldsPage.enterMobileNumber(string);
+
+    }
+
+    @And("Enter {string}")
+    public void enter(String string2) {
+        loginfieldsPage.enterDOB(string2);
+
+    }
+
+    @And("Clicks on {string} Customer tab")
+    public void clicksOnCustomerTab(String tab) {
+        loginfieldsPage.clickOnCustomerTab(tab, "");
+    }
 }

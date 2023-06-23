@@ -57,7 +57,7 @@ Feature: Document Center - Commercial Lending
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter" Url
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Closed"
+#    And Selects a Relation Status in Filter in Doc Page-"Closed"
     And Clicks on Apply Button in Filter in Doc Page
     Then verify for Card-"Loans" and Status-"Closed", the Cards are Displayed-"Loan Account Number"
     And User clicks on a Card "<LAN>"

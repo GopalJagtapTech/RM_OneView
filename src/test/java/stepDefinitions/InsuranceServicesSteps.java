@@ -121,7 +121,7 @@ public class InsuranceServicesSteps extends ApplicationKeywords {
         insurance.policyDetailsSectionSurrenderPolicy();
     }
 
-    @And("verify Customer is able to view {string} under Policy Details section when insurance is being cancelled in the Free Look Period")
+    @And("verify Customer is able to view {string} under Policy Details section when insurance is being cancelled in the “Free Look Period”")
     public void verifyCustomerIsAbleToViewUnderPolicyDetailsSectionWhenInsuranceIsBeingCancelledInTheFreeLookPeriod(String arg0) {
         insurance.freelookPeriodSurrenderPolicy();
     }
@@ -356,4 +356,13 @@ public class InsuranceServicesSteps extends ApplicationKeywords {
         clickOn(InsuranceServicesPage.faq_Insurance);
     }
 
+    @Then("{string} option should be available for customer even after {int} days to raise a request")
+    public void optionShouldBeAvailableForCustomerEvenAfterDaysToRaiseARequest(String btn, int arg1) {
+        verifyButtonIsDisplayedInThePage(btn);
+    }
+
+    @And("verify options{string} not available under {string} on RHS")
+    public void verifyOptionsNotAvailableUnderOnRHS(String options, String title) {
+        verifyRhsOptionIsNotDisplayed(title,options,"");
+    }
 }

@@ -83,7 +83,7 @@ Feature: New Home Page - Brand Store
 
     Examples:
       | Section Name       | Product Name |
-      | Brand Store | Watchout       |
+      | Brand Store | Croma       |
 
   Scenario Outline: Brand Store - <Product Name>
     And Get Data for "<Section Name>" in "Home Page"
@@ -105,7 +105,7 @@ Feature: New Home Page - Brand Store
     And verify "<Product Name>" Redirection for "<Section Name>" with SSO
     Examples:
       | Section Name       | Product Name |
-      | Brand Store | Leader Cycles   |
+      | Brand Store | Panasonic   |
 
   Scenario Outline: Brand Store - <Product Name>
     And Get Data for "<Section Name>" in "Home Page"
@@ -115,5 +115,5 @@ Feature: New Home Page - Brand Store
     And Click on "<Product Name>" Option under "<Section Name>" Section
     And verify "<Product Name>" Redirection for "<Section Name>" with SSO
     Examples:
-      | Section Name       | Product Name |
-      | Brand Store | Powermax   |
+      | Section Name| Product Name |
+      | Brand Store | Havells      |

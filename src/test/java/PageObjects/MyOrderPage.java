@@ -36,7 +36,7 @@ public class MyOrderPage  extends ApplicationKeywords {
     public static final String butDirectionRed = "Direction Steps Map #xpath=//div[@id='map' and @tabindex='0']";
     public static final String mapDirection = " Maps Direction Steps Map #xpath=(//div[@class='leaflet-marker-icon leaflet-div-icon leaflet-zoom-animated leaflet-interactive'])[1]";
 
-public static final String startDirections = " Start Directions Steps #xpath=//a[contains(text(),'Start')]//span[@class='direction-icon']";
+    public static final String startDirections = " Start Directions Steps #xpath=//a[contains(text(),'Start')]//span[@class='direction-icon']";
 
 
     public static final String backButton = "Back Button #xpath=(//span[text()='Back' and @class='location-box__back show-desktop-only'])[2]";
@@ -341,7 +341,7 @@ public static final String startDirections = " Start Directions Steps #xpath=//a
                     scrollToWebElement(buttonElement);
                     if (isElementDisplayed(buttonElement, 5)) {
                         flag = true;
-                            manualScreenshot(buttonLabel+ " is displayed sucesfully with three dots ");
+                        manualScreenshot(buttonLabel+ " is displayed sucesfully with three dots ");
                     }
                 }
             }
@@ -589,26 +589,26 @@ public static final String startDirections = " Start Directions Steps #xpath=//a
                             + i + "]";
                     scrollToWebElement(buttonElement);
                     if (isElementDisplayed(buttonElement, 5)) {
-                         String text=findWebElement(buttonElement).getText();
+                        String text=findWebElement(buttonElement).getText();
                         flag=true;
-                         if(text.equalsIgnoreCase(status)){
-                             String trackElement = buttonLabel + "#xpath=(//div[@class='img-cont']/..//p[contains(text(),'"+buttonLabel+"')])["
-                                     + i + "]";
-                             clickOn(trackElement);
+                        if(text.equalsIgnoreCase(status)){
+                            String trackElement = buttonLabel + "#xpath=(//div[@class='img-cont']/..//p[contains(text(),'"+buttonLabel+"')])["
+                                    + i + "]";
+                            clickOn(trackElement);
 
-                             String delivElement = buttonLabel + "#xpath=(//div[@class='order_tracker'])["
-                                     + i + "]";
-                             String deltext=findWebElement(delivElement).getText();
-                              deltext=deltext.replaceAll("\n",",");
+                            String delivElement = buttonLabel + "#xpath=(//div[@class='order_tracker'])["
+                                    + i + "]";
+                            String deltext=findWebElement(delivElement).getText();
+                            deltext=deltext.replaceAll("\n",",");
 
-                             if(deltext.contains(deliveryMessage)){
-                                 manualScreenshot(deliveryMessage+ "  displayed sucesfully ");
-                             }
-                             else {
-                             testStepFailed(" Delivery Tracking Data not displayed");
-                             }
+                            if(deltext.contains(deliveryMessage)){
+                                manualScreenshot(deliveryMessage+ "  displayed sucesfully ");
+                            }
+                            else {
+                                testStepFailed(" Delivery Tracking Data not displayed");
+                            }
 
-                         }
+                        }
 
                     }
                 }
@@ -624,7 +624,7 @@ public static final String startDirections = " Start Directions Steps #xpath=//a
 
 
 
-public void clickOnRating(int index ,String ratingType){
+    public void clickOnRating(int index ,String ratingType){
         try{
             driver.switchTo().frame("kampyleForm3444");
             ////input[@value='3']//following::span[contains(text(),'3, Neutral')]/parent::label[@data-value='3']
@@ -640,7 +640,7 @@ public void clickOnRating(int index ,String ratingType){
         }catch (Exception e) {
             testStepFailed("Failed in verifying Rating. Exception : " + e.getClass());
         }
-}
+    }
 
 
     public void selectFeedbackCheckboxOption(String feedBackType){
@@ -663,8 +663,8 @@ public void clickOnRating(int index ,String ratingType){
         try{
             driver.switchTo().defaultContent();
         }catch (Exception e) {
-        testStepFailed("Browser not moved to default content. Exception : " + e.getClass());
-    }
+            testStepFailed("Browser not moved to default content. Exception : " + e.getClass());
+        }
     }
 
 

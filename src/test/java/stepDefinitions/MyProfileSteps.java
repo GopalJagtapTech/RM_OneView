@@ -1710,6 +1710,62 @@ public class MyProfileSteps extends ApplicationKeywords {
         verifyFieldsDisplayedUsingText("Upload both the sides of your selected ID proof to make the verification process easy and fast.");
         clickOnIfDisplayed(MyProfilePage.infoIcon_DocUploadPageCloseButton);
     }
+
+    @Then("Validation Pop-up with below list of details should be displayed")
+    public void validationPopUpWithBelowListOfDetailsShouldBeDisplayed() {
+//        verifyFieldDisplayedUsingTagAndText("strong", "Important", "");
+        verifyFieldsUsingCommonXpathAndMultipleTextWithHash("//span[normalize-space(text())='Entered DOB is already updated in our records']/parent::p/preceding-sibling::strong","Important","");
+        verifyFieldDisplayedUsingTagAndText("span", "Entered DOB is already updated in our records", "");
+        verifyButtonIsDisplayedInThePage("OK");
+        verifyElementIsDisplayedOrNot(MyProfilePage.close_DOBAlreadyEntered);
+    }
+
+    @And("User clicks on {string} button in Popup for Same DOB")
+    public void userClicksOnButtonInPopupForSameDOB(String button) {
+        clickOnButtonUsingTextUsingForLoop("OK");
+
+    }
+
+    @Then("pop-up should be closed and customer should  remain on existing screen")
+    public void popUpShouldBeClosedAndCustomerShouldRemainOnExistingScreen() {
+        MyProfile.dOBPopupClose();
+    }
+
+    @Then("On entering valid {string} for input {string} and Clicking {string} button")
+    public void onEnteringValidForInputAndClickingButton(String string, String string2, String string3) {
+        MyProfile.verifyTextBoxWithValidData(string2, string, string3);
+
+    }
+
+    @Then("Popup with Below Contents should be displayed for Existing PAN entry")
+    public void popupWithBelowContentsShouldBeDisplayedForExistingPANEntry() {
+//        verifyFieldDisplayedUsingTagAndText("strong", "Important", "");
+        verifyFieldsUsingCommonXpathAndMultipleTextWithHash("//span[normalize-space(text())='Entered PAN is already updated in our records']/parent::p/preceding-sibling::strong","Important","");
+        verifyFieldDisplayedUsingTagAndText("span", "Entered PAN is already updated in our records", "");
+        verifyButtonIsDisplayedInThePage("OK");
+        verifyElementIsDisplayedOrNot(MyProfilePage.close_PanAlreadyEntered);
+    }
+
+    @And("User clicks on {string} button in Popup for Same PAN")
+    public void userClicksOnButtonInPopupForSamePAN(String btn) {
+        clickOnButtonUsingTextUsingForLoop(btn);
+    }
+
+    @Then("pop-up should be closed and customer should remain on existing screen of PAN page")
+    public void popUpShouldBeClosedAndCustomerShouldRemainOnExistingScreenOfPANPage() {
+        MyProfile.panPopupClose();
+    }
+
+    @And("User clicks on Close\\(X) button in Popup for Same PAN")
+    public void userClicksOnCloseXButtonInPopupForSamePAN() {
+        clickOn(MyProfilePage.close_PanAlreadyEntered);
+    }
+
+    @And("User clicks on Cross button in Popup for Same DOB")
+    public void userClicksOnCrossButtonInPopupForSameDOB() {
+        clickOn(MyProfilePage.close_DOBAlreadyEntered);
+
+    }
 }
 
 //    @Then("On Clicking a Document type & Submitting without attaching a document,error msg should be displayed")

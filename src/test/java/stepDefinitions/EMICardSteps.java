@@ -173,7 +173,7 @@ public class EMICardSteps extends ApplicationKeywords {
 
     @When("Click on Fees and Charges icon under Insta EMI Card")
     public void click_on_fees_and_charges_icon_under_insta_emi_card() {
-         verifyFieldsDisplayedUsingLocator(EMICardPage.feesView);
+        verifyFieldsDisplayedUsingLocator(EMICardPage.feesView);
     }
 
 
@@ -755,10 +755,10 @@ public class EMICardSteps extends ApplicationKeywords {
         waitForPageToLoad();
         emicard.verifyssubHeadingIsDisplayed("Please raise a request to unblock your card.");
         emicard.clickOnOKbutton("Cancel");
-     //   emicard.verifyViewNumberOTPPopup();
+        //   emicard.verifyViewNumberOTPPopup();
         // emicard.verifyssubHeadingIsDisplayed("Error Occured.Please try again later.");
         // emicard.clickOnOKbutton("OK");
-       // manualScreenshot("Popup displayed Sucessfully");
+        // manualScreenshot("Popup displayed Sucessfully");
         waitTime(2);
 
 
@@ -974,13 +974,13 @@ public class EMICardSteps extends ApplicationKeywords {
 
     @Then("verify user enter unblock invalid otp third time and validate otp Exhaust message")
     public void verify_user_enter_unblock_invalid_otp_third_time_and_validate_otp_exhaust_message() {
-    emicard.verifyUnblockInvalidThirdOtpMessage();
+        emicard.verifyUnblockInvalidThirdOtpMessage();
     }
 
     @Then("verify user enter invalid otp first time and validate message")
     public void verify_user_enter_invalid_otp_first_time_and_validate_message() {
         //checking xpath
-       // emicard.verifyUnblockInvalidfirstOtpMessage();
+        // emicard.verifyUnblockInvalidfirstOtpMessage();
         emicard.verifyInvalidfirstOtpMessage();
     }
     @Then("verify user enter invalid otp Second time and validate message")
@@ -1006,9 +1006,9 @@ public class EMICardSteps extends ApplicationKeywords {
 
     @Then("verify customer should not able to view RESET PIN under Quick Action")
     public void verify_customer_should_not_able_to_view_reset_pin_under_quick_action() {
-         clickOn(EMICardPage.healthEmiCard);
-         waitForPageToLoad();
-         waitTime(2);
+        clickOn(EMICardPage.healthEmiCard);
+        waitForPageToLoad();
+        waitTime(2);
         verifyElementIsNotDisplayedUsingLocator(EMICardPage.resetPin_RHS);
     }
 
@@ -1050,7 +1050,7 @@ public class EMICardSteps extends ApplicationKeywords {
 
     @When("verify Customer is able to view Limited Transaction Nudge on Block card")
     public void verify_customer_is_able_to_view_limited_transaction_nudge_on_block_card() {
-         verifyFieldsDisplayedUsingLocator(EMICardPage.limitCard);
+        verifyFieldsDisplayedUsingLocator(EMICardPage.limitCard);
     }
     @When("customer is able to view Usage Limitations pop-up with Got it CTA when customer click on Limited Transaction Allowed CTA")
     public void customer_is_able_to_view_usage_limitations_pop_up_with_got_it_cta_when_customer_click_on_limited_transaction_allowed_cta() {
@@ -1069,13 +1069,13 @@ public class EMICardSteps extends ApplicationKeywords {
     public void verify_customer_is_able_to_view_usage_limitations_tab_under_relationship_details_instead_of_where_to_use_tab() {
         verifyFieldsDisplayedUsingLocator(EMICardPage.usage);
         verifyFieldsUsingCommonXpathAndMultipleTextWithHash("//p[@class='fees_title']","Make purchase transactions up to Rs. 35,000/- for digital products and Rs. 50,000/- for non digital products#Buy your non-digital products on loans/low-cost EMIs at 84% of the total loan amount.#Buy your digital products on loans/low-cost EMIs at 70% of the total loan amount.","");
-         verifyFieldsDisplayedUsingText("Dear Customer, as per our internal policies you can use the cards till next 6 months incase all your future payments are payed on time. adding further , you can use your card only for one consumer durable product at your nearest store once in 30 days.");
+        verifyFieldsDisplayedUsingText("Dear Customer, as per our internal policies you can use the cards till next 6 months incase all your future payments are payed on time. adding further , you can use your card only for one consumer durable product at your nearest store once in 30 days.");
     }
 
 
     @When("verify customer is able to view offer description when customer is having {int} number of health card")
     public void verify_customer_is_able_to_view_offer_description_when_customer_is_having_number_of_health_card(Integer int1) {
-      verifyFieldsDisplayedUsingLocator(EMICardPage.wellThreeBen);
+        verifyFieldsDisplayedUsingLocator(EMICardPage.wellThreeBen);
     }
 
     @When("verify customer is able to view offer description when customer is having the {int} number of health card")
@@ -1085,7 +1085,7 @@ public class EMICardSteps extends ApplicationKeywords {
 
     @Then("Verify Customer clicks on Avail Now CTA button")
     public void verify_customer_clicks_on_avail_now_cta_button() {
-    clickOn(EMICardPage.avail82);
+        clickOn(EMICardPage.avail82);
     }
 
 
@@ -1110,7 +1110,7 @@ public class EMICardSteps extends ApplicationKeywords {
 
     @When("Click on Blocked EMI Card")
     public void click_on_blocked_emi_card() {
-      clickOn(EMICardPage.blockedCard);
+        clickOn(EMICardPage.blockedCard);
         waitForThreeDotsDisAppear();
         waitForPageToLoad();
     }
@@ -1123,25 +1123,25 @@ public class EMICardSteps extends ApplicationKeywords {
     }
     @Then("Enter Valid OTP")
     public void enter_valid_otp() {
-    emicard.verifyvalidOTP();
+        emicard.verifyvalidOTP();
     }
     @Then("Click on Submit Button")
     public void click_on_submit_button() {
         clickOnButtonUsingTextUsingForLoop("Submit");
     }
-    @Then("verify Alter Pop-up with We are currently unable to unblock your card as per inline policies. with GOT IT CTA is displayed")
+    @Then("verify Alter Pop-up with “We are currently unable to unblock your card as per inline policies.” with GOT IT CTA is displayed")
     public void verify_alter_pop_up_with_we_are_currently_unable_to_unblock_your_card_as_per_inline_policies_with_got_it_cta_is_displayed() {
-    verifyFieldsDisplayedUsingText("We are currently unable to unblock your card as per inline policies.");
+        verifyFieldsDisplayedUsingText("We are currently unable to unblock your card as per inline policies.");
     }
     @Then("Click on GOT IT CTA Button")
     public void click_on_got_it_cta_button() {
-       clickOn(EMICardPage.unblockGot);
-       waitForThreeDotsDisAppear();
-       waitForPageToLoad();
+        clickOn(EMICardPage.unblockGot);
+        waitForThreeDotsDisAppear();
+        waitForPageToLoad();
     }
     @Then("Customer should stay on EMI Card services Page")
     public void customer_should_stay_on_emi_card_services_page() {
-      verifyRedirectionURLIfContains("https://uat-oneweb.bajajfinserv.in/MyAccountCards/EmiCard/EmiCards");
+        verifyRedirectionURLIfContains("https://uat-oneweb.bajajfinserv.in/MyAccountCards/EmiCard/EmiCards");
     }
 
 
@@ -1175,7 +1175,7 @@ public class EMICardSteps extends ApplicationKeywords {
     }
     @When("Timer should start from  {int} sec in descending order")
     public void timer_should_start_from_sec_in_descending_order(Integer int1) {
-       emicard.verifyOtpTimer();
+        emicard.verifyOtpTimer();
     }
     @When("Enters invalid OTP")
     public void enters_invalid_otp() {
@@ -1221,8 +1221,8 @@ public class EMICardSteps extends ApplicationKeywords {
     @When("Click on Resend OTP CTA when timer get Expired")
     public void click_on_resend_otp_cta_when_timer_get_expired() {
         waitTime(60);
-       clickOn(EMICardPage.resend_Btn);
-       waitForPageToLoad();
+        clickOn(EMICardPage.resend_Btn);
+        waitForPageToLoad();
     }
     @When("Second time Again Click on Resend OTP CTA when timer get Expired")
     public void second_time_again_click_on_resend_otp_cta_when_timer_get_expired() {
@@ -1241,7 +1241,7 @@ public class EMICardSteps extends ApplicationKeywords {
 
     @When("Click on Blocked card")
     public void click_on_blocked_card() {
-       clickOn(EMICardPage.otpblockedCard);
+        clickOn(EMICardPage.otpblockedCard);
     }
     @When("Click on Unblock Card option under Quick Action")
     public void click_on_unblock_card_option_under_quick_action() {
@@ -1255,6 +1255,28 @@ public class EMICardSteps extends ApplicationKeywords {
     public void unblock_popup_timer_should_start_from_sec_in_descending_order(Integer int1) {
         emicard.verifyUnblockOtpTimer();
     }
+
+
+
+    @When("Click on Block Card")
+    public void click_on_block_card() {
+        clickOn(EMICardPage.blockCard_RHS);
+        waitForPageToLoad();
+        waitTime(3);
+    }
+    @When("Select the Block Reason")
+    public void select_the_block_reason() {
+        selectDropDownUsingText(EMICardPage.dropDown_BlockingReason, "I do not want an Insta EMI Card");
+        scrollToWebElement(EMICardPage.blockCard_Button);
+        clickOn(EMICardPage.blockCard_Button);
+    }
+    @When("Timer should start from  {int} sec in descending order for Blocked Popup")
+    public void timer_should_start_from_sec_in_descending_order_for_blocked_popup(Integer int1) {
+        emicard.verifyBlockOtpTimer();
+    }
+
+
+
 
 
 }

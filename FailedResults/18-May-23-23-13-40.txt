@@ -1,0 +1,726 @@
+MyRelations Section is Not Verified------------>  FD RHS - FATCA Form - TO verify FATCA Form is not available in Pre-Matured Customers
+
+My Relation is not Working------------>  FD RHS - FATCA Form - TO verify FATCA Form is not available in Pre-Matured Customers
+
+ Account Number 640796 is Not Redirected------------>  FD RHS - FATCA Form - TO verify FATCA Form is not available in Matured FD Customers
+
+Not Redirected to Expected------------>  FD RHS - FATCA Form - TO verify FATCA Form is not available in Matured FD Customers
+
+MyRelations Section is Not Verified------------>  FD RHS - FATCA Form - TO verify FATCA Form Redirection/
+
+My Relation is not Working------------>  FD RHS - FATCA Form - TO verify FATCA Form Redirection/
+
+MyRelations Section is Not Verified------------>  FD RHS - FATCA Form - TO verify FATCA Form Page Fileds for Toggle "NO"F
+
+My Relation is not Working------------>  FD RHS - FATCA Form - TO verify FATCA Form Page Fileds for Toggle "NO"F
+
+MyRelations Section is Not Verified------------>  FD RHS - FATCA Form - TO verify Generate OTP Button for Toggle NO ButtonY
+
+My Relation is not Working------------>  FD RHS - FATCA Form - TO verify Generate OTP Button for Toggle NO ButtonY
+
+MyRelations Section is Not Verified------------>  FD RHS - FATCA Form - TO verify Cancel Buttonk
+
+My Relation is not Working------------>  FD RHS - FATCA Form - TO verify Cancel Buttonk
+
+MyRelations Section is Not Verified------------>  FD RHS - FATCA Form - TO verify FATCA Form Page Fields for Toggle "YES"
+
+My Relation is not Working------------>  FD RHS - FATCA Form - TO verify FATCA Form Page Fields for Toggle "YES"
+
+MyRelations Section is Not Verified------------>  FD RHS - FATCA Form - EDIT - TO verify FATCA Form Positive Flow with Toggle "YES"ū
+
+My Relation is not Working------------>  FD RHS - FATCA Form - EDIT - TO verify FATCA Form Positive Flow with Toggle "YES"ū
+
+MyRelations Section is Not Verified------------>  FD RHS - FATCA Form - EDIT - TO verify FATCA Form Page Fields Error Message for Blank ValuesƐ
+
+My Relation is not Working------------>  FD RHS - FATCA Form - EDIT - TO verify FATCA Form Page Fields Error Message for Blank ValuesƐ
+
+MyRelations Section is Not Verified------------>  FD RHS - FATCA Form - EDIT - TO verify FATCA Form Page Upload Document fieldƪ
+
+My Relation is not Working------------>  FD RHS - FATCA Form - EDIT - TO verify FATCA Form Page Upload Document fieldƪ
+
+MyRelations Section is Not Verified------------>  FD RHS - FATCA Form - EDIT - TO validate FATCA Form Page Upload Document Field with Valid Filesǌ
+
+My Relation is not Working------------>  FD RHS - FATCA Form - EDIT - TO validate FATCA Form Page Upload Document Field with Valid Filesǌ
+
+MyRelations Section is Not Verified------------>  FD RHS - FATCA Form - EDIT - TO validate FATCA Form Page Upload Document Field with InValid File Sizeǡ
+
+My Relation is not Working------------>  FD RHS - FATCA Form - EDIT - TO validate FATCA Form Page Upload Document Field with InValid File Sizeǡ
+
+MyRelations Section is Not Verified------------>  FD RHS - FATCA Form - EDIT - TO validate FATCA Form Page Upload Document Field with InValid File FormatǶ
+
+My Relation is not Working------------>  FD RHS - FATCA Form - EDIT - TO validate FATCA Form Page Upload Document Field with InValid File FormatǶ
+
+MyRelations Section is Not Verified------------>  FD RHS - FATCA Form - EDIT - TO verify FATCA Form Choose Identification Type Dropdown OptionsȈ
+
+My Relation is not Working------------>  FD RHS - FATCA Form - EDIT - TO verify FATCA Form Choose Identification Type Dropdown OptionsȈ
+
+MyRelations Section is Not Verified------------>  FD- RHS- Loan Against Fixed Deposit- Page Contents
+
+My Relation is not Working------------>  FD- RHS- Loan Against Fixed Deposit- Page Contents
+
+MyRelations Section is Not Verified------------>  FD- RHS- Loan Against Fixed Deposit- Min and Max amount to be shown)
+
+My Relation is not Working------------>  FD- RHS- Loan Against Fixed Deposit- Min and Max amount to be shown)
+
+MyRelations Section is Not Verified------------>  FD- RHS- Loan Against Fixed Deposit- verify tool tip to be shown on RHS amount text box;
+
+My Relation is not Working------------>  FD- RHS- Loan Against Fixed Deposit- verify tool tip to be shown on RHS amount text box;
+
+MyRelations Section is Not Verified------------>  FD- RHS- Loan Against Fixed Deposit- Validation message for invalid inputs in Loan against FD fieldM
+
+My Relation is not Working------------>  FD- RHS- Loan Against Fixed Deposit- Validation message for invalid inputs in Loan against FD fieldM
+
+MyRelations Section is Not Verified------------>  FD- RHS- Loan Against Fixed Deposit- verify Customer is able view given bank details on RHS_
+
+My Relation is not Working------------>  FD- RHS- Loan Against Fixed Deposit- verify Customer is able view given bank details on RHS_
+
+MyRelations Section is Not Verified------------>  FD- RHS- Loan Against Fixed Deposit- verify Customer will be able to view only last 4 digit ,rest will be maskedq
+
+My Relation is not Working------------>  FD- RHS- Loan Against Fixed Deposit- verify Customer will be able to view only last 4 digit ,rest will be maskedq
+
+MyRelations Section is Not Verified------------>  FD- RHS- Loan Against Fixed Deposit- verify Customer is able to view Terms and Conditions
+
+My Relation is not Working------------>  FD- RHS- Loan Against Fixed Deposit- verify Customer is able to view Terms and Conditions
+
+MyRelations Section is Not Verified------------>  FD- RHS- Loan Against Fixed Deposit- verify congratulation screen to be shown´
+
+My Relation is not Working------------>  FD- RHS- Loan Against Fixed Deposit- verify congratulation screen to be shown´
+
+MyRelations Section is Not Verified------------>  FD- RHS- Loan Against Fixed Deposit- verify Error message when LAFD is not applicable for Joint HoldersÆ
+
+My Relation is not Working------------>  FD- RHS- Loan Against Fixed Deposit- verify Error message when LAFD is not applicable for Joint HoldersÆ
+
+DOB Text Box For Individual is not Present and Type In Failed------------>  FD- RHS- Loan Against Fixed Deposit- verify Error message when Primary account holder is a Minor×
+
+PROCEED button is Not Displayed------------>  FD- RHS- Loan Against Fixed Deposit- verify Error message when Primary account holder is a Minor×
+
+MyRelations Section is Not Verified------------>  FD- RHS- Loan Against Fixed Deposit- verify Error message when Primary account holder is a Minor×
+
+My Relation is not Working------------>  FD- RHS- Loan Against Fixed Deposit- verify Error message when Primary account holder is a Minor×
+
+DOB Text Box For Individual is not Present and Type In Failed------------>  FD- RHS- Loan Against Fixed Deposit- verify Error message when FD Is maturing in less than 1 monthè
+
+PROCEED button is Not Displayed------------>  FD- RHS- Loan Against Fixed Deposit- verify Error message when FD Is maturing in less than 1 monthè
+
+MyRelations Section is Not Verified------------>  FD- RHS- Loan Against Fixed Deposit- verify Error message when FD Is maturing in less than 1 monthè
+
+My Relation is not Working------------>  FD- RHS- Loan Against Fixed Deposit- verify Error message when FD Is maturing in less than 1 monthè
+
+MyRelations Section is Not Verified------------>  FD- RHS- Loan Against Fixed Deposit- verify LAFD will not be allowed to joint account holdersù
+
+My Relation is not Working------------>  FD- RHS- Loan Against Fixed Deposit- verify LAFD will not be allowed to joint account holdersù
+
+DOB Text Box For Individual is not Present and Type In Failed------------>  FD- RHS- Loan Against Fixed Deposit- verify OTP popupĔ
+
+PROCEED button is Not Displayed------------>  FD- RHS- Loan Against Fixed Deposit- verify OTP popupĔ
+
+MyRelations Section is Not Verified------------>  FD- RHS- Loan Against Fixed Deposit- verify OTP popupĔ
+
+My Relation is not Working------------>  FD- RHS- Loan Against Fixed Deposit- verify OTP popupĔ
+
+MyRelations Section is Not Verified------------>  FD- RHS- Loan Against Fixed Deposit- verify OTP popup 2ō
+
+My Relation is not Working------------>  FD- RHS- Loan Against Fixed Deposit- verify OTP popup 2ō
+
+MyRelations Section is Not Verified------------>  FD- RHS- Submit TDS- verify customer is redirected to “TDS Waiver Page” after selecting “Submit TDS Waiver” under Things you can do on Fixed Deposit Pageš
+
+My Relation is not Working------------>  FD- RHS- Submit TDS- verify customer is redirected to “TDS Waiver Page” after selecting “Submit TDS Waiver” under Things you can do on Fixed Deposit Pageš
+
+Home Page Text is Not Verified------------>  FD- RHS- Submit TDS- verify Form 15 G to be displayed when age is less than 60ų
+
+Login is Unsuccessfull------------>  FD- RHS- Submit TDS- verify Form 15 G to be displayed when age is less than 60ų
+
+Sign Out Button is Not Present------------>  FD- RHS- Submit TDS- verify Form 15 G to be displayed when age is less than 60ų
+
+DOB Text Box For Individual is not Present and Type In Failed------------>  FD- RHS- Submit TDS- verify Form 15 H to be displayed when age is more than or equals to 60ƅ
+
+PROCEED button is Not Displayed------------>  FD- RHS- Submit TDS- verify Form 15 H to be displayed when age is more than or equals to 60ƅ
+
+MyRelations Section is Not Verified------------>  FD- RHS- Submit TDS- verify Form 15 H to be displayed when age is more than or equals to 60ƅ
+
+My Relation is not Working------------>  FD- RHS- Submit TDS- verify Form 15 H to be displayed when age is more than or equals to 60ƅ
+
+DOB Text Box For Individual is not Present and Type In Failed------------>  FD- RHS- Submit TDS- verify customer is able to view details when clicks on Submit TDS waiverƘ
+
+PROCEED button is Not Displayed------------>  FD- RHS- Submit TDS- verify customer is able to view details when clicks on Submit TDS waiverƘ
+
+MyRelations Section is Not Verified------------>  FD- RHS- Submit TDS- verify customer is able to view details when clicks on Submit TDS waiverƘ
+
+My Relation is not Working------------>  FD- RHS- Submit TDS- verify customer is able to view details when clicks on Submit TDS waiverƘ
+
+DOB Text Box For Individual is not Present and Type In Failed------------>  FD- RHS- Submit TDS- verify customer is able to view Part 2 details when clicks on Submit TDS waiverƪ
+
+PROCEED button is Not Displayed------------>  FD- RHS- Submit TDS- verify customer is able to view Part 2 details when clicks on Submit TDS waiverƪ
+
+MyRelations Section is Not Verified------------>  FD- RHS- Submit TDS- verify customer is able to view Part 2 details when clicks on Submit TDS waiverƪ
+
+My Relation is not Working------------>  FD- RHS- Submit TDS- verify customer is able to view Part 2 details when clicks on Submit TDS waiverƪ
+
+DOB Text Box For Individual is not Present and Type In Failed------------>  FD- RHS- Submit TDS- verify customer is able to view and download the file from Download the form CTAƽ
+
+PROCEED button is Not Displayed------------>  FD- RHS- Submit TDS- verify customer is able to view and download the file from Download the form CTAƽ
+
+MyRelations Section is Not Verified------------>  FD- RHS- Submit TDS- verify customer is able to view and download the file from Download the form CTAƽ
+
+My Relation is not Working------------>  FD- RHS- Submit TDS- verify customer is able to view and download the file from Download the form CTAƽ
+
+DOB Text Box For Individual is not Present and Type In Failed------------>  FD- RHS- Submit TDS- verify page to be displayed in which customer will have to enter his Income details under Additional information requiredǑ
+
+PROCEED button is Not Displayed------------>  FD- RHS- Submit TDS- verify page to be displayed in which customer will have to enter his Income details under Additional information requiredǑ
+
+MyRelations Section is Not Verified------------>  FD- RHS- Submit TDS- verify page to be displayed in which customer will have to enter his Income details under Additional information requiredǑ
+
+My Relation is not Working------------>  FD- RHS- Submit TDS- verify page to be displayed in which customer will have to enter his Income details under Additional information requiredǑ
+
+DOB Text Box For Individual is not Present and Type In Failed------------>  FD- RHS- Submit TDS- verify Customer redirected to Service screen when clicks on Cancel Button in Additional information pageǦ
+
+PROCEED button is Not Displayed------------>  FD- RHS- Submit TDS- verify Customer redirected to Service screen when clicks on Cancel Button in Additional information pageǦ
+
+MyRelations Section is Not Verified------------>  FD- RHS- Submit TDS- verify Customer redirected to Service screen when clicks on Cancel Button in Additional information pageǦ
+
+My Relation is not Working------------>  FD- RHS- Submit TDS- verify Customer redirected to Service screen when clicks on Cancel Button in Additional information pageǦ
+
+DOB Text Box For Individual is not Present and Type In Failed------------>  FD- RHS- Submit TDS-verify customer will have to enter other fixed deposit income, & verify other Input BoxesǼ
+
+PROCEED button is Not Displayed------------>  FD- RHS- Submit TDS-verify customer will have to enter other fixed deposit income, & verify other Input BoxesǼ
+
+MyRelations Section is Not Verified------------>  FD- RHS- Submit TDS-verify customer will have to enter other fixed deposit income, & verify other Input BoxesǼ
+
+My Relation is not Working------------>  FD- RHS- Submit TDS-verify customer will have to enter other fixed deposit income, & verify other Input BoxesǼ
+
+DOB Text Box For Individual is not Present and Type In Failed------------>  FD- RHS- Submit TDS- verify when customer selects Tax assessment ToggleȐ
+
+PROCEED button is Not Displayed------------>  FD- RHS- Submit TDS- verify when customer selects Tax assessment ToggleȐ
+
+MyRelations Section is Not Verified------------>  FD- RHS- Submit TDS- verify when customer selects Tax assessment ToggleȐ
+
+My Relation is not Working------------>  FD- RHS- Submit TDS- verify when customer selects Tax assessment ToggleȐ
+
+DOB Text Box For Individual is not Present and Type In Failed------------>  FD- RHS- Submit TDS- verify Details in Part 2 section should be pre populatedȨ
+
+PROCEED button is Not Displayed------------>  FD- RHS- Submit TDS- verify Details in Part 2 section should be pre populatedȨ
+
+MyRelations Section is Not Verified------------>  FD- RHS- Submit TDS- verify Details in Part 2 section should be pre populatedȨ
+
+My Relation is not Working------------>  FD- RHS- Submit TDS- verify Details in Part 2 section should be pre populatedȨ
+
+DOB Text Box For Individual is not Present and Type In Failed------------>  FD- RHS- Submit TDS- verify Terms and Conditions in Check and Submit pageɁ
+
+PROCEED button is Not Displayed------------>  FD- RHS- Submit TDS- verify Terms and Conditions in Check and Submit pageɁ
+
+MyRelations Section is Not Verified------------>  FD- RHS- Submit TDS- verify Terms and Conditions in Check and Submit pageɁ
+
+My Relation is not Working------------>  FD- RHS- Submit TDS- verify Terms and Conditions in Check and Submit pageɁ
+
+DOB Text Box For Individual is not Present and Type In Failed------------>  FD- RHS- Submit TDS- verify Generate OTP in Check and Submit pageɚ
+
+PROCEED button is Not Displayed------------>  FD- RHS- Submit TDS- verify Generate OTP in Check and Submit pageɚ
+
+MyRelations Section is Not Verified------------>  FD- RHS- Submit TDS- verify Generate OTP in Check and Submit pageɚ
+
+My Relation is not Working------------>  FD- RHS- Submit TDS- verify Generate OTP in Check and Submit pageɚ
+
+Failed in Type In DOB Text Box For Individual value as 01051962. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  FD- RHS- Submit TDS- verify when customer enters an amount more than 3 Lac under the field ”Total amount for which Form 15H ﬁled”ɳ
+
+PROCEED button is Not Displayed------------>  FD- RHS- Submit TDS- verify when customer enters an amount more than 3 Lac under the field ”Total amount for which Form 15H ﬁled”ɳ
+
+Home Page Text is Not Verified------------>  FD- RHS- Submit TDS- verify when customer enters an amount more than 3 Lac under the field ”Total amount for which Form 15H ﬁled”ɳ
+
+Login is Unsuccessfull------------>  FD- RHS- Submit TDS- verify when customer enters an amount more than 3 Lac under the field ”Total amount for which Form 15H ﬁled”ɳ
+
+Sign Out Button is Not Present------------>  FD- RHS- Submit TDS- verify when customer enters an amount more than 3 Lac under the field ”Total amount for which Form 15H ﬁled”ɳ
+
+MyRelations Section is Not Verified------------>  FD- RHS- Submit TDS- verify when customer enters an amount more than 2.5 Lac under the field”Total amount for which Form 15G ﬁled”ʊ
+
+My Relation is not Working------------>  FD- RHS- Submit TDS- verify when customer enters an amount more than 2.5 Lac under the field”Total amount for which Form 15G ﬁled”ʊ
+
+DOB Text Box For Individual is not Present and Type In Failed------------>  FD- RHS- Submit TDS- verify option should not be shown to the customer TDS Waiver is "Already Submitted"ʙ
+
+PROCEED button is Not Displayed------------>  FD- RHS- Submit TDS- verify option should not be shown to the customer TDS Waiver is "Already Submitted"ʙ
+
+MyRelations Section is Not Verified------------>  FD- RHS- Submit TDS- verify option should not be shown to the customer TDS Waiver is "Already Submitted"ʙ
+
+My Relation is not Working------------>  FD- RHS- Submit TDS- verify option should not be shown to the customer TDS Waiver is "Already Submitted"ʙ
+
+MyRelations Section is Not Verified------------>  FD- RHS- Submit TDS- verify Total No. Other income + Total amount logic of 15G filled will be auto calculatedʭ
+
+My Relation is not Working------------>  FD- RHS- Submit TDS- verify Total No. Other income + Total amount logic of 15G filled will be auto calculatedʭ
+
+MyRelations Section is Not Verified------------>  FD- RHS- Submit TDS- verify Popup on completing the OTP screen˒
+
+My Relation is not Working------------>  FD- RHS- Submit TDS- verify Popup on completing the OTP screen˒
+
+ Account Number 640796 is Not Redirected------------>  FD RHS - Open FD - TO verify open FD available in Matured FD Customers
+
+Not Redirected to Expected------------>  FD RHS - Open FD - TO verify open FD available in Matured FD Customers
+
+Failed in wait for Deposits tab Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  FD RHS - Open FD - TO verify open FD Redirection!
+
+Deposits tab is Not Present in this Customer Id------------>  FD RHS - Open FD - TO verify open FD Redirection!
+
+FIXED DEPOSIT 416421 No. Tile is Not Present in this customer Id------------>  FD RHS - Open FD - TO verify open FD Redirection!
+
+ Account Number 416421 is Not Redirected------------>  FD RHS - Open FD - TO verify open FD Redirection!
+
+Not Redirected to Expected------------>  FD RHS - Open FD - TO verify open FD Redirection!
+
+Home Page Text is Not Verified------------>  FD  - View Details - Home My Relations - Redirection+
+
+Login is Unsuccessfull------------>  FD  - View Details - Home My Relations - Redirection+
+
+Sign Out Button is Not Present------------>  FD  - View Details - Home My Relations - Redirection+
+
+FIXED DEPOSIT 229405 No. Tile is Not Present in this customer Id------------>  Active FD - Renew Your FD is not Showing in RHS for Already Renewed FD Account
+
+ Account Number 229405 is Not Redirected------------>  Active FD - Renew Your FD is not Showing in RHS for Already Renewed FD Account
+
+Not Redirected to Expected------------>  Active FD - Renew Your FD is not Showing in RHS for Already Renewed FD Account
+
+ Account Number 806107 is Not Redirected------------>  To verify New Broker Name Text Box in Renew Details Page - CumulativeÄ
+
+Not Redirected to Expected------------>  To verify New Broker Name Text Box in Renew Details Page - CumulativeÄ
+
+48 Option in Tenure Section is Not Displayed------------>  To verify Default Options in Renew Plan Page - Cumulativeƴ
+
+Badge with 48 Selection Box Under Tenure Title is not verified------------>  To verify Default Options in Renew Plan Page - Cumulativeƴ
+
+Renew Amount Text box in Renew Plan is Not Accepted following value: 1.23456789------------>  To Validate Renewal Amount Text box in Renew Plan Page - Cumulativeǥ
+
+Actual Value: 123456789------------>  To Validate Renewal Amount Text box in Renew Plan Page - Cumulativeǥ
+
+Renew Amount Text box in Renew Plan is Not Accepted following value: 12.3456789------------>  To Validate Renewal Amount Text box in Renew Plan Page - Cumulativeǥ
+
+Actual Value: 123456789------------>  To Validate Renewal Amount Text box in Renew Plan Page - Cumulativeǥ
+
+Renew Amount Text box in Renew Plan is Not Accepted following value: 123.456789------------>  To Validate Renewal Amount Text box in Renew Plan Page - Cumulativeǥ
+
+Actual Value: 123456789------------>  To Validate Renewal Amount Text box in Renew Plan Page - Cumulativeǥ
+
+Renew Amount Text box in Renew Plan is Not Accepted following value: 1234.56789------------>  To Validate Renewal Amount Text box in Renew Plan Page - Cumulativeǥ
+
+Actual Value: 123456789------------>  To Validate Renewal Amount Text box in Renew Plan Page - Cumulativeǥ
+
+Renew Amount Text box in Renew Plan is Not Accepted following value: 12345.6780------------>  To Validate Renewal Amount Text box in Renew Plan Page - Cumulativeǥ
+
+Actual Value: 123456780------------>  To Validate Renewal Amount Text box in Renew Plan Page - Cumulativeǥ
+
+Renew Amount Text box in Renew Plan is Not Accepted following value: 123456.780------------>  To Validate Renewal Amount Text box in Renew Plan Page - Cumulativeǥ
+
+Actual Value: 123456780------------>  To Validate Renewal Amount Text box in Renew Plan Page - Cumulativeǥ
+
+Renew Amount Text box in Renew Plan is Not Accepted following value: 1234567.80------------>  To Validate Renewal Amount Text box in Renew Plan Page - Cumulativeǥ
+
+Actual Value: 123456780------------>  To Validate Renewal Amount Text box in Renew Plan Page - Cumulativeǥ
+
+Renew Amount Text box in Renew Plan is Not Accepted following value: 12345678.0------------>  To Validate Renewal Amount Text box in Renew Plan Page - Cumulativeǥ
+
+Actual Value: 123456780------------>  To Validate Renewal Amount Text box in Renew Plan Page - Cumulativeǥ
+
+Enter a tenure between 12 and 60 months is Not Verified------------>  To Verify Custom Option Textbox in Select Tenure - Cumulativeǽ
+
+Enter months between 12 and 60 Error Message error message is not displayed------------>  To Verify Custom Option Textbox in Select Tenure - Cumulativeǽ
+
+Enter months between 12 and 60 Error Message error message is not displayed------------>  To Verify Custom Option Textbox in Select Tenure - Cumulativeǽ
+
+Enter months between 12 and 60 Error Message error message is not displayed------------>  To Verify Custom Option Textbox in Select Tenure - Cumulativeǽ
+
+Enter months between 12 and 60 Error Message error message is not displayed------------>  To Verify Custom Option Textbox in Select Tenure - Cumulativeǽ
+
+Enter months between 12 and 60 Error Message error message is not displayed------------>  To Verify Custom Option Textbox in Select Tenure - Cumulativeǽ
+
+I confirm the deposit summary mentioned here. I agree to the is Not Verified------------>  To Verify Components of FD Renew Summary Page - Cumulativeɋ
+
+terms and conditions is Not Verified------------>  To Verify Components of FD Renew Summary Page - Cumulativeɋ
+
+RHS Option Renew your FD in Insurance Service Pageis not Displayed------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountFixedDeposit/FixedDeposit/Index------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountFixedDeposit/FixedDeposit/FDRenewalDetails------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+Proceed Button in FD Renew Plan is Not Present------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountFixedDeposit/FixedDeposit/Index------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountFixedDeposit/FixedDeposit/FDRenewalPlan------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+Proceed Button in FD Renew Plan is Not Present------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountFixedDeposit/FixedDeposit/Index------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountFixedDeposit/FixedDeposit/FDRenewalSummary------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+Check Box in FD Renew Summary Page is Not Present------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+Proceed Button in FD Renew Plan is Enabled not verified------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+Proceed Button in FD Renew Plan is Not Present------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+OTP Verification is Not Verified------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+A one-time password has been sent to your registered mobile number Message is Not Present------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+Enter One Time Password is Not Verified------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+Primary Account Holder OTP is Not Verified------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+Resend OTP Button is Not Present------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+OTP Screen Text box 1 is Not Present------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+OTP Screen Text box 2 is Not Present------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+OTP Screen Text box 3 is Not Present------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+OTP Screen Text box 4 is Not Present------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+OTP Screen Text box 5 is Not Present------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+OTP Screen Text box 6 is Not Present------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+Submit Button in Renew FD OTP Screen is Not Present------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+Submit Button in Renew FD OTP Screen is Disabled not verified------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+OTP Screen Close Button is Not Displayed------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Cumulativeˑ
+
+OTP Screen Text box 1 - Green Color is Not Verified------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+OTP Screen Text box 2 - Green Color is Not Verified------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+OTP Screen Text box 3 - Green Color is Not Verified------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+OTP Screen Text box 4 - Green Color is Not Verified------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+OTP Screen Text box 5 - Green Color is Not Verified------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+OTP Screen Text box 6 - Green Color is Not Verified------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Invalid OTP Error Message is Not Present------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 2. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 2 value as %. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 2. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 2 value as ^. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 2. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 2 value as &. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 2. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 2 value as *. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 2. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 2 value as (. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 2. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 2 value as .. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 2. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 2 value as ). Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 3. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 3 value as a. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 3. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 3 value as A. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 3. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 3 value as !. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 3. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 3 value as @. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 3. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 3 value as $. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 3. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 3 value as %. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 3. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 3 value as ^. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 3. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 3 value as &. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 3. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 3 value as *. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 3. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 3 value as (. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 3. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 3 value as .. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 3. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 3 value as ). Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 4. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 4 value as a. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 4. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 4 value as A. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 4. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 4 value as !. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 4. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 4 value as @. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 4. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 4 value as $. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 4. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 4 value as %. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 4. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 4 value as ^. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 4. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 4 value as &. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 4. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 4 value as *. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 4. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 4 value as (. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 4. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 4 value as .. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 4. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 4 value as ). Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 5. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 5 value as a. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 5. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 5 value as A. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 5. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 5 value as !. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 5. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 5 value as @. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 5. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 5 value as $. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 5. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 5 value as %. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 5. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 5 value as ^. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 5. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 5 value as &. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 5. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 5 value as *. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 5. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 5 value as (. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 5. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 5 value as .. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 5. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 5 value as ). Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 6. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 6 value as a. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 6. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 6 value as A. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 6. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 6 value as !. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 6. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 6 value as @. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 6. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 6 value as $. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 6. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 6 value as %. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 6. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 6 value as ^. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 6. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 6 value as &. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 6. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 6 value as *. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 6. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 6 value as (. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 6. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 6 value as .. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 6. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In OTP Screen Text box 6 value as ). Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 1. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In if displayed OTP Screen Text box 1. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 2. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In if displayed OTP Screen Text box 2. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 3. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In if displayed OTP Screen Text box 3. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 4. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In if displayed OTP Screen Text box 4. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 5. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In if displayed OTP Screen Text box 5. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Clear edit Box OTP Screen Text box 6. Exception: class org.openqa.selenium.InvalidElementStateException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Failed in Type In if displayed OTP Screen Text box 6. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+Submit Button in Renew FD OTP Screen is Enabled not verified------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+OTP Expired! Error Message is Not Present------------>  To Verify OTP Validations in FD Renew Summary Page - Cumulative̪
+
+ Account Number 43709 is Not Redirected------------>  To verify Cancel button in Renew Details Page - Non Cumulative<
+
+Not Redirected to Expected------------>  To verify Cancel button in Renew Details Page - Non Cumulative<
+
+ Account Number 43709 is Not Redirected------------>  To verify Top Section in Renew Details Page - Non CumulativeM
+
+Not Redirected to Expected------------>  To verify Top Section in Renew Details Page - Non CumulativeM
+
+ Account Number 43709 is Not Redirected------------>  To verify New Broker Code Text Box in Renew Details Page - Non Cumulative£
+
+Not Redirected to Expected------------>  To verify New Broker Code Text Box in Renew Details Page - Non Cumulative£
+
+48 Option in Tenure Section is Not Displayed------------>  To verify Default Options in Renew Plan Page - Non Cumulativeų
+
+Badge with 48 Selection Box Under Tenure Title is not verified------------>  To verify Default Options in Renew Plan Page - Non Cumulativeų
+
+Renew Amount Text box in Renew Plan is Not Accepted following value: 1.23456789------------>  To Validate Renewal Amount Text box in Renew Plan Page - Non Cumulativeƣ
+
+Actual Value: 123456789------------>  To Validate Renewal Amount Text box in Renew Plan Page - Non Cumulativeƣ
+
+Renew Amount Text box in Renew Plan is Not Accepted following value: 12.3456789------------>  To Validate Renewal Amount Text box in Renew Plan Page - Non Cumulativeƣ
+
+Actual Value: 123456789------------>  To Validate Renewal Amount Text box in Renew Plan Page - Non Cumulativeƣ
+
+Renew Amount Text box in Renew Plan is Not Accepted following value: 123.456789------------>  To Validate Renewal Amount Text box in Renew Plan Page - Non Cumulativeƣ
+
+Actual Value: 123456789------------>  To Validate Renewal Amount Text box in Renew Plan Page - Non Cumulativeƣ
+
+Renew Amount Text box in Renew Plan is Not Accepted following value: 1234.56789------------>  To Validate Renewal Amount Text box in Renew Plan Page - Non Cumulativeƣ
+
+Actual Value: 123456789------------>  To Validate Renewal Amount Text box in Renew Plan Page - Non Cumulativeƣ
+
+Renew Amount Text box in Renew Plan is Not Accepted following value: 12345.6780------------>  To Validate Renewal Amount Text box in Renew Plan Page - Non Cumulativeƣ
+
+Actual Value: 123456780------------>  To Validate Renewal Amount Text box in Renew Plan Page - Non Cumulativeƣ
+
+Renew Amount Text box in Renew Plan is Not Accepted following value: 123456.780------------>  To Validate Renewal Amount Text box in Renew Plan Page - Non Cumulativeƣ
+
+Actual Value: 123456780------------>  To Validate Renewal Amount Text box in Renew Plan Page - Non Cumulativeƣ
+
+Renew Amount Text box in Renew Plan is Not Accepted following value: 1234567.80------------>  To Validate Renewal Amount Text box in Renew Plan Page - Non Cumulativeƣ
+
+Actual Value: 123456780------------>  To Validate Renewal Amount Text box in Renew Plan Page - Non Cumulativeƣ
+
+Renew Amount Text box in Renew Plan is Not Accepted following value: 12345678.0------------>  To Validate Renewal Amount Text box in Renew Plan Page - Non Cumulativeƣ
+
+Actual Value: 123456780------------>  To Validate Renewal Amount Text box in Renew Plan Page - Non Cumulativeƣ
+
+Please enter the value  greater than or equal to 15k and less than maturity amount Error Message error message is not displayed------------>  To Validate Renewal Amount Text box in Renew Plan Page - Non Cumulativeƣ
+
+Enter a tenure between 12 and 60 months is Not Verified------------>  To Verify Custom Option Textbox in Select Tenure - Non Cumulativeƻ
+
+Enter months between 12 and 60 Error Message error message is not displayed------------>  To Verify Custom Option Textbox in Select Tenure - Non Cumulativeƻ
+
+Enter months between 12 and 60 Error Message error message is not displayed------------>  To Verify Custom Option Textbox in Select Tenure - Non Cumulativeƻ
+
+Enter months between 12 and 60 Error Message error message is not displayed------------>  To Verify Custom Option Textbox in Select Tenure - Non Cumulativeƻ
+
+Enter months between 12 and 60 Error Message error message is not displayed------------>  To Verify Custom Option Textbox in Select Tenure - Non Cumulativeƻ
+
+Enter months between 12 and 60 Error Message error message is not displayed------------>  To Verify Custom Option Textbox in Select Tenure - Non Cumulativeƻ
+
+I confirm the deposit summary mentioned here. I agree to the is Not Verified------------>  To Verify Components of FD Renew Summary Page - Non Cumulativeȉ
+
+terms and conditions is Not Verified------------>  To Verify Components of FD Renew Summary Page - Non Cumulativeȉ
+
+Home Page Text is Not Verified------------>  To Verify Cancel Button in FD Renew Summary Page - Non CumulativeȞ
+
+Login is Unsuccessfull------------>  To Verify Cancel Button in FD Renew Summary Page - Non CumulativeȞ
+
+Sign Out Button is Not Present------------>  To Verify Cancel Button in FD Renew Summary Page - Non CumulativeȞ
+
+A one-time password has been sent to your registered mobile number Message is Not Present------------>  To Verify Components of OTP and Close Button in FD Renew Summary Page - Non Cumulativeʎ
+
+ Account Number 43709 is Not Redirected------------>  To Verify OTP Validations in FD Renew Summary Page - Non Cumulative˩
+
+Not Redirected to Expected------------>  To Verify OTP Validations in FD Renew Summary Page - Non Cumulative˩
+

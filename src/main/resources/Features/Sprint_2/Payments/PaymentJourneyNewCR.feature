@@ -160,7 +160,7 @@ Feature: Payment Checkout New CR
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to Payment Page "<Url>" in same Tab
     Then Below details should be displayed to the customer 1.Customer name 2.Payment gateway options and payment method as below 3.Pay CTA with amount to be paid
 
@@ -181,7 +181,7 @@ Feature: Payment Checkout New CR
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to Payment Page "<Url>" in same Tab
     And Worldline payment Gateway should be selected by default
 
@@ -201,7 +201,7 @@ Feature: Payment Checkout New CR
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to Payment Page "<Url>" in same Tab
     And  Selects a Payment Gateway"<Payment Gateway>"
     And Selects a Payment Method"<Payment method>"
@@ -222,7 +222,7 @@ Feature: Payment Checkout New CR
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to Payment Page "<Url>" in same Tab
     And  Selects a Payment Gateway"<Payment Gateway>"
     And Selects a Payment Method"<Payment method>"
@@ -243,7 +243,7 @@ Feature: Payment Checkout New CR
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to Payment Page "<Url>" in same Tab
     And  Selects a Payment Gateway"<Payment Gateway>"
     And Selects a Payment Method"<Payment method>"
@@ -267,7 +267,7 @@ Feature: Payment Checkout New CR
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to Payment Page "<Url>" in same Tab
     And  Selects a Payment Gateway"<Payment Gateway>"
     And Selects a Payment Method"<Payment method>"
@@ -290,7 +290,7 @@ Feature: Payment Checkout New CR
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to Payment Page "<Url>" in same Tab
     And  Selects a Payment Gateway"<Payment Gateway>"
     And Selects a Payment Method"<Payment method>"
@@ -313,7 +313,7 @@ Feature: Payment Checkout New CR
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to Payment Page "<Url>" in same Tab
     And  Selects a Payment Gateway"<Payment Gateway>"
     And Selects a Payment Method"<Payment method>"
@@ -339,7 +339,7 @@ Feature: Payment Checkout New CR
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to Payment Page "<Url>" in same Tab
     And  Selects a Payment Gateway"<Payment Gateway>"
     And Selects a Payment Method"<Payment method>"
@@ -362,7 +362,7 @@ Feature: Payment Checkout New CR
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to Payment Page "<Url>" in same Tab
     And  Selects a Payment Gateway"<Payment Gateway>"
     And Selects a Payment Method"<Payment method>"
@@ -386,7 +386,7 @@ Feature: Payment Checkout New CR
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to Payment Page "<Url>" in same Tab
     And  Selects a Payment Gateway"<Payment Gateway>"
     And Selects a Payment Method"<Payment method>"
@@ -409,7 +409,7 @@ Feature: Payment Checkout New CR
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to Payment Page "<Url>" in same Tab
     And  Selects a Payment Gateway"<Payment Gateway>"
     And Selects a Payment Method"<Payment method>"
@@ -431,7 +431,7 @@ Feature: Payment Checkout New CR
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to Payment Page "<Url>" in same Tab
     And  Selects a Payment Gateway"<Payment Gateway>"
     And Selects a Payment Method"<Payment method>"
@@ -453,7 +453,7 @@ Feature: Payment Checkout New CR
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to Payment Page "<Url>" in same Tab
     And  Selects a Payment Gateway"<Payment Gateway>"
     And Selects a Payment Method"<Payment method>"
@@ -479,7 +479,7 @@ Feature: Payment Checkout New CR
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to Payment Page "<Url>" in same Tab
     And  Selects a Payment Gateway"<Payment Gateway>"
     And Selects a Payment Method"<Payment method>"
@@ -505,7 +505,7 @@ Feature: Payment Checkout New CR
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+    And Customer clicks on "PROCEED" Button
     Then Verify Customer Redirected to Payment Page "<Url>" in same Tab
     And  Selects a Payment Gateway"<Payment Gateway>"
     And Selects a Payment Method"<Payment method>"
@@ -534,7 +534,7 @@ Feature: Payment Checkout New CR
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     Then verify the Amount displayed for the number of months 2 selected
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+  #  And Customer clicks on "PROCEED" Button if displayed for Payments Popup
     Then Verify Customer Redirected to respective URL "<Url>"
     And  Selects a Payment Gateway"<Payment Gateway>"
     And Selects a Payment Method"<Payment method>"
@@ -559,7 +559,7 @@ Feature: Payment Checkout New CR
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     Then verify the Amount displayed for the number of months 2 selected
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+  #  And Customer clicks on "PROCEED" Button if displayed for Payments Popup
     Then Verify Customer Redirected to respective URL "<Url>"
     And  Selects a Payment Gateway"<Payment Gateway>"
     And Selects a Payment Method"<Payment method>"
@@ -585,7 +585,7 @@ Feature: Payment Checkout New CR
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     Then verify the Amount displayed for the number of months 2 selected
     And Customer clicks on "Proceed To Payment" Button
-    # And Customer clicks on "Proceed to pay" Button
+  #  And Customer clicks on "PROCEED" Button if displayed for Payments Popup
     Then Verify Customer Redirected to respective URL "<Url>"
     And  Selects a Payment Gateway"<Payment Gateway>"
     And Selects a Payment Method"<Payment method>"
@@ -626,9 +626,9 @@ Feature: Payment Checkout New CR
     Then Verify Customer Redirected to respective URL "<Payment Url>"
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | Loan Account Number | Payment Option | Tab         | Url                                          | Payment Gateway | Payment method | Payment Url                                        |
-      | 9921844153    | 05081984 | Individual    | Loan payment | Other payments | 402PLTHA584153      | Foreclosure    | Foreclosure | https://uatpayments.bajajfinserv.in/payments | PayU            | Debit Card     | https://api.payu.in/public                         |
-      | 9921844153    | 05081984 | Individual    | Loan payment | Other payments | 402PLTHA584153      | Foreclosure    | Foreclosure | https://uatpayments.bajajfinserv.in/payments | Worldline       | Debit Card     | https://www.tpsl-india.in/PaymentGateway/txnreq.pg |
-      | 9921844153    | 05081984 | Individual    | Loan payment | Other payments | 402PLTHA584153      | Foreclosure    | Foreclosure | https://uatpayments.bajajfinserv.in/payments | CC Avenue       | Debit Card     | https://secure.ccavenue.com/transaction.do         |
+      | 9784698647    | 05081984 | Individual    | Loan payment | Other payments | 536LRDJE318970      | Foreclosure    | Foreclosure | https://uatpayments.bajajfinserv.in/payments | PayU            | Debit Card     | https://api.payu.in/public                         |
+      | 9784698647    | 05081984 | Individual    | Loan payment | Other payments | 536LRDJE318970      | Foreclosure    | Foreclosure | https://uatpayments.bajajfinserv.in/payments | Worldline       | Debit Card     | https://www.tpsl-india.in/PaymentGateway/txnreq.pg |
+      | 9784698647    | 05081984 | Individual    | Loan payment | Other payments | 536LRDJE318970      | Foreclosure    | Foreclosure | https://uatpayments.bajajfinserv.in/payments | CC Avenue       | Debit Card     | https://secure.ccavenue.com/transaction.do         |
 
   @foreclose
   Scenario Outline: Payments Journey- Verify customer is redirected to respective Payments gateway journey after clicking on Pay CTA ("<Payment Gateway>" - UPI)(Foreclosure)
@@ -652,9 +652,9 @@ Feature: Payment Checkout New CR
 
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | Loan Account Number | Payment Option | Tab         | Url                                          | Payment Gateway | Payment method | Payment Url                                        |
-      | 9921844153    | 05081984 | Individual    | Loan payment | Other payments | 402PLTHA584153      | Foreclosure    | Foreclosure | https://uatpayments.bajajfinserv.in/payments | PayU            | UPI            | https://api.payu.in/public                         |
-      | 9921844153    | 05081984 | Individual    | Loan payment | Other payments | 402PLTHA584153      | Foreclosure    | Foreclosure | https://uatpayments.bajajfinserv.in/payments | Worldline       | UPI            | https://www.tpsl-india.in/PaymentGateway/txnreq.pg |
-      | 9921844153    | 05081984 | Individual    | Loan payment | Other payments | 402PLTHA584153      | Foreclosure    | Foreclosure | https://uatpayments.bajajfinserv.in/payments | CC Avenue       | UPI            | https://secure.ccavenue.com/transaction.do         |
+      | 9784698647    | 05081984 | Individual    | Loan payment | Other payments | 536LRDJE318970      | Foreclosure    | Foreclosure | https://uatpayments.bajajfinserv.in/payments | PayU            | UPI            | https://api.payu.in/public                         |
+      | 9784698647    | 05081984 | Individual    | Loan payment | Other payments | 536LRDJE318970      | Foreclosure    | Foreclosure | https://uatpayments.bajajfinserv.in/payments | Worldline       | UPI            | https://www.tpsl-india.in/PaymentGateway/txnreq.pg |
+      | 9784698647    | 05081984 | Individual    | Loan payment | Other payments | 536LRDJE318970      | Foreclosure    | Foreclosure | https://uatpayments.bajajfinserv.in/payments | CC Avenue       | UPI            | https://secure.ccavenue.com/transaction.do         |
 
 
 ##########UPI Restriction
@@ -689,7 +689,6 @@ Feature: Payment Checkout New CR
     And Customer Clicks on a Loan tile "<Loan Account Number>" and selects a Payment Option "<Payment Option>"
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
-
     Then Verify customer is able to select any of Foreclosure Reason from Drop down
     And Customer clicks on "Proceed To Payment" Button
     And Customer clicks on "Proceed to pay" Button in Foreclosure Popup
@@ -699,7 +698,7 @@ Feature: Payment Checkout New CR
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | Loan Account Number | Payment Option | Tab         | Url                                          |
       | 7799859597    | 01091979 | Individual    | Loan payment | Other payments | P400DHP0467783      | Foreclosure    | Foreclosure | https://uatpayments.bajajfinserv.in/payments |
-#      | 9921844153    | 05081984 | Individual    | Loan payment | Other payments | 402PLTHA584153      | Foreclosure    | Foreclosure | https://uatpayments.bajajfinserv.in/payments |
+#      | 9784698647    | 05081984 | Individual    | Loan payment | Other payments | 536LRDJE318970      | Foreclosure    | Foreclosure | https://uatpayments.bajajfinserv.in/payments |
 
   @lakh
   Scenario Outline: Payments Journey- verify UPI -Payment method is disabled when total payable amount is >=1 lakh Rupees on payment checkout page  (Advance EMI)
@@ -714,7 +713,7 @@ Feature: Payment Checkout New CR
     And verify Customer is redirected to the exact Payment Option "<Tab>"
 #    Then verify the Amount displayed for the number of months 1 selected
     And Customer clicks on "Proceed To Payment" Button
-    And Customer clicks on "Proceed to pay" Button
+  #  And Customer clicks on "PROCEED" Button if displayed for Payments Popup
     Then Verify Customer Redirected to respective URL "<Url>"
     And verify "UPI" payment method is not displayed for amount >=1 lakh Rupees on payment checkout page
 
@@ -757,7 +756,6 @@ Feature: Payment Checkout New CR
     And Customer Clicks on a Loan tile "<Loan Account Number>" and selects a Payment Option "<Payment Option>"
     And Clicks on "PROCEED" Button
     And verify Customer is redirected to the exact Payment Option "<Tab>"
-
     Then Verify customer is able to select any of Foreclosure Reason from Drop down
     And Customer clicks on "Proceed To Payment" Button
     And Customer clicks on "Proceed to pay" Button in Foreclosure Popup
@@ -766,8 +764,8 @@ Feature: Payment Checkout New CR
 
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | Loan Account Number | Payment Option | Tab         | Url                                          |
-      | 7799859597    | 01091979 | Individual    | Loan payment | Other payments | P400DHP0467783      | Foreclosure    | Foreclosure | https://uatpayments.bajajfinserv.in/payments |
-#      | 9921844153    | 05081984 | Individual    | Loan payment | Other payments | 402PLTHA584153      | Foreclosure    | Foreclosure | https://uatpayments.bajajfinserv.in/payments |
+#      | 7799859597    | 01091979 | Individual    | Loan payment | Other payments | P400DHP0467783      | Foreclosure    | Foreclosure | https://uatpayments.bajajfinserv.in/payments |
+      | 9784698647    | 05081984 | Individual    | Loan payment | Other payments | 536LRDJE318970      | Foreclosure    | Foreclosure | https://uatpayments.bajajfinserv.in/payments |
 
   @lakh
   Scenario Outline: Payments Journey- verify UPI -Payment method is enabled when total payable amount is less than 1 lakh Rupees on payment checkout page  (Advance EMI)
@@ -782,7 +780,7 @@ Feature: Payment Checkout New CR
     And verify Customer is redirected to the exact Payment Option "<Tab>"
     Then verify the Amount displayed for the number of months 2 selected
     And Customer clicks on "Proceed To Payment" Button
-    And Customer clicks on "Proceed to pay" Button
+  #  And Customer clicks on "PROCEED" Button if displayed for Payments Popup
     Then Verify Customer Redirected to respective URL "<Url>"
     And verify "UPI" payment method is displayed & enabled for amount less than 1 lakh Rupees on payment checkout page
 

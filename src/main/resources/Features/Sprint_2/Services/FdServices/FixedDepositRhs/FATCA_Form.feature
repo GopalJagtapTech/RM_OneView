@@ -1,4 +1,4 @@
-@FD2804
+@FD2804@FD2
 Feature: FD Services RHS - FATCA Form
 @Pass
   Scenario Outline: FD RHS - FATCA Form - TO verify FATCA Form available in <FD Status> Customers

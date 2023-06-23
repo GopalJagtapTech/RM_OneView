@@ -1,0 +1,328 @@
+Next Installment Date Value has Date Format is not verified------------>  To verify Top section in SDP Page7
+
+Failed in verify Maturity Amount Amount with Rs. and Digits with * - Rs.5,406*. Exception: class java.lang.ArrayIndexOutOfBoundsException------------>  To verify Top section in SDP Page7
+
+Instalments Dishonoured value has only digits is not verified------------>  To verify Relationship Details Section - SDP DetailsP
+
+ Account Number 490364 is Not Redirected------------>  To verify ACTIVE SDP with Edit Nominee Details©
+
+Not Redirected to Expected------------>  To verify ACTIVE SDP with Edit Nominee Details©
+
+ Account Number 625438 is Not Redirected------------>  Active SDP - Has Pre-Approved Offersè
+
+Not Redirected to Expected------------>  Active SDP - Has Pre-Approved Offersè
+
+Home Page Text is Not Verified------------>  Active SDP - Verification & Redirection of Check CibilĘ
+
+Login is Unsuccessfull------------>  Active SDP - Verification & Redirection of Check CibilĘ
+
+Sign Out Button is Not Present------------>  Active SDP - Verification & Redirection of Check CibilĘ
+
+There is no space between Rs. and Amount. Exception: class java.lang.ArrayIndexOutOfBoundsException------------>  Paused SDP - To verify Top section in SDP Page4
+
+NACH Registration Date Value has Date Format is not verified------------>  Paused SDP - To verify Relationship Details Section - SDP DetailsJ
+
+Failed in scroll To WebElement for Nominee Address Label. Exception: class org.openqa.selenium.NoSuchElementException------------>  Paused SDP - To verify PAUSED SDP with Edit Nominee Details - Edit Nominee or Add Nominee Button is Not Displayed}
+
+Nominee Address is not displayed------------>  Paused SDP - To verify PAUSED SDP with Edit Nominee Details - Edit Nominee or Add Nominee Button is Not Displayed}
+
+Failed in verify Value is Unmasked Format. Exceptiion: class java.lang.NullPointerException------------>  Paused SDP - To verify PAUSED SDP with Edit Nominee Details - Edit Nominee or Add Nominee Button is Not Displayed}
+
+Failed in scroll To WebElement for Nominee Address Label. Exception: class org.openqa.selenium.NoSuchElementException------------>  Edit Nominee - To verify Values Fetched from the Nominee Details in SDP Page
+
+Nominee Address is not displayed------------>  Edit Nominee - To verify Values Fetched from the Nominee Details in SDP Page
+
+Pincode Error Message is Displayed for Valid Value: 431701------------>  SDP - Edit Nominee - To validate Guardian PINCODE Fieldl
+
+Pincode Error Message is Displayed for Valid Value: 700010------------>  SDP - Edit Nominee - To validate Guardian PINCODE Fieldl
+
+Date of Birth  Text: In case of minors, mention guardian details is Not Displayed------------>  SDP - Edit Nominee - To verify Nominee Details Components
+
+Address Details is Not Fetched After click on YES Toggle Button------------>  SDP - Edit Nominee - To verify Nominee Details Components
+
+Guardian Details is Not Fetched After click on YES Toggle Button------------>  SDP - Edit Nominee - Guardian Details Componentsď
+
+Home Page Text is Not Verified------------>  SDP - Verify Edit Nominee Page OTP ValidationsǱ
+
+Login is Unsuccessfull------------>  SDP - Verify Edit Nominee Page OTP ValidationsǱ
+
+Sign Out Button is Not Present------------>  SDP - Verify Edit Nominee Page OTP ValidationsǱ
+
+Stop SDP Option in Quick Actions RHS is Not Displayed------------>  Stop SDP - To verify customer able to view STOP SDP Option in Active SDP
+
+SYSTEMATIC DEPOSIT PLAN- SMS 452875 No. Tile is Not Present in this customer Id------------>  Stop SDP - To verify customer not able to view STOP SDP Option in Non Active SDP 
+
+ Account Number 452875 is Not Redirected------------>  Stop SDP - To verify customer not able to view STOP SDP Option in Non Active SDP 
+
+Not Redirected to Expected------------>  Stop SDP - To verify customer not able to view STOP SDP Option in Non Active SDP 
+
+RHS Option Stop SDP in Insurance Service Pageis not Displayed------------>  Stop SDP - verify the NO button in Popup2
+
+STOP SDP is Not Verified------------>  Stop SDP - verify the NO button in Popup2
+
+NO button is Not Displayed------------>  Stop SDP - verify the NO button in Popup2
+
+RHS Option Stop SDP in Insurance Service Pageis not Displayed------------>  Stop SDP - verify the Pop-up screen ComponentsE
+
+STOP SDP is Not Verified------------>  Stop SDP - verify the Pop-up screen ComponentsE
+
+Request applied on or after 20th of the month the all your future SDP payments will be stopped from the next month. is Not Verified------------>  Stop SDP - verify the Pop-up screen ComponentsE
+
+Eg. SDP stopped on 21 May will take effect from March month instalment. is Not Verified------------>  Stop SDP - verify the Pop-up screen ComponentsE
+
+Do you still want to proceed? is Not Verified------------>  Stop SDP - verify the Pop-up screen ComponentsE
+
+NO is Not Verified------------>  Stop SDP - verify the Pop-up screen ComponentsE
+
+YES is Not Verified------------>  Stop SDP - verify the Pop-up screen ComponentsE
+
+RHS Option Stop SDP in Insurance Service Pageis not Displayed------------>  Stop SDP - verify the OTP Pop-up screen Components when customer click on YES button in popupf
+
+STOP SDP is Not Verified------------>  Stop SDP - verify the OTP Pop-up screen Components when customer click on YES button in popupf
+
+YES button is Not Displayed------------>  Stop SDP - verify the OTP Pop-up screen Components when customer click on YES button in popupf
+
+OTP Verification is Not Verified------------>  Stop SDP - verify the OTP Pop-up screen Components when customer click on YES button in popupf
+
+Primary Account Holder OTP is Not Verified------------>  Stop SDP - verify the OTP Pop-up screen Components when customer click on YES button in popupf
+
+An OTP has been sent on your registered Mobile Number +91 XXXXXX9910 Message is Not Displayed------------>  Stop SDP - verify the OTP Pop-up screen Components when customer click on YES button in popupf
+
+Enter One Time Password is Not Verified------------>  Stop SDP - verify the OTP Pop-up screen Components when customer click on YES button in popupf
+
+Resend OTP Button is Not Verified------------>  Stop SDP - verify the OTP Pop-up screen Components when customer click on YES button in popupf
+
+OTP Screen Text box 1 is Not Verified------------>  Stop SDP - verify the OTP Pop-up screen Components when customer click on YES button in popupf
+
+OTP Screen Text box 2 is Not Verified------------>  Stop SDP - verify the OTP Pop-up screen Components when customer click on YES button in popupf
+
+OTP Screen Text box 3 is Not Verified------------>  Stop SDP - verify the OTP Pop-up screen Components when customer click on YES button in popupf
+
+OTP Screen Text box 4 is Not Verified------------>  Stop SDP - verify the OTP Pop-up screen Components when customer click on YES button in popupf
+
+OTP Screen Text box 5 is Not Verified------------>  Stop SDP - verify the OTP Pop-up screen Components when customer click on YES button in popupf
+
+OTP Screen Text box 6 is Not Verified------------>  Stop SDP - verify the OTP Pop-up screen Components when customer click on YES button in popupf
+
+Submit Button in STOP SDP OTP Screen is Not Verified------------>  Stop SDP - verify the OTP Pop-up screen Components when customer click on YES button in popupf
+
+Submit Button in STOP SDP OTP Screen is Disabled not verified------------>  Stop SDP - verify the OTP Pop-up screen Components when customer click on YES button in popupf
+
+ Account Number 1161158 is Not Redirected------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP
+
+Not Redirected to Expected------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP
+
+RHS Option Stop SDP in Insurance Service Pageis not Displayed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+STOP SDP is Not Verified------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+YES button is Not Displayed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+OTP Verification is Not Verified------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+Failed in Clear edit Box OTP Screen Text box 1. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+OTP Screen Text box 1 is not Displayed and Type In Failed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+Failed in Clear edit Box OTP Screen Text box 2. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+OTP Screen Text box 2 is not Displayed and Type In Failed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+Failed in Clear edit Box OTP Screen Text box 3. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+OTP Screen Text box 3 is not Displayed and Type In Failed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+Failed in Clear edit Box OTP Screen Text box 4. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+OTP Screen Text box 4 is not Displayed and Type In Failed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+Failed in Clear edit Box OTP Screen Text box 5. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+OTP Screen Text box 5 is not Displayed and Type In Failed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+Failed in Clear edit Box OTP Screen Text box 6. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+OTP Screen Text box 6 is not Displayed and Type In Failed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+Submit Button in STOP SDP OTP Screen is Not Displayed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+You have entered wrong OTP.2 attempts left. is Not Verified------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+Failed in Clear edit Box OTP Screen Text box 1. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+OTP Screen Text box 1 is not Displayed and Type In Failed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+Failed in Clear edit Box OTP Screen Text box 2. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+OTP Screen Text box 2 is not Displayed and Type In Failed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+Failed in Clear edit Box OTP Screen Text box 3. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+OTP Screen Text box 3 is not Displayed and Type In Failed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+Failed in Clear edit Box OTP Screen Text box 4. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+OTP Screen Text box 4 is not Displayed and Type In Failed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+Failed in Clear edit Box OTP Screen Text box 5. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+OTP Screen Text box 5 is not Displayed and Type In Failed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+Failed in Clear edit Box OTP Screen Text box 6. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+OTP Screen Text box 6 is not Displayed and Type In Failed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+Submit Button in STOP SDP OTP Screen is Not Displayed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+You have entered wrong OTP.1 attempt left. is Not Verified------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+Failed in Clear edit Box OTP Screen Text box 1. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+OTP Screen Text box 1 is not Displayed and Type In Failed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+Failed in Clear edit Box OTP Screen Text box 2. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+OTP Screen Text box 2 is not Displayed and Type In Failed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+Failed in Clear edit Box OTP Screen Text box 3. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+OTP Screen Text box 3 is not Displayed and Type In Failed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+Failed in Clear edit Box OTP Screen Text box 4. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+OTP Screen Text box 4 is not Displayed and Type In Failed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+Failed in Clear edit Box OTP Screen Text box 5. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+OTP Screen Text box 5 is not Displayed and Type In Failed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+Failed in Clear edit Box OTP Screen Text box 6. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+OTP Screen Text box 6 is not Displayed and Type In Failed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+Submit Button in STOP SDP OTP Screen is Not Displayed------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+You have entered wrong OTP multiple times. Please try again after sometime. is Not Verified------------>  Stop SDP - verify the Invalid Message OTP Attemptsµ
+
+RHS Option Stop SDP in Insurance Service Pageis not Displayed------------>  Stop SDP - verify the OTP Expired MessageÐ
+
+STOP SDP is Not Verified------------>  Stop SDP - verify the OTP Expired MessageÐ
+
+YES button is Not Displayed------------>  Stop SDP - verify the OTP Expired MessageÐ
+
+OTP Verification is Not Verified------------>  Stop SDP - verify the OTP Expired MessageÐ
+
+Failed in Clear edit Box OTP Screen Text box 1. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the OTP Expired MessageÐ
+
+OTP Screen Text box 1 is not Displayed and Type In Failed------------>  Stop SDP - verify the OTP Expired MessageÐ
+
+Failed in Clear edit Box OTP Screen Text box 2. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the OTP Expired MessageÐ
+
+OTP Screen Text box 2 is not Displayed and Type In Failed------------>  Stop SDP - verify the OTP Expired MessageÐ
+
+Failed in Clear edit Box OTP Screen Text box 3. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the OTP Expired MessageÐ
+
+OTP Screen Text box 3 is not Displayed and Type In Failed------------>  Stop SDP - verify the OTP Expired MessageÐ
+
+Failed in Clear edit Box OTP Screen Text box 4. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the OTP Expired MessageÐ
+
+OTP Screen Text box 4 is not Displayed and Type In Failed------------>  Stop SDP - verify the OTP Expired MessageÐ
+
+Failed in Clear edit Box OTP Screen Text box 5. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the OTP Expired MessageÐ
+
+OTP Screen Text box 5 is not Displayed and Type In Failed------------>  Stop SDP - verify the OTP Expired MessageÐ
+
+Failed in Clear edit Box OTP Screen Text box 6. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the OTP Expired MessageÐ
+
+OTP Screen Text box 6 is not Displayed and Type In Failed------------>  Stop SDP - verify the OTP Expired MessageÐ
+
+Submit Button in STOP SDP OTP Screen is Not Displayed------------>  Stop SDP - verify the OTP Expired MessageÐ
+
+OTP Expired is Not Verified------------>  Stop SDP - verify the OTP Expired MessageÐ
+
+RHS Option Stop SDP in Insurance Service Pageis not Displayed------------>  Stop SDP - verify Resend OTP button in OTP Popupè
+
+STOP SDP is Not Verified------------>  Stop SDP - verify Resend OTP button in OTP Popupè
+
+YES button is Not Displayed------------>  Stop SDP - verify Resend OTP button in OTP Popupè
+
+Resend OTP Button in Disable State is Not Verified------------>  Stop SDP - verify Resend OTP button in OTP Popupè
+
+Resend OTP Button in Enable State is Not Present------------>  Stop SDP - verify Resend OTP button in OTP Popupè
+
+Resend OTP Button in Disable State is Not Verified------------>  Stop SDP - verify Resend OTP button in OTP Popupè
+
+Submit Button in STOP SDP OTP Screen is Not Displayed------------>  Stop SDP - verify Resend OTP button in OTP Popupè
+
+OTP Expired is Not Verified------------>  Stop SDP - verify Resend OTP button in OTP Popupè
+
+RHS Option Stop SDP in Insurance Service Pageis not Displayed------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+STOP SDP is Not Verified------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+YES button is Not Displayed------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+Failed in Clear edit Box OTP Screen Text box 1. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+OTP Screen Text box 1 is not Displayed and Type In Failed------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+Failed in Clear edit Box OTP Screen Text box 2. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+OTP Screen Text box 2 is not Displayed and Type In Failed------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+Failed in Clear edit Box OTP Screen Text box 3. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+OTP Screen Text box 3 is not Displayed and Type In Failed------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+Failed in Clear edit Box OTP Screen Text box 4. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+OTP Screen Text box 4 is not Displayed and Type In Failed------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+Failed in Clear edit Box OTP Screen Text box 5. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+OTP Screen Text box 5 is not Displayed and Type In Failed------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+Failed in Clear edit Box OTP Screen Text box 6. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+OTP Screen Text box 6 is not Displayed and Type In Failed------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+Submit Button in STOP SDP OTP Screen is Not Displayed------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+Failed in Clear edit Box OTP Screen Text box 1. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+OTP Screen Text box 1 is not Displayed and Type In Failed------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+Failed in Clear edit Box OTP Screen Text box 2. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+OTP Screen Text box 2 is not Displayed and Type In Failed------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+Failed in Clear edit Box OTP Screen Text box 3. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+OTP Screen Text box 3 is not Displayed and Type In Failed------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+Failed in Clear edit Box OTP Screen Text box 4. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+OTP Screen Text box 4 is not Displayed and Type In Failed------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+Failed in Clear edit Box OTP Screen Text box 5. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+OTP Screen Text box 5 is not Displayed and Type In Failed------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+Failed in Clear edit Box OTP Screen Text box 6. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+OTP Screen Text box 6 is not Displayed and Type In Failed------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+Submit Button in STOP SDP OTP Screen is Not Displayed------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+Successful! is Not Verified------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+your request shall be processed in 2 business days  is Not Verified------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+DONE is Not Present in findElements------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+Failed in click on DONE button using for Loop. Exception: class java.lang.NullPointerException------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+Note: : is Not Verified------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+
+We have received your request to stop your forthcoming debits under this Systematic Deposit Plan. Since we send debit request 15 days in advance to your bank, your upcoming deposit may be deducted based on the debit date. However, forthcoming deposits will not be debited. is Not Verified------------>  Stop SDP - verify the Successful Message and Note after entered correct OTP with Secondary Account HolderĒ
+

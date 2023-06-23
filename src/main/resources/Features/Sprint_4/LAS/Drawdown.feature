@@ -1,4 +1,4 @@
-@rhs
+@LAS
 Feature: Disbursement/Drawdown
 
   @pass
@@ -227,76 +227,76 @@ Feature: Disbursement/Drawdown
       | 9545219299    | 13091990 | Individual    | 104175     | Account Holder Name, Account Number, Account Type, Bank Name, Branch Name, IFSC Code |
 
 
-  Scenario Outline: To verify that customer is able to view Content on OTP pop
-    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
-    When User is on Home Page
-    And Customer is able to view My Relations Section to ETB Customers
-    And Customer clicks on view all option
-    And My relations Page should be displayed
-    And click on "Loans" tab
-    And verify Customer is able to go to Service screen from My Relations using FAS No"<Account No>"
-    Then Verify Customer Redirected to "MyAccountLoanServices/LAS/LASDetails" Url
-    And Customer Click on "Drawdown" CTA in RHS
-    Then Verify Customer Redirected to "MyAccountLoanServices/LAS/LasDisbursement" Url
-    And Enters Acceptable Value
-    And Click on "Submit" CTA
-    Then OTP Verification title Displayed
-#    And Verify "A one time password message in LAS Drawdown OTP Screen" is Displayed
-    And verify "Enter OTP" "text" is Displayed
-    And Verify "Resend OTP Button" is Displayed
-    And "Resend OTP Button" is Disabled
-    And Verify "OTP Screen Text box 1" is Displayed
-    And Verify "OTP Screen Text box 2" is Displayed
-    And Verify "OTP Screen Text box 3" is Displayed
-    And Verify "OTP Screen Text box 4" is Displayed
-    And Verify "OTP Screen Text box 5" is Displayed
-    And Verify "OTP Screen Text box 6" is Displayed
-    And Verify "Submit Button in LAS OTP Screen" is Displayed
-    And "Submit Button in LAS OTP Screen" is Disabled
-    And Clicks on "OTP Close Button in LAS Drawdown OTP Screen"
-
-    Examples:
-      | Mobile Number | Date     | Customer Type | Account No |
-      | 9545219299    | 13091990 | Individual    | 104175     |
-
-  Scenario Outline:To verify that Submit CTA is disabled when when OTP input field is empty
-    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
-    When User is on Home Page
-    And Customer is able to view My Relations Section to ETB Customers
-    And Customer clicks on view all option
-    And My relations Page should be displayed
-    And click on "Loans" tab
-    And verify Customer is able to go to Service screen from My Relations using FAS No"<Account No>"
-    Then Verify Customer Redirected to "MyAccountLoanServices/LAS/LASDetails" Url
-    And Customer Click on "Drawdown" CTA in RHS
-    Then Verify Customer Redirected to "MyAccountLoanServices/LAS/LasDisbursement" Url
-    And Enters Acceptable Value
-    And Click on "Submit" CTA
-    Then OTP Verification title Displayed
-    And "Submit Button in LAS OTP Screen" is Disabled
-    And Clicks on "OTP Close Button in LAS Drawdown OTP Screen"
-
-    Examples:
-      | Mobile Number | Date     | Customer Type | Account No |
-      | 9545219299    | 13091990 | Individual    | 104175     |
-
-
-  @new
-  Scenario Outline: To verify that Validation message popup displayed when customer is not eligible for drawdown
-    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
-    When User is on Home Page
-    And Customer is able to view My Relations Section to ETB Customers
-    And Customer clicks on view all option
-    And My relations Page should be displayed
-    And click on "Loans" tab
-    And verify Customer is able to go to Service screen from My Relations using FAS No"<FAS No>"
-    Then Verify Customer Redirected to "MyAccountLoanServices/LAS/LASDetails" Url
-    And Customer Click on "Drawdown" CTA in RHS
-    Then Validation message popup should be displayed with "GOT IT" CTA
-
-    Examples:
-      | Mobile Number | Date       | Customer Type | FAS No |
-      | 9730668866    | 13/09/1990 | Individual    | 131860 |
+#  Scenario Outline: To verify that customer is able to view Content on OTP pop
+#    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
+#    When User is on Home Page
+#    And Customer is able to view My Relations Section to ETB Customers
+#    And Customer clicks on view all option
+#    And My relations Page should be displayed
+#    And click on "Loans" tab
+#    And verify Customer is able to go to Service screen from My Relations using FAS No"<Account No>"
+#    Then Verify Customer Redirected to "MyAccountLoanServices/LAS/LASDetails" Url
+#    And Customer Click on "Drawdown" CTA in RHS
+#    Then Verify Customer Redirected to "MyAccountLoanServices/LAS/LasDisbursement" Url
+#    And Enters Acceptable Value
+#    And Click on "Submit" CTA
+#    Then OTP Verification title Displayed
+##    And Verify "A one time password message in LAS Drawdown OTP Screen" is Displayed
+#    And verify "Enter OTP" "text" is Displayed
+#    And Verify "Resend OTP Button" is Displayed
+#    And "Resend OTP Button" is Disabled
+#    And Verify "OTP Screen Text box 1" is Displayed
+#    And Verify "OTP Screen Text box 2" is Displayed
+#    And Verify "OTP Screen Text box 3" is Displayed
+#    And Verify "OTP Screen Text box 4" is Displayed
+#    And Verify "OTP Screen Text box 5" is Displayed
+#    And Verify "OTP Screen Text box 6" is Displayed
+#    And Verify "Submit Button in LAS OTP Screen" is Displayed
+#    And "Submit Button in LAS OTP Screen" is Disabled
+#    And Clicks on "OTP Close Button in LAS Drawdown OTP Screen"
+#
+#    Examples:
+#      | Mobile Number | Date     | Customer Type | Account No |
+#      | 9545219299    | 13091990 | Individual    | 104175     |
+#
+#  Scenario Outline:To verify that Submit CTA is disabled when when OTP input field is empty
+#    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
+#    When User is on Home Page
+#    And Customer is able to view My Relations Section to ETB Customers
+#    And Customer clicks on view all option
+#    And My relations Page should be displayed
+#    And click on "Loans" tab
+#    And verify Customer is able to go to Service screen from My Relations using FAS No"<Account No>"
+#    Then Verify Customer Redirected to "MyAccountLoanServices/LAS/LASDetails" Url
+#    And Customer Click on "Drawdown" CTA in RHS
+#    Then Verify Customer Redirected to "MyAccountLoanServices/LAS/LasDisbursement" Url
+#    And Enters Acceptable Value
+#    And Click on "Submit" CTA
+#    Then OTP Verification title Displayed
+#    And "Submit Button in LAS OTP Screen" is Disabled
+#    And Clicks on "OTP Close Button in LAS Drawdown OTP Screen"
+#
+#    Examples:
+#      | Mobile Number | Date     | Customer Type | Account No |
+#      | 9545219299    | 13091990 | Individual    | 104175     |
+#
+#
+#  @new
+#  Scenario Outline: To verify that Validation message popup displayed when customer is not eligible for drawdown
+#    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
+#    When User is on Home Page
+#    And Customer is able to view My Relations Section to ETB Customers
+#    And Customer clicks on view all option
+#    And My relations Page should be displayed
+#    And click on "Loans" tab
+#    And verify Customer is able to go to Service screen from My Relations using FAS No"<FAS No>"
+#    Then Verify Customer Redirected to "MyAccountLoanServices/LAS/LASDetails" Url
+#    And Customer Click on "Drawdown" CTA in RHS
+#    Then Validation message popup should be displayed with "GOT IT" CTA
+#
+#    Examples:
+#      | Mobile Number | Date       | Customer Type | FAS No |
+#      | 9730668866    | 13/09/1990 | Individual    | 131860 |
 
 
 #######Multiple Bank

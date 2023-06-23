@@ -1,16 +1,16 @@
 Feature: Search Box Home Page
 
-@KYC
-    Scenario Outline: Verify User is able to view search bar with search icon
-      Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
-      When User is on Home Page
-      Then User should be able to view search bar on Header section with search icon
-      Examples:
-        | Mobile Number | Date     | Customer Type |
-        | 7827553033    | 08041986 | Individual    |
+
+  Scenario Outline: Verify User is able to view search bar with search icon
+    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
+    When User is on Home Page
+    Then User should be able to view search bar on Header section with search icon
+    Examples:
+      | Mobile Number | Date     | Customer Type |
+      | 7827553033    | 08041986 | Individual    |
 
 
-
+@FailK
   Scenario Outline: Verify user is able to view Cross icon for clear text
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -45,7 +45,7 @@ Feature: Search Box Home Page
       | Mobile Number | Date     | Customer Type |
       | 7827553033    | 08041986 | Individual    |
 
-  @FailRegKP
+  @FailK
   Scenario Outline: Verify when user clicks on Search Bar screen 6 Promoted Searches overlay appears with the background greyed out
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -61,7 +61,7 @@ Feature: Search Box Home Page
       |    7827553033   |   08041986 |Individual |Loan Status|
       |    7827553033   |   08041986 |Individual| Customer Care |
 
-@FailRegKP
+  @FailRegKP
   Scenario Outline: verify that customer is redirected to desired search result page When customer  clicks  any popular searches
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -113,7 +113,7 @@ Feature: Search Box Home Page
       | Mobile Number | Date     | Customer Type | Search Keywords |
       | 7827553033    | 08041986 | Individual    |  Ho    |
 
-@FailRegK
+  @FailRegK
   Scenario Outline: Verify customer is redirected to appropriate suggested search result page on clicking on any suggested search option
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -131,7 +131,7 @@ Feature: Search Box Home Page
       | 7827553033    | 08041986 | Individual    |  Individual fixed deposit    | Fixed deposit meaning  |
       | 7827553033    | 08041986 | Individual    |  Individual fixed deposit    | Fixed deposit rate   |
 
-@FailRegK
+  @FailRegK
   Scenario Outline: Verify user is able to enter 26 characters on search bar
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -145,7 +145,7 @@ Feature: Search Box Home Page
       |    7827553033   |   08041986 |Individual| Get in touch on Bajaj Finserv Portal|
 
 
-
+@FailK
   Scenario Outline: Verify that customer is not able to enter invalid data In search field
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page

@@ -769,4 +769,60 @@ public class RARPage extends ApplicationKeywords {
     }
 
 
+    /////////////////Greivence Redresaal- 24052023////////////////////////////
+
+    /*
+XPATH
+ */
+    public static final String req_Filter = "Request History Filter#xpath=//a[@class='p_select_status']";
+    public static final String header_ClosedRequests = "Header - Closed Requets#xpath=//div[@id='divClose'][not (@style='display: none;')]/strong";
+    public static final String resp_Details = "Response Details#xpath=//div[@class='p_Request_ID_BG']";
+
+    /*
+    Methods
+     */
+    public void clickOnReqHistoryFilter(String Option, String extra) {
+        String filter = "Filter Option- " + Option + "#xpath=//div[@class='p_status_sel_bg']/descendant::p[normalize-space(text())='" + Option.trim() + "']";
+        try {
+            if (isElementDisplayed(filter)) {
+                clickOn(filter);
+            } else {
+                testStepFailed(getRefOfXpath(filter) + "is not Displayed");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in click On Req History Filter .Exception:" + e.getClass());
+        }
+    }
+
+    public void clickOnReqTile(String TileNO, String extra) {
+        String tile = "Tile with SR No- " + TileNO + "#xpath=    //i[normalize-space(text())='" + TileNO.trim() + "']/parent::p/ancestor::a";
+        try {
+            if (isElementDisplayed(tile)) {
+                clickOn(tile);
+                waitTime(2);
+            } else {
+                testStepFailed(getRefOfXpath(tile) + "is not Displayed");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in click On Req Tile .Exception:" + e.getClass());
+        }
+    }
+
+    public void verifyResponseHistoryTile(String TileNO, String extra) {
+        String tile = "Response History for Tile with SR No- " + TileNO + "#xpath=    //i[normalize-space(text())='" + TileNO.trim() + "']/parent::strong/parent::div[@class='p_Request_ID_list']";
+        try {
+            if (isElementDisplayed(tile)) {
+                testStepPassed(getRefOfXpath(tile) + " is Displayed Successfully");
+            } else {
+                testStepFailed(getRefOfXpath(tile) + "is not Displayed");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Response History Tile .Exception:" + e.getClass());
+        }
+    }
+
+
 }

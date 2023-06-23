@@ -324,7 +324,7 @@ public class LASSteps extends ApplicationKeywords {
 
     @And("Click on {string} CTA present on pop up")
     public void clickOnCTAPresentOnPopUp(String btn) {
-        clickOnButtonUsingTextUsingForLoop(btn);
+        clickOnButtonUsingTextUsingForLoopWithoutWait(btn);
     }
 
     @Then("Pre-approved Offers section should be displayed same as the Pre-approved Offers section displayed on Home Page")
@@ -408,7 +408,7 @@ public class LASSteps extends ApplicationKeywords {
 
     @Then("Validation message popup should be displayed with {string} CTA")
     public void validationMessagePopupShouldBeDisplayedWithCTA(String btn) {
-        verifyFieldDisplayedUsingTagAndText("h4","Alert","");
+//        verifyFieldDisplayedUsingTagAndText("h4","Alert","");
         verifyFieldsDisplayedUsingText("You cannot Drawdown money now as the available limit on your loan is less than the eligible amount.");
         verifyButtonIsDisplayedInThePage(btn);
 

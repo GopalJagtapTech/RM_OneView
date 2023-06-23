@@ -1,0 +1,18 @@
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/fixed-deposit-online?ProductName=SDP. Exception: class org.openqa.selenium.TimeoutException------------>  Investments - Systematic Deposit Plan
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/investments/fixed-deposit------------>  Investments - Systematic Deposit Plan
+
+Expected URL : https://www.bajajfinserv.in/fixed-deposit-online?ProductName=SDP------------>  Investments - Systematic Deposit Plan
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/fixed-deposit-online?ProductName=FD. Exception: class org.openqa.selenium.TimeoutException------------>  Investments - Senior Citizen FD'
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/investments/fixed-deposit------------>  Investments - Senior Citizen FD'
+
+Expected URL : https://www.bajajfinserv.in/fixed-deposit-online?ProductName=FD------------>  Investments - Senior Citizen FD'
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/mutual-funds. Exception: class org.openqa.selenium.TimeoutException------------>  Investments - Mutual Funds3
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/investments/mutual-funds------------>  Investments - Mutual Funds3
+
+Expected URL : https://www.bajajfinserv.in/mutual-funds------------>  Investments - Mutual Funds3
+

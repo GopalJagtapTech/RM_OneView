@@ -1,6 +1,6 @@
 Feature: Parent & Linked loon breakup for Foreclosure payment
 #Hamburger flow
-  @check
+  @pass
   Scenario Outline: To verify after proceeding for Foreclosure we are redirected to Foreclosure details page
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -16,7 +16,7 @@ Feature: Parent & Linked loon breakup for Foreclosure payment
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | Loan Account Number | Payment Option | Tab         |
       | 9784698647    | 05081984 | Individual    | Loan payment | Other payments | 536LRDJE318970      | Foreclosure    | Foreclosure |
 
-  @check
+  @fail
   Scenario Outline: To verify after clicking on Foreclosure tool tip 'Linked Loan Charges Breakup' are displayed (Customer must have active Parent Child Loan and be eligible for Foreclosure)
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -111,7 +111,7 @@ Feature: Parent & Linked loon breakup for Foreclosure payment
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | Loan Account Number | Payment Option | Tab         |
       | 9784698647    | 05081984 | Individual    | Loan payment | Other payments | 536LRDJE318970      | Foreclosure    | Foreclosure |
 
-  @check
+  @pass
   Scenario Outline: To verify after clicking on Got it CTA on toot tip we are redirected to Foreclosure details page
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -129,7 +129,7 @@ Feature: Parent & Linked loon breakup for Foreclosure payment
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | Loan Account Number | Payment Option | Tab         |
       | 9784698647    | 05081984 | Individual    | Loan payment | Other payments | 536LRDJE318970      | Foreclosure    | Foreclosure |
 
-  @check
+  @pass
   Scenario Outline: To verify Proceed to Payment CTA is disabled when Foreclosure reason is not selected
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -145,7 +145,7 @@ Feature: Parent & Linked loon breakup for Foreclosure payment
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | Loan Account Number | Payment Option | Tab         |
       | 9784698647    | 05081984 | Individual    | Loan payment | Other payments | 536LRDJE318970      | Foreclosure    | Foreclosure |
 
-  @check
+  @pass
   Scenario Outline: To verify after clicking on contact details tool tip content is displayed
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -164,7 +164,7 @@ Feature: Parent & Linked loon breakup for Foreclosure payment
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | Loan Account Number | Payment Option | Tab         |
       | 9784698647    | 05081984 | Individual    | Loan payment | Other payments | 536LRDJE318970      | Foreclosure    | Foreclosure |
 
-  @check
+  @pass
   Scenario Outline: To verify after clicking on Done CTA on toot tip we are redirected to Foreclosure details page
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -182,7 +182,7 @@ Feature: Parent & Linked loon breakup for Foreclosure payment
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | Loan Account Number | Payment Option | Tab         |
       | 9784698647    | 05081984 | Individual    | Loan payment | Other payments | 536LRDJE318970      | Foreclosure    | Foreclosure |
 
-  @check
+  @pass
   Scenario Outline: To verify after clicking on Proceed to Payment CTA we are redirected to Payment Checkout Page
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page

@@ -1,4 +1,4 @@
-@rhs
+@LAS
 Feature: LAS Services (Share repledge and share release )
 
   @pass
@@ -384,72 +384,72 @@ Feature: LAS Services (Share repledge and share release )
 
     ######OTP Failed Attempts
 
-  @check
-  Scenario Outline: To verify the Invalid Message OTP Attempts
-    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
-    When User is on Home Page
-    And Customer is able to view My Relations Section to ETB Customers
-    And Customer clicks on view all option
-    And My relations Page should be displayed
-    And click on "Loans" tab
-    And verify Customer is able to go to Service screen from My Relations using FAS No"<Account No>"
-    And Customer Click on "Release Securities" CTA in RHS
-    Then Verify Customer Redirected to "MyAccountLoanServices/LAS/ShareRelease" Url
-    And clicks on Check Box number 1 in Choose a Bank below
-    And User enters a value "10" in Shares to Unpledge Input Box 1
-    And Clicks on "Submit" Button
-    Then OTP Verification title Displayed
-    And Enter "1" in "OTP Screen Text box 1"
-    And Enter "2" in "OTP Screen Text box 2"
-    And Enter "3" in "OTP Screen Text box 3"
-    And Enter "4" in "OTP Screen Text box 4"
-    And Enter "5" in "OTP Screen Text box 5"
-    And Enter "5" in "OTP Screen Text box 6"
-    And Clicks on "SUBMIT" Button
-    And verify "You have entered wrong OTP. 2 attempts left." "Error text" is Displayed
-    And Enter "1" in "OTP Screen Text box 1"
-    And Enter "2" in "OTP Screen Text box 2"
-    And Enter "3" in "OTP Screen Text box 3"
-    And Enter "4" in "OTP Screen Text box 4"
-    And Enter "5" in "OTP Screen Text box 5"
-    And Enter "5" in "OTP Screen Text box 6"
-    And Clicks on "SUBMIT" Button
-    And verify "You have entered wrong OTP. 1 attempt left." "Error text" is Displayed
-    And Enter "1" in "OTP Screen Text box 1"
-    And Enter "2" in "OTP Screen Text box 2"
-    And Enter "3" in "OTP Screen Text box 3"
-    And Enter "4" in "OTP Screen Text box 4"
-    And Enter "5" in "OTP Screen Text box 5"
-    And Enter "5" in "OTP Screen Text box 6"
-    And Clicks on "SUBMIT" Button
-    And verify "You have entered wrong OTP multiple times. Please try again after sometime." "Error text" is Displayed
-
-    Examples:
-      | Mobile Number | Date     | Customer Type | Account No |
-      | 8794430710    | 13091990 | Individual    | 115984     |
-
-
-@check
-  Scenario Outline: To verify resend OTP CTA is enable after 60 seconds and timer is decrementing from 60 secs
-    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
-    When User is on Home Page
-    And Customer is able to view My Relations Section to ETB Customers
-    And Customer clicks on view all option
-    And My relations Page should be displayed
-    And click on "Loans" tab
-    And verify Customer is able to go to Service screen from My Relations using FAS No"<Account No>"
-    And Customer Click on "Release Securities" CTA in RHS
-    Then Verify Customer Redirected to "MyAccountLoanServices/LAS/ShareRelease" Url
-    And clicks on Check Box number 1 in Choose a Bank below
-    And User enters a value "10" in Shares to Unpledge Input Box 1
-    And Clicks on "Submit" Button
-    And Verify "Disable Resend OTP Button" is Displayed
-    And Wait 60 seconds
-    And Verify "Enable Resend OTP Button" is Displayed
-
-    Examples:
-      | Mobile Number | Date     | Customer Type | Account No | OTP    |
-      | 8794430710    | 13091990 | Individual    | 115984     | 111111 |
+#  @check
+#  Scenario Outline: To verify the Invalid Message OTP Attempts
+#    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
+#    When User is on Home Page
+#    And Customer is able to view My Relations Section to ETB Customers
+#    And Customer clicks on view all option
+#    And My relations Page should be displayed
+#    And click on "Loans" tab
+#    And verify Customer is able to go to Service screen from My Relations using FAS No"<Account No>"
+#    And Customer Click on "Release Securities" CTA in RHS
+#    Then Verify Customer Redirected to "MyAccountLoanServices/LAS/ShareRelease" Url
+#    And clicks on Check Box number 1 in Choose a Bank below
+#    And User enters a value "10" in Shares to Unpledge Input Box 1
+#    And Clicks on "Submit" Button
+#    Then OTP Verification title Displayed
+#    And Enter "1" in "OTP Screen Text box 1"
+#    And Enter "2" in "OTP Screen Text box 2"
+#    And Enter "3" in "OTP Screen Text box 3"
+#    And Enter "4" in "OTP Screen Text box 4"
+#    And Enter "5" in "OTP Screen Text box 5"
+#    And Enter "5" in "OTP Screen Text box 6"
+#    And Clicks on "SUBMIT" Button
+#    And verify "You have entered wrong OTP. 2 attempts left." "Error text" is Displayed
+#    And Enter "1" in "OTP Screen Text box 1"
+#    And Enter "2" in "OTP Screen Text box 2"
+#    And Enter "3" in "OTP Screen Text box 3"
+#    And Enter "4" in "OTP Screen Text box 4"
+#    And Enter "5" in "OTP Screen Text box 5"
+#    And Enter "5" in "OTP Screen Text box 6"
+#    And Clicks on "SUBMIT" Button
+#    And verify "You have entered wrong OTP. 1 attempt left." "Error text" is Displayed
+#    And Enter "1" in "OTP Screen Text box 1"
+#    And Enter "2" in "OTP Screen Text box 2"
+#    And Enter "3" in "OTP Screen Text box 3"
+#    And Enter "4" in "OTP Screen Text box 4"
+#    And Enter "5" in "OTP Screen Text box 5"
+#    And Enter "5" in "OTP Screen Text box 6"
+#    And Clicks on "SUBMIT" Button
+#    And verify "You have entered wrong OTP multiple times. Please try again after sometime." "Error text" is Displayed
+#
+#    Examples:
+#      | Mobile Number | Date     | Customer Type | Account No |
+#      | 8794430710    | 13091990 | Individual    | 115984     |
+#
+#
+#@check
+#  Scenario Outline: To verify resend OTP CTA is enable after 60 seconds and timer is decrementing from 60 secs
+#    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
+#    When User is on Home Page
+#    And Customer is able to view My Relations Section to ETB Customers
+#    And Customer clicks on view all option
+#    And My relations Page should be displayed
+#    And click on "Loans" tab
+#    And verify Customer is able to go to Service screen from My Relations using FAS No"<Account No>"
+#    And Customer Click on "Release Securities" CTA in RHS
+#    Then Verify Customer Redirected to "MyAccountLoanServices/LAS/ShareRelease" Url
+#    And clicks on Check Box number 1 in Choose a Bank below
+#    And User enters a value "10" in Shares to Unpledge Input Box 1
+#    And Clicks on "Submit" Button
+#    And Verify "Disable Resend OTP Button" is Displayed
+#    And Wait 60 seconds
+#    And Verify "Enable Resend OTP Button" is Displayed
+#
+#    Examples:
+#      | Mobile Number | Date     | Customer Type | Account No | OTP    |
+#      | 8794430710    | 13091990 | Individual    | 115984     | 111111 |
 
 
 

@@ -1,0 +1,8 @@
+Check your CIBIL Score Carousal Title is Not Displayed------------>  Carousal - Check your CIBIL Score
+
+The given window "2" is failed to open------------>  Carousal - Book an FD at up to 8.10% p.a.
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/investments/fixed-deposit------------>  Carousal - Book an FD at up to 8.10% p.a.
+
+Expected URL : https://www.bajajfinserv.in/fixed-deposit-online?ProductName=FD------------>  Carousal - Book an FD at up to 8.10% p.a.
+

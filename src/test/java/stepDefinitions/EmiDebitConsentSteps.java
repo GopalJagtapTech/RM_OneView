@@ -54,13 +54,13 @@ public class EmiDebitConsentSteps  extends ApplicationKeywords{
 
         verifyFieldsDisplayedUsingText("Give consent to clear your overdue EMI");
         verifyFieldsDisplayedUsingText("Keep sufficient balance in your registered bank account as your overdue payment will get deducted in the next one to three days");
-         verifyFieldsDisplayedUsingText("Clear your overdue EMIs now");
-         verifyFieldsDisplayedUsingText("DIGITAL PRODUCT FINANCE");
-         verifyFieldsDisplayedUsingText("Loan Account Number: 418DPFFM862608");
-         verifyFieldsDisplayedUsingText("What is the overdue EMI debit consent facility?");
+        verifyFieldsDisplayedUsingText("Clear your overdue EMIs now");
+        verifyFieldsDisplayedUsingText("DIGITAL PRODUCT FINANCE");
+        verifyFieldsDisplayedUsingText("Loan Account Number: 418DPFFM862608");
+        verifyFieldsDisplayedUsingText("What is the overdue EMI debit consent facility?");
         verifyFieldsDisplayedUsingText("View details of your registered bank account");
         verifyFieldsDisplayedUsingText("Always keep sufficient balance in your bank account before your EMI due date to avoid bounce.");
-         verifyFieldsDisplayedUsingLocator(loginfieldsPage.radioTickButton);
+        verifyFieldsDisplayedUsingLocator(loginfieldsPage.radioTickButton);
         verifyFieldsDisplayedUsingLocator(loginfieldsPage.payOnline);
         verifyFieldsDisplayedUsingLocator(loginfieldsPage.checkMandate);
         verifyFieldsDisplayedUsingLocator(loginfieldsPage.quickActionsFaq);
@@ -70,22 +70,22 @@ public class EmiDebitConsentSteps  extends ApplicationKeywords{
 
     @Then("Verify active loans with overdue are displayed")
     public void verify_active_loans_with_overdue_are_displayed() {
-      verifyFieldsDisplayedUsingText("Select your loan account with overdue EMIs");
-      verifyFieldsDisplayedUsingLocator(loginfieldsPage.radioTickButton);
+        verifyFieldsDisplayedUsingText("Select your loan account with overdue EMIs");
+        verifyFieldsDisplayedUsingLocator(loginfieldsPage.radioTickButton);
     }
 
 
 
     @When("User unselects the selected {string}")
     public void user_unselects_the_selected(String string) {
-       loginfieldsPage.clickOnLanTick(string);
-       testStepInfo("Unselecting the Lan Box");
+        loginfieldsPage.clickOnLanTick(string);
+        testStepInfo("Unselecting the Lan Box");
         loginfieldsPage.clickOnLanTick(string);
 
     }
     @Then("Accept CTA should be disabled")
     public void accept_cta_should_be_disabled() {
-      verifyFieldsDisplayedUsingLocator(loginfieldsPage.disabledAccept);
+        verifyFieldsDisplayedUsingLocator(loginfieldsPage.disabledAccept);
     }
 
 
@@ -95,7 +95,7 @@ public class EmiDebitConsentSteps  extends ApplicationKeywords{
     }
     @Then("User should be redirected to Multiple Overdue Payment Page")
     public void user_should_be_redirected_to_multiple_overdue_payment_page() {
-       verifyFieldsDisplayedUsingText("Loans with overdue payments");
+        verifyFieldsDisplayedUsingText("Loans with overdue payments");
     }
 
 
@@ -105,12 +105,12 @@ public class EmiDebitConsentSteps  extends ApplicationKeywords{
     }
     @Then("User should be redirected to Mandate Management Page")
     public void user_should_be_redirected_to_mandate_management_page() {
-       verifyRedirectionURLIfContains("https://uat-oneweb.bajajfinserv.in/MyAccountService/Emandate/");
+        verifyRedirectionURLIfContains("https://uat-oneweb.bajajfinserv.in/MyAccountService/Emandate/");
     }
 
     @Then("Verify {string} section")
     public void verify_section(String string) {
-       verifyFieldsDisplayedUsingText("Always keep sufficient balance in your bank account before your EMI due date to avoid bounce.");
+        verifyFieldsDisplayedUsingText("Always keep sufficient balance in your bank account before your EMI due date to avoid bounce.");
     }
 
     @When("User selects {string}")
@@ -155,7 +155,7 @@ public class EmiDebitConsentSteps  extends ApplicationKeywords{
     }
     @Then("User should be redirected to Uh-OH Page")
     public void user_should_be_redirected_to_uh_oh_page() {
-       verifyFieldsDisplayedUsingText("Uh, oh!");
+        verifyFieldsDisplayedUsingText("Uh, oh!");
         verifyFieldsDisplayedUsingText("You have rejected the consent. Pay your EMI overdues immediately.");
     }
 
@@ -166,26 +166,26 @@ public class EmiDebitConsentSteps  extends ApplicationKeywords{
     }
     @Then("User should be redirected to FAQ details Page")
     public void user_should_be_redirected_to_faq_details_page() {
-       verifyFieldsDisplayedUsingText("Choose a category you need help with");
+        verifyFieldsDisplayedUsingText("Choose a category you need help with");
     }
 
     @When("User clicks on Done CTA")
     public void user_clicks_on_done_cta() {
-       clickOn(loginfieldsPage.doneButton);
+        clickOn(loginfieldsPage.doneButton);
     }
     @Then("User should be redirected to Home Page")
     public void user_should_be_redirected_to_home_page() {
-       verifyRedirectionURLIfContains("https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index");
+        verifyRedirectionURLIfContains("https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index");
     }
 
 
     @When("User clicks on Accept CTA")
     public void user_clicks_on_accept_cta() {
-     clickOn(loginfieldsPage.acceptButton);
-       }
+        clickOn(loginfieldsPage.acceptButton);
+    }
     @Then("User should be redirected to Acknowledgement screen")
     public void user_should_be_redirected_to_acknowledgement_screen() {
-   verifyRedirectionURLIfContains("https://uat-oneweb.bajajfinserv.in/MyAccountPayments/CollectionPay/EMIDebitConsent_Receipt");
+        verifyRedirectionURLIfContains("https://uat-oneweb.bajajfinserv.in/MyAccountPayments/CollectionPay/EMIDebitConsent_Receipt");
     }
 
 

@@ -1,20 +1,21 @@
+
+@EmiCard
+
 Feature: EMI Card Services 2887861, 2926340-Dynamic height – EMI and all previous Scenarios
 
-@FeesKP
+  @FeesKP
   Scenario Outline: To verify Fees and Charges details
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
     And Clicks on View All of My relatiom
     And Click on "<SubTab>" in View All
-   And click on Tile having product code "<Policy No>"
+    And click on Tile having product code "<Policy No>"
     And Click on Fees and Charges icon under Insta EMI Card
     Then verify Fees and Charges section
 
-  Examples:
-  | Mobile Number | Date     | Customer Type |SubTab |Policy No |
-  | 9654418901|02-03-1960| Individual	     | Cards | 2030-XXXX-XXXX-3870 |
-
-
+    Examples:
+      | Mobile Number | Date     | Customer Type |SubTab |Policy No |
+      | 9654418901|02-03-1960| Individual	     | Cards | 2030-XXXX-XXXX-3870 |
 
   @FeesKP
   Scenario Outline: EMI Card Services-add additional charges, nomenclature and amount change in the Fees and Charges Section.
@@ -25,9 +26,9 @@ Feature: EMI Card Services 2887861, 2926340-Dynamic height – EMI and all previ
     And  Click on View All CTA under Fees and Charges section
     Then verify Fees and Charges section in View All section
 
-  Examples:
-  | Mobile Number | Date     | Customer Type |
-  | 9654418901|02-03-1960| Individual	     |
+    Examples:
+      | Mobile Number | Date     | Customer Type |
+      | 9654418901|02-03-1960| Individual	     |
 
 
 
@@ -65,25 +66,25 @@ Feature: EMI Card Services 2887861, 2926340-Dynamic height – EMI and all previ
 
 
   @FailRegK
-Scenario Outline: EMI Card Services-Redirection to RAR Page
-  Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
-  When User is on Home Page
-  And verify Customer is redirected to EMI Card service page when Click on EMI Card icon through header EMI Card section
-  Then User Verifies the "<Blocked Reason>"
-  Then User Verifies  Unblocking Process "<Unblocking process>"
-  Then User Verifies the unblocking Timeline "<Unblocking Timeline>"
-  And User Clicks on Unblock Card
-  Then User Verifies Validation  Popup message
-  And Verify after clicking on close it stays on Same Page
-  And User Clicks on Unblock Card
-  And Verify after clicking on close icon it stays on Same Page
+  Scenario Outline: EMI Card Services-Redirection to RAR Page
+    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
+    When User is on Home Page
+    And verify Customer is redirected to EMI Card service page when Click on EMI Card icon through header EMI Card section
+    Then User Verifies the "<Blocked Reason>"
+    Then User Verifies  Unblocking Process "<Unblocking process>"
+    Then User Verifies the unblocking Timeline "<Unblocking Timeline>"
+    And User Clicks on Unblock Card
+    Then User Verifies Validation  Popup message
+    And Verify after clicking on close it stays on Same Page
+    And User Clicks on Unblock Card
+    And Verify after clicking on close icon it stays on Same Page
   #Then User Verifies it is succesfully redirected to RAR Page after clicking on Ok button
-  Examples:
-    | Mobile Number | Date     | Customer Type | Blocked Reason|Unblocking process |Unblocking Timeline |
-    | 9768741343    | 11111999 | Individual    |   Can't Verify The Card Holder's Identity | Provide KYC Documents For Verification | Within 72 Hours Of Request Submission |
+    Examples:
+      | Mobile Number | Date     | Customer Type | Blocked Reason|Unblocking process |Unblocking Timeline |
+      | 9768741343    | 11111999 | Individual    |   Can't Verify The Card Holder's Identity | Provide KYC Documents For Verification | Within 72 Hours Of Request Submission |
 
 
-@FailRegK
+  @FailRegK
   Scenario Outline: EMI Card Services-Quick Actions Blocked Card
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -109,7 +110,7 @@ Scenario Outline: EMI Card Services-Redirection to RAR Page
       | Mobile Number | Date     | Customer Type |
       | 9211368717     | 01011980 | Individual    |
 
-@ContentChanges
+  @ContentChanges
   Scenario Outline: EMI Card Services - Relationship and Fees and charges Faq and Cibil Score for Active Card
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -153,7 +154,7 @@ Scenario Outline: EMI Card Services-Redirection to RAR Page
       | Mobile Number | Date     | Customer Type |
       | 9997502000    | 22091988 | Individual    |
 
-@FailRun
+  @FailRun
   Scenario Outline: EMI Card Services-Navigate to Emicard Page and verifies all Fields
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -344,7 +345,7 @@ Scenario Outline: EMI Card Services-Redirection to RAR Page
     #    | 9819427072    | 26051982 | Individual    |
 
 
-@InactiveFees
+  @InactiveFees
   Scenario Outline: EMI Card Services - Relationship and Fees and charges Faq and Cibil Score
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -387,7 +388,7 @@ Scenario Outline: EMI Card Services-Redirection to RAR Page
 
     Examples:
       | Mobile Number | Date     | Customer Type |
-     | 9211368717     | 01011980 | Individual    |
+      | 9211368717     | 01011980 | Individual    |
     #  |9821466790      | 21101966 | Individual    |
      #  | 7303555577    | 17091985 | Individual    |
   @FailRegK
@@ -419,7 +420,7 @@ Scenario Outline: EMI Card Services-Redirection to RAR Page
 
 
 # 9997502000  22091988
-@FailRun
+  @FailRun
   Scenario Outline: EMI Card Services- Unblock card
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User lands on Home Page
@@ -478,7 +479,7 @@ Scenario Outline: EMI Card Services-Redirection to RAR Page
 #      | Mobile Number | Date     | Customer Type |
 #      | 9819427072| 26051982 | Individual    |
 
-@FailK
+  @FailK
   Scenario Outline: EMI Card Services –Card Limited Transaction- card activation date is between 17th Feb 2021 to 11th May 2022
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -493,7 +494,7 @@ Scenario Outline: EMI Card Services-Redirection to RAR Page
       | 8976077725| 10111978 | Individual    |  https://www.bajajfinservhealth.in/health-emi-card  |
 
 
-@Limited
+  @Limited
   Scenario Outline: EMI Card Services –Card Limited Transaction
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -506,7 +507,7 @@ Scenario Outline: EMI Card Services-Redirection to RAR Page
       | Mobile Number | Date     | Customer Type |
       | 9028222947| 04071987 | Individual    |
 
-@eiho
+  @eiho
   Scenario Outline: EMI Card Services –Card Limited Transaction- Card activation date is from 12th May 2022-80 number of health card
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -516,9 +517,9 @@ Scenario Outline: EMI Card Services-Redirection to RAR Page
     Then Verify Customer clicks on the Avail Now CTA button
     And verify Page Redirection to "<Expected Url>" Url
 
-  Examples:
-    | Mobile Number | Date     | Customer Type | Expected Url |
-    | 9840052911| 06111980 | Individual    |  https://www.bajajfinservhealth.in/health-emi-card   |
+    Examples:
+      | Mobile Number | Date     | Customer Type | Expected Url |
+      | 9840052911| 06111980 | Individual    |  https://www.bajajfinservhealth.in/health-emi-card   |
 
 
   @FailK
@@ -529,7 +530,7 @@ Scenario Outline: EMI Card Services-Redirection to RAR Page
     And verify customer is able to view offer description when customer is having 82 number of health card
     And Verify the first point 10 tele Consultations with All Specialists Second Point Free Preventive health check up update XX Test third Point Rs. 2,500 Lab & OPD benefit redeemable at any Hospital
     Then Verify Customer clicks on Avail Now CTA button
-   And verify Page Redirection to "<Expected Url>" Url
+    And verify Page Redirection to "<Expected Url>" Url
 
     Examples:
       | Mobile Number | Date     | Customer Type | Expected Url |

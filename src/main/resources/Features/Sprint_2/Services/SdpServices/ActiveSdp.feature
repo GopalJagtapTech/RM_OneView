@@ -159,8 +159,9 @@ Feature: SDP Services
     Then verify below Labels of "Nominee Details" in "SYSTEMATIC DEPOSIT PLAN" Relationship Details: "<Label Names>"
     And verify "Name" Should Not be Masked Format
     And verify "Relation" Should Not be Masked Format
-    And verify Last 4 Characters Should be "UnMasked" ("X") in "Date Of Birth"
-    And verify Other than Last 4 Characters Should be "Masked" ("X") in "Date Of Birth"
+    And verify "Date of Birth" Should Not be Masked Format
+#    And verify Last 4 Characters Should be "UnMasked" ("X") in "Date Of Birth"
+#    And verify Other than Last 4 Characters Should be "Masked" ("X") in "Date Of Birth"
 #    And verify "Nominee Address" Masked And UnMasked Format in "Nominee Details"
     And verify "Edit Nominee" button is Displayed
     Examples:

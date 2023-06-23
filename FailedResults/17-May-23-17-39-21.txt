@@ -1,0 +1,92 @@
+Banner Offers Fixed Deposit Image is Not Present------------>  Banner Offers - Fixed Deposit
+
+Banner Offers Fixed Deposit Description Text is Not Present------------>  Banner Offers - Fixed Deposit
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/fixed-deposit-online?ProductName=FD. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Fixed Deposit
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/investments/fixed-deposit------------>  Banner Offers - Fixed Deposit
+
+Expected URL : https://www.bajajfinserv.in/fixed-deposit-online?ProductName=FD------------>  Banner Offers - Fixed Deposit
+
+Banner Offers Car Insurance Image is Not Present------------>  Banner Offers - Car Insurance
+
+Banner Offers Personal Loan Image is Not Present------------>  Banner Offers - Personal Loan)
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/personal-loan. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Personal Loan)
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/personal-loan------------>  Banner Offers - Personal Loan)
+
+Expected URL : https://www.bajajfinserv.in/personal-loan------------>  Banner Offers - Personal Loan)
+
+Failed in wait for Banner Offers Bajaj Finserv RBL Bank SuperCard Title Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Bajaj Finserv RBL Bank SuperCard6
+
+Banner Offers Bajaj Finserv RBL Bank SuperCard Title is Not Displayed------------>  Banner Offers - Bajaj Finserv RBL Bank SuperCard6
+
+Banner Offers Bajaj Finserv RBL Bank SuperCard Image is Not Present------------>  Banner Offers - Bajaj Finserv RBL Bank SuperCard6
+
+Failed in wait for Banner Offers Bajaj Finserv RBL Bank SuperCard Description Text Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Bajaj Finserv RBL Bank SuperCard6
+
+Banner Offers Bajaj Finserv RBL Bank SuperCard Description Text is Not Displayed------------>  Banner Offers - Bajaj Finserv RBL Bank SuperCard6
+
+Failed in wait for Banner Offers Bajaj Finserv RBL Bank SuperCard Apply Now Button Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Bajaj Finserv RBL Bank SuperCard6
+
+Banner Offers Bajaj Finserv RBL Bank SuperCard Apply Now Button is Not Displayed------------>  Banner Offers - Bajaj Finserv RBL Bank SuperCard6
+
+Failed in wait for Banner Offers Bajaj Finserv RBL Bank SuperCard Apply Now Button Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Bajaj Finserv RBL Bank SuperCard6
+
+Banner Offers Bajaj Finserv RBL Bank SuperCard Apply Now Button is Not Displayed------------>  Banner Offers - Bajaj Finserv RBL Bank SuperCard6
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/apply-for-credit-card-online. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Bajaj Finserv RBL Bank SuperCard6
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=f6ffd695-0314-4f34-b14e-e5ccef878ce5#;------------>  Banner Offers - Bajaj Finserv RBL Bank SuperCard6
+
+Expected URL : https://www.bajajfinserv.in/apply-for-credit-card-online------------>  Banner Offers - Bajaj Finserv RBL Bank SuperCard6
+
+Failed in wait for Banner Offers Insta EMI Card Title Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Insta EMI CardC
+
+Banner Offers Insta EMI Card Title is Not Displayed------------>  Banner Offers - Insta EMI CardC
+
+Banner Offers Insta EMI Card Image is Not Present------------>  Banner Offers - Insta EMI CardC
+
+Failed in wait for Banner Offers Insta EMI Card Description Text Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Insta EMI CardC
+
+Banner Offers Insta EMI Card Description Text is Not Displayed------------>  Banner Offers - Insta EMI CardC
+
+Failed in wait for Banner Offers Insta EMI Card Apply Now Button Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Insta EMI CardC
+
+Banner Offers Insta EMI Card Apply Now Button is Not Displayed------------>  Banner Offers - Insta EMI CardC
+
+Failed in wait for Banner Offers Insta EMI Card Apply Now Button Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Insta EMI CardC
+
+Banner Offers Insta EMI Card Apply Now Button is Not Displayed------------>  Banner Offers - Insta EMI CardC
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/insta-emi-network-card-apply-online. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Insta EMI CardC
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=f6ffd695-0314-4f34-b14e-e5ccef878ce5#;------------>  Banner Offers - Insta EMI CardC
+
+Expected URL : https://www.bajajfinserv.in/insta-emi-network-card-apply-online------------>  Banner Offers - Insta EMI CardC
+
+Failed in wait for Banner Offers Gold Loan Title Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Gold LoanP
+
+Banner Offers Gold Loan Title is Not Displayed------------>  Banner Offers - Gold LoanP
+
+Banner Offers Gold Loan Image is Not Present------------>  Banner Offers - Gold LoanP
+
+Failed in wait for Banner Offers Gold Loan Description Text Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Gold LoanP
+
+Banner Offers Gold Loan Description Text is Not Displayed------------>  Banner Offers - Gold LoanP
+
+Failed in wait for Banner Offers Gold Loan Apply Now Button Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Gold LoanP
+
+Banner Offers Gold Loan Apply Now Button is Not Displayed------------>  Banner Offers - Gold LoanP
+
+Failed in wait for Banner Offers Gold Loan Apply Now Button Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Gold LoanP
+
+Banner Offers Gold Loan Apply Now Button is Not Displayed------------>  Banner Offers - Gold LoanP
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/gold-loan-application-form. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Gold LoanP
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=f6ffd695-0314-4f34-b14e-e5ccef878ce5#;------------>  Banner Offers - Gold LoanP
+
+Expected URL : https://www.bajajfinserv.in/gold-loan-application-form------------>  Banner Offers - Gold LoanP
+

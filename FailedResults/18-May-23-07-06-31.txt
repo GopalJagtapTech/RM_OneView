@@ -1,0 +1,30 @@
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/bbps-bills-and-payments. Exception: class org.openqa.selenium.TimeoutException------------>  Bills & Recharges - Electricity
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/bbps-bharat-bill-payment-system?utm_source=Website&utm_medium=Experia_Banner&utm_campaign=Experia_Banner_BBPS&shortlink=e5f&c=Website_BBPS_Web%20Business&pid=Web%20Business&source_caller=ui------------>  Bills & Recharges - Electricity
+
+Expected URL : https://www.bajajfinserv.in/bbps-bills-and-payments------------>  Bills & Recharges - Electricity
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/bbps-bills-and-payments. Exception: class org.openqa.selenium.TimeoutException------------>  Bills & Recharges - Mobile
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/bbps-bharat-bill-payment-system?utm_source=Website&utm_medium=Experia_Banner&utm_campaign=Experia_Banner_BBPS&shortlink=e5f&c=Website_BBPS_Web%20Business&pid=Web%20Business&source_caller=ui------------>  Bills & Recharges - Mobile
+
+Expected URL : https://www.bajajfinserv.in/bbps-bills-and-payments------------>  Bills & Recharges - Mobile
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/bbps-bills-and-payments. Exception: class org.openqa.selenium.TimeoutException------------>  Bills & Recharges - DTH'
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/bbps-bharat-bill-payment-system?utm_source=Website&utm_medium=Experia_Banner&utm_campaign=Experia_Banner_BBPS&shortlink=e5f&c=Website_BBPS_Web%20Business&pid=Web%20Business&source_caller=ui------------>  Bills & Recharges - DTH'
+
+Expected URL : https://www.bajajfinserv.in/bbps-bills-and-payments------------>  Bills & Recharges - DTH'
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/bbps-bills-and-payments. Exception: class org.openqa.selenium.TimeoutException------------>  Bills & Recharges - EMIs3
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/bbps-bharat-bill-payment-system?utm_source=Website&utm_medium=Experia_Banner&utm_campaign=Experia_Banner_BBPS&shortlink=e5f&c=Website_BBPS_Web%20Business&pid=Web%20Business&source_caller=ui------------>  Bills & Recharges - EMIs3
+
+Expected URL : https://www.bajajfinserv.in/bbps-bills-and-payments------------>  Bills & Recharges - EMIs3
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/bbps-bills-and-payments. Exception: class org.openqa.selenium.TimeoutException------------>  Bills & Recharges - FASTag?
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/bbps-bharat-bill-payment-system?utm_source=Website&utm_medium=Experia_Banner&utm_campaign=Experia_Banner_BBPS&shortlink=e5f&c=Website_BBPS_Web%20Business&pid=Web%20Business&source_caller=ui------------>  Bills & Recharges - FASTag?
+
+Expected URL : https://www.bajajfinserv.in/bbps-bills-and-payments------------>  Bills & Recharges - FASTag?
+

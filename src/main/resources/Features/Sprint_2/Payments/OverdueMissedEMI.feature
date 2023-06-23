@@ -96,7 +96,7 @@ Feature: Payments - Overdue - Missed EMI
 
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu |
-      | 9015683146    | 20081992 | Individual    | Loan payment | Overdue     |
+      | 8019991986    | 20081992 | Individual    | Loan payment | Overdue     |
 
   @od @1 @ham @regfail
   Scenario Outline: Overdue- Missed EMI- Total Amount to pay should be pre-populated on Selection of multiple loans
@@ -110,7 +110,7 @@ Feature: Payments - Overdue - Missed EMI
 
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu |
-      | 9015683146    | 20081992 | Individual    | Loan payment | Overdue     |
+      | 8019991986    | 20081992 | Individual    | Loan payment | Overdue     |
 
 
 
@@ -401,7 +401,7 @@ Feature: Payments - Overdue - Missed EMI
 
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu | Url                                          |
-      | 9015683146    | 20081992 | Individual    | Loan payment | Overdue     | https://uatpayments.bajajfinserv.in/payments |
+      | 8019991986    | 20081992 | Individual    | Loan payment | Overdue     | https://uatpayments.bajajfinserv.in/payments |
 
 #Other Payment flow
   @new @ham

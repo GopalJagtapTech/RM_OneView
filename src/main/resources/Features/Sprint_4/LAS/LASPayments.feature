@@ -1,7 +1,8 @@
+@LASPayments
 Feature: LAS Payments
 
   ##############PART PAYMENT###################################
-  @pass
+  @pass @partpay
   Scenario Outline: Verify after clicking on LAS tile we are redirected to Part Prepayment details page
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -15,7 +16,7 @@ Feature: LAS Payments
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | LAS             |
       | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 |
 
-  @pass
+  @pass @partpay
   Scenario Outline: Verify minimum amount is prepopulated in input field for part prepayment
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -29,7 +30,7 @@ Feature: LAS Payments
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | LAS             |
       | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 |
 
-  @pass
+  @pass @partpay
   Scenario Outline: Verify Inline message is displayed when customer enters amount outside the range(less than minimum amount and more than maximum amount)
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -44,7 +45,7 @@ Feature: LAS Payments
       | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 |
 
 
-  @pass
+  @pass @partpay
   Scenario Outline: verify Online Payment CTA is disabled when customer enters amount outside the range (less than the minimum amount)
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -58,7 +59,7 @@ Feature: LAS Payments
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | LAS             |
       | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 |
 
-  @pass
+  @pass @partpay
   Scenario Outline: verify Online Payment CTA is disabled when customer enters amount outside the range (more than the maximum amount)
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -72,7 +73,7 @@ Feature: LAS Payments
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | LAS             |
       | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 |
 
-  @pass
+  @pass @partpay
   Scenario Outline: Verify Invalid input is accepted in the input field
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -86,7 +87,7 @@ Feature: LAS Payments
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | LAS             | Invalid input                         |
       | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 | []\,./*&#@$!,        , ABCXYZ, 101... |
 
-  @pass
+  @pass @partpay
   Scenario Outline: Verify after clicking on tooltip Part Prepayment Details are displayed
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -132,7 +133,7 @@ Feature: LAS Payments
 #    Examples:
 #      | Mobile Number | Date     | Customer Type | SubMenu       | SubListMenu    | LAS             | Amount |
 #      | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 |        |
-  @pass
+  @pass @partpay
   Scenario Outline: Verify registered email id and mobile number are displayed under Payment confirmation to be sent on this
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -147,7 +148,7 @@ Feature: LAS Payments
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | LAS             |
       | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 |
 
-  @pass
+  @pass @partpay
   Scenario Outline: Verify registered email id and mobile number are in masked format under Payment confirmation to be sent on this
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -162,7 +163,7 @@ Feature: LAS Payments
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | LAS             |
       | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 |
 
-  @pass
+  @pass @partpay
   Scenario Outline: Verify after clicking on RAR CTA user is redirected to RAR details page
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -177,7 +178,7 @@ Feature: LAS Payments
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | LAS             |
       | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 |
 
-  @pass
+  @pass @partpay
   Scenario Outline: Verify after clicking on FAQ CTA user is redirected to FAQ details page
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -193,7 +194,7 @@ Feature: LAS Payments
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | LAS             |
       | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 |
 
-  @pass
+  @pass @partpay
   Scenario Outline: Verify after clicking on Offline Payment CTA pop up is displayed
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -202,15 +203,15 @@ Feature: LAS Payments
     And Clicks on SubListmenu "<SubListMenu>"
     And Clicks on "<LAS>" tile
     Then Verify Customer Redirected to "MyAccountPayments/LoanPay/LASPartPayment" Url
-    And Enter Valid amount for LAS Missed Interest
-    And Click on "Offline Payment" CTA
+    And Enter Valid amount for LAS PartPayment
+    And Click on "Offline Payment" CTA without wait
     Then Offline Method Pop up should be displayed
 
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | LAS             |
       | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 |
 
-  @pass
+  @pass @partpay
   Scenario Outline: Verify content displayed on Offline method pop up
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -220,7 +221,7 @@ Feature: LAS Payments
     And Clicks on "<LAS>" tile
     Then Verify Customer Redirected to "MyAccountPayments/LoanPay/LASPartPayment" Url
     And Enter Valid amount for LAS PartPayment
-    And Click on "Offline Payment" CTA
+    And Click on "Offline Payment" CTA without wait
     Then Offline Method Pop up should be displayed
     And Content should be displayed for popup with below Details "<Details>"
 
@@ -228,7 +229,7 @@ Feature: LAS Payments
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | LAS             | Details                                                           |
       | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 | Beneficiary Name, Bank Account, Bank Name, IFSC Code, Branch Name |
 
-  @pass
+  @pass @partpay
   Scenario Outline: Verify after clicking on GOT IT CTA customer is redirected to previous screen(Part Prepayment details page)
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -238,7 +239,7 @@ Feature: LAS Payments
     And Clicks on "<LAS>" tile
     Then Verify Customer Redirected to "MyAccountPayments/LoanPay/LASPartPayment" Url
     And Enter Valid amount for LAS PartPayment
-    And Click on "Offline Payment" CTA
+    And Click on "Offline Payment" CTA without wait
     Then Offline Method Pop up should be displayed
     And Click on "GOT IT" CTA present on pop up
     Then Verify Customer Redirected to "MyAccountPayments/LoanPay/LASPartPayment" Url
@@ -246,7 +247,7 @@ Feature: LAS Payments
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | LAS             | Amount |
       | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 |        |
 
-  @pass
+  @pass @partpay
   Scenario Outline: Verify after clicking on Online Payment CTA customer is redirected to Payment Checkout Page
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -256,14 +257,14 @@ Feature: LAS Payments
     And Clicks on "<LAS>" tile
     Then Verify Customer Redirected to "MyAccountPayments/LoanPay/LASPartPayment" Url
     And Enter Valid amount for LAS PartPayment
-    And Click on "Online payment" CTA
+    And Click on "Online payment" CTA without wait
     Then Verify Customer Redirected to respective URL "https://uatpayments.bajajfinserv.in/payments"
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | LAS             |
       | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 |
 
 #  Payment Unsuccessful and Cancelled – Hamburger flow
-  @pass
+  @pass @partpay
   Scenario Outline: Verify after Cancelling the transaction from Payment Checkout page user is redirected to Payment Cancelled Page
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -273,7 +274,7 @@ Feature: LAS Payments
     And Clicks on "<LAS>" tile
     Then Verify Customer Redirected to "MyAccountPayments/LoanPay/LASPartPayment" Url
     And Enter Valid amount for LAS PartPayment
-    And Click on "Online payment" CTA
+    And Click on "Online payment" CTA without wait
     Then Verify Customer Redirected to respective URL "https://uatpayments.bajajfinserv.in/payments"
     And Customer clicks on "Cancel" Button
     Then Verify Customer Redirected to respective URL "MyAccountPayments/LoanPay/Receipt"
@@ -282,7 +283,7 @@ Feature: LAS Payments
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | LAS             |
       | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 |
 
-  @check
+  @check @partpay
   Scenario Outline: Verify after clicking on RAR under Quick Actions on Payment Cancelled Page we are redirected to RAR details page
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -292,7 +293,7 @@ Feature: LAS Payments
     And Clicks on "<LAS>" tile
     Then Verify Customer Redirected to "MyAccountPayments/LoanPay/LASPartPayment" Url
     And Enter Valid amount for LAS PartPayment
-    And Click on "Online payment" CTA
+    And Click on "Online payment" CTA without wait
     Then Verify Customer Redirected to respective URL "https://uatpayments.bajajfinserv.in/payments"
     And Customer clicks on "Cancel" Button
     Then Verify Customer Redirected to respective URL "MyAccountPayments/LoanPay/Receipt"
@@ -302,7 +303,7 @@ Feature: LAS Payments
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | LAS             |
       | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 |
 
-  @check
+  @check @partpay
   Scenario Outline: Verify after clicking on FAQ under Quick Actions on Payment Cancelled Page we are redirected to FAQ details page
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -312,7 +313,7 @@ Feature: LAS Payments
     And Clicks on "<LAS>" tile
     Then Verify Customer Redirected to "MyAccountPayments/LoanPay/LASPartPayment" Url
     And Enter Valid amount for LAS PartPayment
-    And Click on "Online payment" CTA
+    And Click on "Online payment" CTA without wait
     Then Verify Customer Redirected to respective URL "https://uatpayments.bajajfinserv.in/payments"
     And Customer clicks on "Cancel" Button
     Then Verify Customer Redirected to respective URL "MyAccountPayments/LoanPay/Receipt"
@@ -322,7 +323,7 @@ Feature: LAS Payments
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | LAS             |
       | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 |
 
-  @pass
+  @pass @partpay
   Scenario Outline: Verify preapproved Offers section
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -332,7 +333,7 @@ Feature: LAS Payments
     And Clicks on "<LAS>" tile
     Then Verify Customer Redirected to "MyAccountPayments/LoanPay/LASPartPayment" Url
     And Enter Valid amount for LAS PartPayment
-    And Click on "Online payment" CTA
+    And Click on "Online payment" CTA without wait
     Then Verify Customer Redirected to respective URL "https://uatpayments.bajajfinserv.in/payments"
     And Customer clicks on "Cancel" Button
     Then Verify Customer Redirected to respective URL "MyAccountPayments/LoanPay/Receipt"
@@ -341,7 +342,7 @@ Feature: LAS Payments
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | LAS             |
       | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 |
 
-  @pass
+  @pass @partpay
   Scenario Outline: Verify after clicking on Retry CTA under on Payment Cancelled Page we are redirected to Part Prepayment details page
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -351,17 +352,17 @@ Feature: LAS Payments
     And Clicks on "<LAS>" tile
     Then Verify Customer Redirected to "MyAccountPayments/LoanPay/LASPartPayment" Url
     And Enter Valid amount for LAS PartPayment
-    And Click on "Online payment" CTA
+    And Click on "Online payment" CTA without wait
     Then Verify Customer Redirected to respective URL "https://uatpayments.bajajfinserv.in/payments"
     And Customer clicks on "Cancel" Button
     Then Verify Customer Redirected to respective URL "MyAccountPayments/LoanPay/Receipt"
-    And Click on "RETRY PAYMENT" CTA
+    And Customer clicks on "RETRY PAYMENT" Button
     Then Verify Customer Redirected to "MyAccountPayments/LoanPay/LASPartPayment" Url
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | LAS             |
       | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 |
 
-  @pass
+  @pass @partpay
   Scenario Outline: Verify after clicking on Back To Homepage CTA on Payment Cancelled Page we are redirected to Home page
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -371,17 +372,18 @@ Feature: LAS Payments
     And Clicks on "<LAS>" tile
     Then Verify Customer Redirected to "MyAccountPayments/LoanPay/LASPartPayment" Url
     And Enter Valid amount for LAS PartPayment
-    And Click on "Online payment" CTA
+    And Click on "Online payment" CTA without wait
     Then Verify Customer Redirected to respective URL "https://uatpayments.bajajfinserv.in/payments"
     And Customer clicks on "Cancel" Button
     Then Verify Customer Redirected to respective URL "MyAccountPayments/LoanPay/Receipt"
-    And Click on "BACK TO HOMEPAGE" CTA
+    And Customer clicks on "BACK TO HOMEPAGE" Button
     Then Verify Customer Redirected to "MyAccountCustomer/Home" Url
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | LAS             |
       | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 |
 
 #####Make Payments
+  @mp @partpay
   Scenario Outline: Verify after clicking on Make Payment we are redirected to Part Prepayment details page
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -551,7 +553,7 @@ Feature: LAS Payments
       | 9545219299    | 02021999 | Individual    | Loan payment | Other payments | V428LAS00004845 |
 
   @MI
-  Scenario Outline: Verify after clicking on Offline Payment CTA pop up is displayed
+  Scenario Outline: Verify after clicking on Offline Payment CTA pop up is displayed - Missed Interests
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
     And Clicks on Hamburger Menu
@@ -562,7 +564,7 @@ Feature: LAS Payments
     And Clicks on the Tab "Missed Interest Payments" in LAS Payments page
     Then Verify Customer Redirected to "MyAccountPayments/LoanPay/LASInterestPayment" Url
     And Enter Valid amount for LAS Missed Interest
-    And Click on "Offline Payment" CTA
+    And Click on "Offline Payment" CTA in Popup
     Then Offline Method Pop up should be displayed
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | LAS             |
@@ -580,7 +582,7 @@ Feature: LAS Payments
     And Clicks on the Tab "Missed Interest Payments" in LAS Payments page
     Then Verify Customer Redirected to "MyAccountPayments/LoanPay/LASInterestPayment" Url
     And Enter Valid amount for LAS Missed Interest
-    And Click on "Offline Payment" CTA
+    And Click on "Offline Payment" CTA without wait
     Then Offline Method Pop up should be displayed
     And Content should be displayed for popup with below Details "<Details>"
 
@@ -600,7 +602,7 @@ Feature: LAS Payments
     And Clicks on the Tab "Missed Interest Payments" in LAS Payments page
     Then Verify Customer Redirected to "MyAccountPayments/LoanPay/LASInterestPayment" Url
     And Enter Valid amount for LAS Missed Interest
-    And Click on "Offline Payment" CTA
+    And Click on "Offline Payment" CTA without wait
     Then Offline Method Pop up should be displayed
     And Click on "GOT IT" CTA present on pop up
     Then Verify Customer Redirected to "MyAccountPayments/LoanPay/LASInterestPayment" Url
@@ -620,7 +622,7 @@ Feature: LAS Payments
     And Clicks on the Tab "Missed Interest Payments" in LAS Payments page
     Then Verify Customer Redirected to "MyAccountPayments/LoanPay/LASInterestPayment" Url
     And Enter Valid amount for LAS Missed Interest
-    And Click on "Online payment" CTA
+    And Click on "Online payment" CTA without wait
     Then Verify Customer Redirected to respective URL "https://uatpayments.bajajfinserv.in/payments"
 
     Examples:
@@ -639,7 +641,7 @@ Feature: LAS Payments
     And Clicks on the Tab "Missed Interest Payments" in LAS Payments page
     Then Verify Customer Redirected to "MyAccountPayments/LoanPay/LASInterestPayment" Url
     And Enter Valid amount for LAS Missed Interest
-    And Click on "Online payment" CTA
+    And Click on "Online payment" CTA without wait
     Then Verify Customer Redirected to respective URL "https://uatpayments.bajajfinserv.in/payments"
     And Customer clicks on "Cancel" Button
     Then Verify Customer Redirected to respective URL "MyAccountPayments/LoanPay/Receipt"
@@ -661,11 +663,11 @@ Feature: LAS Payments
     And Clicks on the Tab "Missed Interest Payments" in LAS Payments page
     Then Verify Customer Redirected to "MyAccountPayments/LoanPay/LASInterestPayment" Url
     And Enter Valid amount for LAS Missed Interest
-    And Click on "Online payment" CTA
+    And Click on "Online payment" CTA without wait
     Then Verify Customer Redirected to respective URL "https://uatpayments.bajajfinserv.in/payments"
     And Customer clicks on "Cancel" Button
     Then Verify Customer Redirected to respective URL "MyAccountPayments/LoanPay/Receipt"
-    And Click on "RETRY PAYMENT" CTA
+    And Customer clicks on "RETRY PAYMENT" Button
     Then Verify Customer Redirected to "MyAccountPayments/LoanPay/LASInterestPayment" Url
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu      | SubListMenu    | LAS             |
@@ -683,7 +685,7 @@ Feature: LAS Payments
     And Clicks on the Tab "Missed Interest Payments" in LAS Payments page
     Then Verify Customer Redirected to "MyAccountPayments/LoanPay/LASInterestPayment" Url
     And Enter Valid amount for LAS Missed Interest
-    And Click on "Online payment" CTA
+    And Click on "Online payment" CTA without wait
     Then Verify Customer Redirected to respective URL "https://uatpayments.bajajfinserv.in/payments"
     And Customer clicks on "Cancel" Button
     Then Verify Customer Redirected to respective URL "MyAccountPayments/LoanPay/Receipt"

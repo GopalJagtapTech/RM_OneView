@@ -1,0 +1,20 @@
+Failed in wait for OTP Text Box 1 Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Banner Offers - Fixed Deposit
+
+OTP Text Box 1 is Not Displayed------------>  Banner Offers - Fixed Deposit
+
+OTP Text Box 2 is Not Displayed------------>  Banner Offers - Fixed Deposit
+
+OTP Text Box 3 is Not Displayed------------>  Banner Offers - Fixed Deposit
+
+OTP Text Box 4 is Not Displayed------------>  Banner Offers - Fixed Deposit
+
+OTP Text Box 5 is Not Displayed------------>  Banner Offers - Fixed Deposit
+
+OTP Text Box 6 is Not Displayed------------>  Banner Offers - Fixed Deposit
+
+Submit button is Not Displayed------------>  Banner Offers - Fixed Deposit
+
+Login is Un Successful------------>  Banner Offers - Fixed Deposit
+
+Failed in verify Home in Hooks. Exception: class org.openqa.selenium.InvalidArgumentException------------>  Banner Offers - Fixed Deposit
+

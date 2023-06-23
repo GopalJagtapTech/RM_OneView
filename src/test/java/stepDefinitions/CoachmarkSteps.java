@@ -37,18 +37,7 @@ public class CoachmarkSteps extends ApplicationKeywords {
     public void user_is_on_login_page() {
         verifyFieldsDisplayedUsingLocator(loginfieldsPage.mainHamburger);
 
-
     }
-
-    @When("Clicks on Hamburger Menu clocing loginPopup")
-    public void clicks_on_hamburger_menu_clocing_login_popup() {
-        loginfieldsPage.clickOnLogincloseButtonxPopup("close");
-        waitForPageToLoad();
-        waitTime(2);
-        clickOnIfDisplayed(MandateManagementPage.icon_HamburgerMenu);
-        waitTime(3);
-    }
-
     @Then("Coach mark with next and skip CTA under hamburger should be displayed")
     public void coach_mark_with_next_and_skip_cta_under_hamburger_should_be_displayed() {
         loginfieldsPage.verifyButtonUsingLocatorUsingForLoopWithoutFail(loginfieldsPage.Skip_Coach);

@@ -71,7 +71,7 @@ Feature: Document Centre -Relationship status Nudge
     And Clicks on the Document Centre Page tab "Loans"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Closed"
+#    And Selects a Relation Status in Filter in Doc Page-"Closed"
     And Clicks on Apply Button in Filter in Doc Page
     Then All closed "Loans" should be displayed with "Closed" nudge
 
@@ -102,7 +102,7 @@ Feature: Document Centre -Relationship status Nudge
     And Clicks on the Document Centre Page tab "Deposits"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Closed"
+#    And Selects a Relation Status in Filter in Doc Page-"Closed"
     And Clicks on Apply Button in Filter in Doc Page
     Then All pre matured "Deposits" should be displayed with "PRE-MATURED" nudge
 #    Then All matured "Deposits" should be displayed with "Matured" nudge
@@ -134,7 +134,8 @@ Feature: Document Centre -Relationship status Nudge
     And Clicks on the Document Centre Page tab "Insurance"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Closed"
+    And Unselects a Relation Status in Filter in Doc Page-"Surrendered"
+    And Unselects a Relation Status in Filter in Doc Page-"Cancelled"
     And Clicks on Apply Button in Filter in Doc Page
     Then All closed "Insurance" should be displayed with "MATURED" nudge
 
@@ -151,7 +152,9 @@ Feature: Document Centre -Relationship status Nudge
     And Clicks on the Document Centre Page tab "Insurance"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Cancelled"
+    And Unselects a Relation Status in Filter in Doc Page-"Surrendered"
+    And Unselects a Relation Status in Filter in Doc Page-"Closed"
+#    And Selects a Relation Status in Filter in Doc Page-"Cancelled"
     And Clicks on Apply Button in Filter in Doc Page
     Then All Cancelled "Insurance" should be displayed with "CANCELLED" nudge
     Examples:
@@ -167,7 +170,9 @@ Feature: Document Centre -Relationship status Nudge
     And Clicks on the Document Centre Page tab "Insurance"
     And Clicks on Filter in Doc Centre Page
     And Unselects a Relation Status in Filter in Doc Page-"Active"
-    And Selects a Relation Status in Filter in Doc Page-"Surrendered"
+    And Unselects a Relation Status in Filter in Doc Page-"Cancelled"
+    And Unselects a Relation Status in Filter in Doc Page-"Closed"
+#    And Selects a Relation Status in Filter in Doc Page-"Surrendered"
     And Clicks on Apply Button in Filter in Doc Page
     Then All surrendered "Insuracne" should be displayed with "SURRENDERED" nudge
 

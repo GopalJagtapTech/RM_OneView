@@ -94,6 +94,18 @@ public class ApplicationHooksSingle extends ApplicationKeywords {
     Boolean login = false;
     public static String urlHome = "";
 
+    @Before(order = 5)
+    public void login() {
+        if (login) {
+//            urlHome = LoginIndividualForHome("9890801661", "26051982", "123456");
+//            urlHome = LoginIndividualForHome("9689890586", "13011992", "123456");
+//            urlHome = LoginIndividualForHome("9636078877", "13011992", "123456");
+//            urlHome = LoginIndividualForHome("9898989899", "13011992", "123456");
+//            urlHome = LoginIndividualForHome("9652374940", "13011992", "123456");
+            urlHome = LoginIndividualForHome("8341066905", "13011992", "123456");
+            login = false;
+        }
+    }
 
 
     @Before(order = 2)

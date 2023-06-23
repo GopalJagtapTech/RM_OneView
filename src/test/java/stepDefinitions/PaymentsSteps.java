@@ -776,4 +776,16 @@ public class PaymentsSteps extends ApplicationKeywords {
         verifyRedirectionURLIfContains(string);
 
     }
+
+    @And("Customer clicks on {string} Button if displayed for Payments Popup")
+    public void customerClicksOnButtonIfDisplayedForPaymentsPopup(String string) {
+
+            payments.clickOnButtonUsingTextUsingForLoopifDisplayed(string);
+    }
+
+    @And("Below reason {string} should be displayed for cancelling payment")
+    public void belowReasonShouldBeDisplayedForCancellingPayment(String msg) {
+        verifyFieldsDisplayedUsingText(msg);
+
+    }
 }

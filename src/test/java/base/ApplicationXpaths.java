@@ -121,21 +121,21 @@ Loans: Top Section
             loc.put("Active Term Loan with EMI Overdue", "Loan Amount@Principal Outstanding Amount#Annualised Rate of Interest#Loan Tenure#Next EMI Due Amount@EMI OVERDUE@#b40000@RED@background-color@Loan Account Number:");
             loc.put("Active Term Loan with Last EMI and Overdue", "Loan Amount@Principal Outstanding Amount#Annualised Rate of Interest#Loan Tenure#Last EMI Amount@EMI OVERDUE@#b40000@RED@background-color@Loan Account Number:");
 
-            loc.put("Active Flexi Loan without EMI Overdue", "Loan Amount@Utilised Limit#Available Limit#Total Withdrawable Amount#Annualised Rate of Interest#Repayment Tenure#Next EMI Due Amount@@@@@Loan Account Number:");
-            loc.put("Active Flexi Loan with Last EMI", "Loan Amount@Utilised Limit#Available Limit#Total Withdrawable Amount#Annualised Rate of Interest#Repayment Tenure#Last EMI Amount@@@@@Loan Account Number:");
+            loc.put("Active Flexi Loan without EMI Overdue", "Loan Amount@Utilised Limit#Available Loan Limit#Total Withdrawable Amount#Annualised Rate of Interest#Repayment Tenure#Next EMI Due Amount@@@@@Loan Account Number:");
+            loc.put("Active Flexi Loan with Last EMI", "Loan Amount@Utilised Limit#Available Loan Limit#Total Withdrawable Amount#Annualised Rate of Interest#Repayment Tenure#Last EMI Amount@@@@@Loan Account Number:");
 
-            loc.put("Active Flexi Loan with EMI Overdue", "Loan Amount@Utilised Limit#Available Limit#Total Withdrawable Amount#Annualised Rate of Interest#Repayment Tenure#Next EMI Due Amount@EMI OVERDUE@#b40000@RED@background-color@Loan Account Number:");
-            loc.put("Active Flexi Loan with Last EMI and Overdue", "Loan Amount@Utilised Limit#Available Limit#Total Withdrawable Amount#Annualised Rate of Interest#Repayment Tenure#Last EMI Amount@EMI OVERDUE@#b40000@RED@background-color@Loan Account Number:");
+            loc.put("Active Flexi Loan with EMI Overdue", "Loan Amount@Utilised Limit#Available Loan Limit#Total Withdrawable Amount#Annualised Rate of Interest#Repayment Tenure#Next EMI Due Amount@EMI OVERDUE@#b40000@RED@background-color@Loan Account Number:");
+            loc.put("Active Flexi Loan with Last EMI and Overdue", "Loan Amount@Utilised Limit#Available Loan Limit#Total Withdrawable Amount#Annualised Rate of Interest#Repayment Tenure#Last EMI Amount@EMI OVERDUE@#b40000@RED@background-color@Loan Account Number:");
 
             loc.put("Closed Term Loan", "Loan Amount@Annualised Rate of Interest#Closure Date@CLOSED@#002953@BLUE@background-color@Loan Account Number:");
             loc.put("Closed Flexi Loan", "Loan Amount@Annualised Rate of Interest#Closure Date@CLOSED@#002953@BLUE@background-color@Loan Account Number:");
             loc.put("Closed Hybrid Flexi Loan", "Loan Amount@Annualised Rate of Interest#Closure Date@CLOSED@#002953@BLUE@background-color@Loan Account Number:");
 
-            loc.put("Active Hybrid Flexi Loan without EMI Overdue", "Loan Amount@Utilised Limit#Available Limit#Total Withdrawable Amount#Annualised Rate of Interest#Repayment Tenure#Next EMI Due Amount@@@@@Loan Account Number:");
-            loc.put("Active Hybrid Flexi Loan with Last EMI", "Loan Amount@Utilised Limit#Available Limit#Total Withdrawable Amount#Annualised Rate of Interest#Repayment Tenure#Last EMI Amount@@@@@Loan Account Number:");
+            loc.put("Active Hybrid Flexi Loan without EMI Overdue", "Loan Amount@Utilised Limit#Available Loan Limit#Total Withdrawable Amount#Annualised Rate of Interest#Repayment Tenure#Next EMI Due Amount@@@@@Loan Account Number:");
+            loc.put("Active Hybrid Flexi Loan with Last EMI", "Loan Amount@Utilised Limit#Available Loan Limit#Total Withdrawable Amount#Annualised Rate of Interest#Repayment Tenure#Last EMI Amount@@@@@Loan Account Number:");
 
-            loc.put("Active Hybrid Flexi Loan with EMI Overdue", "Loan Amount@Utilised Limit#Available Limit#Total Withdrawable Amount#Annualised Rate of Interest#Repayment Tenure#Next EMI Due Amount@EMI OVERDUE@#b40000@RED@background-color@Loan Account Number:");
-            loc.put("Active Hybrid Flexi Loan with Last EMI and Overdue", "Loan Amount@Utilised Limit#Available Limit#Total Withdrawable Amount#Annualised Rate of Interest#Repayment Tenure#Last EMI Amount@EMI OVERDUE@#b40000@RED@background-color@Loan Account Number:");
+            loc.put("Active Hybrid Flexi Loan with EMI Overdue", "Loan Amount@Utilised Limit#Available Loan Limit#Total Withdrawable Amount#Annualised Rate of Interest#Repayment Tenure#Next EMI Due Amount@EMI OVERDUE@#b40000@RED@background-color@Loan Account Number:");
+            loc.put("Active Hybrid Flexi Loan with Last EMI and Overdue", "Loan Amount@Utilised Limit#Available Loan Limit#Total Withdrawable Amount#Annualised Rate of Interest#Repayment Tenure#Last EMI Amount@EMI OVERDUE@#b40000@RED@background-color@Loan Account Number:");
 
             loc.put("Change Bank Account Button", "Change Bank Account Button#xpath=//a[normalize-space(text())='Change Bank Account']");
             loc.put("Show More Button", "Show More Button in Fees & Charges#xpath=//a[contains(text(),'Show More')]");
@@ -457,10 +457,10 @@ Loans: Top Section
             loc.put("Brand Store Sleepy head", "brand-stores@sleepyhead@icontitle,iconimage-android,iconlink");
             loc.put("Brand Store Sony", "brand-stores@sony-icon@icontitle,iconimage-android,iconlink");
             loc.put("Brand Store LG", "brand-stores@lg-icon@icontitle,iconimage-android,iconlink");
-            loc.put("Brand Store Watchout", "brand-stores@watchout@icontitle,iconimage-android,iconlink");
+            loc.put("Brand Store Croma", "brand-stores@croma-icon@icontitle,iconimage-android,iconlink");
             loc.put("Brand Store Samsung", "brand-stores@samsung-icon@icontitle,iconimage-android,iconlink");
-            loc.put("Brand Store Leader Cycles", "brand-stores@leader@icontitle,iconimage-android,iconlink");
-            loc.put("Brand Store Powermax", "brand-stores@powermax@icontitle,iconimage-android,iconlink");
+            loc.put("Brand Store Panasonic", "brand-stores@panasonic@icontitle,iconimage-android,iconlink");
+            loc.put("Brand Store Havells", "brand-stores@havells@icontitle,iconimage-android,iconlink");
 
             loc.put("Home Page Apply for loans", "apply-for-loans@apply-for-loans-title");
             loc.put("Apply for loans Personal", "apply-for-loans@personal@icontitle,iconimage-android,iconlink");

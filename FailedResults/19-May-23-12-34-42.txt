@@ -1,0 +1,36 @@
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/insta-personal-loan. Exception: class org.openqa.selenium.TimeoutException------------>  Offers For You - Personal Loan
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/personal-loan------------>  Offers For You - Personal Loan
+
+Expected URL : https://www.bajajfinserv.in/insta-personal-loan------------>  Offers For You - Personal Loan
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/gold-loan-application-form. Exception: class org.openqa.selenium.TimeoutException------------>  Offers For You - Gold LoanB
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/gold-loan------------>  Offers For You - Gold LoanB
+
+Expected URL : https://www.bajajfinserv.in/gold-loan-application-form------------>  Offers For You - Gold LoanB
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/insta-emi-network-card-apply-online. Exception: class org.openqa.selenium.TimeoutException------------>  Offers For You - Insta EMI CardM
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/insta-emi-card------------>  Offers For You - Insta EMI CardM
+
+Expected URL : https://www.bajajfinserv.in/insta-emi-network-card-apply-online------------>  Offers For You - Insta EMI CardM
+
+Failed in wait for Element Loaded URL: https://www.bajajmall.in/emi-store/television.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_offers_tv&utm_content=my_account_homepage. Exception: class org.openqa.selenium.TimeoutException------------>  Offers For You - Home Loanb
+
+New Tab is Opened instead of SSO------------>  Offers For You - Home Loanb
+
+Offers for you Doctor Loan Image is Not Displayed------------>  Offers For You - Doctor Loanm
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/apply-for-doctor-loan. Exception: class org.openqa.selenium.TimeoutException------------>  Offers For You - Doctor Loanm
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=b671aaa1-52f7-4f39-8ffb-739082cc602a#;------------>  Offers For You - Doctor Loanm
+
+Expected URL : https://www.bajajfinserv.in/apply-for-doctor-loan------------>  Offers For You - Doctor Loanm
+
+Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/business-loan-form. Exception: class org.openqa.selenium.TimeoutException------------>  Offers For You - Business Loanx
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/business-loan------------>  Offers For You - Business Loanx
+
+Expected URL : https://www.bajajfinserv.in/business-loan-form------------>  Offers For You - Business Loanx
+

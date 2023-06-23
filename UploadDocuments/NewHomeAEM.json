@@ -1,7 +1,7 @@
 {
   "screenCoverage": "multiple",
   "moduleIdentifier": "home-page",
-  "lastModified": "2023-06-02T10:59:35.805",
+  "lastModified": "2023-05-09T11:15:12.864",
   "content": [
     {
       "screenIdentifier": "homepage-screen",
@@ -1502,81 +1502,81 @@
               "ctalink1": "https://www.bajajmall.in/emi-store/air-conditioners.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_offers_ac&utm_content=my_account_homepage",
               "section": "offers-for-you",
               "device": "both",
-              "image-ios": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/ac-banner-1?scl=1&fmt=png-alpha",
+              "image-ios": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/air-conditioner-banner-1?scl=1&fmt=png-alpha",
               "key": "smartphone",
-              "image-android": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/ac-banner-1?scl=1&fmt=png-alpha"
+              "image-android": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/air-conditioner-banner-1?scl=1&fmt=webp"
             },
             {
               "ctalink1": "https://www.bajajfinserv.in/insta-personal-loan",
               "section": "offers-for-you",
               "device": "both",
-              "image-ios": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/personal-loan-banner-16?scl=1&fmt=png-alpha",
+              "image-ios": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/personal-loan-banner-3?scl=1&fmt=png-alpha",
               "key": "personal-loan",
-              "image-android": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/personal-loan-banner-16?scl=1&fmt=png-alpha"
+              "image-android": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/personal-loan-banner-3?scl=1&fmt=webp"
             },
             {
               "ctalink1": "https://www.bajajfinserv.in/apply-for-doctor-loan",
               "section": "offers-for-you",
               "device": "both",
-              "image-ios": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/doctor-loan-23?scl=1&fmt=png-alpha",
+              "image-ios": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/doctor-loan-banner-2?scl=1&fmt=png-alpha",
               "key": "doctor-loan",
-              "image-android": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/doctor-loan-23?scl=1&fmt=png-alpha"
+              "image-android": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/doctor-loan-banner-2?scl=1&fmt=webp"
             },
             {
               "ctalink1": "https://www.bajajmall.in/emi-store/two-wheeler-brand-store.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_offers_two_wheeler&utm_content=my_account_homepage",
               "section": "offers-for-you",
               "device": "both",
-              "image-ios": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/two-wheeler-loan-banner-4?scl=1&fmt=png-alpha",
+              "image-ios": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/two-wheeler-banner-3?scl=1&fmt=png-alpha",
               "key": "two-wheeler-loan",
-              "image-android": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/two-wheeler-loan-banner-4?scl=1&fmt=png-alpha"
+              "image-android": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/two-wheeler-banner-3?scl=1&fmt=webp"
             },
             {
               "ctalink1": "https://www.bajajfinserv.in/apply-for-dbs-credit-card-online",
               "section": "offers-for-you",
               "device": "both",
-              "image-ios": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/credit-card-41?scl=1&fmt=png-alpha",
+              "image-ios": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/credit-card-banner-7?scl=1&fmt=png-alpha",
               "key": "credit-card",
-              "image-android": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/credit-card-41?scl=1&fmt=png-alpha"
+              "image-android": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/credit-card-banner-7?scl=1&fmt=webp"
             },
             {
               "ctalink1": "https://www.bajajfinserv.in/gold-loan-application-form",
               "section": "offers-for-you",
               "device": "both",
-              "image-ios": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/gold-loan-banner-16?scl=1&fmt=png-alpha",
+              "image-ios": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/gold-loan-banner-4?scl=1&fmt=png-alpha",
               "key": "gold-loan",
-              "image-android": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/gold-loan-banner-16?scl=1&fmt=png-alpha"
+              "image-android": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/gold-loan-banner-4?scl=1&fmt=webp"
             },
             {
               "ctalink1": "https://www.bajajfinserv.in/insta-emi-network-card-apply-online",
               "section": "offers-for-you",
               "device": "both",
-              "image-ios": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/iemi-banner-4?scl=1&fmt=png-alpha",
+              "image-ios": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/iemi-banner-1?scl=1&fmt=png-alpha",
               "key": "insta-emi-card",
-              "image-android": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/iemi-banner-4?scl=1&fmt=png-alpha"
+              "image-android": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/iemi-banner-1?scl=1&fmt=webp"
             },
             {
               "ctalink1": "https://www.bajajmall.in/emi-store/television.html?utm_source=experia_web&utm_medium=referral&utm_campaign=mkt_homepage_offers_tv&utm_content=my_account_homepage",
               "section": "offers-for-you",
               "device": "both",
-              "image-ios": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/led-tv-banner-2?scl=1&fmt=png-alpha",
+              "image-ios": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/led-tv-banner-1?scl=1&fmt=png-alpha",
               "key": "led-tv",
-              "image-android": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/led-tv-banner-2?scl=1&fmt=png-alpha"
+              "image-android": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/led-tv-banner-1?scl=1&fmt=webp"
             },
             {
               "ctalink1": "https://www.bajajfinserv.in/business-loan-form",
               "section": "offers-for-you",
               "device": "both",
-              "image-ios": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/buisness-loan-banner?scl=1&fmt=png-alpha",
+              "image-ios": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/business-loan-banner-1?scl=1&fmt=png-alpha",
               "key": "business-loan",
-              "image-android": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/buisness-loan-banner?scl=1&fmt=png-alpha"
+              "image-android": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/business-loan-banner-1?scl=1&fmt=webp"
             },
             {
               "ctalink1": "https://www.bajajfinserv.in/check-free-cibil-score",
               "section": "offers-for-you",
               "device": "both",
-              "image-ios": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/cibil-score-banner-2?scl=1&fmt=png-alpha",
+              "image-ios": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/cibil-banner-4?scl=1&fmt=png-alpha",
               "key": "cibil-score",
-              "image-android": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/cibil-score-banner-2?scl=1&fmt=png-alpha"
+              "image-android": "https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/cibil-banner-4?scl=1&fmt=webp"
             }
           ],
           "section": "offers-for-you",

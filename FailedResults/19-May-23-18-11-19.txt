@@ -1,0 +1,30 @@
+Failed in Verify Logo is Displayed in New Home. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - LaptopsK
+
+Failed in verify Nudge Text As Per AEM. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - LaptopsK
+
+Failed in click on New Home Options with AEM. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - LaptopsK
+
+Failed in wait for Element Loaded URL: null. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - LaptopsK
+
+Failed in verify Redirection URL contains null. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - LaptopsK
+
+Failed in Verify Logo is Displayed in New Home. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - CyclesW
+
+Failed in verify Nudge Text As Per AEM. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - CyclesW
+
+Failed in click on New Home Options with AEM. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - CyclesW
+
+Failed in wait for Element Loaded URL: null. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - CyclesW
+
+Failed in verify Redirection URL contains null. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - CyclesW
+
+Failed in Verify Logo is Displayed in New Home. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - Mattressesc
+
+Failed in verify Nudge Text As Per AEM. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - Mattressesc
+
+Failed in click on New Home Options with AEM. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - Mattressesc
+
+Failed in wait for Element Loaded URL: null. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - Mattressesc
+
+Failed in verify Redirection URL contains null. Exception: class java.lang.NullPointerException------------>  Shop on Bajaj Mall - Mattressesc
+

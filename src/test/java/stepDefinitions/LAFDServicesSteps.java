@@ -35,7 +35,7 @@ public class LAFDServicesSteps extends ApplicationKeywords {
     public void verify_customer_is_able_to_view_given_options_and_icon_details_on_lafd_details_page_active() {
 
         lafdservices.verifyNameandLogoOfTheProduct();
-       // verifyTopSectionInServices(LAFDServicesPage.logo_LAFD, "Loan Amount", "Principal Outstanding Amount#Loan Tenor#Rate of Interest#Loan Closure Date#Disbursement Date", "", "", "", "", "Loan Account Number:", false, "");
+        // verifyTopSectionInServices(LAFDServicesPage.logo_LAFD, "Loan Amount", "Principal Outstanding Amount#Loan Tenor#Rate of Interest#Loan Closure Date#Disbursement Date", "", "", "", "", "Loan Account Number:", false, "");
         verifyTopSectionInServices(LAFDServicesPage.logo_LAFD, "Loan Amount", "Principal Outstanding Amount#Loan Tenure#Rate of Interest#Disbursement Date", "", "", "", "", "Loan Account Number:", false, "");
 
     }
@@ -44,7 +44,7 @@ public class LAFDServicesSteps extends ApplicationKeywords {
     public void verify_that_relationship_details_sections_are_visible_to_customer_under_lafd_details_page_active() {
 
         verifyRelationShipDetails("Loan Details", "Deposit ID#Disbursement Date#Interest Paid#Total Principal Paid", "");
-     //   verifyRelationShipDetails("Loan Details","Deposit ID#Disbursement Date#Interest Paid","");
+        //   verifyRelationShipDetails("Loan Details","Deposit ID#Disbursement Date#Interest Paid","");
 
 
     }
@@ -74,7 +74,7 @@ public class LAFDServicesSteps extends ApplicationKeywords {
         verifyRedirectionURLIfContains("https://cont-sites.bajajfinserv.in/MyAccountService/HelpAndSupport/RARFAQCategory");
         navigateToBack();
         waitTime(10);
-       // verifyRedirectionInCommon("", "");
+        // verifyRedirectionInCommon("", "");
     }
 
 
@@ -87,21 +87,21 @@ public class LAFDServicesSteps extends ApplicationKeywords {
         verifyFieldsDisplayedUsingText("A CIBIL Score above 750 can help you get better terms on loans and other products. Check your score for free now.");
         clickIfOnlyDisplayed(LAFDServicesPage.checkNow_LAFDServices);
         //  transferControlToWindow(2,false);
-       // verifyRedirectionInCommon("https://www.bajajfinserv.in/check-free-cibil-score", "");
+        // verifyRedirectionInCommon("https://www.bajajfinserv.in/check-free-cibil-score", "");
         verifyRedirectionURLIfContains("https://www.bajajfinserv.in/check-free-cibil-score");
         navigateBack();
         waitTime(3);
-       // transferControlToWindow(1,true);
+        // transferControlToWindow(1,true);
 
     }
 
     @Then("verify the redirection to My Relations page when customer clicks on View All Tab")
     public void verify_the_redirection_to_my_relations_page_when_customer_clicks_on_view_all_tab() {
 
-            clickOn(LAFDServicesPage.viewAll_LAFDServices);
-          //  verifyRedirectionURLIfContains("https://experia-uat.bajajfinserv.in/MyRelation/Customer/MyRelation/Index");
+        clickOn(LAFDServicesPage.viewAll_LAFDServices);
+        //  verifyRedirectionURLIfContains("https://experia-uat.bajajfinserv.in/MyRelation/Customer/MyRelation/Index");
         lafdservices.verifysubHeadingIsDisplayed("My Relations");
-       // verifyRedirectionURLIfContains("https://cont-sites.bajajfinserv.in/MyAccountLoanServices/MyRelation/Index");
+        // verifyRedirectionURLIfContains("https://cont-sites.bajajfinserv.in/MyAccountLoanServices/MyRelation/Index");
 
 
     }
@@ -117,8 +117,8 @@ public class LAFDServicesSteps extends ApplicationKeywords {
     @Then("verify that Relationship Details sections are visible to customer under LAFD details page\\(Closed)")
     public void verifyThatRelationshipDetailsSectionsAreVisibleToCustomerUnderLAFDDetailsPageClosed() {
 
-      //  verifyRelationShipDetails("Loan Details", "Deposit ID#Disbursement Date#Interest Paid#Total Principal Paid", "");
-      //  verifyTopSectionInServices(LAFDServicesPage.logo_LAFD, "Loan Amount", "Principal Outstanding Amount#Loan Tenure#Rate of Interest#Disbursement Date", "", "", "", "", "Loan Account Number:", false, "");
+        //  verifyRelationShipDetails("Loan Details", "Deposit ID#Disbursement Date#Interest Paid#Total Principal Paid", "");
+        //  verifyTopSectionInServices(LAFDServicesPage.logo_LAFD, "Loan Amount", "Principal Outstanding Amount#Loan Tenure#Rate of Interest#Disbursement Date", "", "", "", "", "Loan Account Number:", false, "");
 
         verifyRelationShipDetails("Loan Details","Deposit ID#Disbursement Date#Interest Paid","");
 
@@ -177,18 +177,18 @@ public class LAFDServicesSteps extends ApplicationKeywords {
 //        verifyElementIsDisplayedOrNot(LAFDServicesPage.statement_LAFDServices);
         clickIfOnlyDisplayed(LAFDServicesPage.view_statement);
         waitTime(10);
-      //  verifyRedirectionURLIfContains("https://cont-sites.bajajfinserv.in/MyAccountDocumentCenter/DocumentCenter/docCenter_LoanDetails");
+        //  verifyRedirectionURLIfContains("https://cont-sites.bajajfinserv.in/MyAccountDocumentCenter/DocumentCenter/docCenter_LoanDetails");
         verifyFieldsDisplayedUsingText("What are these documents?");
-       // doccentre.redirectionToLoanDocPage(cardNumber);
-       // navigateToBack();
-       // waitTime(10);
+        // doccentre.redirectionToLoanDocPage(cardNumber);
+        // navigateToBack();
+        // waitTime(10);
     }
 
     @Then("verify customer is able to view given options and icon details on LAFD Details page\\(Closed)")
     public void verifyCustomerIsAbleToViewGivenOptionsAndIconDetailsOnLAFDDetailsPageClosed() {
         lafdservices.verifyNameandLogoOfTheProduct();
         verifyTopSectionInServices(LAFDServicesPage.logo_LAFDClosed, "Loan Amount", "Loan Tenure#Rate of Interest", "CLOSED", "#002953", "Blue", "background-color", "Loan Account Number:", false, "");
-      //  verifyTopSectionInServices(LAFDServicesPage.logo_LAFD, "Loan Amount", "Principal Outstanding Amount#Loan Tenure#Rate of Interest#Disbursement Date", "", "", "", "", "Loan Account Number:", false, "");
+        //  verifyTopSectionInServices(LAFDServicesPage.logo_LAFD, "Loan Amount", "Principal Outstanding Amount#Loan Tenure#Rate of Interest#Disbursement Date", "", "", "", "", "Loan Account Number:", false, "");
 
 
     }
@@ -228,7 +228,7 @@ public class LAFDServicesSteps extends ApplicationKeywords {
 
         scrollToWebElement(LAFDServicesPage.faqs_LAFDServices);
         clickOn(LAFDServicesPage.faqs_LAFDServices);
-     //   verifyRedirectionURLIfContains("https://cont-sites.bajajfinserv.in/MyAccountService/HelpAndSupport/RARFAQCategory");
+        //   verifyRedirectionURLIfContains("https://cont-sites.bajajfinserv.in/MyAccountService/HelpAndSupport/RARFAQCategory");
         verifyFieldsDisplayedUsingText("Choose a category you need help with");
         navigateToBack();
         waitTime(10);
@@ -239,7 +239,7 @@ public class LAFDServicesSteps extends ApplicationKeywords {
 
     @Then("verify Active Tile is displayed sucessfully using Account No {string}")
     public void verify_active_tile_is_displayed_sucessfully_using_account_no(String string) {
-       // lafdservices.verifyActiveorClosed(string,"Active");
+        // lafdservices.verifyActiveorClosed(string,"Active");
         lafdservices.verifyLAFDLabelName(string,"Loan Amount");
         lafdservices.verifyLAFDLabelName(string,"Next EMI Amount");
 
@@ -250,10 +250,10 @@ public class LAFDServicesSteps extends ApplicationKeywords {
     public void verify_the_redirection_when_customer_clicks_on_know_your_cibil_closed() {
         verifyFieldsDisplayedUsingText("A CIBIL Score above 750 can help you get better terms on loans and other products. Check your score for free now.");
         clickIfOnlyDisplayed(LAFDServicesPage.checkNow_LAFDServices);
-       // transferControlToWindow(2,false);
+        // transferControlToWindow(2,false);
         // verifyRedirectionInCommon("https://www.bajajfinserv.in/check-free-cibil-score", "");
         verifyRedirectionURLIfContains("https://www.bajajfinserv.in/check-free-cibil-score");
-       // transferControlToWindow(1,true);
+        // transferControlToWindow(1,true);
         navigateBack();
         waitTime(3);
     }
@@ -262,7 +262,7 @@ public class LAFDServicesSteps extends ApplicationKeywords {
         scrollToWebElement(LAFDServicesPage.faqs_LAFDServices);
         clickOn(LAFDServicesPage.faqs_LAFDServices);
         verifyFieldsDisplayedUsingText("Choose a category you need help with");
-       // verifyRedirectionURLIfContains("https://cont-sites.bajajfinserv.in/MyAccountService/HelpAndSupport/RARFAQCategory");
+        // verifyRedirectionURLIfContains("https://cont-sites.bajajfinserv.in/MyAccountService/HelpAndSupport/RARFAQCategory");
         navigateToBack();
         waitTime(10);
     }

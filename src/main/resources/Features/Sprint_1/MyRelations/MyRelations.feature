@@ -918,7 +918,7 @@ Feature: My Relations
     And Customer is able to view My Relations Section to ETB Customers
     And Customer clicks on view all option
     And My relations Page should be displayed
-    Then verify RHS "Quick Actions" following Options: "Help and Support, Document Center, Check your CIBIL Score, Mandate Management" are Displayed
+    Then verify RHS "Quick Actions" following Options: "Help and Support, Document Center, Check your CIBIL Score, Mandate Management, Manage your Profile" are Displayed
     Examples:
       | Mobile Number | Date     | Customer Type |
       | 9898989899    | 19011966 | Individual    |
@@ -974,6 +974,20 @@ Feature: My Relations
     Examples:
       | Mobile Number | Date     | Customer Type |
       | 9898989899    | 19011966 | Individual    |
+
+  @MyRelations@RHS@ManageyourProfile
+  Scenario Outline: My Relations - RHS Options - Help and Support
+    Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
+    When User is on Home Page
+    And Customer is able to view My Relations Section to ETB Customers
+    And Customer clicks on view all option
+    And My relations Page should be displayed
+    And Customer Click on "Manage your Profile" CTA in RHS
+    Then verify Page Redirection to "/MyAccountService/UpdateDetails/UserProfileDetails?" Url with SSO
+    Examples:
+      | Mobile Number | Date     | Customer Type |
+      | 9898989899    | 19011966 | Individual    |
+
 #/////////////////////////////// Back from Service Page ///////////////////////////////////////
 
   @New@MyRelations@Loans

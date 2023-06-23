@@ -20,6 +20,7 @@ Feature: ADDRESS- CORPORATE
     Then Customer should be  able to view below content on Verification method page for Corporate
     And Contents should be properly aligned in Verification method page for Corporate
 
+
           #####PAN
   @Pan
   Scenario Outline: To verify Address Corporate through PAN

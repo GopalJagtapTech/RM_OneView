@@ -1,3 +1,5 @@
+
+@EmiCard
 Feature:  Expired EMI Card Services
 
   Scenario Outline: EMI Card Services-Navigation
@@ -10,7 +12,7 @@ Feature:  Expired EMI Card Services
       | Mobile Number | Date     | Customer Type |
       | 9819427072     | 05051976 | Individual    |
 
-    @GreyedOut
+  @GreyedOut
   Scenario Outline: EMI Card Services--Greyed out
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User lands on Home Page
@@ -20,7 +22,7 @@ Feature:  Expired EMI Card Services
     Examples:
       | Mobile Number | Date     | Customer Type |
       | 9819427072     | 05051976 | Individual    |
-@FailK
+  @FailK
   Scenario Outline: EMI Card Services----Red Expired Capsule
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User lands on Home Page
@@ -40,7 +42,7 @@ Feature:  Expired EMI Card Services
 #    Examples:
 #      | Mobile Number | Date     | Customer Type |
 #      | 9819427072     | 05051976 | Individual    |
-@FailRegK
+  @FailRegK
   Scenario Outline: EMI Card Services--View Statements
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User lands on Home Page
@@ -51,14 +53,14 @@ Feature:  Expired EMI Card Services
     Examples:
       | Mobile Number | Date     | Customer Type | Expected Url |
       | 9819427072     | 05051976 | Individual   | https://uat-oneweb.bajajfinserv.in/MyAccountDocumentCenter/DocumentCenter |
-@HomeK
+  @HomeK
   Scenario Outline: EMI Card Services- Health EMI Network Card
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User lands on Home Page
     And verify Customer is redirected to EMI Card service page when Click on EMI Card icon through header EMI Card section
     And Click on Get Health EMI Network Card option under Quick Action
     Then Customer should be redirected to respective "<Expected Url>"
-  Then User navigated back to homePage
+    Then User navigated back to homePage
     #When User logouts application
     Examples:
       | Mobile Number | Date     | Customer Type | Expected Url |
