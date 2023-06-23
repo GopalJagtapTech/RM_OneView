@@ -24,31 +24,38 @@ public class LoginPage extends ApplicationKeywords {
     public static final String frame_Login = "Frame#xpath=(//iframe[@id='bfl_login_iframe'])[2]";
     public static final String popup_Login = "Login PopUp#xpath=//h5[normalize-space(text())='Sign-in to My Account']";
     public static final String skip="Skip Button in Cochmark#xpath=//div[@class='cochmark_btn']/a[normalize-space(text())='Skip']";
+
     public void LoginIndividual(String mobileNumber, String dob, String otp) {
         try {
-String typeLocator="Individual Customer tab#xpath=//div[@class='formtab']/descendant::a[normalize-space(text())='Individual']";
-String txtBox_MobileNumber="Mobile Number Text Box For Individual#xpath=(//input[@id='txtEmailMobile_Individual'])[1]";
-String txtBox_Dob="DOB Text Box For Individual#xpath=(//input[@id='EnterDOBdate_Individual'])[1]";
+            String typeLocator = "Individual Customer tab#xpath=//div[@class='formtab']/descendant::a[normalize-space(text())='Individual']";
+            String txtBox_MobileNumber = "Mobile Number Text Box For Individual#xpath=(//input[@id='txtEmailMobile_Individual'])[1]";
+            String txtBox_Dob = "DOB Text Box For Individual#xpath=(//input[@id='EnterDOBdate_Individual'])[1]";
+            String Proceed_button = "Proceed Button#xpath=//a[normalize-space(text())='PROCEED']|//button[normalize-space(text())='PROCEED']|//input[@value='PROCEED']";
             waitTime(2);
-            boolean flag1 = clickOnIfDisplayed(icon_MyAccount);
-            if (flag1) {
-                boolean flag2 = clickOnIfDisplayed(login_Button);
-                if (flag2) {
-                    clickOnButtonUsingLocatorUsingForLoopWithoutFail(LoginPage.skip);
+//            boolean flag1 = clickOnIfDisplayed(icon_MyAccount);
+//            if (flag1) {
+//                boolean flag2 = clickOnIfDisplayed(login_Button);
+//                if (flag2) {
+//                    clickOnButtonUsingLocatorUsingForLoopWithoutFail(LoginPage.skip);
 //                    driver.switchTo().frame(findWebElement(frame_Login));
-                    clickOnIfDisplayed(typeLocator);
-                    typeInIfPresent(txtBox_MobileNumber,mobileNumber);
-//
-                    clickOnButtonUsingTextUsingForLoop("Get OTP");
-                    waitForPageToLoad();
-                    enterOtpInTextBox("o","123456");
-                    clickOnButtonUsingTextUsingForLoop("Submit");
-//                    waitForThreeDotsDisAppear();
-                    waitForPageToLoad();
-                    typeInIfPresent(txtBox_Dob,dob);
-                    clickOnButtonUsingTextUsingForLoop("PROCEED");
-                }
+            clickOnIfDisplayed(typeLocator);
+            typeInIfPresent(txtBox_MobileNumber, mobileNumber);
+            clickOnButtonUsingTextUsingForLoop("Get OTP");
+            waitForPageToLoad();
+            enterOtpInTextBox("o", "123456");
+            clickOnButtonUsingTextUsingForLoop("Submit");
+            if (isElementDisplayed(txtBox_Dob)) {
+                testStepInfo("Customer is an ETB");
+                typeInIfPresent(txtBox_Dob, dob);
+            }else {
+                testStepInfo("Customer is not an ETB");
             }
+            if (isElementDisplayed(Proceed_button)) {
+                clickOnButtonUsingTextUsingForLoop("PROCEED");
+            }
+            waitForPageToLoad();
+//                }
+//            }
         } catch (Exception e) {
             e.printStackTrace();
             testStepFailed("Failed in Login Individual. Exception: " + e.getClass());
@@ -61,6 +68,7 @@ String txtBox_Dob="DOB Text Box For Individual#xpath=(//input[@id='EnterDOBdate_
             String typeLocator="Non-Individual Customer tab#xpath=//div[@class='formtab']/descendant::a[normalize-space(text())='Corporate/ Business']";
             String txtBox_MobileNumber="Mobile Number Text Box For Non-Individual#xpath=//input[@id='txtEmailMobile_NonIndividual']";
             String txtBox_Doi="DOI Text Box For Non-Individual#xpath=//input[@id='DOIDate_NonIndividual']";
+            String Proceed_button = "Proceed Button#xpath=//a[normalize-space(text())='PROCEED']|//button[normalize-space(text())='PROCEED']|//input[@value='PROCEED']";
             Boolean flag1 = clickOnIfDisplayed(icon_MyAccount);
             if (flag1) {
                 Boolean flag2 = clickOnIfDisplayed(login_Button);
