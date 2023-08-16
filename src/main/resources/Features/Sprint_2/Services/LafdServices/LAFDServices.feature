@@ -142,8 +142,9 @@ Feature: LAFD Services
     And My relations Page should be displayed
     And click on "Loans" tab
     Then verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
-   # And Customer Click on "View Statements" CTA in RHS
-    Then verify the redirection to Document center page when customer clicks on View statement under thing you can do RHS section(Active)
+    And Customer Click on "View Documents" CTA in RHS
+    Then Then a Document drawer or pop-up should be displayed for "<Account No>"
+    And click on "Find them here" hyperlink
     And User should be redirected to specific document page "<Account No>"
    # Then verify the redirection when customer clicks on Know your CIBIL(Active)
    # Then verify the redirection when customer clicks on FAQ(Active)
@@ -296,8 +297,9 @@ Feature: LAFD Services
     And My relations Page should be displayed
     And click on "Loans" tab
     Then verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
-   # And Customer Click on "View Statements" CTA in RHS
-    Then verify the redirection to Document center page when customer clicks on View statement under thing you can do RHS section(Closed)
+    And Customer Click on "View Documents" CTA in RHS
+    Then Then a Document drawer or pop-up should be displayed for "<Account No>"
+    And click on "Find them here" hyperlink
     And User should be redirected to specific document page "<Account No>"
 
     Examples:

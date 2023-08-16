@@ -1,0 +1,182 @@
+Download App Section is Not Displayed------------>  To verify the options visible when customer is on Pasbook Page
+
+Home Page Text is Not Verified------------>  To verify customer is able to view next five transactions after click on View More Button(
+
+Login is Unsuccessfull------------>  To verify customer is able to view next five transactions after click on View More Button(
+
+Home Page Text is Not Verified------------>  To verify customer is able to view max 20 transactions5
+
+Login is Unsuccessfull------------>  To verify customer is able to view max 20 transactions5
+
+Failed in wait for OTP Text Box 1 Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  To verify View More Button is not displayed when less than equal to five transaction is presentB
+
+OTP Text Box 1 is Not Displayed------------>  To verify View More Button is not displayed when less than equal to five transaction is presentB
+
+OTP Text Box 2 is Not Displayed------------>  To verify View More Button is not displayed when less than equal to five transaction is presentB
+
+OTP Text Box 3 is Not Displayed------------>  To verify View More Button is not displayed when less than equal to five transaction is presentB
+
+OTP Text Box 4 is Not Displayed------------>  To verify View More Button is not displayed when less than equal to five transaction is presentB
+
+OTP Text Box 5 is Not Displayed------------>  To verify View More Button is not displayed when less than equal to five transaction is presentB
+
+OTP Text Box 6 is Not Displayed------------>  To verify View More Button is not displayed when less than equal to five transaction is presentB
+
+Submit button is Not Displayed------------>  To verify View More Button is not displayed when less than equal to five transaction is presentB
+
+Home Page Text is Not Verified------------>  To verify View More Button is not displayed when less than equal to five transaction is presentB
+
+Login is Unsuccessfull------------>  To verify View More Button is not displayed when less than equal to five transaction is presentB
+
+Sign Out Button is Not Present------------>  To verify View More Button is not displayed when less than equal to five transaction is presentB
+
+Failed in wait for OTP Text Box 1 Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Verify Transactions are displayed for Options Status:All, Mode:All - Creditedz
+
+OTP Text Box 1 is Not Displayed------------>  Verify Transactions are displayed for Options Status:All, Mode:All - Creditedz
+
+OTP Text Box 2 is Not Displayed------------>  Verify Transactions are displayed for Options Status:All, Mode:All - Creditedz
+
+OTP Text Box 3 is Not Displayed------------>  Verify Transactions are displayed for Options Status:All, Mode:All - Creditedz
+
+OTP Text Box 4 is Not Displayed------------>  Verify Transactions are displayed for Options Status:All, Mode:All - Creditedz
+
+OTP Text Box 5 is Not Displayed------------>  Verify Transactions are displayed for Options Status:All, Mode:All - Creditedz
+
+OTP Text Box 6 is Not Displayed------------>  Verify Transactions are displayed for Options Status:All, Mode:All - Creditedz
+
+Submit button is Not Displayed------------>  Verify Transactions are displayed for Options Status:All, Mode:All - Creditedz
+
+Home Page Text is Not Verified------------>  Verify Transactions are displayed for Options Status:All, Mode:All - Creditedz
+
+Login is Unsuccessfull------------>  Verify Transactions are displayed for Options Status:All, Mode:All - Creditedz
+
+Sign Out Button is Not Present------------>  Verify Transactions are displayed for Options Status:All, Mode:All - Creditedz
+
+Home Page Text is Not Verified------------>  Verify Transactions are displayed for Options Status:All, Mode:UPI¡
+
+Login is Unsuccessfull------------>  Verify Transactions are displayed for Options Status:All, Mode:UPI¡
+
+Sign Out Button is Not Present------------>  Verify Transactions are displayed for Options Status:All, Mode:UPI¡
+
+Home Page Text is Not Verified------------>  Verify Transactions are displayed for Options Status:All, Mode:Wallet®
+
+Login is Unsuccessfull------------>  Verify Transactions are displayed for Options Status:All, Mode:Wallet®
+
+No transaction found.. There is No Transactions available for This filter------------>  Verify Transactions are displayed for Options Status:Failed, Mode:Net Bankingĉ
+
+No transaction found.. There is No Transactions available for This filter------------>  Verify Transactions are displayed for Options Status:Success, Mode:Debit Cardsİ
+
+No transaction found.. There is No Transactions available for This filter------------>  Verify Transactions are displayed for Options Status:Success, Mode:UPIļ
+
+Home Page Text is Not Verified------------>  Verify Transactions are displayed for Options Status:Success, Mode:Net BankingŖ
+
+Login is Unsuccessfull------------>  Verify Transactions are displayed for Options Status:Success, Mode:Net BankingŖ
+
+No transaction found.. There is No Transactions available for This filter------------>  Verify Transactions are displayed for Options Status:Pending, Mode:Debit CardsŽ
+
+No transaction found.. There is No Transactions available for This filter------------>  Verify Transactions are displayed for Options Status:Pending, Mode:UPIƊ
+
+No transaction found.. There is No Transactions available for This filter------------>  Verify Transactions are displayed for Options Status:Pending, Mode:Net BankingƤ
+
+Download App Section is Not Present------------>  To verify QR code window is displayed after click on Download the App sectionǂ
+
+Download App QR Code is Not Displayed------------>  To verify QR code window is displayed after click on Download the App sectionǂ
+
+Scan and Download is Not Displayed------------>  To verify QR code window is displayed after click on Download the App sectionǂ
+
+Scan the below QR code to download is Not Displayed------------>  To verify QR code window is displayed after click on Download the App sectionǂ
+
+Close Button QR Popup is Not Displayed------------>  To verify QR code window is displayed after click on Download the App sectionǂ
+
+Download App Section is Not Present------------>  To verify QR code window is closed after click on X buttonǑ
+
+Close Button QR Popup is Not Displayed------------>  To verify QR code window is closed after click on X buttonǑ
+
+Filtered tiles is not Displayed------------>  To verify Search Filter with Numericals- No RecordsȊ
+
+Home Page Text is Not Verified------------>  To verify Transactions Page-  Success - Top Sectionȝ
+
+Login is Unsuccessfull------------>  To verify Transactions Page-  Success - Top Sectionȝ
+
+Sign Out Button is Not Present------------>  To verify Transactions Page-  Success - Top Sectionȝ
+
+Label 2:  is Not Present------------>  To verify Payment Made Details-  Failed Transactionʛ
+
+Label Value 2:  is Not Present------------>  To verify Payment Made Details-  Failed Transactionʛ
+
+Home Page Text is Not Verified------------>  To verify Amount Format-  Success Transaction̛
+
+Login is Unsuccessfull------------>  To verify Amount Format-  Success Transaction̛
+
+Sign Out Button is Not Present------------>  To verify Amount Format-  Success Transaction̛
+
+Failed in Click On . Exception: class org.openqa.selenium.TimeoutException------------>  To verify Amount Formats-  Failed Transactioṋ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index------------>  To verify Amount Formats-  Failed Transactioṋ
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/Passbook/PassbookBBPS------------>  To verify Amount Formats-  Failed Transactioṋ
+
+Filter Passbook is Not Present------------>  To verify Amount Formats-  Failed Transactioṋ
+
+Status Option: Failed in Filter is not Displayed------------>  To verify Amount Formats-  Failed Transactioṋ
+
+Apply is Not Present in findElements------------>  To verify Amount Formats-  Failed Transactioṋ
+
+Failed in verify Apply button Is Displayed In The Page. Exception: class java.lang.NullPointerException------------>  To verify Amount Formats-  Failed Transactioṋ
+
+Apply is Not Present in findElements------------>  To verify Amount Formats-  Failed Transactioṋ
+
+Failed in click on Apply button using for Loop. Exception: class java.lang.NullPointerException------------>  To verify Amount Formats-  Failed Transactioṋ
+
+Tile 1 in : Failed Transactions is not Displayed------------>  To verify Amount Formats-  Failed Transactioṋ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index------------>  To verify Amount Formats-  Failed Transactioṋ
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/Passbook/TransactionBBPSDetails------------>  To verify Amount Formats-  Failed Transactioṋ
+
+Amount in Top Section is Not Present------------>  To verify Amount Formats-  Failed Transactioṋ
+
+Amount in Top Section is Not Present for Get Text------------>  To verify Amount Formats-  Failed Transactioṋ
+
+There is no space between Rs. and Amount. Exception: class java.lang.ArrayIndexOutOfBoundsException------------>  To verify Amount Formats-  Failed Transactioṋ
+
+Amount 1 in Payment Made Section is Not Present------------>  To verify Amount Formats-  Failed Transactioṋ
+
+Amount 1 in Payment Made Section is Not Present for Get Text------------>  To verify Amount Formats-  Failed Transactioṋ
+
+There is no space between Rs. and Amount. Exception: class java.lang.ArrayIndexOutOfBoundsException------------>  To verify Amount Formats-  Failed Transactioṋ
+
+Amount 2 in Payment Made Section is Not Present------------>  To verify Amount Formats-  Failed Transactioṋ
+
+Amount 2 in Payment Made Section is Not Present for Get Text------------>  To verify Amount Formats-  Failed Transactioṋ
+
+There is no space between Rs. and Amount. Exception: class java.lang.ArrayIndexOutOfBoundsException------------>  To verify Amount Formats-  Failed Transactioṋ
+
+Amount in Bill Section is Not Present------------>  To verify Amount Formats-  Failed Transactioṋ
+
+Amount in Bill Section is Not Present for Get Text------------>  To verify Amount Formats-  Failed Transactioṋ
+
+There is no space between Rs. and Amount. Exception: class java.lang.ArrayIndexOutOfBoundsException------------>  To verify Amount Formats-  Failed Transactioṋ
+
+There is no space between Rs. and Amount. Exception: class java.lang.ArrayIndexOutOfBoundsException------------>  To verify Amount Formats-  Pending Transaction̿
+
+There is no space between Rs. and Amount. Exception: class java.lang.ArrayIndexOutOfBoundsException------------>  To verify Amount Formats-  Pending Transaction̿
+
+Generated On in Transaction Details Value has Date Format is not verified------------>  To verify Date Format-  Success Transaction͑
+
+Paid On in Transaction Details Value has Date Format is not verified------------>  To verify Date Format-  Success Transaction͑
+
+Bill Date Value has Date Format is not verified------------>  To verify Date Format-  Success Transaction͑
+
+Generated On in Transaction Details Value has Date Format is not verified------------>  To verify Date Formats-  Failed Transactionͣ
+
+Paid On in Transaction Details Value has Date Format is not verified------------>  To verify Date Formats-  Failed Transactionͣ
+
+Bill Date Value has Date Format is not verified------------>  To verify Date Formats-  Failed Transactionͣ
+
+Generated On in Transaction Details Value has Date Format is not verified------------>  To verify Date Formats-  Pending Transaction͵
+
+Paid On in Transaction Details Value has Date Format is not verified------------>  To verify Date Formats-  Pending Transaction͵
+
+Bill Date Value has Date Format is not verified------------>  To verify Date Formats-  Pending Transaction͵
+

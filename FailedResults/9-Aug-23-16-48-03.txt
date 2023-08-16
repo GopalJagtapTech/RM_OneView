@@ -1,0 +1,6 @@
+Proceed Button Is Element Displayed Failed. Exception: class org.openqa.selenium.StaleElementReferenceException------------>  To verify when Customer clicks on Sign Out option under ProfileZ
+
+User not logged out------------>  To verify when Customer clicks on Sign Out option under ProfileZ
+
+Sign Out Button is Not Displayed------------>  To verify when Customer clicks on Sign Out option under ProfileZ
+

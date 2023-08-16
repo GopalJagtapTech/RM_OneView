@@ -1,0 +1,4 @@
+Home Page Text is Not Verified------------>  To verify Renew Now CTA is enabled & redirected to respective pageÄ
+
+Login is Unsuccessfull------------>  To verify Renew Now CTA is enabled & redirected to respective pageÄ
+

@@ -193,4 +193,65 @@ public class MandateManagementSteps extends ApplicationKeywords {
 
     }
 
+    @And("Customer should be able to view Customer ID number {string} section on Mandate Management page")
+    public void customerShouldBeAbleToViewCustomerIDNumberSectionOnMandateManagementPage(String num) {
+        mandatemanage.verifyCustIdMandate(num,"");
+    }
+
+    @And("Check Box for Customer ID number {string} is Unselected")
+    public void checkBoxForCustomerIDNumberIsUnselected(String num) {
+        mandatemanage.checkBoxUnselected(num,"");
+    }
+
+    @And("Customer ID number section on Mandate Management page should not be displayed")
+    public void customerIDNumberSectionOnMandateManagementPageShouldNotBeDisplayed() {
+        verifyElementIsNotDisplayedUsingLocator(MandateManagementPage.chkBoxLoans_Mandate);
+    }
+
+    @And("clicks on Customer ID {string} checkbox")
+    public void clicksOnCustomerIDCheckbox(String num) {
+        mandatemanage.clickCheckBoxUsingId(num,"");
+    }
+
+    @Then("All the Active Loan Tiles should be selected and greyed out")
+    public void allTheActiveLoanTilesShouldBeSelectedAndGreyedOut() {
+        mandatemanage.checkBoxSelection("");
+    }
+
+    @Then("{string} Pop-up should be displayed with given text {string}")
+    public void popUpShouldBeDisplayedWithGivenText(String str1, String str2) {
+        verifyFieldsDisplayedUsingTextAndForLoop(str1,"");
+        verifyFieldsDisplayedUsingTextAndForLoop(str2,"");
+    }
+
+    @Then("Mandate Management Pop-up should be closed")
+    public void mandateManagementPopUpShouldBeClosed() {
+        mandatemanage.mandatePopupClose();
+    }
+
+    @Then("User should be redirected to {string}")
+    public void userShouldBeRedirectedTo(String url) {
+        verifyRedirectionInCommon(url,"");
+    }
+
+    @Then("The selected Active Loan tile {string} should be refreshed")
+    public void theSelectedActiveLoanTileShouldBeRefreshed(String num) {
+        mandatemanage.loanTileUnselected(num,"");
+    }
+
+    @Then("verify Fees and Charges Popup is displayed in Mandate Management page")
+    public void verifyFeesAndChargesPopupIsDisplayedInMandateManagementPage() {
+        mandatemanage.mandateFeesandCharges();
+    }
+
+    @And("Clicks on Cancel CTA in Please Note Popup")
+    public void clicksOnCancelCTAInPleaseNotePopup() {
+        clickOn(MandateManagementPage.cancel_PlsNote);
+    }
+
+    @And("Clicks on Proceed CTA in Please Note Popup")
+    public void clicksOnProceedCTAInPleaseNotePopup() {
+        clickOn(MandateManagementPage.proceed_PlsNote);
+
+    }
 }

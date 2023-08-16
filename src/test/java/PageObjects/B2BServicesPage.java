@@ -158,5 +158,21 @@ public class B2BServicesPage extends ApplicationKeywords {
         }
     }
 
+    public void viewDocsPopup(String num, String extra) {
+        try {
+            String pop = "View Documents Popup for "+num+"#xpath=//strong[normalize-space(text())='"+num.trim()+"']/ancestor::div[@id='paymentpop' and not(@style='display:none')]/descendant::p[@class='below_dc']";
+            if (isElementDisplayed(pop)) {
+                testStepPassed(getRefOfXpath(pop)+" is Displayed suscessfully");
+            } else {
+                testStepFailed(getRefOfXpath(pop) + "is not Displayed");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in view Docs Popup. Exception: " + e.getClass());
+
+        }
+    }
+
+
 
 }

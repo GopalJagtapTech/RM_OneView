@@ -1714,7 +1714,7 @@ public class MyProfileSteps extends ApplicationKeywords {
     @Then("Validation Pop-up with below list of details should be displayed")
     public void validationPopUpWithBelowListOfDetailsShouldBeDisplayed() {
 //        verifyFieldDisplayedUsingTagAndText("strong", "Important", "");
-        verifyFieldsUsingCommonXpathAndMultipleTextWithHash("//span[normalize-space(text())='Entered DOB is already updated in our records']/parent::p/preceding-sibling::strong","Important","");
+        verifyFieldsUsingCommonXpathAndMultipleTextWithHash("//span[normalize-space(text())='Entered DOB is already updated in our records']/parent::p/preceding-sibling::strong", "Important", "");
         verifyFieldDisplayedUsingTagAndText("span", "Entered DOB is already updated in our records", "");
         verifyButtonIsDisplayedInThePage("OK");
         verifyElementIsDisplayedOrNot(MyProfilePage.close_DOBAlreadyEntered);
@@ -1740,7 +1740,7 @@ public class MyProfileSteps extends ApplicationKeywords {
     @Then("Popup with Below Contents should be displayed for Existing PAN entry")
     public void popupWithBelowContentsShouldBeDisplayedForExistingPANEntry() {
 //        verifyFieldDisplayedUsingTagAndText("strong", "Important", "");
-        verifyFieldsUsingCommonXpathAndMultipleTextWithHash("//span[normalize-space(text())='Entered PAN is already updated in our records']/parent::p/preceding-sibling::strong","Important","");
+        verifyFieldsUsingCommonXpathAndMultipleTextWithHash("//span[normalize-space(text())='Entered PAN is already updated in our records']/parent::p/preceding-sibling::strong", "Important", "");
         verifyFieldDisplayedUsingTagAndText("span", "Entered PAN is already updated in our records", "");
         verifyButtonIsDisplayedInThePage("OK");
         verifyElementIsDisplayedOrNot(MyProfilePage.close_PanAlreadyEntered);
@@ -1765,6 +1765,499 @@ public class MyProfileSteps extends ApplicationKeywords {
     public void userClicksOnCrossButtonInPopupForSameDOB() {
         clickOn(MyProfilePage.close_DOBAlreadyEntered);
 
+    }
+
+    ///////2507
+
+    @Then("Customer should be able to view Add Name on profile PTB page")
+    public void customerShouldBeAbleToViewAddNameOnProfilePTBPage() {
+        verifyElementIsDisplayedOrNot(MyProfilePage.addNamePtb);
+    }
+
+    @And("Clicks Add Name button")
+    public void clicksAddNameButton() {
+        clickOn(MyProfilePage.addNamePtb);
+    }
+
+    @Then("Customer should get below popup for adding Name")
+    public void customerShouldGetBelowPopupForAddingName() {
+        MyProfile.addNamePtbPopup();
+    }
+
+    @Then("On entering valid {string} for Name field")
+    public void onEnteringValidForNameField(String name) {
+        typeIn(MyProfilePage.addNameInput, name);
+    }
+
+    @And("Clicks Submit button for adding Name")
+    public void clicksSubmitButtonForAddingName() {
+        clickOn(MyProfilePage.addNamePopupSubmit);
+    }
+
+    @And("Clicks Cancel button on add Name Popup")
+    public void clicksCancelButtonOnAddNamePopup() {
+        clickOn(MyProfilePage.addNamePopupCancel);
+
+    }
+
+    @Then("Customer should be redirected to Profile PTB page")
+    public void customerShouldBeRedirectedToProfilePTBPage() {
+        MyProfile.profilePtbRedirection();
+    }
+
+    @Then("Customer should be able to view Add DOB on profile PTB page")
+    public void customerShouldBeAbleToViewAddDOBOnProfilePTBPage() {
+        verifyElementIsDisplayedOrNotusingScroll(MyProfilePage.addDOBProfilePtb);
+    }
+
+    @And("Clicks Add Date of Birth button on profile PTB page")
+    public void clicksAddDateOfBirthButtonOnProfilePTBPage() {
+        clickOn(MyProfilePage.addDOBProfilePtb);
+    }
+
+    @Then("Customer should get below popup for DOB")
+    public void customerShouldGetBelowPopupForDOB() {
+        verifyPopupDisplayedUsingTagAndText("strong", "Add Date of Birth", "");
+    }
+
+    @And("On entering valid {string} for Add DOB Popup")
+    public void onEnteringValidForAddDOBPopup(String dob) {
+        typeInIfDisplayed(MyProfilePage.addDOBInputProfilePtb, dob);
+    }
+
+    @And("Clicks on check box button in Add DOB Popup")
+    public void clicksOnCheckBoxButtonInAddDOBPopup() {
+        clickOnIfDisplayed(MyProfilePage.addDOBCheckBoxProfilePtb);
+    }
+
+    @And("Clicks Proceed button in Add DOB Popup")
+    public void clicksProceedButtonInAddDOBPopup() {
+        clickOn(MyProfilePage.addDOBProceedProfilePtb);
+    }
+
+    @And("Clicks Cancel button in Add DOB Popup")
+    public void clicksCancelButtonInAddDOBPopup() {
+        clickOn(MyProfilePage.addDOBCancelProfilePtb);
+    }
+
+    @Then("Customer should be redirected to Profile PTB page from Add DOB Popup")
+    public void customerShouldBeRedirectedToProfilePTBPageFromAddDOBPopup() {
+        MyProfile.profilePtbRedirectionDOBPopup();
+    }
+
+    @Then("Customer should be able to view Disabled Proceed CTA when check box is unchecked")
+    public void customerShouldBeAbleToViewDisabledProceedCTAWhenCheckBoxIsUnchecked() {
+        verifyButtonIsDisabledUsingLocator(MyProfilePage.addDOBProceedProfilePtb);
+    }
+
+    @And("Customer should be able to view Name, Logo, {string} , {string} {string}")
+    public void customerShouldBeAbleToViewNameLogo(String label1, String label2, String options) {
+        MyProfile.profilePTBContents(label1, label2, options, "");
+    }
+
+    @Then("On entering invalid for DOB field validation message should be displayed")
+    public void onEnteringInvalidForDOBFieldValidationMessageShouldBeDisplayed() {
+        String today = generateTodayDate("ddMMyyyy");
+        String dayPast1 = generatePastDate(1, "ddMMyyyy");
+        String lessThan18Years = generatePast18Years1Day(18, "ddMMyyyy");
+        String dayFuture1 = generateFutureDate(1, "ddMMyyyy");
+        String lessThanOneYear = generatePastYears(1, "ddMMyyyy");
+        String daysNegative = today + "," + dayPast1 + "," + dayFuture1 + "," + "32122001" + "," + "31112001" + "," + "31132001" + "," + "30112100" + "," + "29022021";
+        String daysNegativeMin = lessThan18Years + "," + lessThanOneYear;
+
+//        MyProfile.validateTextBox("Date of Birth", TestDataMyProfile.bankAccNegativeValues, "1212200", "121220000", 10, "00000000", "Enter valid date");
+        MyProfile.verifyErrorMessageMyProfile("", daysNegative, "Enter valid date");
+//        MyProfile.verifyErrorMessageMyProfile("", daysNegativeMin, "Minimum 18 years of age to be eligible");
+
+    }
+
+    @Then("Customer should be able to view {string} TAB on profile PTB page")
+    public void customerShouldBeAbleToViewTABOnProfilePTBPage(String tab) {
+        verifyFieldsUsingCommonXpathAndMultipleTextWithHash("//ul[@id='details_ul']/li/a", tab, "");
+
+    }
+
+    @And("Clicks {string} Tab on profile PTB page")
+    public void clicksTabOnProfilePTBPage(String tab) {
+        clickOnButtonUsingXpathAndText("//ul[@id='details_ul']/li/a", tab);
+    }
+
+    @Then("Customer should be able to view Labels {string} and Upload Documents, Checkbox {string} CTA under Salaried Tab")
+    public void customerShouldBeAbleToViewLabelsAndUploadDocumentsCheckboxCTAUnderSalariedTab(String string1, String string2) {
+        MyProfile.verifySalariedLabels(string1, string2, "");
+    }
+
+    @Then("Customer should get asterisks on below Content for Salaried {string}")
+    public void customerShouldGetAsterisksOnBelowContentForSalaried(String string) {
+        MyProfile.verifySalariedLabelsAsterics(string, "");
+    }
+
+    @Then("Customer should be able to view {string} , Document Uploads, Checkbox, {string} CTA under Self Employed Tab")
+    public void customerShouldBeAbleToViewDocumentUploadsCheckboxCTAUnderSelfEmployedTab(String string1, String string2) {
+        MyProfile.verifySelfEmployedContents(string1, string2, "");
+    }
+
+    @Then("Customer should get asterisks on below Content for Self Employed {string}")
+    public void customerShouldGetAsterisksOnBelowContentForSelfEmployed(String Options) {
+        MyProfile.verifySalariedLabelsAsterics(Options, "");
+    }
+
+    @Then("Customer should be able to view {string} ,Upload Document, Checkbox {string} CTA under Professional Tab")
+    public void customerShouldBeAbleToViewUploadDocumentCheckboxCTAUnderProfessionalTab(String string1, String string2) {
+        MyProfile.verifyProfessionalContents(string1, string2, "");
+    }
+
+    @Then("Customer should get asterisks on below Content for Professional {string} and {string}")
+    public void customerShouldGetAsterisksOnBelowContentForProfessionalAnd(String options1, String options2) {
+        MyProfile.verifySalariedLabelsAsterics(options1, "");
+        MyProfile.verifyAstericsForHeaderOptions(options2, "");
+    }
+
+    @And("Customer should get asteriks for Header Options {string}")
+    public void customerShouldGetAsteriksForHeaderOptions(String option) {
+        MyProfile.verifyAstericsForHeaderOptions(option, "");
+
+    }
+
+    @Then("Customer should be able to view {string} ,Checkbox, {string} CTA under Others Tab")
+    public void customerShouldBeAbleToViewCheckboxCTAUnderOthersTab(String option, String cta) {
+        MyProfile.verifyOthersContents(option, cta, "");
+    }
+
+    @And("verify {string} CTA is disabled in Profile PTB page")
+    public void verifyCTAIsDisabledInProfilePTBPage(String str) {
+        verifyButtonIsDisabledInThePageusingText(str);
+    }
+
+    @And("verify {string} CTA is enabled in Profile PTB page")
+    public void verifyCTAIsEnabledInProfilePTBPage(String str) {
+        verifyButtonIsEnabledInThePageusingText(str);
+
+    }
+
+    @Then("Customer enters valid details {string} in Desciption field")
+    public void customerEntersValidDetailsInDesciptionField(String str) {
+        typeIn(MyProfilePage.input_DescriptionDetails, str);
+    }
+
+    @And("Clicks on check box button for Others Tab")
+    public void clicksOnCheckBoxButtonForOthersTab() {
+        clickOn(MyProfilePage.chkBox_Others);
+    }
+
+    @And("On Clicking {string} button in Profile PTB page")
+    public void onClickingButtonInProfilePTBPage(String str) {
+        clickOnButtonUsingTextUsingForLoop(str);
+    }
+
+    @Then("Customer should get asterisks on below Content for Description Box - {string}")
+    public void customerShouldGetAsterisksOnBelowContentForDescriptionBox(String str) {
+        MyProfile.verifySalariedLabelsAsterics(str, "");
+    }
+
+    @Then("Customer enters more than {int} characters for Description Box")
+    public void customerEntersMoreThanCharactersForDescriptionBox(int num) {
+        String word = generateRandomAlphanumericString(num+2, "");
+        typeIn(MyProfilePage.input_DescriptionDetails, word);
+
+    }
+
+    @Then("Customer should get Validation message - {string}")
+    public void customerShouldGetValidationMessage(String str) {
+        verifyErrorMessageUsingText(str);
+    }
+
+    @And("Enters the Membership Number {string} under Professional Tab")
+    public void entersTheMembershipNumberUnderProfessionalTab(String str) {
+        typeIn(MyProfilePage.mmbrshipNumberProfessional,str);
+    }
+
+    @And("Select for {string} option under {string} Drop down of {string} Tab")
+    public void selectForOptionUnderDropDownOfTab(String option, String dd, String tab) {
+        MyProfile.selectDropdownOptionsProfilePtb(option,dd,tab,"");
+    }
+
+    @And("Clicks on check box button under Professional Tab")
+    public void clicksOnCheckBoxButtonUnderProfessionalTab() {
+        clickOn(MyProfilePage.chkBox_Professional);
+    }
+
+    @And("On uploading Invalid flies for Front page for Professional, verify Error message is displayed")
+    public void onUploadingInvalidFliesForFrontPageForProfessionalVerifyErrorMessageIsDisplayed() {
+        typeInIfPresent(MyProfilePage.docFront_Professional, "" + getCurrentPath() + "/UploadDocuments/MyProfileInvalid/ReImaginePdfReport.pdf");
+        verifyErrorMessageUsingText("Upload error. Please upload your file in .pdf, .png or .jpg format. Maximum file size: 1 MB");
+        typeInIfPresent(MyProfilePage.docFront_Professional, "" + getCurrentPath() + "/UploadDocuments/MyProfileInvalid/ReImagineSparkReport.html");
+        verifyErrorMessageUsingText("Upload error. Please upload your file in .pdf, .png or .jpg format. Maximum file size: 1 MB");
+
+    }
+
+    @And("On uploading Invalid flies for Back page for Professional, verify Error message is displayed")
+    public void onUploadingInvalidFliesForBackPageForProfessionalVerifyErrorMessageIsDisplayed() {
+        typeInIfPresent(MyProfilePage.docBack_Professional, "" + getCurrentPath() + "/UploadDocuments/MyProfileInvalid/ReImaginePdfReport.pdf");
+        verifyErrorMessageUsingText("Upload error. Please upload your file in .pdf, .png or .jpg format. Maximum file size: 1 MB");
+        typeInIfPresent(MyProfilePage.docBack_Professional, "" + getCurrentPath() + "/UploadDocuments/MyProfileInvalid/ReImagineSparkReport.html");
+        verifyErrorMessageUsingText("Upload error. Please upload your file in .pdf, .png or .jpg format. Maximum file size: 1 MB");
+
+    }
+
+    @Then("On uploading valid files for Front page for Professional, Customer should get a Bin and file should be accepted")
+    public void onUploadingValidFilesForFrontPageForProfessionalCustomerShouldGetABinAndFileShouldBeAccepted() {
+        typeInIfPresent(MyProfilePage.docFront_Professional, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/Capture.JPG");
+        verifyFieldsDisplayedUsingLocator(MyProfilePage.docFront_Professional_Delete);
+        clickOn(MyProfilePage.docFront_Professional_Delete);
+        typeInIfPresent(MyProfilePage.docFront_Professional, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/embedded28.png");
+        clickOn(MyProfilePage.docFront_Professional_Delete);
+        typeInIfPresent(MyProfilePage.docFront_Professional, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/svgfile.svg");
+        clickOn(MyProfilePage.docFront_Professional_Delete);
+
+
+    }
+
+    @And("On uploading valid files for Back page for Professional, Customer should get a Bin and file should be accepted")
+    public void onUploadingValidFilesForBackPageForProfessionalCustomerShouldGetABinAndFileShouldBeAccepted() {
+        typeInIfPresent(MyProfilePage.docBack_Professional, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/Capture.JPG");
+        verifyFieldsDisplayedUsingLocator(MyProfilePage.docBack_Professional_Delete);
+        clickOn(MyProfilePage.docBack_Professional_Delete);
+        typeInIfPresent(MyProfilePage.docBack_Professional, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/embedded28.png");
+        clickOn(MyProfilePage.docBack_Professional_Delete);
+        typeInIfPresent(MyProfilePage.docBack_Professional, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/svgfile.svg");
+        clickOn(MyProfilePage.docBack_Professional_Delete);
+
+
+    }
+
+    @And("On uploading valid file for both Front and Back Page for Professional")
+    public void onUploadingValidFileForBothFrontAndBackPageForProfessional() {
+        typeInIfPresent(MyProfilePage.docFront_Professional, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/Pdfim.pdf");
+        typeInIfPresent(MyProfilePage.docBack_Professional, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/Pdfim.pdf");
+
+    }
+
+    @And("Enters Entity Name {string} for Self Employed")
+    public void entersEntityNameForSelfEmployed(String ent) {
+        typeIn(MyProfilePage.entityNameSelf,ent);
+    }
+
+    @And("Enters GST Number {string} in Self Employed")
+    public void entersGSTNumberInSelfEmployed(String num) {
+        typeIn(MyProfile.gstNumberSelf,num);
+    }
+
+    @And("On uploading Invalid flies for Front page for Self Employed, verify Error message is displayed")
+    public void onUploadingInvalidFliesForFrontPageForSelfEmployedVerifyErrorMessageIsDisplayed() {
+        typeInIfPresent(MyProfilePage.docFront_Self, "" + getCurrentPath() + "/UploadDocuments/MyProfileInvalid/ReImaginePdfReport.pdf");
+        verifyErrorMessageUsingText("Upload error. Please upload your file in .pdf, .png or .jpg format. Maximum file size: 1 MB");
+        typeInIfPresent(MyProfilePage.docFront_Self, "" + getCurrentPath() + "/UploadDocuments/MyProfileInvalid/ReImagineSparkReport.html");
+        verifyErrorMessageUsingText("Upload error. Please upload your file in .pdf, .png or .jpg format. Maximum file size: 1 MB");
+
+    }
+
+    @And("On uploading Invalid flies for Back page for Self Employed, verify Error message is displayed")
+    public void onUploadingInvalidFliesForBackPageForSelfEmployedVerifyErrorMessageIsDisplayed() {
+        typeInIfPresent(MyProfilePage.docBack_Self, "" + getCurrentPath() + "/UploadDocuments/MyProfileInvalid/ReImaginePdfReport.pdf");
+        verifyErrorMessageUsingText("Upload error. Please upload your file in .pdf, .png or .jpg format. Maximum file size: 1 MB");
+        typeInIfPresent(MyProfilePage.docBack_Self, "" + getCurrentPath() + "/UploadDocuments/MyProfileInvalid/ReImagineSparkReport.html");
+        verifyErrorMessageUsingText("Upload error. Please upload your file in .pdf, .png or .jpg format. Maximum file size: 1 MB");
+
+    }
+
+    @And("Clicks on check box button under Self-employed Tab")
+    public void clicksOnCheckBoxButtonUnderSelfEmployedTab() {
+        clickOn(MyProfilePage.chkBox_Self);
+    }
+
+    @Then("On uploading valid files for Front page for Self Employed, Customer should get a Bin and file should be accepted")
+    public void onUploadingValidFilesForFrontPageForSelfEmployedCustomerShouldGetABinAndFileShouldBeAccepted() {
+        typeInIfPresent(MyProfilePage.docFront_Self, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/Capture.JPG");
+        verifyFieldsDisplayedUsingLocator(MyProfilePage.docFrontDelete_Self);
+        clickOn(MyProfilePage.docFrontDelete_Self);
+        typeInIfPresent(MyProfilePage.docFront_Self, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/embedded28.png");
+        clickOn(MyProfilePage.docFrontDelete_Self);
+        typeInIfPresent(MyProfilePage.docFront_Self, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/svgfile.svg");
+        clickOn(MyProfilePage.docFrontDelete_Self);
+
+
+    }
+
+    @And("On uploading valid files for Back page for Self Employed, Customer should get a Bin and file should be accepted")
+    public void onUploadingValidFilesForBackPageForSelfEmployedCustomerShouldGetABinAndFileShouldBeAccepted() {
+        typeInIfPresent(MyProfilePage.docBack_Self, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/Capture.JPG");
+        verifyFieldsDisplayedUsingLocator(MyProfilePage.docBackDelete_Self);
+        clickOn(MyProfilePage.docBackDelete_Self);
+        typeInIfPresent(MyProfilePage.docBack_Self, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/embedded28.png");
+        clickOn(MyProfilePage.docBackDelete_Self);
+        typeInIfPresent(MyProfilePage.docBack_Self, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/svgfile.svg");
+        clickOn(MyProfilePage.docBackDelete_Self);
+
+    }
+
+    @And("On uploading valid file for both Front and Back Page for Self Employed")
+    public void onUploadingValidFileForBothFrontAndBackPageForSelfEmployed() {
+        typeInIfPresent(MyProfilePage.docFront_Self, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/Pdfim.pdf");
+        typeInIfPresent(MyProfilePage.docBack_Self, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/Pdfim.pdf");
+
+    }
+
+    @Then("Customer enters valid details for Company Name {string}")
+    public void customerEntersValidDetailsForCompanyName(String str) {
+        typeIn(MyProfilePage.compName_Salary,str);
+    }
+
+    @And("Customer enters valid details for Designation {string}")
+    public void customerEntersValidDetailsForDesignation(String str) {
+        typeIn(MyProfilePage.designation_Salary,str);
+
+    }
+
+    @And("Customer enters valid details for Official Mail {string}")
+    public void customerEntersValidDetailsForOfficialMail(String str) {
+        typeIn(MyProfilePage.email_Salary,str);
+
+
+    }
+
+    @And("On uploading Invalid flies for Front page for Salaried, verify Error message is displayed")
+    public void onUploadingInvalidFliesForFrontPageForSalariedVerifyErrorMessageIsDisplayed() {
+        typeInIfPresent(MyProfilePage.docFront_Salary, "" + getCurrentPath() + "/UploadDocuments/MyProfileInvalid/ReImaginePdfReport.pdf");
+        verifyErrorMessageUsingText("Upload error. Please upload your file in .pdf, .png or .jpg format. Maximum file size: 1 MB");
+        typeInIfPresent(MyProfilePage.docFront_Salary, "" + getCurrentPath() + "/UploadDocuments/MyProfileInvalid/ReImagineSparkReport.html");
+        verifyErrorMessageUsingText("Upload error. Please upload your file in .pdf, .png or .jpg format. Maximum file size: 1 MB");
+
+    }
+
+
+    @And("On uploading Invalid flies for Back page for Salaried, verify Error message is displayed")
+    public void onUploadingInvalidFliesForBackPageForSalariedVerifyErrorMessageIsDisplayed() {
+        typeInIfPresent(MyProfilePage.docBack_Salary, "" + getCurrentPath() + "/UploadDocuments/MyProfileInvalid/ReImaginePdfReport.pdf");
+        verifyErrorMessageUsingText("Upload error. Please upload your file in .pdf, .png or .jpg format. Maximum file size: 1 MB");
+        typeInIfPresent(MyProfilePage.docBack_Salary, "" + getCurrentPath() + "/UploadDocuments/MyProfileInvalid/ReImagineSparkReport.html");
+        verifyErrorMessageUsingText("Upload error. Please upload your file in .pdf, .png or .jpg format. Maximum file size: 1 MB");
+
+    }
+
+    @And("Clicks on check box button under Salaried Tab")
+    public void clicksOnCheckBoxButtonUnderSalariedTab() {
+        clickOn(MyProfilePage.chkBox_Salary);
+
+    }
+
+    @Then("On uploading valid files for Front page for Salaried, Customer should get a Bin and file should be accepted")
+    public void onUploadingValidFilesForFrontPageForSalariedCustomerShouldGetABinAndFileShouldBeAccepted() {
+        typeInIfPresent(MyProfilePage.docFront_Salary, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/Capture.JPG");
+        verifyFieldsDisplayedUsingLocator(MyProfilePage.docFrontDelete_Salary);
+        clickOn(MyProfilePage.docFrontDelete_Salary);
+        typeInIfPresent(MyProfilePage.docFront_Salary, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/embedded28.png");
+        clickOn(MyProfilePage.docFrontDelete_Self);
+        typeInIfPresent(MyProfilePage.docFront_Salary, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/svgfile.svg");
+        clickOn(MyProfilePage.docFrontDelete_Salary);
+
+
+    }
+
+    @And("On uploading valid files for Back page for Salaried, Customer should get a Bin and file should be accepted")
+    public void onUploadingValidFilesForBackPageForSalariedCustomerShouldGetABinAndFileShouldBeAccepted() {
+        typeInIfPresent(MyProfilePage.docBack_Salary, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/Capture.JPG");
+        verifyFieldsDisplayedUsingLocator(MyProfilePage.docBackDelete_Salary);
+        clickOn(MyProfilePage.docBackDelete_Salary);
+        typeInIfPresent(MyProfilePage.docBack_Salary, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/embedded28.png");
+        clickOn(MyProfilePage.docBackDelete_Salary);
+        typeInIfPresent(MyProfilePage.docBack_Salary, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/svgfile.svg");
+        clickOn(MyProfilePage.docBackDelete_Salary);
+    }
+
+    @And("On uploading valid file for both Front and Back Page for Salaried")
+    public void onUploadingValidFileForBothFrontAndBackPageForSalaried() {
+        typeInIfPresent(MyProfilePage.docFront_Salary, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/Pdfim.pdf");
+        typeInIfPresent(MyProfilePage.docBack_Salary, "" + getCurrentPath() + "/UploadDocuments/MyProfileValid/Pdfim.pdf");
+
+    }
+
+    @And("Entered name {string} should be displayed in the Name Field")
+    public void enteredNameShouldBeDisplayedInTheNameField(String name) {
+        MyProfile.profilePtbNameChange(name,"");
+    }
+
+    @Then("Customer should be redirected to ckyc Page - {string}")
+    public void customerShouldBeRedirectedToCkycPage(String url) {
+        verifyRedirectionInCommon(url,"");
+    }
+
+    @And("Click on Profile Icon")
+    public void clickOnProfileIcon() {
+        clickOn(HomePage.icon_Profile);
+        waitTime(3);
+
+    }
+
+    @Then("{string} should be displayed under Profile")
+    public void shouldBeDisplayedUnderProfile(String str) {
+        verifyButtonIsDisplayedInThePage(str);
+    }
+
+    @And("Click on {string} under Profile")
+    public void clickOnUnderProfile(String str) {
+        clickOnButtonUsingTextUsingForLoop(str);
+    }
+
+    @And("Click on Edit Profile CTA in Profile Page")
+    public void clickOnEditProfileCTAInProfilePage() {
+        clickOnAnyThingUsingTextAndTagWithForLoop("h5","Edit profile","");
+    }
+
+    @And("Below Components & Section should be displayed:")
+    public void belowComponentsSectionShouldBeDisplayed() {
+        MyProfile.profileIntermediatePage();
+    }
+
+    @And("Account holder name should be displayed under Name Component section")
+    public void accountHolderNameShouldBeDisplayedUnderNameComponentSection() {
+        verifyElementIsDisplayedAndGetText(MyProfilePage.name_Intermediate);
+    }
+
+    @And("Click on {string} option under Shortcut component")
+    public void clickOnOptionUnderShortcutComponent(String string) {
+        clickOnAnyThingUsingTextAndTagWithForLoop("h4",string,"");
+
+    }
+
+    @Then("Customer should be redirected to {string}")
+    public void customerShouldBeRedirectedTo(String url) {
+        verifyRedirectionInCommon(url,"");
+    }
+
+    @Then("{string} Popup should be displayed")
+    public void popupShouldBeDisplayed(String str) {
+        verifyFieldsDisplayedUsingTextAndForLoop(str,"");
+    }
+
+    @And("Customer is able to view My Relations Section")
+    public void customerIsAbleToViewMyRelationsSection() {
+        verifyElementIsDisplayedOrNot(MyProfilePage.my_Relations);
+    }
+
+    @And("Click on {string} under My Relation section on My Account Intermediate page")
+    public void clickOnUnderMyRelationSectionOnMyAccountIntermediatePage(String str) {
+        clickOnButtonUsingTextUsingForLoop(str);
+    }
+
+    @And("verify Pre Approved Offers in Intermediate Page")
+    public void verifyPreApprovedOffersInIntermediatePage() {
+        verifyElementIsDisplayedOrNot(MyProfilePage.pao_Intermediate);
+    }
+
+    @Then("Pre Approved banner should move left or right as per the click")
+    public void preApprovedBannerShouldMoveLeftOrRightAsPerTheClick() {
+        MyProfile.profileIntermediatePagePAO();
+    }
+
+    @Then("Below options {string} should be displayed under Profile")
+    public void belowOptionsShouldBeDisplayedUnderProfile(String options) {
+        verifyFieldsUsingCommonXpathAndMultipleTextWithHash("//ul[@class='userdrop']//li//a",options,"");
+    }
+
+    @And("Below text {string} should be displayed in Document Center Page")
+    public void belowTextShouldBeDisplayedInDocumentCenterPage(String txt) {
+        verifyFieldsDisplayedUsingTextAndForLoop(txt,"");
     }
 }
 

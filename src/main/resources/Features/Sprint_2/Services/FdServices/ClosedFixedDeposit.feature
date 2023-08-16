@@ -124,7 +124,7 @@ Feature: FD Services - Closed FD
     And click on "Deposits" tab
     And click on "FIXED DEPOSIT" Tile of Account number "<Acc Number>"
     And verify Redirection using Account number "<Acc Number>"
-    Then verify RHS "Quick Actions" following Options: "View Statements" are Displayed
+    Then verify RHS "Quick Actions" following Options: "View Documents" are Displayed
     And verify RHS "Quick Actions" following Options are Not Displayed: "Renew your FD, Submit Form 15G/H, Premature Withdrawal, Get a loan against FD, Track FD Receipt, Submit FATCA Form"
     Examples:
       | Mobile Number | Date     | Customer Type | Acc Number |
@@ -140,7 +140,8 @@ Feature: FD Services - Closed FD
     And click on "Deposits" tab
     And click on "FIXED DEPOSIT" Tile of Account number "<Acc Number>"
     And verify Redirection using Account number "<Acc Number>"
-    And Click on "View Statements" Option Under "Quick Actions" Section
+    And Click on "View Documents" Option Under "Quick Actions" Section
+    And click on "Find them here" hyperlink
     Then Verify Redirected to View Documents of "Fixed Deposit Number :" "500953"
     And verify Documents Names in View Documents Page
     And verify Customer able to Download Documents

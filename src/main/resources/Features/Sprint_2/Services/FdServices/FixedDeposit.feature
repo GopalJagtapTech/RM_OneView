@@ -269,7 +269,7 @@ Feature: FD Services
     And click on "Deposits" tab
     And click on "FIXED DEPOSIT" Tile of Account number "<Acc Number>"
     And verify Redirection using Account number "<Acc Number>"
-    Then verify RHS "Quick Actions" following Options: "Renew your FD, View Statements, Submit Form 15G/H, Premature Withdrawal, Get a loan against FD, Track FD Receipt, Submit FATCA Form" are Displayed
+    Then verify RHS "Quick Actions" following Options: "Renew your FD, View Documents, Submit Form 15G/H, Premature Withdrawal, Get a loan against FD, Track FD Receipt, Submit FATCA Form" are Displayed
     Examples:
       | Mobile Number | Date     | Customer Type | Acc Number |
       | 9987160686    | 19091970 | Individual    | 149382     |

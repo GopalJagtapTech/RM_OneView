@@ -4,8 +4,9 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "classpath:Features_Login/AprilCR_Login/Login_2.0.feature",
-//        tags = "@Pass",
+        features = "classpath:Features/JuneCRs/LogIn/US_3215888MetaTitle&DescriptionChange.feature",
+//        tags = "not @Login",
+//        tags = "@Login",
 //stepNotifications = true,
 //      dryRun = true,
         glue = {"stepDefinitions","AppHooksLogin"},

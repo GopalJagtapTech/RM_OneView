@@ -287,7 +287,7 @@ Scenario Outline: Active Flexi Loan - RHS Sections
     And My relations Page should be displayed
     And click on "Loans" tab
     And verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
-    Then verify RHS "Quick Actions" following Options: "Withdraw, Make Payments, View Statements" are Displayed
+    Then verify RHS "Quick Actions" following Options: "Withdraw, Make Payments, View Documents" are Displayed
     Examples:
       | Mobile Number | Date     | Customer Type | Subtitle  | Account No     |
       | 8888890933    | 15071992 | Individual    | FLEXI TERM LOAN | 400FLFHE869061 |
@@ -349,7 +349,9 @@ Scenario Outline: Active Flexi Loan - RHS Sections
     And My relations Page should be displayed
     And click on "Loans" tab
     And verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
-    And Customer Click on "View Statements" CTA in RHS
+    And Customer Click on "View Documents" CTA in RHS
+    Then Then a Document drawer or pop-up should be displayed for "<Account No>"
+    And click on "Find them here" hyperlink
     Then User should be redirected to specific document page "<Account No>"
     And verify that customer is able view content on View Statements page
     And verify Loan Services statement is downloaded  on click of download button for Account NO "<Account No>"

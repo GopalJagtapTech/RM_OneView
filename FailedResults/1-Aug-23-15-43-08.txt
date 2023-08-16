@@ -1,0 +1,2 @@
+Tile Number:4  is Displayed on click of Previous Button------------>  To verify the Pre-Approved carousal banner is moving left or right when clicking on Left or Right Arrow£
+

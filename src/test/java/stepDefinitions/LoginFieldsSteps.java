@@ -254,7 +254,7 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     public void term_condition_should_be_opened() {
         waitTime(10);
         transferControlToWindow(2, false);
-        verifyRedirectionURLIfContains("https://cms-assets.bajajfinserv.in/is/content/bajajfinancestage/terms-of-use-02-06-2023-my-accountpdf?scl=1&fmt=pdf");
+        verifyRedirectionURLIfContains("https://cms-assets.bajajfinserv.in/is/content/bajajfinancestage/terms-of-use");
         transferControlToWindow(1, true);
     }
 
@@ -447,7 +447,7 @@ public class LoginFieldsSteps extends ApplicationKeywords {
 
     @Then("Validation message should be displayed the {string}")
     public void validation_message_should_be_displayed_the(String string) {
-        verifyFieldsDisplayedUsingText(string);
+        verifyErrorMessageUsingTextUsingForLoop(string);
     }
 
     @Then("Customer should be landed to home page with selected customer type {string}")
@@ -564,7 +564,7 @@ public class LoginFieldsSteps extends ApplicationKeywords {
 
     @Then("Customer should be redirected to login homepage")
     public void customer_should_be_redirected_to_login_homepage() {
-        verifyRedirectionURLIfContains("https://uat-oneweb.bajajfinserv.in/");
+        verifyRedirectionURLIfContains("https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home");
     }
 
 
@@ -1427,5 +1427,32 @@ public class LoginFieldsSteps extends ApplicationKeywords {
     @And("Clicks on {string} Customer tab")
     public void clicksOnCustomerTab(String tab) {
         loginfieldsPage.clickOnCustomerTab(tab, "");
+    }
+
+    //////////2706
+    @And("Enters Mobile Number {string} for Corporate")
+    public void entersMobileNumberForCorporate(String cust) {
+        loginfieldsPage.enterMobileNumberCorporate(cust);
+    }
+
+    @And("Enters Mobile Number {string} for NRI")
+    public void entersMobileNumberForNRI(String cust) {
+        loginfieldsPage.enterMobileNumberNRI(cust);
+
+    }
+
+    @Then("Customer should be redirected to login page")
+    public void customerShouldBeRedirectedToLoginPage() {
+        verifyRedirectionURLIfContains("https://uat-oneweb.bajajfinserv.in/MyAccountLogin");
+    }
+
+    @And("Verify user is able to view Bajaj Finserv Customer portal -Login to my Account")
+    public void verifyUserIsAbleToViewBajajFinservCustomerPortalLoginToMyAccount() {
+        verifyElementIsDisplayedUsingLocator(LoginPage.login_Popup);
+    }
+
+    @Then("Customer should be able to view {string} on Login page")
+    public void customerShouldBeAbleToViewOnLoginPage(String title) {
+        login.verifyLoginPageTitle(title, "");
     }
 }

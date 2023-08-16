@@ -1,0 +1,20 @@
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/new-car-finance------------>  Verify customer redirected respective page, when customer click on "Overview" option under New Car Finance loans Dropdown - PTB
+
+Expected URL : https://www.bajajfinserv.in/new-car-finance------------>  Verify customer redirected respective page, when customer click on "Overview" option under New Car Finance loans Dropdown - PTB
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/new-car-finance-features------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - PTB
+
+Expected URL : https://www.bajajfinserv.in/new-car-finance-features------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - PTB
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/new-car-finance-eligibility-and-documents------------>  Verify customer redirected respective page, when customer click on "Eligibility" option under New Car Finance loans Dropdown - PTB
+
+Expected URL : https://www.bajajfinserv.in/new-car-finance-eligibility-and-documents------------>  Verify customer redirected respective page, when customer click on "Eligibility" option under New Car Finance loans Dropdown - PTB
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/how-to-apply-for-new-car-finance------------>  Verify customer redirected respective page, when customer click on "How to Apply" option under New Car Finance loans Dropdown - PTB
+
+Expected URL : https://www.bajajfinserv.in/how-to-apply-for-new-car-finance------------>  Verify customer redirected respective page, when customer click on "How to Apply" option under New Car Finance loans Dropdown - PTB
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/new-car-finance-interest-rates-and-charges------------>  Verify customer redirected respective page, when customer click on "Interest Rates and Charges" option under New Car Finance loans Dropdown - PTB
+
+Expected URL : https://www.bajajfinserv.in/new-car-finance-interest-rates-and-charges------------>  Verify customer redirected respective page, when customer click on "Interest Rates and Charges" option under New Car Finance loans Dropdown - PTB
+

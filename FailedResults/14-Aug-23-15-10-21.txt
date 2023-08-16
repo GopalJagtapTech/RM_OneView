@@ -1,0 +1,16 @@
+KYC Pop up Verify Your Information  is Not Displayed------------>  To verify Registry section is displayed with given fields\
+
+KYC Pop up Verify Your Information  is Not Displayed------------>  To verify when user entering invalid input in PAN field given validation text is displayedt
+
+Home Page Text is Not Verified------------>  To verify when user click on PAN Tooltip
+
+Login is Unsuccessfull------------>  To verify when user click on PAN Tooltip
+
+KYC Pop up Verify Your Information  is Not Displayed------------>  To verify when user entering invalid input in DOB field given validation text is displayed¥
+
+Enter valid date error message is not displayed------------>  To verify when user entering invalid input in DOB field given validation text is displayed¥
+
+Enter valid date error message is not displayed------------>  To verify when user entering invalid input in DOB field given validation text is displayed¥
+
+KYC Pop up Verify Your Information  is Not Displayed------------>  To verify Renew Now CTA is enabled & redirected to respective pageÂ
+

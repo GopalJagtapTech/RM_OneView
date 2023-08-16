@@ -1,0 +1,16 @@
+Home Page Text is Not Verified------------>  To verify the Static Mutual Fund Details are displayed when customer haven’t invested in Mutual Fund%
+
+Login is Unsuccessfull------------>  To verify the Static Mutual Fund Details are displayed when customer haven’t invested in Mutual Fund%
+
+Sign Out Button is Not Present------------>  To verify the Static Mutual Fund Details are displayed when customer haven’t invested in Mutual Fund%
+
+Failed in Type In DOI Text Box For Non-Individual value as 14061965. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To verify the Mutual Fund Tile are displayed when customer invested in Mutual Fund2
+
+PROCEED button is Not Displayed------------>  To verify the Mutual Fund Tile are displayed when customer invested in Mutual Fund2
+
+Home Page Text is Not Verified------------>  To verify the Mutual Fund Tile are displayed when customer invested in Mutual Fund2
+
+Login is Unsuccessfull------------>  To verify the Mutual Fund Tile are displayed when customer invested in Mutual Fund2
+
+Sign Out Button is Not Present------------>  To verify the Mutual Fund Tile are displayed when customer invested in Mutual Fund2
+

@@ -24,7 +24,7 @@ Feature: Alerts section - update email ID
     When User is on Home Page
     And verify Alert bell icon in header
     And Click on Alert bell icon
-    And Verify Check/update email ID card option
+    And Verify Check or update email ID card option
     Then Customer should be able to Check update email ID  with Update CTA and subtext "<CTA>" and "<Subtext>"
     Examples:
       |Mobile Number| Date|Customer Type|CTA | Subtext |

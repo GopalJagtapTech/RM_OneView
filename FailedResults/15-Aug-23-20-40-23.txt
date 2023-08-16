@@ -1,0 +1,8 @@
+KYC Pop up Verify Your Information  is Not Displayed------------>  To verify when user entering invalid input in DOB field given validation text is displayed¦
+
+Home Page Text is Not Verified------------>  To verify Renew Now CTA is enabled & redirected to respective pageÄ
+
+Login is Unsuccessfull------------>  To verify Renew Now CTA is enabled & redirected to respective pageÄ
+
+Sign Out Button is Not Present------------>  To verify Renew Now CTA is enabled & redirected to respective pageÄ
+

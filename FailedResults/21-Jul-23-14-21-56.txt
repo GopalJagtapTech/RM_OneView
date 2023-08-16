@@ -1,0 +1,108 @@
+Alerts  Offers  is Not Verified------------>  Verify ETB PTB NTB customer is able to view Alert section with bell icon on header section of Homepage
+
+Alerts  Offers  is Not Verified------------>  Verify ETB PTB NTB customer is able to view Alert section with bell icon on header section of Homepage
+
+INVEST ONLINE  is not present.------------>  Verify that customer is able to view offer of Fixed Deposit&
+
+KNOW MORE  is not present.------------>  Verify that customer is able to view offer of Fixed Deposit&
+
+INVEST ONLINE  is not present.------------>  Verify that customer is able to view offer of Fixed Deposit&
+
+INVEST ONLINE  is not present.------------>  Verify that customer is able to view offer of Fixed Deposit'
+
+KNOW MORE  is not present.------------>  Verify that customer is able to view offer of Fixed Deposit'
+
+INVEST ONLINE  is not present.------------>  Verify that customer is able to view offer of Fixed Deposit'
+
+Home Page Text is Not Verified------------>  Verify that customer is able to view offer of Fixed Deposit(
+
+Login is Unsuccessfull------------>  Verify that customer is able to view offer of Fixed Deposit(
+
+INVEST ONLINE  is not present.------------>  Verify that Fixed Deposit card title in camel case and CTA in caps format5
+
+KNOW MORE  is not present.------------>  Verify that Fixed Deposit card title in camel case and CTA in caps format5
+
+INVEST ONLINE  is not present.------------>  Verify that Fixed Deposit card title in camel case and CTA in caps format5
+
+INVEST ONLINE  is not present.------------>  Verify that Fixed Deposit card title in camel case and CTA in caps format6
+
+KNOW MORE  is not present.------------>  Verify that Fixed Deposit card title in camel case and CTA in caps format6
+
+INVEST ONLINE  is not present.------------>  Verify that Fixed Deposit card title in camel case and CTA in caps format6
+
+Home Page Text is Not Verified------------>  Verify that Fixed Deposit card title in camel case and CTA in caps format7
+
+Login is Unsuccessfull------------>  Verify that Fixed Deposit card title in camel case and CTA in caps format7
+
+INVEST ONLINE  is not present.------------>  Verify that posion of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerC
+
+Fixed Deposit INVEST ONLINE   is Not Present In Right side of the Page------------>  Verify that posion of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerC
+
+Fixed Deposit  KNOW MORE  is Not Present on Left Side of Fixed Deposit  INVEST ONLINE ------------>  Verify that posion of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerC
+
+INVEST ONLINE  is not present.------------>  Verify that posion of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerD
+
+Fixed Deposit INVEST ONLINE   is Not Present In Right side of the Page------------>  Verify that posion of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerD
+
+Fixed Deposit  KNOW MORE  is Not Present on Left Side of Fixed Deposit  INVEST ONLINE ------------>  Verify that posion of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerD
+
+INVEST ONLINE  is not present.------------>  Verify that posion of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerE
+
+Fixed Deposit INVEST ONLINE   is Not Present In Right side of the Page------------>  Verify that posion of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerE
+
+Fixed Deposit  KNOW MORE  is Not Present on Left Side of Fixed Deposit  INVEST ONLINE ------------>  Verify that posion of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerE
+
+INVEST ONLINE  is not present.------------>  Verify that when Click on INVEST ONLINE CTA of Fixed Deposit offerQ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=371a9a5b-de11-43b1-83bf-b58ba50bdb65#;------------>  Verify that when Click on INVEST ONLINE CTA of Fixed Deposit offerQ
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/investments/fixed-deposit------------>  Verify that when Click on INVEST ONLINE CTA of Fixed Deposit offerQ
+
+KNOW MORE  is not present.------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer]
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=83571f80-5891-4c2d-b470-f9f6eeff3ea9#;------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer]
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/investments/fixed-deposit------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer]
+
+Failed in redurect to Url https://uat-oneweb.bajajfinserv.in/MyAccountLogin. Exception: class org.openqa.selenium.WebDriverException------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer^
+
+Skip Button in Cochmark is Not Present in findElements------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer^
+
+Failed in click on  Skip Button in Cochmark button using locator using for loop without Fail. Exception: class java.lang.NullPointerException------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer^
+
+Individual Customer tab is Not Present------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer^
+
+Mobile Number Text Box For Individual is not Present and Type In Failed------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer^
+
+Get OTP is Not Present in findElements------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer^
+
+Failed in click on Get OTP button using for Loop. Exception: class java.lang.NullPointerException------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer^
+
+Failed in wait for OTP Text Box 1 Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer^
+
+OTP Text Box 1 is Not Displayed------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer^
+
+OTP Text Box 2 is Not Displayed------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer^
+
+OTP Text Box 3 is Not Displayed------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer^
+
+OTP Text Box 4 is Not Displayed------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer^
+
+OTP Text Box 5 is Not Displayed------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer^
+
+OTP Text Box 6 is Not Displayed------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer^
+
+Submit is Not Present in findElements------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer^
+
+Failed in click on Submit button using for Loop. Exception: class java.lang.NullPointerException------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer^
+
+Home Page Text is Not Verified------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer^
+
+Login is Unsuccessfull------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer^
+
+KNOW MORE  is not present.------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer_
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=4e3dd3fa-f01b-4472-a83f-2d5d0fe4ba12#;------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer_
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/investments/fixed-deposit------------>  Verify that when Click on KNOW MORE CTA of Fixed Deposit offer_
+

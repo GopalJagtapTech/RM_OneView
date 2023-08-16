@@ -1,0 +1,18 @@
+Home Page Text is Not Verified------------>  To verify View Statements Pop-up is displayed when customer clicks on View Documents.
+
+Login is Unsuccessfull------------>  To verify View Statements Pop-up is displayed when customer clicks on View Documents.
+
+Sign Out Button is Not Present------------>  To verify View Statements Pop-up is displayed when customer clicks on View Documents.
+
+Download Button  is Not Displayed------------>  To verify when customer clicks on TDS Certificate under View Statement pop-up - Closeds
+
+Download Button  is Not Displayed------------>  To verify when customer clicks on Download CTA on 15G/H page - Closed
+
+6013910_FDIntCertificate.pdf file is not downloaded.------------>  To verify when customer clicks on Interest Certificate under View Statement pop-up - Active¢
+
+SYSTEMATIC DEPOSIT PLAN <Acc Number> No. Tile is Not Present in this customer Id------------>  To verify View Documents option is displayed under Quick Actions for Closed SDPĳ
+
+ Account Number <Acc Number> is Not Redirected------------>  To verify View Documents option is displayed under Quick Actions for Closed SDPĳ
+
+Not Redirected to Expected------------>  To verify View Documents option is displayed under Quick Actions for Closed SDPĳ
+

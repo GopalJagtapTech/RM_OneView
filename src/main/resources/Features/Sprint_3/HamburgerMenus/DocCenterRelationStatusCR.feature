@@ -77,7 +77,7 @@ Feature: Document Centre -Relationship status Nudge
 
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu     |
-      | 9650543332    | 13091990 | Corporate     | Mandate and documents | Document Center |
+      | 9443703371    | 13091990 | Corporate     | Mandate and documents | Document Center |
 
   Scenario Outline: To verify that filter icon on deposit tab is clickable and Active and close filter with apply and clear all CTA are visible on click of filter icon
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
@@ -104,12 +104,12 @@ Feature: Document Centre -Relationship status Nudge
     And Unselects a Relation Status in Filter in Doc Page-"Active"
 #    And Selects a Relation Status in Filter in Doc Page-"Closed"
     And Clicks on Apply Button in Filter in Doc Page
-    Then All pre matured "Deposits" should be displayed with "PRE-MATURED" nudge
+    Then All pre matured "Deposits" should be displayed with "MATURED" nudge
 #    Then All matured "Deposits" should be displayed with "Matured" nudge
 
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu     |
-      | 8800384932    | 13091990 | Individual    | Mandate and documents | Document Center |
+      | 7798716919    | 13091990 | Individual    | Mandate and documents | Document Center |
 
   Scenario Outline: To verify that filter icon on insurance tab is clickable and Active, close, cancelled and surrendered filters with apply and clear all CTA are visible on click of filter icon
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
@@ -123,7 +123,7 @@ Feature: Document Centre -Relationship status Nudge
 
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu     |
-      | 8800384932    | 13091990 | Individual    | Mandate and documents | Document Center |
+      | 8095480845    | 13091990 | Individual    | Mandate and documents | Document Center |
 
   Scenario Outline: To verify Matured nudge is displayed on insurance card for closed insurance
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
@@ -141,7 +141,7 @@ Feature: Document Centre -Relationship status Nudge
 
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu     |
-      | 9717843356    | 13091990 | Individual    | Mandate and documents | Document Center |
+      | 8095480845    | 13091990 | Individual    | Mandate and documents | Document Center |
 
   Scenario Outline: To verify Cancelled nudge is displayed on insurance card for cancelled insurance
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
@@ -159,7 +159,7 @@ Feature: Document Centre -Relationship status Nudge
     Then All Cancelled "Insurance" should be displayed with "CANCELLED" nudge
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu     |
-      | 8421822960    | 13091990 | Individual    | Mandate and documents | Document Center |
+      | 8095480845    | 13091990 | Individual    | Mandate and documents | Document Center |
 
   Scenario Outline: TTo verify surrendered nudge is displayed on insurance card for surrendered insurance
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
@@ -178,4 +178,4 @@ Feature: Document Centre -Relationship status Nudge
 
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu     |
-      | 9552524190    | 13091990 | Individual    | Mandate and documents | Document Center |
+      | 8095480845    | 13091990 | Individual    | Mandate and documents | Document Center |

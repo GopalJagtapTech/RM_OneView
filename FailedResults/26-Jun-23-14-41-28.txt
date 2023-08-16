@@ -1,0 +1,372 @@
+Redirected URL is not Matched : https://uatpayments.bajajfinserv.in/Payments/Payment_Error.aspx------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment)- "Worldline" "NetBanking"
+
+Expected URL : https://feba.bobibanking.com/corp/AuthenticationController------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment)- "Worldline" "NetBanking"
+
+Failed in Click On cancel in Net Banking Page. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment)- "Worldline" "NetBanking"
+
+Redirected URL is not Matched : https://uatpayments.bajajfinserv.in/Payments/Payment_Error.aspx------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment)- "Worldline" "NetBanking"
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/Receipt------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment)- "Worldline" "NetBanking"
+
+Your transaction declined by the bank. Please connect with your bank. is Not Present------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment)- "Worldline" "NetBanking"
+
+Redirected URL is not Matched : https://uatpayments.bajajfinserv.in/Payments/Payment_Error.aspx------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment)- "CC Avenue" "NetBanking"¡
+
+Expected URL : https://feba.bobibanking.com/corp/AuthenticationController------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment)- "CC Avenue" "NetBanking"¡
+
+Failed in Click On cancel in Net Banking Page. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment)- "CC Avenue" "NetBanking"¡
+
+Redirected URL is not Matched : https://uatpayments.bajajfinserv.in/Payments/Payment_Error.aspx------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment)- "CC Avenue" "NetBanking"¡
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/Receipt------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment)- "CC Avenue" "NetBanking"¡
+
+The payment was unsuccessful as it was cancelled at your end. Please try again. is Not Present------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment)- "CC Avenue" "NetBanking"¡
+
+Redirected URL is not Matched : https://uatpayments.bajajfinserv.in/Payments/Payment_Error.aspx------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)- "CC Avenue" "UPI"Ò
+
+Expected URL : https://secure.ccavenue.com/transaction.do------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)- "CC Avenue" "UPI"Ò
+
+Failed in Click On cancel in CC Avenue Page. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)- "CC Avenue" "UPI"Ò
+
+Failed in Click On cancel Transaction in cc avenue upi. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)- "CC Avenue" "UPI"Ò
+
+Redirected URL is not Matched : https://uatpayments.bajajfinserv.in/Payments/Payment_Error.aspx------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)- "CC Avenue" "UPI"Ò
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/Receipt------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)- "CC Avenue" "UPI"Ò
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/AdvancePay?id=e0c4e23e-6299-4c46-b06e-6b66c6294d1d------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "Worldline" "UPI"œ
+
+Expected URL : https://uatpayments.bajajfinserv.in/payments------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "Worldline" "UPI"œ
+
+Gateway: Worldlineis not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "Worldline" "UPI"œ
+
+Select Payment: UPIis not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "Worldline" "UPI"œ
+
+Failed in scroll To WebElement for Pay Amount Button. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "Worldline" "UPI"œ
+
+Pay Amount Button is Not Present------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "Worldline" "UPI"œ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/AdvancePay?id=e0c4e23e-6299-4c46-b06e-6b66c6294d1d------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "Worldline" "UPI"œ
+
+Expected URL : https://www.tpsl-india.in/PaymentGateway/txnreq.pg------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "Worldline" "UPI"œ
+
+Failed in Click On cancel in world line upi. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "Worldline" "UPI"œ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/AdvancePay?id=e0c4e23e-6299-4c46-b06e-6b66c6294d1d------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "Worldline" "UPI"œ
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/Receipt------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "Worldline" "UPI"œ
+
+The payment was unsuccessful as it was cancelled at your end. Please try again. is Not Present------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "Worldline" "UPI"œ
+
+Advance Payment amount is not properly displayed for the number of months 2 selected i.e 4672------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "CC Avenue" "UPI"ů
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/AdvancePay?id=2d8aae19-7824-42bd-a1a5-913caef123e4------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "CC Avenue" "UPI"ů
+
+Expected URL : https://uatpayments.bajajfinserv.in/payments------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "CC Avenue" "UPI"ů
+
+Gateway: CC Avenueis not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "CC Avenue" "UPI"ů
+
+Select Payment: UPIis not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "CC Avenue" "UPI"ů
+
+Failed in scroll To WebElement for Pay Amount Button. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "CC Avenue" "UPI"ů
+
+Pay Amount Button is Not Present------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "CC Avenue" "UPI"ů
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/AdvancePay?id=2d8aae19-7824-42bd-a1a5-913caef123e4------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "CC Avenue" "UPI"ů
+
+Expected URL : https://secure.ccavenue.com/transaction.do------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "CC Avenue" "UPI"ů
+
+Failed in Click On cancel in CC Avenue Page. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "CC Avenue" "UPI"ů
+
+Failed in Click On cancel Transaction in cc avenue upi. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "CC Avenue" "UPI"ů
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/AdvancePay?id=2d8aae19-7824-42bd-a1a5-913caef123e4------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "CC Avenue" "UPI"ů
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/Receipt------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "CC Avenue" "UPI"ů
+
+The payment was unsuccessful as it was cancelled at your end. Please try again. is Not Present------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)- "CC Avenue" "UPI"ů
+
+Failed in wait for Loans tab Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI) - My Relations - "Worldline" "UPI"ƍ
+
+Loans tab is Not Present in this Customer Id------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI) - My Relations - "Worldline" "UPI"ƍ
+
+Not Available P454FSC4430362 No. Tile is Not Present in this customer Id------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI) - My Relations - "Worldline" "UPI"ƍ
+
+Not Available Account Number P454FSC4430362 is Not Redirected------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI) - My Relations - "Worldline" "UPI"ƍ
+
+Not Redirected to Expected------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI) - My Relations - "Worldline" "UPI"ƍ
+
+Advance Payment amount is not properly displayed for the number of months 2 selected i.e 4672------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI) - My Relations- "CC Avenue" "UPI"Ʃ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/AdvancePay?id=7bf2998d-bb82-4cfe-a60f-cdbe7805ac85------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI) - My Relations- "CC Avenue" "UPI"Ʃ
+
+Expected URL : https://uatpayments.bajajfinserv.in/payments------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI) - My Relations- "CC Avenue" "UPI"Ʃ
+
+Advance Payment amount is not properly displayed for the number of months 2 selected i.e 4672------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Advance EMI)- "Worldline" "Debit card"Ǆ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/AdvancePay?id=02fdebfc-b99f-4575-a911-eaa5441567a6------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Advance EMI)- "Worldline" "Debit card"Ǆ
+
+Expected URL : https://uatpayments.bajajfinserv.in/payments------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Advance EMI)- "Worldline" "Debit card"Ǆ
+
+Select Payment: Debit cardis not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Advance EMI)- "Worldline" "Debit card"Ǆ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/AdvancePay?id=c13d1b41-112d-4343-bf8d-2424c566c617------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Advance EMI)- "CC Avenue" "Debit card"ǟ
+
+Expected URL : https://uatpayments.bajajfinserv.in/payments------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Advance EMI)- "CC Avenue" "Debit card"ǟ
+
+Gateway: CC Avenueis not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Advance EMI)- "CC Avenue" "Debit card"ǟ
+
+Select Payment: Debit cardis not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Advance EMI)- "CC Avenue" "Debit card"ǟ
+
+Failed in scroll To WebElement for Pay Amount Button. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Advance EMI)- "CC Avenue" "Debit card"ǟ
+
+Pay Amount Button is Not Present------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Advance EMI)- "CC Avenue" "Debit card"ǟ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/AdvancePay?id=c13d1b41-112d-4343-bf8d-2424c566c617------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Advance EMI)- "CC Avenue" "Debit card"ǟ
+
+Expected URL : https://secure.ccavenue.com/transaction.do------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Advance EMI)- "CC Avenue" "Debit card"ǟ
+
+Failed in Click On cancel in CC Avenue Page. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Advance EMI)- "CC Avenue" "Debit card"ǟ
+
+Failed in Click On cancel Transaction in cc avenue upi. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Advance EMI)- "CC Avenue" "Debit card"ǟ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/AdvancePay?id=c13d1b41-112d-4343-bf8d-2424c566c617------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Advance EMI)- "CC Avenue" "Debit card"ǟ
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/Receipt------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Advance EMI)- "CC Avenue" "Debit card"ǟ
+
+The payment was unsuccessful as it was cancelled at your end. Please try again. is Not Present------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Advance EMI)- "CC Avenue" "Debit card"ǟ
+
+Failed in Click On MyRelations ViewAll. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Foreclosure)-My Relations - "Worldline" "Debit card"ȵ
+
+Failed in verify Page Redirection Using Tag and Text My Relations. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Foreclosure)-My Relations - "Worldline" "Debit card"ȵ
+
+Failed in wait for Loans tab Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Foreclosure)-My Relations - "Worldline" "Debit card"ȵ
+
+Loans tab is Not Present in this Customer Id------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Foreclosure)-My Relations - "Worldline" "Debit card"ȵ
+
+Not Available 536LRDJE318970 No. Tile is Not Present in this customer Id------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Foreclosure)-My Relations - "Worldline" "Debit card"ȵ
+
+Not Available Account Number 536LRDJE318970 is Not Redirected------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Foreclosure)-My Relations - "Worldline" "Debit card"ȵ
+
+Not Redirected to Expected------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Foreclosure)-My Relations - "Worldline" "Debit card"ȵ
+
+Select Payment: Debit cardis not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Debit card (Foreclosure)-My Relations - "CC Avenue" "Debit card"ɑ
+
+Failed in Click On cancel in Net Banking Page. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Foreclosure)-My Relations - "Worldline" "NetBanking"ɮ
+
+Redirected URL is not Matched : https://feba.bobibanking.com/corp/AuthenticationController?------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Foreclosure)-My Relations - "Worldline" "NetBanking"ɮ
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/Receipt------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Foreclosure)-My Relations - "Worldline" "NetBanking"ɮ
+
+Your transaction declined by the bank. Please connect with your bank. is Not Present------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Foreclosure)-My Relations - "Worldline" "NetBanking"ɮ
+
+Failed in Click On cancel in Net Banking Page. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Foreclosure)My Relations - "CC Avenue" "NetBanking"ʊ
+
+Redirected URL is not Matched : https://feba.bobibanking.com/corp/AuthenticationController?------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Foreclosure)My Relations - "CC Avenue" "NetBanking"ʊ
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/Receipt------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Foreclosure)My Relations - "CC Avenue" "NetBanking"ʊ
+
+The payment was unsuccessful as it was cancelled at your end. Please try again. is Not Present------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Foreclosure)My Relations - "CC Avenue" "NetBanking"ʊ
+
+PROCEED button is Not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Part Prepayment) - "PayU" "UPI"ʩ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/Part_Payment?id=cb498bbe-f693-4dd4-aa43-86e1c2014975------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Part Prepayment) - "PayU" "UPI"ʩ
+
+Expected URL : https://uatpayments.bajajfinserv.in/payments------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Part Prepayment) - "PayU" "UPI"ʩ
+
+Gateway: PayUis not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Part Prepayment) - "PayU" "UPI"ʩ
+
+Select Payment: UPIis not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Part Prepayment) - "PayU" "UPI"ʩ
+
+Failed in scroll To WebElement for Pay Amount Button. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Part Prepayment) - "PayU" "UPI"ʩ
+
+Pay Amount Button is Not Present------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Part Prepayment) - "PayU" "UPI"ʩ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/Part_Payment?id=cb498bbe-f693-4dd4-aa43-86e1c2014975------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Part Prepayment) - "PayU" "UPI"ʩ
+
+Expected URL : https://api.PayU.in/public------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Part Prepayment) - "PayU" "UPI"ʩ
+
+Failed in Click On Back Button in PayU page. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Part Prepayment) - "PayU" "UPI"ʩ
+
+YES, CANCEL is Not Present in findElements------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Part Prepayment) - "PayU" "UPI"ʩ
+
+Failed in click on YES, CANCEL button using for Loop. Exception: class java.lang.NullPointerException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Part Prepayment) - "PayU" "UPI"ʩ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/Part_Payment?id=cb498bbe-f693-4dd4-aa43-86e1c2014975------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Part Prepayment) - "PayU" "UPI"ʩ
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/Receipt------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Part Prepayment) - "PayU" "UPI"ʩ
+
+Transaction failed due to the cancel key being pressed during the payment process. is Not Present------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Part Prepayment) - "PayU" "UPI"ʩ
+
+Redirected URL is not Matched : https://api.payu.in/public/#/3c64889af3d7cefdc82063ee3108daef/cards------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Part Prepayment) - "PayU" "Debit Card"˅
+
+Expected URL : https://api.PayU.in/public------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Part Prepayment) - "PayU" "Debit Card"˅
+
+Failed in Click On cancel in Net Banking Page. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment)˟
+
+Redirected URL is not Matched : https://feba.bobibanking.com/corp/AuthenticationController?FORMSGROUP_ID__=AuthenticationFG&__START_TRAN_FLAG__=Y&FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=012&AuthenticationFG.USER_TYPE=1&AuthenticationFG.MENU_ID=CIMSHP&AuthenticationFG.CALL_MODE=2&CATEGORY_ID=PYU&RU=https://secure.payu.in/f10ac15a97489b5be65c17de08330d82/CommonPgResponseHandler&QS=DW8KShNKoQssIHG%2FQBEj4jmTUkFWwC4meM0EJt1q8tANbwpKE0qhCywgcb9AESPiZ9Py3USjnlrpGHMep40ZOh%2BEcNAAyHJDfCIGVtR8HLcI4XWa%2FManquIZWa%2FC1iOT%0D%0AoF1ZAWLuZMknJN8tkAAbqUP9E%2Fr8pZnKwvzi0JZGjnhwb%2Fop5pTwinGXnkflnpG%2BgVTGSwLqdUEpoM98so9WvdThGs0UHuS%2BWNqVszxeCnyDF3Rq58P0eMqSuDJ%2FPIC7CP60%0D%0AI2RT2s3C5nJwuVMYTZIzPQXXcvKDMTNtGGhpK48NbwpKE0qhCywgcb9AESPiFQxNxxdSdcx59S3X89bBhQeCzDGmcSZKD%2FaHXeLUBI9dM%2FSf55dDP1zLct56ADrKsKkEa97x%0D%0AABry1xwB%2FSZWIljmiN4e8QgMKVIPjKt%2BbdVMj4%2F10ZQWIDIrdsuEDXiBkIZGzeNr%2FODYpTNtPzTWSaq9Rnn%2FRXgCa6tAC3fgGN%2Fqvx%2B7DsPpdRFeg6FuCKqOltbEEoIKbdwA%0D%0Ar%2By2lC86m00d5g7RW4tG0pZ59WaemBb1nBnIKgXW8FRTzb9RbBZ7K0O3VxqPLDYf2uIQBASOIzonhhfyPm5dr9gG9Z7B8hg%3D------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment)˟
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/Receipt------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment)˟
+
+Failed in scroll To WebElement If Present for Your transaction has failed due to authorization failure from the bank's end. Please try after some time or check with your bank.. Exception: class org.openqa.selenium.InvalidSelectorException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment)˟
+
+Redirected URL is not Matched : https://api.payu.in/public/#/71a65d4953ab46a9affde8f446c7ab2a/upi------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)˸
+
+Expected URL : https://api.PayU.in/public------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)˸
+
+Redirected URL is not Matched : https://api.payu.in/public/#/9b5e41e759cc8a2044d03e14c57836c0/cards------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)̒
+
+Expected URL : https://api.PayU.in/public------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)̒
+
+Redirected URL is not Matched : https://uatpayments.bajajfinserv.in/payments/B2C_Checkout.aspx#no-back-button------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Overdue)̫
+
+Expected URL : <Url>------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Overdue)̫
+
+Failed in scroll To WebElement If Present for Your transaction has failed due to authorization failure from the bank's end. Please try after some time or check with your bank.. Exception: class org.openqa.selenium.InvalidSelectorException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Overdue)̫
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/AdvancePay?id=429ad609-7936-4455-8fe2-5202ed8030a9------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "UPI"͋
+
+Expected URL : https://uatpayments.bajajfinserv.in/payments------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "UPI"͋
+
+Gateway: PayUis not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "UPI"͋
+
+Select Payment: UPIis not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "UPI"͋
+
+Failed in scroll To WebElement for Pay Amount Button. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "UPI"͋
+
+Pay Amount Button is Not Present------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "UPI"͋
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/AdvancePay?id=429ad609-7936-4455-8fe2-5202ed8030a9------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "UPI"͋
+
+Expected URL : https://api.PayU.in/public------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "UPI"͋
+
+Failed in Click On Back Button in PayU page. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "UPI"͋
+
+YES, CANCEL is Not Present in findElements------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "UPI"͋
+
+Failed in click on YES, CANCEL button using for Loop. Exception: class java.lang.NullPointerException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "UPI"͋
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/AdvancePay?id=429ad609-7936-4455-8fe2-5202ed8030a9------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "UPI"͋
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/Receipt------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "UPI"͋
+
+Transaction failed due to the cancel key being pressed during the payment process. is Not Present------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "UPI"͋
+
+Advance Payment amount is not properly displayed for the number of months 2 selected i.e 4672------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "Debit card"ͩ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/AdvancePay?id=2dc0e66d-32ec-4a7b-b24d-bc1543f84857------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "Debit card"ͩ
+
+Expected URL : https://uatpayments.bajajfinserv.in/payments------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "Debit card"ͩ
+
+Gateway: PayUis not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "Debit card"ͩ
+
+Select Payment: Debit cardis not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "Debit card"ͩ
+
+Failed in scroll To WebElement for Pay Amount Button. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "Debit card"ͩ
+
+Pay Amount Button is Not Present------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "Debit card"ͩ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/AdvancePay?id=2dc0e66d-32ec-4a7b-b24d-bc1543f84857------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "Debit card"ͩ
+
+Expected URL : https://api.PayU.in/public------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "Debit card"ͩ
+
+Failed in Click On Back Button in PayU page. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "Debit card"ͩ
+
+YES, CANCEL is Not Present in findElements------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "Debit card"ͩ
+
+Failed in click on YES, CANCEL button using for Loop. Exception: class java.lang.NullPointerException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "Debit card"ͩ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/AdvancePay?id=2dc0e66d-32ec-4a7b-b24d-bc1543f84857------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "Debit card"ͩ
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/Receipt------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "Debit card"ͩ
+
+Transaction failed due to the cancel key being pressed during the payment process. is Not Present------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Advance EMI)-MR - "PayU" "Debit card"ͩ
+
+Not Available P454FSC4430362 No. Tile is Not Present in this customer Id------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Advance EMI)MR - "PayU" "NetBanking"Ά
+
+Not Available Account Number P454FSC4430362 is Not Redirected------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Advance EMI)MR - "PayU" "NetBanking"Ά
+
+Not Redirected to Expected------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Advance EMI)MR - "PayU" "NetBanking"Ά
+
+Foreclosure Radio Button is Not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+PROCEED button is Not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Foreclosure Radio Button option has not redirected to Foreclosure tab------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Foreclosure Reason Dropdownis not displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Proceed To Payment is Not Present in findElements------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Failed in verify Proceed To Payment button Is Displayed In The Page. Exception: class java.lang.NullPointerException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Proceed To Payment is Not Present in findElements------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Failed in click on Proceed To Payment button using for Loop. Exception: class java.lang.NullPointerException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Important ! is Not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+You are making the foreclosure payment after the cut off period. This means that your EMI is under presentation to your bank for the deduction. Excess amount deducted, if any, will be refunded to your bank account within 10 working days. is Not Present in findElements------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Failed in verify Fields Displayed Using Text You are making the foreclosure payment after the cut off period. This means that your EMI is under presentation to your bank for the deduction. Excess amount deducted, if any, will be refunded to your bank account within 10 working days. and For Loop. Exception: class java.lang.NullPointerException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Proceed to pay is Not Present in findElements------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Failed in verify Proceed to pay button Is Displayed In The Page. Exception: class java.lang.NullPointerException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Proceed to pay is Not Present in findElements------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Failed in click on Proceed to pay button using for Loop. Exception: class java.lang.NullPointerException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountLoanServices/Loans/Nonflexiloan?id=a7b8fe13-36cf-4e22-9413-da402ac9ed7b&Lan=mdmjrYNWrEG18pYXETP3MQ==&ProductCategory=NA------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Expected URL : https://uatpayments.bajajfinserv.in/payments------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Gateway: PayUis not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Select Payment: UPIis not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Failed in scroll To WebElement for Pay Amount Button. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Pay Amount Button is Not Present------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountLoanServices/Loans/Nonflexiloan?id=a7b8fe13-36cf-4e22-9413-da402ac9ed7b&Lan=mdmjrYNWrEG18pYXETP3MQ==&ProductCategory=NA------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Expected URL : https://api.PayU.in/public------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Failed in Click On Back Button in PayU page. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+YES, CANCEL is Not Present in findElements------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Failed in click on YES, CANCEL button using for Loop. Exception: class java.lang.NullPointerException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountLoanServices/Loans/Nonflexiloan?id=a7b8fe13-36cf-4e22-9413-da402ac9ed7b&Lan=mdmjrYNWrEG18pYXETP3MQ==&ProductCategory=NA------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/Receipt------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Transaction failed due to the cancel key being pressed during the payment process. is Not Present------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "UPI"Τ
+
+Failed in wait for OTP Text Box 1 Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "Debit card"Υ
+
+OTP Text Box 1 is Not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "Debit card"Υ
+
+OTP Text Box 2 is Not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "Debit card"Υ
+
+OTP Text Box 3 is Not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "Debit card"Υ
+
+OTP Text Box 4 is Not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "Debit card"Υ
+
+OTP Text Box 5 is Not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "Debit card"Υ
+
+OTP Text Box 6 is Not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "Debit card"Υ
+
+Submit button is Not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "Debit card"Υ
+
+Home Page Text is Not Verified------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "Debit card"Υ
+
+Login is Unsuccessfull------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "Debit card"Υ
+
+Sign Out Button is Not Present------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Foreclosure)-MR - "PayU" "Debit card"Υ
+
+Failed in scroll To WebElement If Present for Your transaction has failed due to authorization failure from the bank's end. Please try after some time or check with your bank.. Exception: class org.openqa.selenium.InvalidSelectorException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Foreclosure)-MR - "PayU" "NetBanking"ς
+

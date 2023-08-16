@@ -886,5 +886,100 @@ public class DocumentCentrePage extends ApplicationKeywords {
 
     }
 
+    public void docPopupLafd(String LAN, String extra) {
+        try {
+            String popup = "View Statements Popup#xpath=//div[@class='horizontal_dc_box']";
+            String docs = "View Statements Documents#xpath=//div[@class='horizontal_dc_statement_reciept']//p";
+            verifyElementIsDisplayedUsingLocator(popup);
+            verifyFieldDisplayedUsingTagAndText("strong", "View Statements", "");
+            verifyFieldsUsingCommonXpathAndMultipleTextWithHash("//p[@class='below_dc']/strong", LAN, "");
+            int size = sizeOfLocator(docs);
+            manualScreenshot("Total Documents for this Account: " + size);
+            for (int i = 1; i <= size; i++) {
+                String docs1 = "View Statements Documents#xpath=(//div[@class='horizontal_dc_statement_reciept']//p)[" + i + "]";
+                verifyElementIsDisplayedAndGetText(docs1);
+            }
+            verifyButtonIsDisplayedInThePage("Find them here");
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in doc Popup Lafd. Exception: " + e.getClass());
+        }
+    }
+
+    public void downloadFileandverifyFormatPopup(String fileName, String downloadedFileName) {
+        try {
+            String file = "File: " + fileName + " #xpath=//p[normalize-space(text())='" + fileName.trim() + "']/parent::div[@class='horizontal_dc_statement_reciept']//a|//p[normalize-space(text())='" + fileName.trim() + "']/parent::div[@class='horizontal_dc_statement_reciept']/parent::a";
+            if (isElementDisplayed(file)) {
+                clickOn(file);
+                waitTime(4);
+                verifyDownLoadAndDeleteLatestFileNameFromLocalMachine(downloadedFileName);
+                if (downloadedFileName.contains("pdf")) {
+                    testStepInfo(getRefOfXpath(file) + "is Downloaded in pdf format on Click on Download CTA");
+                } else {
+                    testStepFailed(getRefOfXpath(file) + "is not in the Required format");
+                }
+
+            } else {
+                testStepFailed(getRefOfXpath(file) + "is not Displayed");
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in download File and verify Format popup.Exception:" + e.getClass());
+        }
+    }
+
+    public void downloadFilInPopup(String fileName) {
+        try {
+            String file = "File: " + fileName + " #xpath=//p[normalize-space(text())='" + fileName.trim() + "']/parent::div[@class='horizontal_dc_statement_reciept']/parent::a";
+            if (isElementDisplayed(file)) {
+                clickOn(file);
+
+            } else {
+                testStepFailed(getRefOfXpath(file) + "is not Displayed");
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in download File In Popup.Exception:" + e.getClass());
+        }
+    }
+
+
+    public void verifyRedirectionForm15GH(String expectedUrl, String extra) {
+        try {
+            String download = "Download Button #xpath=//input[@value='Download' and @name='ctl04']|//input[@value='Download' and @name='btn_download']";
+            transferControlToWindow(2, false);
+            verifyRedirectionURLIfContains(expectedUrl);
+            waitTime(5);
+            scrollToWebElement(download);
+            verifyElementIsDisplayedOrNot(download);
+            transferControlToWindow(1, true);
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Redirection Form 15GH. Exception: " + e.getClass());
+        }
+    }
+
+    public void verifyDownloadForm15GH(String expectedUrl,String doc, String extra) {
+        try {
+            String download = "Download Button #xpath=//input[@value='Download' and @name='ctl04']|//input[@value='Download' and @name='btn_download']";
+            transferControlToWindow(2, false);
+            waitTime(4);
+            verifyRedirectionURLIfContains(expectedUrl);
+            scrollToWebElement(download);
+            verifyElementIsDisplayedOrNot(download);
+            clickOn(download);
+            waitTime(2);
+            verifyDownLoadAndDeleteLatestFileNameFromLocalMachine(doc);
+            transferControlToWindow(1, true);
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Download Form 15GH. Exception: " + e.getClass());
+        }
+    }
+
+
+    //strong[normalize-space(text())='4440CDHH819628']/ancestor::div[@id='paymentpop' and not(@style='display:none')]/descendant::p[@class='below_dc']
 
 }

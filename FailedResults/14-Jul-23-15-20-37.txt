@@ -1,0 +1,4 @@
+Failed in Type In DOB Text Box For Individual value as 13011992. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  verify Customer is redirected to Respective page when clicked on particular "Fixed Deposit" in Application Forms
+
+PROCEED button is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Fixed Deposit" in Application Forms
+

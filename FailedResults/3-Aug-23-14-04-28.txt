@@ -1,0 +1,6 @@
+Home Page Text is Not Verified------------>  To verify customer is able to view Cart under Header section 
+
+Login is Unsuccessfull------------>  To verify customer is able to view Cart under Header section 
+
+Sign Out Button is Not Present------------>  To verify customer is able to view Cart under Header section 
+

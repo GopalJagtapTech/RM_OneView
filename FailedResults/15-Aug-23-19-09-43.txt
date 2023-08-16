@@ -1,0 +1,26 @@
+KYC Pop up Verify Your Information  is Not Displayed------------>  To verify when user entering invalid input in DOB field given validation text is displayed¥
+
+Registry Section is Not Present------------>  To verify when user entering invalid input in DOB field given validation text is displayed¥
+
+Failed in Clear edit Box DOB Input - Registry Section. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify when user entering invalid input in DOB field given validation text is displayed¥
+
+DOB Input - Registry Section is not Displayed and Type In Failed------------>  To verify when user entering invalid input in DOB field given validation text is displayed¥
+
+Enter valid date error message is not displayed------------>  To verify when user entering invalid input in DOB field given validation text is displayed¥
+
+Failed in Clear edit Box DOB Input - Registry Section. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify when user entering invalid input in DOB field given validation text is displayed¥
+
+DOB Input - Registry Section is not Displayed and Type In Failed------------>  To verify when user entering invalid input in DOB field given validation text is displayed¥
+
+Enter valid date error message is not displayed------------>  To verify when user entering invalid input in DOB field given validation text is displayed¥
+
+Failed in Clear edit Box DOB Input - Registry Section. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify when user entering invalid input in DOB field given validation text is displayed¥
+
+DOB Input - Registry Section is not Displayed and Type In Failed------------>  To verify when user entering invalid input in DOB field given validation text is displayed¥
+
+Enter valid date error message is not displayed------------>  To verify when user entering invalid input in DOB field given validation text is displayed¥
+
+Home Page Text is Not Verified------------>  To verify Renew Now CTA is enabled & redirected to respective pageÂ
+
+Login is Unsuccessfull------------>  To verify Renew Now CTA is enabled & redirected to respective pageÂ
+

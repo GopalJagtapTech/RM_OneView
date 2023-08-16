@@ -1563,7 +1563,7 @@ public class LoginFieldPage extends ApplicationKeywords {
     }
 
     public void clickOnCustomerTab(String tab, String extra) {
-        String typeLocator = ""+tab+" Customer tab#xpath=//div[@class='formtab']/descendant::a[normalize-space(text())='"+tab.trim()+"']";
+        String typeLocator = ""+tab+" Customer tab#xpath=(//div[@class='formtab']/descendant::a[normalize-space(text())='"+tab.trim()+"'])[1]";
         try {
             clickOnIfDisplayed(typeLocator);
         } catch (Exception e) {
@@ -1573,6 +1573,40 @@ public class LoginFieldPage extends ApplicationKeywords {
 
 
     String typeLocator = "Non-Individual Customer tab#xpath=//div[@class='formtab']/descendant::a[normalize-space(text())='Corporate/ Business']";
+
+
+    public void enterMobileNumberCorporate(String Value) {
+        try {
+            String txtBox_MobileNumber = "Mobile Number Text Box For Individual#xpath=(//input[@id='txtEmailMobile_NonIndividual'])[1]";
+            if (isElementDisplayed(txtBox_MobileNumber)) {
+                typeInIfPresent(txtBox_MobileNumber, Value);
+                findWebElement(txtBox_MobileNumber).sendKeys(Keys.TAB);
+                manualScreenshot(txtBox_MobileNumber.split("#")[0] + "-" + getTextPresent(txtBox_MobileNumber));
+            } else {
+                testStepFailed(Value + "is not enetered ");
+            }
+        } catch (Exception e) {
+            testStepFailed("The Result Is Not Found : " + e.getMessage());
+        }
+    }
+
+    public void enterMobileNumberNRI(String Value) {
+        try {
+            String txtBox_MobileNumber = "Mobile Number Text Box For Individual#xpath=(//input[@id='txtEmailMobile_NRI'])[1]";
+            if (isElementDisplayed(txtBox_MobileNumber)) {
+                typeInIfPresent(txtBox_MobileNumber, Value);
+                findWebElement(txtBox_MobileNumber).sendKeys(Keys.TAB);
+                manualScreenshot(txtBox_MobileNumber.split("#")[0] + "-" + getTextPresent(txtBox_MobileNumber));
+            } else {
+                testStepFailed(Value + "is not enetered ");
+            }
+        } catch (Exception e) {
+            testStepFailed("The Result Is Not Found : " + e.getMessage());
+        }
+    }
+
+
+
 
 
 }

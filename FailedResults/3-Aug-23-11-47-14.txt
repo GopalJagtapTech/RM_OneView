@@ -1,0 +1,22 @@
+Failed in wait for OTP Text Box 1 Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Verify Loan Deatis under Relationship Details sectionWhen Customer Minimized the view
+
+OTP Text Box 1 is Not Displayed------------>  Verify Loan Deatis under Relationship Details sectionWhen Customer Minimized the view
+
+OTP Text Box 2 is Not Displayed------------>  Verify Loan Deatis under Relationship Details sectionWhen Customer Minimized the view
+
+OTP Text Box 3 is Not Displayed------------>  Verify Loan Deatis under Relationship Details sectionWhen Customer Minimized the view
+
+OTP Text Box 4 is Not Displayed------------>  Verify Loan Deatis under Relationship Details sectionWhen Customer Minimized the view
+
+OTP Text Box 5 is Not Displayed------------>  Verify Loan Deatis under Relationship Details sectionWhen Customer Minimized the view
+
+OTP Text Box 6 is Not Displayed------------>  Verify Loan Deatis under Relationship Details sectionWhen Customer Minimized the view
+
+Submit button is Not Displayed------------>  Verify Loan Deatis under Relationship Details sectionWhen Customer Minimized the view
+
+Home Page Text is Not Verified------------>  Verify Loan Deatis under Relationship Details sectionWhen Customer Minimized the view
+
+Login is Unsuccessfull------------>  Verify Loan Deatis under Relationship Details sectionWhen Customer Minimized the view
+
+Sign Out Button is Not Present------------>  Verify Loan Deatis under Relationship Details sectionWhen Customer Minimized the view
+

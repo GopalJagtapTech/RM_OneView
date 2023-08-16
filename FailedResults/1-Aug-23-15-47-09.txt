@@ -1,0 +1,10 @@
+Failed in Type In DOI Text Box For Non-Individual value as 13/09/1990. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To verify the Pre-Approved carousal banner is moving left or right when clicking on Left or Right Arrow£
+
+PROCEED button is Not Displayed------------>  To verify the Pre-Approved carousal banner is moving left or right when clicking on Left or Right Arrow£
+
+Home Page Text is Not Verified------------>  To verify the Pre-Approved carousal banner is moving left or right when clicking on Left or Right Arrow£
+
+Login is Unsuccessfull------------>  To verify the Pre-Approved carousal banner is moving left or right when clicking on Left or Right Arrow£
+
+Sign Out Button is Not Present------------>  To verify the Pre-Approved carousal banner is moving left or right when clicking on Left or Right Arrow£
+

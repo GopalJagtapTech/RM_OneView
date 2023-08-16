@@ -22,7 +22,7 @@ Xpaths
 
     public static final String alerts_Icon = "Alerts Icon #xpath=//p[normalize-space(text())='Alerts']";
 
-    public static final String alerts_label = "Alerts  Offers #xpath=//a[normalize-space(text())='Alerts']";
+    public static final String alerts_label = "Alerts  Offers #xpath=//li[@id='idNotification_uat']";
 
     public static final String preApproved_PL = "Personal Loan #xpath=//p[normalize-space(text())='Personal Loan']//parent::div//following::div//a[text()='Apply now']";
 
@@ -41,6 +41,9 @@ Xpaths
 
     public static final String updatebutton = "UPDATE" + "#xpath=(//img[@src='/MyAccountAsset/images/Update KYC.png']//following::div//a[contains(text(),'UPDATE')])[1]";
 
+    ///////3107
+    public static final String checkBox_Kyc = "KYC Popup Check Box#xpath=//input[@id='chkTermsKYC']";
+
         /*
     Methods
      */
@@ -57,14 +60,13 @@ Xpaths
     }
 
 
-
-    public void verifyButtons( String labelNames) {
+    public void verifyButtons(String labelNames) {
         try {
             String[] val = labelNames.split("#");
             for (int i = 0; i < val.length; i++) {
-                String locator =   val[i] + "#xpath=//button[contains(text(),'" + val[i] + "')]";
+                String locator = val[i] + "#xpath=//button[contains(text(),'" + val[i] + "')]";
                 if (isElementDisplayed(locator)) {
-                    testStepPassed( val[i] + " displayed  sucessfully");
+                    testStepPassed(val[i] + " displayed  sucessfully");
                 } else {
                     testStepFailed(val[i] + "Not displayed ");
                 }
@@ -76,14 +78,12 @@ Xpaths
     }
 
 
-
-
     public void verifyEmiPopup() {
         try {
-            String locator =    "#xpath=//div[@id='ptbOfferPopup']";
+            String locator = "#xpath=//div[@id='ptbOfferPopup']";
             if (isElementDisplayed(locator)) {
-                String text=findWebElement(locator).getText();
-                if(!text.isEmpty()) {
+                String text = findWebElement(locator).getText();
+                if (!text.isEmpty()) {
                     testStepPassed(text + " displayed  sucessfully");
                 }
             } else {
@@ -96,12 +96,12 @@ Xpaths
     }
 
 
-    public void clickKycButton( String labelNames) {
+    public void clickKycButton(String labelNames) {
         try {
-            String locator =    "#xpath=//div[@class='dialog_modal kyc-popup']/div[@class='dialog_body']//button[contains(text(),'" + labelNames + "')]";
+            String locator = "#xpath=//div[@class='dialog_modal kyc-popup']/div[@class='dialog_body']//button[contains(text(),'" + labelNames + "')]";
             if (isElementDisplayed(locator)) {
                 clickOn(locator);
-                testStepPassed( labelNames + " displayed  sucessfully");
+                testStepPassed(labelNames + " displayed  sucessfully");
             } else {
                 testStepFailed(labelNames + "Not displayed ");
             }
@@ -126,7 +126,7 @@ Xpaths
                     if (!value.isEmpty() & value.contains("XXXX")) {
                         manualScreenshot(getRefOfXpath(labelValue) + " is Displayed Successfully. Value: " + getText(labelValue));
                     } else {
-                        manualScreenshot(getRefOfXpath(labelText) + " is Not provided any Value: " );
+                        manualScreenshot(getRefOfXpath(labelText) + " is Not provided any Value: ");
 
                     }
                     //  manualScreenshot(getRefOfXpath(labelValue) + " is Displayed Successfully. Value: " + getText(labelValue));
@@ -155,18 +155,18 @@ Xpaths
             }
         } catch (Exception e) {
             e.printStackTrace();
-            testStepFailed("Failed in verify Fields Displayed Using Locator "+getRefOfXpath(locator)+". Exception: " + e.getClass());
+            testStepFailed("Failed in verify Fields Displayed Using Locator " + getRefOfXpath(locator) + ". Exception: " + e.getClass());
         }
         return flag;
     }
 
 
-    public void clickOnAlertsIconBelowOffers( String OfferName,String labelName) {
+    public void clickOnAlertsIconBelowOffers(String OfferName, String labelName) {
         try {
-            String button = labelName + "#xpath=//h3[text()='"+ OfferName+"']//parent::div//following::div//a[contains(text(),'" + labelName + "')]";
+            String button = labelName + "#xpath=//h3[text()='" + OfferName + "']//parent::div//following::div//a[contains(text(),'" + labelName + "')]";
             scrollToWebElement(button);
             if (isElementDisplayed(button, 10)) {
-                WebElement ele = driver.findElement(By.xpath("//h3[text()='"+ OfferName+"']//parent::div//following::div//a[contains(text(),'" + labelName + "')]"));
+                WebElement ele = driver.findElement(By.xpath("//h3[text()='" + OfferName + "']//parent::div//following::div//a[contains(text(),'" + labelName + "')]"));
                 JavascriptExecutor jse = (JavascriptExecutor) driver;
                 jse.executeScript("arguments[0].scrollIntoView()", ele);
                 waitTime(4);
@@ -174,12 +174,12 @@ Xpaths
                 int y = p.getY() - 250;
                 JavascriptExecutor js = (JavascriptExecutor) driver;
                 js.executeScript("window.scrollTo(" + p.getX() + "," + y + ");");
-                String aemText = OfferName + "#xpath=//h3[text()='"+ OfferName+"']//following-sibling::p";
+                String aemText = OfferName + "#xpath=//h3[text()='" + OfferName + "']//following-sibling::p";
                 //h3[text()='Fixed Deposit']//following-sibling::p
-                if(isElementDisplayed(aemText)){
-                    String text=findWebElement(aemText).getText();
-                    if(!text.isEmpty()){
-                        manualScreenshot(text+"sucessfully displayed ");
+                if (isElementDisplayed(aemText)) {
+                    String text = findWebElement(aemText).getText();
+                    if (!text.isEmpty()) {
+                        manualScreenshot(text + "sucessfully displayed ");
                     }
                 }
                 clickOn(button);
@@ -195,11 +195,9 @@ Xpaths
     }
 
 
-
-
-    public void verifyBoldLetter(String OfferName,String labelName){
+    public void verifyBoldLetter(String OfferName, String labelName) {
         try {
-            String button = labelName + "#xpath=//h3[text()='"+ OfferName+"']//parent::div//following::div//a[contains(text(),'" + labelName + "')]";
+            String button = labelName + "#xpath=//h3[text()='" + OfferName + "']//parent::div//following::div//a[contains(text(),'" + labelName + "')]";
             scrollToWebElement(button);
 
         } catch (Exception e) {
@@ -208,14 +206,14 @@ Xpaths
     }
 
 
-    public void verifyFontSizeAlertsIconBelowOffers( String OfferName,String labelName) {
+    public void verifyFontSizeAlertsIconBelowOffers(String OfferName, String labelName) {
         try {
-            String button = labelName + "#xpath=//h3[text()='"+ OfferName+"']//parent::div//following::div//a[contains(text(),'" + labelName + "')]";
+            String button = labelName + "#xpath=//h3[text()='" + OfferName + "']//parent::div//following::div//a[contains(text(),'" + labelName + "')]";
             scrollToWebElement(button);
             if (isElementDisplayed(button, 10)) {
-                WebElement ele = driver.findElement(By.xpath("//h3[text()='"+ OfferName+"']//parent::div//following::div//a[contains(text(),'" + labelName + "')]"));
-                String fsize=   validateFont(button);
-                if(fsize.contains("RubikReg")){
+                WebElement ele = driver.findElement(By.xpath("//h3[text()='" + OfferName + "']//parent::div//following::div//a[contains(text(),'" + labelName + "')]"));
+                String fsize = validateFont(button);
+                if (fsize.contains("RubikReg")) {
                     testStepPassed("sucessfully displayed CAPS on" + labelName);
                 }
                 waitForPageToLoad();
@@ -229,16 +227,14 @@ Xpaths
     }
 
 
-
-
-    public void verifyFontSizeAUpdateEmailID( String labelName) {
+    public void verifyFontSizeAUpdateEmailID(String labelName) {
         try {
             String button = labelName + "#xpath=(//img[@src='/MyAccountAsset/images/Update KYC.png']//following::div//a[contains(text(),'UPDATE')])[1]";
             scrollToWebElement(button);
             if (isElementDisplayed(button, 10)) {
                 WebElement ele = driver.findElement(By.xpath("(//img[@src='/MyAccountAsset/images/Update KYC.png']//following::div//a[contains(text(),'UPDATE')])[1]"));
-                String fsize=   validateFont(button);
-                if(fsize.contains("Rubik-Reg")){
+                String fsize = validateFont(button);
+                if (fsize.contains("Rubik-Reg")) {
                     testStepPassed("sucessfully displayed CAPS on" + labelName);
                 }
                 waitForPageToLoad();
@@ -252,15 +248,12 @@ Xpaths
     }
 
 
-
-
-
-    public void verifyAlertsIconBelowOffers( String OfferName,String labelName) {
+    public void verifyAlertsIconBelowOffers(String OfferName, String labelName) {
         try {
-            String button = labelName + "#xpath=//h3[text()='"+ OfferName+"']//parent::div//following::div//a[contains(text(),'" + labelName + "')]";
+            String button = labelName + "#xpath=//h3[text()='" + OfferName + "']//parent::div//following::div//a[contains(text(),'" + labelName + "')]";
             scrollToWebElement(button);
             if (isElementDisplayed(button, 10)) {
-                WebElement ele = driver.findElement(By.xpath("//h3[text()='"+ OfferName+"']//parent::div//following::div//a[contains(text(),'" + labelName + "')]"));
+                WebElement ele = driver.findElement(By.xpath("//h3[text()='" + OfferName + "']//parent::div//following::div//a[contains(text(),'" + labelName + "')]"));
                 JavascriptExecutor jse = (JavascriptExecutor) driver;
                 jse.executeScript("arguments[0].scrollIntoView()", ele);
                 waitTime(4);
@@ -268,12 +261,12 @@ Xpaths
                 int y = p.getY() - 250;
                 JavascriptExecutor js = (JavascriptExecutor) driver;
                 js.executeScript("window.scrollTo(" + p.getX() + "," + y + ");");
-                String aemText = OfferName + "#xpath=//h3[text()='"+ OfferName+"']//following-sibling::p";
+                String aemText = OfferName + "#xpath=//h3[text()='" + OfferName + "']//following-sibling::p";
                 //h3[text()='Fixed Deposit']//following-sibling::p
-                if(isElementDisplayed(aemText)){
-                    String text=findWebElement(aemText).getText();
-                    if(!text.isEmpty()){
-                        manualScreenshot(text+"sucessfully displayed ");
+                if (isElementDisplayed(aemText)) {
+                    String text = findWebElement(aemText).getText();
+                    if (!text.isEmpty()) {
+                        manualScreenshot(text + "sucessfully displayed ");
                     }
                 }
                 //  clickOn(button);
@@ -291,7 +284,7 @@ Xpaths
 
     public void verifyFieldDisplayedUsingForLoop(String labelName) {
 
-        String locator = labelName+"#xpath=//div[@class='finance_slider']//p[normalize-space(text())='"+labelName+"']";
+        String locator = labelName + "#xpath=//div[@class='finance_slider']//p[normalize-space(text())='" + labelName + "']";
         try {
             Boolean flag = false;
             for (int i = 1; i <= findWebElements(locator).size(); i++) {
@@ -325,6 +318,21 @@ Xpaths
         } catch (Exception e) {
             e.printStackTrace();
             testStepFailed("Failed in wait for " + getRefOfXpath(locator) + " Until Visible Fluent. Exception: " + e.getClass());
+        }
+
+    }
+
+    public void kycPopupClosed() {
+        try {
+            if (!isElementDisplayed(close_Kyc_Popup)){
+                waitTime(5);
+                testStepPassed("KYC Popup is Closed/Not Displayed");
+            }else {
+                testStepFailed("KYC Popup is not Closed");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in kyc Popup Closed. Exception: " + e.getClass());
         }
 
     }

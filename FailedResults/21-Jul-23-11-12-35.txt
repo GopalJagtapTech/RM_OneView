@@ -1,0 +1,241 @@
+Alerts  Offers  is Not Verified------------>  Verify ETB  customer is able to view Aleart section with bell icon on header section of Homepage
+
+
+Alerts  Offers  is Not Verified------------>  Verify customer is able to click on alert section
+
+Check/update email ID is Not Verified------------>  Verify that customer is able to view  Check/update email ID  card
+
+Update your email ID in few clicks. is Not Verified------------>  Verify that customer is able to view  Check/update email ID  card
+
+UPDATE  is not present.------------>  Verify that Upadate CTA displayed in caps format on Check/update email ID  card+
+
+Home Page Text is Not Verified------------>  Verify ETB PTB NTB customer is able to view Alert section with bell icon on header section of Homepage
+
+
+Login is Unsuccessfull------------>  Verify ETB PTB NTB customer is able to view Alert section with bell icon on header section of Homepage
+
+
+Alerts  Offers  is Not Verified------------>  Verify ETB PTB NTB customer is able to view Alert section with bell icon on header section of Homepage
+
+Alerts  Offers  is Not Verified------------>  Verify ETB PTB NTB customer is able to view Alert section with bell icon on header section of Homepage
+
+Alerts  Offers  is Not Verified------------>  Verify customer is able to click on alert section
+
+Alerts  Offers  is Not Verified------------>  Verify customer is able to click on alert section
+
+Alerts  Offers  is Not Verified------------>  Verify customer is able to click on alert section
+
+VISIT STORE  is not present.------------>  Verify that customer is able to view offer of Fixed Deposit&
+
+SHOP ONLINE  is not present.------------>  Verify that customer is able to view offer of Fixed Deposit&
+
+VISIT STORE  is not present.------------>  Verify that customer is able to view offer of Fixed Deposit&
+
+VISIT STORE  is not present.------------>  Verify that customer is able to view offer of Fixed Deposit'
+
+SHOP ONLINE  is not present.------------>  Verify that customer is able to view offer of Fixed Deposit'
+
+VISIT STORE  is not present.------------>  Verify that customer is able to view offer of Fixed Deposit'
+
+VISIT STORE  is not present.------------>  Verify that customer is able to view offer of Fixed Deposit(
+
+SHOP ONLINE  is not present.------------>  Verify that customer is able to view offer of Fixed Deposit(
+
+VISIT STORE  is not present.------------>  Verify that customer is able to view offer of Fixed Deposit(
+
+VISIT STORE  is not present.------------>  Verify that No Cost EMIs title in camel case and CTA in caps format5
+
+SHOP ONLINE  is not present.------------>  Verify that No Cost EMIs title in camel case and CTA in caps format5
+
+VISIT STORE  is not present.------------>  Verify that No Cost EMIs title in camel case and CTA in caps format5
+
+VISIT STORE  is not present.------------>  Verify that No Cost EMIs title in camel case and CTA in caps format6
+
+SHOP ONLINE  is not present.------------>  Verify that No Cost EMIs title in camel case and CTA in caps format6
+
+VISIT STORE  is not present.------------>  Verify that No Cost EMIs title in camel case and CTA in caps format6
+
+Failed in wait for OTP Text Box 1 Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Verify that No Cost EMIs title in camel case and CTA in caps format7
+
+OTP Text Box 1 is Not Displayed------------>  Verify that No Cost EMIs title in camel case and CTA in caps format7
+
+OTP Text Box 2 is Not Displayed------------>  Verify that No Cost EMIs title in camel case and CTA in caps format7
+
+OTP Text Box 3 is Not Displayed------------>  Verify that No Cost EMIs title in camel case and CTA in caps format7
+
+OTP Text Box 4 is Not Displayed------------>  Verify that No Cost EMIs title in camel case and CTA in caps format7
+
+OTP Text Box 5 is Not Displayed------------>  Verify that No Cost EMIs title in camel case and CTA in caps format7
+
+OTP Text Box 6 is Not Displayed------------>  Verify that No Cost EMIs title in camel case and CTA in caps format7
+
+Submit button is Not Displayed------------>  Verify that No Cost EMIs title in camel case and CTA in caps format7
+
+Home Page Text is Not Verified------------>  Verify that No Cost EMIs title in camel case and CTA in caps format7
+
+Login is Unsuccessfull------------>  Verify that No Cost EMIs title in camel case and CTA in caps format7
+
+Sign Out Button is Not Present------------>  Verify that No Cost EMIs title in camel case and CTA in caps format7
+
+Failed in wait for OTP Text Box 1 Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Verify that position of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerC
+
+OTP Text Box 1 is Not Displayed------------>  Verify that position of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerC
+
+OTP Text Box 2 is Not Displayed------------>  Verify that position of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerC
+
+OTP Text Box 3 is Not Displayed------------>  Verify that position of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerC
+
+OTP Text Box 4 is Not Displayed------------>  Verify that position of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerC
+
+OTP Text Box 5 is Not Displayed------------>  Verify that position of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerC
+
+OTP Text Box 6 is Not Displayed------------>  Verify that position of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerC
+
+Submit button is Not Displayed------------>  Verify that position of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerC
+
+Home Page Text is Not Verified------------>  Verify that position of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerC
+
+Login is Unsuccessfull------------>  Verify that position of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerC
+
+Sign Out Button is Not Present------------>  Verify that position of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerC
+
+DOB Text Box For Individual Is Element Displayed Failed. Exception: class org.openqa.selenium.NoSuchElementException------------>  Verify that position of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerD
+
+INVEST ONLINE  is not present.------------>  Verify that position of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerD
+
+Fixed Deposit INVEST ONLINE   is Not Present In Right side of the Page------------>  Verify that position of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerD
+
+Shop on No Cost EMIs  SHOP ONLINE  is Not Present on Left Side of Shop on No Cost EMIs VISIT STORE ------------>  Verify that position of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerD
+
+INVEST ONLINE  is not present.------------>  Verify that position of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerE
+
+Fixed Deposit INVEST ONLINE   is Not Present In Right side of the Page------------>  Verify that position of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerE
+
+Shop on No Cost EMIs  SHOP ONLINE  is Not Present on Left Side of Shop on No Cost EMIs VISIT STORE ------------>  Verify that position of KNOW MORE AND INVEST ONLINE CTA Fixed Deposit offerE
+
+SHOP ONLINE  is not present.------------>  Verify that when Click on INVEST ONLINE CTA of Fixed Deposit offerR
+
+The given window "2" is failed to open------------>  Verify that when Click on INVEST ONLINE CTA of Fixed Deposit offerR
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=8b653699-bfff-4c21-aa9f-70e7f1c0ac2f#;------------>  Verify that when Click on INVEST ONLINE CTA of Fixed Deposit offerR
+
+Expected URL : https://www.bajajmall.in/emi-store------------>  Verify that when Click on INVEST ONLINE CTA of Fixed Deposit offerR
+
+SHOP ONLINE  is not present.------------>  Verify that when Click on INVEST ONLINE CTA of Fixed Deposit offerS
+
+The given window "2" is failed to open------------>  Verify that when Click on INVEST ONLINE CTA of Fixed Deposit offerS
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=fc765658-fe0a-43a3-8579-6cfcc8c042f0#;------------>  Verify that when Click on INVEST ONLINE CTA of Fixed Deposit offerS
+
+Expected URL : https://www.bajajmall.in/emi-store------------>  Verify that when Click on INVEST ONLINE CTA of Fixed Deposit offerS
+
+SHOP ONLINE  is not present.------------>  Verify that when Click on INVEST ONLINE CTA of Fixed Deposit offerT
+
+The given window "2" is failed to open------------>  Verify that when Click on INVEST ONLINE CTA of Fixed Deposit offerT
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=87a84678-ad4b-4832-8012-dc644ac7e1db#;------------>  Verify that when Click on INVEST ONLINE CTA of Fixed Deposit offerT
+
+Expected URL : https://www.bajajmall.in/emi-store------------>  Verify that when Click on INVEST ONLINE CTA of Fixed Deposit offerT
+
+VISIT STORE  is not present.------------>  Verify that when Click on VISIT STORE CTA of Fixed Deposit offera
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=0e3958a2-8e0d-415b-a110-612a5e13cf50#;------------>  Verify that when Click on VISIT STORE CTA of Fixed Deposit offera
+
+Expected URL : https://www.bajajfinserv.in/bajaj-mall-store-locator------------>  Verify that when Click on VISIT STORE CTA of Fixed Deposit offera
+
+Home Page Text is Not Verified------------>  Verify that when Click on VISIT STORE CTA of Fixed Deposit offerb
+
+Login is Unsuccessfull------------>  Verify that when Click on VISIT STORE CTA of Fixed Deposit offerb
+
+VISIT STORE  is not present.------------>  Verify that when Click on VISIT STORE CTA of Fixed Deposit offerc
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=0b48e39c-6a77-4bf9-ba42-b26c886933e9#;------------>  Verify that when Click on VISIT STORE CTA of Fixed Deposit offerc
+
+Expected URL : https://www.bajajfinserv.in/bajaj-mall-store-locator------------>  Verify that when Click on VISIT STORE CTA of Fixed Deposit offerc
+
+Home Page Text is Not Verified------------>  To verify that customer is redirecting to loan details page on click of flexi loan
+
+Login is Unsuccessfull------------>  To verify that customer is redirecting to loan details page on click of flexi loan
+
+FLEXI TERM LOAN 400FLFHE869061 No. Tile is Not Present in this customer Id------------>  To verify that 'Drawdown Bank Change' CTA is visible
+
+DrawDown Bank Change RHS  Icon  is Not Verified------------>  To verify that 'Drawdown Bank Change' CTA is visible
+
+FLEXI TERM LOAN 400FLFHE869061 No. Tile is Not Present in this customer Id------------>  To verify that popup message is displayed when getdrawdown api fails+
+
+Failed in Click On DrawDown Bank Change RHS  Icon . Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify that popup message is displayed when getdrawdown api fails+
+
+We are unable to proceed with your request due to some technical issues. You will be redirected to our ‘Raise a Request’ section to change your bank account details. is Not Present in findElements------------>  To verify that popup message is displayed when getdrawdown api fails+
+
+Failed in verifying labelName. Exception : class java.lang.NullPointerException------------>  To verify that popup message is displayed when getdrawdown api fails+
+
+DrawDown Bank Change OK Popup button  is Not Verified------------>  To verify that popup message is displayed when getdrawdown api fails+
+
+Failed in Type In DOI Text Box For Non-Individual value as 11/11/1999. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To verify that customer is redirected to RAR page when clicks on OK CTA9
+
+PROCEED button is Not Displayed------------>  To verify that customer is redirected to RAR page when clicks on OK CTA9
+
+Home Page Text is Not Verified------------>  To verify that customer is redirected to RAR page when clicks on OK CTA9
+
+Login is Unsuccessfull------------>  To verify that customer is redirected to RAR page when clicks on OK CTA9
+
+Sign Out Button is Not Present------------>  To verify that customer is redirected to RAR page when clicks on OK CTA9
+
+Home Page Text is Not Verified------------>  Verify EMI Debit Consent option is displayed under Documentation in Hamburger menu
+
+Login is Unsuccessfull------------>  Verify EMI Debit Consent option is displayed under Documentation in Hamburger menu
+
+Sign Out Button is Not Present------------>  Verify EMI Debit Consent option is displayed under Documentation in Hamburger menu
+
+Home Page Text is Not Verified------------>  Verify customer is redirected to consent journey page where ‘ No Pending Consent' validation is displayed when customer not having any active overdue4
+
+Login is Unsuccessfull------------>  Verify customer is redirected to consent journey page where ‘ No Pending Consent' validation is displayed when customer not having any active overdue4
+
+Sign Out Button is Not Present------------>  Verify customer is redirected to consent journey page where ‘ No Pending Consent' validation is displayed when customer not having any active overdue4
+
+Home Page Text is Not Verified------------>  Verify content displayed on EMI consent details pageT
+
+Login is Unsuccessfull------------>  Verify content displayed on EMI consent details pageT
+
+Sign Out Button is Not Displayed------------>  Verify content displayed on EMI consent details pageT
+
+405SAFEB993296 Name is Not Displayed------------>  Verify after clicking on Accept CTA customer is redirected to Acknowledgement screenå
+
+Failed in Click On  ACCEPT . Exception: class org.openqa.selenium.NoSuchElementException------------>  Verify after clicking on Accept CTA customer is redirected to Acknowledgement screenå
+
+Home Page Text is Not Verified------------>  To verify that customer is able to view popup for Active insurance with passed policy end dateJ
+
+Login is Unsuccessfull------------>  To verify that customer is able to view popup for Active insurance with passed policy end dateJ
+
+Your policy is expired & Certificate of Insurance cannot be downloaded. Thank you! is Not Verified------------>  To verify that customer is able to view popup for Active insurance with passed policy end dateg
+
+Got It! is Not Verified------------>  To verify that customer is able to view popup for Active insurance with passed policy end dateg
+
+Individual Customer tab is Not Displayed------------>  To verify that customer is on document list page on click on GOT IT CTAu
+
+Mobile Number Text Box For Individual is not Present and Type In Failed------------>  To verify that customer is on document list page on click on GOT IT CTAu
+
+Get OTP button is Not Displayed------------>  To verify that customer is on document list page on click on GOT IT CTAu
+
+Failed in wait for OTP Text Box 1 Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  To verify that customer is on document list page on click on GOT IT CTAu
+
+OTP Text Box 1 is Not Displayed------------>  To verify that customer is on document list page on click on GOT IT CTAu
+
+OTP Text Box 2 is Not Displayed------------>  To verify that customer is on document list page on click on GOT IT CTAu
+
+OTP Text Box 3 is Not Displayed------------>  To verify that customer is on document list page on click on GOT IT CTAu
+
+OTP Text Box 4 is Not Displayed------------>  To verify that customer is on document list page on click on GOT IT CTAu
+
+OTP Text Box 5 is Not Displayed------------>  To verify that customer is on document list page on click on GOT IT CTAu
+
+OTP Text Box 6 is Not Displayed------------>  To verify that customer is on document list page on click on GOT IT CTAu
+
+Submit button is Not Displayed------------>  To verify that customer is on document list page on click on GOT IT CTAu
+
+Home Page Text is Not Verified------------>  To verify that customer is on document list page on click on GOT IT CTAu
+
+Login is Unsuccessfull------------>  To verify that customer is on document list page on click on GOT IT CTAu
+
+Sign Out Button is Not Present------------>  To verify that customer is on document list page on click on GOT IT CTAu
+

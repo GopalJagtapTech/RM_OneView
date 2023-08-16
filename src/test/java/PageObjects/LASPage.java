@@ -1310,6 +1310,25 @@ public class LASPage extends ApplicationKeywords {
         }
     }
 
+    public void bankAccountMaskedLAS(String extra) {
+        try {
+            String bank = "Bank Account Number#xpath=//div[@class='loanright_parts']/descendant::li/p[normalize-space(text())='Account Number']/following-sibling::strong";
+            String value = getText(bank);
+
+            verifyMaskedAndUnmaskedFormatUsingValue(value, "Account Number", "X", 0, 4, true, "0");
+            verifyMaskedAndUnmaskedFormatUsingValue(value, "Account Number", "X", 0, 4, false, "1");
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in bank Account Masked LAS. Exception: " + e.getClass());
+        }
+
+    }
+
+
+    public static final String securities_Pledged = "Securities_Pledged #xpath=//ul[@class='j_bank_list']/li[1]/var[normalize-space(text())='Securities Pledged:']";
+    public static final String quantitytoUnpledge = "Quantity to UnPledge #xpath=//div[@class='bank_input']/div/label[normalize-space(text())='Quantity to Unpledge']";
 
 
 }

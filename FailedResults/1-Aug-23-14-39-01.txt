@@ -1,0 +1,4 @@
+Coming Soon Popup is Not Displayed in the Page------------>  To verify the redirection when click on EMI Vault option under Shortcut componentq
+
+Next Button:  is not Displayed------------>  To verify the Pre-Approved carousal banner is moving left or right when clicking on Left or Right Arrow£
+

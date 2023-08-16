@@ -1,0 +1,78 @@
+Redirected URL is not Matched : https://cont-sites.bajajfinserv.in/business-loan------------>  verify Customer is redirected to Respective page when clicked on particular "Business Loan" in Application Forms
+
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/business-loan------------>  verify Customer is redirected to Respective page when clicked on particular "Business Loan" in Application Forms
+
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index------------>  verify Customer is redirected to Respective page when clicked on particular "Home Loan" in Application Forms
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/home-loan------------>  verify Customer is redirected to Respective page when clicked on particular "Home Loan" in Application Forms
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index------------>  verify Customer is redirected to Respective page when clicked on particular "Fixed Deposit" in Application Forms
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/webform/Deposit/depositLandingPage------------>  verify Customer is redirected to Respective page when clicked on particular "Fixed Deposit" in Application Forms
+
+Footer Options - Car Insuarnce is not displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Car Insuarnce" - Insurance9
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index------------>  verify Customer is redirected to Respective page when clicked on particular "Car Insuarnce" - Insurance9
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/insurance/car-insurance-all-products------------>  verify Customer is redirected to Respective page when clicked on particular "Car Insuarnce" - Insurance9
+
+Tab Option Moratorium Policy March 2020 under Legal is not displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Moratorium Policy March 2020" in New Tab- LegalÄ
+
+The given window "2" is failed to open------------>  verify Customer is redirected to Respective page when clicked on particular "Moratorium Policy March 2020" in New Tab- LegalÄ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=660d35bb-3bb7-4371-8318-a93cecd95140#;------------>  verify Customer is redirected to Respective page when clicked on particular "Moratorium Policy March 2020" in New Tab- LegalÄ
+
+Expected URL : https://cms-assets.bajajfinserv.in/is/content/bajajfinance/moratorium-bflpdf?scl=1&fmt=pdf------------>  verify Customer is redirected to Respective page when clicked on particular "Moratorium Policy March 2020" in New Tab- LegalÄ
+
+Tab Option Resolution Plan 2.0 under Legal is not displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Resolution Plan 2.0" in New Tab- LegalÆ
+
+The given window "2" is failed to open------------>  verify Customer is redirected to Respective page when clicked on particular "Resolution Plan 2.0" in New Tab- LegalÆ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=660d35bb-3bb7-4371-8318-a93cecd95140#;------------>  verify Customer is redirected to Respective page when clicked on particular "Resolution Plan 2.0" in New Tab- LegalÆ
+
+Expected URL : https://cms-assets.bajajfinserv.in/is/content/bajajfinance/framework-2.0-for-covid19-related-stressdocxpdf?scl=1&fmt=pdf------------>  verify Customer is redirected to Respective page when clicked on particular "Resolution Plan 2.0" in New Tab- LegalÆ
+
+Tab Option Cautionary Notice under Legal is not displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Cautionary Notice" in New Tab- LegalÈ
+
+The given window "2" is failed to open------------>  verify Customer is redirected to Respective page when clicked on particular "Cautionary Notice" in New Tab- LegalÈ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=660d35bb-3bb7-4371-8318-a93cecd95140#;------------>  verify Customer is redirected to Respective page when clicked on particular "Cautionary Notice" in New Tab- LegalÈ
+
+Expected URL : https://cms-assets.bajajfinserv.in/is/content/bajajfinance/caution-notice-25-jan-2021-convertedpdf?scl=1&fmt=pdf------------>  verify Customer is redirected to Respective page when clicked on particular "Cautionary Notice" in New Tab- LegalÈ
+
+Tab Option Whistle Blower Policy under Legal is not displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Whistle Blower Policy" in New Tab- LegalÊ
+
+The given window "2" is failed to open------------>  verify Customer is redirected to Respective page when clicked on particular "Whistle Blower Policy" in New Tab- LegalÊ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=660d35bb-3bb7-4371-8318-a93cecd95140#;------------>  verify Customer is redirected to Respective page when clicked on particular "Whistle Blower Policy" in New Tab- LegalÊ
+
+Expected URL : https://cms-assets.bajajfinserv.in/is/content/bajajfinance/whistle-blower-policy-v3pdf?scl=1&fmt=pdf------------>  verify Customer is redirected to Respective page when clicked on particular "Whistle Blower Policy" in New Tab- LegalÊ
+
+Tab Option Make Online Payment under Reach Us is not displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Make Online Payment" - Reach UsÚ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index------------>  verify Customer is redirected to Respective page when clicked on particular "Make Online Payment" - Reach UsÚ
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/ActiveLoanPay------------>  verify Customer is redirected to Respective page when clicked on particular "Make Online Payment" - Reach UsÚ
+
+Linkedin Logo is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on Social App Icons in Reach Uså
+
+The given window "2" is failed to open------------>  verify Customer is redirected to Respective page when clicked on Social App Icons in Reach Uså
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=660d35bb-3bb7-4371-8318-a93cecd95140#;------------>  verify Customer is redirected to Respective page when clicked on Social App Icons in Reach Uså
+
+Expected URL : https://www.linkedin.com/company/bajaj-finserv-lending------------>  verify Customer is redirected to Respective page when clicked on Social App Icons in Reach Uså
+
+Redirected URL is not Matched : https://twitter.com/i/flow/login?redirect_after_login=%2FBajaj_Finserv------------>  verify Customer is redirected to Respective page when clicked on Social App Icons in Reach Usæ
+
+Expected URL : https://twitter.com/Bajaj_Finserv------------>  verify Customer is redirected to Respective page when clicked on Social App Icons in Reach Usæ
+
+Youtube Logo is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on Social App Icons in Reach Usç
+
+The given window "2" is failed to open------------>  verify Customer is redirected to Respective page when clicked on Social App Icons in Reach Usç
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=660d35bb-3bb7-4371-8318-a93cecd95140#;------------>  verify Customer is redirected to Respective page when clicked on Social App Icons in Reach Usç
+
+Expected URL : https://www.youtube.com/c/bajajfinserv------------>  verify Customer is redirected to Respective page when clicked on Social App Icons in Reach Usç
+

@@ -4,6 +4,7 @@ import PageObjects.*;
 import base.ApplicationKeywords;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.Scenario;
 
 public class B2BServicesSteps extends ApplicationKeywords {
     LoginPage login;
@@ -246,5 +247,10 @@ public class B2BServicesSteps extends ApplicationKeywords {
     public void verifyInstaEMICardShopOnline() {
         clickOnButtonUsingTextUsingForLoop("Shop Online");
         verifyRedirectionInCommon("https://www.bajajmall.in/emi-store","");
+    }
+
+    @Then("Then a Document drawer or pop-up should be displayed for {string}")
+    public void thenADocumentDrawerOrPopUpShouldBeDisplayedFor(String num) {
+        b2bservices.viewDocsPopup(num,"");
     }
 }

@@ -1,0 +1,2 @@
+Individual Customer tab is Not Present------------>  To verify when Customer clicks on Sign Out option under ProfileZ
+

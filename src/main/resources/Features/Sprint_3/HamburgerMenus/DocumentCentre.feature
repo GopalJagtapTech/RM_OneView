@@ -41,7 +41,7 @@ Feature: Document Centre
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu     |
       | 8800384932    | 26051982 | Individual    | Mandate and documents | Document Center |
 
-  @loan
+  @loan @Azure
   Scenario Outline: Verify that customer is able to view all active LAN with loan cards
     Given User is logged in "<Mobile Number>" "<Date>" for "<Customer Type>"
     When User is on Home Page
@@ -581,7 +581,7 @@ Feature: Document Centre
     Then verify for Card-"Insurance" and Status-"Active", the Cards are Displayed-"Policy Number"
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu     |
-      | 8800384932    | 02021976 | Individual    | Mandate and documents | Document Center |
+      | 8095480845    | 02021976 | Individual    | Mandate and documents | Document Center |
 
   @filter
   Scenario Outline: Doc Centre- Filter Insurance Tab- Closed
@@ -600,7 +600,7 @@ Feature: Document Centre
     Then verify for Card-"Insurance" and Status-"Closed", the Cards are Displayed-"Policy Number"
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu     |
-      | 8800384932    | 02021976 | Individual    | Mandate and documents | Document Center |
+      | 8095480845    | 02021976 | Individual    | Mandate and documents | Document Center |
 
   @filter
   Scenario Outline: Doc Centre- Filter Insurance Tab- Cancelled
@@ -619,7 +619,7 @@ Feature: Document Centre
     Then verify for Card-"Insurance" and Status-"Cancelled", the Cards are Displayed-"Policy Number"
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu     |
-      | 8800384932    | 02021976 | Individual    | Mandate and documents | Document Center |
+      | 8095480845    | 02021976 | Individual    | Mandate and documents | Document Center |
 
   @filter
   Scenario Outline: Doc Centre- Filter Insurance Tab- Surrendered
@@ -638,7 +638,7 @@ Feature: Document Centre
     Then verify for Card-"Insurance" and Status-"Surrendered", the Cards are Displayed-"Policy Number"
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu     |
-      | 8800384932    | 02021976 | Individual    | Mandate and documents | Document Center |
+      | 8095480845    | 02021976 | Individual    | Mandate and documents | Document Center |
 
 
 ##################My Relations Journey

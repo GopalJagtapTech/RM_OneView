@@ -36,7 +36,7 @@ Feature: Document Center New
 
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu     | Card Number    |
-      | 9650543332    | 01011986 | Corporate    | Mandate and documents | Document Center | 401BLF85202471 |
+      | 9443703371    | 01011986 | Corporate    | Mandate and documents | Document Center | 5550PL15072698 |
 
   @loan @Closed @new
   Scenario Outline: Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)- Closed Loan
@@ -98,7 +98,7 @@ Feature: Document Center New
 
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu     | Card Number |
-      | 7720878309    | 01011986 | Individual    | Mandate and documents | Document Center | 591224      |
+      | 7798716919    | 01011986 | Individual    | Mandate and documents | Document Center | 563941      |
 
   @dep @Closed @new
   Scenario Outline: Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)-Closed deposit
@@ -120,7 +120,7 @@ Feature: Document Center New
 
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu     | Card Number |
-      | 7720878309    | 01011986 | Individual    | Mandate and documents | Document Center | 591224      |
+      | 7798716919    | 01011986 | Individual    | Mandate and documents | Document Center | 563941      |
 
 
 ##########Insurance
@@ -163,7 +163,7 @@ Feature: Document Center New
     And User should be redirected to specific document page "<Card Number>"
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu     | Card Number     |
-      | 9717843356    | 17091994 | Individual    | Mandate and documents | Document Center | CP000053HV31100 |
+      | 8095480845    | 17091994 | Individual    | Mandate and documents | Document Center | CP000053EN15100 |
 
 
   @Closed_Insurance-New
@@ -183,10 +183,10 @@ Feature: Document Center New
     And Clicks on Apply Button in Filter in Doc Page
     And User clicks on a Card "<Card Number>"
     And User should be redirected to specific document page "<Card Number>"
-    And verify User is able to Download the file and the file is in PDF Format FileName "Certificate of Insurance" ,FileDownloadName "CP000053HV31100_CertificateOfIns.pdf"
+    And verify User is able to Download the file and the file is in PDF Format FileName "Certificate of Insurance" ,FileDownloadName "CP000053EN15100_CertificateOfIns.pdf"
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu     | Card Number     |
-      | 9717843356    | 17091994 | Individual    | Mandate and documents | Document Center | CP000053HV31100 |
+      | 8095480845    | 17091994 | Individual    | Mandate and documents | Document Center | CP000053EN15100 |
 
   @Cancelled_Insurance_New
   Scenario Outline: Verify Cancelled Insurance card is clickable & Customer is redirecting to insurance document page
@@ -206,7 +206,7 @@ Feature: Document Center New
     And User should be redirected to specific document page "<Card Number>"
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu     | Card Number |
-      | 8421822960    | 17091994 | Individual    | Mandate and documents | Document Center | IM7767707   |
+      | 8095480845    | 17091994 | Individual    | Mandate and documents | Document Center | 5135485-5135660   |
 
 
   @Cancelled_Insurance_New
@@ -225,10 +225,10 @@ Feature: Document Center New
     And Clicks on Apply Button in Filter in Doc Page
     And User clicks on a Card "<Card Number>"
     And User should be redirected to specific document page "<Card Number>"
-    And verify User is able to Download the file and the file is in PDF Format FileName "Certificate of Insurance" ,FileDownloadName "IM7767707_CertificateOfIns.pdf"
+    And verify User is able to Download the file and the file is in PDF Format FileName "Certificate of Insurance" ,FileDownloadName "5135485-5135660_CertificateOfIns.pdf"
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu     | Card Number |
-      | 8421822960    | 17091994 | Individual    | Mandate and documents | Document Center | IM7767707   |
+      | 8095480845    | 17091994 | Individual    | Mandate and documents | Document Center | 5135485-5135660   |
 
   @Surrendered_Insurance_New
   Scenario Outline: Verify Surrendered Insurance card is clickable & Customer is redirecting to insurance document page
@@ -287,7 +287,7 @@ Feature: Document Center New
     And Verify that message is displayed to customer "<Message>"
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu     | Message                                |
-      | 9594134201    | 16101986 | Individual    | Mandate and documents | Document Center | You do not have any Active Loans with us |
+      | 9650543332    | 16101986 | Individual    | Mandate and documents | Document Center | You do not have any Active Loans with us |
 
   @Closed_Loan_New
   Scenario Outline: Verify that message is displayed when customer dont have Closed loans
@@ -333,10 +333,11 @@ Feature: Document Center New
     And Clicks on SubListmenu "<SubListMenu>"
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter/index" Url
     And Clicks on the Document Centre Page tab "Deposits"
+    And Unselects a Relation Status in Filter in Doc Page-"Closed"
     And Verify that message is displayed to customer "<Message>"
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu     | Message                                   |
-      | 9594134201    | 16101986 | Individual    | Mandate and documents | Document Center | You do not have any Active Deposits with us |
+      | 8095480845    | 16101986 | Individual    | Mandate and documents | Document Center | You do not have any Active Deposits with us |
 
   @Closed_Deposit_New
   Scenario Outline: Verify that message is displayed when customer dont have Closed deposit
@@ -384,10 +385,13 @@ Feature: Document Center New
     And Clicks on SubListmenu "<SubListMenu>"
     Then Verify Customer Redirected to "MyAccountDocumentCenter/DocumentCenter/index" Url
     And Clicks on the Document Centre Page tab "Insurance"
+    And Unselects a Relation Status in Filter in Doc Page-"Closed"
+    And Unselects a Relation Status in Filter in Doc Page-"Cancelled"
+    And Unselects a Relation Status in Filter in Doc Page-"Surrendered"
     And Verify that message is displayed to customer "<Message>"
     Examples:
       | Mobile Number | Date     | Customer Type | SubMenu               | SubListMenu     | Message                                    |
-      | 9594134201    | 16101986 | Individual    | Mandate and documents | Document Center | You do not have any Active Insurance with us |
+      | 8800384932    | 16101986 | Individual    | Mandate and documents | Document Center | You do not have any Active Insurance with us |
 
   @Closed_Insurance_New
   Scenario Outline: Verify that message is displayed when customer dont have Closed insurance

@@ -13,9 +13,11 @@ import java.io.IOException;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "classpath:Features/Sprint_2/Services/SdpServices",
-//        tags = "not @Not",
-        tags = "@Pass",
+//        features = "classpath:Features/JuneCRs/FF_3035189and3255490_SettlementPayment.feature",
+        features = "classpath:Features/JuneCRs/US_2738050_ReKYC_Renewal.feature",
+        tags = "@debug",
+//        tags = "not @myrel",
+//        tags = "@Ham and not @pass",
 //        tags = "@FD2 and @Pass",
 //        tags = "@Pass or @StopSDP",
 

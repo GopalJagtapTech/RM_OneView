@@ -1,0 +1,276 @@
+All the Further Steps skipped due to Popup- Already request Raised------------>  To verify Address Corporate through PAN!
+
+All the Further Steps skipped due to Popup- Already request Raised------------>  To verify Address Corporate through Bank Account-
+
+Visit a branch Button is Not Displayed Successfully------------>  To verify DOI Corporate through PAN1
+
+Info Icon Doc page is Not Present------------>  To verify DOI Corporate through PAN1
+
+Upload both the sides of your selected ID proof to make the verification process easy and fast. is Not Present------------>  To verify DOI Corporate through PAN1
+
+Info Icon Close Button is Not Present------------>  To verify DOI Corporate through PAN1
+
+Thank you for reaching out to us. - Message is Not Displayed------------>  To verify DOI Corporate through PAN1
+
+Thank you for reaching out to us. - Message is Not Displayed. GetText------------>  To verify DOI Corporate through PAN1
+
+Update DOI is Not Verified------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Self-Attested Document is Not Verified------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Visit a branch is Not Verified------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Select Documents DropDown is Not Verified------------>  To verify DOI Corporate through Bank A/C NumberL
+
+SUBMIT is Not Verified------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Visit a branch Button is not Displayed------------>  To verify DOI Corporate through Bank A/C NumberL
+
+SHOW NEARBY BRANCHES Button is not Enabled with valid value------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Enter DOI field is not Displayed and Type In Failed------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Self-Attested Document Button is not Displayed------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Select Documents DropDown is Not Displayed------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Select Documents DropDown is Not Displayed------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Multiple Dcoument Upload Section is Not Displayed------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Info Icon Doc page is Not Present------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Upload both the sides of your selected ID proof to make the verification process easy and fast. is Not Present------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Info Icon Close Button is Not Present------------>  To verify DOI Corporate through Bank A/C NumberL
+
+SUBMIT button is Not Displayed------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Please Upload the document error message is not displayed------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Upload error. Please upload your file in .pdf, .png or .jpg format. Maximum file size: 2 MB error message is not displayed------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Upload error. Please upload your file in .pdf, .png or .jpg format. Maximum file size: 2 MB error message is not displayed------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Upload error. Please upload your file in .pdf, .png or .jpg format. Maximum file size: 2 MB error message is not displayed------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Upload error. Please upload your file in .pdf, .png or .jpg format. Maximum file size: 2 MB error message is not displayed------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Front Delete is Not Verified------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Front Delete is Not Verified------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Back Delete is Not Verified------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Back Delete is Not Verified------------>  To verify DOI Corporate through Bank A/C NumberL
+
+SUBMIT button is Not Displayed------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Thank you for reaching out to us. - Message is Not Displayed------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Thank you for reaching out to us. - Message is Not Displayed. GetText------------>  To verify DOI Corporate through Bank A/C NumberL
+
+Update your email id is Not Verified------------>  To verify Email Corporate through Bank Acc Number,
+
+This email id will be used for all future communication is Not Verified------------>  To verify Email Corporate through Bank Acc Number,
+
+New Email ID is Not Verified------------>  To verify Email Corporate through Bank Acc Number,
+
+GET OTP is Not Verified------------>  To verify Email Corporate through Bank Acc Number,
+
+GET OTP Button is not disabled without value------------>  To verify Email Corporate through Bank Acc Number,
+
+Enter your 10-digit mobile number is not Displayed------------>  To verify Mobile Corporate through PAN#
+
+Update your mobile number is Not Verified------------>  To verify Mobile Corporate through Bank Account1
+
+New Mobile Number is Not Verified------------>  To verify Mobile Corporate through Bank Account1
+
+GET OTP is Not Verified------------>  To verify Mobile Corporate through Bank Account1
+
+GET OTP Button is not disabled without value------------>  To verify Mobile Corporate through Bank Account1
+
+Enter your 10-digit mobile number is not Displayed------------>  To verify Mobile Corporate through Bank Account1
+
+All the Further Steps skipped due to Popup- Already request Raised------------>  To verify Pan Corporate through Bank Account with NSDL PAN flow(
+
+All the Further Steps skipped due to Popup- Already request Raised------------>  To verify PAN Corporate through Bank Account on unsuccessful NSDL response9
+
+All the Further Steps skipped due to Popup- Already request Raised------------>  To verify Pan Corporate through Date of Incorporation with NSDL PAN flowI
+
+All the Further Steps skipped due to Popup- Already request Raised------------>  To verify PAN Corporate through Date of Incorporation on unsuccessful NSDL responseY
+
+All the Further Steps skipped due to Popup- Already request Raised------------>  To verify Address Individual through PAN"
+
+All the Further Steps skipped due to Popup- Already request Raised------------>  To verify Address Individual through EMI CARD.
+
+Home Page Text is Not Verified------------>  To verify Address Individual through Bank Account8
+
+Login is Unsuccessfull------------>  To verify Address Individual through Bank Account8
+
+All the Further Steps skipped due to Popup- Already request Raised------------>  To verify DOB Individual through PAN/
+
+All the Further Steps skipped due to Popup- Already request Raised------------>  To verify DOB Individual through EMI Card NumberH
+
+All the Further Steps skipped due to Popup- Already request Raised------------>  To verify DOB Individual through Bank A/C Numbera
+
+Update your email id is Not Verified------------>  To verify Email Individual through PAN!
+
+New Email ID is Not Verified------------>  To verify Email Individual through PAN!
+
+GET OTP is Not Verified------------>  To verify Email Individual through PAN!
+
+GET OTP Button is not disabled without value------------>  To verify Email Individual through PAN!
+
+Update your mobile number is Not Verified------------>  To verify Mobile Individual through PAN.
+
+New Mobile Number is Not Verified------------>  To verify Mobile Individual through PAN.
+
+GET OTP is Not Verified------------>  To verify Mobile Individual through PAN.
+
+GET OTP Button is not disabled without value------------>  To verify Mobile Individual through PAN.
+
+Enter your 10-digit mobile number is not Displayed------------>  To verify Mobile Individual through PAN.
+
+Enter your 10-digit mobile number is not Displayed------------>  To verify Mobile Individual through EMI CARD;
+
+Enter your 10-digit mobile number is not Displayed------------>  To verify Mobile Individual through Bank AccountH
+
+Home Page Text is Not Verified------------>  To verify Pan Individual through EMI Card with NSDL PAN flow*
+
+Login is Unsuccessfull------------>  To verify Pan Individual through EMI Card with NSDL PAN flow*
+
+All the Further Steps skipped due to Popup- Already request Raised------------>  To verify PAN Individual through EMI Card on unsuccessful NSDL response:
+
+All the Further Steps skipped due to Popup- Already request Raised------------>  To verify Pan Individual through Bank Account with NSDL PAN flowK
+
+All the Further Steps skipped due to Popup- Already request Raised------------>  To verify PAN Individual through Bank Account on unsuccessful NSDL response\
+
+All the Further Steps skipped due to Popup- Already request Raised------------>  To verify Pan Individual through Date of Birth with NSDL PAN flown
+
+All the Further Steps skipped due to Popup- Already request Raised------------>  To verify PAN Individual through Date of Birth on unsuccessful NSDL response
+
+KIN/CKYCR Number Update Button is not displayed for Not Available value------------>  Verify Not Available for Options- "KIN/CKYCR Number" Individual#
+
+ViewProfile Link is Not Present------------>  Verify Not Available for Options- "GSTIN" Individual.
+
+Customer Name is Not Verified------------>  Verify Not Available for Options- "GSTIN" Individual.
+
+GSTIN Value is Not Present------------>  Verify Not Available for Options- "GSTIN" Individual.
+
+GSTIN Value is not present------------>  Verify Not Available for Options- "GSTIN" Individual.
+
+Sign Out Button is Not Displayed------------>  Verify Not Available for Options- "GSTIN" Individual.
+
+Individual Customer tab is Not Present------------>  Verify Not Available for Options- "Current Address" Individual9
+
+Mobile Number Text Box For Individual is not Present and Type In Failed------------>  Verify Not Available for Options- "Current Address" Individual9
+
+Get OTP is Not Present in findElements------------>  Verify Not Available for Options- "Current Address" Individual9
+
+Failed in click on Get OTP button using for Loop. Exception: class java.lang.NullPointerException------------>  Verify Not Available for Options- "Current Address" Individual9
+
+Failed in wait for OTP Text Box 1 Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Verify Not Available for Options- "Current Address" Individual9
+
+OTP Text Box 1 is Not Displayed------------>  Verify Not Available for Options- "Current Address" Individual9
+
+OTP Text Box 2 is Not Displayed------------>  Verify Not Available for Options- "Current Address" Individual9
+
+OTP Text Box 3 is Not Displayed------------>  Verify Not Available for Options- "Current Address" Individual9
+
+OTP Text Box 4 is Not Displayed------------>  Verify Not Available for Options- "Current Address" Individual9
+
+OTP Text Box 5 is Not Displayed------------>  Verify Not Available for Options- "Current Address" Individual9
+
+OTP Text Box 6 is Not Displayed------------>  Verify Not Available for Options- "Current Address" Individual9
+
+Submit is Not Present in findElements------------>  Verify Not Available for Options- "Current Address" Individual9
+
+Failed in click on Submit button using for Loop. Exception: class java.lang.NullPointerException------------>  Verify Not Available for Options- "Current Address" Individual9
+
+ViewProfile Link is Not Present------------>  Verify Not Available for Options- "Current Address" Individual9
+
+Customer Name is Not Verified------------>  Verify Not Available for Options- "Current Address" Individual9
+
+Current Address Value is Not Present------------>  Verify Not Available for Options- "Current Address" Individual9
+
+Current Address Value is not present------------>  Verify Not Available for Options- "Current Address" Individual9
+
+Sign Out Button is Not Displayed------------>  Verify Not Available for Options- "Current Address" Individual9
+
+Non-Individual Customer tab is Not Present------------>  Verify Not Available for Options- "PAN" CorporateE
+
+Mobile Number Text Box For Non-Individual is not Present and Type In Failed------------>  Verify Not Available for Options- "PAN" CorporateE
+
+Get OTP is Not Present in findElements------------>  Verify Not Available for Options- "PAN" CorporateE
+
+Failed in click on Get OTP button using for Loop. Exception: class java.lang.NullPointerException------------>  Verify Not Available for Options- "PAN" CorporateE
+
+Failed in wait for OTP Text Box 1 Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Verify Not Available for Options- "PAN" CorporateE
+
+OTP Text Box 1 is Not Displayed------------>  Verify Not Available for Options- "PAN" CorporateE
+
+OTP Text Box 2 is Not Displayed------------>  Verify Not Available for Options- "PAN" CorporateE
+
+OTP Text Box 3 is Not Displayed------------>  Verify Not Available for Options- "PAN" CorporateE
+
+OTP Text Box 4 is Not Displayed------------>  Verify Not Available for Options- "PAN" CorporateE
+
+OTP Text Box 5 is Not Displayed------------>  Verify Not Available for Options- "PAN" CorporateE
+
+OTP Text Box 6 is Not Displayed------------>  Verify Not Available for Options- "PAN" CorporateE
+
+Submit is Not Present in findElements------------>  Verify Not Available for Options- "PAN" CorporateE
+
+Failed in click on Submit button using for Loop. Exception: class java.lang.NullPointerException------------>  Verify Not Available for Options- "PAN" CorporateE
+
+DOI Text Box For Non-Individual is not Present and Type In Failed------------>  Verify Not Available for Options- "PAN" CorporateE
+
+PROCEED is Not Present in findElements------------>  Verify Not Available for Options- "PAN" CorporateE
+
+Failed in click on PROCEED button using for Loop. Exception: class java.lang.NullPointerException------------>  Verify Not Available for Options- "PAN" CorporateE
+
+ViewProfile Link is Not Present------------>  Verify Not Available for Options- "PAN" CorporateE
+
+Customer Name is Not Verified------------>  Verify Not Available for Options- "PAN" CorporateE
+
+PAN Value is Not Present------------>  Verify Not Available for Options- "PAN" CorporateE
+
+PAN Value is not present------------>  Verify Not Available for Options- "PAN" CorporateE
+
+Sign Out Button is Not Displayed------------>  Verify Not Available for Options- "PAN" CorporateE
+
+Date Of Incorporation Update Button is Not Displayed for this customer Id------------>  Verify Not Available for Options- "Date Of Incorporation"O
+
+Home Page Text is Not Verified------------>  Verify Not Available for Options- "GSTIN"Z
+
+Login is Unsuccessfull------------>  Verify Not Available for Options- "GSTIN"Z
+
+Sign Out Button is Not Present------------>  Verify Not Available for Options- "GSTIN"Z
+
+Home Page Text is Not Verified------------>  Verify Not Available for Options- "Email ID"e
+
+Login is Unsuccessfull------------>  Verify Not Available for Options- "Email ID"e
+
+Sign Out Button is Not Present------------>  Verify Not Available for Options- "Email ID"e
+
+Home Page Text is Not Verified------------>  Verify Not Available for Options- "KIN/CKYCR Number"p
+
+Login is Unsuccessfull------------>  Verify Not Available for Options- "KIN/CKYCR Number"p
+
+Sign Out Button is Not Present------------>  Verify Not Available for Options- "KIN/CKYCR Number"p
+
+My Profile  Already Raised Request Popup is not Displayed------------>  Individual - Raised Request- Mobile Number
+
+My Profile  Already Raised Request Popup is not Displayed------------>  Individual - Raised Request- Email ID
+
+My Profile  Already Raised Request Popup is not Displayed------------>  Individual - Raised Request- Date of Birth"
+
+My Profile  Already Raised Request Popup is not Displayed------------>  Individual - Raised Request- Current Address+
+
+My Profile  Already Raised Request Popup is not Displayed------------>  Corporate - Raised Request- Email ID?
+
+My Profile  Already Raised Request Popup is not Displayed------------>  Corporate - Raised Request- Date of BirthH
+
+My Profile  Already Raised Request Popup is not Displayed------------>  Corporate - Raised Request- Current AddressQ
+

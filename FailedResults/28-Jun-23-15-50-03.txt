@@ -1,0 +1,18 @@
+Get a call back Option in Happy to assist you RHS is Not Displayed------------>  To verify HAPPY TO ASSIST YOU section is displayed with given Options on RHS side on Renew Plan page
+
+Check FAQs Option in Happy to assist you RHS is Not Displayed------------>  To verify HAPPY TO ASSIST YOU section is displayed with given Options on RHS side on Renew Plan page
+
+ Account Number 1028439 is Not Redirected------------>  To verify when customer clicks on Get a call back option'
+
+Not Redirected to Expected------------>  To verify when customer clicks on Get a call back option'
+
+RHS Option Get a call back in Insurance Service Pageis not Displayed------------>  To verify when customer clicks Cross Icon on Pop-up<
+
+Thank you for your request, our representative will get in touch shortly.Please note our work hours are 9 AM to 6 PM, Mon to Saturday. is Not Displayed in the Page------------>  To verify when customer clicks Cross Icon on Pop-up<
+
+RHS Option Get a call back in Insurance Service Pageis not Displayed------------>  To verify when customer clicks Okay CTA on Pop-upQ
+
+Thank you for your request, our representative will get in touch shortly.Please note our work hours are 9 AM to 6 PM, Mon to Saturday. is Not Displayed in the Page------------>  To verify when customer clicks Okay CTA on Pop-upQ
+
+Got It button is Not Displayed------------>  To verify when customer clicks Okay CTA on Pop-upQ
+

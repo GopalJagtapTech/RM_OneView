@@ -55,6 +55,9 @@ public class FDServicesPage extends ApplicationKeywords {
     public static final String nomineeRhsSecondOption = "Why should I add a nominee? RHS 2nd Option Text#xpath=((//strong[normalize-space(text())='Why should I add a nominee?'])[2]/../following-sibling::div//li)[2]";
 
 
+    public static final String tds_OtherIncome = "Other Income Field - TDS#xpath=//input[@id='otherfdincome']";
+
+
 //    public static final String logo_Fd="FD Product Logo#xpath=//img[@src='https://cms-assets.bajajfinserv.in/is/image/bajajfinancestage/fixed-deposit-10?scl=1&fmt=png-alpha']";
 
     /*
@@ -120,7 +123,7 @@ public class FDServicesPage extends ApplicationKeywords {
 //            String iconViewDetails = subTitle + " " + accountNo + " No. Tile#xpath=//h2[contains(text(),'" + subTitle + "')]/../following-sibling::div/descendant::p[contains(text(),'" + accountNo + "')]/ancestor::div[@class='deposit_name']/descendant::img[@src='https://experia-uat.bajajfinserv.in/UI/images/icons-view-details.svg']|//strong[contains(text(),'" + subTitle + "')]/following-sibling::p[contains(text(),'" + accountNo + "')]/ancestor::div[@class='deposit_name']/descendant::img[@src='https://experia-uat.bajajfinserv.in/UI/images/icons-view-details.svg']";
 //            String iconViewDetails = subTitle + " " + accountNo + " No. Tile#xpath=//h2[contains(text(),'" + subTitle + "')]/../following-sibling::div/descendant::p[contains(text(),'" + accountNo + "')]/ancestor::div[@class='deposit_name']/descendant::img[contains(@src,'/icons-view-details.svg')]|//strong[contains(text(),'" + subTitle + "')]/following-sibling::p[contains(text(),'" + accountNo + "')]/ancestor::div[@class='deposit_name']/descendant::img[contains(@src,'/icons-view-details.svg')]";
 
-            String iconViewDetails = subTitle + " " + accountNo + " No. Tile#xpath=//h2[contains(text(),'" + subTitle + "')]/../following-sibling::div/descendant::p[contains(text(),'" + accountNo + "')]/ancestor::div[@class='deposit_name']/descendant::img[contains(@src,'/icons-view-details.svg')]|//strong[contains(text(),'" + subTitle + "')]/following-sibling::p[contains(text(),'" + accountNo + "')]/ancestor::div[@class='deposit_name']/descendant::img[contains(@src,'/icons-view-details.svg')]|//strong[contains(text(),'"+subTitle+"')]/ancestor::div/following-sibling::div[@class='deposit_amount']/descendant::strong[contains(text(),'"+accountNo+"')]/ancestor::div[@class='deposit_amount']/preceding-sibling::div[@class='deposit_name']/descendant::img[contains(@src,'/icons-view-details.svg')]";
+            String iconViewDetails = subTitle + " " + accountNo + " No. Tile#xpath=//h2[contains(text(),'" + subTitle + "')]/../following-sibling::div/descendant::p[contains(text(),'" + accountNo + "')]/ancestor::div[@class='deposit_name']/descendant::img[contains(@src,'/icons-view-details.svg')]|//strong[contains(text(),'" + subTitle + "')]/following-sibling::p[contains(text(),'" + accountNo + "')]/ancestor::div[@class='deposit_name']/descendant::img[contains(@src,'/icons-view-details.svg')]|//strong[contains(text(),'" + subTitle + "')]/ancestor::div/following-sibling::div[@class='deposit_amount']/descendant::strong[contains(text(),'" + accountNo + "')]/ancestor::div[@class='deposit_amount']/preceding-sibling::div[@class='deposit_name']/descendant::img[contains(@src,'/icons-view-details.svg')]";
 //            String iconViewDetails = subTitle + " " + accountNo + " No. Tile#xpath=//h2[contains(text(),'" + subTitle + "')]/../following-sibling::div/descendant::p[contains(text(),'" + accountNo + "')]/ancestor::div[@class='deposit_name']/descendant::img[contains(@src,'/icons-view-details.svg')]|//strong[contains(text(),'" + subTitle + "')]/following-sibling::p[contains(text(),'" + accountNo + "')]/ancestor::div[@class='deposit_name']/descendant::img[contains(@src,'/icons-view-details.svg')]|//strong[contains(text(),'"+subTitle+"')]/ancestor::div/following-sibling::div[@class='deposit_amount']/descendant::strong[contains(text(),'"+accountNo+"')]/ancestor::div[@class='deposit_amount']/preceding-sibling::div[@class='deposit_name']/descendant::img[contains(@src,'/icons-view-details.svg')]";
 
             if (isElementPresent(iconViewDetails)) {
@@ -1497,7 +1500,6 @@ public class FDServicesPage extends ApplicationKeywords {
     }
 
 
-
 ///////////////Mustaq Lafd//////////////////////////////
     //    Mustaq- 12122022
 
@@ -2189,7 +2191,7 @@ public class FDServicesPage extends ApplicationKeywords {
 
     public void verifyTenureIsMoreThan30Months() {
         try {
-String tenureValue="FD Details Tenure Value#xpath=//strong[normalize-space(text())='FD Details']/../following-sibling::div//*[normalize-space(text())='Tenure']/following-sibling::strong";
+            String tenureValue = "FD Details Tenure Value#xpath=//strong[normalize-space(text())='FD Details']/../following-sibling::div//*[normalize-space(text())='Tenure']/following-sibling::strong";
             String text = getText(tenureValue).toLowerCase().trim();
             if (text.contains("months")) {
                 String[] split1 = text.split("months");
@@ -2198,7 +2200,7 @@ String tenureValue="FD Details Tenure Value#xpath=//strong[normalize-space(text(
                 if (i > 30) {
                     manualScreenshot("Tenure is more than 30 months verified successfully");
                 } else {
-                    testStepFailed("tenure is more than 30 months is not verified. Value: "+i);
+                    testStepFailed("tenure is more than 30 months is not verified. Value: " + i);
                 }
             } else {
                 testStepFailed("There is no months format in tenure");
@@ -2206,13 +2208,13 @@ String tenureValue="FD Details Tenure Value#xpath=//strong[normalize-space(text(
 
         } catch (Exception e) {
             e.printStackTrace();
-            testStepFailed("Failed in verify Tenure is more than 30 months. Exception: "+e.getClass());
+            testStepFailed("Failed in verify Tenure is more than 30 months. Exception: " + e.getClass());
         }
     }
 
     public void verifyRenewalStatus() {
         try {
-            String tenureValue="FD Details Tenure Value#xpath=//strong[normalize-space(text())='FD Details']/../following-sibling::div//*[normalize-space(text())='Renewal Status']/following-sibling::strong";
+            String tenureValue = "FD Details Tenure Value#xpath=//strong[normalize-space(text())='FD Details']/../following-sibling::div//*[normalize-space(text())='Renewal Status']/following-sibling::strong";
             String text = getText(tenureValue).toLowerCase().trim();
             if (text.equalsIgnoreCase("Renewed")) {
                 manualScreenshot("Renewal status should be renewed verified successfully");
@@ -2221,7 +2223,77 @@ String tenureValue="FD Details Tenure Value#xpath=//strong[normalize-space(text(
             }
         } catch (Exception e) {
             e.printStackTrace();
-            testStepFailed("Failed in verify Renewal status. Exception: "+e.getClass());
+            testStepFailed("Failed in verify Renewal status. Exception: " + e.getClass());
         }
     }
+
+
+    //////////28062023
+
+    public static final String cross_GetACallBack = "Get a Call Back Popup Cross Button#xpath=//div[@class='p_Unable_proceed_box']/descendant::a[@class='close_otp']";
+
+    public void getLafdPopup() {
+        try {
+            String errorPopup = "Get a LAFD Error Popup#xpath=(//div[@class='p_Unable_proceed_box']/descendant::p[@id='poperrormsg'])[1]";
+            verifyFieldDisplayedUsingTagAndText("p", "Unable to proceed", "");
+            verifyElementIsDisplayedAndGetText(errorPopup);
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in get Lafd Popup. Exception: " + e.getClass());
+        }
+    }
+
+
+    public Boolean verifyRHSOptionIsNotDisplayedUsingText(String Title, String Text, String Extra) {
+        Boolean flag = false;
+        try {
+            String locator = "" + Text + " Option in " + Title + "#xpath=//div[@class='Superstores_list Superstores_FD']//ul//li/descendant::p[normalize-space(text())='" + Text.trim() + "']";
+            if (!isElementDisplayed(locator)) {
+                manualScreenshot(locator.split("#")[0] + " is Not displaying successfully");
+                flag = true;
+            } else {
+                testStepFailed(locator.split("#")[0] + " is  still displaying ");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify RHS Option Is Not Displayed Using Text. Exception: " + e.getClass());
+        }
+        return flag;
+    }
+
+    ////////1108
+    public static final String rgsSection = "Registry Section#xpath=//div[@class='p_joint_ac_holder']";
+    public static final String rgsSection_PanInput = "PAN Input - Registry Section#xpath=//input[@id='txtcustPan']";
+    public static final String rgsSection_PanTooltip = "PAN Tooltip  - Registry Section#xpath=//div[@class='input_field_tip modal_ani']//a";
+    public static final String rgsSection_PanInputLabel = "PAN Input - Registry Section#xpath=//input[@id='txtcustPan']/..";
+    public static final String rgsSection_DOBInput = "DOB Input - Registry Section#xpath=//input[@id='txtcustDOB']";
+    public static final String rgsSection_DOBInputLabel = "DOB Input - Registry Section#xpath=//input[@id='txtcustDOB']/..";
+    public static final String rgsSection_PAN_Popup = "PAN Image Popup - Registry Section#xpath=//div[@class='input_tip_img_box']//img[contains(@src,'images/pan.png')]";
+    public static final String rgsSection_PAN_PopupClose = "PAN Image Popup Close Button - Registry Section#xpath=//div[@class='a_modalfulldiv']//a[@class='a_close_cta']";
+    public static final String rgsSection_CheckBox = "T&C Check Box in Renewal Summary page#xpath=//input[@id='chkRenewSummary']";
+
+    public void invalidRgsSection(String Invalid, String locator, String ErrorText) {
+        try {
+            String[] split = Invalid.split(",");
+            for (int i = 0; i < split.length; i++) {
+                String value = split[i];
+                clearEditBox(locator);
+                typeInIfDisplayed(locator, value);
+                clickOn(rgsSection_CheckBox);
+            verifyErrorMessageUsingText(ErrorText);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed invalid Rgs Section. Exception: " + e.getClass());
+        }
+    }
+
+
+
+
+
+
 }
+
+
+

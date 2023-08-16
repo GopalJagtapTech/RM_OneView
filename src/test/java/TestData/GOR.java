@@ -9,4 +9,6 @@ public class GOR {
     public static String BaseUrl="https://uat-oneweb.bajajfinserv.in/";
     public static String staticTemporaryValue="";
 
+    public static Boolean isLoggedIn =false;
+
 }

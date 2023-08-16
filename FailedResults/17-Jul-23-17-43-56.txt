@@ -1,0 +1,34 @@
+Failed in verify Page Redirection Using Tag and Text My Relations. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify that customer is redirecting to Document Center page when they clicks on document center  from RHS of My Relation1
+
+RHS Option Document Center in Insurance Service Pageis not Displayed------------>  To verify that customer is redirecting to Document Center page when they clicks on document center  from RHS of My Relation1
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountLoanServices/MyRelation/RelationIntermediate------------>  To verify that customer is redirecting to Document Center page when they clicks on document center  from RHS of My Relation1
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountDocumentCenter/DocumentCenter/index------------>  To verify that customer is redirecting to Document Center page when they clicks on document center  from RHS of My Relation1
+
+Nudge for Tile 1  is not Displayed------------>  To verify Closed nudge is displayed on loan card for closed loan  clear all CTA are visible on click of filter iconP
+
+Nudge for Tile 1  is not Displayed------------>  To verify Matured or Pre matured nudge is displayed on deposit card for closed depositp
+
+Nudge for Tile 2  is not Displayed------------>  To verify Matured or Pre matured nudge is displayed on deposit card for closed depositp
+
+Nudge for Tile 3  is not Displayed------------>  To verify Matured or Pre matured nudge is displayed on deposit card for closed depositp
+
+Nudge for Tile 4  is not Displayed------------>  To verify Matured or Pre matured nudge is displayed on deposit card for closed depositp
+
+Nudge for Tile 5  is not Displayed------------>  To verify Matured or Pre matured nudge is displayed on deposit card for closed depositp
+
+Nudge for Tile 6  is not Displayed------------>  To verify Matured or Pre matured nudge is displayed on deposit card for closed depositp
+
+Nudge for Tile 7  is not Displayed------------>  To verify Matured or Pre matured nudge is displayed on deposit card for closed depositp
+
+Nudge for Tile 8  is not Displayed------------>  To verify Matured or Pre matured nudge is displayed on deposit card for closed depositp
+
+Nudge for Tile 9  is not Displayed------------>  To verify Matured or Pre matured nudge is displayed on deposit card for closed depositp
+
+Nudge for Tile 10  is not Displayed------------>  To verify Matured or Pre matured nudge is displayed on deposit card for closed depositp
+
+Nudge for Tile 11  is not Displayed------------>  To verify Matured or Pre matured nudge is displayed on deposit card for closed depositp
+
+Nudge for Tile 12  is not Displayed------------>  To verify Matured or Pre matured nudge is displayed on deposit card for closed depositp
+

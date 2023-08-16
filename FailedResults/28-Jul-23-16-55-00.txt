@@ -1,0 +1,8 @@
+Hamburger:Manage your Mandateis not Displayed------------>  To verify Customer ID number section is displayed on Mandate Management page
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index------------>  To verify Customer ID number section is displayed on Mandate Management page
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountService/Emandate/index------------>  To verify Customer ID number section is displayed on Mandate Management page
+
+Cust Id: 10366008 error message is not displayed------------>  To verify Customer ID number section is displayed on Mandate Management page
+

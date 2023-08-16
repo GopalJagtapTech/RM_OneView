@@ -1,0 +1,70 @@
+There are No Documents displayed for the given Filter: Loans Closed Count:0------------>  Verify Closed loan card is clickable & Customer is redirecting to loan document page'
+
+Card :  is Not Present in findElements------------>  Verify Closed loan card is clickable & Customer is redirecting to loan document page'
+
+Failed in click on  Card :  button using locator using for loop. Exception: class java.lang.NullPointerException------------>  Verify Closed loan card is clickable & Customer is redirecting to loan document page'
+
+Failed to redirect to Document Page : 401BLF85202471------------>  Verify Closed loan card is clickable & Customer is redirecting to loan document page'
+
+Card :  is Not Present in findElements------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)- Closed Loan<
+
+Failed in click on  Card :  button using locator using for loop. Exception: class java.lang.NullPointerException------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)- Closed Loan<
+
+Failed to redirect to Document Page : 401BLF85202471------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)- Closed Loan<
+
+Card :  is Not Present for Get Text------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)- Closed Loan<
+
+ is Not Verified------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)- Closed Loan<
+
+File: Statement of Account is not Displayed------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)- Closed Loan<
+
+There are No Documents displayed for the given Filter: Deposits Closed Count:0------------>  Verify Closed Deposit card is clickable & Customer is redirecting to deposit document pagee
+
+Card :  is Not Present in findElements------------>  Verify Closed Deposit card is clickable & Customer is redirecting to deposit document pagee
+
+Failed in click on  Card :  button using locator using for loop. Exception: class java.lang.NullPointerException------------>  Verify Closed Deposit card is clickable & Customer is redirecting to deposit document pagee
+
+Failed to redirect to Document Page : 591224------------>  Verify Closed Deposit card is clickable & Customer is redirecting to deposit document pagee
+
+Card :  is Not Present in findElements------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)-Closed deposit{
+
+Failed in click on  Card :  button using locator using for loop. Exception: class java.lang.NullPointerException------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)-Closed deposit{
+
+Failed to redirect to Document Page : 591224------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)-Closed deposit{
+
+Card :  is Not Present for Get Text------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)-Closed deposit{
+
+ is Not Verified------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)-Closed deposit{
+
+File: Statement Of Account is not Displayed------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)-Closed deposit{
+
+Card :   is not Displayed------------>  Verify Closed Insurance card is clickable & Customer is redirecting to insurance document page¦
+
+Failed to redirect to Document Page : CP000053HV31100------------>  Verify Closed Insurance card is clickable & Customer is redirecting to insurance document page¦
+
+Card :   is not Displayed------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)-insurance½
+
+Failed to redirect to Document Page : CP000053HV31100------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)-insurance½
+
+File: Certificate of Insurance is not Displayed------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)-insurance½
+
+Card :  is Not Present in findElements------------>  Verify Cancelled Insurance card is clickable & Customer is redirecting to insurance document pageÑ
+
+Failed in click on  Card :  button using locator using for loop. Exception: class java.lang.NullPointerException------------>  Verify Cancelled Insurance card is clickable & Customer is redirecting to insurance document pageÑ
+
+Failed to redirect to Document Page : IM7767707------------>  Verify Cancelled Insurance card is clickable & Customer is redirecting to insurance document pageÑ
+
+Card :  is Not Present in findElements------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)-Cancelled insuranceç
+
+Failed in click on  Card :  button using locator using for loop. Exception: class java.lang.NullPointerException------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)-Cancelled insuranceç
+
+Failed to redirect to Document Page : IM7767707------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)-Cancelled insuranceç
+
+File: Certificate of Insurance is not Displayed------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)-Cancelled insuranceç
+
+You do not have any Active Loans with us is Not Present------------>  Verify that message is displayed when customer dont have Active loansĢ
+
+You do not have any Active Deposits with us is Not Present------------>  Verify that message is displayed when customer dont have Active depositsœ
+
+You do not have any Active Insurance with us is Not Present------------>  Verify that message is displayed when customer dont have Active InsuranceƆ
+

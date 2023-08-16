@@ -1,0 +1,6 @@
+Bajaj Finserv DBS Bank SuperCar is not Displayed------------>  TC_01_To verify Credit card is displayed under My Relations
+
+Bajaj Finserv DBS Bank is not Displayed------------>  TC_01_To verify Credit card is displayed under My Relations
+
+Bajaj Finserv DBS Bank SuperCard is not Displayed------------>  TC_01_To verify Credit card is displayed under My Relations
+

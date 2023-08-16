@@ -1,0 +1,52 @@
+SignIn Button is Not Displayed------------>  To verify Mutual Fund Tab is displayed under My Relation page
+
+Home Page Text is Not Verified------------>  To verify Mutual Fund Tab is displayed under My Relation page
+
+Login is Unsuccessfull------------>  To verify Mutual Fund Tab is displayed under My Relation page
+
+Sign Out Button is Not Present------------>  To verify Mutual Fund Tab is displayed under My Relation page
+
+SignIn Button is Not Displayed------------>  To verify the Mutual Fund Tile are displayed when customer invested in Mutual Fund%
+
+Home Page Text is Not Verified------------>  To verify the Mutual Fund Tile are displayed when customer invested in Mutual Fund%
+
+Login is Unsuccessfull------------>  To verify the Mutual Fund Tile are displayed when customer invested in Mutual Fund%
+
+Sign Out Button is Not Present------------>  To verify the Mutual Fund Tile are displayed when customer invested in Mutual Fund%
+
+SignIn Button is Not Displayed------------>  To verify details are displayed on Mutual Fund Tile1
+
+Home Page Text is Not Verified------------>  To verify details are displayed on Mutual Fund Tile1
+
+Login is Unsuccessfull------------>  To verify details are displayed on Mutual Fund Tile1
+
+Sign Out Button is Not Present------------>  To verify details are displayed on Mutual Fund Tile1
+
+MyRelations Section is Not Verified------------>  To verify Absolute Return is displayed on Mutual Fund Tile when the holding period between purchase date and Current date is less than 365 days=
+
+My Relation is not Working------------>  To verify Absolute Return is displayed on Mutual Fund Tile when the holding period between purchase date and Current date is less than 365 days=
+
+SignIn Button is Not Displayed------------>  To verify Annualized Return is displayed on Mutual Fund Tile when the holding period between purchase date and Current date is more than 365 daysI
+
+Home Page Text is Not Verified------------>  To verify Annualized Return is displayed on Mutual Fund Tile when the holding period between purchase date and Current date is more than 365 daysI
+
+Login is Unsuccessfull------------>  To verify Annualized Return is displayed on Mutual Fund Tile when the holding period between purchase date and Current date is more than 365 daysI
+
+Sign Out Button is Not Present------------>  To verify Annualized Return is displayed on Mutual Fund Tile when the holding period between purchase date and Current date is more than 365 daysI
+
+Home Page Text is Not Verified------------>  To verify “Up green Arrow“ is displayed on Mutual Fund Tile when Current Value is greater than Invested AmountU
+
+Login is Unsuccessfull------------>  To verify “Up green Arrow“ is displayed on Mutual Fund Tile when Current Value is greater than Invested AmountU
+
+Sign Out Button is Not Present------------>  To verify “Up green Arrow“ is displayed on Mutual Fund Tile when Current Value is greater than Invested AmountU
+
+SignIn Button is Not Displayed------------>  To verify “Down Red Arrow“ is displayed on Mutual Fund Tile when Current Value is less than Invested Amounta
+
+Home Page Text is Not Verified------------>  To verify “Down Red Arrow“ is displayed on Mutual Fund Tile when Current Value is less than Invested Amounta
+
+Login is Unsuccessfull------------>  To verify “Down Red Arrow“ is displayed on Mutual Fund Tile when Current Value is less than Invested Amounta
+
+Sign Out Button is Not Present------------>  To verify “Down Red Arrow“ is displayed on Mutual Fund Tile when Current Value is less than Invested Amounta
+
+Tile Arrow is Not Present------------>  To verify the Redirection On Click of Mutual Fund Tilez
+

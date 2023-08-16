@@ -1,0 +1,12 @@
+Home Page Text is Not Verified------------>  To verify Proceed CTA is disabled when invalid or no amount is displayed.F
+
+Login is Unsuccessfull------------>  To verify Proceed CTA is disabled when invalid or no amount is displayed.F
+
+Sign Out Button is Not Present------------>  To verify Proceed CTA is disabled when invalid or no amount is displayed.F
+
+Home Page Text is Not Verified------------>  To verify after clicking on Proceed to Pay CTA we are redirected to Payment Checkout pageÉ
+
+Login is Unsuccessfull------------>  To verify after clicking on Proceed to Pay CTA we are redirected to Payment Checkout pageÉ
+
+Sign Out Button is Not Present------------>  To verify after clicking on Proceed to Pay CTA we are redirected to Payment Checkout pageÉ
+

@@ -1,0 +1,12 @@
+Failed in Type In DOI Text Box For Non-Individual value as 13/09/1990. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To verify the redirection when ETB Customer clicks on Document Center option under ProfileD
+
+PROCEED button is Not Displayed------------>  To verify the redirection when ETB Customer clicks on Document Center option under ProfileD
+
+Home Page Text is Not Verified------------>  To verify the redirection when ETB Customer clicks on Document Center option under ProfileD
+
+Login is Unsuccessfull------------>  To verify the redirection when ETB Customer clicks on Document Center option under ProfileD
+
+Sign Out Button is Not Present------------>  To verify the redirection when ETB Customer clicks on Document Center option under ProfileD
+
+Sign Out Button is Not Present------------>  To verify when Customer clicks on Sign Out option under ProfileZ
+

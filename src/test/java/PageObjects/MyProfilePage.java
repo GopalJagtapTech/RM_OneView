@@ -82,7 +82,6 @@ public class MyProfilePage extends ApplicationKeywords {
     public static final String close_DOBAlreadyEntered = "Close Button In Popup DOB already entered#xpath=//span[normalize-space(text())='Entered DOB is already updated in our records']/ancestor::p/preceding-sibling::a/img";
 
 
-
     //    public static final String dropDown_SelectADocuments="Cancel Button In Popup#xpath=//select[@class='doc_up_select']";
 
     //div[@class='gstin_part']/descendant::label[text()='Pincode']/following-sibling::input
@@ -423,7 +422,7 @@ public class MyProfilePage extends ApplicationKeywords {
     public void validateTextBox(String optionName, String invalidValues, String lower, String more, int noOfAcceptedDigits, String errValue, String errMsgText) {
         try {
             String optionLower = optionName.toLowerCase();
-            String locatorTextBox = "" + optionName + " Text Box Label#xpath=//div[@class='inputMainBlock']/label[contains(text(),'" + optionName + "')]/following-sibling::input|//label[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), '" + optionLower + "')]/following-sibling::input|//div[@class='PANSECTIONDIV']/descendant::input[@id='txtPanNo']|//div[@class='gstin_part']/descendant::label[text()='" + optionName + "']/following-sibling::input";
+            String locatorTextBox = "" + optionName + " Text Box Label#xpath=//div[@class='inputMainBlock']/label[contains(text(),'" + optionName + "')]/following-sibling::input|//label[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), '" + optionLower + "')]/following-sibling::input|//div[@class='PANSECTIONDIV']/descendant::input[@id='txtPanNo']|//div[@class='gstin_part']/descendant::label[text()='" + optionName + "']/following-sibling::input|//input[@id='EnterDOBdate_Individual']";
             if (isElementDisplayed(locatorTextBox)) {
                 clickOn(locatorTextBox);
                 String[] split = invalidValues.split(",");
@@ -1540,7 +1539,7 @@ public class MyProfilePage extends ApplicationKeywords {
     public void verifyErrorMessageMyProfile(String optionName, String nagtiveValues, String negativeErrorMessage) {
         String optionLower = optionName.toLowerCase();
         try {
-            String locatorTextBox = "" + optionName + " Text Box Label#xpath=//div[@class='inputMainBlock']/label[contains(text(),'" + optionName + "')]/following-sibling::input|//label[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), '" + optionLower + "')]/following-sibling::input|//div[@class='PANSECTIONDIV']/descendant::input[@id='txtPanNo']|//div[@class='gstin_part']/descendant::label[text()='" + optionName + "']/following-sibling::input";
+            String locatorTextBox = "" + optionName + " Text Box Label#xpath=//div[@class='inputMainBlock']/label[contains(text(),'" + optionName + "')]/following-sibling::input|//label[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), '" + optionLower + "')]/following-sibling::input|//div[@class='PANSECTIONDIV']/descendant::input[@id='txtPanNo']|//div[@class='gstin_part']/descendant::label[text()='" + optionName + "']/following-sibling::input|//input[@id='EnterDOBdate_Individual']";
             if (isElementPresent(locatorTextBox)) {
                 String[] values = nagtiveValues.split(",");
                 for (int i = 0; i < values.length; i++) {
@@ -1933,5 +1932,530 @@ public class MyProfilePage extends ApplicationKeywords {
         }
 
     }
+
+    /////250723
+    public void profilePTBContents(String label1, String label2, String Options, String extra) {
+        try {
+            String name = "Cust Name: #xpath=//div[@class='first_vert_part guest']//p/span[1]";
+            String nameLetter = "Cust Name Logo: #xpath=//div[@class='first_vert_part guest']//div[@id='nameLetter']";
+            verifyElementIsDisplayedAndGetText(name);
+            verifyElementIsDisplayedAndGetText(nameLetter);
+            verifyValueUsingLabel("//div[@class='flex_half order1'][@style='display:']/descendant::div[@class='fields']//i", label1, "/following-sibling::p", "");
+            verifyValueUsingLabel("//div[@class='flex_half order3']/descendant::div[@class='fields']//i", label2, "/following-sibling::p", "");
+            String Options2 = changedCommaToHash(Options, "");
+            verifyFieldsUsingCommonXpathAndMultipleTextWithHash("//ul[@id='details_ul']/li/a", Options2, "");
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in profile PTB Contents. Exception: " + e.getClass());
+
+        }
+
+
+    }
+
+    public static final String addNamePtb = "Add Button for Name #xpath=//span[@class='guestadd']";
+    public static final String addNamePopUp = "Add Name Pop Up #xpath=//div[@id='guestAdd_modal']//div[@class='dialog_body']";
+    public static final String addNameInput = "Add Name Pop Up Input #xpath=//input[@id='nameAdded']";
+    public static final String addNamePopupCancel = "Add Name Pop Up Cancel Button #xpath=//a[@id='addName_cancel_button'][normalize-space(text())='Cancel']";
+    public static final String addNamePopupSubmit = "Add Name Pop Up Submit Button #xpath=//button[@id='addName_button'][normalize-space(text())='SUBMIT']";
+    public static final String name = "Cust Name: #xpath=//div[@class='first_vert_part guest']//p/span[1]";
+
+    public void addNamePtbPopup() {
+        try {
+            String addNameInputLabel = "Add Name Input Box Label: #xpath=//input[@id='nameAdded']/preceding-sibling::label";
+            verifyElementIsDisplayedOrNot(addNamePopUp);
+            verifyFieldDisplayedUsingTagAndText("strong", "Add your full name", "");
+            verifyElementIsDisplayedOrNot(addNameInput);
+            verifyElementIsDisplayedAndGetText(addNameInputLabel);
+            verifyElementIsDisplayedOrNot(addNamePopupCancel);
+            verifyElementIsDisplayedOrNot(addNamePopupSubmit);
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in add Name Ptb Popup. Exception: " + e.getClass());
+
+        }
+
+
+    }
+
+    public void profilePtbRedirection() {
+        try {
+            if (!isElementDisplayed(addNameInput) && isElementDisplayed(name)) {
+                manualScreenshot("Customer redirected to Profile PTB page");
+            } else {
+                testStepFailed("Customer not redirected to Profile PTB page");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in profile Ptb Redirection. Exception: " + e.getClass());
+
+        }
+
+
+    }
+
+    public void profilePtbNameChange(String cust, String extra) {
+        try {
+            String text = getTextPresent(name);
+            if (text.equalsIgnoreCase(cust)) {
+                testStepPassed(cust + " name has been added Successfully");
+            } else {
+                testStepFailed(cust + " name is not changed");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in profile Ptb Name Change. Exception: " + e.getClass());
+
+        }
+
+
+    }
+
+    public static final String addDOBProfilePtb = "Add Button for DOB #xpath=//i[normalize-space(text())='Date of Birth']/../../following::div[@class='edit_cta']/a";
+    public static final String addDOBInputProfilePtb = "Add DOB Popup Input #xpath=//input[@id='EnterDOBdate_Individual']";
+    public static final String addDOBCheckBoxProfilePtb = "Add DOB Popup CheckBox #xpath=//input[@type='checkbox'][@id='agreement_msg_dob']";
+    public static final String addDOBProceedProfilePtb = "Add DOB Popup Proceed #xpath=//button[@id='dob_proceed']";
+    public static final String addDOBCancelProfilePtb = "Add DOB Popup Cancel #xpath=//a[@id='dob_proceed_cancel']";
+
+    public void profilePtbRedirectionDOBPopup() {
+        try {
+            if (!isElementDisplayed(addDOBCancelProfilePtb) && isElementDisplayed(name)) {
+                manualScreenshot("Customer redirected to Profile PTB page");
+            } else {
+                testStepFailed("Customer not redirected to Profile PTB page");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in profile Ptb Redirection DOB Popup. Exception: " + e.getClass());
+
+        }
+
+
+    }
+
+//    public static final String addPanProfilePtb = "Add Button for PAN #xpath=(//i[normalize-space(text())='Permanent Account Number (PAN)']/../../following::div[@class='edit_cta']/a)[1]";
+//    public static final String addDOBInputProfilePtb = "Add DOB Popup Input #xpath=//input[@id='EnterDOBdate_Individual']";
+//    public static final String addDOBCheckBoxProfilePtb = "Add DOB Popup CheckBox #xpath=//input[@type='checkbox'][@id='agreement_msg_dob']";
+//    public static final String addDOBProceedProfilePtb = "Add DOB Popup Proceed #xpath=//button[@id='dob_proceed']";
+//    public static final String addDOBCancelProfilePtb = "Add DOB Popup Cancel #xpath=//a[@id='dob_proceed_cancel']";
+
+    /////Tabs
+
+    public void verifySalariedLabels(String Options, String cta, String extra) {
+        try {
+            String docFront = "Document Upload Front page #xpath=//input[@id='front_salaried']/parent::label";
+            String docBack = "Document Upload Back page #xpath=//input[@id='back_salaried']/parent::label";
+            String chkBox = "Check Box for Salaried#xpath=//input[@id='agreement_msg_salaried']/parent::label";
+            String Options2 = changedCommaToHash(Options, "");
+            verifyFieldsUsingCommonXpathAndMultipleTextWithHash("//div[@class='con_add_bg']/descendant::label[@class='active']|//div[@class='con_add_bg']/descendant::label", Options2, "");
+            verifyFieldDisplayedUsingTagAndText("strong", "Upload Salary Slip/Bank Statement", "");
+            verifyElementIsDisplayedOrNot(docFront);
+            verifyElementIsDisplayedOrNot(docBack);
+            verifyElementIsDisplayedOrNot(chkBox);
+            verifyButtonIsDisplayedInThePage(cta);
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Salaried Labels. Exception: " + e.getClass());
+
+        }
+
+
+    }
+
+    public void verifyLabelsProfilePtb(String Options, String extra) {
+        try {
+            Boolean flag = false;
+
+            String[] options = Options.split(", ");
+            for (int i = 0; i < options.length; i++) {
+                String text = options[i];
+                String label = "For Label " + text + "#xpath=//div[@class='con_add_bg']/descendant::label[normalize-space(text())='" + text.trim() + "']";
+                int size = sizeOfLocator(label);
+                for (int j = 1; j <= size; j++) {
+                    String label1 = "Label :" + text + "#xpath=(//div[@class='con_add_bg']/descendant::label[normalize-space(text())='" + text.trim() + "'])[" + j + "]";
+                    if (isElementDisplayed(label1)) {
+                        testStepPassed(getRefOfXpath(label1) + " is Displayed Successfully");
+                        flag = true;
+                        break;
+                    }
+                }
+                if (!flag) {
+                    testStepFailed(getRefOfXpath(label) + "  is not Displayed");
+                }
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Labels Profile Ptb. Exception: " + e.getClass());
+
+        }
+
+
+    }
+
+    public void verifySalariedLabelsAsterics(String Options, String extra) {
+        try {
+            String[] options = Options.split(", ");
+            for (int i = 0; i < options.length; i++) {
+                String text = options[i];
+                String asterics = "For Label " + text + " Asterics #xpath=//div[@class='con_add_bg']/descendant::label[@class='active'][normalize-space(text())='" + text.trim() + "']//span[contains(text(),'*')]|//div[@class='con_add_bg']/descendant::label[normalize-space(text())='" + text.trim() + "']//span[contains(text(),'*')]";
+                verifyElementIsDisplayedOrNot(asterics);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Salaried Labels Asterics. Exception: " + e.getClass());
+
+        }
+    }
+
+    public void verifyAstericsForHeaderOptions(String Options, String extra) {
+        try {
+            String[] options = Options.split(", ");
+            for (int i = 0; i < options.length; i++) {
+                String text = options[i];
+                String asterics = "For Header: " + text + " -Asterics #xpath=//strong[normalize-space(text())='" + text.trim() + "']//span[normalize-space(text())='*']";
+                verifyElementIsDisplayedOrNot(asterics);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Asterics For Header Options. Exception: " + e.getClass());
+
+        }
+    }
+
+    public void verifySelfEmployedContents(String Options, String cta, String extra) {
+        try {
+            String docFront = "Document Upload Front page #xpath=//input[@id='front_selfEmployed']/parent::label";
+            String docBack = "Document Upload Back page #xpath=//input[@id='back_selfEmployed']/parent::label";
+            String chkBox = "Check Box for Self Employed#xpath=//input[@id='agreement_msg_selfEmployed']/parent::label";
+            verifyLabelsProfilePtb(Options, "");
+            verifyFieldDisplayedUsingTagAndText("strong", "Upload Business Registration Certificate/ GST Return", "");
+            verifyElementIsDisplayedOrNot(docFront);
+            verifyElementIsDisplayedOrNot(docBack);
+            verifyElementIsDisplayedOrNot(chkBox);
+            verifyButtonIsDisplayedInThePage(cta);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Self Employed Contents. Exception: " + e.getClass());
+
+        }
+
+
+    }
+
+    public void verifyProfessionalContents(String Options, String cta, String extra) {
+        try {
+            String docFront = "Document Upload Front page #xpath=//input[@id='front_professional']/parent::label";
+            String docBack = "Document Upload Back page #xpath=//input[@id='back_professional']/parent::label";
+            String chkBox = "Check Box for Professional#xpath=//input[@id='agreement_msg_professional']/parent::label";
+            verifyLabelsProfilePtb(Options, "");
+            verifyFieldDisplayedUsingTagAndText("strong", "Upload Degree Certificate/Visiting Card", "");
+            verifyElementIsDisplayedOrNot(docFront);
+            verifyElementIsDisplayedOrNot(docBack);
+            verifyElementIsDisplayedOrNot(chkBox);
+            verifyButtonIsDisplayedInThePage(cta);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Professional Contents. Exception: " + e.getClass());
+
+        }
+
+
+    }
+
+    public void verifyOthersContents(String Options, String cta, String extra) {
+        try {
+            String chkBox = "Check Box for Others#xpath=//input[@id='agreement_msg_others']/parent::label";
+            verifyLabelsProfilePtb(Options, "");
+            verifyElementIsDisplayedOrNot(chkBox);
+            verifyButtonIsDisplayedInThePage(cta);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Others Contents. Exception: " + e.getClass());
+
+        }
+
+
+    }
+
+    public static final String input_DescriptionDetails = "Input Box for Description Details - Others Tab#xpath=//input[@id='description_others']";
+    public static final String chkBox_Others = "Check Box for Others#xpath=//input[@id='agreement_msg_others']/parent::label";
+
+
+    ///////Professional
+    public static final String docFront_Professional = "Document Upload Front page #xpath=//input[@id='front_professional']";
+    public static final String docFront_Professional_Delete = "Document Upload Front page Delete#xpath=//a[@id='delete_front_prof']";
+    public static final String docBack_Professional = "Document Upload Back page #xpath=//input[@id='back_professional']";
+    public static final String docBack_Professional_Delete = "Document Upload Back page Delete#xpath=//a[@id='delete_back_prof']";
+    public static final String chkBox_Professional = "Check Box for Professional#xpath=//input[@id='agreement_msg_professional']/parent::label";
+    public static final String mmbrshipNumberProfessional = "Membership Number Box for Professional#xpath=//input[@id='membership_professional']";
+
+    public static final String entityNameSelf = "Entity name in Self Employed#xpath=//input[@id='entityName_selfEmployed']";
+    public static final String gstNumberSelf = "GST Number in Self Employed#xpath=//input[@id='gst_selfEmployed']";
+    public static final String docFront_Self = "Document Upload Front page #xpath=//input[@id='front_selfEmployed']";
+    public static final String docFrontDelete_Self = "Document Upload Front page Delete #xpath=//a[@id='delete_front_se']";
+    public static final String docBack_Self = "Document Upload Back page #xpath=//input[@id='back_selfEmployed']";
+    public static final String docBackDelete_Self = "Document Upload Back page Delete #xpath=//a[@id='delete_back_se']";
+    public static final String chkBox_Self = "Check Box for Self Employed#xpath=//input[@id='agreement_msg_selfEmployed']/parent::label";
+
+    public static final String docFront_Salary = "Document Upload Front page #xpath=//input[@id='front_salaried']";
+    public static final String docFrontDelete_Salary = "Document Upload Front page Delete#xpath=//a[@id='delete_front_sal']";
+    public static final String docBack_Salary = "Document Upload Back page #xpath=//input[@id='back_salaried']";
+    public static final String docBackDelete_Salary = "Document Upload Back page Delete#xpath=//a[@id='delete_back_sal']";
+    public static final String chkBox_Salary = "Check Box for Salaried#xpath=//input[@id='agreement_msg_salaried']";
+    public static final String compName_Salary = "Company Name Box for Salaried#xpath=//input[@id='compantyNameSalaried']";
+    public static final String designation_Salary = "Designation Box for Salaried#xpath=//input[@id='designationSalaried']";
+    public static final String email_Salary = "Email Box for Salaried#xpath=//input[@id='officialEmailIdSalaried']";
+
+
+    public void selectDropdownOptionsProfilePtb(String option, String dropdown, String tab, String extra) {
+        try {
+            if (tab.equalsIgnoreCase("Professional") && dropdown.equalsIgnoreCase("Profession")) {
+                //clickLabelsProfilePtb(dropdown,"");
+                String opt = "Dropdown Option-" + option + " in " + dropdown + " Dropdown of " + tab + " Tab#xpath=//ul[@id='id_Profession_p']//li/a[normalize-space(text())='" + option.trim() + "']";
+                if (isElementPresent(opt)) {
+                    clickOn(opt);
+                    manualScreenshot(getRefOfXpath(opt) + "is Clicked");
+                } else {
+                    testStepFailed(getRefOfXpath(opt) + "is not Clicked");
+                }
+            }
+
+            if (tab.equalsIgnoreCase("Professional") && dropdown.equalsIgnoreCase("Medical Degree")) {
+                //clickLabelsProfilePtb(dropdown,"");
+                String opt = "Dropdown Option-" + option + " in " + dropdown + " Dropdown of " + tab + " Tab#xpath=//ul[@id='degreeT']//li/a[normalize-space(text())='" + option.trim() + "']";
+                if (isElementPresent(opt)) {
+                    clickOn(opt);
+                    manualScreenshot(getRefOfXpath(opt) + "is Clicked");
+                } else {
+                    testStepFailed(getRefOfXpath(opt) + "is not Clicked");
+                }
+            }
+
+            if (tab.equalsIgnoreCase("Professional") && dropdown.equalsIgnoreCase("Medical Specialisation")) {
+                //clickLabelsProfilePtb(dropdown,"");
+                String opt = "Dropdown Option-" + option + " in " + dropdown + " Dropdown of " + tab + " Tab#xpath=//ul[@id='specializationT']//li/a[normalize-space(text())='" + option.trim() + "']";
+                if (isElementPresent(opt)) {
+                    clickOn(opt);
+                    manualScreenshot(getRefOfXpath(opt) + "is Clicked");
+                } else {
+                    testStepFailed(getRefOfXpath(opt) + "is not Clicked");
+                }
+            }
+
+            if (tab.equalsIgnoreCase("Professional") && dropdown.equalsIgnoreCase("Years")) {
+                //clickLabelsProfilePtb(dropdown,"");
+                String opt = "Dropdown Option-" + option + " in " + dropdown + " Dropdown of " + tab + " Tab#xpath=//ul[@id='id_ul_ptb_years_p']//li/a[normalize-space(text())='" + option.trim() + "']";
+                if (isElementPresent(opt)) {
+                    clickOn(opt);
+                    manualScreenshot(getRefOfXpath(opt) + "is Clicked");
+                } else {
+                    testStepFailed(getRefOfXpath(opt) + "is not Clicked");
+                }
+            }
+
+            if (tab.equalsIgnoreCase("Professional") && dropdown.equalsIgnoreCase("Months")) {
+                //clickLabelsProfilePtb(dropdown,"");
+                String opt = "Dropdown Option-" + option + " in " + dropdown + " Dropdown of " + tab + " Tab#xpath=//ul[@id='id_ul_ptb_months_p']//li/a[normalize-space(text())='" + option.trim() + "']";
+                if (isElementPresent(opt)) {
+                    clickOn(opt);
+                    manualScreenshot(getRefOfXpath(opt) + "is Clicked");
+                } else {
+                    testStepFailed(getRefOfXpath(opt) + "is not Clicked");
+                }
+            }
+
+            if (tab.equalsIgnoreCase("Self-employed") && dropdown.equalsIgnoreCase("Business Structure")) {
+                //clickLabelsProfilePtb(dropdown,"");
+                String opt = "Dropdown Option-" + option + " in " + dropdown + " Dropdown of " + tab + " Tab#xpath=//ul[@id='id_businesstype_se']//li/a[normalize-space(text())='" + option.trim() + "']";
+                if (isElementPresent(opt)) {
+                    clickOn(opt);
+                    manualScreenshot(getRefOfXpath(opt) + "is Clicked");
+                } else {
+                    testStepFailed(getRefOfXpath(opt) + "is not Clicked");
+                }
+            }
+
+            if (tab.equalsIgnoreCase("Self-employed") && dropdown.equalsIgnoreCase("Years")) {
+                //clickLabelsProfilePtb(dropdown,"");
+                String opt = "Dropdown Option-" + option + " in " + dropdown + " Dropdown of " + tab + " Tab#xpath=//ul[@id='id_ul_ptb_years_se']//li/a[normalize-space(text())='" + option.trim() + "']";
+                if (isElementPresent(opt)) {
+                    clickOn(opt);
+                    manualScreenshot(getRefOfXpath(opt) + "is Clicked");
+                } else {
+                    testStepFailed(getRefOfXpath(opt) + "is not Clicked");
+                }
+            }
+
+            if (tab.equalsIgnoreCase("Self-employed") && dropdown.equalsIgnoreCase("Months")) {
+                //clickLabelsProfilePtb(dropdown,"");
+                String opt = "Dropdown Option-" + option + " in " + dropdown + " Dropdown of " + tab + " Tab#xpath=//ul[@id='id_ul_ptb_months_se']//li/a[normalize-space(text())='" + option.trim() + "']";
+                if (isElementPresent(opt)) {
+                    clickOn(opt);
+                    manualScreenshot(getRefOfXpath(opt) + "is Clicked");
+                } else {
+                    testStepFailed(getRefOfXpath(opt) + "is not Clicked");
+                }
+            }
+
+            if (tab.equalsIgnoreCase("Self-employed") && dropdown.equalsIgnoreCase("Business Type")) {
+                //clickLabelsProfilePtb(dropdown,"");
+                String opt = "Dropdown Option-" + option + " in " + dropdown + " Dropdown of " + tab + " Tab#xpath=//ul[@id='id_natureOfBusiness_se']//li/a[normalize-space(text())='" + option.trim() + "']";
+                if (isElementPresent(opt)) {
+                    clickOn(opt);
+                    manualScreenshot(getRefOfXpath(opt) + "is Clicked");
+                } else {
+                    testStepFailed(getRefOfXpath(opt) + "is not Clicked");
+                }
+            }
+
+            if (tab.equalsIgnoreCase("Self-employed") && dropdown.equalsIgnoreCase("Turnover range (INR)")) {
+                //clickLabelsProfilePtb(dropdown,"");
+                String opt = "Dropdown Option-" + option + " in " + dropdown + " Dropdown of " + tab + " Tab#xpath=//ul[@id='id_turnoverRange_se']//li/a[normalize-space(text())='" + option.trim() + "']";
+                if (isElementPresent(opt)) {
+                    clickOn(opt);
+                    manualScreenshot(getRefOfXpath(opt) + "is Clicked");
+                } else {
+                    testStepFailed(getRefOfXpath(opt) + "is not Clicked");
+                }
+            }
+
+            if (tab.equalsIgnoreCase("Salaried") && dropdown.equalsIgnoreCase("Years")) {
+                //clickLabelsProfilePtb(dropdown,"");
+                String opt = "Dropdown Option-" + option + " in " + dropdown + " Dropdown of " + tab + " Tab#xpath=//ul[@id='id_ul_ptb_years_s']//li/a[normalize-space(text())='" + option.trim() + "']";
+                if (isElementPresent(opt)) {
+                    clickOn(opt);
+                    manualScreenshot(getRefOfXpath(opt) + "is Clicked");
+                } else {
+                    testStepFailed(getRefOfXpath(opt) + "is not Clicked");
+                }
+            }
+
+            if (tab.equalsIgnoreCase("Salaried") && dropdown.equalsIgnoreCase("Months")) {
+                //clickLabelsProfilePtb(dropdown,"");
+                String opt = "Dropdown Option-" + option + " in " + dropdown + " Dropdown of " + tab + " Tab#xpath=//ul[@id='id_ul_ptb_months_s']//li/a[normalize-space(text())='" + option.trim() + "']";
+                if (isElementPresent(opt)) {
+                    clickOn(opt);
+                    manualScreenshot(getRefOfXpath(opt) + "is Clicked");
+                } else {
+                    testStepFailed(getRefOfXpath(opt) + "is not Clicked");
+                }
+            }
+
+            if (tab.equalsIgnoreCase("Salaried") && dropdown.equalsIgnoreCase("Net Salary Range LPA(INR)")) {
+                //clickLabelsProfilePtb(dropdown,"");
+                String opt = "Dropdown Option-" + option + " in " + dropdown + " Dropdown of " + tab + " Tab#xpath=//ul[@id='id_ul_ptb_netSalary_s']//li/a[normalize-space(text())='" + option.trim() + "']";
+                if (isElementPresent(opt)) {
+                    clickOn(opt);
+                    manualScreenshot(getRefOfXpath(opt) + "is Clicked");
+                } else {
+                    testStepFailed(getRefOfXpath(opt) + "is not Clicked");
+                }
+            }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in select Dropdown Options Profile PTB. Exception: " + e.getClass());
+
+        }
+
+
+    }
+
+    public void clickLabelsProfilePtb(String Option, String extra) {
+        try {
+            String label = "For Label #xpath=//div[@class='con_add_bg']/descendant::label[normalize-space(text())='" + Option.trim() + "']";
+            int size = sizeOfLocator(label);
+            for (int j = 0; j < size; j++) {
+                String label1 = "Label :" + Option + "#xpath=(//div[@class='con_add_bg']/descendant::label[normalize-space(text())='" + Option.trim() + "'])[" + j + "]";
+                scrollToWebElementIfPresent(label1);
+                clickIfOnlyDisplayed(label1);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in click Labels Profile Ptb. Exception: " + e.getClass());
+
+        }
+
+
+    }
+
+    ////////2807
+
+
+    public static final String editProfileInter = "Edit Profile CTA in Intermediate Page#xpath=//h5[normalize-space(text())='Edit profile']/parent::a";
+    public static final String name_Intermediate = "Name Component: #xpath=//div[@class='guest_div']/descendant::h6";
+    public static final String my_Relations = "My Relations Section #xpath=//p[normalize-space(text())='My Relations']/ancestor::div[@class='deposit_found blocktypes']";
+    public static final String pao_Intermediate = "Pre Approved Offers in Intermediate page#xpath=//div[@class='finance_slider']";
+
+    public void profileIntermediatePage() {
+        try {
+            String name = "Name Component: #xpath=//div[@class='guest_div']/descendant::h6";
+            String shortCut = "Shortcut Component: #xpath=//div[@id='owl_car']";
+            String myRel = "My Relations Component: #xpath=//div[@class='deposit_found blocktypes']";
+            String pao = "Pre Approved Offers Component: #xpath=//div[@class='finance_slider']";
+            String faq = "FAQ Component: #xpath=//div[@class='accordion_div']";
+
+            verifyElementIsDisplayedAndGetText(name);
+            verifyElementIsDisplayedOrNot(shortCut);
+            verifyElementIsDisplayedOrNot(myRel);
+            verifyElementIsDisplayedOrNot(pao);
+            verifyElementIsDisplayedOrNot(faq);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in profile Intermediate Page. Exception: " + e.getClass());
+
+        }
+
+
+    }
+
+    public void profileIntermediatePagePAO() {
+        try {
+            String nextPao = "Next Button: #xpath=//button[normalize-space(text())='Next']";
+            String prePao = "Previous Button: #xpath=//button[normalize-space(text())='Previous']";
+            String slide4 = "Tile Number:4 #xpath=(//div[@class='finance_text'])[4]";
+            String pao = "Pre Approved Offers Component: #xpath=//div[@class='finance_slider']";
+            scrollToWebElement(pao);
+//            if (isElementDisplayed(nextPao) && !isElementDisplayed(slide4)) {
+//                testStepInfo(getRefOfXpath(nextPao) + " is Displayed");
+//                testStepInfo(getRefOfXpath(slide4) + " is not Displayed");
+                clickOn(nextPao);
+                clickOn(nextPao);
+                if (isElementDisplayed(slide4)) {
+                    testStepPassed(getRefOfXpath(slide4) + " is Displayed on Click of Next Button");
+//                    verifyElementIsDisplayedOrNot(prePao);
+                    clickOn(prePao);
+                    clickOn(prePao);
+                    waitTime(3);
+                    if (!isElementDisplayed(prePao)) {
+                        testStepPassed(getRefOfXpath(slide4) + " is not Displayed on click of Previous Button");
+                        testStepInfo("Left and Right Slider Buttons are working as expected");
+                    } else {
+                        testStepFailed(getRefOfXpath(slide4) + " is Displayed on click of Previous Button");
+                    }
+
+                } else {
+                    testStepFailed(getRefOfXpath(slide4) + " is not Displayed on Click of Next Button");
+                }
+//            } else {
+//                testStepFailed(getRefOfXpath(nextPao) + " is not Displayed");
+//            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in profile Intermediate Page PAO. Exception: " + e.getClass());
+
+        }
+
+
+    }
+
 
 }

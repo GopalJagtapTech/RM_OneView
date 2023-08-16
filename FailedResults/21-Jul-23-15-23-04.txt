@@ -1,0 +1,260 @@
+Home Page Text is Not Verified------------>  verify My Relation Section - View All
+
+Login is Unsuccessfull------------>  verify My Relation Section - View All
+
+Sign Out Button is Not Present------------>  verify My Relation Section - View All
+
+Home Page Text is Not Verified------------>  verify My Relation Loan Tab Default+
+
+Login is Unsuccessfull------------>  verify My Relation Loan Tab Default+
+
+Sign Out Button is Not Present------------>  verify My Relation Loan Tab Default+
+
+Home Page Text is Not Verified------------>  verify Filter Visible with My Relation Tabs9
+
+Login is Unsuccessfull------------>  verify Filter Visible with My Relation Tabs9
+
+Sign Out Button is Not Present------------>  verify Filter Visible with My Relation Tabs9
+
+Home Page Text is Not Verified------------>  verify My Relation Filter is Closed using cross IconI
+
+Login is Unsuccessfull------------>  verify My Relation Filter is Closed using cross IconI
+
+Sign Out Button is Not Present------------>  verify My Relation Filter is Closed using cross IconI
+
+Home Page Text is Not Verified------------>  verify My Relation Filter is Closed on Outside ClickY
+
+Login is Unsuccessfull------------>  verify My Relation Filter is Closed on Outside ClickY
+
+Sign Out Button is Not Present------------>  verify My Relation Filter is Closed on Outside ClickY
+
+Pre-approved offers for you is Not Present------------>  verify Pre-Approved Offers section on My Relation Pageg
+
+Home Page Text is Not Verified------------>  verify Pre-Approved Offers section is Not Visible for Non Pre Approved Offers Customers in My Relations Paget
+
+Login is Unsuccessfull------------>  verify Pre-Approved Offers section is Not Visible for Non Pre Approved Offers Customers in My Relations Paget
+
+Sign Out Button is Not Present------------>  verify Pre-Approved Offers section is Not Visible for Non Pre Approved Offers Customers in My Relations Paget
+
+Home Page Text is Not Verified------------>  verify Quick Action section on My Relation Page
+
+Login is Unsuccessfull------------>  verify Quick Action section on My Relation Page
+
+Sign Out Button is Not Present------------>  verify Quick Action section on My Relation Page
+
+Home Page Text is Not Verified------------>  verify My Relation Filter Options for Loans - Active¨
+
+Login is Unsuccessfull------------>  verify My Relation Filter Options for Loans - Active¨
+
+Sign Out Button is Not Present------------>  verify My Relation Filter Options for Loans - Active¨
+
+Home Page Text is Not Verified------------>  verify My Relation Filter Options for Loans - Clear AllÑ
+
+Login is Unsuccessfull------------>  verify My Relation Filter Options for Loans - Clear AllÑ
+
+Sign Out Button is Not Present------------>  verify My Relation Filter Options for Loans - Clear AllÑ
+
+Count Of Cards in CONSUMER DURABLE LOAN: 2------------>  verify My Relation Loans Group of cards Title with Countà
+
+Loans Tab - CONSUMER DURABLE LOAN Sub title Count is not showing for single relations is not verified------------>  verify My Relation Loans Group of cards Title with Countà
+
+Home Page Text is Not Verified------------>  verify My Relation Filter Options for Cardsđ
+
+Login is Unsuccessfull------------>  verify My Relation Filter Options for Cardsđ
+
+Sign Out Button is Not Present------------>  verify My Relation Filter Options for Cardsđ
+
+Home Page Text is Not Verified------------>  verify My Relation Filter Options for Cards - Clear Allō
+
+Login is Unsuccessfull------------>  verify My Relation Filter Options for Cards - Clear Allō
+
+Sign Out Button is Not Present------------>  verify My Relation Filter Options for Cards - Clear Allō
+
+Home Page Text is Not Verified------------>  verify My Relation Cards Group of cards Title with CountŜ
+
+Login is Unsuccessfull------------>  verify My Relation Cards Group of cards Title with CountŜ
+
+Sign Out Button is Not Present------------>  verify My Relation Cards Group of cards Title with CountŜ
+
+Home Page Text is Not Verified------------>  verify My Relation Filter Options for Insurance/VAS Servicesż
+
+Login is Unsuccessfull------------>  verify My Relation Filter Options for Insurance/VAS Servicesż
+
+Sign Out Button is Not Present------------>  verify My Relation Filter Options for Insurance/VAS Servicesż
+
+Home Page Text is Not Verified------------>  verify My Relation Filter Options for Insurance - ActiveƏ
+
+Login is Unsuccessfull------------>  verify My Relation Filter Options for Insurance - ActiveƏ
+
+Sign Out Button is Not Present------------>  verify My Relation Filter Options for Insurance - ActiveƏ
+
+Home Page Text is Not Verified------------>  verify My Relation Filter Options for Insurance - Clear Allǜ
+
+Login is Unsuccessfull------------>  verify My Relation Filter Options for Insurance - Clear Allǜ
+
+Sign Out Button is Not Present------------>  verify My Relation Filter Options for Insurance - Clear Allǜ
+
+Home Page Text is Not Verified------------>  verify My Relation Insurance Group of cards Title with Countǫ
+
+Login is Unsuccessfull------------>  verify My Relation Insurance Group of cards Title with Countǫ
+
+Sign Out Button is Not Present------------>  verify My Relation Insurance Group of cards Title with Countǫ
+
+Insurance - RENEW NOW Label is Not Available in this Customer Id------------>  verify My Relations Insurance - Renew now Label Colorȩ
+
+Count Of Cards in FIXED DEPOSIT (11): 14------------>  verify My Relation Deposits Group of cards Title with Countʃ
+
+Deposits Tab - FIXED DEPOSIT (11) Sub title Count Not verified------------>  verify My Relation Deposits Group of cards Title with Countʃ
+
+Deposits - MATURING SOON Label is Not Available in this Customer Id------------>  verify My Relations Deposits - Maturing Soon Label Colorʔ
+
+Home Page Text is Not Verified------------>  verify My Relations Deposits - Matured Label Colorʣ
+
+Login is Unsuccessfull------------>  verify My Relations Deposits - Matured Label Colorʣ
+
+Sign Out Button is Not Present------------>  verify My Relations Deposits - Matured Label Colorʣ
+
+Home Page Text is Not Verified------------>  verify My Relations Deposits - Pre-Matured Label Colorʲ
+
+Login is Unsuccessfull------------>  verify My Relations Deposits - Pre-Matured Label Colorʲ
+
+Sign Out Button is Not Present------------>  verify My Relations Deposits - Pre-Matured Label Colorʲ
+
+For any queries related to your existing mutual fund portfolio, you can reach us at is Not Present------------>  verify My Relation Tile Text for Mutual Fundsˀ
+
+For any queries related to your existing mutual fund portfolio, you can reach us at is Not Displayed------------>  verify My Relation Tile Text for Mutual Fundsˀ
+
+investmentservices@bajajfinserv.in is Not Present------------>  verify My Relation Tile Text for Mutual Fundsˀ
+
+investmentservices@bajajfinserv.in is Not Displayed------------>  verify My Relation Tile Text for Mutual Fundsˀ
+
+Home Page Text is Not Verified------------>  verify Filter is Not Visible with My Relation Mutual Funds Tabː
+
+Login is Unsuccessfull------------>  verify Filter is Not Visible with My Relation Mutual Funds Tabː
+
+Sign Out Button is Not Present------------>  verify Filter is Not Visible with My Relation Mutual Funds Tabː
+
+MyRelations Section is Not Verified------------>  verify My Relation Filter Options for Loans - No Active Relations˟
+
+My Relation is not Working------------>  verify My Relation Filter Options for Loans - No Active Relations˟
+
+closed loans Message for 0 relations After Filtered Closed In My Relations is not Displayed------------>  verify My Relation Filter Options for Loans - No Closed Relationsˬ
+
+active cards Message for 0 relations After Filtered Active In My Relations is not Displayed------------>  verify My Relation Filter Options for Cards - No Active Cards˹
+
+blocked cards Message for 0 relations After Filtered Blocked In My Relations is not Displayed------------>  verify My Relation Filter Options for Cards - No Blocked Cards̆
+
+active insurance policy Message for 0 relations After Filtered Active In My Relations is not Displayed------------>  verify My Relation Filter Options for Insurances - No Active Relations̔
+
+closed insurance policy Message for 0 relations After Filtered Closed In My Relations is not Displayed------------>  verify My Relation Filter Options for Insurances - No Closed Relations̢
+
+cancelled insurance policy Message for 0 relations After Filtered Cancelled In My Relations is not Displayed------------>  verify My Relation Filter Options for Insurances - No Cancelled Relations̰
+
+Failed in wait for Insurance/Value-added Services tab Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  verify My Relation Filter Options for Insurances - No Surrendered Relations̾
+
+Insurance/Value-added Services tab is Not Present in this Customer Id------------>  verify My Relation Filter Options for Insurances - No Surrendered Relations̾
+
+MyRelations Filter Icon is Not Present------------>  verify My Relation Filter Options for Insurances - No Surrendered Relations̾
+
+MyRelations Section is Not Verified------------>  verify My Relation Filter Options for Deposits - No Active Relations͌
+
+My Relation is not Working------------>  verify My Relation Filter Options for Deposits - No Active Relations͌
+
+Closed Relations in Deposits Tab Count is not zero. Pls change customer Id------------>  verify My Relation Filter Options for Deposits - No Closed Relations͙
+
+Message for 0 relations without Filtered loans In My Relations is not Displayed------------>  verify No Relations Text for Without Filter Loansͨ
+
+MyRelations Section is Not Verified------------>  verify No Relations Text for Without Filter Cards͵
+
+My Relation is not Working------------>  verify No Relations Text for Without Filter Cards͵
+
+Message for 0 relations without Filtered insurance policy In My Relations is not Displayed------------>  verify No Relations Text for Without Filter Insurances΂
+
+MyRelations Section is Not Verified------------>  verify No Relations Text for Without Filter DepositsΏ
+
+My Relation is not Working------------>  verify No Relations Text for Without Filter DepositsΏ
+
+Home Page Text is Not Verified------------>  My Relations - RHS SectionsΜ
+
+Login is Unsuccessfull------------>  My Relations - RHS SectionsΜ
+
+Sign Out Button is Not Present------------>  My Relations - RHS SectionsΜ
+
+Home Page Text is Not Verified------------>  My Relations - RHS Options - Help and SupportΩ
+
+Login is Unsuccessfull------------>  My Relations - RHS Options - Help and SupportΩ
+
+Sign Out Button is Not Present------------>  My Relations - RHS Options - Help and SupportΩ
+
+Home Page Text is Not Verified------------>  My Relations - RHS Options - Document Centerζ
+
+Login is Unsuccessfull------------>  My Relations - RHS Options - Document Centerζ
+
+Sign Out Button is Not Present------------>  My Relations - RHS Options - Document Centerζ
+
+Home Page Text is Not Verified------------>  My Relations - RHS Options - Check your CIBIL Scoreσ
+
+Login is Unsuccessfull------------>  My Relations - RHS Options - Check your CIBIL Scoreσ
+
+Sign Out Button is Not Present------------>  My Relations - RHS Options - Check your CIBIL Scoreσ
+
+Home Page Text is Not Verified------------>  My Relations - RHS Options - Mandate Managementϐ
+
+Login is Unsuccessfull------------>  My Relations - RHS Options - Mandate Managementϐ
+
+Sign Out Button is Not Present------------>  My Relations - RHS Options - Mandate Managementϐ
+
+Home Page Text is Not Verified------------>  My Relations - RHS Options - Help and Supportϝ
+
+Login is Unsuccessfull------------>  My Relations - RHS Options - Help and Supportϝ
+
+Sign Out Button is Not Present------------>  My Relations - RHS Options - Help and Supportϝ
+
+FLEXI TERM LOAN 404SOF42758479 No. Tile is Not Displayed------------>  My Relations - Loans - verify Back button in Loan Service landed in My Relation Page Loans TabϮ
+
+FLEXI TERM LOAN Account Number 404SOF42758479 is Not Redirected------------>  My Relations - Loans - verify Back button in Loan Service landed in My Relation Page Loans TabϮ
+
+Not Redirected to Expected------------>  My Relations - Loans - verify Back button in Loan Service landed in My Relation Page Loans TabϮ
+
+Failed in Click On Cards  . Exception: class org.openqa.selenium.NoSuchElementException------------>  My Relations - Cards - verify Back button in Loan Service landed in My Relation Page Cards TabϺ
+
+Emi Cards - 2030-XXXX-XXXX-8906 is not displayed------------>  My Relations - Cards - verify Back button in Loan Service landed in My Relation Page Cards TabϺ
+
+My Insta EMI Card is Not Present------------>  My Relations - Cards - verify Back button in Loan Service landed in My Relation Page Cards TabϺ
+
+Failed in wait for Cards tab Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  My Relations - Cards - verify Back button in Loan Service landed in My Relation Page Cards TabϺ
+
+Cards tab is Not Present------------>  My Relations - Cards - verify Back button in Loan Service landed in My Relation Page Cards TabϺ
+
+Individual Customer tab is Not Present------------>  My Relations - Insurances - verify Back button in Loan Service landed in My Relation Page Insurances TabЉ
+
+Mobile Number Text Box For Individual is not Present and Type In Failed------------>  My Relations - Insurances - verify Back button in Loan Service landed in My Relation Page Insurances TabЉ
+
+Get OTP is Not Present in findElements------------>  My Relations - Insurances - verify Back button in Loan Service landed in My Relation Page Insurances TabЉ
+
+Failed in click on Get OTP button using for Loop. Exception: class java.lang.NullPointerException------------>  My Relations - Insurances - verify Back button in Loan Service landed in My Relation Page Insurances TabЉ
+
+Failed in wait for OTP Text Box 1 Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  My Relations - Insurances - verify Back button in Loan Service landed in My Relation Page Insurances TabЉ
+
+OTP Text Box 1 is Not Displayed------------>  My Relations - Insurances - verify Back button in Loan Service landed in My Relation Page Insurances TabЉ
+
+OTP Text Box 2 is Not Displayed------------>  My Relations - Insurances - verify Back button in Loan Service landed in My Relation Page Insurances TabЉ
+
+OTP Text Box 3 is Not Displayed------------>  My Relations - Insurances - verify Back button in Loan Service landed in My Relation Page Insurances TabЉ
+
+OTP Text Box 4 is Not Displayed------------>  My Relations - Insurances - verify Back button in Loan Service landed in My Relation Page Insurances TabЉ
+
+OTP Text Box 5 is Not Displayed------------>  My Relations - Insurances - verify Back button in Loan Service landed in My Relation Page Insurances TabЉ
+
+OTP Text Box 6 is Not Displayed------------>  My Relations - Insurances - verify Back button in Loan Service landed in My Relation Page Insurances TabЉ
+
+Submit is Not Present in findElements------------>  My Relations - Insurances - verify Back button in Loan Service landed in My Relation Page Insurances TabЉ
+
+Failed in click on Submit button using for Loop. Exception: class java.lang.NullPointerException------------>  My Relations - Insurances - verify Back button in Loan Service landed in My Relation Page Insurances TabЉ
+
+BAGIC- GENERAL INSURANCE OG-20-1000-6609-00134221 No. Tile is Not Present in this customer Id------------>  My Relations - Insurances - verify Back button in Loan Service landed in My Relation Page Insurances TabЉ
+
+BAGIC- GENERAL INSURANCE Account Number OG-20-1000-6609-00134221 is Not Redirected------------>  My Relations - Insurances - verify Back button in Loan Service landed in My Relation Page Insurances TabЉ
+
+Not Redirected to Expected------------>  My Relations - Insurances - verify Back button in Loan Service landed in My Relation Page Insurances TabЉ
+

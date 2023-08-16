@@ -11,12 +11,16 @@ public class LASSteps extends ApplicationKeywords {
     HomePage home;
     LASPage las;
     PaymentsPage payments;
+    MyRelationsPage MyRelations;
+
 
     public LASSteps() {
         login = new LoginPage();
         home = new HomePage();
         las = new LASPage();
         payments = new PaymentsPage();
+        MyRelations = new MyRelationsPage();
+
     }
 
 
@@ -382,7 +386,7 @@ public class LASSteps extends ApplicationKeywords {
 
     @And("User should not be allowed to enter {string} for Missed Interests")
     public void userShouldNotBeAllowedToEnterForMissedInterests(String string) {
-        las.verifyInputBoxInvalidValuesMILAS(string,"");
+        las.verifyInputBoxInvalidValuesMILAS(string, "");
 
     }
 
@@ -393,13 +397,13 @@ public class LASSteps extends ApplicationKeywords {
 
     @And("verify {string} Tab is selected by Default in LAS Payments page")
     public void verifyTabIsSelectedByDefaultInLASPaymentsPage(String string) {
-        verifyByDefaultSelectedTab(string,"");
+        verifyByDefaultSelectedTab(string, "");
     }
 
-    @And("wait for page to load")
-    public void waitForPageToLoad() {
-        waitForPageToLoad();
-    }
+//    @And("wait for page to load")
+//    public void waitForPageToLoad() {
+//        waitForPageToLoad();
+//    }
 
     @And("Click on {string} CTA without wait")
     public void clickOnCTAWithoutWait(String string) {
@@ -412,5 +416,34 @@ public class LASSteps extends ApplicationKeywords {
         verifyFieldsDisplayedUsingText("You cannot Drawdown money now as the available limit on your loan is less than the eligible amount.");
         verifyButtonIsDisplayedInThePage(btn);
 
+    }
+
+    @Then("Verify customer is able to view LAN Number on LAS tile {string}")
+    public void verifyCustomerIsAbleToViewLANNumberOnLASTile(String lan) {
+        MyRelations.esopTileVisibility(lan, "");
+
+    }
+
+    @Then("Verify the Account Number Last {int} digit are Unmasked under Bank Details section")
+    public void verifyTheAccountNumberLastDigitAreUnmaskedUnderBankDetailsSection(int arg0) {
+
+        las.bankAccountMaskedLAS("");
+    }
+
+    @Then("Verify Quantity Pledged text is replaced with Securities Pledged text under Choose from the given securities below section section")
+    public void verifyQuantityPledgedTextIsReplacedWithSecuritiesPledgedTextUnderChooseFromTheGivenSecuritiesBelowSectionSection() {
+        verifyFieldsDisplayedUsingLocatorUsingForLoop(LASPage.securities_Pledged, "");
+
+    }
+
+    @Then("Verify Quantity Pledged text is replaced with Quantity to Unpledged text under Choose from the given securities below section section")
+    public void verifyQuantityPledgedTextIsReplacedWithQuantityToUnpledgedTextUnderChooseFromTheGivenSecuritiesBelowSectionSection() {
+        verifyFieldsDisplayedUsingLocatorUsingForLoop(LASPage.quantitytoUnpledge, "");
+
+    }
+
+    @Then("{string} information text to be added below amount field")
+    public void informationTextToBeAddedBelowAmountField(String str) {
+        verifyFieldsDisplayedUsingText(str);
     }
 }

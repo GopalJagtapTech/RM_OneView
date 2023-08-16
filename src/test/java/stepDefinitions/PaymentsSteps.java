@@ -633,6 +633,7 @@ public class PaymentsSteps extends ApplicationKeywords {
         scrollToWebElement(PaymentsPage.pay_Amount);
         clickOnIfDisplayed(PaymentsPage.pay_Amount);
         waitForPageToLoad();
+//        waitTime(10);
     }
 
     @And("clicks on Back CTA in UPI page")
@@ -780,12 +781,69 @@ public class PaymentsSteps extends ApplicationKeywords {
     @And("Customer clicks on {string} Button if displayed for Payments Popup")
     public void customerClicksOnButtonIfDisplayedForPaymentsPopup(String string) {
 
-            payments.clickOnButtonUsingTextUsingForLoopifDisplayed(string);
+        payments.clickOnButtonUsingTextUsingForLoopifDisplayed(string);
     }
 
     @And("Below reason {string} should be displayed for cancelling payment")
     public void belowReasonShouldBeDisplayedForCancellingPayment(String msg) {
-        verifyFieldsDisplayedUsingText(msg);
+//        verifyFieldsDisplayedUsingText(msg);
+        verifyFieldDisplayedUsingTagAndText("p", msg, "");
+    }
+
+    @Then("Customer selects months {int} to pay the Advance EMI for")
+    public void customerSelectsMonthsToPayTheAdvanceEMIFor(int num) {
+        selectDropDownUsingIndex(PaymentsPage.dropdown, num);
+    }
+
+    @Then("Customer should be redirected to {string} Settlement details page.")
+    public void customerShouldBeRedirectedToSettlementDetailsPage(String string) {
+        verifyRedirectionInCommon(string, "");
+    }
+
+    @And("Enter valid amount for Settlement Payment")
+    public void enterValidAmountForSettlementPayment() {
+        payments.accValueSettlementPayment();
+    }
+
+    @Then("Verify maximum amount is prepopulated in Enter amount field")
+    public void verifyMaximumAmountIsPrepopulatedInEnterAmountField() {
+        payments.maxValueDisplayedTextBoxSettlementPayment();
+    }
+
+    @And("Proceed CTA should be disabled when Entered amount is out of the given range")
+    public void proceedCTAShouldBeDisabledWhenEnteredAmountIsOutOfTheGivenRange() {
+        payments.verifySettlementpaymentTextBoxWithNegative();
+    }
+
+    @Then("Below details should be displayed {string}")
+    public void belowDetailsShouldBeDisplayed(String labels) {
+        payments.verifyLabelsSettPayment(labels, "","");
+    }
+
+    @Then("Below details {string} should be displayed under Schedule details section")
+    public void belowDetailsShouldBeDisplayedUnderScheduleDetailsSection(String options) {
+        payments.verifySettPaymentSchedule(options, "");
+    }
+
+    @Then("Below details {string} should be displayed under contact details section")
+    public void belowDetailsShouldBeDisplayedUnderContactDetailsSection(String labels) {
+        payments.verifyContactLabelsSettPayment(labels, "");
+    }
+
+    @Then("Below details {string} should be displayed on Payment Unsuccessful page along with {string}")
+    public void belowDetailsShouldBeDisplayedOnPaymentUnsuccessfulPageAlongWith(String details, String string) {
+        payments.verifyUnsuccessPaymentsSettPayment(details, string, "");
+    }
+
+    @Then("Verify minimum amount is displayed as Rs.One")
+    public void verifyMinimumAmountIsDisplayedAsRsOne() {
+        payments.minValueSettlementPayment();
+
+    }
+
+    @Then("Below details should be displayed {string} and {string}")
+    public void belowDetailsShouldBeDisplayedAnd(String labels, String labels1) {
+        payments.verifyLabelsSettPayment(labels, labels1,"");
 
     }
 }

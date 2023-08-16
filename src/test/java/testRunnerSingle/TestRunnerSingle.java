@@ -12,10 +12,9 @@ import java.io.IOException;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "classpath:Features_Single/Sprint_1/NewHome",
-        tags = "not @Not",
-
-//        tags = "@Run",
+        features = "classpath:Features/JulyCRs/FF_3403204_MyAccountpageforWeb_LayoutChanges.feature",
+//        tags = "not @Not",
+        tags = "@single",
 //      dryRun = true,
         glue = {"stepDefinitions","AppHooksSingle"},
         plugin={"pretty","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","rerun:target/rerunSingle.txt","html:target/cucumber-html-report.html",

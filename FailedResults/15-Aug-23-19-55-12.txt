@@ -1,0 +1,12 @@
+KYC Pop up Verify Your Information  is Not Displayed------------>  To verify when user entering invalid input in DOB field given validation text is displayed§
+
+Sign Out Button is Not Displayed------------>  To verify when user entering invalid input in DOB field given validation text is displayed§
+
+Skip Button in Cochmark is Not Present in findElements------------>  To verify Renew Now CTA is enabled & redirected to respective pageÄ
+
+Failed in click on  Skip Button in Cochmark button using locator using for loop without Fail. Exception: class java.lang.NullPointerException------------>  To verify Renew Now CTA is enabled & redirected to respective pageÄ
+
+KYC Pop up Verify Your Information  is Not Displayed------------>  To verify Renew Now CTA is enabled & redirected to respective pageÄ
+
+Failed in Click On Close Button KYC Pop up. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify Renew Now CTA is enabled & redirected to respective pageÄ
+

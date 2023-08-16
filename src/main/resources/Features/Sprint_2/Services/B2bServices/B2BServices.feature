@@ -223,6 +223,8 @@ Feature: B2B Services
     And click on "Loans" tab
     And verify Customer is able to go to Service screen from My Relations using subtitle"<Subtitle>" Account No"<Account No>"
     And Customer Click on "View Documents" CTA in RHS
+    Then Then a Document drawer or pop-up should be displayed for "<Account No>"
+    And click on "Find them here" hyperlink
     Then User should be redirected to specific document page "<Account No>"
 
     Examples:

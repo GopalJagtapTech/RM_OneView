@@ -279,7 +279,7 @@ Xpaths
                     testStepFailed("Customer is not able to select multiple Cards at a time");
                 }
 
-            }else {
+            } else {
                 testStepFailed("Check Box in Mandate Management Page is not Present");
             }
 
@@ -329,7 +329,7 @@ Xpaths
                 verifyLocatorColorUsingCssValueUsingPresent(checkBox1, "#000000", "Transparent", "background-color");
 
             } else {
-                testStepFailed(getRefOfXpath(checkBox)+"is not Displayed");
+                testStepFailed(getRefOfXpath(checkBox) + "is not Displayed");
             }
 
         } catch (Exception e) {
@@ -338,5 +338,103 @@ Xpaths
         }
     }
 
+    ///////280723
+
+    public static final String chkBoxLoans_Mandate = "Loans Check Box in Mandate Management Page-#xpath=//input[@class='mandate-checkbox']/parent::label";
+    public static final String custId_Box = "Customer ID for Loans in Mandate Management Page-#xpath=//i[@class='chkblur']";
+    public static final String cancel_PlsNote = "Cancel Button in Please Note-#xpath=//a[@class='stroke_cta']";
+    public static final String proceed_PlsNote = "Proceed Button in Please Note-#xpath=//a[@id='MandateBtn']";
+
+    //strong[contains(text(),'10366008')]/parent::i/..//input
+    public void verifyCustIdMandate(String id, String extra) {
+        try {
+            String locatorErrMsg = "Cust Id: " + id + "#xpath=//strong[contains(text(),'" + id.trim() + "')]/parent::i";
+            String section = "Cust Id: Section:#xpath=//strong[contains(text(),'" + id.trim() + "')]/parent::i/../..";
+            if (isElementDisplayed(locatorErrMsg)) {
+                manualScreenshot(getRefOfXpath(locatorErrMsg) + "is displayed successfully");
+                getTextPresent(section);
+            } else {
+                testStepFailed(getRefOfXpath(locatorErrMsg) + " error message is not displayed");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Cust Id Mandate. Exception: " + e.getClass());
+        }
+    }
+
+    public void checkBoxUnselected(String id, String extra) {
+        try {
+            String locator = "Check Box for Cust Id: " + id + "#xpath=//strong[contains(text(),'" + id.trim() + "')]/parent::i/..//input";
+            verifyCheckBoxIsNotSelectedUsingLocator(locator, "");
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in check Box Unselected. Exception: " + e.getClass());
+        }
+    }
+
+    public void loanTileUnselected(String num, String extra) {
+        try {
+            String locator = "Loan Tile: " + num + "#xpath=//input[@type='checkbox' and @name='loan' and @value='" + num.trim() + "' ]/parent::label";
+            verifyCheckBoxIsNotSelectedUsingLocator(locator, "");
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in loan Tile Unselected. Exception: " + e.getClass());
+        }
+    }
+
+
+    public void clickCheckBoxUsingId(String id, String extra) {
+        try {
+            String locator = "Check Box for Cust Id: " + id + "#xpath=//strong[contains(text(),'" + id.trim() + "')]/parent::i/..//input";
+            clickOn(locator);
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in click Check Box UsingId. Exception: " + e.getClass());
+        }
+    }
+
+    public void mandatePopupClose() {
+        try {
+            String locator = "Please Note Popup#xpath=//span[@id='custmsg']";
+            String locator1 = "Please Note Popup in Mandate Page#xpath=//h6[contains(text(),'Please Note')]";
+            if (!isElementDisplayed(locator) && isElementDisplayed(custId_Box)) {
+                testStepPassed(getRefOfXpath(locator) + " is Closed Successfully");
+            } else {
+                testStepFailed(getRefOfXpath(locator) + " is not closed");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in mandate Popup Close. Exception: " + e.getClass());
+        }
+    }
+
+    public void checkBoxSelection(String extra) {
+        try {
+            String locator = "Check Box for Tiles.#xpath=//input[@name='loan']";
+            int size = sizeOfLocator(locator);
+            testStepInfo("Total Tiles for this Customer: " + size);
+            for (int i = 1; i <= size; i++) {
+                String locator1 = "Check Box for Tile Number:" + i + "#xpath=(//input[@name='loan'])[" + i + "]";
+                String locator2 = "Greyed Out Tile for Tile Number:" + i + "#xpath=(//div[@class='j_lf_main blurDiv'])[" + i + "]";
+                verifyCheckBoxIsSelectedUsingLocator(locator1, "");
+                verifyElementIsDisplayedOrNot(locator2);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in check Box Selection. Exception: " + e.getClass());
+        }
+    }
+
+    public void mandateFeesandCharges() {
+        try {
+            String locator = "Popup Contents#xpath=//strong[normalize-space(text())='Fees and Charges']/../following-sibling::div[@class='p_Unable_text']";
+            verifyFieldDisplayedUsingTagAndText("strong", "Fees and Charges", "");
+            verifyElementIsDisplayedAndGetText(locator);
+            verifyButtonIsDisplayedInThePage("Okay");
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in mandate Fees and Charges. Exception: " + e.getClass());
+        }
+    }
 
 }

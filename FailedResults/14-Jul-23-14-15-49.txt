@@ -1,0 +1,26 @@
+Failed in verify Page Redirection Using Tag and Text My Relations. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify Drawdown/Disbursement Requests option is clickable
+
+Failed in wait for Loans tab Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  To verify Drawdown/Disbursement Requests option is clickable
+
+Loans tab is Not Present in this Customer Id------------>  To verify Drawdown/Disbursement Requests option is clickable
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountLoanServices/LAS/LASDetails------------>  To verify Drawdown/Disbursement Requests option is clickable
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountLoanServices/LAS/LasDisbursement------------>  To verify Drawdown/Disbursement Requests option is clickable
+
+Home Page Text is Not Verified------------>  To verify that Customer is able to view content on Disbursement Requests page%
+
+Login is Unsuccessfull------------>  To verify that Customer is able to view content on Disbursement Requests page%
+
+Failed in verify Page Redirection Using Tag and Text My Relations. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify that Submit CTA is disable when Amount field is blank7
+
+Failed in wait for Loans tab Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  To verify that Submit CTA is disable when Amount field is blank7
+
+Loans tab is Not Present in this Customer Id------------>  To verify that Submit CTA is disable when Amount field is blank7
+
+Submit is Not Present in findElements------------>  To verify that Submit CTA is disable when Amount field is blank7
+
+Failed in verify Submit button Is Disabled In The Page. Exception: class java.lang.NullPointerException------------>  To verify that Submit CTA is disable when Amount field is blank7
+
+Failed in verify Page Redirection Using Tag and Text My Relations. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify that inline message is displayed below amount text field with min and max amountI
+

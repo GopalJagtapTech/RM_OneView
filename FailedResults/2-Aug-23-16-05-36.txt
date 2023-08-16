@@ -1,0 +1,252 @@
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/new-car-finance------------>  Verify customer redirected respective page, when customer click on "Overview" option under New Car Finance loans Dropdown - ETB
+
+Expected URL : https://www.bajajfinserv.in/new-car-finance------------>  Verify customer redirected respective page, when customer click on "Overview" option under New Car Finance loans Dropdown - ETB
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/new-car-finance-features------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - ETB
+
+Expected URL : https://www.bajajfinserv.in/new-car-finance-features------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - ETB
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/new-car-finance-eligibility-and-documents------------>  Verify customer redirected respective page, when customer click on "Eligibility" option under New Car Finance loans Dropdown - ETB
+
+Expected URL : https://www.bajajfinserv.in/new-car-finance-eligibility-and-documents------------>  Verify customer redirected respective page, when customer click on "Eligibility" option under New Car Finance loans Dropdown - ETB
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/how-to-apply-for-new-car-finance------------>  Verify customer redirected respective page, when customer click on "How to Apply" option under New Car Finance loans Dropdown - ETB
+
+Expected URL : https://www.bajajfinserv.in/how-to-apply-for-new-car-finance------------>  Verify customer redirected respective page, when customer click on "How to Apply" option under New Car Finance loans Dropdown - ETB
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/new-car-finance-interest-rates-and-charges------------>  Verify customer redirected respective page, when customer click on "Interest Rates and Charges" option under New Car Finance loans Dropdown - ETB
+
+Expected URL : https://www.bajajfinserv.in/new-car-finance-interest-rates-and-charges------------>  Verify customer redirected respective page, when customer click on "Interest Rates and Charges" option under New Car Finance loans Dropdown - ETB
+
+Failed in Click On Horizantal Menu - Loans. Exception: class org.openqa.selenium.ElementClickInterceptedException------------>  Verify customer redirected respective page, when customer click on "Overview" option under New Car Finance loans Dropdown - PTB
+
+Failed in mouse Hover Horizantal SubMenu New car finance. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  Verify customer redirected respective page, when customer click on "Overview" option under New Car Finance loans Dropdown - PTB
+
+Horizantal level 2 sub Menu - Overview is Not Displayed------------>  Verify customer redirected respective page, when customer click on "Overview" option under New Car Finance loans Dropdown - PTB
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=dfb2150f-9df0-49c1-b83e-a3e5100d859c#;------------>  Verify customer redirected respective page, when customer click on "Overview" option under New Car Finance loans Dropdown - PTB
+
+Expected URL : https://www.bajajfinserv.in/new-car-finance------------>  Verify customer redirected respective page, when customer click on "Overview" option under New Car Finance loans Dropdown - PTB
+
+Failed in wait for OTP Text Box 1 Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - PTB
+
+OTP Text Box 1 is Not Displayed------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - PTB
+
+OTP Text Box 2 is Not Displayed------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - PTB
+
+OTP Text Box 3 is Not Displayed------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - PTB
+
+OTP Text Box 4 is Not Displayed------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - PTB
+
+OTP Text Box 5 is Not Displayed------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - PTB
+
+OTP Text Box 6 is Not Displayed------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - PTB
+
+Submit button is Not Displayed------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - PTB
+
+Home Page Text is Not Verified------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - PTB
+
+Login is Unsuccessfull------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - PTB
+
+Sign Out Button is Not Present------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - PTB
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/new-car-finance-eligibility-and-documents------------>  Verify customer redirected respective page, when customer click on "Eligibility" option under New Car Finance loans Dropdown - PTB
+
+Expected URL : https://www.bajajfinserv.in/new-car-finance-eligibility-and-documents------------>  Verify customer redirected respective page, when customer click on "Eligibility" option under New Car Finance loans Dropdown - PTB
+
+DOB Text Box For Individual Is Element Displayed Failed. Exception: class org.openqa.selenium.NoSuchElementException------------>  Verify customer redirected respective page, when customer click on "How to Apply" option under New Car Finance loans Dropdown - PTB 
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/how-to-apply-for-new-car-finance------------>  Verify customer redirected respective page, when customer click on "How to Apply" option under New Car Finance loans Dropdown - PTB 
+
+Expected URL : https://www.bajajfinserv.in/how-to-apply-for-new-car-finance------------>  Verify customer redirected respective page, when customer click on "How to Apply" option under New Car Finance loans Dropdown - PTB 
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/new-car-finance-interest-rates-and-charges------------>  Verify customer redirected respective page, when customer click on "Interest Rates and Charges" option under New Car Finance loans Dropdown - PTB!
+
+Expected URL : https://www.bajajfinserv.in/new-car-finance-interest-rates-and-charges------------>  Verify customer redirected respective page, when customer click on "Interest Rates and Charges" option under New Car Finance loans Dropdown - PTB!
+
+Home Page Text is Not Verified------------>  Verify customer redirected respective page, when customer click on "FAQs" option under New Car Finance loans Dropdown - PTB"
+
+Login is Unsuccessfull------------>  Verify customer redirected respective page, when customer click on "FAQs" option under New Car Finance loans Dropdown - PTB"
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/new-car-finance------------>  Verify customer redirected respective page, when customer click on "Overview" option under New Car Finance loans Dropdown - NTB-
+
+Expected URL : https://www.bajajfinserv.in/new-car-finance------------>  Verify customer redirected respective page, when customer click on "Overview" option under New Car Finance loans Dropdown - NTB-
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/new-car-finance-features------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - NTB.
+
+Expected URL : https://www.bajajfinserv.in/new-car-finance-features------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - NTB.
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/new-car-finance-eligibility-and-documents------------>  Verify customer redirected respective page, when customer click on "Eligibility" option under New Car Finance loans Dropdown - NTB/
+
+Expected URL : https://www.bajajfinserv.in/new-car-finance-eligibility-and-documents------------>  Verify customer redirected respective page, when customer click on "Eligibility" option under New Car Finance loans Dropdown - NTB/
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/how-to-apply-for-new-car-finance------------>  Verify customer redirected respective page, when customer click on "How to Apply" option under New Car Finance loans Dropdown - NTB0
+
+Expected URL : https://www.bajajfinserv.in/how-to-apply-for-new-car-finance------------>  Verify customer redirected respective page, when customer click on "How to Apply" option under New Car Finance loans Dropdown - NTB0
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/new-car-finance-interest-rates-and-charges------------>  Verify customer redirected respective page, when customer click on "Interest Rates and Charges" option under New Car Finance loans Dropdown - NTB1
+
+Expected URL : https://www.bajajfinserv.in/new-car-finance-interest-rates-and-charges------------>  Verify customer redirected respective page, when customer click on "Interest Rates and Charges" option under New Car Finance loans Dropdown - NTB1
+
+Individual Customer tab is Not Present------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -ETB?
+
+Mobile Number Text Box For Individual is not Present and Type In Failed------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -ETB?
+
+Get OTP is Not Present in findElements------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -ETB?
+
+Failed in click on Get OTP button using for Loop. Exception: class java.lang.NullPointerException------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -ETB?
+
+Failed in wait for OTP Text Box 1 Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -ETB?
+
+OTP Text Box 1 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -ETB?
+
+OTP Text Box 2 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -ETB?
+
+OTP Text Box 3 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -ETB?
+
+OTP Text Box 4 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -ETB?
+
+OTP Text Box 5 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -ETB?
+
+OTP Text Box 6 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -ETB?
+
+Submit is Not Present in findElements------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -ETB?
+
+Failed in click on Submit button using for Loop. Exception: class java.lang.NullPointerException------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -ETB?
+
+Individual Customer tab is Not Present------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -ETB@
+
+Mobile Number Text Box For Individual is not Present and Type In Failed------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -ETB@
+
+Get OTP is Not Present in findElements------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -ETB@
+
+Failed in click on Get OTP button using for Loop. Exception: class java.lang.NullPointerException------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -ETB@
+
+Failed in wait for OTP Text Box 1 Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -ETB@
+
+OTP Text Box 1 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -ETB@
+
+OTP Text Box 2 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -ETB@
+
+OTP Text Box 3 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -ETB@
+
+OTP Text Box 4 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -ETB@
+
+OTP Text Box 5 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -ETB@
+
+OTP Text Box 6 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -ETB@
+
+Submit is Not Present in findElements------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -ETB@
+
+Failed in click on Submit button using for Loop. Exception: class java.lang.NullPointerException------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -ETB@
+
+Failed in Click On Footer Icons in Application Forms - Car Loan Balance Transfer and Top-up. Exception: class org.openqa.selenium.TimeoutException------------>  verify Customer is redirected to Respective page when clicked on particular "Car Loan Balance Transfer and Top-up" in Application Forms -ETBB
+
+Individual Customer tab is Not Present------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -PTBX
+
+Mobile Number Text Box For Individual is not Present and Type In Failed------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -PTBX
+
+Get OTP is Not Present in findElements------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -PTBX
+
+Failed in click on Get OTP button using for Loop. Exception: class java.lang.NullPointerException------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -PTBX
+
+Failed in wait for OTP Text Box 1 Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -PTBX
+
+OTP Text Box 1 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -PTBX
+
+OTP Text Box 2 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -PTBX
+
+OTP Text Box 3 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -PTBX
+
+OTP Text Box 4 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -PTBX
+
+OTP Text Box 5 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -PTBX
+
+OTP Text Box 6 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -PTBX
+
+Submit is Not Present in findElements------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -PTBX
+
+Failed in click on Submit button using for Loop. Exception: class java.lang.NullPointerException------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -PTBX
+
+Individual Customer tab is Not Present------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -PTBY
+
+Mobile Number Text Box For Individual is not Present and Type In Failed------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -PTBY
+
+Get OTP is Not Present in findElements------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -PTBY
+
+Failed in click on Get OTP button using for Loop. Exception: class java.lang.NullPointerException------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -PTBY
+
+Failed in wait for OTP Text Box 1 Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -PTBY
+
+OTP Text Box 1 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -PTBY
+
+OTP Text Box 2 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -PTBY
+
+OTP Text Box 3 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -PTBY
+
+OTP Text Box 4 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -PTBY
+
+OTP Text Box 5 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -PTBY
+
+OTP Text Box 6 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -PTBY
+
+Submit is Not Present in findElements------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -PTBY
+
+Failed in click on Submit button using for Loop. Exception: class java.lang.NullPointerException------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -PTBY
+
+Individual Customer tab is Not Present------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -NTBq
+
+Mobile Number Text Box For Individual is not Present and Type In Failed------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -NTBq
+
+Get OTP is Not Present in findElements------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -NTBq
+
+Failed in click on Get OTP button using for Loop. Exception: class java.lang.NullPointerException------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -NTBq
+
+Failed in wait for OTP Text Box 1 Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -NTBq
+
+OTP Text Box 1 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -NTBq
+
+OTP Text Box 2 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -NTBq
+
+OTP Text Box 3 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -NTBq
+
+OTP Text Box 4 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -NTBq
+
+OTP Text Box 5 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -NTBq
+
+OTP Text Box 6 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -NTBq
+
+Submit is Not Present in findElements------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -NTBq
+
+Failed in click on Submit button using for Loop. Exception: class java.lang.NullPointerException------------>  verify Customer is redirected to Respective page when clicked on particular "New Car Finance" in Application Forms -NTBq
+
+Individual Customer tab is Not Present------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -NTBr
+
+Mobile Number Text Box For Individual is not Present and Type In Failed------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -NTBr
+
+Get OTP is Not Present in findElements------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -NTBr
+
+Failed in click on Get OTP button using for Loop. Exception: class java.lang.NullPointerException------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -NTBr
+
+Failed in wait for OTP Text Box 1 Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -NTBr
+
+OTP Text Box 1 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -NTBr
+
+OTP Text Box 2 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -NTBr
+
+OTP Text Box 3 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -NTBr
+
+OTP Text Box 4 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -NTBr
+
+OTP Text Box 5 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -NTBr
+
+OTP Text Box 6 is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -NTBr
+
+Submit is Not Present in findElements------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -NTBr
+
+Failed in click on Submit button using for Loop. Exception: class java.lang.NullPointerException------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -NTBr
+
+Failed in Click On Footer Icons in Application Forms - Used Car Finance. Exception: class org.openqa.selenium.TimeoutException------------>  verify Customer is redirected to Respective page when clicked on particular "Used Car Finance" in Application Forms -NTBr
+
+Proceed Button Is Element Displayed Failed. Exception: class org.openqa.selenium.NoSuchElementException------------>  verify Customer is redirected to Respective page when clicked on particular "Loan Against a Car" -Loans -NTB
+

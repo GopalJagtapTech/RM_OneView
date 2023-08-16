@@ -2109,4 +2109,13 @@ String locator=sectionName+" : "+optionName+"#xpath=//*[normalize-space(text())=
     }
 
 
+
+
+
+    public static final String emi_Icon = "EMI Card Icon#xpath=//ul[@class='rightSideitems']/descendant::li//a//img[contains (@src,'images/emicard_icon.png')]";
+    public static final String bell_Icon = "Bell Icon#xpath=//ul[@class='rightSideitems']/descendant::li//a//img[contains (@src,'images/bell.svg')]";
+    public static final String cart_Icon = "Cart Icon#xpath=//ul[@class='rightSideitems']/descendant::li//a//img[contains (@src,'images/cart.svg')]";
+    public static final String profile_Icon = "Profile Icon#xpath=//ul[@class='rightSideitems']/descendant::li//a//img[contains (@src,'images/prof.svg')]";
+
+
 }

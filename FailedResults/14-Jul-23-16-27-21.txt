@@ -1,0 +1,38 @@
+Redirected URL is not Matched : https://cont-sites.bajajfinserv.in/business-loan------------>  verify Customer is redirected to Respective page when clicked on particular "Business Loan" in Application Forms
+
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/business-loan------------>  verify Customer is redirected to Respective page when clicked on particular "Business Loan" in Application Forms
+
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index------------>  verify Customer is redirected to Respective page when clicked on particular "Home Loan" in Application Forms
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/home-loan------------>  verify Customer is redirected to Respective page when clicked on particular "Home Loan" in Application Forms
+
+Footer Options - Car Insuarnce is not displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Car Insuarnce" - Insurance9
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index------------>  verify Customer is redirected to Respective page when clicked on particular "Car Insuarnce" - Insurance9
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/insurance/car-insurance-all-products------------>  verify Customer is redirected to Respective page when clicked on particular "Car Insuarnce" - Insurance9
+
+Failed in Click On Tab Option Home Loan Eligibility Calculator under Calculators. Exception: class org.openqa.selenium.TimeoutException------------>  verify Customer is redirected to Respective page when clicked on particular "Home Loan Eligibility Calculator" - Calculators
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountLogin------------>  verify Customer is redirected to Respective page when clicked on particular "Raise A Request" - Reach UsÕ
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountService/Helpandsupport/LogRequest------------>  verify Customer is redirected to Respective page when clicked on particular "Raise A Request" - Reach UsÕ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountLogin------------>  verify Customer is redirected to Respective page when clicked on particular "Frequently asked questions" - Reach Us×
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountService/HelpAndSupport/RARFAQCategory------------>  verify Customer is redirected to Respective page when clicked on particular "Frequently asked questions" - Reach Us×
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/myaccountLogin#;------------>  verify Customer is redirected to Respective page when clicked on particular "Galaxy - Partner Portal" - Reach UsÙ
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index------------>  verify Customer is redirected to Respective page when clicked on particular "Galaxy - Partner Portal" - Reach UsÙ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountLogin------------>  verify Customer is redirected to Respective page when clicked on particular "Make Online Payment" - Reach UsÚ
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/ActiveLoanPay------------>  verify Customer is redirected to Respective page when clicked on particular "Make Online Payment" - Reach UsÚ
+
+Redirected URL is not Matched : https://twitter.com/i/flow/login?redirect_after_login=%2FBajaj_Finserv------------>  verify Customer is redirected to Respective page when clicked on Social App Icons in Reach Usæ
+
+Expected URL : https://twitter.com/Bajaj_Finserv------------>  verify Customer is redirected to Respective page when clicked on Social App Icons in Reach Usæ
+

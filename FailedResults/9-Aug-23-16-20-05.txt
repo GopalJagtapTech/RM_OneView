@@ -1,0 +1,22 @@
+Failed in Type In DOI Text Box For Non-Individual value as 13/09/1990. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To verify below options are displayed under Profile for ETB/PTB Customer
+
+PROCEED button is Not Displayed------------>  To verify below options are displayed under Profile for ETB/PTB Customer
+
+Home Page Text is Not Verified------------>  To verify below options are displayed under Profile for ETB/PTB Customer
+
+Login is Unsuccessfull------------>  To verify below options are displayed under Profile for ETB/PTB Customer
+
+Sign Out Button is Not Present------------>  To verify below options are displayed under Profile for ETB/PTB Customer
+
+Proceed Button Is Element Displayed Failed. Exception: class org.openqa.selenium.StaleElementReferenceException------------>  To verify below options are displayed under Profile for NTB Customer
+
+My Account is Not Displayed.------------>  To verify below options are displayed under Profile for NTB Customer
+
+Raise a Request is Not Displayed.------------>  To verify below options are displayed under Profile for NTB Customer
+
+Document Center is Not Displayed.------------>  To verify below options are displayed under Profile for NTB Customer
+
+Sign out is Not Displayed.------------>  To verify below options are displayed under Profile for NTB Customer
+
+Sign Out Button is Not Displayed------------>  To verify below options are displayed under Profile for NTB Customer
+

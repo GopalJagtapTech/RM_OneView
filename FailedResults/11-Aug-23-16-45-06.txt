@@ -1,0 +1,8 @@
+SignIn Button is Not Displayed------------>  To verify customer with Sole Proprietorship PAN Card i.e 4th of PAN Card should be “P” can apply for LAFD&
+
+Home Page Text is Not Verified------------>  To verify customer with Sole Proprietorship PAN Card i.e 4th of PAN Card should be “P” can apply for LAFD&
+
+Login is Unsuccessfull------------>  To verify customer with Sole Proprietorship PAN Card i.e 4th of PAN Card should be “P” can apply for LAFD&
+
+Sign Out Button is Not Present------------>  To verify customer with Sole Proprietorship PAN Card i.e 4th of PAN Card should be “P” can apply for LAFD&
+

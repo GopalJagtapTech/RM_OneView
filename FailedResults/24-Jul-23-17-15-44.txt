@@ -1,0 +1,48 @@
+Home Page Text is Not Verified------------>  To verify that customer is redirecting to Document Center page when they click on document center sub menu
+
+Login is Unsuccessfull------------>  To verify that customer is redirecting to Document Center page when they click on document center sub menu
+
+Sign Out Button is Not Present------------>  To verify that customer is redirecting to Document Center page when they click on document center sub menu
+
+Home Page Text is Not Verified------------>  To verify that customer is redirecting to Document Center page when they clicks on document center  from RHS of My Relation+
+
+Login is Unsuccessfull------------>  To verify that customer is redirecting to Document Center page when they clicks on document center  from RHS of My Relation+
+
+Sign Out Button is Not Present------------>  To verify that customer is redirecting to Document Center page when they clicks on document center  from RHS of My Relation+
+
+Home Page Text is Not Verified------------>  To verify that customer is redirecting to document POD page on click of Welcome letter - "DPF"K
+
+Login is Unsuccessfull------------>  To verify that customer is redirecting to document POD page on click of Welcome letter - "DPF"K
+
+Sign Out Button is Not Present------------>  To verify that customer is redirecting to document POD page on click of Welcome letter - "DPF"K
+
+Card :   is not Displayed------------>  To verify that welcome letter is displayed to active loan for other than mention product ID - "PPSBL"Z
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountDocumentCenter/DocumentCenter/index------------>  To verify that welcome letter is displayed to active loan for other than mention product ID - "PPSBL"Z
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountDocumentCenter/DocumentCenter/docCenter_LoanDetails------------>  To verify that welcome letter is displayed to active loan for other than mention product ID - "PPSBL"Z
+
+Welcome Letter is Not Displayed.------------>  To verify that welcome letter is displayed to active loan for other than mention product ID - "PPSBL"Z
+
+Failed in Type In DOI Text Box For Non-Individual value as 13/09/1990. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To verify that welcome letter is displayed to active loan for other than mention product ID - "PDBFR"[
+
+PROCEED button is Not Displayed------------>  To verify that welcome letter is displayed to active loan for other than mention product ID - "PDBFR"[
+
+Home Page Text is Not Verified------------>  To verify that welcome letter is displayed to active loan for other than mention product ID - "PDBFR"[
+
+Login is Unsuccessfull------------>  To verify that welcome letter is displayed to active loan for other than mention product ID - "PDBFR"[
+
+Sign Out Button is Not Present------------>  To verify that welcome letter is displayed to active loan for other than mention product ID - "PDBFR"[
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountDocumentCenter/DocumentCenter/docCenter_FDDetails------------>  To verify that welcome letter is displayed to active and matured deposit - "Active"z
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountDocumentCenter/DocumentCenter/docCenter_LoanDetails------------>  To verify that welcome letter is displayed to active and matured deposit - "Active"z
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountDocumentCenter/DocumentCenter/docCenter_FDDetails------------>  To verify that welcome letter is displayed to active and matured deposit - "matured"{
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountDocumentCenter/DocumentCenter/docCenter_LoanDetails------------>  To verify that welcome letter is displayed to active and matured deposit - "matured"{
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountDocumentCenter/DocumentCenter/docCenter_Insurance------------>  To verify that welcome letter is displayed to  insurance - "Active"
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountDocumentCenter/DocumentCenter/docCenter_LoanDetails------------>  To verify that welcome letter is displayed to  insurance - "Active"
+

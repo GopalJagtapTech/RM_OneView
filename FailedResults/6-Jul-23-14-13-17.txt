@@ -1,0 +1,66 @@
+Select the loan account for which you want to change or update the mandate is Not Present------------>  Verify that customer is able to view product name tabs on Mandate Management page 
+
+Home Page Text is Not Verified------------>  Verify that Loan product tab by default is selected on Mandate Management page-
+
+Login is Unsuccessfull------------>  Verify that Loan product tab by default is selected on Mandate Management page-
+
+EMandate Page Header is Not Displayed------------>  Verify that customer is redirecting to EMandate page when customer clicks on proceed CTAq
+
+Registered Mandates is Not Displayed------------>  verify Customer is able to view all the content in Mandate Management Page
+
+Select the systematic deposit plan for which you want to change or update the mandate is Not Present------------>  verify Customer is able to view all the content in Mandate Management Page
+
+Cards in Mandate Management Page:Systematic Deposit Planis not Displayed------------>  Verify that customer is able to view all active SDP cards£
+
+Name on the Card:is not Displayed------------>  Verify that customer is able to view fields on SDP card±
+
+SDP Amountis not Displayed------------>  Verify that customer is able to view fields on SDP card±
+
+Failed in scroll To WebElement for Bank Name Label. Exception: class org.openqa.selenium.NoSuchElementException------------>  Verify that customer is able to view fields on SDP card±
+
+Bank Name is not displayed------------>  Verify that customer is able to view fields on SDP card±
+
+Failed in scroll To WebElement for Account Number Label. Exception: class org.openqa.selenium.NoSuchElementException------------>  Verify that customer is able to view fields on SDP card±
+
+Account Number is not displayed------------>  Verify that customer is able to view fields on SDP card±
+
+Failed in scroll To WebElement for IFSC Label. Exception: class org.openqa.selenium.NoSuchElementException------------>  Verify that customer is able to view fields on SDP card±
+
+IFSC is not displayed------------>  Verify that customer is able to view fields on SDP card±
+
+Check Box in Mandate Management Page is not Present------------>  verify that customer is able to select multiple SDPsÀ
+
+EMandate Page Header is Not Displayed------------>  Verify that customer is redirecting to EMandate page when customer clicks on proceed CTA for SDPÐ
+
+Select the loan account for which you want to change or update the mandate is Not Present------------>  Verify that Customer is able to redirect to Mandate Management page on clicking it from My Relationsď
+
+Select the loan account for which you want to change or update the mandate is Not Present------------>  Verify that customer is able to view product name tabs on Mandate Management page - My Relationģ
+
+EMandate Page Header is Not Displayed------------>  Verify that customer is redirecting to EMandate page when customer clicks on proceed CTA - My Relationź
+
+Registered Mandates is Not Displayed------------>  verify Customer is able to view all the content in Mandate Management Page -My RelationƟ
+
+Select the systematic deposit plan for which you want to change or update the mandate is Not Present------------>  verify Customer is able to view all the content in Mandate Management Page -My RelationƟ
+
+Cards in Mandate Management Page:Systematic Deposit Planis not Displayed------------>  Verify that customer is able to view all active SDP cards -My RelationƯ
+
+Name on the Card:is not Displayed------------>  Verify that customer is able to view fields on SDP card -My Relationƾ
+
+SDP Amountis not Displayed------------>  Verify that customer is able to view fields on SDP card -My Relationƾ
+
+Failed in scroll To WebElement for Bank Name Label. Exception: class org.openqa.selenium.NoSuchElementException------------>  Verify that customer is able to view fields on SDP card -My Relationƾ
+
+Bank Name is not displayed------------>  Verify that customer is able to view fields on SDP card -My Relationƾ
+
+Failed in scroll To WebElement for Account Number Label. Exception: class org.openqa.selenium.NoSuchElementException------------>  Verify that customer is able to view fields on SDP card -My Relationƾ
+
+Account Number is not displayed------------>  Verify that customer is able to view fields on SDP card -My Relationƾ
+
+Failed in scroll To WebElement for IFSC Label. Exception: class org.openqa.selenium.NoSuchElementException------------>  Verify that customer is able to view fields on SDP card -My Relationƾ
+
+IFSC is not displayed------------>  Verify that customer is able to view fields on SDP card -My Relationƾ
+
+Check Box in Mandate Management Page is not Present------------>  verify that customer is able to select multiple SDPs -My RelationǍ
+
+EMandate Page Header is Not Displayed------------>  Verify that customer is redirecting to EMandate page when customer clicks on proceed CTA for SDP -My RelationǞ
+

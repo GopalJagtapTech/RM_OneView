@@ -23,13 +23,13 @@ import java.time.format.DateTimeFormatter;
 
 public class HomeSteps extends ApplicationKeywords {
 
-public static LoginPage login;
+    public static LoginPage login;
     HomePage home;
     PaymentsPage payments;
-public static String homeUrl="";
+    public static String homeUrl = "";
 
     public HomeSteps() throws IOException {
-        if (login==null) {
+        if (login == null) {
             notePad = new File(System.getProperty("user.dir") + "//FailedResults//" + DateTimeFormatter.ofPattern("d-MMM-YY-HH-mm-ss").format(LocalDateTime.now().minusSeconds(3)) + ".txt");
             newFile = notePad.createNewFile();
         }
@@ -337,7 +337,7 @@ public static String homeUrl="";
 
     @Then("Clicks on Cross icon")
     public void clicks_on_cross_icon() {
-       waitTime(5);
+        waitTime(5);
         clickOnIfDisplayed(HomePage.closer_QRCode);
     }
 
@@ -431,7 +431,7 @@ public static String homeUrl="";
 
     @Then("Customer will be redirected to virtual EMI card activation journey\" page with prefilled information on Formsvia SSO a.mobile number b.first name c.last name")
     public void customer_will_be_redirected_to_virtual_emi_card_activation_journey_page_with_prefilled_information_on_formsvia_sso_a_mobile_number_b_first_name_c_last_name() {
-        verifyRedirectionInCommon("https://www.bajajfinservmarkets.in/emi-card/bajaj-finserv-emi-network-card-offers","");
+        verifyRedirectionInCommon("https://www.bajajfinservmarkets.in/emi-card/bajaj-finserv-emi-network-card-offers", "");
     }
 
     @Then("Transaction icon should be greyed out for Virtual EMI CARD")
@@ -486,7 +486,7 @@ public static String homeUrl="";
 
     @Then("Customer with No EMI Card will be redirected to {string} page with prefilled information on Forms via SSO")
     public void customer_with_no_emi_card_will_be_redirected_to_page_with_prefilled_information_on_forms_via_sso(String string) {
-        verifyRedirectionInCommon(string,"");
+        verifyRedirectionInCommon(string, "");
 
     }
 
@@ -600,13 +600,14 @@ public static String homeUrl="";
         verifyElementIsDisplayedUsingLocator(HomePage.myRelationsSection_HomePage);
     }
 
-//public static String mobno="";
+    //public static String mobno="";
 //    public static String dob="";
 //    public static String type="";
-public static boolean rite=false;
+    public static boolean rite = false;
+
     @Given("User is logged in {string} {string} for {string}")
     public void userIsLoggedInFor(String mobNumber, String date, String customerType) throws IOException {
-        mobileNumber=mobNumber;
+        mobileNumber = mobNumber;
 //        File notePad1 = null;
 //        FileWriter fr;
 //        BufferedWriter br;
@@ -629,19 +630,18 @@ public static boolean rite=false;
 //        Assert.assertTrue(false);
 
 
-
 //        redirectToUrl("https://cont-sites.bajajfinserv.in/MyAccountLogin/Login/LogoutUserBasedOnMobile?MobileNo="+mobNumber+"","");
-        redirectToUrl("https://uat-oneweb.bajajfinserv.in/MyAccountLogin/Login/LogoutUserBasedOnMobile?MobileNo="+mobNumber+"","");
+        redirectToUrl("https://uat-oneweb.bajajfinserv.in/MyAccountLogin/Login/LogoutUserBasedOnMobile?MobileNo=" + mobNumber + "", "");
         waitTime(2);
-        redirectToUrl("https://uat-oneweb.bajajfinserv.in/MyAccountLogin","");
+        redirectToUrl("https://uat-oneweb.bajajfinserv.in/MyAccountLogin", "");
 
         clickOnButtonUsingLocatorUsingForLoopWithoutFail(LoginPage.skip);
 //mobno=mobNumber;
 //dob=date;
 //type=customerType;
 
-        String load="Loader#xpath=//div[@id='status']";
-        String loadInACtive="Loader In Active#xpath=//div[@id='status'and(@style)]";
+        String load = "Loader#xpath=//div[@id='status']";
+        String loadInACtive = "Loader In Active#xpath=//div[@id='status'and(@style)]";
         while (isElementDisplayed(load)) {
             if (isElementPresent(loadInACtive)) {
                 break;
@@ -661,23 +661,28 @@ public static boolean rite=false;
     @When("User is on Home Page")
     public void userIsOnHomePage() {
 //        driver.get("https://www.google.com/");
-        boolean flag =false;
+        boolean flag = false;
         flag = verifyFieldsDisplayedUsingLocator(HomePage.txt_Home);
 //hardRefresh();
+        if (flag) {
+            GOR.isLoggedIn = true;
+        }
+
         if (!flag) {
             ApplicationKeywords.quitBrowser = true;
-            GOR.login=false;
+            GOR.login = false;
             SoftAssertions sa = new SoftAssertions();
             testStepFailed("Login is Unsuccessfull");
             sa.fail("Login is Unsuccessful");
             sa.assertAll();
         }
         clickOnButtonUsingLocatorUsingForLoopWithoutFail(LoginPage.skip);
-        String closeIconAddressVerifcation="Address verifcation popup close button#xpath=//div[@class='dialog_modal kyc-popup']//a[@class='dialog_closer']";
+        String closeIconAddressVerifcation = "Address verifcation popup close button#xpath=//div[@class='dialog_modal kyc-popup']//a[@class='dialog_closer']";
         if (isElementDisplayed(closeIconAddressVerifcation)) {
             clickOn(closeIconAddressVerifcation);
         }
-}
+
+    }
 
     @And("verify My Relation {string} Tile")
     public void verifyMyRelationTile(String tileName) {
@@ -687,7 +692,7 @@ public static boolean rite=false;
 
     @Then("verify All Submenu is Displayed in Hamburger")
     public void verifyAllSubmenuIsDisplayedInHamburger() {
-        verifyFieldsUsingCommonXpathAndMultipleTextWithHash("//div[@class='list_text']/strong","Loan payment#Documentation#Request for a loan#Redeem vouchers#Calculators#Help and support#Settings","");
+        verifyFieldsUsingCommonXpathAndMultipleTextWithHash("//div[@class='list_text']/strong", "Loan payment#Documentation#Request for a loan#Redeem vouchers#Calculators#Help and support#Settings", "");
         clickOnIfDisplayed(HomePage.cross_Hamburger);
     }
 
@@ -718,7 +723,7 @@ public static boolean rite=false;
         home.verifyPassbooknotDisplayed();
     }
 
-//    @When("Clicks on Hamburger Menu")
+    //    @When("Clicks on Hamburger Menu")
 //    public void clicks_on_hamburger_menu() {
 ////        waitTime(30);
 //        clickOnIfDisplayed(HomePage.icon_HamburgerMenu);
@@ -729,22 +734,22 @@ public static boolean rite=false;
      */
     @When("{string} Section {string} Option is Displayed")
     public void section_option_is_displayed(String sectionName, String optionName) {
-   home.verifyProductIsDisplayed(sectionName,optionName,"");
+        home.verifyProductIsDisplayed(sectionName, optionName, "");
     }
 
     @When("{string} Section {string} Option Logo is Displayed")
     public void section_option_logo_is_displayed(String sectionName, String optionName) {
-        home.verifyLogoIsDisplayed(sectionName,optionName,"");
+        home.verifyLogoIsDisplayed(sectionName, optionName, "");
     }
 
     @When("Clicks {string} Section {string} Option")
     public void clicks_section_option(String sectionName, String optionName) {
-home.clickOnProduct(sectionName,optionName,"");
+        home.clickOnProduct(sectionName, optionName, "");
     }
 
     @And("{string} Section has {int} Number of Tiles")
     public void sectionHasNumberOfTiles(String sectionName, int noOfTiles) {
-home.verifyNoOfTiles(sectionName,noOfTiles,"");
+        home.verifyNoOfTiles(sectionName, noOfTiles, "");
     }
 
 
@@ -756,33 +761,34 @@ home.verifyNoOfTiles(sectionName,noOfTiles,"");
 
     @And("verify {string} Section Next and Previous Sliders are not Showing")
     public void verifySectionNextAndPreviousSlidersAreNotShowing(String sectionName) {
-        home.verifySliderButtonsIsNotVisible(sectionName,"");
+        home.verifySliderButtonsIsNotVisible(sectionName, "");
     }
 
     @And("verify {string} Section Next and Previous Sliders are only showing for {int} tiles or more than Tiles")
-    public void verifySectionNextAndPreviousSlidersAreOnlyShowingForTilesOrMoreThanTiles(String sectionName, int noOfTiles)  {
-        home.verifySliderWorking(sectionName,noOfTiles,"");
+    public void verifySectionNextAndPreviousSlidersAreOnlyShowingForTilesOrMoreThanTiles(String sectionName, int noOfTiles) {
+        home.verifySliderWorking(sectionName, noOfTiles, "");
     }
 
     @And("Clicks {string} Section {string} Option Tile")
     public void clicksSectionOptionTile(String sectionName, String optionName) {
         String altName = getLocator(optionName);
-        home.clickOnImagesUsingSectionName(sectionName,optionName,altName,"");
+        home.clickOnImagesUsingSectionName(sectionName, optionName, altName, "");
     }
 
     @And("verify {string} Sequential Order: {string}")
     public void verifySequentialOrder(String optionName, String names) {
         String locator = getLocator(optionName);
-        home.verifySequentialOrder(locator,names,"");
+        home.verifySequentialOrder(locator, names, "");
     }
-////// Mustaq - Start ///////////
-////////////////23112022-Mustaq
-@Then("verify All {string} is Displayed in Hamburger")
-public void verifyAllIsDisplayedInHamburger(String string) {
-    verifyFieldsUsingCommonXpathAndMultipleTextWithHash("//div[@class='list_text']/strong", string, "");
-    clickOnIfDisplayed(HomePage.cross_Hamburger);
 
-}
+    ////// Mustaq - Start ///////////
+////////////////23112022-Mustaq
+    @Then("verify All {string} is Displayed in Hamburger")
+    public void verifyAllIsDisplayedInHamburger(String string) {
+        verifyFieldsUsingCommonXpathAndMultipleTextWithHash("//div[@class='list_text']/strong", string, "");
+        clickOnIfDisplayed(HomePage.cross_Hamburger);
+
+    }
 
     @Then("verify the {string} displayed for the Accordion icon")
     public void verifyTheDisplayedForTheAccordionIcon(String options) {
@@ -877,25 +883,25 @@ public void verifyAllIsDisplayedInHamburger(String string) {
 
     @And("Clicks on Up arrow accordion {string}")
     public void clicksOnUpArrowAccordion(String string) {
-        String option="#xpath=//strong[text()='"+string.trim()+"']/parent::div[@class='list_text']/following-sibling::div[@class='droparrow']";
+        String option = "#xpath=//strong[text()='" + string.trim() + "']/parent::div[@class='list_text']/following-sibling::div[@class='droparrow']";
         clickOn(option);
     }
 
     @Then("Submenu should be collapsable {string}")
     public void submenuShouldBeCollapsable(String string) {
-        home.verifyAccordionCollapsable(string,"");
+        home.verifyAccordionCollapsable(string, "");
 
     }
 
     @Then("Overdue page should be displayed {string}")
     public void overduePageShouldBeDisplayed(String string) {
 //        verifyTextOptionsIsDisplayedUsingCommonXpath("//strong[normalize-space()='Select loan for payment']");
-        verifyPageRedirectionUsingTagAndText("strong",string,"");
+        verifyPageRedirectionUsingTagAndText("strong", string, "");
     }
 
     @Then("Other Payments page should be displayed {string}")
     public void otherPaymentsPageShouldBeDisplayed(String string) {
-        verifyPageRedirectionUsingTagAndText("strong",string,"");
+        verifyPageRedirectionUsingTagAndText("strong", string, "");
 
     }
 
@@ -907,7 +913,7 @@ public void verifyAllIsDisplayedInHamburger(String string) {
 
     @And("verify EMI Calculator menu page is displayed with Calculator types {string}")
     public void verifyEMICalculatorMenuPageIsDisplayedWithCalculatorTypes(String string) {
-        verifyFieldsUsingCommonXpathAndMultipleTextWithHash("//div[@class='j_calcText']/p",string,"");
+        verifyFieldsUsingCommonXpathAndMultipleTextWithHash("//div[@class='j_calcText']/p", string, "");
     }
 
     @And("When Customer clicks on Calculator type {string}")
@@ -917,17 +923,17 @@ public void verifyAllIsDisplayedInHamburger(String string) {
 
     @And("When Customer clicks on Calculator type {string}, then verify Customer is redirected to that Particular Page{string}")
     public void whenCustomerClicksOnCalculatorTypeThenVerifyCustomerIsRedirectedToThatParticularPage(String calc, String url) {
-        home.clickOnEMICalculator(calc,url);
+        home.clickOnEMICalculator(calc, url);
     }
 
     @Then("Following options {string} should be displayed under RHS Section {string}")
     public void followingOptionsShouldBeDisplayedUnderRHSSection(String rhsoptions, String title) {
-        verifyRhs(title,rhsoptions,"");
+        verifyRhs(title, rhsoptions, "");
     }
 
     @Then("Document page should be displayed with {string}")
     public void documentPageShouldBeDisplayedWith(String string) {
-        verifyPageRedirectionUsingTagAndText("span",string,"");
+        verifyPageRedirectionUsingTagAndText("span", string, "");
 
     }
 
@@ -935,33 +941,33 @@ public void verifyAllIsDisplayedInHamburger(String string) {
 
     @When("Clicks on the {string} option type in Application Forms")
     public void clicksOnTheOptionTypeInApplicationForms(String string) {
-        home.clickOnAppFormsFooterOptions(string,"");
+        home.clickOnAppFormsFooterOptions(string, "");
     }
 
     @And("clicks on Footer Options and get texts")
     public void clicksOnFooterOptionsAndGetTexts() {
-        home.clickOnAppFormsFooterOptionstogettext("","");
+        home.clickOnAppFormsFooterOptionstogettext("", "");
     }
 
     @And("clicks on Footer Options in Middle Section and get texts")
     public void clicksOnFooterOptionsInMiddleSectionAndGetTexts() {
-        home.clickOnMiddleSectionFooterOptionstogettext("","");
+        home.clickOnMiddleSectionFooterOptionstogettext("", "");
     }
 
     @When("Clicks on a Tab {string} in Footer")
     public void clicksOnATabInFooter(String tab) {
-        home.clickOnFooterTabs(tab,"");
+        home.clickOnFooterTabs(tab, "");
 
     }
 
     @When("Clicks on the {string} option type in {string}")
     public void clicksOnTheOptionTypeIn(String option, String tab) {
-        home.clickOnFooterTabOptions(tab,option,"");
+        home.clickOnFooterTabOptions(tab, option, "");
     }
 
     @Then("Verify Customer Redirected to respective Social Media {string}")
     public void verifyCustomerRedirectedToRespectiveSocialMedia(String string) {
-        verifyRedirectioninNewTab(string,"");
+        verifyRedirectioninNewTab(string, "");
     }
 
     @When("Customer is able to view Our Companies section in footer")
@@ -977,13 +983,13 @@ public void verifyAllIsDisplayedInHamburger(String string) {
 
     @Then("Verify Customer Redirected to respective {string}")
     public void verifyCustomerRedirectedToRespective(String string) {
-        verifyRedirectioninNewTab(string,"");
+        verifyRedirectioninNewTab(string, "");
 
     }
 
     @Then("Verify Customer Redirected to respective {string} in same page")
     public void verifyCustomerRedirectedToRespectiveInSamePage(String string) {
-        verifyRedirectioninSameTab(string,"");
+        verifyRedirectioninSameTab(string, "");
     }
 
     @Then("Customer should be able to view Below address under Footer Section")
@@ -997,26 +1003,26 @@ public void verifyAllIsDisplayedInHamburger(String string) {
     @Then("Customer should be able to view the Details under following Titles:")
     public void customerShouldBeAbleToViewTheDetailsUnderFollowingTitles() {
         scrollToWebElement(HomePage.office_Regd);
-        verifyFieldsDisplayedUsingLocatorWithComment(HomePage.office_Regd,getText(HomePage.office_Regd));
-        verifyFieldDisplayedUsingTagAndText("p","Akurdi, Pune-411035","");
-        verifyFieldDisplayedUsingTagAndText("h3","Corporate Identity Number (CIN)","");
-        verifyFieldDisplayedUsingTagAndText("p","L65910MH1987PLC042961","");
-        verifyFieldDisplayedUsingTagAndText("h3","IRDAI Corporate Agency Registration Number","");
-        verifyFieldDisplayedUsingTagAndText("p","CA0101","");
-        verifyFieldDisplayedUsingTagAndText("h3","URN","");
-        verifyFieldDisplayedUsingTagAndText("p","WEB/BFL/20-21/1/V1","");
+        verifyFieldsDisplayedUsingLocatorWithComment(HomePage.office_Regd, getText(HomePage.office_Regd));
+        verifyFieldDisplayedUsingTagAndText("p", "Akurdi, Pune-411035", "");
+        verifyFieldDisplayedUsingTagAndText("h3", "Corporate Identity Number (CIN)", "");
+        verifyFieldDisplayedUsingTagAndText("p", "L65910MH1987PLC042961", "");
+        verifyFieldDisplayedUsingTagAndText("h3", "IRDAI Corporate Agency Registration Number", "");
+        verifyFieldDisplayedUsingTagAndText("p", "CA0101", "");
+        verifyFieldDisplayedUsingTagAndText("h3", "URN", "");
+        verifyFieldDisplayedUsingTagAndText("p", "WEB/BFL/20-21/1/V1", "");
     }
 
     @Then("Verify Customer Redirected to respective {string} in same Tab")
     public void verifyCustomerRedirectedToRespectiveInSameTab(String string) {
-        verifyRedirectioninSameTab(string,"");
+        verifyRedirectioninSameTab(string, "");
 
     }
 
-//    25052023
+    //    25052023
     @Then("verify User is redirected to respective URL {string} in the same Tab")
     public void verifyUserIsRedirectedToRespectiveURLInTheSameTab(String url) {
-        verifyRedirectionInCommon(url,"");
+        verifyRedirectionInCommon(url, "");
     }
 
     @Then("Customer should be able to view drawer/pop up for First time with Get your EMI Card Now CTA for PTB Customer")
@@ -1029,12 +1035,12 @@ public void verifyAllIsDisplayedInHamburger(String string) {
     /////Ravi
     @When("User is on Home Page for KYC Poup")
     public void user_is_on_home_page_for_kyc_poup() {
-        boolean flag =false;
+        boolean flag = false;
         flag = verifyFieldsDisplayedUsingLocator(HomePage.txt_Home);
 //hardRefresh();
         if (!flag) {
             ApplicationKeywords.quitBrowser = true;
-            GOR.login=false;
+            GOR.login = false;
             SoftAssertions sa = new SoftAssertions();
             testStepFailed("Login is Unsuccessfull");
             sa.fail("Login is Unsuccessful");
@@ -1043,6 +1049,53 @@ public void verifyAllIsDisplayedInHamburger(String string) {
         clickOnButtonUsingLocatorUsingForLoopWithoutFail(LoginPage.skip);
         //  clickOncloseButtonxPopup("close");
         homeUrl = driver.getCurrentUrl();
+    }
+
+
+    ///////////////////12062023
+    @When("Customer Clicks on Drop-down {string} & Hover over {string}")
+    public void customerClicksOnDropDownHoverOver(String hmOption, String suboption) {
+        clickOnButtonUsingTextUsingForLoop(hmOption);
+
+    }
+
+    @And("clicks on SubMenu{string}")
+    public void clicksOnSubMenu(String str1) {
+        home.clickOnHorizantalLevelTwoSubMenu(str1);
+    }
+
+    @And("clicks on SubOptionType{string} under SubMenu{string}")
+    public void clicksOnSubOptionTypeUnderSubMenu(String option, String menu) {
+        home.clickOnHorizantalMenuFinalOption(menu, option);
+    }
+
+    @And("clicks on {string} Button")
+    public void clicksOnButton(String btn) {
+        clickOnButtonUsingTextUsingForLoop(btn);
+    }
+
+    @When("Customer Clicks on {string} Drop-down")
+    public void customerClicksOnDropDown(String drop) {
+        home.clickOnHorizantalMenuMainOption(drop);
+    }
+
+    @And("Hover over {string}")
+    public void hoverOver(String opt) {
+        home.mouseHoverHorizantalSubMenu(opt);
+    }
+
+    @And("Closes the SignIn Popup")
+    public void closesTheSignInPopup() {
+        try {
+            String Locator = "Login Popup Close#xpath=//div[@class='customer_login']/descendant::a[@onclick='CloseData(RedirectionURL.LANDINGPAGE)'][1]";
+            if (isElementDisplayed(Locator)) {
+                clickOn(Locator, "");
+            } else {
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
 

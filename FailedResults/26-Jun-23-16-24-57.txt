@@ -1,0 +1,30 @@
+Overdue or missed EMIs Radio Button is Not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)- "CC Avenue" "UPI"Ò
+
+PROCEED button is Not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)- "CC Avenue" "UPI"Ò
+
+Overdue or missed EMIs Radio Button option has not redirected to Overdue or missed EMIs tab------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)- "CC Avenue" "UPI"Ò
+
+Proceed To Payment is Not Present in findElements------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)- "CC Avenue" "UPI"Ò
+
+Failed in verify Proceed To Payment button Is Displayed In The Page. Exception: class java.lang.NullPointerException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)- "CC Avenue" "UPI"Ò
+
+Proceed To Payment is Not Present in findElements------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)- "CC Avenue" "UPI"Ò
+
+Failed in click on Proceed To Payment button using for Loop. Exception: class java.lang.NullPointerException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)- "CC Avenue" "UPI"Ò
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/ActiveLoanPay?id=086069e8-2bb3-460b-b9af-d37742f9d472------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)- "CC Avenue" "UPI"Ò
+
+Expected URL : https://uatpayments.bajajfinserv.in/payments------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)- "CC Avenue" "UPI"Ò
+
+Gateway: CC Avenueis not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)- "CC Avenue" "UPI"Ò
+
+Select Payment: UPIis not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)- "CC Avenue" "UPI"Ò
+
+Failed in scroll To WebElement for Pay Amount Button. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)- "CC Avenue" "UPI"Ò
+
+Pay Amount Button is Not Present------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)- "CC Avenue" "UPI"Ò
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/ActiveLoanPay?id=086069e8-2bb3-460b-b9af-d37742f9d472------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)- "CC Avenue" "UPI"Ò
+
+Expected URL : https://secure.ccavenue.com/transaction.do------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for UPI (Overdue)- "CC Avenue" "UPI"Ò
+

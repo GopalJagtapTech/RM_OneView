@@ -1,0 +1,22 @@
+RHS Option Submit Form 15G/H in Insurance Service Pageis not Displayed------------>  To verify 15H form is displayed when customer is Individual , Resident and age >= 60 years.G
+
+FORM NO. 15H is Not Displayed in the Page------------>  To verify 15H form is displayed when customer is Individual , Resident and age >= 60 years.G
+
+RHS Option Submit Form 15G/H in Insurance Service Pageis not Displayed------------>  To verify 15G form is displayed when customer is Individual , Resident and age < 60 years.X
+
+FORM NO. 15G is Not Displayed in the Page------------>  To verify 15G form is displayed when customer is Individual , Resident and age < 60 years.X
+
+SYSTEMATIC DEPOSIT PLAN 581550 No. Tile is Not Displayed------------>  To verify customer is not allowed to submit TDS when income is more than 2.5 lakhs and age < 60 years£
+
+ Account Number 581550 is Not Redirected------------>  To verify customer is not allowed to submit TDS when income is more than 2.5 lakhs and age < 60 years£
+
+Not Redirected to Expected------------>  To verify customer is not allowed to submit TDS when income is more than 2.5 lakhs and age < 60 years£
+
+Unable to proceed is Not Present in findElements------------>  To verify customer is not allowed to submit TDS when income is more than 5 lakhs and age >= 60 years¹
+
+Failed in verify Fields Displayed Using Text Unable to proceed and For Loop. Exception: class java.lang.NullPointerException------------>  To verify customer is not allowed to submit TDS when income is more than 5 lakhs and age >= 60 years¹
+
+TDS waiver is not applicable if your FDs total interest amount is more than Rs 5lacs is Not Present in findElements------------>  To verify customer is not allowed to submit TDS when income is more than 5 lakhs and age >= 60 years¹
+
+Failed in verify Fields Displayed Using Text TDS waiver is not applicable if your FDs total interest amount is more than Rs 5lacs and For Loop. Exception: class java.lang.NullPointerException------------>  To verify customer is not allowed to submit TDS when income is more than 5 lakhs and age >= 60 years¹
+

@@ -338,7 +338,7 @@ public class PaymentsPage extends ApplicationKeywords {
             }
         } catch (Exception e) {
             e.printStackTrace();
-            testStepFailed("Failed in get min Value of Part Pre Payment. Exception: " + e.getClass());
+            testStepFailed("Failed in get max Value of Part Pre Payment. Exception: " + e.getClass());
         }
         return value;
     }
@@ -1182,6 +1182,9 @@ public class PaymentsPage extends ApplicationKeywords {
         }
     }
 
+    public static final String dropdown = "Advance Payment Amount#xpath=//select[@id='AdvEMI']";
+
+
     /////////03012023
     public void verifyAdvancePaymentsAmount(int Months, String extra) {
         try {
@@ -1719,7 +1722,7 @@ public class PaymentsPage extends ApplicationKeywords {
         try {
             if (isElementPresent(labelR)) {
                 scrollToWebElement(labelR);
-                clickOnIfDisplayed(labelR);
+                clickOn(labelR);
             } else {
                 testStepFailed(getRefOfXpath(labelR) + "is not Displayed");
             }
@@ -1751,7 +1754,7 @@ public class PaymentsPage extends ApplicationKeywords {
     public static final String payU_Back = "Back Button in PayU page#xpath=//i[@class='back']";
     public static final String cancel_Transaction_ccavenue_UPI = "cancel Transaction in cc avenue upi#xpath=//a[@title='Cancel Transaction']";
     public static final String cancel_Transaction_worldline_UPI = "cancel in world line upi#xpath=//div[@class='tabcontent checkout-active']//div[@class='checkout_btn_container']//span[@class='btnDeskCancel']";
-    public static final String cancel_CCavenuePage = "cancel in CC Avenue Page#xpath=//a[@class='primary-button primary-button-bg cancel radius4']";
+    public static final String cancel_CCavenuePage = "cancel in CC Avenue Page#xpath=//span[normalize-space(text())='Cancel']/parent::a";
     public static final String cancel_Net_Banking = "cancel in Net Banking Page#xpath=//input[@value='Cancel'][@id='CUSTOM_CANCEL']";
 
     public static final String enterAmount_Field = "Enter Amount Box in Payment Page#xpath=//input[@id='amountfield']";
@@ -1827,9 +1830,9 @@ public class PaymentsPage extends ApplicationKeywords {
 //        String labelR = "Tooltip for " + label + "#xpath=//strong[normalize-space(text())='" + label.trim() + "']//a//img";
         try {
             verifyFieldDisplayedUsingTagAndText("strong", Header.trim(), "");
-            advanceEMITooltipLabels(Payment,Labels, "");
-            advanceEMITooltipCharges(Payment,Charges, "");
-            advanceEMITooltipChargesAmounts(Payment,Charges, "");
+            advanceEMITooltipLabels(Payment, Labels, "");
+            advanceEMITooltipCharges(Payment, Charges, "");
+            advanceEMITooltipChargesAmounts(Payment, Charges, "");
             verifyButtonIsDisplayedInThePage("got it");
 
         } catch (Exception e) {
@@ -1883,31 +1886,31 @@ public class PaymentsPage extends ApplicationKeywords {
             String[] Options = Charges.split(", ");
             for (int i = 0; i < Options.length; i++) {
                 String option = Options[i];
-                if (Payment.equalsIgnoreCase("Advance EMI")){
-                String charge = "Charges " + option + "#xpath=//div[@id='advancedEMIDivShow']/descendant::div[@class='chargeTable']//tbody//tr//td[normalize-space(text())='" + option.trim() + "']";
-                if (isElementDisplayed(charge)) {
-                    testStepPassed(getRefOfXpath(charge) + " is Displayed Successfully");
-                } else {
-                    testStepFailed(getRefOfXpath(charge) + " is not Displayed");
+                if (Payment.equalsIgnoreCase("Advance EMI")) {
+                    String charge = "Charges " + option + "#xpath=//div[@id='advancedEMIDivShow']/descendant::div[@class='chargeTable']//tbody//tr//td[normalize-space(text())='" + option.trim() + "']";
+                    if (isElementDisplayed(charge)) {
+                        testStepPassed(getRefOfXpath(charge) + " is Displayed Successfully");
+                    } else {
+                        testStepFailed(getRefOfXpath(charge) + " is not Displayed");
+                    }
                 }
-            }
 
-                if (Payment.equalsIgnoreCase("Foreclosure")){
-                String charge = "Charges " + option + "#xpath=//div[@id='linkedLoanChargesDivShow']/descendant::div[@class='chargeTable']//tbody//tr//td[normalize-space(text())='" + option.trim() + "']";
-                if (isElementDisplayed(charge)) {
-                    testStepPassed(getRefOfXpath(charge) + " is Displayed Successfully");
-                } else {
-                    testStepFailed(getRefOfXpath(charge) + " is not Displayed");
+                if (Payment.equalsIgnoreCase("Foreclosure")) {
+                    String charge = "Charges " + option + "#xpath=//div[@id='linkedLoanChargesDivShow']/descendant::div[@class='chargeTable']//tbody//tr//td[normalize-space(text())='" + option.trim() + "']";
+                    if (isElementDisplayed(charge)) {
+                        testStepPassed(getRefOfXpath(charge) + " is Displayed Successfully");
+                    } else {
+                        testStepFailed(getRefOfXpath(charge) + " is not Displayed");
+                    }
                 }
-            }
-                if (Payment.equalsIgnoreCase("Overdue")){
-                String charge = "Charges " + option + "#xpath=//div[@id='ChargesDivShow']/descendant::div[@class='chargeTable']//tbody//tr//td[normalize-space(text())='" + option.trim() + "']";
-                if (isElementDisplayed(charge)) {
-                    testStepPassed(getRefOfXpath(charge) + " is Displayed Successfully");
-                } else {
-                    testStepFailed(getRefOfXpath(charge) + " is not Displayed");
+                if (Payment.equalsIgnoreCase("Overdue")) {
+                    String charge = "Charges " + option + "#xpath=//div[@id='ChargesDivShow']/descendant::div[@class='chargeTable']//tbody//tr//td[normalize-space(text())='" + option.trim() + "']";
+                    if (isElementDisplayed(charge)) {
+                        testStepPassed(getRefOfXpath(charge) + " is Displayed Successfully");
+                    } else {
+                        testStepFailed(getRefOfXpath(charge) + " is not Displayed");
+                    }
                 }
-            }
 
 
             }
@@ -1917,41 +1920,41 @@ public class PaymentsPage extends ApplicationKeywords {
         }
     }
 
-    public void advanceEMITooltipChargesAmounts(String Payment,String Charges, String extra) {
+    public void advanceEMITooltipChargesAmounts(String Payment, String Charges, String extra) {
         try {
             String[] Options = Charges.split(", ");
             for (int i = 0; i < Options.length; i++) {
                 String option = Options[i];
                 String charge = "Charges " + option + "#xpath=(//div[@id='advancedEMIDivShow']/descendant::div[@class='chargeTable']//tbody//tr//td[normalize-space(text())='" + option + "']/following-sibling::td)";
                 for (int j = 1; j <= sizeOfLocator(charge); j++) {
-                    if (Payment.equalsIgnoreCase("Advance EMI")){
-                    String charges = "Charges: " + j + "for " + option + "#xpath=(//div[@id='advancedEMIDivShow']/descendant::div[@class='chargeTable']//tbody//tr//td[normalize-space(text())='" + option + "']/following-sibling::td)[" + j + "]";
-                    if (isElementDisplayed(charges)) {
-                        testStepPassed(getRefOfXpath(charges) + " is Displayed Successfully: " + getText(charges));
-                    } else {
-                        testStepFailed(getRefOfXpath(charges) + "is not Displayed");
+                    if (Payment.equalsIgnoreCase("Advance EMI")) {
+                        String charges = "Charges: " + j + "for " + option + "#xpath=(//div[@id='advancedEMIDivShow']/descendant::div[@class='chargeTable']//tbody//tr//td[normalize-space(text())='" + option + "']/following-sibling::td)[" + j + "]";
+                        if (isElementDisplayed(charges)) {
+                            testStepPassed(getRefOfXpath(charges) + " is Displayed Successfully: " + getText(charges));
+                        } else {
+                            testStepFailed(getRefOfXpath(charges) + "is not Displayed");
+                        }
                     }
-                }
 
-                    if (Payment.equalsIgnoreCase("Foreclosure")){
-                    String charges = "Charges: " + j + "for " + option + "#xpath=(//div[@id='linkedLoanChargesDivShow']/descendant::div[@class='chargeTable']//tbody//tr//td[normalize-space(text())='" + option + "']/following-sibling::td)[" + j + "]";
-                    if (isElementDisplayed(charges)) {
-                        testStepPassed(getRefOfXpath(charges) + " is Displayed Successfully: " + getText(charges));
-                    } else {
-                        testStepFailed(getRefOfXpath(charges) + "is not Displayed");
+                    if (Payment.equalsIgnoreCase("Foreclosure")) {
+                        String charges = "Charges: " + j + "for " + option + "#xpath=(//div[@id='linkedLoanChargesDivShow']/descendant::div[@class='chargeTable']//tbody//tr//td[normalize-space(text())='" + option + "']/following-sibling::td)[" + j + "]";
+                        if (isElementDisplayed(charges)) {
+                            testStepPassed(getRefOfXpath(charges) + " is Displayed Successfully: " + getText(charges));
+                        } else {
+                            testStepFailed(getRefOfXpath(charges) + "is not Displayed");
+                        }
                     }
-                }
 
-                    if (Payment.equalsIgnoreCase("Overdue")){
-                    String charges = "Charges: " + j + "for " + option + "#xpath=(//div[@id='ChargesDivShow']/descendant::div[@class='chargeTable']//tbody//tr//td[normalize-space(text())='" + option + "']/following-sibling::td)[" + j + "]";
-                    if (isElementDisplayed(charges)) {
-                        testStepPassed(getRefOfXpath(charges) + " is Displayed Successfully: " + getText(charges));
-                    } else {
-                        testStepFailed(getRefOfXpath(charges) + "is not Displayed");
+                    if (Payment.equalsIgnoreCase("Overdue")) {
+                        String charges = "Charges: " + j + "for " + option + "#xpath=(//div[@id='ChargesDivShow']/descendant::div[@class='chargeTable']//tbody//tr//td[normalize-space(text())='" + option + "']/following-sibling::td)[" + j + "]";
+                        if (isElementDisplayed(charges)) {
+                            testStepPassed(getRefOfXpath(charges) + " is Displayed Successfully: " + getText(charges));
+                        } else {
+                            testStepFailed(getRefOfXpath(charges) + "is not Displayed");
+                        }
                     }
-                }
 
-            }
+                }
 
             }
         } catch (Exception e) {
@@ -1977,9 +1980,9 @@ public class PaymentsPage extends ApplicationKeywords {
     public void clickOnButtonUsingTextUsingForLoopInPopUp(String buttonText) {
         try {
             Boolean flag = false;
-            String locator = buttonText+"#xpath=//a[normalize-space(text())='" + buttonText + "']|//button[normalize-space(text())='" + buttonText + "']|//input[@value='"+buttonText.trim()+"']";
+            String locator = buttonText + "#xpath=//a[normalize-space(text())='" + buttonText + "']|//button[normalize-space(text())='" + buttonText + "']|//input[@value='" + buttonText.trim() + "']";
             for (int i = 1; i <= findWebElements(locator).size(); i++) {
-                String button = "" + buttonText + " Button#xpath=(//a[normalize-space(text())='" + buttonText + "']|//button[normalize-space(text())='" + buttonText + "']|//input[@value='"+buttonText.trim()+"'])[" + i + "]";
+                String button = "" + buttonText + " Button#xpath=(//a[normalize-space(text())='" + buttonText + "']|//button[normalize-space(text())='" + buttonText + "']|//input[@value='" + buttonText.trim() + "'])[" + i + "]";
 //                    scrollToWebElementIfPresent(button);
                 if (isElementDisplayed(button)) {
                     manualScreenshot(buttonText + " button is Displayed successfully");
@@ -1989,12 +1992,13 @@ public class PaymentsPage extends ApplicationKeywords {
                 if (!flag) {
                     testStepFailed(buttonText + " button is Not Displayed");
                 }
-            } }catch (Exception e) {
-                e.printStackTrace();
-                testStepFailed("Failed in click on "+buttonText+" button using for Loop in Popup. Exception: " + e.getClass());
             }
-
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in click on " + buttonText + " button using for Loop in Popup. Exception: " + e.getClass());
         }
+
+    }
 
     public void clickOnButtonUsingTextUsingForLoopifDisplayed(String buttonText) {
         try {
@@ -2007,7 +2011,7 @@ public class PaymentsPage extends ApplicationKeywords {
                     clickOn(button);
                     waitForPageToLoad();
                     break;
-                }else {
+                } else {
                     testStepInfo("No Popup Displayed for this Payment type");
                 }
             }
@@ -2018,6 +2022,215 @@ public class PaymentsPage extends ApplicationKeywords {
 
     }
 
+    ///////////////Settlement Payments
+    public static final String settPay = "Settlement Payment Amount Range#xpath=//div[@class='activelons']//div[@class='field_hint_ps' and not(@style='color: red;')]";
+    public static final String inputSettPay = "Settlement Payment Amount Input Box#xpath=//input[@id='settleAmountfield']";
+
+    public int getMinValueOfSettlementPayment() {
+        int value = 0;
+        try {
+            if (isElementDisplayed(settPay)) {
+                String text = getText(settPay);
+                String[] split = text.split(" Rs. ");
+                value = Integer.parseInt(split[1].split(" ")[0].replaceAll(",", "").trim());
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in get min Value of Settlement Payment. Exception: " + e.getClass());
+        }
+        return value;
+    }
+
+    public int getMaxValueOfSettlementPayment() {
+        int value = 0;
+        try {
+            if (isElementDisplayed(settPay)) {
+                String text = getText(settPay);
+                String[] split = text.split(" Rs. ");
+                value = Integer.parseInt(split[2].trim().replaceAll(",", "").trim());
+                if (String.valueOf(value).contains(".")) {
+                    value = Integer.parseInt(String.valueOf(value).split(".")[0]);
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in get max Value of Settlement Payment. Exception: " + e.getClass());
+        }
+        return value;
+    }
+
+    public void minValueSettlementPayment() {
+        try {
+            String min = String.valueOf(getMinValueOfSettlementPayment());
+            testStepInfo("Minimum Value is " + min);
+            if (min.equals("1")) {
+                testStepPassed("Minimum Amount is being displayed as 1");
+            } else {
+                testStepFailed("Minimum Amount is not displayed as 1. Displayed Value: " + min);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in min Value Settlement Payment. Exception: " + e.getClass());
+
+        }
+    }
+
+    public void accValueSettlementPayment() {
+        try {
+            String min = String.valueOf(getMinValueOfSettlementPayment());
+            testStepInfo("Minimum Value is " + min);
+            clearEditBox(inputSettPay);
+            int minimum = Integer.parseInt(min);
+            typeIn(inputSettPay, String.valueOf(minimum + 10));
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in min Value Settlement Payment. Exception: " + e.getClass());
+
+        }
+    }
+
+
+    public void maxValueDisplayedTextBoxSettlementPayment() {
+        try {
+            String max = String.valueOf(getMaxValueOfSettlementPayment());
+            String inputValue = getAttributeValue(inputSettPay);
+
+            testStepInfo("Maximum Value is " + max);
+            testStepInfo("Input Box Value is " + inputValue);
+
+            if (max.equals(inputValue)) {
+                testStepPassed("Maximum Value is Autopopulated in Input Box");
+
+            } else {
+                testStepFailed("Maximum Value is not Autopopulated in Input Box. Populated Value = " + inputValue);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in max Value Displayed TextBox Settlement Payment. Exception: " + e.getClass());
+
+        }
+    }
+
+
+    public void verifySettlementpaymentTextBoxWithNegative() {
+        try {
+            String errMsg_paymentRangetxt = "Error Message for Settlement payment range Text Box#xpath=//div[@class='field_hint_ps' and (@style='color: red;')]";
+            String txtBox_PartPrePayment = "Settlement payment range Text Box#xpath=//input[@name='amount']";
+
+            String min = String.valueOf(getMinValueOfSettlementPayment());
+            String max = String.valueOf(getMaxValueOfSettlementPayment());
+            Boolean flag = false;
+            if (isElementDisplayed(inputSettPay)) {
+                flag = true;
+                clearEditBox(inputSettPay);
+                int minimum = Integer.parseInt(min);
+                typeIn(inputSettPay, String.valueOf(minimum - 1));
+                waitTime(2);
+                if (isElementDisplayed(errMsg_paymentRangetxt)) {
+                    manualScreenshot(getText(errMsg_paymentRangetxt) + " Error Message is Displayed Successfully");
+                    verifyButtonIsDisabledInThePageusingText("Proceed To Payment");
+
+                } else {
+                    testStepFailed(getRefOfXpath(errMsg_paymentRangetxt) + " is Not Displayed");
+                }
+            } else {
+                testStepFailed(getRefOfXpath(inputSettPay) + " is Not Displayed");
+            }
+            if (flag) {
+                clearEditBox(inputSettPay);
+                int maximum = Integer.parseInt(max);
+                typeIn(inputSettPay, String.valueOf(maximum + 1));
+                if (isElementDisplayed(errMsg_paymentRangetxt)) {
+                    manualScreenshot(getText(errMsg_paymentRangetxt) + " Error Message is Displayed Successfully");
+                    verifyButtonIsDisabledInThePageusingText("Proceed To Payment");
+                } else {
+                    testStepFailed(getRefOfXpath(errMsg_paymentRangetxt) + " is Not Displayed");
+                }
+
+            } else {
+                testStepFailed(getRefOfXpath(paymentRangetxt) + " is Not Displayed");
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Settlement payment Text Box With Negative. Exception: " + e.getClass());
+        }
+    }
+
+
+    public void verifyLabelsSettPayment(String labelswithComma,String labelswithComma2, String extra) {
+        try {
+            String[] split = labelswithComma.split(",");
+            for (int i = 0; i < split.length; i++) {
+                String value = split[i];
+                verifyValueUsingLabel("//div[@class='Payment_Details_list mobile_padd']//ul//li//p", value, "/../div/strong", "");
+            }
+
+            String[] split1 = labelswithComma2.split(",");
+            for (int i = 0; i < split1.length; i++) {
+                String value = split1[i];
+                verifyValueUsingLabel("//div[@class='Payment_Details_list mobile_padd']//ul//li//p", value, "/following-sibling::strong", "");
+            }
+
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Labels Sett Payment. Exception: " + e.getClass());
+
+        }
+    }
+
+    public void verifySettPaymentSchedule(String labelswithHash, String extra) {
+        try {
+            verifyFieldDisplayedUsingTagAndText("strong", "Settlement Payment Schedule", "");
+            verifyFieldsUsingCommonXpathAndMultipleTextWithHash("//div[@class='payment_confirmation']/descendant::table//th", labelswithHash, "");
+            String table = "Settlement payment Schedule#xpath=//div[@class='payment_confirmation']/descendant::table//tr";
+            int columns = sizeOfLocator(table);
+            for (int i = 2; i <= columns; i++) {
+                String tableInd = "Settlement payment Schedule#xpath=(//div[@class='payment_confirmation']/descendant::table//tr)[" + i + "]";
+                verifyElementIsDisplayedAndGetText(tableInd);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Sett Payment Schedule. Exception: " + e.getClass());
+
+        }
+    }
+
+    public void verifyContactLabelsSettPayment(String labelswithComma, String extra) {
+        try {
+            String title = "Settlement payment Contact Details Header#xpath=//h2[@class='j_h2_title']";
+            verifyElementIsDisplayedAndGetText(title);
+
+            String[] split = labelswithComma.split(",");
+            for (int i = 0; i < split.length; i++) {
+                String value = split[i];
+                verifyValueUsingLabel("//div[@class='emobile_data']/p", value, "/following-sibling::strong", "");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Contact Labels Sett Payment. Exception: " + e.getClass());
+
+        }
+    }
+
+    public void verifyUnsuccessPaymentsSettPayment(String labelswithComma, String option, String extra) {
+        try {
+            verifyValueUsingLabel("//div[@class='a_mangate_detail new_border_bottom']/ul/li/p", option, "/..//li/p", "");
+            String[] split = labelswithComma.split(",");
+            for (int i = 0; i < split.length; i++) {
+                String value = split[i];
+                verifyValueUsingLabel("//div[@class='a_mangate_detail new_border_bottom']/ul/li/p", value, "/following-sibling::p", "");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Unsuccess Payments Sett Payment. Exception: " + e.getClass());
+
+        }
+    }
 
 
 }

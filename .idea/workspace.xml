@@ -56,8 +56,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last.edited.regexp" value="555555555" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/Features/JuneCRs/NewCarFinance" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -69,18 +69,18 @@
       <recent name="testRunner" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OneDrive - Indium Software India Private Limited\Data\Official\AzurePackage\ExperiaPortal_Tasks\src\main\resources\Features\JuneCRs\NewCarFinance" />
       <recent name="D:\OneDrive - Indium Software India Private Limited\Data\Official\STABILIZED Packages\FInal Package Integration\ReImagine_20062023\Drivers" />
       <recent name="D:\OneDrive - Indium Software India Private Limited\Data\Official\STABILIZED Packages\FInal Package Integration\ReImagine_20062023\src\test\java\PageObjects" />
       <recent name="D:\Data\Official\Projects Live\EXPERIA Re-Imagine\Packages\February\ReImagine_16052023\src\main\resources\Features\Sprint_2\Services\FdServices\FixedDepositRhs\RenewYourFd" />
       <recent name="D:\Data\Official\Projects Live\EXPERIA Re-Imagine\Packages\February\ReImagine_31032023\src\main\resources\Features_Single\Sprint_1\NewHome" />
-      <recent name="D:\Data\Official\Projects Live\EXPERIA Re-Imagine\Packages\February\ReImagine_31032023\Drivers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OneDrive - Indium Software India Private Limited\Data\Official\AzurePackage\ExperiaPortal_Tasks\src\main\resources\Features\JuneCRs" />
       <recent name="D:\OneDrive - Indium Software India Private Limited\Data\Official\STABILIZED Packages\FInal Package Integration\ReImagine_20062023\src\main\resources\Features_Login" />
       <recent name="D:\OneDrive - Indium Software India Private Limited\Data\Official\STABILIZED Packages\FInal Package Integration\ReImagine_20062023\src\main\resources\Features\AprilCRs" />
       <recent name="D:\Data\Official\Projects Live\EXPERIA Re-Imagine\Packages\January 2023\ReImagine_09012023\src\main\resources\FeaturesTesting" />
       <recent name="D:\Data\Official\Projects Live\EXPERIA Re-Imagine\Packages\December 2022\20-12-2022\ReImagine_23122022\src\main\resources\Features\Sprint_2\Services\LoanServices" />
-      <recent name="D:\Data\Official\Projects Live\EXPERIA Re-Imagine\Packages\December 2022\20-12-2022\ReImagine_23122022\src\main\resources\Features\Sprint_2\Services\FdServices" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="PageObjects" />
@@ -96,14 +96,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestRunnerLogin">
-    <configuration name="Run" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Run" />
-      <module name="ReImagine_16052023" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestRunner">
     <configuration name="Scenario: Active Term Loan - Relationship Section - Loan Details" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <output_file path="$PROJECT_DIR$/.." is_save="true" />
@@ -126,7 +119,7 @@
       </method>
     </configuration>
     <configuration name="TestFailedReRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ReImagine_16052023" />
+      <module name="ExperiaPortal_Tasks" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="testRunner.*" />
@@ -140,8 +133,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRunner (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ReImagine_16052023" />
+    <configuration name="TestFailedReRunnerLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExperiaPortal_Tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestRunnerLogin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestRunnerLogin" />
+      <option name="MAIN_CLASS_NAME" value="TestRunnerLogin.TestFailedReRunnerLogin" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExperiaPortal_Tasks" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="testRunner.*" />
@@ -150,13 +158,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="testRunner" />
       <option name="MAIN_CLASS_NAME" value="testRunner.TestRunner" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="TestRunnerLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ReImagine_20062023" />
+      <module name="ExperiaPortal_Tasks" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="TestRunnerLogin.*" />
@@ -165,13 +174,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="TestRunnerLogin" />
       <option name="MAIN_CLASS_NAME" value="TestRunnerLogin.TestRunnerLogin" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRunnerSingle (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ReImagine_16052023" />
+    <configuration name="TestRunnerSingle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ExperiaPortal_Tasks" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="testRunnerSingle.*" />
@@ -187,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestRunnerLogin" />
-        <item itemvalue="Application.Run" />
-        <item itemvalue="JUnit.TestRunnerSingle (1)" />
+        <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="JUnit.TestFailedReRunner" />
-        <item itemvalue="JUnit.TestRunner (1)" />
+        <item itemvalue="JUnit.TestRunnerSingle" />
+        <item itemvalue="JUnit.TestRunnerLogin" />
+        <item itemvalue="JUnit.TestFailedReRunnerLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -210,17 +220,28 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PageObjects/FDServicesPage.java</url>
-          <line>866</line>
+          <line>869</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/base/ApplicationKeywords.java</url>
-          <line>2684</line>
+          <line>2715</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -230,7 +251,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/PageObjects/NewHomePage.java</url>
-          <line>110</line>
+          <line>111</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -275,7 +296,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/stepDefinitions/NewHomeSteps.java</url>
-          <line>269</line>
+          <line>274</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -287,9 +308,15 @@
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
+        <PinnedItemInfo parentTag="io.cucumber.core.runner.TestAbortedExceptions$$Lambda$239/0x0000000800def468" memberName="arg$1" />
+        <PinnedItemInfo parentTag="io.cucumber.core.runner.PickleStepTestStep" memberName="step" />
         <PinnedItemInfo parentTag="org.json.JSONArray" memberName="myArrayList" />
       </pinned-members>
     </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SeleniumCuc$Feature__GL_Validation.ic" NAME="Feature: GL_Validation Coverage Results" MODIFIED="1638358802390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

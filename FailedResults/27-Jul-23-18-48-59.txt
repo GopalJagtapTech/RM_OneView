@@ -1,0 +1,24 @@
+For Label Entity Name  is not Displayed------------>  To verify the content on Self Employed tab - Selfƣ
+
+For Label Business Structure  is not Displayed------------>  To verify the content on Self Employed tab - Selfƣ
+
+For Label Profession  is not Displayed------------>  To verify the content on Professional tabȎ
+
+For Label Medical Degree  is not Displayed------------>  To verify the content on Professional tabȎ
+
+For Label Medical Specialization number  is not Displayed------------>  To verify the content on Professional tabȎ
+
+For Label Years  is not Displayed------------>  To verify the content on Professional tabȎ
+
+For Label Months  is not Displayed------------>  To verify the content on Professional tabȎ
+
+For Label Medical Degree Asterics  is Not Displayed------------>  To verify that asterisks are displayed for mandatory fields - ProfessionalȜ
+
+For Label Medical Specialization number Asterics  is Not Displayed------------>  To verify that asterisks are displayed for mandatory fields - ProfessionalȜ
+
+Dropdown Option-Medical Degree in Profession Dropdown of Professional Tabis not Clicked------------>  To verify that validation message is displayed when clicks SUBMIT Button without Document selection - ProfessioanalɄ
+
+Failed in Type In Membership Number Box for Professional value as 12345. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To verify that validation message is displayed when clicks SUBMIT Button without Document selection - ProfessioanalɄ
+
+For Label Share details about the nature of your work  is not Displayed------------>  To verify the content on Others tabɳ
+

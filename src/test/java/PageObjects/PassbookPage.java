@@ -18,7 +18,7 @@ public class PassbookPage extends ApplicationKeywords {
     public static final String bills_And_Recharge_List = "Bills And Recharge#xpath=//div[@class='passbook_list_data']";
     public static final String faq_Icon = "FAQ Icon#xpath=//a/p[contains(text(),'FAQ')]";
     public static final String raise_A_Request_Icon = "Raise A Request#xpath=//a/p[text()='Raise a Request']";
-    public static final String preapproved_Offers_List = "PreApproved Offer List#xpath=//div[@role='listbox']/li";
+    public static final String preapproved_Offers_List = "PreApproved Offer List#xpath=//div[@role='listbox']";
     public static final String search_Passbook = "Passbook Search#xpath=//input[@id='searchInPassbook']";
     public static final String btnViewMore_Passbook = "Passbook ViewMoreBtn#xpath=//div[@class='passbook_list']//a[@id='showMoreBBPS']";
     public static final String wallet_Passbook = "Passbook Wallet#xpath=//div[@class='passbook_tab']//a[@id='walletTabValue']";
@@ -1198,6 +1198,81 @@ Bills & Recharges
         }
         return flag;
     }
+
+/////////0708
+
+    public void verifyOptionsinPassbookPageNtb() {
+
+        try {
+            verifyElementIsDisplayedUsingLocator(filter_Passbook);
+//            verifyElementIsDisplayedUsingLocator(preapproved_Offers_List);
+            verifyElementIsDisplayedUsingLocator(search_Passbook);
+            verifyElementIsDisplayedUsingLocator(wallet_Tab);
+            verifyElementIsDisplayedUsingLocator(bills_Tab);
+            verifyElementIsDisplayedUsingLocator(static_Msg);
+//            verifyElementIsDisplayedUsingLocator(download_App);
+            verifyElementIsDisplayedUsingLocator(tiles_Section);
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verifyOptionsinPassbookPage.Exception:" + e.getClass());
+        }
+
+    }
+
+    ///////080823
+    public void verifyOptionsinPassbookPagePTB() {
+
+        try {
+            verifyElementIsDisplayedUsingLocator(filter_Passbook);
+            verifyElementIsDisplayedUsingLocator(preapproved_Offers_List);
+            verifyElementIsDisplayedUsingLocator(search_Passbook);
+            verifyElementIsDisplayedUsingLocator(wallet_Tab);
+            verifyElementIsDisplayedUsingLocator(bills_Tab);
+            verifyElementIsDisplayedUsingLocator(static_Msg);
+//            verifyElementIsDisplayedUsingLocator(download_App);
+            verifyElementIsDisplayedUsingLocator(tiles_Section);
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Options in PassbookPage PTB.Exception:" + e.getClass());
+        }
+
+    }
+
+//////////////////////0808
+public void verifyTransactionTileContents(String type,String extra) {
+    try {
+        String transaction = "Transactions in "+type+"#xpath=//div[@class='comlogo']";
+        if (isElementPresent(transaction)) {
+            int size = sizeOfLocator(transaction);
+            testStepInfo("Total Transactions in "+type+" are " + size);
+            for (int i = 1; i <= 5; i++) {
+                String logo = "Logo for transaction " + i + " in "+type+"#xpath=(//div[@class='comlogo']/img)[" + i + "]";
+                String trans = "Transaction Details for transaction " + i + " in "+type+"#xpath=(//div[@class='company_data'])[" + i + "]";
+                String paydata = "Payment Data for transaction " + i + " in "+type+"#xpath=(//div[@class='paymentdata'])[" + i + "]";
+                String Arrow = "Arrow for transaction " + i + " in "+type+"#xpath=(//div[@class='paymentdata']/strong/img)[" + i + "]";
+                String paytype = "Payment type image for transaction " + i + " in "+type+"#xpath=(//div[@class='listclass']/ul/li/img)[" + i + "]";
+                verifyElementIsDisplayedOrNot(logo);
+                verifyElementIsDisplayedAndGetText(trans);
+                verifyElementIsDisplayedAndGetText(paydata);
+                verifyElementIsDisplayedOrNot(Arrow);
+                verifyElementIsDisplayedOrNot(paytype);
+                if (isElementDisplayed(viewMore_Button)) {
+                    clickOn(viewMore_Button);
+                }
+
+            }
+        } else {
+            testStepFailed(getRefOfXpath(transaction) + " is not Present");
+        }
+
+    } catch (Exception e) {
+        e.printStackTrace();
+        testStepFailed("failed in verify Transaction Tile Contents. Exception: " + e.getClass());
+
+    }
+}
+
+
 
 
 }

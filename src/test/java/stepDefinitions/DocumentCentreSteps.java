@@ -319,4 +319,46 @@ public class DocumentCentreSteps extends ApplicationKeywords {
     public void activeInsuranceShouldBeDisplayedBeforeCancelledSurrenderedAndClosedInsurance() {
         doccentre.insuranceCardsOrder();
     }
+
+
+    @Then("Then a drawer or pop-up should be displayed with below details for {string}")
+    public void thenADrawerOrPopUpShouldBeDisplayedWithBelowDetailsFor(String string) {
+        doccentre.docPopupLafd(string, "");
+    }
+
+    @Then("Below list of documents {string} should be displayed in Popup")
+    public void belowListOfDocumentsShouldBeDisplayedInPopup(String string) {
+        verifyFieldsUsingCommonXpathAndMultipleTextWithHash("//div[@class='horizontal_dc_statement_reciept']//p", string, "");
+    }
+
+    @Then("On click on download sign of pop-up for {string}, then that document should be downloaded in pdf format {string}")
+    public void onClickOnDownloadSignOfPopUpForThenThatDocumentShouldBeDownloadedInPdfFormat(String doc, String down) {
+        doccentre.downloadFileandverifyFormatPopup(doc, down);
+    }
+
+    @And("click on {string} hyperlink")
+    public void clickOnHyperlink(String string) {
+        clickOnButtonUsingTextUsingForLoop(string);
+    }
+
+    @Then("{string} should not be displayed in document list page")
+    public void shouldNotBeDisplayedInDocumentListPage(String doc) {
+        verifyFieldsNotDisplayedUsingCommonXpathAndMultipleTextWithHash("//p", doc, "");
+
+    }
+
+    @Then("On click on download sign of pop-up for {string}")
+    public void onClickOnDownloadSignOfPopUpFor(String name) {
+        doccentre.downloadFilInPopup(name);
+    }
+
+    @Then("Customer should be redirected {string} to Form {int}GH page on new Tab")
+    public void customerShouldBeRedirectedToFormGHPageOnNewTab(String url, int arg1) {
+        doccentre.verifyRedirectionForm15GH(url, "");
+    }
+
+    @And("Click on DOWNLOAD CTA in Form {int}GH page - {string}, {string} should be downloaded")
+    public void clickOnDOWNLOADCTAInFormGHPageShouldBeDownloaded(int url1, String url, String doc) {
+        doccentre.verifyDownloadForm15GH(url, doc, "");
+    }
 }

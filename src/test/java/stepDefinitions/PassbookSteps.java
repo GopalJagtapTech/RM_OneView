@@ -571,4 +571,14 @@ public class PassbookSteps extends ApplicationKeywords {
     public void verifyTheContentsInTransactionsInWallet() {
         Passbook.verifyWalletTransactionTileContents("");
     }
+
+    @And("verify the options visible when customer is on Bills and Recharge section for {string}")
+    public void verifyTheOptionsVisibleWhenCustomerIsOnBillsAndRechargeSectionFor(String arg0) {
+        Passbook.verifyOptionsinPassbookPagePTB();
+    }
+
+    @Then("{string} should be displayed along with below details for each transaction")
+    public void shouldBeDisplayedAlongWithBelowDetailsForEachTransaction(String str) {
+        Passbook.verifyTransactionTileContents(str,"");
+    }
 }

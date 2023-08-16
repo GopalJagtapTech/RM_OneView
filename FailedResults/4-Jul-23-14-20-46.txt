@@ -1,0 +1,10 @@
+Home Page Text is Not Verified------------>  To verify after proceeding with Settlement Payment option we are redirected to Settlement details page
+
+Login is Unsuccessfull------------>  To verify after proceeding with Settlement Payment option we are redirected to Settlement details page
+
+Sign Out Button is Not Present------------>  To verify after proceeding with Settlement Payment option we are redirected to Settlement details page
+
+Failed in get Attribute in text box. Exception: class PageObjects.PaymentsPage------------>  To verify maximum amount is prepopulated in Enter amount field2
+
+Maximum Value is Autopopulated in Input Box. Populated Value = ------------>  To verify maximum amount is prepopulated in Enter amount field2
+

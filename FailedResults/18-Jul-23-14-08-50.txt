@@ -1,0 +1,18 @@
+Redirected Header is not Matched------------>  To verify minimum amount is displayed as Rs.1"
+
+You can pay an EMI in advance, part-prepay or foreclose your loan. is Not Present------------>  To verify minimum amount is displayed as Rs.1"
+
+LAN: 410PMTEW457223 is Not Present------------>  To verify minimum amount is displayed as Rs.1"
+
+Settlement Payment Radio Button is Not Displayed------------>  To verify minimum amount is displayed as Rs.1"
+
+PROCEED button is Not Displayed------------>  To verify minimum amount is displayed as Rs.1"
+
+Settlement Payment Radio Button option has not redirected to Settlement Payment tab------------>  To verify minimum amount is displayed as Rs.1"
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/ActiveLoanPay?id=3c02465c-ed7f-4444-a42f-146cf7af27b5------------>  To verify minimum amount is displayed as Rs.1"
+
+Expected URL : MyAccountPayments/LoanPay/SettlementPay------------>  To verify minimum amount is displayed as Rs.1"
+
+Minimum Amount is not displayed as 1. Displayed Value: 0------------>  To verify minimum amount is displayed as Rs.1"
+

@@ -1,0 +1,122 @@
+Failed in scroll To WebElement for Processing Fee Label. Exception: class org.openqa.selenium.NoSuchElementException------------>  EMI Card Services-add additional charges, nomenclature and amount change in the Fees and Charges Section.
+
+Processing Fee is not displayed------------>  EMI Card Services-add additional charges, nomenclature and amount change in the Fees and Charges Section.
+
+Failed in scroll To WebElement for Bounce Charge Label. Exception: class org.openqa.selenium.NoSuchElementException------------>  EMI Card Services-add additional charges, nomenclature and amount change in the Fees and Charges Section.
+
+Bounce Charge is not displayed------------>  EMI Card Services-add additional charges, nomenclature and amount change in the Fees and Charges Section.
+
+Penal Interest is not displayed------------>  EMI Card Services-add additional charges, nomenclature and amount change in the Fees and Charges Section.
+
+Failed in scroll To WebElement for Mandate Rejection Charge Label. Exception: class org.openqa.selenium.NoSuchElementException------------>  EMI Card Services-add additional charges, nomenclature and amount change in the Fees and Charges Section.
+
+Mandate Rejection Charge is not displayed------------>  EMI Card Services-add additional charges, nomenclature and amount change in the Fees and Charges Section.
+
+Failed in scroll To WebElement for Mandate Registration Charge Label. Exception: class org.openqa.selenium.NoSuchElementException------------>  EMI Card Services-add additional charges, nomenclature and amount change in the Fees and Charges Section.
+
+Mandate Registration Charge is not displayed------------>  EMI Card Services-add additional charges, nomenclature and amount change in the Fees and Charges Section.
+
+Failed in scroll To WebElement for Loan Enhancement Fee Label. Exception: class org.openqa.selenium.NoSuchElementException------------>  EMI Card Services-add additional charges, nomenclature and amount change in the Fees and Charges Section.
+
+Loan Enhancement Fee is not displayed------------>  EMI Card Services-add additional charges, nomenclature and amount change in the Fees and Charges Section.
+
+Failed in scroll To WebElement for Convenience Fee Label. Exception: class org.openqa.selenium.NoSuchElementException------------>  EMI Card Services-add additional charges, nomenclature and amount change in the Fees and Charges Section.
+
+Convenience Fee is not displayed------------>  EMI Card Services-add additional charges, nomenclature and amount change in the Fees and Charges Section.
+
+Document Statement Charges is not displayed------------>  EMI Card Services-add additional charges, nomenclature and amount change in the Fees and Charges Section.
+
+Additional Cess is not displayed------------>  EMI Card Services-add additional charges, nomenclature and amount change in the Fees and Charges Section.
+
+We are currently unable to unblock your card as per inline policies. is Not Present------------>  EMI Card Services –Unblock-Content Change-Functionality3
+
+Home Page Text is Not Verified------------>  EMI Card Services-Redirection to RAR PageT
+
+Login is Unsuccessfull------------>  EMI Card Services-Redirection to RAR PageT
+
+Quick Actions  is not present------------>  EMI Card Services-Quick Actions Blocked Cardb
+
+Failed in scroll To WebElement for Quick Actions . Exception: class org.openqa.selenium.NoSuchElementException------------>  EMI Card Services-Quick Actions Blocked Cardb
+
+Quick Actions  is Not Present------------>  EMI Card Services-Quick Actions Blocked Cardb
+
+Failed in Click On Quick Actions . Exception: class org.openqa.selenium.NoSuchElementException------------>  EMI Card Services-Quick Actions Blocked Cardb
+
+The given window "2" is failed to open------------>  EMI Card Services-Quick Actions Blocked Cardb
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/health-emi-network-card------------>  EMI Card Services-Quick Actions Blocked Cardb
+
+Expected URL : https://www.bajajmall.in/emi-store------------>  EMI Card Services-Quick Actions Blocked Cardb
+
+View Statements  is not present------------>  EMI Card Services-Quick Actions Blocked Cardb
+
+Failed in scroll To WebElement for View Statements . Exception: class org.openqa.selenium.NoSuchElementException------------>  EMI Card Services-Quick Actions Blocked Cardb
+
+View Statements  is Not Present------------>  EMI Card Services-Quick Actions Blocked Cardb
+
+Failed in Click On View Statements . Exception: class org.openqa.selenium.NoSuchElementException------------>  EMI Card Services-Quick Actions Blocked Cardb
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/health-emi-network-card------------>  EMI Card Services-Quick Actions Blocked Cardb
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountDocumentCenter/DocumentCenter------------>  EMI Card Services-Quick Actions Blocked Cardb
+
+Locate Stores in Quick Actions is not present------------>  EMI Card Services-Quick Actions Blocked Cardb
+
+Failed in scroll To WebElement for Locate Stores in Quick Actions. Exception: class org.openqa.selenium.NoSuchElementException------------>  EMI Card Services-Quick Actions Blocked Cardb
+
+Locate Stores in Quick Actions is Not Present------------>  EMI Card Services-Quick Actions Blocked Cardb
+
+Failed in Click On Locate Stores in Quick Actions. Exception: class org.openqa.selenium.NoSuchElementException------------>  EMI Card Services-Quick Actions Blocked Cardb
+
+Redirected URL is not Matched : https://www.bajajfinserv.in/health-emi-network-card------------>  EMI Card Services-Quick Actions Blocked Cardb
+
+Expected URL : https://www.bajajfinserv.in/locator------------>  EMI Card Services-Quick Actions Blocked Cardb
+
+Individual Customer tab is Not Present------------>  EMI Card Services-Quick Actions Active Cardo
+
+Mobile Number Text Box For Individual is not Present and Type In Failed------------>  EMI Card Services-Quick Actions Active Cardo
+
+Get OTP is Not Present in findElements------------>  EMI Card Services-Quick Actions Active Cardo
+
+Failed in click on Get OTP button using for Loop. Exception: class java.lang.NullPointerException------------>  EMI Card Services-Quick Actions Active Cardo
+
+Failed in wait for OTP Text Box 1 Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  EMI Card Services-Quick Actions Active Cardo
+
+OTP Text Box 1 is Not Displayed------------>  EMI Card Services-Quick Actions Active Cardo
+
+OTP Text Box 2 is Not Displayed------------>  EMI Card Services-Quick Actions Active Cardo
+
+OTP Text Box 3 is Not Displayed------------>  EMI Card Services-Quick Actions Active Cardo
+
+OTP Text Box 4 is Not Displayed------------>  EMI Card Services-Quick Actions Active Cardo
+
+OTP Text Box 5 is Not Displayed------------>  EMI Card Services-Quick Actions Active Cardo
+
+OTP Text Box 6 is Not Displayed------------>  EMI Card Services-Quick Actions Active Cardo
+
+Submit is Not Present in findElements------------>  EMI Card Services-Quick Actions Active Cardo
+
+Failed in click on Submit button using for Loop. Exception: class java.lang.NullPointerException------------>  EMI Card Services-Quick Actions Active Cardo
+
+Reset Pin is Not Present In Right side of the Page------------>  EMI Card Services-Quick Actions Active Cardo
+
+Block Card  is Not Present In Right side of the Page------------>  EMI Card Services-Quick Actions Active Cardo
+
+View Statements  is not present------------>  EMI Card Services-Quick Actions Active Cardo
+
+Failed in scroll To WebElement for View Statements . Exception: class org.openqa.selenium.NoSuchElementException------------>  EMI Card Services-Quick Actions Active Cardo
+
+View Statements  is Not Present------------>  EMI Card Services-Quick Actions Active Cardo
+
+Failed in Click On View Statements . Exception: class org.openqa.selenium.NoSuchElementException------------>  EMI Card Services-Quick Actions Active Cardo
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCards/EmiCard/EmiCards?id=8af69355-b5fc-4545-bb26-a3fa478f879f------------>  EMI Card Services-Quick Actions Active Cardo
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountDocumentCenter/DocumentCenter------------>  EMI Card Services-Quick Actions Active Cardo
+
+Failed in Click On Locate Stores in Quick Actions. Exception: class org.openqa.selenium.NoSuchElementException------------>  EMI Card Services-Quick Actions Active Cardo
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=8af69355-b5fc-4545-bb26-a3fa478f879f------------>  EMI Card Services-Quick Actions Active Cardo
+
+Expected URL : https://www.bajajfinserv.in/locator------------>  EMI Card Services-Quick Actions Active Cardo
+

@@ -1,0 +1,2 @@
+KYC Popup is not Closed------------>  To verify when customer clicks on "This is Correct" ReKYC pop is closed&
+

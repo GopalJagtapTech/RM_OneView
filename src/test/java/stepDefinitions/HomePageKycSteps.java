@@ -152,7 +152,7 @@ public class HomePageKycSteps extends ApplicationKeywords {
 
     @Then("ETB Customer should be able to View Alert section on header of Homepage")
     public void etb_customer_should_be_able_to_view_alert_section_on_header_of_homepage() {
-        clickOn(kycpage.alerts_Icon);
+        verifyFieldsDisplayedUsingLocator(kycpage.alerts_Icon);
         verifyFieldsDisplayedUsingLocator(kycpage.alerts_label);
     }
 
@@ -198,7 +198,7 @@ public class HomePageKycSteps extends ApplicationKeywords {
 
 
 
-    @When("Verify Check\\/update email ID card option")
+    @When("Verify Check or update email ID card option")
     public void verify_check_update_email_id_card_option() {
        verifyFieldsDisplayedUsingText("Check/update email ID");
     }
@@ -386,5 +386,41 @@ public class HomePageKycSteps extends ApplicationKeywords {
     }
 
 
+    @Then("verify the following buttons {string} are displayed in the page kyc")
+    public void verifyTheFollowingButtonsAreDisplayedInThePageKyc(String string) {
+        verifymultipleButtonIsDisplayedInThePageusingText(string,"");
+    }
 
+    @Then("ReKYC pop-up should be displayed to customer with below Contents:")
+    public void rekycPopUpShouldBeDisplayedToCustomerWithBelowContents() {
+        verifyElementIsDisplayedOrNot(HomePageKyc.checkBox_Kyc);
+        verifyElementIsDisplayedOrNot(HomePageKyc.close_Kyc_Popup);
+    }
+
+    @And("Clicks Cross icon on ReKYC")
+    public void clicksCrossIconOnReKYC() {
+        clickOn(HomePageKyc.close_Kyc_Popup);
+
+    }
+
+    @Then("ReKYC Popup should be closed")
+    public void rekycPopupShouldBeClosed() {
+        kycpage.kycPopupClosed();
+    }
+
+    @And("clicks on {string} CTA on ReKYC")
+    public void clicksOnCTAOnReKYC(String string) {
+        clickOnButtonUsingTextUsingForLoop(string);
+    }
+
+    @And("clicks on Check Box of re KYC popup")
+    public void clicksOnCheckBoxOfReKYCPopup() {
+        clickOn(HomePageKyc.checkBox_Kyc);
+    }
+
+    @Then("ReKYC Popup should not be Displayed")
+    public void rekycPopupShouldNotBeDisplayed() {
+        kycpage.kycPopupClosed();
+
+    }
 }

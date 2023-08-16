@@ -1,0 +1,10 @@
+Failed in redurect to Url https://uat-oneweb.bajajfinserv.in/MyAccountLogin/Login/LogoutUserBasedOnMobile?MobileNo=9015683146. Exception: class org.openqa.selenium.WebDriverException------------>  Overdue- Missed EMI- Verify Payment Method Section for Overdue Loan
+
+Failed in redurect to Url https://uat-oneweb.bajajfinserv.in/MyAccountLogin. Exception: class org.openqa.selenium.WebDriverException------------>  Overdue- Missed EMI- Verify Payment Method Section for Overdue Loan
+
+Skip Button in Cochmark is Not Present in findElements------------>  Overdue- Missed EMI- Verify Payment Method Section for Overdue Loan
+
+Failed in click on  Skip Button in Cochmark button using locator using for loop without Fail. Exception: class java.lang.NullPointerException------------>  Overdue- Missed EMI- Verify Payment Method Section for Overdue Loan
+
+Individual Customer tab is Not Present------------>  Overdue- Missed EMI- Verify Payment Method Section for Overdue Loan
+

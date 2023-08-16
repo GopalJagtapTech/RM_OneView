@@ -1,0 +1,6 @@
+Minimum Amount is not displayed as 1. Displayed Value: 1.0------------>  To verify minimum amount is displayed as Rs.1"
+
+Failed in get max Value of Settlement Payment. Exception: class java.lang.ArrayIndexOutOfBoundsException------------>  To verify maximum amount is prepopulated in Enter amount field4
+
+Maximum Value is Autopopulated in Input Box. Populated Value = 40000------------>  To verify maximum amount is prepopulated in Enter amount field4
+

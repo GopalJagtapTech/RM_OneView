@@ -1,0 +1,170 @@
+Submit is Not Present in findElements------------>  To verify that Customer is able to view content on Disbursement Requests page%
+
+Failed in verify Submit button Is Displayed In The Page. Exception: class java.lang.NullPointerException------------>  To verify that Customer is able to view content on Disbursement Requests page%
+
+Submit is Not Present in findElements------------>  To verify that Submit CTA is disable when Amount field is blank7
+
+Failed in verify Submit button Is Disabled In The Page. Exception: class java.lang.NullPointerException------------>  To verify that Submit CTA is disable when Amount field is blank7
+
+Proceed button is Not Displayed------------>  To verify that OTP popup is displayed on click of Proceed CTA¬
+
+Home Page Text is Not Verified------------>  To verify that Submit CTA is enabled after entering value between range provided¾
+
+Login is Unsuccessfull------------>  To verify that Submit CTA is enabled after entering value between range provided¾
+
+Submit is Not Present in findElements------------>  To verify that OTP popup is displayed on click of Submit CTAÒ
+
+Failed in click on Submit button using for Loop Without Wait. Exception: class java.lang.NullPointerException------------>  To verify that OTP popup is displayed on click of Submit CTAÒ
+
+OTP Verification is Not Verified------------>  To verify that OTP popup is displayed on click of Submit CTAÒ
+
+Failed in scroll To WebElement for Account Type Label. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify that fields are displayed for bank detailsã
+
+Account Type is not displayed------------>  To verify that fields are displayed for bank detailsã
+
+Failed in wait for Loans tab Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Active LAS - Redirection to LAS services Page#
+
+Loans tab is Not Present in this Customer Id------------>  Active LAS - Redirection to LAS services Page#
+
+104175 - No. Tile is Not Present in this customer Id------------>  Active LAS - Redirection to LAS services Page#
+
+ Account Number 104175 is Not Redirected------------>  Active LAS - Redirection to LAS services Page#
+
+Not Redirected to Expected------------>  Active LAS - Redirection to LAS services Page#
+
+Failed in scroll To WebElement for Loan To Value Label. Exception: class org.openqa.selenium.NoSuchElementException------------>  Active LAS - Relationship Section - Loan Details Sub SectionP
+
+Loan To Value is not displayed------------>  Active LAS - Relationship Section - Loan Details Sub SectionP
+
+Failed in scroll To WebElement for Loan To Value Label. Exception: class org.openqa.selenium.NoSuchElementException------------>  Active LAS - Relationship Section - Additional Loan Details should be displayed after clicking show more Buttonb
+
+Loan To Value is not displayed------------>  Active LAS - Relationship Section - Additional Loan Details should be displayed after clicking show more Buttonb
+
+Annualized Rate of Interest Label in Loan Details is Displayed wrongly------------>  Active LAS - Relationship Section - Additional Loan Details should be displayed after clicking show more Buttonb
+
+Failed in wait for Loans tab Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  Active LAS - RHS Sections - View Statements - SOAã
+
+Loans tab is Not Present in this Customer Id------------>  Active LAS - RHS Sections - View Statements - SOAã
+
+104175 - No. Tile is Not Present in this customer Id------------>  Active LAS - RHS Sections - View Statements - SOAã
+
+ Account Number 104175 is Not Redirected------------>  Active LAS - RHS Sections - View Statements - SOAã
+
+Not Redirected to Expected------------>  Active LAS - RHS Sections - View Statements - SOAã
+
+Submit is Not Present in findElements------------>  TO verify share repledge service page divides into given 4 component%
+
+Failed in verify Submit button Is Displayed In The Page. Exception: class java.lang.NullPointerException------------>  TO verify share repledge service page divides into given 4 component%
+
+Submit is Not Present in findElements------------>  To verify when verify all fields and click on Submit CTAř
+
+Failed in verify Submit button Is Displayed In The Page. Exception: class java.lang.NullPointerException------------>  To verify when verify all fields and click on Submit CTAř
+
+Submit is Not Present in findElements------------>  To verify when verify all fields and click on Submit CTAř
+
+Failed in click on Submit button using for Loop. Exception: class java.lang.NullPointerException------------>  To verify when verify all fields and click on Submit CTAř
+
+OTP Verification is Not Verified------------>  To verify when verify all fields and click on Submit CTAř
+
+Enter OTP is Not Verified------------>  To verify when verify all fields and click on Submit CTAř
+
+Resend OTP Button is Not Verified------------>  To verify when verify all fields and click on Submit CTAř
+
+Resend OTP Button is Disabled not verified------------>  To verify when verify all fields and click on Submit CTAř
+
+OTP Screen Text box 1 is Not Verified------------>  To verify when verify all fields and click on Submit CTAř
+
+OTP Screen Text box 2 is Not Verified------------>  To verify when verify all fields and click on Submit CTAř
+
+OTP Screen Text box 3 is Not Verified------------>  To verify when verify all fields and click on Submit CTAř
+
+OTP Screen Text box 4 is Not Verified------------>  To verify when verify all fields and click on Submit CTAř
+
+OTP Screen Text box 5 is Not Verified------------>  To verify when verify all fields and click on Submit CTAř
+
+OTP Screen Text box 6 is Not Verified------------>  To verify when verify all fields and click on Submit CTAř
+
+Submit Button in LAS Drawdown OTP Screen is Not Verified------------>  To verify when verify all fields and click on Submit CTAř
+
+Submit Button in LAS Drawdown OTP Screen is Disabled not verified------------>  To verify when verify all fields and click on Submit CTAř
+
+OTP Close Button in LAS Share Release OTP Screen is Not Displayed------------>  To verify when verify all fields and click on Submit CTAř
+
+Submit is Not Present in findElements------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Failed in verify Submit button Is Displayed In The Page. Exception: class java.lang.NullPointerException------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Submit is Not Present in findElements------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Failed in click on Submit button using for Loop. Exception: class java.lang.NullPointerException------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+OTP Verification is Not Verified------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Failed in Clear edit Box OTP Screen Text box 1. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+OTP Screen Text box 1 is not Displayed and Type In Failed------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Failed in Clear edit Box OTP Screen Text box 2. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+OTP Screen Text box 2 is not Displayed and Type In Failed------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Failed in Clear edit Box OTP Screen Text box 3. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+OTP Screen Text box 3 is not Displayed and Type In Failed------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Failed in Clear edit Box OTP Screen Text box 4. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+OTP Screen Text box 4 is not Displayed and Type In Failed------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Failed in Clear edit Box OTP Screen Text box 5. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+OTP Screen Text box 5 is not Displayed and Type In Failed------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Failed in Clear edit Box OTP Screen Text box 6. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+OTP Screen Text box 6 is not Displayed and Type In Failed------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+SUBMIT button is Not Displayed------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountLoanServices/LAS/ShareRelease------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountLoanServices/LAS/ShareReleaseSuccess------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Sucess Tick Mark is Not Displayed------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Sucess Text is Not Present------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Failed in scroll To WebElement for FAS no Label. Exception: class org.openqa.selenium.NoSuchElementException------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+FAS no is not displayed------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Failed in scroll To WebElement for Total released securities value Label. Exception: class org.openqa.selenium.NoSuchElementException------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Total released securities value is not displayed------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+done is Not Present in findElements------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Failed in verify done button Is Displayed In The Page. Exception: class java.lang.NullPointerException------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+done is Not Present in findElements------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Failed in verify done button Is Displayed In The Page. Exception: class java.lang.NullPointerException------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+done is Not Present in findElements------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Failed in click on done button using for Loop. Exception: class java.lang.NullPointerException------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountLoanServices/LAS/ShareRelease------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountLoanServices/LAS/LasDetails------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Nudge:  is Not Present------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+RHS Option Release Securities in Insurance Service Pageis not Displayed------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Your request is on progress, Kindly comeback after 5 min. is Not Displayed in the Page------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+GOT IT button is Not Displayed------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+
+Sign Out Button is Not Displayed------------>  To Verify customer is able to Success screen  when successfully validate all fieldsſ
+

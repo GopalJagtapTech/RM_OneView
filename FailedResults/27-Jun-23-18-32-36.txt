@@ -1,0 +1,36 @@
+PROCEED button is Not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment) -"PayU" "NetBanking"˟
+
+Gateway: PayUis not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment) -"PayU" "NetBanking"˟
+
+Select Payment: NetBankingis not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment) -"PayU" "NetBanking"˟
+
+Search Box  is not Displayed and Type In Failed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment) -"PayU" "NetBanking"˟
+
+Bank: BANK OF BARODAis not Displayed------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment) -"PayU" "NetBanking"˟
+
+Failed in scroll To WebElement for Pay Amount Button. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment) -"PayU" "NetBanking"˟
+
+Pay Amount Button is Not Present------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment) -"PayU" "NetBanking"˟
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/Part_Payment?id=852d4c99-a2db-4dec-a301-547e8571182b------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment) -"PayU" "NetBanking"˟
+
+Expected URL : https://feba.bobibanking.com/corp/AuthenticationController------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment) -"PayU" "NetBanking"˟
+
+Failed in Click On cancel in Net Banking Page. Exception: class org.openqa.selenium.NoSuchElementException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment) -"PayU" "NetBanking"˟
+
+Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/Part_Payment?id=852d4c99-a2db-4dec-a301-547e8571182b------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment) -"PayU" "NetBanking"˟
+
+Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountPayments/LoanPay/Receipt------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment) -"PayU" "NetBanking"˟
+
+Your transaction has failed due to authorization failure from the bank's end. Please try after some time or check with your bank. Is Element Displayed Failed. Exception: class org.openqa.selenium.InvalidSelectorException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment) -"PayU" "NetBanking"˟
+
+Your transaction has failed due to authorization failure from the bank's end. Please try after some time or check with your bank. is Not Displayed in the Page------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment) -"PayU" "NetBanking"˟
+
+Your transaction has failed due to authorization failure from the bank's end. Please try after some time or check with your bank. Is Element Displayed Failed. Exception: class org.openqa.selenium.InvalidSelectorException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Overdue) - "PayU" "NetBanking"̫
+
+Your transaction has failed due to authorization failure from the bank's end. Please try after some time or check with your bank. is Not Displayed in the Page------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Overdue) - "PayU" "NetBanking"̫
+
+Your transaction has failed due to authorization failure from the bank's end. Please try after some time or check with your bank. Is Element Displayed Failed. Exception: class org.openqa.selenium.InvalidSelectorException------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Advance EMI)MR - "PayU" "NetBanking"Ά
+
+Your transaction has failed due to authorization failure from the bank's end. Please try after some time or check with your bank. is Not Displayed in the Page------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Advance EMI)MR - "PayU" "NetBanking"Ά
+

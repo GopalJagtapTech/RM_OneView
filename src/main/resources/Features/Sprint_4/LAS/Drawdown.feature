@@ -48,7 +48,7 @@ Feature: Disbursement/Drawdown
     Then Verify Customer Redirected to "MyAccountLoanServices/LAS/LASDetails" Url
     And Customer Click on "Drawdown" CTA in RHS
     Then Verify Customer Redirected to "MyAccountLoanServices/LAS/LasDisbursement" Url
-    And verify the following button "Submit" is disabled in the page
+    And verify the following button "Proceed" is disabled in the page
 
     Examples:
       | Mobile Number | Date     | Customer Type | Account No |

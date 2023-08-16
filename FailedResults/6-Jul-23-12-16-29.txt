@@ -1,0 +1,52 @@
+Home Page Text is Not Verified------------>  B2B- Loan Details Active- Redirection to Service screen
+
+Login is Unsuccessfull------------>  B2B- Loan Details Active- Redirection to Service screen
+
+Home Page Text is Not Verified------------>  B2B- Loan Details Active- Verify Relationship Details sectionN
+
+Login is Unsuccessfull------------>  B2B- Loan Details Active- Verify Relationship Details sectionN
+
+Home Page Text is Not Verified------------>  B2B- Loan Details Active- Verify given contents with the values is showing under Registered Repayment Bank Details sectionp
+
+Login is Unsuccessfull------------>  B2B- Loan Details Active- Verify given contents with the values is showing under Registered Repayment Bank Details sectionp
+
+Home Page Text is Not Verified------------>  B2B- Loan Details Active- Cibil Score Verification & Redirection³
+
+Login is Unsuccessfull------------>  B2B- Loan Details Active- Cibil Score Verification & Redirection³
+
+Home Page Text is Not Verified------------>  B2B- Loan Details Active- RHS- View Statementsç
+
+Login is Unsuccessfull------------>  B2B- Loan Details Active- RHS- View Statementsç
+
+Home Page Text is Not Verified------------>  B2B- Loan Details Closed- verify customer is able to view Change bank account option for closed loansƴ
+
+Login is Unsuccessfull------------>  B2B- Loan Details Closed- verify customer is able to view Change bank account option for closed loansƴ
+
+Failed in wait for Loans tab Until Visible Fluent. Exception: class org.openqa.selenium.TimeoutException------------>  B2B- Loan Details Closed - verify customer is able to view  top 7 charges details on upfront as per priority logic  on Fees & Charges tileǇ
+
+Loans tab is Not Present in this Customer Id------------>  B2B- Loan Details Closed - verify customer is able to view  top 7 charges details on upfront as per priority logic  on Fees & Charges tileǇ
+
+MyRelations Filter Icon is Not Present------------>  B2B- Loan Details Closed - verify customer is able to view  top 7 charges details on upfront as per priority logic  on Fees & Charges tileǇ
+
+Filter Status Check Box - Closed is not displayed------------>  B2B- Loan Details Closed - verify customer is able to view  top 7 charges details on upfront as per priority logic  on Fees & Charges tileǇ
+
+Apply button is Not Displayed------------>  B2B- Loan Details Closed - verify customer is able to view  top 7 charges details on upfront as per priority logic  on Fees & Charges tileǇ
+
+LOCAL - RETRA 402ECFHC764391 No. Tile is Not Displayed------------>  B2B- Loan Details Closed - verify customer is able to view  top 7 charges details on upfront as per priority logic  on Fees & Charges tileǇ
+
+LOCAL - RETRA Account Number 402ECFHC764391 is Not Redirected------------>  B2B- Loan Details Closed - verify customer is able to view  top 7 charges details on upfront as per priority logic  on Fees & Charges tileǇ
+
+Not Redirected to Expected------------>  B2B- Loan Details Closed - verify customer is able to view  top 7 charges details on upfront as per priority logic  on Fees & Charges tileǇ
+
+Home Page Text is Not Verified------------>  B2B- Loan Details Closed- RHS- View StatementsǮ
+
+Login is Unsuccessfull------------>  B2B- Loan Details Closed- RHS- View StatementsǮ
+
+Home Page Text is Not Verified------------>  B2B- Loan Details Closed- Cibil Score Verification & Redirectionȸ
+
+Login is Unsuccessfull------------>  B2B- Loan Details Closed- Cibil Score Verification & Redirectionȸ
+
+Home Page Text is Not Verified------------>  B2B- Loan Details Active- Change Bank Account RedirectionɊ
+
+Login is Unsuccessfull------------>  B2B- Loan Details Active- Change Bank Account RedirectionɊ
+

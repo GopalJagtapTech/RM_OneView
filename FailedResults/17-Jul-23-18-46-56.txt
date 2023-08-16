@@ -1,0 +1,38 @@
+Home Page Text is Not Verified------------>  To verify Closed nudge is displayed on loan card for closed loan  clear all CTA are visible on click of filter iconP
+
+Login is Unsuccessfull------------>  To verify Closed nudge is displayed on loan card for closed loan  clear all CTA are visible on click of filter iconP
+
+Card :  is Not Present in findElements------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)- Closed Loan<
+
+Failed in click on  Card :  button using locator using for loop. Exception: class java.lang.NullPointerException------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)- Closed Loan<
+
+Failed to redirect to Document Page : 401BLF85202471------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)- Closed Loan<
+
+Card :  is Not Present for Get Text------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)- Closed Loan<
+
+ is Not Verified------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)- Closed Loan<
+
+File: Statement of Account is not Displayed------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)- Closed Loan<
+
+Home Page Text is Not Verified------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)-Closed deposit{
+
+Login is Unsuccessfull------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)-Closed deposit{
+
+Failed to redirect to Document Page : CP000053EN15100------------>  Verify Closed Insurance card is clickable & Customer is redirecting to insurance document page¦
+
+Failed to redirect to Document Page : CP000053EN15100------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)-insurance½
+
+File: Certificate of Insurance is not Displayed------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)-insurance½
+
+Failed to redirect to Document Page : 5135485-5135660------------>  Verify Cancelled Insurance card is clickable & Customer is redirecting to insurance document pageÑ
+
+Failed to redirect to Document Page : 5135485-5135660------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)-Cancelled insuranceç
+
+File: Certificate of Insurance is not Displayed------------>  Verify that Customer is able to Download the file, Downloaded file is in pdf format(Download CTA)-Cancelled insuranceç
+
+Home Page Text is Not Verified------------>  Verify that message is displayed when customer dont have Active loansĢ
+
+Login is Unsuccessfull------------>  Verify that message is displayed when customer dont have Active loansĢ
+
+Sign Out Button is Not Present------------>  Verify that message is displayed when customer dont have Active loansĢ
+
