@@ -1,6 +1,0 @@
-SignIn Button is Not Displayed------------>  Customer is able to view Hamburger Menu icon
-
-Login is Un Successful------------>  Customer is able to view Hamburger Menu icon
-
-Failed in verify Home in Hooks. Exception: class org.openqa.selenium.InvalidArgumentException------------>  Customer is able to view Hamburger Menu icon
-

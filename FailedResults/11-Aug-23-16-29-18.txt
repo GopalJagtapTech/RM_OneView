@@ -1,2 +1,0 @@
-View Documents Option in Quick Actions RHS is Not Displayed------------>  To verify View Documents option is displayed under Quick Actions for Closed SDPĳ
-

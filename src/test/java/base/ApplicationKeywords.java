@@ -4,9 +4,6 @@ import io.cucumber.java.Scenario;
 
 
 import AppHooks.ApplicationHooks;
-import PageObjects.FDServicesPage;
-import PageObjects.HomePage;
-import PageObjects.LoginPage;
 import TestData.GOR;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
@@ -37,6 +34,7 @@ import java.lang.reflect.Field;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -55,7 +53,7 @@ import java.util.List;
 import io.cucumber.core.backend.TestCaseState;
 
 
-public class ApplicationKeywords extends ApplicationXpaths {
+public class ApplicationKeywords {
     public static WebDriver driver;
     public static WebDriverWait wait;
     public static String strProjectLoc;
@@ -109,13 +107,17 @@ public class ApplicationKeywords extends ApplicationXpaths {
         // rewritePropertyFile();
         String strBrowser = prop.getProperty("browser.name");
         String URL = prop.getProperty("App.url");
-        putLocator();
+//        putLocator();
         GOR.login = true;
         if (strBrowser.equals("GC")) {
             String chromeDriverLocation = strProjectLoc + "/Drivers/chromedriver.exe";
             System.setProperty("webdriver.chrome.driver", chromeDriverLocation);
             DesiredCapabilities cap = DesiredCapabilities.chrome();
             ChromeOptions options = new ChromeOptions();
+
+            // incognito mode
+//            options.addArguments("--incognito");
+
 //            options.setExperimentalOption("debuggerAddress","localhost:5359");//need comment before execution
 
             Map<String, Object> prefs = new HashMap<>();
@@ -193,7 +195,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
         }
     }
 
-    public void manualScreenshot(String Content) {
+    public static void manualScreenshot(String Content) {
         try {
             String markup = MarkupHelper.createLabel(Content, ExtentColor.GREEN).getMarkup();
             ApplicationHooks.scena.log(" - " + markup);
@@ -217,7 +219,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
 
     public static void assertFail() {
         asser = true;
-//        logBuginAzure();
+        logBuginAzure();
     }
 
     public static void testStepFailed(String Content) {
@@ -342,9 +344,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
     public void scrollToWebElement(String objectLocator) {
         try {
             WebElement element = findWebElement(objectLocator);
-            String scrollElementIntoMiddle = "var viewPortHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);"
-                    + "var elementTop = arguments[0].getBoundingClientRect().top;"
-                    + "window.scrollBy(0, elementTop-(viewPortHeight/2));";
+            String scrollElementIntoMiddle = "var viewPortHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);" + "var elementTop = arguments[0].getBoundingClientRect().top;" + "window.scrollBy(0, elementTop-(viewPortHeight/2));";
             ((JavascriptExecutor) driver).executeScript(scrollElementIntoMiddle, element);
         } catch (Exception e) {
             e.printStackTrace();
@@ -359,9 +359,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
                 flag = true;
 //                if (!isElementDisplayed(objectLocator)) {
                 WebElement element = findWebElement(objectLocator);
-                String scrollElementIntoMiddle = "var viewPortHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);"
-                        + "var elementTop = arguments[0].getBoundingClientRect().top;"
-                        + "window.scrollBy(0, elementTop-(viewPortHeight/2));";
+                String scrollElementIntoMiddle = "var viewPortHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);" + "var elementTop = arguments[0].getBoundingClientRect().top;" + "window.scrollBy(0, elementTop-(viewPortHeight/2));";
                 ((JavascriptExecutor) driver).executeScript(scrollElementIntoMiddle, element);
 //                }
             } else {
@@ -375,7 +373,13 @@ public class ApplicationKeywords extends ApplicationXpaths {
     }
 
     public static WebElement findWebElement(String locator) {
-        WebElement element = driver.findElement(By.xpath(locator.split("#xpath=")[1]));
+        WebElement element = null;
+        try {
+            element = driver.findElement(By.xpath(locator.split("#xpath=")[1]));
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in find WebElement " + getRefOfXpath(locator) + ". Exception: " + e.getClass());
+        }
         return element;
     }
 
@@ -437,9 +441,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
         String machineUsername = null;
         try {
             machineUsername = System.getProperty("user.name");
-            System.out.println(
-                    "Getting current node's username to verify the exported file in 'C:/Users/[username]/Downloads' folder. Current node's username = "
-                            + machineUsername);
+            System.out.println("Getting current node's username to verify the exported file in 'C:/Users/[username]/Downloads' folder. Current node's username = " + machineUsername);
         } catch (Exception e) {
             e.printStackTrace();
             testStepFailed("Failed in Get Current Node Username. Exception: " + e.getClass());
@@ -501,12 +503,13 @@ public class ApplicationKeywords extends ApplicationXpaths {
                 String path = dir.getAbsolutePath();
                 File getLatestFile = getLatestFilefromDir(path);
                 downloadedFileName = getLatestFile.getName();
+//                waitTime(3);
                 if (downloadedFileName.equals(file_Name)) {
                     testStepPassed("Successfully '" + downloadedFileName + "' file is downloaded.");
                     flag = true;
                     break;
                 }
-                Thread.sleep(2000);
+                Thread.sleep(4000);
             }
             if (!flag) {
                 testStepFailed(file_Name + " file is not downloaded.");
@@ -558,7 +561,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
     public void verifyDownLoadAndDeleteLatestFileNameFromLocalMachine(String file_Name) {
         try {
             getLatestFileFromLocalMachine(file_Name);
-            waitTime(10);
+//            waitTime(10);
             deleteFileFromLocalMachine(file_Name);
         } catch (Exception e) {
             e.printStackTrace();
@@ -582,6 +585,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
         try {
             if (isElementPresent(locator)) {
                 if (findWebElement(locator).isDisplayed()) {
+                    highLightBorder(locator, "");
                     flag = true;
                 }
             }
@@ -692,11 +696,9 @@ public class ApplicationKeywords extends ApplicationXpaths {
         try {
             String field = "";
             if (fieldText.equalsIgnoreCase("Date Of Birth")) {
-                field = "" + fieldText + "#xpath=//a[normalize-space(text())='" + fieldText.trim()
-                        + "']|//*[@placeholder='" + fieldText.trim() + "']|//input[@value='" + fieldText.trim() + "']";
+                field = "" + fieldText + "#xpath=//a[normalize-space(text())='" + fieldText.trim() + "']|//*[@placeholder='" + fieldText.trim() + "']|//input[@value='" + fieldText.trim() + "']";
             } else {
-                field = "" + fieldText + "#xpath=//*[normalize-space(text())='" + fieldText.trim()
-                        + "']|//*[@placeholder='" + fieldText.trim() + "']|//input[@value='" + fieldText.trim() + "']";
+                field = "" + fieldText + "#xpath=//*[normalize-space(text())='" + fieldText.trim() + "']|//*[@placeholder='" + fieldText.trim() + "']|//input[@value='" + fieldText.trim() + "']";
             }
 
             Boolean flag = scrollToWebElementIfPresent(field);
@@ -760,7 +762,13 @@ public class ApplicationKeywords extends ApplicationXpaths {
     }
 
     public static boolean isElementPresent(String locator) {
-        boolean flag = driver.findElements(By.xpath(locator.split("#xpath=")[1])).size() > 0;
+        boolean flag = false;
+        try {
+            flag = driver.findElements(By.xpath(locator.split("#xpath=")[1])).size() > 0;
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in Is Element Present: " + getRefOfXpath(locator) + ". Exceptioon:" + e.getClass());
+        }
         return flag;
     }
 
@@ -904,6 +912,29 @@ public class ApplicationKeywords extends ApplicationXpaths {
 
     }
 
+    public void verifyDropdownIsDisplayedAndPrintOptions(String selectLocator, String extra) {
+        try {
+            Select select = createSelectRef(selectLocator);
+            scrollToWebElement(selectLocator);
+            if (isElementDisplayed(selectLocator)) {
+                clickOn(selectLocator);
+                testStepPassed(getRefOfXpath(selectLocator) + " is Displayed Successfully");
+                List<WebElement> allOptions = select.getOptions();
+                for (int j = 0; j < allOptions.size(); j++) {
+                    String optionText = allOptions.get(j).getText().trim();
+                    manualScreenshot((j + 1) + " Option in Dropdown is " + optionText);
+                }
+
+            } else {
+                testStepFailed(selectLocator.split("#")[0] + " is Not Displayed");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Drop down Is Displayed And Print Options " + selectLocator + ". Exception" + e.getClass());
+        }
+
+    }
+
 
     public void verifyDropDownOptionIsNotPresent(String selectLocator, String notContain) {
 
@@ -962,9 +993,12 @@ public class ApplicationKeywords extends ApplicationXpaths {
             Select select = createSelectRef(selectLocator);
             scrollToWebElementIfPresent(selectLocator);
             if (isElementDisplayed(selectLocator)) {
+                clickOn(selectLocator);
+                highLightBorder(selectLocator, "");
                 select.selectByVisibleText(text);
+                testStepInfo("Selected: " + text);
             } else {
-                testStepFailed(selectLocator.split("#")[0] + " is Not Displayed");
+                testStepFailed(getRefOfXpath(selectLocator) + " is Not Displayed");
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -1031,8 +1065,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
                 if (returnValue.trim().equalsIgnoreCase(verifySelectedText)) {
                     manualScreenshot(verifySelectedText + " is  Selected verified successfully in " + selectLocator.split("#")[0]);
                 } else {
-                    testStepFailed(verifySelectedText + " is Not selected::Current selected Text"
-                            + firstSelectedOption.getText() + " in " + selectLocator.split("#")[0]);
+                    testStepFailed(verifySelectedText + " is Not selected::Current selected Text" + firstSelectedOption.getText() + " in " + selectLocator.split("#")[0]);
                 }
 
             } else {
@@ -1060,9 +1093,19 @@ public class ApplicationKeywords extends ApplicationXpaths {
         }
     }
 
+    public void typeInUsingJavaScript(String objectLocator, String inputValue) {
+        try {
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].value='" + inputValue + "';", objectLocator);
+            testStepScreenShot(objectLocator.split("#")[0] + " Input Value is : " + inputValue);
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in Type In " + getRefOfXpath(objectLocator) + " value as " + inputValue + ". Exception: " + e.getClass());
+        }
+    }
+
     public void typeInIfDisplayed(String objectLocator, String inputValue) {
         try {
-
             if (isElementDisplayed(objectLocator)) {
 //                typeIn();
                 findWebElement(objectLocator).sendKeys(inputValue);
@@ -1084,8 +1127,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
                 if (findWebElement(textBoxLocator).getAttribute("value").length() == validNumber) {
                     manualScreenshot("Only Accepted Valid " + validNumber + " digits successfully");
                 } else {
-                    testStepFailed("It Accepted more than " + validNumber + " values wrongly:: Accepted value is "
-                            + findWebElement(textBoxLocator).getAttribute("value").length());
+                    testStepFailed("It Accepted more than " + validNumber + " values wrongly:: Accepted value is " + findWebElement(textBoxLocator).getAttribute("value").length());
                 }
             } else {
                 testStepFailed(textBoxLocator.split("#")[0] + " is Not displayed");
@@ -1135,7 +1177,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
     public Boolean verifyRedirectionWithCommonUrlContains(String Url) {
         boolean flag = false;
         try {
-//            waitForPageToLoad();
+            waitForPageToLoad();
             if (driver.getCurrentUrl().contains(GOR.BaseUrl + Url)) {
                 manualScreenshot("Redirected URL verified successfully : " + GOR.BaseUrl + Url);
                 flag = true;
@@ -1146,6 +1188,24 @@ public class ApplicationKeywords extends ApplicationXpaths {
         } catch (Exception e) {
             e.printStackTrace();
             testStepFailed("Failed in verify Redirection URL contains " + GOR.BaseUrl + Url + ". Exception: " + e.getClass());
+        }
+        return flag;
+    }
+
+    public Boolean verifyRedirectionWithCommonUrlContainsWithProduct(String Url, String Product) {
+        boolean flag = false;
+        try {
+//            waitForPageToLoad();
+            if (driver.getCurrentUrl().contains(GOR.BaseUrl + Url) && driver.getCurrentUrl().contains(Product)) {
+                manualScreenshot("Redirected URL verified successfully : " + GOR.BaseUrl + Url + " and Product " + Product);
+                flag = true;
+            } else {
+                testStepFailed("Redirected URL is not Matched : " + driver.getCurrentUrl().split("\\?")[0]);
+                testStepFailed("Expected URL : " + GOR.BaseUrl + Url);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Redirection URL contains With Product " + GOR.BaseUrl + Url + ". Exception: " + e.getClass());
         }
         return flag;
     }
@@ -1186,9 +1246,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
         Boolean flag = false;
         headerText = headerText.trim();
         try {
-            String txtHeader = "#xpath=//h2[normalize-space(text())='" + headerText
-                    + "']|//h1[normalize-space(text())='" + headerText + "']|//h3[normalize-space(text())='"
-                    + headerText + "']|//h4[normalize-space(text())='" + headerText + "']|//strong[normalize-space(text())='" + headerText + "']";
+            String txtHeader = "#xpath=//h2[normalize-space(text())='" + headerText + "']|//h1[normalize-space(text())='" + headerText + "']|//h3[normalize-space(text())='" + headerText + "']|//h4[normalize-space(text())='" + headerText + "']|//strong[normalize-space(text())='" + headerText + "']";
             if (isElementDisplayed(txtHeader)) {
                 manualScreenshot(getText(txtHeader) + " : Redirected Header verified successfully");
                 flag = true;
@@ -1341,7 +1399,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
             if (locator1Y == locator2Y) {
                 testStepPassed(locator.split("#")[0] + " and " + anotherLocator.split("#")[0] + " Y positions verified successfully");
             } else {
-                testStepFailed(locator.split("#")[0] + " and " + anotherLocator.split("#")[0] + " Y positions verified successfully");
+                testStepFailed(locator.split("#")[0] + " and " + anotherLocator.split("#")[0] + " Y positions not verified");
             }
             if (pos2 > pos1) {
                 manualScreenshot(locator.split("#")[0] + " is Present on Left Side of " + anotherLocator.split("#")[0] + " is Verified Successfully");
@@ -1635,7 +1693,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
 
     public void verifyTextOptionsIsDisplayedUsingCommonXpath(String commonXpath, String AllOptions) {
         try {
-            String[] options = AllOptions.split("#");
+            String[] options = AllOptions.split("#|, ");
             for (int i = 0; i < options.length; i++) {
                 String optionText = options[i];
                 String locator = "" + optionText + "#xpath=" + commonXpath + "[normalize-space(text())='" + optionText.trim() + "']";
@@ -1649,39 +1707,6 @@ public class ApplicationKeywords extends ApplicationXpaths {
         } catch (Exception e) {
             e.printStackTrace();
             testStepFailed("verify Text Options " + AllOptions + " Is Displayed Using Common Xpath Failed. Exception: " + e.getClass());
-        }
-    }
-
-    public void verifyTextOptionsIsDisplayedUsingCommonXpathNew(String commonXpath, String optionText) {
-        try {
-            boolean flag = true;
-            String locator1 = "" + optionText + "#xpath=" + commonXpath + "";
-            if (isElementPresent(locator1)) {
-                for (int j = 1; j <= 3; j++) {
-                    String locatorSub = "" + optionText + " " + j + "#xpath=(" + commonXpath + ")[" + j + "]";
-                    String s = textGet(locatorSub).toLowerCase().trim();
-                    if (s.equalsIgnoreCase(optionText.trim())) {
-                        flag = false;
-                    }
-                }
-            }
-
-            String locator = "" + optionText + "#xpath=" + commonXpath + "[normalize-space(text())='" + optionText.trim() + "']";
-//                String subTitle=title+" subtitle in Relationship Details#xpath=//div[@class='Relationshipbox_title']//strong[normalize-space(text())='"+title.trim()+"']";
-            if (flag && isElementPresent(locator) && isElementPresent(FDServicesPage.btn_NextSlider)) {
-                clickOn(FDServicesPage.btn_NextSlider);
-                clickIfOnlyDisplayed(FDServicesPage.btn_NextSlider);
-            }
-            scrollToWebElementIfPresent(locator);
-            if (isElementDisplayed(locator)) {
-                manualScreenshot(optionText + " is Displayed Successfully");
-            } else {
-                testStepFailed(optionText + " is Not Displayed");
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("verify Text Options " + optionText + " Is Displayed Using Common Xpath New Failed. Exception: " + e.getClass());
         }
     }
 
@@ -1825,78 +1850,6 @@ public class ApplicationKeywords extends ApplicationXpaths {
         }
     }
 
-    // Commented on 09012023
-//    public Boolean clickOnHorizantalMenu(String menuText) {
-//        Boolean flag = false;
-//        try {
-//            String locator = "Horizantal Menu - " + menuText + "#xpath=//ul[@class='menuitems']/descendant::a[normalize-space(text())='" + menuText.trim() + "']";
-//            if (isElementDisplayed(locator)) {
-//                clickOn(locator);
-//                flag = true;
-//            } else {
-//                testStepFailed("Horizantal Menu - " + menuText + " is not displayed");
-//            }
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            testStepFailed("Failed in click On Horizantal Menu "+menuText+". Exception: " + e.getClass());
-//        }
-//        return flag;
-//    }
-// Commented on 09012023
-    public Boolean clickOnHorizantalSubMenu(String menuText) {
-        Boolean flag = false;
-        try {
-            String locator = "Horizantal sub Menu - " + menuText + "#xpath=//div[@class='sub_items']/descendant::a[normalize-space(text())='" + menuText.trim() + "']|//li[normalize-space(text())='" + menuText.trim() + "']";
-            if (isElementDisplayed(locator)) {
-                clickOn(locator);
-                waitForPageToLoad();
-                flag = true;
-            } else {
-                testStepFailed("Horizantal sub Menu - " + menuText + " is not displayed");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in click On Horizantal sub Menu " + menuText + ". Exception: " + e.getClass());
-        }
-        return flag;
-    }
-
-    // Commented on 09012023
-//    public Boolean clickOnHorizantalLevelTwoSubMenu(String firstLevelMenuText, String menuText) {
-//        Boolean flag = false;
-//        try {
-//            String locator = "Horizantal level 2 sub Menu - " + menuText + "#xpath=//a[normalize-space(text())='" + firstLevelMenuText.trim() + "']/../div[@class='leveltwo_sub_items']/descendant::a[normalize-space(text())='" + menuText.trim() + "']";
-//            //scrollToWebElement(locator);
-//            if (isElementDisplayed(locator)) {
-//                clickOn(locator);
-//                waitForPageToLoad();
-//                flag = true;
-//            } else {
-//                testStepFailed("Horizantal level 2 sub Menu - " + menuText + " is not displayed");
-//            }
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            testStepFailed("Failed in click On Horizantal level 2 sub  Menu "+menuText+". Exception: " + e.getClass());
-//        }
-//        return flag;
-//    }
-// Commented on 09012023
-    public Boolean clickOnHorizantalSubMenuForSameMenuNames(String menuText, String subMenuText) {
-        Boolean flag = false;
-        try {
-            String locator = "Horizantal sub Menu - " + subMenuText + "#xpath=//a[normalize-space(text())='" + menuText + "']/following-sibling::div[@class='sub_items']/descendant::a[normalize-space(text())='" + subMenuText.trim() + "']";
-            if (isElementDisplayed(locator)) {
-                clickOn(locator);
-                flag = true;
-            } else {
-                testStepFailed("Horizantal sub Menu - " + subMenuText + " is not displayed");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in click On Horizantal sub Menu For Same Menu Names " + subMenuText + ". Exception: " + e.getClass());
-        }
-        return flag;
-    }
 
     public void navigateToBack() {
         try {
@@ -1958,7 +1911,8 @@ public class ApplicationKeywords extends ApplicationXpaths {
         try {
             if (isElementDisplayed(locator)) {
                 flag = true;
-                manualScreenshot(locator.split("#")[0] + " is Displayed Successfully");
+                highLightBorder(locator, "is Displayed Successfully");
+//                manualScreenshot(locator.split("#")[0] + " is Displayed Successfully");
             } else {
                 testStepFailed(locator.split("#")[0] + " is Not Displayed");
             }
@@ -1969,23 +1923,6 @@ public class ApplicationKeywords extends ApplicationXpaths {
         return flag;
     }
 
-
-    public Boolean clickOnCardIcons(String iconText) {
-        Boolean flag = false;
-        try {
-            String locator = "Card Icons - " + iconText + "#xpath=//div[@class='wallet_card_row']/descendant::p[normalize-space(text())='" + iconText.trim() + "']";
-            if (isElementDisplayed(locator)) {
-                clickOn(locator);
-                flag = true;
-            } else {
-                testStepFailed("Cards - " + iconText + " is not displayed");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed to click On Cards " + iconText + ". Exception: " + e.getClass());
-        }
-        return flag;
-    }
 
     public void verifyGetText(String locator, String expectedText) {
         try {
@@ -2088,6 +2025,28 @@ public class ApplicationKeywords extends ApplicationXpaths {
         }
     }
 
+    public void verifyErrorMessageUsingTextusingforloop(String errorMessageText) {
+        try {
+            String locatorErrMsg = "Error Msg: " + errorMessageText + "#xpath=//*[normalize-space(text())='" + errorMessageText.trim() + "']";
+            waitTime(2);
+            int size = sizeOfLocator(locatorErrMsg);
+            for (int i = 1; i <= size; i++) {
+                String locatorErrMsg1 = "Error Msg: " + errorMessageText + "#xpath=(//*[normalize-space(text())='" + errorMessageText.trim() + "'])[" + i + "]";
+                if (isElementDisplayed(locatorErrMsg1)) {
+                    manualScreenshot(errorMessageText + " error message is displayed successfully");
+                    verifyLocatorColorUsingCssValue(locatorErrMsg1, "#B40000", "Red", "color");
+
+                } else {
+                    testStepFailed(errorMessageText + " error message is not displayed");
+                }
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verifyError Message " + errorMessageText + " Using For Loop. Exception: " + e.getClass());
+        }
+    }
+
     public void verifyErrorMessageUsingLocator(String locatorErrMsg) {
         try {
             if (isElementDisplayed(locatorErrMsg)) {
@@ -2098,6 +2057,32 @@ public class ApplicationKeywords extends ApplicationXpaths {
         } catch (Exception e) {
             e.printStackTrace();
             testStepFailed("Failed in verifyError Message " + getRefOfXpath(locatorErrMsg) + ". Exception: " + e.getClass());
+        }
+    }
+
+    public void verifyErrorMessageUsingTagandText(String tag, String Text, String Extra) {
+        try {
+            Boolean flag = false;
+            String error = "Error Msg: " + Text + "#xpath=//" + tag + "[normalize-space(text())='" + Text.trim() + "']|//" + tag + "[contains((text()),'" + Text.trim() + "')]";
+            int size = sizeOfLocator(error);
+            for (int i = 1; i <= size; i++) {
+                String locatorErrMsg = "Error Msg: " + Text + "#xpath=(//" + tag + "[normalize-space(text())='" + Text.trim() + "'])[" + i + "]|(//" + tag + "[contains((text()),'" + Text.trim() + "')])[" + i + "]";
+                if (isElementDisplayed(locatorErrMsg)) {
+                    manualScreenshot(locatorErrMsg.split("#")[0] + " error message is displayed successfully");
+                    verifyLocatorColorUsingCssValue(locatorErrMsg, "#B40000", "Red", "color");
+                    flag = true;
+                    break;
+
+                }
+            }
+            if (!flag) {
+                testStepFailed(error.split("#")[0] + " error message is not displayed");
+            }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verifyError Message Using Tag and Text. Exception: " + e.getClass());
         }
     }
 
@@ -2163,6 +2148,24 @@ public class ApplicationKeywords extends ApplicationXpaths {
         } catch (Exception e) {
             e.printStackTrace();
             testStepFailed("Failed in Three Dots DisAppear. Exception: " + e.getClass());
+        }
+    }
+
+    public void waitForLoadingCircleToDisAppear() {
+        try {
+            String loaderCircle = "Loader Circle#xpath=//*[name()='svg']//*[name()='circle']";
+            if (isElementDisplayed(loaderCircle)) {
+                LocalTime now = LocalTime.now();
+                while (isElementDisplayed(loaderCircle)) {
+                }
+                LocalTime now1 = LocalTime.now();
+                long l = Duration.between(now, now1).toSeconds();
+                testStepPassed("Loading Time: " + l);
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in wait For Loading Circle To DisAppear. Exception: " + e.getClass());
         }
     }
 
@@ -2234,7 +2237,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
             int size = findWebElements(locator).size();
             for (int i = 1; i <= size; i++) {
                 String button = "" + locator.split("#")[0] + "#xpath=(" + locator.split("#xpath=")[1] + ")[" + i + "]";
-                if (isElementDisplayed(button)) {
+                if (isElementPresent(button)) {
                     manualScreenshot(locator.split("#")[0] + " button is Displayed successfully");
                     clickOn(button);
                     waitForPageToLoad();
@@ -2327,6 +2330,32 @@ public class ApplicationKeywords extends ApplicationXpaths {
         } catch (Exception e) {
             e.printStackTrace();
             testStepFailed("Failed in verify Element Color Using Css Value :  " + getRefOfXpath(objectLocator) + ". Exception: " + e.getClass());
+        }
+        return flag;
+    }
+
+    public Boolean verifyLocatorColorUsingCssValueIfPresent(String objectLocator, String expectedColorHexValue, String expectedColor, String cssValue) {
+        Boolean flag = false;
+        try {
+            if (isElementPresent(objectLocator)) {
+                scrollToWebElement(objectLocator);
+                manualScreenshot(objectLocator.split("#")[0] + " is Displayed Successfully");
+                String color = findWebElement(objectLocator).getCssValue(cssValue);
+                String hex = Color.fromString(color).asHex();
+                testStepInfo(hex);
+                if (hex.toLowerCase().contains(expectedColorHexValue.toLowerCase())) {
+//                    if (hex.equals(expectedColorHexValue)||hex.contains(expectedColorHexValue)) {
+                    flag = true;
+                    manualScreenshot(objectLocator.split("#")[0] + " - " + expectedColor + " Color Verified Successfully");
+                } else {
+                    testStepFailed(objectLocator.split("#")[0] + " - " + expectedColor + " Color is Not Verified");
+                }
+            } else {
+                testStepFailed(objectLocator.split("#")[0] + " is Not Displayed Successfully");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Element Color Using Css Value if present:  " + getRefOfXpath(objectLocator) + ". Exception: " + e.getClass());
         }
         return flag;
     }
@@ -2477,6 +2506,41 @@ public class ApplicationKeywords extends ApplicationXpaths {
         return value;
     }
 
+//    public String verifyValueUsingLabelUsingForLoop(String commonPath, String labelText, String additionalPath, String extra) {
+//        String value = "";
+//        try {
+//            String label = "" + labelText + " Label#xpath=" + commonPath + "[normalize-space(text())='" + labelText.trim() + "']";
+//            String labelValue = "" + labelText + " Value#xpath=" + getCommonPathOfLocator(label) + "" + additionalPath + "";
+//           int labelsize=sizeOfLocator(label);
+//           int labelValuesize=sizeOfLocator(labelValue);
+//            for (int i = 1; i <=labelsize ; i++) {
+//                scrollToWebElement(label);
+//                if (isElementDisplayed(label)) {
+//                    manualScreenshot(getRefOfXpath(label) + " is Displayed Successfully");
+//                }
+//                for (int j = 1; j <=sizeOfLocator(labelValue) ; j++) {
+//
+//                }
+//                if (isElementDisplayed(labelValue)) {
+//                    if (extra.equals("attribute")) {
+//                        value = findWebElement(labelValue).getAttribute("value").trim();
+//                    } else {
+//                        value = getTextPresent(labelValue).trim();
+//                    }
+//                    manualScreenshot(getRefOfXpath(labelValue) + " is Displayed Successfully. Value: " + getText(labelValue));
+//                } else {
+//                    testStepFailed(getRefOfXpath(labelValue) + " is not displayed");
+//                }
+//            } else {
+//                testStepFailed(labelText + " is not displayed");
+//            }
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            testStepFailed("Failed in verify Value using Label " + labelText + ". Exception: " + e.getClass());
+//        }
+//        return value;
+//    }
+
     public void refreshThePage() {
         try {
             driver.navigate().refresh();
@@ -2535,6 +2599,25 @@ public class ApplicationKeywords extends ApplicationXpaths {
         }
     }
 
+    public void verifyRedirectionInCommonWithABack(String expectedUrl, String extra) {
+        try {
+            Boolean flag = false;
+            if (driver.getWindowHandles().size() >= 2) {
+                transferControlToWindow(2, false);
+                flag = true;
+            }
+            verifyRedirectionURLIfContains(expectedUrl);
+            if (flag) {
+                transferControlToWindow(1, true);
+            } else {
+                navigateToBack();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Redirection In Common URL: " + expectedUrl + ". Exception: " + e.getClass());
+        }
+    }
+
     public void verifyRedirectioninNewTab(String expectedUrl, String extra) {
         try {
             transferControlToWindow(2, false);
@@ -2543,6 +2626,15 @@ public class ApplicationKeywords extends ApplicationXpaths {
         } catch (Exception e) {
             e.printStackTrace();
             testStepFailed("Failed in verify Redirection in New Tab URL: " + expectedUrl + ". Exception: " + e.getClass());
+        }
+    }
+
+    public void verifyRedirectioninSameTabWithoutABack(String expectedUrl, String extra) {
+        try {
+            verifyRedirectionURLIfContains(expectedUrl);
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Redirection in Same Tab without a back URL: " + expectedUrl + ". Exception: " + e.getClass());
         }
     }
 
@@ -2709,28 +2801,6 @@ public class ApplicationKeywords extends ApplicationXpaths {
         return flag;
     }
 
-    public Map<String, String> verifyRelationShipSubTitleDetails(String commonXpath, String titleFirst, String subTitleText, String labelXpath, String valueXpath, String labelValuesWithHash, String extra) {
-        Map<String, String> map = new LinkedHashMap<>();
-        try {
-            String title = titleFirst + " " + subTitleText + " Sub Title#xpath=" + commonXpath + "[normalize-space(text())='" + subTitleText.trim() + "']";
-            System.out.println(title);
-            Boolean flag = verifyElementIsDisplayedUsingLocator(title);
-            if (flag) {
-                String[] values = labelValuesWithHash.split("#");
-                for (int i = 0; i < values.length; i++) {
-                    String label = values[i].trim();
-//                    verifyValueUsingLabel(getCommonPathOfLocator(title) + "/../following-sibling::div/p", value, "/following-sibling::strong", "");
-                    String value = verifyValueUsingLabel(getCommonPathOfLocator(title) + labelXpath, label.trim(), valueXpath, "");
-                    map.put(label.trim(), value);
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in verify  Relationship Sub Title Details " + titleFirst + " - " + subTitleText + " with " + labelValuesWithHash + ". Exception: " + e.getClass());
-        }
-        return map;
-    }
-
 
     public String TypeInUsingLabelText(String labeltext, String folowingXpath, String value, String extra) {
         String locator = "";
@@ -2869,7 +2939,8 @@ public class ApplicationKeywords extends ApplicationXpaths {
             String[] split = textsWithHash.split("#");
             for (int i = 0; i < split.length; i++) {
                 text = split[i];
-                String locator = "" + text + "#xpath=" + commonXpath + "[normalize-space(text())='" + text.trim() + "']";
+                String locator = "" + text + "#xpath=" + commonXpath + "[normalize-space(text())=\"" + text.trim() + "\"]";
+                scrollToWebElementIfPresent(locator);
                 if (isElementDisplayed(locator)) {
                     manualScreenshot(text + " is Displayed successfully.");
                 } else {
@@ -2879,6 +2950,55 @@ public class ApplicationKeywords extends ApplicationXpaths {
         } catch (Exception e) {
             e.printStackTrace();
             testStepFailed("Failed in verify fields using common xpath and text with hash " + text + ". Exception: " + e.getClass());
+        }
+
+    }
+
+    public void verifyFieldsPresentUsingCommonXpathAndMultipleTextWithHash(String commonXpath, String textsWithHash, String extra) {
+        String text = "";
+        try {
+            String[] split = textsWithHash.split("#");
+            for (int i = 0; i < split.length; i++) {
+                text = split[i];
+                String locator = "" + text + "#xpath=" + commonXpath + "[normalize-space(text())=\"" + text.trim() + "\"]";
+                scrollToWebElementIfPresent(locator);
+                if (isElementPresent(locator)) {
+                    manualScreenshot(text + " is Displayed successfully.");
+                } else {
+                    testStepFailed(text + " is Not Displayed.");
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify fields present using common xpath and text with hash " + text + ". Exception: " + e.getClass());
+        }
+
+    }
+
+    public void verifyFieldsUsingCommonXpathAndMultipleTextWithHashWithForLoop(String commonXpath, String textsWithHash, String extra) {
+        String text = "";
+        try {
+            String[] split = textsWithHash.split("#");
+            for (int i = 0; i < split.length; i++) {
+                text = split[i];
+                String locator = "" + text + "#xpath=" + commonXpath + "[normalize-space(text())=\"" + text.trim() + "\"]";
+                scrollToWebElementIfPresent(locator);
+                boolean flag = false;
+                int size = findWebElements(locator).size();
+                for (int j = 1; j <= size; j++) {
+                    String locator1 = "" + text + "#xpath=(" + commonXpath + "[normalize-space(text())=\"" + text.trim() + "\"])[" + j + "]";
+                    if (isElementDisplayed(locator1)) {
+                        manualScreenshot(text + " is Displayed successfully.");
+                        flag = true;
+                    }
+                }
+                if (!flag) {
+                    testStepFailed(text + " is Not Displayed.");
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify fields using common xpath and text with hash With For Loop " + text + ". Exception: " + e.getClass());
         }
 
     }
@@ -2901,21 +3021,6 @@ public class ApplicationKeywords extends ApplicationXpaths {
 //            return flag;
 //        }
 
-    public Map<String, String> verifyLabelsInTopSectionOfServices(String commonXpath, String valueXpath, String labelValuesWithHash, String extra) {
-        Map<String, String> map = new LinkedHashMap<>();
-        try {
-            String[] values = labelValuesWithHash.split("#");
-            for (int i = 0; i < values.length; i++) {
-                String label = values[i].trim();
-                String value = verifyValueUsingLabel(commonXpath, label, valueXpath, "");
-                map.put(label.trim(), value);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in verify  Labels in Top Section of Services " + labelValuesWithHash + ". Exception: " + e.getClass());
-        }
-        return map;
-    }
 
     public String textGet(String objLocator) {
         String getText1;
@@ -3027,31 +3132,6 @@ public class ApplicationKeywords extends ApplicationXpaths {
     }
 
 
-    public void verifyLogout() {
-        try {
-            if (!isElementDisplayed(LoginPage.icon_Profile)) {
-                String close = "close#xpath=//img[@src='https://experia-uat.bajajfinserv.in/UI/images/modal-cross.svg']";
-                for (int i = 0; i < sizeOfLocator(close); i++) {
-                    String close1 = "close#xpath=(//img[@src='https://experia-uat.bajajfinserv.in/UI/images/modal-cross.svg'])[" + i + "]";
-                    if (findWebElement(close1).isDisplayed()) {
-                        clickOn(close1);
-                        break;
-                    }
-                }
-            }
-            if (isElementDisplayed(LoginPage.icon_Profile)) {
-                clickOnButtonUsingLocatorUsingForLoop(LoginPage.icon_Profile);
-                waitTime(3);
-                clickOnIfDisplayed(LoginPage.btn_Logout);
-                waitForPageToLoad();
-                manualScreenshot("After Logout");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in Logout. Exception: " + e.getClass());
-        }
-    }
-
     public int getSizeOfSplittedText(String text, String regex) {
         int size = 0;
         try {
@@ -3119,8 +3199,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
 
         List<String> lines = Collections.emptyList();
         try {
-            lines =
-                    Files.readAllLines(Paths.get(fileName), StandardCharsets.UTF_8);
+            lines = Files.readAllLines(Paths.get(fileName), StandardCharsets.UTF_8);
         } catch (IOException e) {
             e.printStackTrace();
             testStepFailed("Failed in read File in List");
@@ -3139,88 +3218,18 @@ public class ApplicationKeywords extends ApplicationXpaths {
         return value;
     }
 
-    public void verifyOtpScreenTiming(int timeInSeconds) {
-        try {
 
-            int count = 0;
-            if (isElementDisplayed(FDServicesPage.timer)) {
-                String timeWithSeconds = textGet(FDServicesPage.timer);
-                count = Integer.parseInt(timeWithSeconds.split(" ")[0]);
-                if (count <= timeInSeconds && count >= timeInSeconds - 20) {
-                    testStepPassed("Timer start with " + timeInSeconds + " is verified successfully");
-                } else {
-                    stepFailed("Timer start with " + timeInSeconds + " is not verified");
-                }
-                if (isElementDisplayed(FDServicesPage.btn_ResendOtp_Disabled)) {
-                    testStepPassed(getRefOfXpath(FDServicesPage.btn_ResendOtp_Disabled) + " is Disabled for " + timeInSeconds + " verified successfully");
-                } else {
-                    stepFailed(getRefOfXpath(FDServicesPage.btn_ResendOtp_Disabled) + " is Not Disabled for " + timeInSeconds + " seconds");
-                }
-                boolean flag = true;
-                for (int i = 0; i < 3; i++) {
-                    int count1 = Integer.parseInt(textGet(FDServicesPage.timer).split(" ")[0]);
-                    if (count1 <= count) {
-                        testStepPassed("Count: " + count1 + "");
-                        count = count1;
-                        waitTime(2);
-                    } else {
-                        flag = false;
-                    }
-                }
-                if (flag) {
-                    testStepPassed("Count Down Reverse Order Verified Successfully");
-                } else {
-                    stepFailed("Count Down Reverse Order is Not Verified");
-                }
-                if (timeWithSeconds.contains("Secs")) {
-                    testStepPassed("Timing present in seconds verified successfully");
-                } else {
-                    stepFailed("Timing is not present with seconds");
-                }
+    public void verifyPlaceHolder(String objectLocator, String text) {
+        try {
+            String actual = getAttributeUsingLocatorAndAttribute(objectLocator, "placeholder");
+            if (text.equalsIgnoreCase(actual)) {
+                testStepPassed(getRefOfXpath(objectLocator) + " PlaceHolder verified Successfully");
             } else {
-                testStepFailed(getRefOfXpath(FDServicesPage.timer) + " is Not Displayed");
+                testStepFailed(getRefOfXpath(objectLocator) + " PlaceHolder not verified");
             }
         } catch (Exception e) {
             e.printStackTrace();
-            testStepFailed("Failed in verify Otp Screen timing. Exception: " + e.getClass());
-        }
-    }
-
-    public void verifyResendOtpButton(int timeInSeconds) {
-
-        try {
-            if (isElementDisplayed(FDServicesPage.timer)) {
-                int count1 = Integer.parseInt(textGet(FDServicesPage.timer).split(" ")[0]);
-                waitTime(timeInSeconds);
-                if (count1 == 0 && isElementDisplayed(FDServicesPage.enableResendOtp)) {
-                    testStepPassed("Resend OTP Button is Enabled after timer become 0 successfully");
-                    clickOnIfDisplayed(FDServicesPage.enableResendOtp);
-                    verifyOtpScreenTiming(timeInSeconds);
-                } else {
-                    stepFailed("Resend OTP Button is Not Enable after timer become 0");
-                }
-            } else {
-                stepFailed(getRefOfXpath(FDServicesPage.timer) + " is Not Displayed");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in verify Resend OTP Button. Exception: " + e.getClass());
-        }
-    }
-
-    public void verifyTextContentInOtpScreen() {
-        try {
-
-            verifyElementIsDisplayedUsingLocator(FDServicesPage.content1);
-            verifyElementIsDisplayedUsingLocator(FDServicesPage.content3);
-            String text = getText(FDServicesPage.content3);
-            String mobNumber = text.split("91 ")[1];
-            verifyMaskedAndUnmaskedFormatUsingValue(mobNumber.trim(), "Mobile Number", "X", 0, 4, true, "0");
-            verifyMaskedAndUnmaskedFormatUsingValue(mobNumber.trim(), "Mobile Number", "X", 0, 4, false, "1");
-            verifyButtonIsDisabledUsingLocator(FDServicesPage.btn_Submit_Otp);
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in verify Text Content In Otp Screen. Exception: " + e.getClass());
+            testStepFailed("verify Place Holder. Exception: " + e.getClass());
         }
     }
 
@@ -3338,52 +3347,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
 //        }
     //Invalid OTP !
     //OTP Limit exceeded! Please try after sometime.
-    public void verifyOtpTextBox() {
-        String err1 = "Invalid Otp Error Message#xpath=//*[normalize-space(text())='Invalid OTP !']";
-        try {
-            typeInOtpInTextBox(6, "ABCDEF");
-            verifyButtonIsDisabledUsingLocator(FDServicesPage.btn_Submit_Otp);
-            typeInOtpInTextBox(6, "abcdef");
-            verifyButtonIsDisabledUsingLocator(FDServicesPage.btn_Submit_Otp);
-            typeInOtpInTextBox(6, "!@#$%^");
-            verifyButtonIsDisabledUsingLocator(FDServicesPage.btn_Submit_Otp);
-            typeInOtpInTextBox(1, "1");
-            verifyButtonIsDisabledUsingLocator(FDServicesPage.btn_Submit_Otp);
-            typeInOtpInTextBox(2, "12");
-            verifyButtonIsDisabledUsingLocator(FDServicesPage.btn_Submit_Otp);
-            typeInOtpInTextBox(3, "123");
-            verifyButtonIsDisabledUsingLocator(FDServicesPage.btn_Submit_Otp);
-            typeInOtpInTextBox(4, "1234");
-            verifyButtonIsDisabledUsingLocator(FDServicesPage.btn_Submit_Otp);
-            typeInOtpInTextBox(5, "12345");
-            verifyButtonIsDisabledUsingLocator(FDServicesPage.btn_Submit_Otp);
-            typeInOtpInTextBox(6, "123456");
-            verifyButtonIsEnabledUsingLocator(FDServicesPage.btn_Submit_Otp);
-            typeInOtpInTextBox(6, "111111");
-            verifyButtonIsEnabledUsingLocator(FDServicesPage.btn_Submit_Otp);
-            clickOnIfDisplayed(FDServicesPage.btn_Submit_Otp);
-            verifyFieldsDisplayedUsingLocator(err1);
-            clickOnIfDisplayed(FDServicesPage.icon_Close_OTP);
-            verifyLocatorIsNOT_Displayed(FDServicesPage.content1, "Close Icon is", "");
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in verify Otp Text Box. Exception: " + e.getClass());
-        }
-    }
 
-    public void clickOnToolTip(String labelText) {
-        try {
-            String toolTip = labelText + " Tool Tip#xpath=//*[normalize-space(text())='" + labelText.trim() + "']/following-sibling::*//img[contains(@src,'icons-info.svg')]";
-            if (isElementDisplayed(toolTip)) {
-                clickOn(toolTip);
-            } else {
-                testStepFailed(labelText + " Tool Tip is Not Displayed");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in click on tool Tip. Exception: " + e.getClass());
-        }
-    }
 
     //09_08_2022
 //        public void verifyTextBoxIsDisabledUsingLocator(String locator) {
@@ -3449,95 +3413,6 @@ public class ApplicationKeywords extends ApplicationXpaths {
      * Page Objects Methods
      */
 
-    public void verifyRelationShipDetails(String subTitleText, String labelValuesWithHash, String extra) {
-        try {
-            String title = "" + subTitleText + " Sub Title#xpath=//div[@class='Relationship_Details']/descendant::div[@class='Relationshipbox_title']/strong[normalize-space(text())='" + subTitleText.trim() + "']";
-            Boolean flag = verifyElementIsDisplayedUsingLocator(title);
-            if (flag) {
-                String[] values = labelValuesWithHash.split("#");
-                for (int i = 0; i < values.length; i++) {
-                    String value = values[i];
-                    verifyValueUsingLabel(getCommonPathOfLocator(title) + "/../following-sibling::div/ul/li/p", value, "/following-sibling::strong", "");
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in verify Relationship Details for " + subTitleText + " with " + labelValuesWithHash + ". Exception: " + e.getClass());
-        }
-    }
-
-    public void verifyRelationShipInsuranceDetails(String subTitleText, String labelValuesWithHash, String extra) {
-        try {
-            String title = "Insurance Details " + subTitleText + " Sub Title#xpath=//div[@class='Relationship_Details']/descendant::div[@class='Relationshipbox_title']/strong[normalize-space(text())='Insurance Details']/../following-sibling::div/div/div/strong[normalize-space(text())='" + subTitleText.trim() + "']";
-            Boolean flag = verifyElementIsDisplayedUsingLocator(title);
-            if (flag) {
-                String[] values = labelValuesWithHash.split("#");
-                for (int i = 0; i < values.length; i++) {
-                    String value = values[i];
-                    verifyValueUsingLabel(getCommonPathOfLocator(title) + "/../following-sibling::ul/li/p", value, "/following-sibling::strong", "");
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in verify Relationship Details for Insurance Details " + subTitleText + " with " + labelValuesWithHash + ". Exception: " + e.getClass());
-        }
-    }
-
-    public List<String> verifyTopSectionInServices(String logoLocator, String amountText, String labelWithHash, String nudgeText, String hexValue, String colorName, String cssValue, String LANText, Boolean emiDueDate, String extra) {
-        List<String> list = new ArrayList<>();
-        try {
-            String name = "Name of Product#xpath=//div[@class='fixed_deposit_text']/strong";
-            String nudgeIcon = "" + nudgeText + " Nudge#xpath=//div[@class='fixed_deposit_text']/strong/i[normalize-space(text())='" + nudgeText + "']";
-            String number = "Number#xpath=//div[@class='fixed_deposit_text']/p";
-            String label_amount = "" + amountText + "#xpath=//div[@class='fixed_deposit_amount']/p[normalize-space(text())='" + amountText + "']";
-            String amount = "" + amountText + " Value#xpath=//div[@class='fixed_deposit_amount']/p[normalize-space(text())='" + amountText + "']/following-sibling::strong";
-            String dueDate = "Due Date for Next Emi#xpath=//div[@class='fixed_points_one']/p[normalize-space(text())='Next EMI Due Amount']/following-sibling::i[contains(text(),'Due Date')]|//div[@class='fixed_points_one']/p[normalize-space(text())='Next EMI Due Amount']/following-sibling::i[contains(text(),'(Due on Not Available)')]";
-            verifyElementIsDisplayedUsingLocator(logoLocator);
-            validateGetTextCustomized(name, " is Displayed Successfully. Name: ");
-            if (!nudgeText.equals("")) {
-                validateGetTextCustomized(nudgeIcon, " is Displayed Successfully. Nudge Text: ");
-                verifyLocatorColorUsingCssValue(nudgeIcon, hexValue, colorName, cssValue);
-//                if (nudgeText.toLowerCase().contains("overdue")) {
-//                }
-            }
-            if (emiDueDate) {
-                validateGetTextCustomized(dueDate, " is Displayed Successfully. Due Date Text: ");
-            }
-
-            String nameValue = validateGetTextCustomized(number, " is Displayed Successfully. Name: ");
-            if (nameValue.contains(LANText)) {
-                manualScreenshot(nameValue + " is Displayed successfully");
-            } else {
-                testStepFailed(LANText + " is Not Displayed");
-            }
-            validateGetTextCustomized(label_amount, " is Displayed successfully. Label Name: ");
-            validateGetTextCustomized(amount, " is Displayed successfully. " + amountText + ": ");
-
-            String common = "Label#xpath=//div[@class='fixed_points_one']/p|//div[@class='a_monthamt_flex']/p";
-            for (int i = 1; i <= sizeOfLocator(common); i++) {
-                String label = "Label " + i + "#xpath=(//div[@class='fixed_points_one']/p|//div[@class='a_monthamt_flex']/p)[" + i + "]";
-                String labelValue = "" + getText(label) + " Value#xpath=(//div[@class='fixed_points_one']/strong|//div[@class='a_monthamt_flex']/strong)[" + i + "]";
-                if (isElementDisplayed(label)) {
-//                    manualScreenshot(getRefOfXpath(label) + " is displayed successfully");
-                    if (isElementDisplayed(labelValue)) {
-                        list.add(getText(label));
-                        testStepPassed(getRefOfXpath(labelValue) + " is displayed successfully");
-                        testStepPassed(getText(label) + " : " + getText(labelValue));
-                    } else {
-                        list.add(getText(label));
-                        testStepFailed(getRefOfXpath(labelValue) + " is not displayed");
-                    }
-                } else {
-                    testStepFailed(getRefOfXpath(label) + " is not displayed");
-                }
-            }
-            verifyLabelValuesWithHash(list, labelWithHash);
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in verify Top section in Services. Exception: " + e.getClass());
-        }
-        return list;
-    }
 
     public void verifyElementIsNotPresentUsingtext(String text) {
         try {
@@ -3554,69 +3429,10 @@ public class ApplicationKeywords extends ApplicationXpaths {
     }
 
 
-    public Map<String, String> verifyRhs(String title, String optionsWithHash, String extra) {
-        Map<String, String> map = new LinkedHashMap<>();
-        try {
-            String titleLocator = title + "in RHS#xpath=//*[normalize-space(text())='" + title.trim() + "']";
-            String[] split = optionsWithHash.split("#");
-            for (int i = 0; i < split.length; i++) {
-                String optionText = split[i];
-                String optionLocator1 = optionText + " Option in " + title + " RHS#xpath=//*[normalize-space(text())='" + title + "']/../following-sibling::div//*[normalize-space(text())=\"" + optionText.trim() + "\"]";
-                boolean flag = false;
-                for (int j = 1; j <= sizeOfLocator(optionLocator1); j++) {
-                    String optionLocator = optionText + " Option in " + title + " RHS#xpath=(//*[normalize-space(text())='" + title + "']/../following-sibling::div//*[normalize-space(text())=\"" + optionText.trim() + "\"])[" + j + "]";
-                    if (isElementDisplayed(optionLocator)) {
-                        flag = true;
-                        map.put(optionText, optionLocator);
-                        testStepPassed(getRefOfXpath(optionLocator) + " is Displayed successfully");
-                        break;
-                    }
-                }
-                if (!flag) {
-                    testStepFailed(getRefOfXpath(optionLocator1) + " is Not Displayed");
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in verify RHS. Exception: " + e.getClass());
-        }
-        return map;
-    }
-
-    public void verifyRhsOptionIsNotDisplayed(String title, String optionsWithHash, String extra) {
-        try {
-            String titleLocator = title + "in RHS#xpath=//*[normalize-space(text())='" + title.trim() + "']";
-            String[] split = optionsWithHash.split("#");
-            for (int i = 0; i < split.length; i++) {
-                String optionText = split[i];
-                String optionLocator1 = optionText + " Option in " + title + " RHS#xpath=//*[normalize-space(text())='" + title + "']/../following-sibling::div//*[normalize-space(text())=\"" + optionText + "\"]";
-                boolean flag = true;
-                for (int j = 1; j <= sizeOfLocator(optionLocator1); j++) {
-                    String optionLocator = optionText + " Option in " + title + " RHS#xpath=(//*[normalize-space(text())='" + title + "']/../following-sibling::div//*[normalize-space(text())=\"" + optionText + "\"])[" + j + "]";
-                    if (isElementDisplayed(optionLocator)) {
-                        flag = false;
-                        testStepFailed(getRefOfXpath(optionLocator1) + " is Displayed Wrongly");
-                        break;
-                    }
-                }
-                if (flag) {
-                    testStepPassed(getRefOfXpath(getRefOfXpath(optionLocator1) + " is Not Displayed successfully"));
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in verify RHS Option " + optionsWithHash + " is Not Displayed. Exception: " + e.getClass());
-        }
-    }
-
-
     public void typeInIfPresent(String objectLocator, String inputValue) {
         try {
             if (isElementPresent(objectLocator)) {
                 typeIn(objectLocator, inputValue);
-//                typeInIfDisplayed(objectLocator,inputValue);
-//                findWebElement(objectLocator).sendKeys(inputValue);
-//                manualScreenshot(objectLocator.split("#")[0] + " Input Value is : " + inputValue);
             } else {
                 testStepFailed(objectLocator.split("#")[0] + " is not Present and Type In Failed");
             }
@@ -3626,11 +3442,10 @@ public class ApplicationKeywords extends ApplicationXpaths {
         }
     }
 
-    public String getLocator(String locator) {
-//        Map<String, String> loc = putLocator();
-        String s = loc.get(locator);
-        return s;
-    }
+//    public String getLocator(String locator) {
+//        String s = loc.get(locator);
+//        return s;
+//    }
 
 
     public Boolean verifyElementIsNotPresentUsingLocator(String locator) {
@@ -3645,6 +3460,22 @@ public class ApplicationKeywords extends ApplicationXpaths {
         } catch (Exception e) {
             e.printStackTrace();
             testStepFailed("Failed in verify Element Is NOt Present Using Locator " + getRefOfXpath(locator) + ". Exception: " + e.getClass());
+        }
+        return flag;
+    }
+
+    public Boolean verifyElementIsPresentUsingLocator(String locator) {
+        Boolean flag = false;
+        try {
+            if (isElementPresent(locator)) {
+                manualScreenshot(locator.split("#")[0] + " is Present Verified successfully");
+                flag = true;
+            } else {
+                testStepFailed(locator.split("#")[0] + " is Not Present");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Element Is Present Using Locator " + getRefOfXpath(locator) + ". Exception: " + e.getClass());
         }
         return flag;
     }
@@ -3704,12 +3535,12 @@ public class ApplicationKeywords extends ApplicationXpaths {
 
     public void verifyFieldsDisplayedUsingTextAndForLoop(String fieldText, String extra) {
         try {
-            String field = "" + fieldText + "#xpath=//*[normalize-space(text())='" + fieldText.trim() + "']";
+            String field = "" + fieldText + "#xpath=//*[normalize-space(text())='" + fieldText.trim() + "']|//*[normalize-space(text())=\"" + fieldText.trim() + "\"]";
             int size = findWebElements(field).size();
             if (isElementPresent(field)) {
                 boolean flag = false;
                 for (int i = 1; i <= size; i++) {
-                    String field1 = "" + fieldText + "#xpath=(//*[normalize-space(text())='" + fieldText.trim() + "'])[" + i + "]";
+                    String field1 = "" + fieldText + "#xpath=(//*[normalize-space(text())='" + fieldText.trim() + "']|//*[normalize-space(text())=\"" + fieldText.trim() + "\"])[" + i + "]";
                     if (isElementDisplayed(field1)) {
                         testStepPassed(fieldText + " is Verified Successfully");
                         flag = true;
@@ -3727,6 +3558,31 @@ public class ApplicationKeywords extends ApplicationXpaths {
         }
     }
 
+    public void verifyFieldsDisplayedUsingTextAndForLoopIfItHasSpecialCharacters(String fieldText, String extra) {
+        try {
+            String field = "" + fieldText + "#xpath=//*[normalize-space(text())=\"" + fieldText.trim() + "\"]";
+            int size = findWebElements(field).size();
+            if (isElementPresent(field)) {
+                boolean flag = false;
+                for (int i = 1; i <= size; i++) {
+                    String field1 = "" + fieldText + "#xpath=(//*[normalize-space(text())=\"" + fieldText.trim() + "\"])[" + i + "]";
+                    if (isElementDisplayed(field1)) {
+                        testStepPassed(fieldText + " is Verified Successfully");
+                        flag = true;
+                    }
+                }
+                if (!flag) {
+                    testStepFailed(fieldText + " is Not Displayed");
+                }
+            } else {
+                testStepFailed(fieldText + " is Not Present");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Fields Displayed Using Text " + fieldText + " and For Loop If It Has Special Characters. Exception: " + e.getClass());
+        }
+    }
+
     public void hardRefresh() {
         try {
             JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -3739,7 +3595,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
         }
     }
 
-    public String changedCommaToHash(String values, String extra) {
+    public String changeCommaToHash(String values, String extra) {
         String s = null;
         try {
             s = values.replaceAll(", ", "#").trim();
@@ -3768,14 +3624,11 @@ public class ApplicationKeywords extends ApplicationXpaths {
         try {
             String field = "";
             if (type.toLowerCase().contains("button") || type.toLowerCase().contains("link text")) {
-                field = "" + fieldText + " Button#xpath=//a[normalize-space(text())='" + fieldText.trim()
-                        + "']|//*[@placeholder='" + fieldText.trim() + "']|//input[@value='" + fieldText.trim() + "']|//button[normalize-space(text())='" + fieldText.trim() + "']";
+                field = "" + fieldText + " Button#xpath=//a[normalize-space(text())='" + fieldText.trim() + "']|//*[@placeholder='" + fieldText.trim() + "']|//input[@value='" + fieldText.trim() + "']|//button[normalize-space(text())='" + fieldText.trim() + "']";
             } else if (type.toLowerCase().contains("text box")) {
-                field = "" + fieldText + " text box#xpath=//label[normalize-space(text())='" + fieldText.trim()
-                        + "']/following-sibling::input";
+                field = "" + fieldText + " text box#xpath=//label[normalize-space(text())='" + fieldText.trim() + "']/following-sibling::input";
             } else {
-                field = "" + fieldText + " " + type + "#xpath=//*[normalize-space(text())='" + fieldText.trim()
-                        + "']";
+                field = "" + fieldText + " " + type + "#xpath=//*[normalize-space(text())='" + fieldText.trim() + "']";
             }
             boolean status = false;
             int size = sizeOfLocator(field);
@@ -3806,14 +3659,11 @@ public class ApplicationKeywords extends ApplicationXpaths {
         try {
             String field = "";
             if (type.toLowerCase().contains("button") || type.toLowerCase().contains("link text")) {
-                field = "" + fieldText + " Button#xpath=//a[normalize-space(text())='" + fieldText.trim()
-                        + "']|//*[@placeholder='" + fieldText.trim() + "']|//input[@value='" + fieldText.trim() + "']|//button[normalize-space(text())='" + fieldText.trim() + "']";
+                field = "" + fieldText + " Button#xpath=//a[normalize-space(text())='" + fieldText.trim() + "']|//*[@placeholder='" + fieldText.trim() + "']|//input[@value='" + fieldText.trim() + "']|//button[normalize-space(text())='" + fieldText.trim() + "']";
             } else if (type.toLowerCase().contains("text box")) {
-                field = "" + fieldText + " text box#xpath=//label[normalize-space(text())='" + fieldText.trim()
-                        + "']/following-sibling::input";
+                field = "" + fieldText + " text box#xpath=//label[normalize-space(text())='" + fieldText.trim() + "']/following-sibling::input";
             } else {
-                field = "" + fieldText + " " + type + "#xpath=//*[normalize-space(text())='" + fieldText.trim()
-                        + "']";
+                field = "" + fieldText + " " + type + "#xpath=//*[normalize-space(text())='" + fieldText.trim() + "']";
             }
             boolean status = false;
             int size = sizeOfLocator(field);
@@ -4018,6 +3868,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
     public void clickUsingMouse(String locator) {
         try {
             Actions ac = new Actions(driver);
+            ac.moveToElement(findWebElement(locator), 50, 0);
             ac.click(findWebElement(locator)).perform();
         } catch (Exception e) {
             e.printStackTrace();
@@ -4025,9 +3876,20 @@ public class ApplicationKeywords extends ApplicationXpaths {
         }
     }
 
-    ///////Mustaq
 
-    //////////25112022
+    /// ////Mustaq
+    public void mouseHover(String locator) {
+        try {
+
+            Actions ac = new Actions(driver);
+            ac.moveToElement(findWebElement(locator)).perform();
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in Mouse Hover. Exception: " + e.getClass());
+        }
+    }
+
+    /// ///////25112022
     public boolean verifyButtonIsDisplayedInThePage(String buttonText) {
         boolean flag = false;
         try {
@@ -4036,8 +3898,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
                 String button = "" + buttonText + " Button#xpath=(//a[normalize-space(text())='" + buttonText + "']|//button[normalize-space(text())='" + buttonText + "'])[" + i + "]";
                 if (isElementPresent(button)) {
                     scrollToWebElement(button);
-                    if (isElementDisplayed(button))
-                        manualScreenshot(buttonText + " is Displayed successfully");
+                    if (isElementDisplayed(button)) manualScreenshot(buttonText + " is Displayed successfully");
                     flag = true;
                     break;
                 }
@@ -4099,10 +3960,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
 
     public void waitForElementUntilVisibleFluent(String locator) {
         try {
-            Wait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver)
-                    .withTimeout(Duration.ofSeconds(35))
-                    .pollingEvery(Duration.ofSeconds(5))
-                    .ignoring(NoSuchElementException.class);
+            Wait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(35)).pollingEvery(Duration.ofSeconds(5)).ignoring(NoSuchElementException.class);
             fluentWait.until((ExpectedConditions.visibilityOfElementLocated(By.xpath(getCommonPathOfLocator(locator)))));
         } catch (Exception e) {
             e.printStackTrace();
@@ -4216,7 +4074,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
 
     }
 
-    ////////Mustaq////////////start
+    /// /////Mustaq////////////start
     public void verifymultipleButtonIsDisplayedInThePageusingText(String buttonswithComma, String extra) {
         try {
             String[] split = buttonswithComma.split(",");
@@ -4273,14 +4131,13 @@ public class ApplicationKeywords extends ApplicationXpaths {
     public boolean verifyButtonIsEnabledInThePageusingText(String buttonText) {
         boolean flag = false;
         try {
-
-            String enabled = buttonText + "#xpath=//a[normalize-space(text())='" + buttonText + "'][not(@disabled)]|//button[normalize-space(text())='" + buttonText + "'][not(@disabled)]";
+            String enabled = buttonText + "#xpath=//a[normalize-space(text())='" + buttonText + "'][not(@disabled)]|//button[normalize-space(text())='" + buttonText + "'][not(@disabled)]|//a[not(@disabled)]//p[normalize-space(text())='" + buttonText + "']";
             for (int i = 1; i <= findWebElements(enabled).size(); i++) {
-                String enabledButton = "" + buttonText + " Button#xpath=(//a[normalize-space(text())='" + buttonText + "'][not(@disabled)]|//button[normalize-space(text())='" + buttonText + "'][not(@disabled)])[" + i + "]";
+                String enabledButton = "" + buttonText + " Button#xpath=(//a[normalize-space(text())='" + buttonText + "'][not(@disabled)]|//button[normalize-space(text())='" + buttonText + "'][not(@disabled)]|//a[not(@disabled)]//p[normalize-space(text())='" + buttonText + "'])[" + i + "]";
                 if (isElementPresent(enabledButton)) {
                     scrollToWebElement(enabledButton);
                     if (isElementDisplayed(enabledButton))
-                        manualScreenshot(buttonText + " is in Diabled Condition verified successfully");
+                        manualScreenshot(buttonText + " is in Disabled Condition verified successfully");
                     flag = true;
                     break;
                 }
@@ -4292,7 +4149,6 @@ public class ApplicationKeywords extends ApplicationXpaths {
             e.printStackTrace();
             testStepFailed("Failed in verify " + buttonText + " button Is Enabled In The Page. Exception: " + e.getClass());
         }
-
         return flag;
     }
 
@@ -4301,7 +4157,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
             String[] split = buttonswithComma.split(",");
             for (int i = 0; i < split.length; i++) {
                 String button = split[i];
-                verifyButtonIsDisabledInThePageusingText(button);
+                verifyButtonIsEnabledInThePageusingText(button);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -4310,80 +4166,9 @@ public class ApplicationKeywords extends ApplicationXpaths {
 
     }
 
-    ///Mustaq end////////////
-//////// Neelakandan ////////
-    public String LoginIndividualForHome(String mobileNumber, String dob, String otp) {
-        String urlHome = "";
-        try {
-            notePad = new File(System.getProperty("user.dir") + "//FailedResults//" + DateTimeFormatter.ofPattern("d-MMM-YY-HH-mm-ss").format(LocalDateTime.now().minusSeconds(3)) + ".txt");
-            newFile = notePad.createNewFile();
-            String typeLocator = "Individual Customer tab#xpath=//div[@class='formtab']/descendant::a[normalize-space(text())='Individual']";
-            String txtBox_MobileNumber = "Mobile Number Text Box For Individual#xpath=(//input[@id='txtEmailMobile_Individual'])[1]";
-            String txtBox_Dob = "DOB Text Box For Individual#xpath=(//input[@id='EnterDOBdate_Individual'])[1]";
-            redirectToUrl("https://uat-oneweb.bajajfinserv.in/MyAccountLogin/Login/LogoutUserBasedOnMobile?MobileNo=" + mobileNumber + "", "");
-            waitTime(2);
-            redirectToUrl("https://uat-oneweb.bajajfinserv.in/MyAccountLogin", "");
-            clickOnButtonUsingLocatorUsingForLoopWithoutFail(LoginPage.skip);
-            String load = "Loader#xpath=//div[@id='status']";
-            String loadInACtive = "Loader In Active#xpath=//div[@id='status'and(@style)]";
-            while (isElementDisplayed(load)) {
-                if (isElementPresent(loadInACtive)) {
-                    break;
-                }
-            }
 
-            waitTime(2);
-//            boolean flag1 = clickOnIfDisplayed(LoginPage.icon_MyAccount);
-//            if (flag1) {
-//                boolean flag2 = clickOnIfDisplayed(LoginPage.login_Button);
-//                if (flag2) {
-            clickOnButtonUsingLocatorUsingForLoopWithoutFail(LoginPage.skip);
-            clickOnIfDisplayed(typeLocator);
-            typeInIfPresent(txtBox_MobileNumber, mobileNumber);
-            clickOnButtonUsingTextUsingForLoop("Get OTP");
-            waitForPageToLoad();
-            enterOtpInTextBox("o", "123456");
-            clickOnButtonUsingTextUsingForLoop("Submit");
-            typeInIfPresent(txtBox_Dob, dob);
-            clickOnButtonUsingTextUsingForLoop("PROCEED");
-            waitForPageToLoad();
-            if (!isElementDisplayed(HomePage.txt_Home)) {
-                skipSteps("Login is Un Successful");
-//                        ApplicationKeywords.quitBrowser = true;
-//                        SoftAssertions sa = new SoftAssertions();
-//                        sa.fail("Login is Un Successful");
-//                        sa.assertAll();
-            } else {
-                testStepPassed("Login is Successful");
-                clickOnButtonUsingLocatorUsingForLoopWithoutFail(LoginPage.skip);
-            }
-            urlHome = driver.getCurrentUrl();
-//                } else {
-//                    skipSteps("Login is Un Successful");
-//                    ApplicationKeywords.quitBrowser=true;
-//                    SoftAssertions sa=new SoftAssertions();
-//                    sa.fail("Login is Un Successful");
-//                    sa.assertAll();
-//                }
-//            } else {
-//                skipSteps("Login is Un Successful");
-//                ApplicationKeywords.quitBrowser=true;
-//                SoftAssertions sa=new SoftAssertions();
-//                sa.fail("Login is Un Successful");
-//                sa.assertAll();
-//            }
-
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in Login Individual. Exception: " + e.getClass());
-            ApplicationKeywords.quitBrowser = true;
-            SoftAssertions sa = new SoftAssertions();
-            sa.fail("Login is Un Successful");
-            sa.assertAll();
-        }
-        return urlHome;
-    }
+    /// Mustaq end////////////
+    /// ///// Neelakandan ////////
 
     public void clickOnTabRightSide() {
         try {
@@ -4422,7 +4207,8 @@ public class ApplicationKeywords extends ApplicationXpaths {
             testStepFailed("Faile din Click on Radio button using Label " + label + ". Exception: " + e.getClass());
         }
     }
-////// ravi - Start ////////////////
+
+    /// /// ravi - Start ////////////////
 
     public void clickOn(String objLocator, String param) {
         try {
@@ -4436,132 +4222,9 @@ public class ApplicationKeywords extends ApplicationXpaths {
     }
 
 
-    public Boolean clickOnHorizantalLevelSingleSubMenu(String firstLevelMenuText, String menuText) {
-        Boolean flag = false;
-        try {
-
-            String locator = "Horizantal level 1 sub Menu - " + menuText + "#xpath=//a[normalize-space(text())='" + firstLevelMenuText + "']/following::a[normalize-space(text())='" + menuText + "']";
-            // String locator = "Horizantal level 2 sub Menu - " + menuText + "#xpath=//a[normalize-space(text())='" + firstLevelMenuText.trim() + "']/../div[@class='leveltwo_sub_items']/descendant::a[normalize-space(text())='" + menuText.trim() + "']";
-            //scrollToWebElement(locator);
-            if (isElementDisplayed(locator)) {
-                clickOn(locator, "");
-                waitForPageToLoad();
-                flag = true;
-            } else {
-                testStepFailed("Horizantal level 2 sub Menu - " + menuText + " is not displayed");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in click On Horizantal level 2 sub  Menu " + menuText + ". Exception: " + e.getClass());
-        }
-        return flag;
-    }
-
-
-    public Boolean clickOnHorizantalLevelApplyOnlineMenu(String firstLevelMenuText, String menuText) {
-        Boolean flag = false;
-        try {
-
-            String locator = "Horizantal level 2 sub Menu - " + menuText + "#xpath=//li[@class='dropdown-parent']//following-sibling::li[normalize-space(text())='" + firstLevelMenuText.trim() + "']//a[normalize-space(text())='" + menuText.trim() + "']";
-            if (isElementDisplayed(locator)) {
-                clickOn(locator, "");
-                waitForPageToLoad();
-                flag = true;
-            } else {
-                testStepFailed("Horizantal level 2 sub Menu - " + menuText + " is not displayed");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in click On Horizantal level 2 sub  Menu " + menuText + ". Exception: " + e.getClass());
-        }
-        return flag;
-    }
-
-    public Boolean clickOnHorizantalMenu(String menuText) {
-        Boolean flag = false;
-        try {
-            //  String locator = "Horizantal Menu - " + menuText + "#xpath=//ul[@class='menuitems']/descendant::a[normalize-space(text())='" + menuText.trim() + "']";
-            String locator = "Horizantal Menu - " + menuText + "#xpath=//div[@class='newcust_subheader']/descendant::a[normalize-space(text())='" + menuText.trim() + "']";
-            if (isElementDisplayed(locator)) {
-                clickOn(locator, "");
-                flag = true;
-            } else {
-                testStepFailed("Horizantal Menu - " + menuText + " is not displayed");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in click On Horizantal Menu " + menuText + ". Exception: " + e.getClass());
-        }
-        return flag;
-    }
-
-
-    public Boolean clickOnHorizantalLevelTwoSubMenu(String firstLevelMenuText, String menuText) {
-        Boolean flag = false;
-        try {
-
-            String locator = "Horizantal level 2 sub Menu - " + menuText + "#xpath=//li[@class='dropdown-parent']//following-sibling::li[normalize-space(text())='" + firstLevelMenuText.trim() + "']//ul[@class='list-unstyled']//a[normalize-space(text())='" + menuText.trim() + "']";
-            // String locator = "Horizantal level 2 sub Menu - " + menuText + "#xpath=//a[normalize-space(text())='" + firstLevelMenuText.trim() + "']/../div[@class='leveltwo_sub_items']/descendant::a[normalize-space(text())='" + menuText.trim() + "']";
-            //scrollToWebElement(locator);
-            if (isElementDisplayed(locator)) {
-                clickOn(locator, "");
-                waitForPageToLoad();
-                flag = true;
-            } else {
-                testStepFailed("Horizantal level 2 sub Menu - " + menuText + " is not displayed");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in click On Horizantal level 2 sub  Menu " + menuText + ". Exception: " + e.getClass());
-        }
-        return flag;
-    }
-
-
-    public Boolean clickOnHorizantalLevelTwoSubMenuwithoutSubheading(String firstLevelMenuText, String menuText) {
-        Boolean flag = false;
-        try {
-
-            String locator = "Horizantal level 2 sub Menu - " + menuText + "#xpath=//li[@class='dropdown-parent']//following-sibling::li[normalize-space(text())='" + firstLevelMenuText.trim() + "']//ul//a[normalize-space(text())='" + menuText.trim() + "']";
-            // String locator = "Horizantal level 2 sub Menu - " + menuText + "#xpath=//a[normalize-space(text())='" + firstLevelMenuText.trim() + "']/../div[@class='leveltwo_sub_items']/descendant::a[normalize-space(text())='" + menuText.trim() + "']";
-            //scrollToWebElement(locator);
-            if (isElementDisplayed(locator)) {
-                clickOn(locator, "");
-                waitForPageToLoad();
-                flag = true;
-            } else {
-                testStepFailed("Horizantal level 2 sub Menu - " + menuText + " is not displayed");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in click On Horizantal level 2 sub  Menu " + menuText + ". Exception: " + e.getClass());
-        }
-        return flag;
-    }
-
-
-    public Boolean clickOnHorizantalLevelTwoSubheadingSubMenu(String firstLevelMenuText, String subHeading, String menuText) {
-        Boolean flag = false;
-        try {
-            String locator = "Horizantal level 2 sub Menu - " + menuText + "#xpath=//li[@class='dropdown-parent']//following-sibling::li[normalize-space(text())='" + firstLevelMenuText.trim() + "']//h4[text()='" + subHeading + "']/following-sibling::ul//a[normalize-space(text())='" + menuText.trim() + "']";
-            scrollToWebElement(locator);
-            if (isElementDisplayed(locator)) {
-                clickOn(locator);
-                waitForPageToLoad();
-                flag = true;
-            } else {
-                testStepFailed("Horizantal level 2 sub Menu - " + menuText + " is not displayed");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in click On Horizantal level 2 sub  Menu " + menuText + ". Exception: " + e.getClass());
-        }
-        return flag;
-    }
-
 ////// ravi - End ////////////////
 
-    ////// Mustaq - Start ////////////////
+    /// /// Mustaq - Start ////////////////
     public Boolean verifyLocatorColorUsingCssValueUsingPresent(String objectLocator, String expectedColorHexValue, String expectedColor, String cssValue) {
         Boolean flag = false;
         try {
@@ -4595,7 +4258,30 @@ public class ApplicationKeywords extends ApplicationXpaths {
             } else {
                 locator = "" + text + "#xpath=(//" + tag + "[normalize-space(text())='" + text.trim() + "'])[" + extra + "]";
             }
+            scrollToWebElementIfPresent(locator);
             if (isElementDisplayed(locator)) {
+                manualScreenshot(text + " is Displayed Successfully");
+            } else {
+                testStepFailed(text + " is Not Displayed in the Page");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Field Displayed Using Tag And Text " + text + ". Exception: " + e.getClass());
+        }
+
+    }
+
+    public void verifyFieldDisplayedUsingTagAndTextUsingScroll(String tag, String text, String extra) {
+        try {
+            String locator = "";
+            if (extra.equals("")) {
+                locator = "" + text + "#xpath=//" + tag + "[normalize-space(text())='" + text.trim() + "']";
+            } else {
+                locator = "" + text + "#xpath=(//" + tag + "[normalize-space(text())='" + text.trim() + "'])[" + extra + "]";
+            }
+            if (isElementPresent(locator)) {
+                scrollToWebElement(locator);
+                verifyElementIsDisplayedOrNot(locator);
                 manualScreenshot(text + " is Displayed Successfully");
             } else {
                 testStepFailed(text + " is Not Displayed in the Page");
@@ -4636,31 +4322,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
     }
 
 
-    ////// Mustaq - End ////////////////
-
-    public void getJsonFieFromOnline() {
-        try {
-//            driver.get("https://cms-api.bajajfinserv.in/content/bajajfinserv/experia/in/en/homepage");
-            driver.get("https://stage-aem-api.bajajfinserv.in/content/bajajfinserv/experia/in/en/homepage");
-            String jsonLocator = "AEM Jason Value#xpath=//pre";
-            String Content = getTextPresent(jsonLocator);
-            File file;
-            file = new File(System.getProperty("user.dir") + "\\UploadDocuments\\NewHomeAEM.json");
-            if (file.exists()) {
-                file.delete();
-                file = new File(System.getProperty("user.dir") + "\\UploadDocuments\\NewHomeAEM.json");
-            }
-            FileWriter fr = new FileWriter(file, true);
-            BufferedWriter br = new BufferedWriter(fr);
-            br.write(Content);
-            br.close();
-            fr.close();
-            System.out.println("Home Json from AEM download successfully");
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in get Json from Online. Exception: " + e.getClass());
-        }
-    }
+    /// /// Mustaq - End ////////////////
 
 
     public static void generateFailureNotePad() {
@@ -4681,20 +4343,6 @@ public class ApplicationKeywords extends ApplicationXpaths {
         }
     }
 
-
-    public void verifyLogoutForTestRunner() {
-        try {
-            if (isElementDisplayed(LoginPage.icon_Profile)) {
-                clickOnIfDisplayed(LoginPage.icon_Profile);
-                clickOnButtonUsingTextUsingForLoop("Logout");
-                waitForPageToLoad();
-                waitTime(3);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in Logout for Test Runner. Exception: " + e.getClass());
-        }
-    }
 
     public boolean isElementDisplayedWithWait(String locator) {
         boolean flag = false;
@@ -4732,36 +4380,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
         }
     }
 
-    /////// Mustaq - start ////////
-    public void verifyAmountWithRs(String locatorXPath, String locatorLabel, String symbol, String extra) {
-        try {
-            String locator = "" + locatorLabel + "#xpath=" + locatorXPath + "";
-//            verifyElementIsPresentAndGetText(locator);
-            verifyElementIsDisplayedAndGetText(locator);
-            String valueAmount = getTextPresent(locator);
-            String[] split = valueAmount.split("Rs. ");
-            String value = split[1].replaceAll(symbol, "");
-            Boolean s = true;
-            for (int i = 0; i < value.length(); i++) {
-                if (!Character.isDigit(value.charAt(i))) {
-                    s = false;
-                }
-            }
-            if (s) {
-                testStepPassed(locatorLabel + " value has only digits verified successfully");
-            } else {
-                stepFailed(locatorLabel + " value has only digits is not verified");
-            }
-
-        } catch (ArrayIndexOutOfBoundsException e) {
-            e.printStackTrace();
-            testStepFailed("There is no space between Rs. and Amount. Exception: " + e.getClass());
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in verify " + locatorLabel + " Amount with Rs. and Digits -. Exception: " + e.getClass());
-        }
-    }
-
+    /// //// Mustaq - start ////////
 
     public void verifyDateFormat(String locatorXPath, String locatorLabel, String format, String extra) {
         try {
@@ -4780,6 +4399,40 @@ public class ApplicationKeywords extends ApplicationXpaths {
         }
     }
 
+    public void verifyDateFormatNew(String locatorXPath, String locatorLabel, String format, String extra) {
+        try {
+            String locator = "" + locatorLabel + "#xpath=" + locatorXPath + "";
+            verifyElementIsDisplayedAndGetText(locator);
+            String value = getTextPresent(locator);
+            boolean flag = isValidDateFormatWithoutMask(value, format);
+            if (flag) {
+                testStepPassed(locatorLabel + " Value has Date Format verified successfully. " + format);
+            } else {
+                stepFailed(locatorLabel + " Value has Date Format is not verified");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed i verify value is Date Format New. Exception: " + e.getClass());
+        }
+    }
+
+    public void verifyDateFormatLocator(String locator, String locatorLabel, String format, String extra) {
+        try {
+//            String locator = "" + locatorLabel + "#xpath=" + locatorXPath + "";
+            verifyElementIsDisplayedAndGetText(locator);
+            String value = getTextPresent(locator);
+            boolean flag = isValidDateFormatWithoutMask(value, format);
+            if (flag) {
+                testStepPassed(locatorLabel + " Value has Date Format verified successfully. " + format);
+            } else {
+                stepFailed(locatorLabel + " Value has Date Format is not verified");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed i verify value is Date Format Locator. Exception: " + e.getClass());
+        }
+    }
+
     public Boolean verifyElementIsDisplayedAndGetText(String locator) {
         Boolean flag = false;
         try {
@@ -4787,7 +4440,23 @@ public class ApplicationKeywords extends ApplicationXpaths {
                 flag = true;
                 scrollToWebElement(locator);
                 verifyElementIsDisplayedOrNot(locator);
-                testStepInfo(locator.split("#")[0] + "-" + getTextPresent(locator));
+                testStepInfo(locator.split("#")[0] + " - " + getTextPresent(locator));
+            } else {
+                testStepFailed(locator.split("#")[0] + " is Not Present");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verifyElementIsDisplayedtAndGetText . Exception: " + e.getClass());
+        }
+        return flag;
+    }
+
+    public Boolean verifyElementIsPresentAndGetText(String locator) {
+        Boolean flag = false;
+        try {
+            if (isElementPresent(locator)) {
+                flag = true;
+                testStepInfo(locator.split("#")[0] + " - " + getTextPresent(locator));
             } else {
                 testStepFailed(locator.split("#")[0] + " is Not Present");
             }
@@ -4797,7 +4466,8 @@ public class ApplicationKeywords extends ApplicationXpaths {
         }
         return flag;
     }
-    /////// Mustaq - end ////////
+
+    /// //// Mustaq - end ////////
 
 
     public void deleteAllFilesInInternalDownloadsFolder() {
@@ -4831,14 +4501,11 @@ public class ApplicationKeywords extends ApplicationXpaths {
         try {
             String field = "";
             if (type.toLowerCase().contains("button") || type.toLowerCase().contains("link text")) {
-                field = "" + fieldText + " Button#xpath=//a[normalize-space(text())='" + fieldText.trim()
-                        + "']|//*[@placeholder='" + fieldText.trim() + "']|//input[@value='" + fieldText.trim() + "']|//button[normalize-space(text())='" + fieldText.trim() + "']";
+                field = "" + fieldText + " Button#xpath=//a[normalize-space(text())='" + fieldText.trim() + "']|//*[@placeholder='" + fieldText.trim() + "']|//input[@value='" + fieldText.trim() + "']|//button[normalize-space(text())='" + fieldText.trim() + "']";
             } else if (type.toLowerCase().contains("text box")) {
-                field = "" + fieldText + " text box#xpath=//label[normalize-space(text())='" + fieldText.trim()
-                        + "']/following-sibling::input";
+                field = "" + fieldText + " text box#xpath=//label[normalize-space(text())='" + fieldText.trim() + "']/following-sibling::input";
             } else {
-                field = "" + fieldText + " " + type + "#xpath=//*[normalize-space(text())='" + fieldText.trim()
-                        + "']";
+                field = "" + fieldText + " " + type + "#xpath=//*[normalize-space(text())='" + fieldText.trim() + "']";
             }
             boolean status = false;
             if (isElementPresent(field)) {
@@ -4893,7 +4560,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
             }
         } catch (Exception e) {
             e.printStackTrace();
-            testStepFailed("Failed in verify Element Color Using Css Value :  " + getRefOfXpath(objectLocator) + ". Exception: " + e.getClass());
+            testStepFailed("Failed in verify Element Color Using Css Value using RGB:  " + getRefOfXpath(objectLocator) + ". Exception: " + e.getClass());
         }
         return flag;
     }
@@ -4915,7 +4582,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
         }
     }
 
-    ////Mustaq- 07022023//// start
+    /// /Mustaq- 07022023//// start
     public void arrowDown(String locator, int times, String extra) {
         try {
             for (int i = 1; i <= times; i++) {
@@ -4935,8 +4602,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
             StringBuilder sb = new StringBuilder();
             Random random = new Random();
             for (int i = 0; i < length; i++) {
-                sb.append(chars.charAt(random.nextInt(chars
-                        .length())));
+                sb.append(chars.charAt(random.nextInt(chars.length())));
             }
             randomstring = sb.toString();
 
@@ -4988,7 +4654,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
     }
 
 
-////14032023
+    /// /14032023
 
     public void verifyErrorMessageUsingLocatorAndGetText(String locatorErrMsg) {
         try {
@@ -5007,7 +4673,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
 
     public void verifyerrorMessageForTextBoxUsingLabel(String label, String errmsg, String extra) {
         try {
-            String errLocator = label + " Err Msg: " + errmsg + "#xpath=//label[normalize-space(text())='" + label.trim() + "']/following-sibling::*[normalize-space(text())='" + errmsg.trim() + "'][contains(@class,'errormsg')][@style='display:block']";
+            String errLocator = label + " Err Msg: " + errmsg + "#xpath=//label[normalize-space(text())='" + label.trim() + "']/following-sibling::*[normalize-space(text())='" + errmsg.trim() + "'][contains(@class,'errormsg')][@style='display:block']|//label[normalize-space(text())='" + label.trim() + "']/following-sibling::*[normalize-space(text())='" + errmsg.trim() + "'][contains(@class,'errormsg')][@style='display: block;']";
             Boolean flag = scrollToWebElementIfPresent(errLocator);
             if (flag) {
                 verifyElementIsDisplayedUsingLocator(errLocator);
@@ -5062,7 +4728,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
         return flag;
     }
 
-    ///////////////////////09052023
+    /// ////////////////////09052023
     public void verifyFieldsNotDisplayedUsingCommonXpathAndMultipleTextWithHash(String commonXpath, String textsWithHash, String extra) {
         String text = "";
         try {
@@ -5107,10 +4773,10 @@ public class ApplicationKeywords extends ApplicationXpaths {
     }
 
 
-    /////////////////Mustaq-24042023
+    /// //////////////Mustaq-24042023
 
     public void verifyByDefaultSelectedTab(String Tab, String extra) {
-        String activeTab = "" + Tab + " Tab #xpath=//a[normalize-space(text())='" + Tab.trim() + "']/parent::li[@class='active']";
+        String activeTab = "" + Tab + " Tab #xpath=//a[normalize-space(text())='" + Tab.trim() + "']/parent::li[contains(@class,'active')]";
         try {
             if (isElementDisplayed(activeTab)) {
                 testStepPassed(Tab + " Tab is selected by Default");
@@ -5125,8 +4791,24 @@ public class ApplicationKeywords extends ApplicationXpaths {
 
     }
 
+    public void verifyByDefaultSelectedTabUsingXpath(String xpath, String tab, String extra) {
+        String activeTab = "" + tab + " Tab #xpath=" + xpath.trim() + "[normalize-space(text())='" + tab.trim() + "']/ancestor::a[contains(@class,'active')]";
+        try {
+            if (isElementDisplayed(activeTab)) {
+                testStepPassed(tab + " Tab is selected by Default");
+            } else {
+                testStepFailed(getRefOfXpath(activeTab) + "is not selected by Default");
+            }
 
-    //////////////Mustaq-29052023
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify by Default Selected Tab .Exception:" + e.getClass());
+        }
+
+    }
+
+
+    /// ///////////Mustaq-29052023
     public boolean verifyCheckBoxIsSelectedUsingLocator(String locator, String extra) {
         boolean flag = false;
         try {
@@ -5167,7 +4849,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
         return flag;
     }
 
-    //////////////////////////////////2706/////
+    /// ///////////////////////////////2706/////
     public void verifyErrorMessageUsingTextUsingForLoop(String errorMessageText) {
         try {
             Boolean flag = false;
@@ -5193,7 +4875,7 @@ public class ApplicationKeywords extends ApplicationXpaths {
     }
 
 
-    ///////////////////-AZURE//////////////////////////
+    /// ////////////////-AZURE//////////////////////////
 
 
     public static void logBuginAzure() {
@@ -5236,7 +4918,11 @@ public class ApplicationKeywords extends ApplicationXpaths {
         request.multiPart("ReproSteps", "Steps to Reproduce the Scenario: " + "\r\n" + scenarioStepsToRepro + "\r\n" + "Scenario Failed at: " + "\r\n" + failedStepsToRepro);
         request.multiPart("AreaPath", AreaPath);
         request.multiPart("AssignedTo", AssginedTo);
-        request.multiPart("ParentWorkitemId", "2401228");
+//        request.multiPart("ParentWorkitemId", "2401228");
+        //Chaitanya
+        request.multiPart("ParentWorkitemId", "3511961");
+//Rutuja
+//        request.multiPart("ParentWorkitemId", "3511843");
 
 
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -5290,13 +4976,33 @@ public class ApplicationKeywords extends ApplicationXpaths {
         return value;
     }
 
-////250723
+    /// /250723
 
     public void verifyPopupDisplayedUsingTagAndText(String tag, String text, String extra) {
         try {
             String locator = "";
             if (extra.equals("")) {
-                locator = "" + text + "#xpath=//" + tag + "[normalize-space(text())='" + text.trim() + "']";
+                locator = "" + text + "#xpath=//" + tag + "[normalize-space(text())='" + text.trim() + "']|//" + tag + "[contains((text()),'" + text.trim() + "')]|//" + tag + "[normalize-space(text())=\"" + text.trim() + "\"]";
+            } else {
+                locator = "" + text + "#xpath=(//" + tag + "[normalize-space(text())='" + text.trim() + "'])[" + extra + "]";
+            }
+            if (isElementDisplayed(locator)) {
+                manualScreenshot(text + " Popup is Displayed Successfully");
+            } else {
+                testStepFailed(text + " Popup is Not Displayed in the Page");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Popup Displayed Using Tag And Text " + text + ". Exception: " + e.getClass());
+        }
+
+    }
+
+    public void verifyPopupDisplayedUsingTagAndTextWithSpecials(String tag, String text, String extra) {
+        try {
+            String locator = "";
+            if (extra.equals("")) {
+                locator = "" + text + "#xpath=//" + tag + "[contains((text()),\"" + text.trim() + "\")]|//" + tag + "[normalize-space(text())=\"" + text.trim() + "\"]";
             } else {
                 locator = "" + text + "#xpath=(//" + tag + "[normalize-space(text())='" + text.trim() + "'])[" + extra + "]";
             }
@@ -5334,5 +5040,562 @@ public class ApplicationKeywords extends ApplicationXpaths {
 
     }
 
+
+    public void handleSlider(String locator, int times, String extra) {
+        try {
+            WebElement slider = findWebElement(locator);
+            for (int i = 1; i <= times; i++) {
+                slider.sendKeys(Keys.ARROW_RIGHT);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in handle Slider. Exception: " + e.getClass());
+
+        }
+
+    }
+
+    public void backSpace(String locator, int times, String extra) {
+        try {
+            WebElement slider = findWebElement(locator);
+            for (int i = 1; i <= times; i++) {
+                slider.sendKeys(Keys.BACK_SPACE);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in back Space. Exception: " + e.getClass());
+
+        }
+
+    }
+
+
+    /// /////////////////03112023-Financial years
+
+    public static int getMonthFromDate(Date date) {
+        int result = -1;
+        if (date != null) {
+            Calendar cal = Calendar.getInstance();
+            cal.setTime(date);
+            result = cal.get(Calendar.MONTH) + 1;
+        }
+        return result;
+    }
+
+    public static int getYearFromDate(Date date) {
+        int result = -1;
+        if (date != null) {
+            Calendar cal = Calendar.getInstance();
+            cal.setTime(date);
+            result = cal.get(Calendar.YEAR);
+        }
+        return result;
+    }
+
+    //Toast
+    public void handleToast(String locatorid, String Text, String extra) {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, 10);
+            By toastlocator = (By.id(locatorid));
+            WebElement toast = wait.until(ExpectedConditions.presenceOfElementLocated(toastlocator));
+            String text = toast.getText();
+            System.out.println(text);
+            if (text.equalsIgnoreCase(Text) || text.contains(Text)) {
+                testStepPassed("Toast Message " + text + " is verified Successfully");
+            } else {
+                testStepFailed("Toast Message is not verified");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in handle Toast. Exception: " + e.getClass());
+
+        }
+
+    }
+
+    public void handleToastByClass(String locatorclass, String Text, String extra) {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, 10);
+            By toastlocator = (By.className(locatorclass));
+            WebElement toast = wait.until(ExpectedConditions.presenceOfElementLocated(toastlocator));
+            String text = toast.getText();
+            System.out.println(text);
+            if (text.equalsIgnoreCase(Text) || text.contains(Text)) {
+                testStepPassed("Toast Message " + text + " is verified Successfully");
+            } else {
+                testStepFailed("Toast Message is not verified");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in handle Toast. Exception: " + e.getClass());
+
+        }
+
+    }
+
+    public void toastBackgroundColour(String locator, String Colour, String Hex, String CssValue, String extra) {
+        try {
+
+
+//            String backGroundColour = findWebElement(locator).getCssValue(CssValue);
+            String backGroundImage = findWebElement(locator).getCssValue(CssValue);
+//            testStepInfo(backGroundColour);
+            testStepInfo(backGroundImage);
+
+            if (Hex.equalsIgnoreCase(backGroundImage)) {
+                testStepPassed("Toast Message " + Colour + " Colour is verified Successfully");
+            } else {
+                testStepFailed("Toast Message Colour is not verified");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in Toast BackGround Colour. Exception: " + e.getClass());
+
+        }
+
+    }
+
+
+    public boolean isValidDateFormatWithMask(String date, String format) {
+        try {
+            SimpleDateFormat sdf = new SimpleDateFormat(format);
+            sdf.setLenient(false);
+            sdf.parse(date.replace("X", "0"));
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    public boolean isValidDateFormatWithoutMask(String date, String format) {
+        try {
+            SimpleDateFormat sdf = new SimpleDateFormat(format);
+            sdf.setLenient(false);
+            sdf.parse(date);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    public void verifyScreenNotScrollable(String Extra) {
+        try {
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            long initialScrollHeight = (long) js.executeScript("return document.documentElement.scrollHeight;");
+            long initialClientHeight = (long) js.executeScript("return document.documentElement.clientHeight;");
+            js.executeScript("window.scrollBy(0, 100);");
+            long updatedScrollHeight = (long) js.executeScript("return document.documentElement.scrollHeight;");
+            long updatedClientHeight = (long) js.executeScript("return document.documentElement.clientHeight;");
+            if (initialScrollHeight != updatedScrollHeight || initialClientHeight != updatedClientHeight) {
+                testStepFailed("The screen is scrollable.");
+            } else {
+                testStepPassed("The screen is not scrollable as expected");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verifyScreenNotScrollable. Exception: " + e.getClass());
+
+        }
+
+
+    }
+
+    /// //090524
+    public void verifyDateFormatForDates(String Date, String format, String extra) {
+        try {
+            String value = Date;
+            boolean flag = isValidDateFormatWithoutMask(value, format);
+            if (flag) {
+                testStepPassed(Date + " Value has Date Format verified successfully. " + format);
+            } else {
+                stepFailed(Date + " Value has Date Format is not verified");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Date Format For Dates. Exception: " + e.getClass());
+        }
+    }
+
+    public String verifyValueUsingLabelUsingContains(String commonPath, String labelText, String additionalPath, String extra) {
+        String value = "";
+        try {
+            String label = "" + labelText + " Label#xpath=" + commonPath + "[contains(text(),'" + labelText.trim() + "')]";
+            String labelValue = "" + labelText + " Value#xpath=" + getCommonPathOfLocator(label) + "" + additionalPath + "";
+            scrollToWebElement(label);
+            if (isElementDisplayed(label)) {
+                manualScreenshot(getRefOfXpath(label) + " is Displayed Successfully");
+                if (isElementDisplayed(labelValue)) {
+                    if (extra.equals("attribute")) {
+                        value = findWebElement(labelValue).getAttribute("value").trim();
+                    } else {
+                        value = getTextPresent(labelValue).trim();
+                    }
+                    manualScreenshot(getRefOfXpath(labelValue) + " is Displayed Successfully. Value: " + getText(labelValue));
+                } else {
+                    testStepFailed(getRefOfXpath(labelValue) + " is not displayed");
+                }
+            } else {
+                testStepFailed(labelText + " is not displayed");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Value using Label Using Contains " + labelText + ". Exception: " + e.getClass());
+        }
+        return value;
+    }
+
+
+    /// //////////Login For Customer360
+
+    public String logIn(String mobileNumber, String dob, String otp) {
+        String urlHome = "";
+        try {
+            notePad = new File(System.getProperty("user.dir") + "//FailedResults//" + DateTimeFormatter.ofPattern("d-MMM-YY-HH-mm-ss").format(LocalDateTime.now().minusSeconds(3)) + ".txt");
+            newFile = notePad.createNewFile();
+//            String typeLocator = "Individual Customer tab#xpath=//div[@class='formtab']/descendant::a[normalize-space(text())='Individual']";
+            waitTime(2);
+            redirectToUrl("https://customer360uat.bajajfinserv.in/", "");
+            urlHome = driver.getCurrentUrl();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in Login. Exception: " + e.getClass());
+            ApplicationKeywords.quitBrowser = true;
+            SoftAssertions sa = new SoftAssertions();
+            sa.fail("Login is Un Successful");
+            sa.assertAll();
+        }
+        return urlHome;
+    }
+
+
+    /// /////////////////////////////1909
+    public void verifyElementAndPrintSize(String locator, String extra) {
+        try {
+            verifyElementIsDisplayedOrNot(locator);
+            int size = sizeOfLocator(locator);
+            manualScreenshot(getRefOfXpath(locator) + " : " + size);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Element And Print Size. Exception: " + e.getClass());
+        }
+    }
+
+
+    public void verifyAmountWithRs(String locatorXPath, String locatorLabel, String symbol, String extra) {
+        try {
+            String locator = "" + locatorLabel + "#xpath=" + locatorXPath + "";
+//            verifyElementIsPresentAndGetText(locator);
+            verifyElementIsDisplayedAndGetText(locator);
+            String valueAmount = getTextPresent(locator);
+            String[] split = valueAmount.split("₹ ");
+            String value = split[1].replaceAll(symbol, "");
+            Boolean s = true;
+            for (int i = 0; i < value.length(); i++) {
+                if (!Character.isDigit(value.charAt(i))) {
+                    s = false;
+                }
+            }
+            if (s) {
+                testStepPassed(locatorLabel + " value has only digits verified successfully");
+                manualScreenshot("₹ is present in the " + locatorLabel);
+            } else {
+                stepFailed(locatorLabel + " value has only digits is not verified");
+            }
+
+        } catch (ArrayIndexOutOfBoundsException e) {
+            e.printStackTrace();
+            testStepFailed("There is no space between Rs. and Amount. Exception: " + e.getClass());
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify " + locatorLabel + " Amount with Rs. and Digits -. Exception: " + e.getClass());
+        }
+    }
+
+
+    public void verifyAmountsWithStartSymbols(String locator, String Symbol, String Extra) {
+        try {
+            verifyElementIsDisplayedAndGetText(locator);
+            String valueAmount = getTextPresent(locator);
+            if (valueAmount.startsWith(Symbol)) {
+                testStepPassed(getRefOfXpath(locator) + " is starting with " + Symbol);
+            } else {
+                testStepFailed(getRefOfXpath(locator) + " is not starting with " + Symbol);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify Amounts With Start Symbols. Exception: " + e.getClass());
+
+        }
+    }
+
+
+    public void keyEnterAction() {
+        try {
+            Actions action = new Actions(driver);
+            action.sendKeys(Keys.ENTER).perform();
+            testStepInfo("ENTER key pressed");
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed at keyEnterAction" + e.getClass());
+        }
+
+    }
+
+    public boolean clickUsingMouseIfDisplayed(String locator) {
+        boolean flag = false;
+        try {
+            boolean flag1 = scrollToWebElementIfPresent(locator);
+            if (flag1) {
+                if (isElementDisplayed(locator)) {
+                    clickUsingMouse(locator);
+                    flag = true;
+                    waitForPageToLoad();
+                    waitTime(2);
+                    testStepPassed(locator.split("#")[0] + " is Displayed and Clicked Successfully");
+                } else {
+                    testStepFailed(locator.split("#")[0] + " is Not Displayed");
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in Click Using Mouse If Displayed " + getRefOfXpath(locator) + ". Exception: " + e.getClass());
+        }
+        return flag;
+    }
+
+    public boolean handleToastByClassAndToastDispayedOrNot(String locatorclass, String Text) {
+        boolean isToastDispayed = false;
+        try {
+            if (isElementPresentByClassName(locatorclass)) {
+                WebDriverWait wait = new WebDriverWait(driver, 10);
+                By toastlocator = (By.className(locatorclass));
+                WebElement toast = wait.until(ExpectedConditions.presenceOfElementLocated(toastlocator));
+                String text = toast.getText();
+                System.out.println(text);
+
+
+                if (text.equalsIgnoreCase(Text) || text.contains(Text)) {
+                    isToastDispayed = true;
+                } else {
+                    isToastDispayed = false;
+                }
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in handleToastByClassAndToastDispayedOrNot. Exception: " + e.getClass());
+        }
+        return isToastDispayed;
+    }
+
+    public String getTextFromHandleToastByClass(String locatorclass) {
+//        boolean isToastDisplayed = false;
+        String text = null;
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, 10);
+            By toastlocator = (By.className(locatorclass));
+            WebElement toast = wait.until(ExpectedConditions.presenceOfElementLocated(toastlocator));
+            text = toast.getText();
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in get Text From Handle Toast By Class. Exception: " + e.getClass());
+        }
+        return text;
+    }
+
+    public static WebElement findWebElementByClass(String locator) {
+        WebElement element = driver.findElement(By.className(locator));
+        return element;
+    }
+
+    public static boolean isElementPresentByClassName(String locator) {
+        boolean flag = driver.findElements(By.className(locator)).size() > 0;
+        return flag;
+    }
+
+    public void moveToElement(String locator) {
+        try {
+            Actions ac = new Actions(driver);
+            ac.moveToElement(findWebElement(locator)).build().perform();
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in Move To Element. Exception: " + e.getClass());
+        }
+    }
+
+    public void verifyLoanDetailsTabSelectedByDefault(String tab) {
+        try {
+            String ele = tab + " #xpath=//a[@data-tab='" + tab + "' and contains(@class,'active')]";
+            if (isElementDisplayed(ele)) {
+                testStepPassed(tab + " option is selected by default");
+            } else {
+                testStepFailed(tab + " option is not selected by default");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in Verify Loan Details Tab Selected By Default. Exception: " + e.getClass());
+        }
+    }
+
+    public void verifyLoanDetailsTabIsActiveAfterSelect(String tab) {
+        try {
+            String ele = tab + " #xpath=//a[@data-tab='" + tab + "' and contains(@class,'active')]";
+            if (isElementDisplayed(ele)) {
+                testStepPassed(tab + " option is Active after select");
+            } else {
+                testStepFailed(tab + " option is not Active after select");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in Verify Loan Details Tab Is Active After Select. Exception: " + e.getClass());
+        }
+    }
+
+    public void verifyTableHeaders(String expectedHeadersString, int tableIndex) {
+        try {
+            String commonTable = String.format("Table #xpath=(//table[contains(@class,'emi-table')])[%d]", tableIndex);
+            String headerXpath = String.format("(//table[contains(@class,'emi-table')])[%d]//tr//th", tableIndex);
+            String[] expectedHeaders = expectedHeadersString.split("#|, ");
+            if (isElementDisplayed(commonTable)) {
+                testStepPassed("Table Displayed");
+                List<WebElement> actualHeaders = findWebElements("Table Headers #xpath=" + headerXpath);
+                for (String expectedHeader : expectedHeaders) {
+                    boolean found = false;
+                    for (WebElement actualHeader : actualHeaders) {
+                        String headerText = actualHeader.getText().trim();
+                        if (headerText.equalsIgnoreCase(expectedHeader.trim())) {
+                            String ele = expectedHeader + " #xpath=" + headerXpath + "[normalize-space()='" + expectedHeader + "']";
+                            moveToElement(ele);
+                            scrollToWebElement(ele);
+                            testStepPassed("Table Header: " + expectedHeader + " is present");
+                            highLightBorder(ele, "");
+//                            manualScreenshot("");
+                            found = true;
+                            break;
+                        }
+                    }
+
+                    if (!found) {
+                        testStepFailed("Table Header: " + expectedHeader + " is not present");
+                    }
+                }
+
+            } else {
+                testStepFailed("Table not displayed");
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed at verify Table Headers. Exception: " + e.getMessage());
+        }
+    }
+
+    public void verifyDropDownDisplayedOrNot(String dropDownName) {
+        try {
+            String selectLocator = dropDownName + "#xpath=//p[normalize-space()='" + dropDownName.trim() + "']//parent::div//select";
+            Select select = createSelectRef(selectLocator);
+            scrollToWebElement(selectLocator);
+            if (isElementDisplayed(selectLocator)) {
+                highLightBorder(selectLocator, "");
+                clickOn(selectLocator);
+                testStepPassed(getRefOfXpath(selectLocator) + " is Displayed Successfully");
+            } else {
+                testStepFailed(getRefOfXpath(selectLocator) + " is Not Displayed");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed at Verify Drop Down Displayed Or Not. Exception: " + e.getMessage());
+        }
+    }
+
+    public boolean verifyRadiobuttonIsDisplayedUsingText(String labelName) {
+        boolean flag = false;
+        try {
+            String radiobutton = labelName + "#xpath=//label[normalize-space(text())='" + labelName + "']";
+            scrollToWebElement(radiobutton);
+            if (isElementDisplayed(radiobutton)) {
+                highLightBorder(radiobutton, "is Displayed");
+//                manualScreenshot(labelName + "  is Displayed");
+                flag = true;
+            } else {
+                testStepFailed(labelName + "  is  Not Displayed");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("verify Radiobutton Is Disabled  using Text Failed " + labelName + ". Exception: " + e.getClass());
+        }
+        return flag;
+    }
+
+    public boolean verifyButtonIsEnabledUsingText(String buttonText) {
+        boolean flag = false;
+        try {
+            String enabled = buttonText + "#xpath=//a[normalize-space(text())='" + buttonText + "'][not(@disabled)]|//button[normalize-space(text())='" + buttonText + "'][not(@disabled)]|//a[not(@disabled)]//p[normalize-space(text())='" + buttonText + "']|//label[normalize-space()='" + buttonText + "']";
+            for (int i = 1; i <= findWebElements(enabled).size(); i++) {
+                String enabledButton = "" + buttonText + " Button#xpath=(//a[normalize-space(text())='" + buttonText + "'][not(@disabled)]|//button[normalize-space(text())='" + buttonText + "'][not(@disabled)]|//a[not(@disabled)]//p[normalize-space(text())='" + buttonText + "'])[" + i + "]|//label[normalize-space()='" + buttonText + "']";
+                if (isElementPresent(enabledButton)) {
+                    scrollToWebElement(enabledButton);
+                    if (isElementDisplayed(enabledButton))
+                        highLightBorder(enabledButton, "is in Enabled and Condition verified successfully");
+//                        manualScreenshot(buttonText + " is in Enabled and Condition verified successfully");
+                    flag = true;
+                    break;
+                }
+            }
+            if (!flag) {
+                testStepFailed(buttonText + " button is in Disabled Condition");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed in verify " + buttonText + " button Is Enabled In The Page. Exception: " + e.getClass());
+        }
+        return flag;
+    }
+
+    public void verifyNoDataAvailable(String id, String text, String extra) {
+
+        try {
+            String noRecords = "No Data Available #xpath=//div[contains(@id,'" + id.trim() + "')]//div[contains(@class,'table')]//table//td[normalize-space(text())='" + text.trim() + "']";
+            scrollToWebElementIfPresent(noRecords);
+            verifyElementIsDisplayedOrNot(noRecords);
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed verify no Data Available" + e.getClass());
+        }
+    }
+
+    public static void highLightBorder(String elementLocation, String screenShotMessage) {
+        try {
+            scrollByCoordinates(elementLocation);
+            WebElement e = findWebElement(elementLocation);
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].setAttribute('style', 'border: 4px solid red;');", e);
+            manualScreenshot(getRefOfXpath(elementLocation) + " " + screenShotMessage);
+            js.executeScript("arguments[0].setAttribute('style', '');", e);
+        } catch (Exception e) {
+            e.printStackTrace();
+            testStepFailed("Failed to high light broder  " + e.getClass());
+        }
+    }
+
+    public static void scrollByCoordinates(String x) {
+        try {
+            WebElement ele = findWebElement(x);
+            WebElement ee = ele;
+            Point p = ee.getLocation();
+            int y = p.getY() - 250;
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("window.scrollTo(" + p.getX() + "," + y + ");");
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+            testStepFailed("Failed to Scroll By Cordinates. Exception: " + e.getClass());
+        }
+    }
 
 }

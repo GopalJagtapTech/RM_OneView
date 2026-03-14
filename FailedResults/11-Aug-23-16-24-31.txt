@@ -1,8 +1,0 @@
-SYSTEMATIC DEPOSIT PLAN 951379 No. Tile is Not Present in this customer Id------------>  To verify View Documents option is displayed under Quick Actions for Active SDPĢ
-
- Account Number 951379 is Not Redirected------------>  To verify View Documents option is displayed under Quick Actions for Active SDPĢ
-
-Not Redirected to Expected------------>  To verify View Documents option is displayed under Quick Actions for Active SDPĢ
-
-View Documents Option in Quick Actions RHS is Not Displayed------------>  To verify View Documents option is displayed under Quick Actions for Closed SDPĳ
-

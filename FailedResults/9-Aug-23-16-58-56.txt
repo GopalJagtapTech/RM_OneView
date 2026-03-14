@@ -1,2 +1,0 @@
-Proceed Button Is Element Displayed Failed. Exception: class org.openqa.selenium.StaleElementReferenceException------------>  To verify Transactions details is displayed when customer click on passbook tab from hamburger menu for NTB and PTB - "Bills and Recharge"
-

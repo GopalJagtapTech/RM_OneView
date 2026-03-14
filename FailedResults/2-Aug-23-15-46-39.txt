@@ -1,22 +1,0 @@
-Failed in Click On Skip. Exception: class org.openqa.selenium.ElementClickInterceptedException------------>  Verify customer redirected respective page, when customer click on "Overview" option under New Car Finance loans Dropdown - ETB
-
-Failed in Click On Horizantal Menu - Loans. Exception: class org.openqa.selenium.ElementClickInterceptedException------------>  Verify customer redirected respective page, when customer click on "Overview" option under New Car Finance loans Dropdown - ETB
-
-Horizantal sub Menu - New car finance is not displayed------------>  Verify customer redirected respective page, when customer click on "Overview" option under New Car Finance loans Dropdown - ETB
-
-Horizantal level 2 sub Menu - Overview is not displayed------------>  Verify customer redirected respective page, when customer click on "Overview" option under New Car Finance loans Dropdown - ETB
-
-Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=3823fa02-8425-42e5-8675-d77222fc1cb7------------>  Verify customer redirected respective page, when customer click on "Overview" option under New Car Finance loans Dropdown - ETB
-
-Expected URL : https://www.bajajfinserv.in/new-car-finance------------>  Verify customer redirected respective page, when customer click on "Overview" option under New Car Finance loans Dropdown - ETB
-
-Failed in Click On Horizantal Menu - Loans. Exception: class org.openqa.selenium.ElementClickInterceptedException------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - ETB
-
-Horizantal sub Menu - New car finance is not displayed------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - ETB
-
-Horizantal level 2 sub Menu - Features is not displayed------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - ETB
-
-Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=649a5d29-36c0-47b1-adac-e0ce67ac557b------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - ETB
-
-Expected URL : https://www.bajajfinserv.in/new-car-finance-features------------>  Verify customer redirected respective page, when customer click on "Features" option under New Car Finance loans Dropdown - ETB
-

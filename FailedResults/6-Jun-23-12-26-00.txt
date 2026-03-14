@@ -1,26 +1,0 @@
-Test step failed ------------>  TC_01_To verify Credit card is displayed under My Relations
-
-Failed in redurect to Url https://uat-oneweb.bajajfinserv.in/MyAccountLogin/Login/LogoutUserBasedOnMobile?MobileNo=9176262627. Exception: class org.openqa.selenium.NoSuchSessionException------------>  TC_01_To verify Credit card is displayed under My Relations
-
-Take screen shot failed. Exception: class org.openqa.selenium.NoSuchSessionException------------>  TC_01_To verify Credit card is displayed under My Relations
-
-Failed in redurect to Url https://uat-oneweb.bajajfinserv.in/MyAccountLogin. Exception: class org.openqa.selenium.NoSuchSessionException------------>  TC_01_To verify Credit card is displayed under My Relations
-
-Take screen shot failed. Exception: class org.openqa.selenium.NoSuchSessionException------------>  TC_01_To verify Credit card is displayed under My Relations
-
-Failed in find Web Elements Skip Button in Cochmark. Exception: class org.openqa.selenium.NoSuchSessionException------------>  TC_01_To verify Credit card is displayed under My Relations
-
-Take screen shot failed. Exception: class org.openqa.selenium.NoSuchSessionException------------>  TC_01_To verify Credit card is displayed under My Relations
-
-Failed in click on  Skip Button in Cochmark button using locator using for loop without Fail. Exception: class java.lang.NullPointerException------------>  TC_01_To verify Credit card is displayed under My Relations
-
-Take screen shot failed. Exception: class org.openqa.selenium.NoSuchSessionException------------>  TC_01_To verify Credit card is displayed under My Relations
-
-Loader Is Element Displayed Failed. Exception: class org.openqa.selenium.NoSuchSessionException------------>  TC_01_To verify Credit card is displayed under My Relations
-
-Take screen shot failed. Exception: class org.openqa.selenium.NoSuchSessionException------------>  TC_01_To verify Credit card is displayed under My Relations
-
-Failed in scroll To WebElement If Present for MyAccount Icon. Exception: class org.openqa.selenium.NoSuchSessionException------------>  TC_01_To verify Credit card is displayed under My Relations
-
-Take screen shot failed. Exception: class org.openqa.selenium.NoSuchSessionException------------>  TC_01_To verify Credit card is displayed under My Relations
-

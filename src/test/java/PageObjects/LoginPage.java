@@ -1,249 +1,104 @@
 package PageObjects;
 
 import base.ApplicationKeywords;
+import org.openqa.selenium.*;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage extends ApplicationKeywords {
 
-    //         public static final String btn_Login="Login Button#xpath=(//a[text()='Login'])[1]";
-//         public static final String txtBox_CustomerId="Customer Id Text Box#xpath=//input[@id='txtCustomerId']";
-//         public static final String btn_Password="Password Button#xpath=//button[text()='Password']";
-//         public static final String txtBox_Password="Password Text Box#xpath=//button[@id='btnPassword' and text()='Login']";
-//         public static final String btn_Login2="Login Button 2#xpath=//p[text()='Please enter the password you set for Experia']/following-sibling::input//following-sibling::span";
-//         public static final String icon_Close="Close Icon#xpath=(//a[@class='closeIcon'])[6]";
-    public static final String txtBox_CustomerId = "Customer Id Text Box#xpath=//input[@name='uname']";
-    public static final String txtBox_Password = "Password Text Box#xpath=//input[@name='psw']";
-    public static final String btn_Login = "Login Button#xpath=//button[normalize-space(text())='Login']";
+    /// /////RMOneview
 
-    public static final String tab_ExperiaHome = "Experia Home Tab#xpath=//ul/li[@id='HomeBtn'and(@class='active')]";
-    public static final String icon_Profile = "Profile Menu Icon#xpath=//img[@alt='profile']";
-    //    public static final String btn_Logout = "Logout Button#xpath=//ul[@class='userdrop']//a[normalize-space(text())='Logout']";
-    public static final String btn_Logout = "Sign Out Button#xpath=//ul[@class='userdrop']//a[normalize-space(text())='Sign out']";
-    public static final String icon_MyAccount = "MyAccount Icon#xpath=//p[normalize-space(text())='My Account']/ancestor::a";
-    //    public static final String login_Button = "Login Button#xpath=//div[@class='login_tooltip']//button[normalize-space()='Login']";
-    public static final String login_Button = "SignIn Button#xpath=//div[@class='login_tooltip']//button[normalize-space()='Sign in']";
-    public static final String frame_Login = "Frame#xpath=(//iframe[@id='bfl_login_iframe'])[2]";
-    public static final String popup_Login = "Login PopUp#xpath=//h5[normalize-space(text())='Sign-in to My Account']";
-    public static final String skip = "Skip Button in Cochmark#xpath=//div[@class='cochmark_btn']/a[normalize-space(text())='Skip']";
+    /********* LHS Contents *********/
+    public static final String loginSection = "Login Section#xpath=//div[@class='login-form-bg-left']";
+    public static final String bajajFinservLogo = "Bajaj Finserv Logo#xpath=//div[@class='logo-box']//img[contains(@src,'images/Bajaj_Finserv_Logo_Primary.png')]";
+    public static final String loginTitle = "Login Title#xpath=//h2[normalize-space()='Login to your account']";
+    public static final String loginDescription = "Login Description Text#xpath=//p[normalize-space()='Kindly log in to gain access to your account.']";
+    public static final String dropDownLabelText = "Drop Down Label Text#xpath=//label[normalize-space()='Domain']";
+//    public static final String dropDownFieldMessage = "Drop Down Field Message#xpath=//div[normalize-space()='Select Domain']";
+    public static final String dropDownFieldIcon = "Drop Down Field Icon#xpath=//select[contains(@class,'cust-input-box cust-select-box')]//following::img[@src='assets/images/domain-icon.svg']";
+    public static final String loginButtonArrowIcon = "Login Button Arrow Icon#xpath=//button[contains(@class,'login-bg-btn')]//following::img[@src='assets/images/btn-arrow-icon.svg']";
+    public static final String domain_Dropdown = "Domain Dropdown#xpath=//select[contains(@class,'cust-input-box cust-select-box')]";
+    public static final String loginButton = "Login Button#xpath=//button[contains(@class,'login-bg-btn')]";
 
-    public static final String login_Popup = "Login PopUp#xpath=(//div[@class='loginparts'])[1]";
+    /********* RHS Contents *********/
+    public static final String welcomeMessageRHS = "Welcome Message On RHS#xpath=//div[@class='right-contant-titlebox']//p[normalize-space()='Welcome to,']";
+    public static final String titleRMOneViewOnRHS = "RMOne View Title On RHS#xpath=//div[@class='right-contant-titlebox']//h2[normalize-space()='RM-OneView Portal']";
+    public static final String bflEmployeeIconOnRHS = "BFL Employee Icon On RHS#xpath=//div[@class='portal-list-item']//div//img[@src='assets/images/bfl-employee-icon.svg']";
+    public static final String access360IconOnRHS = "Access 360 Icon On RHS#xpath=//div[@class='portal-list-item']//div//img[@src='assets/images/access-360-icon.svg']";
+    public static final String ITHelpDeskIconOnRHS = "IT Help Desk Icon On RHS#xpath=//div[@class='portal-list-item']//div//img[@src='assets/images/IT-HelpDesk-icon.svg']";
+    public static final String serviceNowIconOnRHS = "Service-Now Icon On RHS#xpath=//div[@class='portal-list-item']//div//img[@src='assets/images/Service-now-icon.svg']";
 
-    public void LoginIndividual(String mobileNumber, String dob, String otp) {
+    public static final String accessUrl1 = "Access Url 1#xpath=(//a[normalize-space(text())='https://access360.bajajfinserv.in/'])[1]";
+    public static final String access360Url = "Access 360 Url#xpath=(//a[normalize-space(text())='https://access360.bajajfinserv.in/'])[1]";
+    public static final String azureUrl = "Azure Url #xpath=(//a[normalize-space(text())='https://dev.azure.com/BFLDevOpsOrg/IT%20Requests'])";
+    public static final String serviceNowUrl = "Service Now Url#xpath=(//a[normalize-space(text())='https://bajajfinserv.service-now.com/bfl'])";
+
+
+
+    /********* BFL Mail *********/
+    public static final String mailInputBajajMsoft = "Email Input - Bajaj#xpath=//input[@name='loginfmt']";
+    public static final String nextBajajMsoft = "Next - Bajaj#xpath=//input[@id='idSIButton9']";
+    public static final String pwdInputBajajMsoft = "Pwd Input - Bajaj#xpath=//input[@name='passwd']";
+    public static final String signInBajajMsoft = "Sign In Button - Bajaj#xpath=//input[@id='idSIButton9']";
+    public static final String noBtnBajajMsoft = "No Button - Bajaj#xpath=//input[@id='idBtn_Back']";
+
+    public static final String profileIcon = "Profile Icon#xpath=//img[@class='user-profile-icon']";
+
+
+    public boolean isElementDisplayedWithWait(String locator) {
+        boolean flag = false;
         try {
-            String typeLocator = "Individual Customer tab#xpath=//div[@class='formtab']/descendant::a[normalize-space(text())='Individual']";
-            String txtBox_MobileNumber = "Mobile Number Text Box For Individual#xpath=(//input[@id='txtEmailMobile_Individual'])[1]";
-            String txtBox_Dob = "DOB Text Box For Individual#xpath=(//input[@id='EnterDOBdate_Individual'])[1]";
-            String Proceed_button = "Proceed Button#xpath=//a[normalize-space(text())='PROCEED']|//button[normalize-space(text())='PROCEED']|//input[@value='PROCEED']";
-            waitTime(2);
-//            boolean flag1 = clickOnIfDisplayed(icon_MyAccount);
-//            if (flag1) {
-//                boolean flag2 = clickOnIfDisplayed(login_Button);
-//                if (flag2) {
-//                    clickOnButtonUsingLocatorUsingForLoopWithoutFail(LoginPage.skip);
-//                    driver.switchTo().frame(findWebElement(frame_Login));
-            clickOnIfDisplayed(typeLocator);
-            typeInIfPresent(txtBox_MobileNumber, mobileNumber);
-            clickOnButtonUsingTextUsingForLoop("Get OTP");
-            waitForPageToLoad();
-            enterOtpInTextBox("o", "123456");
-            clickOnButtonUsingTextUsingForLoop("Submit");
-            if (isElementDisplayed(txtBox_Dob)) {
-                testStepInfo("Customer is an ETB");
-                typeInIfPresent(txtBox_Dob, dob);
-            } else {
-                testStepInfo("Customer is not an ETB");
-            }
-            if (isElementDisplayed(Proceed_button)) {
-                clickOnButtonUsingTextUsingForLoop("PROCEED");
-            }
-            waitForPageToLoad();
-//                }
-//            }
+            WebElement element = findWebElement(locator);
+            WebDriverWait wait = new WebDriverWait(driver, 2);
+            wait.until(ExpectedConditions.visibilityOf(element));
+            flag = true;
         } catch (Exception e) {
             e.printStackTrace();
-            testStepFailed("Failed in Login Individual. Exception: " + e.getClass());
-        }
-//        return flag;
-    }
-
-    public void LoginNonindividual(String mobileNumber, String dob, String otp) {
-        try {
-            String typeLocator = "Non-Individual Customer tab#xpath=//div[@class='formtab']/descendant::a[normalize-space(text())='Corporate/ Business']";
-            String txtBox_MobileNumber = "Mobile Number Text Box For Non-Individual#xpath=//input[@id='txtEmailMobile_NonIndividual']";
-            String txtBox_Doi = "DOI Text Box For Non-Individual#xpath=//input[@id='EnterDOIDate_NonIndividual']";
-//            Boolean flag1 = clickOnIfDisplayed(icon_MyAccount);
-//            if (flag1) {
-//                Boolean flag2 = clickOnIfDisplayed(login_Button);
-//                if (flag2) {
-//                    clickOnButtonUsingLocatorUsingForLoop(typeLocator);
-            clickOnIfDisplayed(typeLocator);
-//                    typeInTextBoxUsingLocatorUsingForLoop(txtBox_MobileNumber,mobileNumber);
-            typeInIfPresent(txtBox_MobileNumber, mobileNumber);
-//                    typeInTextBoxUsingLocatorUsingForLoop(txtBox_Doi,dob);
-//                    clickOnButtonUsingLocatorUsingForLoop(typeLocator);
-            clickOnButtonUsingTextUsingForLoop("Get OTP");
-            waitForPageToLoad();
-            enterOtpInTextBox("o", "123456");
-            clickOnButtonUsingTextUsingForLoop("Submit");
-            typeInIfPresent(txtBox_Doi, dob);
-            clickOnButtonUsingTextUsingForLoop("PROCEED");
-//                    waitForThreeDotsDisAppear();
-            waitForPageToLoad();
-//                } else {
-//                    return;
-//                }
-//            } else {
-//                return;
-//            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in Login Non Individual. Exception: " + e.getClass());
-        }
-//        return flag;
-    }
-
-//    public void LoginNonindividual(String mobileNumber, String dob, String otp) {
-//        try {
-//
-//
-//
-//
-//            String typeLocator="Non-Individual Customer tab#xpath=//div[@class='formtab']/descendant::a[normalize-space(text())='Non-Individual']";
-//            String txtBox_MobileNumber="Mobile Number Text Box For Non-Individual#xpath=//input[@id='txtEmailMobile_NonIndividual']";
-//            String txtBox_Doi="DOI Text Box For Non-Individual#xpath=//input[@id='DOIDate_NonIndividual']";
-//            Boolean flag1 = clickOnIfDisplayed(icon_MyAccount);
-//            if (flag1) {
-//                Boolean flag2 = clickOnIfDisplayed(login_Button);
-//                if (flag2) {
-//                    clickOnButtonUsingLocatorUsingForLoop(typeLocator);
-//                    typeInTextBoxUsingLocatorUsingForLoop(txtBox_MobileNumber,mobileNumber);
-//                    typeInTextBoxUsingLocatorUsingForLoop(txtBox_Doi,dob);
-//                    clickOnButtonUsingLocatorUsingForLoop(typeLocator);
-//                    clickOnButtonUsingTextUsingForLoop("Get OTP");
-//                    waitForPageToLoad();
-//                    enterOtpInTextBox("o","123456");
-//                    clickOnButtonUsingTextUsingForLoop("Submit");
-//                    waitForPageToLoad();
-//                } else {
-//                    return;
-//                }
-//            } else {
-//                return;
-//            }
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            testStepFailed("Failed in Login Non Individual. Exception: " + e.getClass());
-//        }
-////        return flag;
-//    }
-
-    public void LoginNRI(String mobileNumber, String dob, String otp) {
-        try {
-            String typeLocator = "NRI Customer tab#xpath=//div[@class='formtab']/descendant::a[normalize-space(text())='NRI']";
-            String txtBox_MobileNumber = "Mobile Number Text Box For NRI#xpath=//input[@id='txtEmailMobile_NRI']";
-            String txtBox_Dob = "DOB Text Box For NRI#xpath=//input[@id='EnterDOBDate_NRI']";
-//            Boolean flag1 = clickOnIfDisplayed(icon_MyAccount);
-//            if (flag1) {
-//                Boolean flag2 = clickOnIfDisplayed(login_Button);
-//                if (flag2) {
-            clickOnButtonUsingLocatorUsingForLoop(typeLocator);
-            typeInTextBoxUsingLocatorUsingForLoop(txtBox_MobileNumber, mobileNumber);
-            clickOnButtonUsingTextUsingForLoop("Get OTP");
-            waitForPageToLoad();
-            enterOtpInTextBox("o", "123456");
-            clickOnButtonUsingTextUsingForLoop("Submit");
-
-            typeInTextBoxUsingLocatorUsingForLoop(txtBox_Dob, dob);
-            clickOnButtonUsingTextUsingForLoop("PROCEED");
-            waitForPageToLoad();
-//                } else {
-//                    return;
-//                }
-//            } else {
-//                return;
-//            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in Login NRI. Exception: " + e.getClass());
-        }
-//        return flag;
-    }
-
-
-    public Boolean verifyLogin(String custId, String password) {
-        Boolean flag = false;
-        try {
-
-            typeInIfDisplayed(txtBox_CustomerId, custId);
-            typeInIfDisplayed(txtBox_Password, password);
-            clickOnIfDisplayed(btn_Login);
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in Login. Exception: " + e.getClass());
         }
         return flag;
     }
 
-    //
-    public void verifyLogout() {
+    public void logInPageRhs() {
         try {
-            clickOnIfDisplayed(icon_Profile);
-            clickOnButtonUsingTextUsingForLoop("Logout");
-//            clickOnButtonUsingLocatorUsingForLoop(btn_Logout);
-            waitForPageToLoad();
-            waitTime(3);
-//            verifyFieldsDisplayedUsingLocatorWithComment(txtBox_CustomerId, "Logout ");
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in Logout. Exception: " + e.getClass());
-        }
-    }
+            String rhs = "RHS Side of Login Page#xpath=//div[@class='login-contant-right-box']";
+            String info = "RHS Side Info Points#xpath=//div[@class='portal-list-bgbox']";
 
-    public void verifyRerunLogin(String custId, String password) {
-        try {
-            if (!isElementDisplayed(HomePage.logo_Bfinserv)) {
-                typeInIfDisplayed(LoginPage.txtBox_CustomerId, custId);
-                typeInIfDisplayed(LoginPage.txtBox_Password, password);
-                clickOnIfDisplayed(LoginPage.btn_Login);
-                ApplicationKeywords.quitBrowser = true;
+            verifyElementIsDisplayedOrNot(welcomeMessageRHS);
+            verifyElementIsDisplayedOrNot(titleRMOneViewOnRHS);
+
+            int size = sizeOfLocator(info);
+            for (int i = 1; i <= size; i++) {
+                String txtBox = "Info line " + i + "#xpath=(//div[@class='portal-list-bgbox'])[" + i + "]";
+                String txtBoxLogo = "Info line Logo " + i + "#xpath=(//div[@class='portal-list-bgbox']/..//img)[" + i + "]";
+                verifyElementIsDisplayedAndGetText(txtBox);
+                verifyElementIsDisplayedOrNot(txtBoxLogo);
             }
         } catch (Exception e) {
             e.printStackTrace();
-            testStepFailed("Failed in verify Rerun Login. Exception: " + e.getClass());
+            testStepFailed("Failed at log in Page Rhs" + e.getClass());
         }
 
     }
 
-    public void verifyLoginRedirection() {
+    public void logInPageLhs() {
         try {
-            if (isElementDisplayed(popup_Login)) {
-                manualScreenshot(getRefOfXpath(popup_Login) + " is Displayed successfully");
-//driver.get("https://cont-sites.bajajfinserv.in/MyAccountLogin#;");
-//waitForPageToLoad();
-            } else {
-                testStepFailed(getRefOfXpath(popup_Login) + " is Not Displayed");
-            }
+            verifyElementIsDisplayedOrNot(LoginPage.loginSection);
+            verifyElementIsDisplayedOrNot(bajajFinservLogo);
+            verifyFieldDisplayedUsingTagAndText("h2", "Login to your account", "");
+            verifyFieldsDisplayedUsingText("Kindly log in to gain access to your account.");
+            verifyFieldDisplayedUsingTagAndText("label", "Domain", "");
+            verifyElementIsDisplayedOrNot(domain_Dropdown);
+//            verifyElementIsDisplayedOrNot(userNameBox);
+//            verifyElementIsDisplayedOrNot(passwordBox);
+//            verifyFieldDisplayedUsingTagAndText("label", "Username", "");
+//            verifyFieldDisplayedUsingTagAndText("label", "Password", "");
+            verifyElementIsDisplayedOrNot(LoginPage.loginButton);
+
         } catch (Exception e) {
             e.printStackTrace();
-            testStepFailed("Failed in verify Login Redirection. Exception: " + e.getClass());
-        }
-    }
-
-
-    public void verifyLoginPageTitle(String actualTitle, String extra) {
-        try {
-            String expectedTitle = driver.getTitle();
-//            System.out.println("******************" + expectedTitle);
-            String expectedTitle2 = expectedTitle.replaceAll("[^a-zA-Z0-9 ]", "");
-//            System.out.println("******************" + expectedTitle2);
-
-            if (expectedTitle2.equalsIgnoreCase(actualTitle)) {
-                testStepPassed(actualTitle + " is Displayed Successfully");
-            } else {
-                testStepFailed(actualTitle + " is not Displayed");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            testStepFailed("Failed in verify Login Page Title. Exception: " + e.getClass());
+            testStepFailed("Failed at log in Page Lhs " + e.getClass());
         }
 
     }

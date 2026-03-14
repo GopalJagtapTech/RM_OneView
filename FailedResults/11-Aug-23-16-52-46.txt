@@ -1,4 +1,0 @@
-Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountFixedDeposit/FixedDeposit/Index?id=b7150e77-5c11-4a10-9078-d75666969d16&DepositID=4Z10UKCJdNTVqW6qB2b/VA==------------>  To verify customer with Sole Proprietorship PAN Card i.e 4th of PAN Card should be “P” can apply for LAFD&
-
-Expected URL : MyAccountFixedDeposit/FixedDeposit/LAFD------------>  To verify customer with Sole Proprietorship PAN Card i.e 4th of PAN Card should be “P” can apply for LAFD&
-

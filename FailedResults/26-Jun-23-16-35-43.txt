@@ -1,4 +1,0 @@
-Home Page Text is Not Verified------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment)- "CC Avenue" "NetBanking"¡
-
-Login is Unsuccessfull------------>  To verify the payment failure reason on Payment Unsuccessful page after cancelling the payment from Payment Gateway for Net Banking (Part Prepayment)- "CC Avenue" "NetBanking"¡
-

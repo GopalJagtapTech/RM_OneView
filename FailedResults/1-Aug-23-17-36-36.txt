@@ -1,6 +1,0 @@
-FIXED DEPOSIT 148330 No. Tile is Not Displayed------------>  To verify View Documents option is displayed under Quick Actions for Closed FD
-
- Account Number 148330 is Not Redirected------------>  To verify View Documents option is displayed under Quick Actions for Closed FD
-
-Not Redirected to Expected------------>  To verify View Documents option is displayed under Quick Actions for Closed FD
-

@@ -32,7 +32,7 @@ public class ApplicationHooks extends ApplicationKeywords {
         failedStepsToRepro = failedSteps();
         failedStepsInScenario = new StringBuilder();
 //        if (GOR.login) {
-        verifyLogout();
+//        verifyLogout();
 //        }
     }
 
@@ -41,7 +41,6 @@ public class ApplicationHooks extends ApplicationKeywords {
         System.out.println("Steps to Reproduce the Scenario: " + "\r\n" + scenarioStepsToRepro + "\r\n" + "Scenario Failed at: " + "\r\n" + failedStepsToRepro);
 
     }
-
 
 //    @After(order=2)
 //    public void quitBrowser()
@@ -54,7 +53,7 @@ public class ApplicationHooks extends ApplicationKeywords {
     public void failures() {
         if (GOR.isLoggedIn) {
             if (asser) {
-                logBuginAzure();
+//                logBuginAzure();
                 GOR.isLoggedIn=false;
                 asser = false;
                 SoftAssertions sa = new SoftAssertions();
@@ -72,10 +71,6 @@ public class ApplicationHooks extends ApplicationKeywords {
             }
         }
     }
-
-
-
-
 
     @AfterStep
     public void Screenshot(Scenario scenario) throws IOException {

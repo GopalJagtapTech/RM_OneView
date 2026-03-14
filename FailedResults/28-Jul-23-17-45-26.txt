@@ -1,4 +1,0 @@
-Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountService/Emandate/index?id=3f567f3b-a92d-48b7-a569-2ec6d5578865------------>  To verify when click on PROCEED CTA on Pop-up
-
-Expected URL : https://emandate-staging.bajajfinserv.in/Mandate/Register------------>  To verify when click on PROCEED CTA on Pop-up
-

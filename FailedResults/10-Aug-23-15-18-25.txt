@@ -1,8 +1,0 @@
-Home Page Text is Not Verified------------>  To verify below option are displayed under Filter option for Cards Tab
-
-Login is Unsuccessfull------------>  To verify below option are displayed under Filter option for Cards Tab
-
-Sign Out Button is Not Present------------>  To verify below option are displayed under Filter option for Cards Tab
-
-You do not have any expired cards with us. is Not Present------------>  To verify when No Expired card relation is there then below text is displayedC
-

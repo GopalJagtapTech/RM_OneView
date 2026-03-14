@@ -1,6 +1,0 @@
-Home Page Text is Not Verified------------>  To verify customer is redirected to HL Form when customer click on Apply online
-
-Login is Unsuccessfull------------>  To verify customer is redirected to HL Form when customer click on Apply online
-
-Sign Out Button is Not Present------------>  To verify customer is redirected to HL Form when customer click on Apply online
-

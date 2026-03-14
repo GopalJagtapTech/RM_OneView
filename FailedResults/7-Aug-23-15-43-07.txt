@@ -1,8 +1,0 @@
-Reminder Section in Home page is Not Displayed------------>  Verify details displayed on Loans Tile under Reminder sectionY
-
-Proceed for KYC - in Reminder Section is Not Present------------>  Verify customer is redirected to Profile/Demog update details page  when click on Proceed CTA+D20 under Reminder section of Re-KYC tile
-
-Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index------------>  Verify customer is redirected to Profile/Demog update details page  when click on Proceed CTA+D20 under Reminder section of Re-KYC tile
-
-Expected URL : https://uat-oneweb.bajajfinserv.in/MyAccountService/UpdateDetails/UserProfileDetails------------>  Verify customer is redirected to Profile/Demog update details page  when click on Proceed CTA+D20 under Reminder section of Re-KYC tile
-

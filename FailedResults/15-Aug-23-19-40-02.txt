@@ -1,2 +1,0 @@
-KYC Pop up Verify Your Information  is Not Displayed------------>  To verify when user entering invalid input in DOB field given validation text is displayed¥
-

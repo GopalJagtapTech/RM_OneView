@@ -1,8 +1,0 @@
-Test step failed ------------>  TC_01_To verify Credit card is displayed under My Relations
-
-Home Page Text is Not Verified------------>  TC_02_To verify Credit card is displayed under My Relations
-
-Login is Unsuccessfull------------>  TC_02_To verify Credit card is displayed under My Relations
-
-Sign Out Button is Not Present------------>  TC_02_To verify Credit card is displayed under My Relations
-

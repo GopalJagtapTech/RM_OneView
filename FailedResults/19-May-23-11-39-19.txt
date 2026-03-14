@@ -1,6 +1,0 @@
-Failed in wait for Element Loaded URL: https://www.bajajfinserv.in/fixed-deposit-calculators. Exception: class org.openqa.selenium.TimeoutException------------>  Explore - Fixed Deposit Calculator
-
-Redirected URL is not Matched : https://www.bajajfinserv.in/investments/fixed-deposit-calculator------------>  Explore - Fixed Deposit Calculator
-
-Expected URL : https://www.bajajfinserv.in/fixed-deposit-calculators------------>  Explore - Fixed Deposit Calculator
-

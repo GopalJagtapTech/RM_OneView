@@ -1,2 +1,0 @@
-Failed in testStep screen shot. Exception: ------------>  Create sample bug without example	
-

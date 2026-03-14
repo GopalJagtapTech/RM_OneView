@@ -1,8 +1,0 @@
-Horizantal sub Menu - New car finance is not displayed------------>  Verify customer redirected respective page, when customer click on "Overview" option under New Car Finance loans Dropdown - ETB
-
-Horizantal level 2 sub Menu - Overview is not displayed------------>  Verify customer redirected respective page, when customer click on "Overview" option under New Car Finance loans Dropdown - ETB
-
-Redirected URL is not Matched : https://uat-oneweb.bajajfinserv.in/MyAccountCustomer/Home/Index?id=b87e6fec-8eec-4dad-b9f2-f3e400113d6a#;------------>  Verify customer redirected respective page, when customer click on "Overview" option under New Car Finance loans Dropdown - ETB
-
-Expected URL : https://www.bajajfinserv.in/new-car-finance------------>  Verify customer redirected respective page, when customer click on "Overview" option under New Car Finance loans Dropdown - ETB
-

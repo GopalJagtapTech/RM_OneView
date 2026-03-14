@@ -1,8 +1,0 @@
-Failed in Type In DOB Text Box For Individual value as 13011992. Exception: class org.openqa.selenium.ElementNotInteractableException------------>  verify Customer is redirected to Respective page when clicked on particular "Gold Loan" in Application Forms
-
-PROCEED button is Not Displayed------------>  verify Customer is redirected to Respective page when clicked on particular "Gold Loan" in Application Forms
-
-Login is Un Successful------------>  verify Customer is redirected to Respective page when clicked on particular "Gold Loan" in Application Forms
-
-Failed in verify Home in Hooks. Exception: class org.openqa.selenium.InvalidArgumentException------------>  verify Customer is redirected to Respective page when clicked on particular "Gold Loan" in Application Forms
-

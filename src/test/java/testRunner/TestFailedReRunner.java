@@ -18,7 +18,7 @@ import java.io.IOException;
 //        tags = "@Login",
 //        dryRun = true,
         glue = {"stepDefinitions", "AppHooks"},
-        plugin = {"pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "rerun:target/rerun2.txt", "html:target/cucumber-html-report.html",
+        plugin = {"pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "rerun:target/rerun.txt", "html:target/cucumber-html-report.html",
                 "json:target/cucumber.json", "pretty:target/cucumber-pretty.txt",
                 "usage:target/cucumber-usage.json", "junit:target/cucumber-results.xml"}
 

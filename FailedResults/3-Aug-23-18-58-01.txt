@@ -1,8 +1,0 @@
-Home Page Text is Not Verified------------>  Verify Loan Against Shares text on View Statement pop-up1
-
-Login is Unsuccessfull------------>  Verify Loan Against Shares text on View Statement pop-up1
-
-Home Page Text is Not Verified------------>  Verify text displayed on Make Payment page
-
-Login is Unsuccessfull------------>  Verify text displayed on Make Payment page
-

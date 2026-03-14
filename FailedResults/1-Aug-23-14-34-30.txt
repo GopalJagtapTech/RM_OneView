@@ -1,6 +1,0 @@
-Sign Out Button is Not Displayed------------>  To verify My Account is displayed under Profile
-
- is Not Present in findElements------------>  To verify the redirection when click on Edit Profile CTA under Name component section2
-
-Failed in click on Anything using for Loop Using Text and tag. Exception: class java.lang.NullPointerException------------>  To verify the redirection when click on Edit Profile CTA under Name component section2
-
